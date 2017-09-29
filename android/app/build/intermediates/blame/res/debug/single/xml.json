@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.48.3/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/Users/sturm/Desktop/epaperem/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/Users/sturm/Desktop/epaperem/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.48.3/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/home/naman/Desktop/freelance/epaper/android/app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/home/naman/Desktop/freelance/epaper/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.48.3/res/xml/preferences.xml"
+    }
+]

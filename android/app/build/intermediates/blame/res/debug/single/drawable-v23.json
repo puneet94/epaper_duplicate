@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable-v23/abc_control_background_material.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-v23/abc_control_background_material.xml"
+    },
+    {
+        "merged": "/Users/sturm/Desktop/epaperem/android/app/build/intermediates/res/merged/debug/drawable-v23/abc_control_background_material.xml",
+        "source": "/Users/sturm/Desktop/epaperem/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-v23/abc_control_background_material.xml"
+    },
+    {
+        "merged": "/home/naman/Desktop/freelance/epaper/android/app/build/intermediates/res/merged/debug/drawable-v23/abc_control_background_material.xml",
+        "source": "/home/naman/Desktop/freelance/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-v23/abc_control_background_material.xml"
+    }
+]
