@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View, Image, StatusBar, TouchableWithoutFeedback} from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableWithoutFeedback} from 'react-native'
 
 import appVars from '../../appVars';
 import appStyles from '../../appStyles';
@@ -14,8 +14,6 @@ class DrawerContainer extends React.Component {
     const { navigation } = this.props
     return (
     <View style={appStyles.drawerContainer}>
-
-      <StatusBar backgroundColor={appVars.colorMain} barStyle="light-content"/>
 
       <Image source={require('../../../assets/images/logo.png')} style={appStyles.drawerLogo}/>
 
