@@ -12,12 +12,12 @@
         "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable/abc_item_background_holo_light.xml"
     },
     {
-        "merged": "/Users/sturm/Desktop/epaperem/android/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
-        "source": "/Users/sturm/Desktop/epaperem/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable/abc_ratingbar_full_material.xml"
-    },
-    {
         "merged": "/home/naman/Desktop/freelance/epaper/android/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
         "source": "/home/naman/Desktop/freelance/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable/abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "/Users/sturm/Desktop/epaperem/android/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
+        "source": "/Users/sturm/Desktop/epaperem/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable/abc_ratingbar_full_material.xml"
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
@@ -96,6 +96,10 @@
         "source": "/home/naman/Desktop/freelance/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable/abc_item_background_holo_dark.xml"
     },
     {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/default_scroll_handle_left.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.github.barteksc/android-pdf-viewer/2.7.0/res/drawable/default_scroll_handle_left.xml"
+    },
+    {
         "merged": "/Users/sturm/Desktop/epaperem/android/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
         "source": "/Users/sturm/Desktop/epaperem/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable/abc_item_background_holo_light.xml"
     },
@@ -106,6 +110,10 @@
     {
         "merged": "/Users/sturm/Desktop/epaperem/android/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
         "source": "/Users/sturm/Desktop/epaperem/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/launch_screen.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/src/main/res/drawable/launch_screen.xml"
     },
     {
         "merged": "/Users/sturm/Desktop/epaperem/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
@@ -140,12 +148,24 @@
         "source": "/home/naman/Desktop/freelance/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable/abc_cab_background_top_material.xml"
     },
     {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/default_scroll_handle_top.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.github.barteksc/android-pdf-viewer/2.7.0/res/drawable/default_scroll_handle_top.xml"
+    },
+    {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/default_scroll_handle_bottom.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.github.barteksc/android-pdf-viewer/2.7.0/res/drawable/default_scroll_handle_bottom.xml"
+    },
+    {
         "merged": "/home/naman/Desktop/freelance/epaper/android/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_dark.xml",
         "source": "/home/naman/Desktop/freelance/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable/abc_dialog_material_background_dark.xml"
     },
     {
         "merged": "/home/naman/Desktop/freelance/epaper/android/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
         "source": "/home/naman/Desktop/freelance/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/default_scroll_handle_right.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.github.barteksc/android-pdf-viewer/2.7.0/res/drawable/default_scroll_handle_right.xml"
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
