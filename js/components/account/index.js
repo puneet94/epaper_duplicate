@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, TextInput, StyleSheet, Button, Alert, ActivityIndicator,AsyncStorage } from 'react-native'
+import { Text, View, TextInput, StyleSheet, Button, Alert, ActivityIndicator, AsyncStorage, Linking } from 'react-native'
 import appStyle from '../../appStyles';
 import appVars from '../../appVars';
 
@@ -10,6 +10,7 @@ class AccountScreen extends Component {
     componentWillMount(){
         this.load();
     }
+
 
     load = async () => {
         try {
@@ -54,7 +55,7 @@ class AccountScreen extends Component {
         this.setState({
             loading: true,
         })
-        let apiHitPoint = appVars.apiurl+"?authtoken="+appVars.apikey+"&username="+this.state.email+"&password="+this.state.pass;
+        let apiHitPoint = appVars.apiUrl+"?authtoken="+appVars.apiKey+"&username="+this.state.email+"&password="+this.state.pass;
         console.log(apiHitPoint);
         let that=this;
         try{
@@ -83,7 +84,13 @@ class AccountScreen extends Component {
 
     };
     onForgot= function (){
-        Alert.alert("forgot");
+      Linking.canOpenURL(appVars.forgotpasswordurl).then(supported => {
+            if (supported) {
+              Linking.openURL(appVars.forgotpasswordurl);
+            } else {
+              console.log("Don't know how to open URI: " + appVars.forgotpasswordurl);
+            }
+        });
     };
 
   render() {
@@ -91,8 +98,8 @@ class AccountScreen extends Component {
       {
           return(
             <View style={styles.center}>
-            <ActivityIndicator animating={true} />
-          </View>
+              <ActivityIndicator animating={true} />
+            </View>
           )
       }
       if(this.state.loggedIn){
