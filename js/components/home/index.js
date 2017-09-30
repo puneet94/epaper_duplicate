@@ -17,7 +17,8 @@ import {
     ActivityIndicator
 } from 'react-native';
 import { NavigationActions } from 'react-navigation';
-import appStyle from '../../appStyles';
+import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
+import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 import RNFetchBlob from 'react-native-fetch-blob';
 import store from 'react-native-simple-store';
@@ -151,8 +152,9 @@ fetchdata = async () => {
         downloading: false
       });
 
-        // if you wanna open the pdfview screen
-      //navigation.navigate('PDFView', {file: resp.path()});
+      // if you wanna open the pdfview screen
+      navigation.navigate('PDFView', {file: resp.path()});
+
       const issueObject = {
         path: resp.path(),
         thumbNail: imageResp.path(),
@@ -220,7 +222,8 @@ fetchdata = async () => {
       <View style={styles.issue}>
         <TouchableOpacity activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
           <Image style={styles.image} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } >
-            {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator style={appStyle.test} size="large" color="green"/>:<View></View>}
+            {(item.paywall)?<AwseomeIcon name="plus" style={styles.paywallicon}/>:<View></View>}
+            {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator style={appStyles.test} size="large" color="green"/>:<View></View>}
           </Image>
         </TouchableOpacity>
         <Text style={styles.details}>{item["date"]}</Text>
@@ -233,7 +236,7 @@ fetchdata = async () => {
 	{
     //console.log("rendering");
     return (
-      <View style={appStyle.container}>
+      <View style={appStyles.container}>
 
       <FlatList
         data={this.state.data}
@@ -277,6 +280,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center"
+  },
+  paywallicon:{
+    color: appVars.colorWhite,
+    backgroundColor: appVars.colorMain,
+    padding: 20,
   },
   issue:{
     marginTop: 20,
