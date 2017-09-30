@@ -34,7 +34,7 @@ class HomeScreen extends Component{
       error: null,
       refreshing: false,
       downloading: false,
-      currentItem: null      
+      currentItem: null
     }
   }
 
@@ -86,25 +86,31 @@ fetchdata = async () => {
 
   downloadFile = async (url,item)=>{
     let downloadFile = true;
-    let issues = await store.get('userIssues');
+    //let issues = await store.get('userIssues');
+
+      var myissues = await store.get('userIssues');
+
+    console.log("existing issues");
+    console.log(myissues);
+    console.log(item);
     const { navigation } = this.props;
-    for(let i=0;i<issues.length;i++){
-      if(issues[i].id==item.id){
-        downloadFile = false;
-        console.log("found if file");
-        console.log(item);
-        navigation.navigate('PDFView', {file: issues[i].path});
+    myissues = myissues||[];
+    for(let i=0;i<myissues.length;i++){
+      if(myissues[i].id==item.id){
+         downloadFile = false;
+
+        navigation.navigate('PDFView', {file: myissues[i].path});
         break;
       }
     }
     //console.log(url);
-    
+
     if(downloadFile){
       this.setState({
         downloading: true
       });
       console.log("download started******************");
-    
+
       let resp = await RNFetchBlob
       .config({
           addAndroidDownloads : {
@@ -138,22 +144,23 @@ fetchdata = async () => {
           }
       })
       .fetch('GET', imageSource);
-      
 
-      
+
+
       this.setState({
         downloading: false
       });
-        
+
         // if you wanna open the pdfview screen
-      navigation.navigate('PDFView', {file: resp.path()});
+      //navigation.navigate('PDFView', {file: resp.path()});
       const issueObject = {
         path: resp.path(),
         thumbNail: imageResp.path(),
         date: item.date,
         id: item.id
       };
-      
+      console.log("issue saved");
+      console.log(issueObject);
       store.push('userIssues',issueObject );
     }
   }
@@ -213,7 +220,7 @@ fetchdata = async () => {
       <View style={styles.issue}>
         <TouchableOpacity activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
           <Image style={styles.image} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } >
-            {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator size="large" color="green"/>:<View></View>}
+            {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator style={appStyle.test} size="large" color="green"/>:<View></View>}
           </Image>
         </TouchableOpacity>
         <Text style={styles.details}>{item["date"]}</Text>
