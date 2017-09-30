@@ -13,13 +13,14 @@ import {
     PermissionsAndroid,
     Dimensions,
     RefreshControl,
-    Alert
+    Alert,
+    ActivityIndicator
 } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import appStyle from '../../appStyles';
 import appVars from '../../appVars';
 import RNFetchBlob from 'react-native-fetch-blob';
-
+import store from 'react-native-simple-store';
 const dirs = RNFetchBlob.fs.dirs;
 
 class HomeScreen extends Component{
@@ -32,6 +33,8 @@ class HomeScreen extends Component{
       page: 1,
       error: null,
       refreshing: false,
+      downloading: false,
+      currentItem: null      
     }
   }
 
@@ -81,34 +84,78 @@ fetchdata = async () => {
     }
 };
 
-
-  downloadFile = (url,id)=>{
+  downloadFile = async (url,item)=>{
+    let downloadFile = true;
+    let issues = await store.get('userIssues');
+    const { navigation } = this.props;
+    for(let i=0;i<issues.length;i++){
+      if(issues[i].id==item.id){
+        downloadFile = false;
+        console.log("found if file");
+        console.log(item);
+        navigation.navigate('PDFView', {file: issues[i].path});
+        break;
+      }
+    }
     //console.log(url);
-    RNFetchBlob
-    .config({
-        addAndroidDownloads : {
-            useDownloadManager : true, // <-- this is the only thing required
-            // Optional, override notification setting (default to true)
-            notification : true,
-            // Optional, but recommended since android DownloadManager will fail when
-            // the url does not contains a file extension, by default the mime type will be text/plain
-            mime : 'application/pdf',
-            description : 'File downloaded by download manager.',
-            //path: RNFetchBlob.fs.dirs.DownloadDir+"/dummy.pdf",
-            path: RNFetchBlob.fs.dirs.DownloadDir+"/"+id,
-            mediaScannable : true,
-        }
-    })
-    .fetch('GET', url)
-    .then((resp) => {
-      const { navigation } = this.props;
+    
+    if(downloadFile){
+      this.setState({
+        downloading: true
+      });
+      console.log("download started******************");
+    
+      let resp = await RNFetchBlob
+      .config({
+          addAndroidDownloads : {
+              useDownloadManager : true, // <-- this is the only thing required
+              // Optional, override notification setting (default to true)
+              notification : true,
+              // Optional, but recommended since android DownloadManager will fail when
+              // the url does not contains a file extension, by default the mime type will be text/plain
+              mime : 'application/pdf',
+              description : 'File downloaded by download manager.',
+              //path: RNFetchBlob.fs.dirs.DownloadDir+"/dummy.pdf",
+              path: RNFetchBlob.fs.dirs.DownloadDir+"/"+item.id,
+              mediaScannable : true,
+          }
+      })
+      .fetch('GET', url);
+      const imageSource = appVars.apiUrl +"/"+item.singleSRC;
+      let imageResp = await RNFetchBlob
+      .config({
+          addAndroidDownloads : {
+              useDownloadManager : true, // <-- this is the only thing required
+              // Optional, override notification setting (default to true)
+              notification : true,
+              // Optional, but recommended since android DownloadManager will fail when
+              // the url does not contains a file extension, by default the mime type will be text/plain
+              mime : 'image/jpeg',
+              description : 'File downloaded by download manager.',
+              //path: RNFetchBlob.fs.dirs.DownloadDir+"/dummy.pdf",
+              path: RNFetchBlob.fs.dirs.DownloadDir+"/"+item.singleSRC,
+              mediaScannable : true,
+          }
+      })
+      .fetch('GET', imageSource);
+      
 
-      // if you wanna open the pdfview screen
+      
+      this.setState({
+        downloading: false
+      });
+        
+        // if you wanna open the pdfview screen
       navigation.navigate('PDFView', {file: resp.path()});
-
-      // the path of downloaded file
-      //Alert.alert(resp.path());
-    })
+      const issueObject = {
+        path: resp.path(),
+        thumbNail: imageResp.path(),
+        date: item.date,
+        id: item.id
+      };
+      
+      store.push('userIssues',issueObject );
+    }
   }
 
   getPermissions = async ()=>{
@@ -154,16 +201,20 @@ fetchdata = async () => {
   }
 
   handleClick = (item)=>{
-    this.downloadFile('https://mopo-server.de/'+ item["downloadPath"], item["id"]);
+    this.setState({
+      currentItem: item.id
+    });
+    this.downloadFile('https://mopo-server.de/'+ item["downloadPath"], item);
   }
 
   renderItem = (item) =>{
     //console.log(appVars.apiUrl +"/"+item.singleSRC);
     return(
-
       <View style={styles.issue}>
         <TouchableOpacity activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
-        <Image style={styles.image} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } />
+          <Image style={styles.image} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } >
+            {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator size="large" color="green"/>:<View></View>}
+          </Image>
         </TouchableOpacity>
         <Text style={styles.details}>{item["date"]}</Text>
       </View>
@@ -216,6 +267,9 @@ const styles = StyleSheet.create({
     resizeMode: 'contain',
     borderWidth: 2,
     borderColor: appVars.colorMain,
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center"
   },
   issue:{
     marginTop: 20,
@@ -224,4 +278,4 @@ const styles = StyleSheet.create({
   details:{
     fontWeight: 'bold',
   }
-})
+});
