@@ -14,12 +14,15 @@ import {
     Dimensions,
     RefreshControl,
     Alert,
-    ActivityIndicator
+    ActivityIndicator,
+    ToastAndroid
 } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
+
+
 import RNFetchBlob from 'react-native-fetch-blob';
 import store from 'react-native-simple-store';
 const dirs = RNFetchBlob.fs.dirs;
@@ -91,9 +94,6 @@ fetchdata = async () => {
 
       var myissues = await store.get('userIssues');
 
-    console.log("existing issues");
-    console.log(myissues);
-    console.log(item);
     const { navigation } = this.props;
     myissues = myissues||[];
     for(let i=0;i<myissues.length;i++){
@@ -197,7 +197,6 @@ fetchdata = async () => {
       this.fetchdata();
     });
   }
-
   renderSeparator = () =>{
     return(
       <View
@@ -209,7 +208,20 @@ fetchdata = async () => {
     );
   }
 
-  handleClick = (item)=>{
+  handleClick = async (item)=>{
+    if(this.state.downloading){
+      ToastAndroid.show('Download already in progress. Please wait for it to finish', ToastAndroid.SHORT);
+      return;
+    }
+    if(item.paywall){
+      const userToken = await store.get(appVars.STORAGE_KEY);
+      if(!userToken){
+        const { navigation } = this.props;
+        navigation.navigate('Account');
+        return;
+      }
+      
+    }
     this.setState({
       currentItem: item.id
     });
@@ -218,6 +230,7 @@ fetchdata = async () => {
 
   renderItem = (item) =>{
     //console.log(appVars.apiUrl +"/"+item.singleSRC);
+    
     return(
       <View style={styles.issue}>
         <TouchableOpacity activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
