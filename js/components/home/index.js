@@ -84,79 +84,87 @@ fetchdata = async () => {
     }
 };
 
-  downloadFile = async (url,item)=>{
-    let downloadFile = true;
-    let issues = await store.get('userIssues');
-    const { navigation } = this.props;
-    for(let i=0;i<issues.length;i++){
-      if(issues[i].id==item.id){
-        downloadFile = false;
-        console.log("found if file");
-        console.log(item);
-        navigation.navigate('PDFView', {file: issues[i].path});
-        break;
-      }
-    }
-    //console.log(url);
-    
-    if(downloadFile){
-      this.setState({
-        downloading: true
-      });
-      console.log("download started******************");
-    
-      let resp = await RNFetchBlob
-      .config({
-          addAndroidDownloads : {
-              useDownloadManager : true, // <-- this is the only thing required
-              // Optional, override notification setting (default to true)
-              notification : true,
-              // Optional, but recommended since android DownloadManager will fail when
-              // the url does not contains a file extension, by default the mime type will be text/plain
-              mime : 'application/pdf',
-              description : 'File downloaded by download manager.',
-              //path: RNFetchBlob.fs.dirs.DownloadDir+"/dummy.pdf",
-              path: RNFetchBlob.fs.dirs.DownloadDir+"/"+item.id,
-              mediaScannable : true,
-          }
-      })
-      .fetch('GET', url);
-      const imageSource = appVars.apiUrl +"/"+item.singleSRC;
-      let imageResp = await RNFetchBlob
-      .config({
-          addAndroidDownloads : {
-              useDownloadManager : true, // <-- this is the only thing required
-              // Optional, override notification setting (default to true)
-              notification : true,
-              // Optional, but recommended since android DownloadManager will fail when
-              // the url does not contains a file extension, by default the mime type will be text/plain
-              mime : 'image/jpeg',
-              description : 'File downloaded by download manager.',
-              //path: RNFetchBlob.fs.dirs.DownloadDir+"/dummy.pdf",
-              path: RNFetchBlob.fs.dirs.DownloadDir+"/"+item.singleSRC,
-              mediaScannable : true,
-          }
-      })
-      .fetch('GET', imageSource);
-      
+downloadFile = async (url,item)=>{
+  let downloadFile = true;
+  //let issues = await store.get('userIssues');
 
-      
-      this.setState({
-        downloading: false
-      });
-        
-        // if you wanna open the pdfview screen
-      navigation.navigate('PDFView', {file: resp.path()});
-      const issueObject = {
-        path: resp.path(),
-        thumbNail: imageResp.path(),
-        date: item.date,
-        id: item.id
-      };
-      
-      store.push('userIssues',issueObject );
+    var myissues = await store.get('userIssues');
+
+  console.log("existing issues");
+  console.log(myissues);
+  console.log(item);
+  const { navigation } = this.props;
+  myissues = myissues||[];
+  for(let i=0;i<myissues.length;i++){
+    if(myissues[i].id==item.id){
+       downloadFile = false;
+
+      navigation.navigate('PDFView', {file: myissues[i].path});
+      break;
     }
   }
+  //console.log(url);
+
+  if(downloadFile){
+    this.setState({
+      downloading: true
+    });
+    console.log("download started******************");
+
+    let resp = await RNFetchBlob
+    .config({
+        addAndroidDownloads : {
+            useDownloadManager : true, // <-- this is the only thing required
+            // Optional, override notification setting (default to true)
+            notification : true,
+            // Optional, but recommended since android DownloadManager will fail when
+            // the url does not contains a file extension, by default the mime type will be text/plain
+            mime : 'application/pdf',
+            description : 'File downloaded by download manager.',
+            //path: RNFetchBlob.fs.dirs.DownloadDir+"/dummy.pdf",
+            path: RNFetchBlob.fs.dirs.DownloadDir+"/"+item.id,
+            mediaScannable : true,
+        }
+    })
+    .fetch('GET', url);
+    const imageSource = appVars.apiUrl +"/"+item.singleSRC;
+    let imageResp = await RNFetchBlob
+    .config({
+        addAndroidDownloads : {
+            useDownloadManager : true, // <-- this is the only thing required
+            // Optional, override notification setting (default to true)
+            notification : true,
+            // Optional, but recommended since android DownloadManager will fail when
+            // the url does not contains a file extension, by default the mime type will be text/plain
+            mime : 'image/jpeg',
+            description : 'File downloaded by download manager.',
+            //path: RNFetchBlob.fs.dirs.DownloadDir+"/dummy.pdf",
+            path: RNFetchBlob.fs.dirs.DownloadDir+"/"+item.singleSRC,
+            mediaScannable : true,
+        }
+    })
+    .fetch('GET', imageSource);
+
+
+
+    this.setState({
+      downloading: false
+    });
+
+    // if you wanna open the pdfview screen
+    navigation.navigate('PDFView', {file: resp.path()});
+
+    const issueObject = {
+      path: resp.path(),
+      thumbNail: imageResp.path(),
+      date: item.date,
+      id: item.id
+    };
+    console.log("issue saved");
+    console.log(issueObject);
+    store.push('userIssues',issueObject );
+  }
+}
 
   getPermissions = async ()=>{
     try {
