@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import { Text, View, TextInput, StyleSheet, Button, Alert, ActivityIndicator, AsyncStorage, Linking } from 'react-native'
+import { Text, View, TextInput, StyleSheet, Button, Alert, ActivityIndicator, Linking } from 'react-native'
 import appStyle from '../../appStyles';
 import appVars from '../../appVars';
-
+import store from 'react-native-simple-store';
 
 
 class AccountScreen extends Component {
@@ -14,7 +14,7 @@ class AccountScreen extends Component {
 
     load = async () => {
         try {
-          const token = await AsyncStorage.getItem(appVars.STORAGE_KEY)
+          const token = await store.get(appVars.STORAGE_KEY)
 
           if (token !== null) {
             this.setState({
@@ -38,8 +38,8 @@ class AccountScreen extends Component {
 
     storeToken = async (name) => {
         try {
-          await AsyncStorage.setItem(appVars.STORAGE_KEY, name)
-          console.log('Token saved');
+          await store.save(appVars.STORAGE_KEY, name)
+          
           this.setState({
               loggedIn: true,
               loading: false,
@@ -56,7 +56,7 @@ class AccountScreen extends Component {
             loading: true,
         })
         let apiHitPoint = appVars.apiUrl+"?authtoken="+appVars.apiKey+"&username="+this.state.email+"&password="+this.state.pass;
-        console.log(apiHitPoint);
+        
         let that=this;
         try{
             const response = await fetch(apiHitPoint);
@@ -92,8 +92,19 @@ class AccountScreen extends Component {
             }
         });
     };
-
-  render() {
+    logout = async ()=>{
+        this.setState({
+            loading: true
+        });
+        await store.delete(appVars.STORAGE_KEY);
+        this.setState({
+            loggedIn: false,
+            loading:false
+        });
+    }
+    
+  render= ()=> {
+        
       if(this.state.loading)
       {
           return(
@@ -104,8 +115,11 @@ class AccountScreen extends Component {
       }
       if(this.state.loggedIn){
           return(
-              <Text>Already logged in</Text>
-          )
+              <View>
+                <Text>Already logged in</Text>
+                <Button color='green' style={styles.submit} title="LOGOUT" onPress={()=>this.logout()}></Button>
+              </View>
+          );
       }
     return (
       <View style={appStyle.container}>

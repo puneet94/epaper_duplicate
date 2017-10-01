@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/sturm/Desktop/epaper/android/app/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/Users/sturm/Desktop/epaper/android/app/src/debug/shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\epaper2\epaper\android\app\src\main\shaders"/></dataSet><dataSet config="debug"><source path="E:\epaper2\epaper\android\app\src\debug\shaders"/></dataSet></merger>

@@ -1,10 +1,14 @@
 [
     {
-        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable-land-xhdpi/screen.png",
-        "source": "/Users/sturm/Desktop/epaper/android/app/src/main/res/drawable-land-xhdpi/screen.png"
+        "merged": "E:\\epaper2\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xhdpi\\screen.png",
+        "source": "E:\\epaper2\\epaper\\android\\app\\src\\main\\res\\drawable-land-xhdpi\\screen.png"
     },
     {
-        "merged": "/Users/sturm/Desktop/epaperem/android/app/build/intermediates/res/merged/debug/drawable-land-xhdpi/screen.png",
-        "source": "/Users/sturm/Desktop/epaperem/android/app/src/main/res/drawable-land-xhdpi/screen.png"
+        "merged": "E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xhdpi\\screen.png",
+        "source": "E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\src\\main\\res\\drawable-land-xhdpi\\screen.png"
+    },
+    {
+        "merged": "E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-land-xhdpi\\screen.png",
+        "source": "E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\src\\main\\res\\drawable-land-xhdpi\\screen.png"
     }
 ]

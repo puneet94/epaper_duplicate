@@ -14,12 +14,15 @@ import {
     Dimensions,
     RefreshControl,
     Alert,
-    ActivityIndicator
+    ActivityIndicator,
+    ToastAndroid
 } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
+
+
 import RNFetchBlob from 'react-native-fetch-blob';
 import store from 'react-native-simple-store';
 const dirs = RNFetchBlob.fs.dirs;
@@ -91,9 +94,6 @@ fetchdata = async () => {
 
       var myissues = await store.get('userIssues');
 
-    console.log("existing issues");
-    console.log(myissues);
-    console.log(item);
     const { navigation } = this.props;
     myissues = myissues||[];
     for(let i=0;i<myissues.length;i++){
@@ -166,68 +166,6 @@ fetchdata = async () => {
       store.push('userIssues',issueObject );
     }
   }
-  //console.log(url);
-
-  if(downloadFile){
-    this.setState({
-      downloading: true
-    });
-    console.log("download started******************");
-
-    let resp = await RNFetchBlob
-    .config({
-        addAndroidDownloads : {
-            useDownloadManager : true, // <-- this is the only thing required
-            // Optional, override notification setting (default to true)
-            notification : true,
-            // Optional, but recommended since android DownloadManager will fail when
-            // the url does not contains a file extension, by default the mime type will be text/plain
-            mime : 'application/pdf',
-            description : 'File downloaded by download manager.',
-            //path: RNFetchBlob.fs.dirs.DownloadDir+"/dummy.pdf",
-            path: RNFetchBlob.fs.dirs.DownloadDir+"/"+item.id,
-            mediaScannable : true,
-        }
-    })
-    .fetch('GET', url);
-    const imageSource = appVars.apiUrl +"/"+item.singleSRC;
-    let imageResp = await RNFetchBlob
-    .config({
-        addAndroidDownloads : {
-            useDownloadManager : true, // <-- this is the only thing required
-            // Optional, override notification setting (default to true)
-            notification : true,
-            // Optional, but recommended since android DownloadManager will fail when
-            // the url does not contains a file extension, by default the mime type will be text/plain
-            mime : 'image/jpeg',
-            description : 'File downloaded by download manager.',
-            //path: RNFetchBlob.fs.dirs.DownloadDir+"/dummy.pdf",
-            path: RNFetchBlob.fs.dirs.DownloadDir+"/"+item.singleSRC,
-            mediaScannable : true,
-        }
-    })
-    .fetch('GET', imageSource);
-
-
-
-    this.setState({
-      downloading: false
-    });
-
-    // if you wanna open the pdfview screen
-    navigation.navigate('PDFView', {file: resp.path()});
-
-    const issueObject = {
-      path: resp.path(),
-      thumbNail: imageResp.path(),
-      date: item.date,
-      id: item.id
-    };
-    console.log("issue saved");
-    console.log(issueObject);
-    store.push('userIssues',issueObject );
-  }
-}
 
   getPermissions = async ()=>{
     try {
@@ -259,7 +197,6 @@ fetchdata = async () => {
       this.fetchdata();
     });
   }
-
   renderSeparator = () =>{
     return(
       <View
@@ -271,7 +208,20 @@ fetchdata = async () => {
     );
   }
 
-  handleClick = (item)=>{
+  handleClick = async (item)=>{
+    if(this.state.downloading){
+      ToastAndroid.show('Download already in progress. Please wait for it to finish', ToastAndroid.SHORT);
+      return;
+    }
+    if(item.paywall){
+      const userToken = await store.get(appVars.STORAGE_KEY);
+      if(!userToken){
+        const { navigation } = this.props;
+        navigation.navigate('Account');
+        return;
+      }
+      
+    }
     this.setState({
       currentItem: item.id
     });
@@ -280,6 +230,7 @@ fetchdata = async () => {
 
   renderItem = (item) =>{
     //console.log(appVars.apiUrl +"/"+item.singleSRC);
+    
     return(
       <View style={styles.issue}>
         <TouchableOpacity activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>

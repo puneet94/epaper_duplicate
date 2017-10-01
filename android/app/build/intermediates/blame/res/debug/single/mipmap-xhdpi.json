@@ -1,14 +1,18 @@
 [
     {
-        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
-        "source": "/Users/sturm/Desktop/epaper/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+        "merged": "E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/sturm/Desktop/epaperem/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
-        "source": "/Users/sturm/Desktop/epaperem/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+        "merged": "E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/home/naman/Desktop/freelance/epaper/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
-        "source": "/home/naman/Desktop/freelance/epaper/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+        "merged": "E:\\epaper2\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "E:\\epaper2\\epaper\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     }
 ]
