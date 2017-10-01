@@ -17,7 +17,8 @@ import {
     ActivityIndicator
 } from 'react-native';
 import { NavigationActions } from 'react-navigation';
-import appStyle from '../../appStyles';
+import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
+import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 import RNFetchBlob from 'react-native-fetch-blob';
 import store from 'react-native-simple-store';
@@ -34,7 +35,7 @@ class HomeScreen extends Component{
       error: null,
       refreshing: false,
       downloading: false,
-      currentItem: null      
+      currentItem: null
     }
   }
 
@@ -84,23 +85,85 @@ fetchdata = async () => {
     }
 };
 
-downloadFile = async (url,item)=>{
-  let downloadFile = true;
-  //let issues = await store.get('userIssues');
+  downloadFile = async (url,item)=>{
+    let downloadFile = true;
+    //let issues = await store.get('userIssues');
 
-    var myissues = await store.get('userIssues');
+      var myissues = await store.get('userIssues');
 
-  console.log("existing issues");
-  console.log(myissues);
-  console.log(item);
-  const { navigation } = this.props;
-  myissues = myissues||[];
-  for(let i=0;i<myissues.length;i++){
-    if(myissues[i].id==item.id){
-       downloadFile = false;
+    console.log("existing issues");
+    console.log(myissues);
+    console.log(item);
+    const { navigation } = this.props;
+    myissues = myissues||[];
+    for(let i=0;i<myissues.length;i++){
+      if(myissues[i].id==item.id){
+         downloadFile = false;
 
-      navigation.navigate('PDFView', {file: myissues[i].path});
-      break;
+        navigation.navigate('PDFView', {file: myissues[i].path});
+        break;
+      }
+    }
+    //console.log(url);
+
+    if(downloadFile){
+      this.setState({
+        downloading: true
+      });
+      console.log("download started******************");
+
+      let resp = await RNFetchBlob
+      .config({
+          addAndroidDownloads : {
+              useDownloadManager : true, // <-- this is the only thing required
+              // Optional, override notification setting (default to true)
+              notification : true,
+              // Optional, but recommended since android DownloadManager will fail when
+              // the url does not contains a file extension, by default the mime type will be text/plain
+              mime : 'application/pdf',
+              description : 'File downloaded by download manager.',
+              //path: RNFetchBlob.fs.dirs.DownloadDir+"/dummy.pdf",
+              path: RNFetchBlob.fs.dirs.DownloadDir+"/"+item.id,
+              mediaScannable : true,
+          }
+      })
+      .fetch('GET', url);
+      const imageSource = appVars.apiUrl +"/"+item.singleSRC;
+      let imageResp = await RNFetchBlob
+      .config({
+          addAndroidDownloads : {
+              useDownloadManager : true, // <-- this is the only thing required
+              // Optional, override notification setting (default to true)
+              notification : true,
+              // Optional, but recommended since android DownloadManager will fail when
+              // the url does not contains a file extension, by default the mime type will be text/plain
+              mime : 'image/jpeg',
+              description : 'File downloaded by download manager.',
+              //path: RNFetchBlob.fs.dirs.DownloadDir+"/dummy.pdf",
+              path: RNFetchBlob.fs.dirs.DownloadDir+"/"+item.singleSRC,
+              mediaScannable : true,
+          }
+      })
+      .fetch('GET', imageSource);
+
+
+
+      this.setState({
+        downloading: false
+      });
+
+      // if you wanna open the pdfview screen
+      navigation.navigate('PDFView', {file: resp.path()});
+
+      const issueObject = {
+        path: resp.path(),
+        thumbNail: imageResp.path(),
+        date: item.date,
+        id: item.id
+      };
+      console.log("issue saved");
+      console.log(issueObject);
+      store.push('userIssues',issueObject );
     }
   }
   //console.log(url);
@@ -221,7 +284,8 @@ downloadFile = async (url,item)=>{
       <View style={styles.issue}>
         <TouchableOpacity activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
           <Image style={styles.image} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } >
-            {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator size="large" color="green"/>:<View></View>}
+            {(item.paywall)?<AwseomeIcon name="plus" style={styles.paywallicon}/>:<View></View>}
+            {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator style={appStyles.test} size="large" color="green"/>:<View></View>}
           </Image>
         </TouchableOpacity>
         <Text style={styles.details}>{item["date"]}</Text>
@@ -234,7 +298,7 @@ downloadFile = async (url,item)=>{
 	{
     //console.log("rendering");
     return (
-      <View style={appStyle.container}>
+      <View style={appStyles.container}>
 
       <FlatList
         data={this.state.data}
@@ -278,6 +342,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center"
+  },
+  paywallicon:{
+    color: appVars.colorWhite,
+    backgroundColor: appVars.colorMain,
+    padding: 20,
   },
   issue:{
     marginTop: 20,

@@ -19,12 +19,12 @@ class IssuesScreen extends Component {
     	console.log(res.path)
     );
     let issues = await store.get('userIssues');
-    console.log("got issues");
+    console.log("got existing my issuissues");
     console.log(issues);
     this.setState({
       myissues: issues
     });
-    
+
   }
   renderIssue = (item)=>{
     console.log("got item");
@@ -45,7 +45,7 @@ class IssuesScreen extends Component {
     );
   }
 
-  
+
   renderIssues = ()=>{
     return (
       <FlatList
@@ -102,4 +102,3 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   }
 });
-

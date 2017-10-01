@@ -16,6 +16,15 @@ module.exports = StyleSheet.create({
     marginBottom: 5,
   },
 
+  test: {
+    flex: 0,
+    backgroundColor:'red',
+    padding: 10,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: '#fff'
+  },
+
 //drawer
 
 drawerContainer: {

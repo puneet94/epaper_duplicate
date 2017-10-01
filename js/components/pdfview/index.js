@@ -5,25 +5,15 @@ import { StyleSheet,
     View,
     Text } from 'react-native'
 import appStyle from '../../appStyles';
-import store from 'react-native-simple-store';
 import Pdf from 'react-native-pdf';
 
 class PDFViewScreen extends Component {
 
-        // Update the object stored under the key 'localepapers'. We will add a new property of 'path' to this object
-
-
       render() {
           const navParams = this.props.navigation.state.params;
-          //let source = {uri:'https://mopo-server.de/files/em/epaper/demofiles/demo_01.pdf',cache:true};
           let source = {uri:navParams.file};
-          //let source = require('./test.pdf'); //ios only
-          //let source = {uri:"data:application/pdf;base64, ..."}; // this is a dummy
+          //let source = require('./test.pdf'); //maybe ios?
 
-          store.update('localepapers', {
-            path: navParams.file
-          })
-          
           return (
               <View style={styles.container}>
 
