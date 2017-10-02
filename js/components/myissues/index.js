@@ -20,17 +20,18 @@ class IssuesScreen extends Component {
       header: null
       //headerMode: 'none'
     };
- 
+  };
+
   getMyIssues = async ()=>{
 
 
     let issues = await store.get('userIssues');
-    
+
     this.setState({
       myissues: issues
     });
   }
-  componentDidMount =  ()=>{    
+  componentDidMount =  ()=>{
     this.getMyIssues();
   }
   checkIssueInDeleted = (item)=>{
@@ -97,7 +98,7 @@ class IssuesScreen extends Component {
     this.setState({
       enabledEdit: true
     },()=>{
-      
+
     });
   }
   resetDelete = ()=>{
@@ -158,9 +159,9 @@ class IssuesScreen extends Component {
      />
     );
   }
- 
+
   render=()=> {
-    
+
     const { navigation } = this.props
     return (
       <View style={appStyles.container}>
@@ -213,8 +214,8 @@ const headerStyles = {
 if (Platform.OS === 'ios') {
   headerStyles.borderBottomWidth= 2;
   headerStyles.borderBottomColor= 'rgba(0, 0, 0, .3)';
-  
-} 
+
+}
 var swidth = Dimensions.get('window').width;
 
 const styles = StyleSheet.create({

@@ -19,7 +19,7 @@ class DrawerContainer extends React.Component {
 
   }
   render = ()=> {
-    
+
     const { navigation } = this.props
     return (
     <View style={appStyles.drawerContainer}>
