@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
-import { Text,View,StyleSheet,Dimensions,Button,Image,FlatList,TouchableOpacity } from 'react-native'
+import { ToastAndroid,Platform,Text,View,StyleSheet,Dimensions,Image,FlatList,TouchableOpacity,Alert } from 'react-native'
 import store from 'react-native-simple-store';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
+
 class IssuesScreen extends Component {
   constructor(props){
     super(props);
@@ -17,16 +18,20 @@ class IssuesScreen extends Component {
   static navigationOptions = ({navigation})=>{
     return {
       header: null
+      //headerMode: 'none'
     };
-  };
-  componentDidMount = async ()=>{
+ 
+  getMyIssues = async ()=>{
+
+
     let issues = await store.get('userIssues');
-    console.log("got existing my issuissues");
-    console.log(issues);
+    
     this.setState({
       myissues: issues
     });
-
+  }
+  componentDidMount =  ()=>{    
+    this.getMyIssues();
   }
   checkIssueInDeleted = (item)=>{
     let deletedIssues = this.state.deletedIssues;
@@ -67,9 +72,6 @@ class IssuesScreen extends Component {
   }
 
   renderIssue = (item)=>{
-    console.log("got item");
-    console.log(item);
-    console.log(this.state.enabledEdit);
 
     return (
     <View style={styles.issue}>
@@ -95,8 +97,7 @@ class IssuesScreen extends Component {
     this.setState({
       enabledEdit: true
     },()=>{
-      console.log("sdkjbfbsdfsdf");
-      console.log(this.state.enabledEdit);
+      
     });
   }
   resetDelete = ()=>{
@@ -110,9 +111,36 @@ class IssuesScreen extends Component {
       deletedIssues: this.state.myissues
     });
   }
-  startDelete=()=>{
+  confirmDelete = ()=>{
+    if(this.state.deletedIssues.length===0){
+      ToastAndroid.show('No issue selected', ToastAndroid.SHORT);
+      return;
+    }else{
+      Alert.alert(
+        'Delete Issues',
+        `Are you sure you want to delete these ${this.state.deletedIssues.length} issues`,
+        [
+          {text: 'Delete', onPress: () => this.startDelete() },
+          {text: 'Cancel', onPress: () => console.log('OK Pressed'),style: 'cancel'},
+        ],
+        { cancelable: true }
+      );
+    }
+  }
+  startDelete= async ()=>{
+    const myissues = this.state.myissues.filter((issue)=>{
+      if(this.checkIssueInDeleted(issue)==-1){
+        return true;
+      }else{
+        return false;
+      }
+    });
+    await store.delete('userIssues');
+    for(let i = 0;i<myissues.length;i++){
+      await store.push('userIssues',myissues[i] );
+    }
     this.setState({
-      myissues: [],
+      myissues,
       deletedIssues:[],
       enabledEdit: false
     })
@@ -130,24 +158,26 @@ class IssuesScreen extends Component {
      />
     );
   }
+ 
   render=()=> {
+    
     const { navigation } = this.props
     return (
       <View style={appStyles.container}>
         <View style={styles.headerContainer}>
-          <View style={{flex:0.5,flexDirection:"row"}}>
+          <View style={{flex:1,flexDirection:"row"}}>
             <TouchableOpacity onPress={()=>this.props.navigation.navigate('DrawerOpen')}>
-            <AwseomeIcon size={24} name="bars"  style={{paddingLeft:15}} color="black"/>
+              <AwseomeIcon size={20} name="bars" style={{paddingLeft:15,marginTop:3}} color="black"/>
             </TouchableOpacity>
-            <View style={{marginLeft: 30,alignItems:"flex-start"}}>
-              <Text style={{color:"black",fontSize: 18,fontWeight:'600'}}>{"MY ISSUES"}</Text>
+            <View style={{marginLeft: 35,alignItems:"flex-start"}}>
+              <Text style={{color:"black",fontSize: 20,fontWeight:'600'}}>{"MY ISSUES"}</Text>
             </View>
           </View>
           {this.state.enabledEdit?
-          <View style={{flexDirection:"row"}}>
-          <AwseomeIcon size={24} name="check"  color="black" onPress={()=>this.selectAll()}/>
-          <AwseomeIcon size={24} name="trash"  color="black" onPress={()=>{this.startDelete()}}/>
-          <AwseomeIcon size={24} name="times"  color="black" onPress={()=>{this.resetDelete()}}/>
+          <View style={{flex:0.5,flexDirection:"row",justifyContent:"space-around"}}>
+            <AwseomeIcon size={24} name="check"  color="black" onPress={()=>this.selectAll()}/>
+            <AwseomeIcon size={24} name="trash"  color={this.state.deletedIssues.length?"black":"#b2b2b2"} onPress={()=>{this.confirmDelete()}}/>
+            <AwseomeIcon size={24} name="times"  color="black" onPress={()=>{this.resetDelete()}}/>
             </View>:
           <TouchableOpacity onPress={()=>this.startEdit()}>
             <AwseomeIcon size={24} name="pencil-square-o" style={{paddingRight:15}} color="black"/>
@@ -165,23 +195,30 @@ class IssuesScreen extends Component {
   }
 }
 export default IssuesScreen;
+const headerStyles = {
+  flex:0.8,
+  backgroundColor: 'white',
+  justifyContent:"space-between",
+  flexDirection:"row",
+  paddingTop: 15,
+  paddingBottom: 0,
+  borderBottomWidth: 0,
+  shadowColor: 'black',
+  shadowOffset: { width: 10, height: 20 },
+  shadowOpacity: 1,
+  shadowRadius: 1,
+  borderBottomColor: "black",
+  elevation : 5
+};
+if (Platform.OS === 'ios') {
+  headerStyles.borderBottomWidth= 2;
+  headerStyles.borderBottomColor= 'rgba(0, 0, 0, .3)';
+  
+} 
 var swidth = Dimensions.get('window').width;
 
 const styles = StyleSheet.create({
-  headerContainer:{
-    flex:1,
-    justifyContent:"space-between",
-    flexDirection:"row",
-    paddingTop: 15,
-    paddingBottom: 0,
-    borderBottomWidth: 0,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.8,
-    shadowRadius: 1,
-    elevation: 5,
-    borderBottomColor: "black"
-  },
+  headerContainer:headerStyles,
   demo:{
     color: 'black',
   },
@@ -197,8 +234,7 @@ const styles = StyleSheet.create({
     borderColor: appVars.colorMain,
     flex: 1,
     justifyContent: "flex-start",
-    alignItems: "flex-end",
-
+    alignItems: "flex-end"
   },
   issue:{
     marginTop: 20,
