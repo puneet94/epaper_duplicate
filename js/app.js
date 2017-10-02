@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
   AppRegistry,
   Text,
-  View
+  View,
+  TouchableWithoutFeedback
 } from 'react-native';
 
 import { StackNavigator } from 'react-navigation';
@@ -20,13 +21,15 @@ const ePaperApp = StackNavigator({
       navigationOptions: ({navigation}) => ({
         headerStyle: appStyles.headerWrapper,
         headerTitleStyle: appStyles.headerTitle,
-        headerLeft: <AwseomeIcon name="bars" style={appStyles.headerIcon} onPress={() => {
-        if (navigation.state.index === 0) {
-          navigation.navigate('DrawerOpen')
-        } else {
-          navigation.navigate('DrawerClose')
-        }
-      }} />
+        headerLeft: <TouchableWithoutFeedback onPress={() => {
+          if (navigation.state.index === 0) {
+            navigation.navigate('DrawerOpen')
+          } else {
+            navigation.navigate('DrawerClose')
+          }
+        }}> 
+          <AwseomeIcon name="bars" style={appStyles.headerIcon}  />
+        </TouchableWithoutFeedback>
     }),
   },
   PDFView: {
