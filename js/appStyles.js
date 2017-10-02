@@ -43,7 +43,7 @@ drawerLogo: {
   },
 
 drawerSeperator: {
-  backgroundColor: 'rgba(0, 0, 0, 0.1)',
+  backgroundColor: appVars.colorDrawerSeperatorBackgroundColor,
   height: 6,
 },
 

@@ -10,13 +10,13 @@ import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 
 class DrawerContainer extends React.Component {
   isActiveClass = (key)=>{
-    
+
     if(this.props.activeItemKey.toLowerCase()===key.toLowerCase()){
       return {
-        backgroundColor: "black"
+        backgroundColor: appVars.colorDrawerIsActiveBackgroundColor
       };
     }
-    
+
   }
   render = ()=> {
     

@@ -20,8 +20,10 @@ class IssuesScreen extends Component {
       header: null
       //headerMode: 'none'
     };
-  };
+ 
   getMyIssues = async ()=>{
+
+
     let issues = await store.get('userIssues');
     
     this.setState({
@@ -36,7 +38,7 @@ class IssuesScreen extends Component {
     for(let i=0;i<deletedIssues.length;i++){
       if(deletedIssues[i].id==item.id){
         return i;
-        
+
       }
     }
     return -1;
@@ -61,15 +63,16 @@ class IssuesScreen extends Component {
             ...this.state.deletedIssues.slice(deletedIndex + 1)]
         })
       }
-      
+
     }else{
       const { navigation } = this.props;
       navigation.navigate('PDFView', {file: item.path});
     }
-    
+
   }
 
   renderIssue = (item)=>{
+
     return (
     <View style={styles.issue}>
       <TouchableOpacity activeOpacity = { .5 } onPress={ ()=>{
