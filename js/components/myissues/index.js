@@ -5,6 +5,7 @@ import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
+
 class IssuesScreen extends Component {
   constructor(props){
     super(props);
@@ -14,12 +15,17 @@ class IssuesScreen extends Component {
       enabledEdit: false
     }
   }
+
   static navigationOptions = ({navigation})=>{
+
     return {
-      header: null
+      //header: null
+      headerRight: <AwseomeIcon size={24} name="pencil-square-o" color="black" style={{paddingRight:15}} />
     };
   };
-  componentDidMount = async ()=>{    
+
+
+  componentDidMount = async ()=>{
     let issues = await store.get('userIssues');
     console.log("got existing my issuissues");
     console.log(issues);
@@ -28,12 +34,13 @@ class IssuesScreen extends Component {
     });
 
   }
+
   checkIssueInDeleted = (item)=>{
     let deletedIssues = this.state.deletedIssues;
     for(let i=0;i<deletedIssues.length;i++){
       if(deletedIssues[i].id==item.id){
         return i;
-        
+
       }
     }
     return -1;
@@ -58,19 +65,19 @@ class IssuesScreen extends Component {
             ...this.state.deletedIssues.slice(deletedIndex + 1)]
         })
       }
-      
+
     }else{
       const { navigation } = this.props;
       navigation.navigate('PDFView', {file: item.path});
     }
-    
+
   }
 
   renderIssue = (item)=>{
     console.log("got item");
     console.log(item);
     console.log(this.state.enabledEdit);
-    
+
     return (
     <View style={styles.issue}>
       <TouchableOpacity activeOpacity = { .5 } onPress={ ()=>{
@@ -134,32 +141,22 @@ class IssuesScreen extends Component {
     const { navigation } = this.props
     return (
       <View style={appStyles.container}>
-        <View style={styles.headerContainer}>
-          <View style={{flex:0.5,flexDirection:"row"}}>
-            <TouchableOpacity onPress={()=>this.props.navigation.navigate('DrawerOpen')}>
-            <AwseomeIcon size={24} name="bars"  style={{paddingLeft:15}} color="black"/>
-            </TouchableOpacity>
-            <View style={{marginLeft: 30,alignItems:"flex-start"}}>
-              <Text style={{color:"black",fontSize: 18,fontWeight:'600'}}>{"MY ISSUES"}</Text>
-            </View>
-          </View>
+
+
           {this.state.enabledEdit?
           <View style={{flexDirection:"row"}}>
-          <AwseomeIcon size={24} name="check"  color="black" onPress={()=>this.selectAll()}/>
-          <AwseomeIcon size={24} name="trash"  color="black" onPress={()=>{this.startDelete()}}/>
-          <AwseomeIcon size={24} name="times"  color="black" onPress={()=>{this.resetDelete()}}/>
-            </View>:
+          <AwseomeIcon size={24} name="check"  color="black" style={{paddingRight:15}} onPress={()=>this.selectAll()}/>
+          <AwseomeIcon size={24} name="trash"  color="black" style={{paddingRight:15}} onPress={()=>{this.startDelete()}}/>
+          <AwseomeIcon size={24} name="times"  color="black" style={{paddingRight:15}} onPress={()=>{this.resetDelete()}}/>
+          </View>:
           <TouchableOpacity onPress={()=>this.startEdit()}>
             <AwseomeIcon size={24} name="pencil-square-o" style={{paddingRight:15}} color="black"/>
           </TouchableOpacity>}
-        </View>
-        <View style={{flex:11}}>
-          <View style={{flex:1}}>
+
           {
             this.state.myissues && this.renderIssues()
           }
-          </View>
-        </View>
+
       </View>
     )
   }
