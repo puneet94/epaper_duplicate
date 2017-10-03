@@ -220,7 +220,7 @@ fetchdata = async () => {
         navigation.navigate('Account');
         return;
       }
-      
+
     }
     this.setState({
       currentItem: item.id
@@ -230,18 +230,29 @@ fetchdata = async () => {
 
   renderItem = (item) =>{
     //console.log(appVars.apiUrl +"/"+item.singleSRC);
-    
+
     return(
-      <View style={styles.issue}>
-        <TouchableOpacity activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
+        <TouchableOpacity style={styles.issue} activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
           <Image style={styles.image} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } >
-            {(item.paywall)?<AwseomeIcon name="plus" style={styles.paywallicon}/>:<View></View>}
-            {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator style={appStyles.test} size="large" color="green"/>:<View></View>}
+          {(item.paywall)?<View><View style={styles.paywallIconTriangle} /><AwseomeIcon style={styles.paywallIcon} name="plus" /></View>:<View></View>}
+          {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator style={appStyles.test} size="large" color={appVars.colorMain}/>:<View></View>}
+          </Image>
+          <Text style={styles.issuedate}>{item["date"]}</Text>
+        </TouchableOpacity>
+    );
+  }
+
+  renderItemNewst = (item) =>{
+    //console.log(appVars.apiUrl +"/"+item.singleSRC);
+    return(
+      <View style={styles.maincontainerWrapper}>
+        <TouchableOpacity style={styles.issueNewest} activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
+          <Image style={styles.imageNewest} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } >
+          {(item.paywall)?<View><View style={styles.paywallIconTriangle} /><AwseomeIcon style={styles.paywallIcon} name="plus" /></View>:<View></View>}
+          {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator style={appStyles.test} size="large" color={appVars.colorMain}/>:<View></View>}
           </Image>
         </TouchableOpacity>
-        <Text style={styles.details}>{item["date"]}</Text>
-      </View>
-
+        </View>
     );
   }
 
@@ -249,11 +260,11 @@ fetchdata = async () => {
 	{
     //console.log("rendering");
     return (
-      <View style={appStyles.container}>
-
+      <View>
+      <View style={styles.maincontainer}>
       <FlatList
         data={this.state.data}
-        numColumns={2}
+        numColumns={1}
         refreshControl={
           <RefreshControl
             refreshing={this.state.refreshing}
@@ -261,7 +272,17 @@ fetchdata = async () => {
             colors={[appVars.colorMain]}
           />
           }
-        ItemSeparatorComponent={this.renderSeparator}
+        keyExtractor={(item,index)=> {
+          return item.id;
+          }}
+        renderItem={({item}) => this.renderItemNewst(item)}
+       />
+      </View>
+
+      <View style={styles.horizontalContainer}>
+      <FlatList
+        data={this.state.data}
+        horizontal={true}
         onEndReached={this.handlePageEnd}
         onEndReachedThreshold={0.5}
         keyExtractor={(item,index)=> {
@@ -270,6 +291,7 @@ fetchdata = async () => {
           }}
         renderItem={({item}) => this.renderItem(item)}
        />
+       </View>
       </View>
     );
 	}
@@ -278,32 +300,97 @@ fetchdata = async () => {
 export default HomeScreen;
 
 var swidth = Dimensions.get('window').width;
+var sheight = Dimensions.get('window').height;
+var sratio = sheight / swidth;
 
 const styles = StyleSheet.create({
-  demo:{
-    color: 'black',
+
+  maincontainer: {
+    backgroundColor: appVars.colorWhite,
+    height: (sheight * .75)-80,
+    shadowColor: 'black',
+    shadowOffset: { width: 10, height: 20 },
+    shadowOpacity: 1,
+    shadowRadius: 1,
+    borderBottomColor: "black",
+    elevation : 5,
+    paddingTop: 15,
   },
-  image:{
-    width: (swidth * .5)-8,
-    height: 300,
-    marginLeft: 5,
-    resizeMode: 'contain',
-    borderWidth: 2,
-    borderColor: appVars.colorMain,
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
+
+  maincontainerWrapper: {
+    justifyContent: 'center',
+    alignItems: 'center',
   },
-  paywallicon:{
-    color: appVars.colorWhite,
-    backgroundColor: appVars.colorMain,
-    padding: 20,
+
+  horizontalContainer: {
+    height: (sheight * .25),
+    backgroundColor: '#f0f0f0',
   },
+
   issue:{
-    marginTop: 20,
-    marginBottom: 10,
+    marginTop: 10,
+    marginLeft: 10,
+    padding: 3,
+    backgroundColor: appVars.colorWhite,
+    borderColor: '#cccccc',
+    borderWidth: 1,
   },
-  details:{
-    fontWeight: 'bold',
+
+  issueNewest:{
+    width: (swidth  * .75),
+    height: (sheight * .75)-105,
+    padding: 3,
+    backgroundColor: appVars.colorWhite,
+    borderColor: '#cccccc',
+    borderWidth: 1,
+  },
+
+  image:{
+    width: (swidth/4)-20,
+    height: (sheight * .25)-46,
+    resizeMode: 'contain',
+  },
+
+  imageNewest:{
+    width: (swidth  * .75)-8,
+    height: (sheight * .75)-105,
+    resizeMode: 'contain',
+  },
+
+
+  paywallIconTriangle:{
+    position: 'absolute',
+    right: 0,
+    width: 0,
+    height: 0,
+    backgroundColor: 'transparent',
+    borderStyle: 'solid',
+    borderRightWidth: 32,
+    borderTopWidth: 32,
+    borderRightColor: 'transparent',
+    borderTopColor: appVars.colorMain,
+    transform: [
+      {rotate: '90deg'}
+    ]
+  },
+
+  paywallIcon: {
+    position: 'absolute',
+    backgroundColor: 'transparent',
+    right: 2,
+    top: 2,
+    fontSize: 16,
+    color: appVars.colorWhite,
+  },
+
+  issuedate:{
+    backgroundColor: appVars.colorMain,
+    color: appVars.colorWhite,
+    textAlign: 'center',
+    fontSize: 12,
+    padding: 3,
+    fontFamily: appVars.fontMain,
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 });

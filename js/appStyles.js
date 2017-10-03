@@ -5,11 +5,13 @@ module.exports = StyleSheet.create({
     flex: 1,
     backgroundColor: '#ffffff',
   },
+
   welcome: {
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
   },
+
   instructions: {
     textAlign: 'center',
     color: appVars.colorMain,
@@ -17,12 +19,8 @@ module.exports = StyleSheet.create({
   },
 
   test: {
-    flex: 0,
-    backgroundColor:'red',
-    padding: 10,
-    borderRadius: 10,
-    borderWidth: 1,
-    borderColor: '#fff'
+    flex: 1,
+    backgroundColor:'rgba(255, 255, 255, 0.8)',
   },
 
 //drawer
@@ -50,7 +48,6 @@ drawerSeperator: {
 drawerItem: {
   alignItems: 'center',
   flexDirection: 'row',
-  justifyContent: 'flex-start',
   padding: 15,
 },
 
@@ -58,6 +55,7 @@ drawerIcon: {
     color: appVars.colorWhite,
     fontSize: 22,
     width: 25,
+    height: 25,
     textAlign: 'center',
 },
 
@@ -66,17 +64,23 @@ drawerLabel: {
   fontFamily: appVars.fontMain,
   color: appVars.colorWhite,
   paddingLeft: 8,
-  fontWeight: 'bold',
 },
 
 //header
   headerWrapper: {
       backgroundColor: appVars.colorWhite,
   },
+
+  iconWrapper: {
+    flex:1,
+    width: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: appVars.colorWhite,
+  },
   headerIcon: {
-      color: appVars.colorBlack,
+      color: appVars.colorMain,
       fontSize: 20,
-      paddingLeft: 15,
   },
 
 });
