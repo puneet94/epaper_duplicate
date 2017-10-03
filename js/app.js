@@ -28,7 +28,9 @@ const ePaperApp = StackNavigator({
             navigation.navigate('DrawerClose')
           }
         }}>
-          <AwseomeIcon name="bars" style={appStyles.headerIcon}  />
+          <View style={appStyles.iconWrapper}>
+            <AwseomeIcon name="bars" style={appStyles.headerIcon} />
+          </View>
         </TouchableWithoutFeedback>
     }),
   },
