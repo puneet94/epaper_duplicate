@@ -6,10 +6,18 @@ module.exports = {
 
   apiUrl: "https://api.mopo-server.de",
   apiKey: "04a0a1ca18a1beaa24dfcecfe224d53f",
+
   // we can change now the limit of items. like get 4 items on phones and like 8 on tablets...
-  apiLimit: "4",
-  // which epaper archives should be shown
-  apiArchives: "9,10",
+  // How many epaper-items should be grabbed per call.
+  apiEpaperLimit: "4",
+  // which epaper-archives should be shown
+  apiEpaperArchives: "9,10",
+
+  // Settings for the new Newsfeed
+  // How many newsitems should be grabbed per call.
+  apiNewsListLimit: "4",
+  // which news archives should be shown
+  apiNewsListArchives: "1,2,3,4,5",
 
 
   serverurl: "https://mopo-server.de",
@@ -31,6 +39,7 @@ module.exports = {
   //labels
   labelHome: "Home",
   labelMyIssues: "My issues",
+  labelNewsList: "Newsfeed",
   labelAccount: "Account",
 
   STORAGE_KEY : 'TOKEN',

@@ -53,7 +53,7 @@ class HomeScreen extends Component{
 
 fetchdata = async () => {
   const { page } = this.state;
-  const api = appVars.apiUrl+"/epaper.html?authtoken="+appVars.apiKey+"&limit="+appVars.apiLimit+"&pid="+appVars.apiArchives;
+  const api = appVars.apiUrl+"/epaper.html?authtoken="+appVars.apiKey+"&limit="+appVars.apiEpaperLimit+"&pid="+appVars.apiEpaperArchives;
   let tempapi= api+"&page_n120=" + this.state.page.toString();
   this.setState({ loading: true});
 

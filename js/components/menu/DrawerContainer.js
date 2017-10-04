@@ -44,6 +44,15 @@ class DrawerContainer extends React.Component {
 
       <View style={appStyles.drawerSeperator} />
 
+      <TouchableWithoutFeedback onPress={() => navigation.navigate('NewsList')} >
+        <View style={[appStyles.drawerItem,this.isActiveClass('newslist')]}>
+          <AwseomeIcon name="file-text-o" style={appStyles.drawerIcon}/>
+          <Text style={appStyles.drawerLabel}>{appVars.labelNewsList.toUpperCase()}</Text>
+        </View>
+      </TouchableWithoutFeedback>
+
+      <View style={appStyles.drawerSeperator} />
+
       <TouchableWithoutFeedback onPress={() => navigation.navigate('Account')} style={this.isActiveClass('account')}>
         <View style={[appStyles.drawerItem,this.isActiveClass('account')]}>
           <AwseomeIcon name="user" style={appStyles.drawerIcon}/>
