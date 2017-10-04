@@ -15,9 +15,9 @@ module.exports = {
 
   // Settings for the new Newsfeed
   // How many newsitems should be grabbed per call.
-  apiNewsListLimit: "4",
+  apiNewsLimit: "5",
   // which news archives should be shown
-  apiNewsListArchives: "1,2,3,4,5",
+  apiNewsArchives: "1,2,3,4,5,6,7,8,9,11,12,21,22",
 
 
   serverurl: "https://mopo-server.de",

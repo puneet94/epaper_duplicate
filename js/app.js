@@ -14,6 +14,7 @@ import appStyles from './appStyles';
 
 import MenuScreen from './components/menu';
 import PDFViewScreen from "./components/pdfview";
+import NewsDetailScreen from "./components/newsdetail";
 
 const ePaperApp = StackNavigator({
     Menu : {
@@ -41,6 +42,14 @@ const ePaperApp = StackNavigator({
       headerStyle: appStyles.headerWrapper,
       headerTitleStyle: appStyles.headerTitle,
     }),
+  },
+  NewsDetail: {
+      screen: NewsDetailScreen,
+      navigationOptions : ({ navigation }) => ({
+        headerTitle: 'Newsdetail',
+        headerStyle: appStyles.headerWrapper,
+        headerTitleStyle: appStyles.headerTitle,
+      }),
   },
 });
 
