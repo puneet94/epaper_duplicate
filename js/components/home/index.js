@@ -325,7 +325,7 @@ const styles = StyleSheet.create({
 
   horizontalContainer: {
     height: (sheight * .25),
-    backgroundColor: '#f0f0f0',
+    backgroundColor: appVars.colorSeperatorColor,
   },
 
   issue:{

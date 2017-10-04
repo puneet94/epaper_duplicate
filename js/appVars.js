@@ -30,6 +30,7 @@ module.exports = {
   colorWhite: "#ffffff",
   colorBlack: "#000000",
   colorMain: "#006633",
+  colorSeperatorColor: "rgba(0, 0, 0, 0.1)",
   colorDrawerIsActiveBackgroundColor: "rgba(0, 0, 0, 0.3)",
   colorDrawerSeperatorBackgroundColor: "rgba(0, 0, 0, 0.1)",
 

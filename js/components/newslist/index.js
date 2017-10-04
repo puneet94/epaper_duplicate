@@ -101,7 +101,7 @@ fetchdata = async () => {
     return(
       <View
       style={{
-        backgroundColor: 'gray',
+        backgroundColor: appVars.colorSeperatorColor,
         height: 5,
       }}
     />
@@ -133,16 +133,19 @@ fetchdata = async () => {
       <View style={styles.newslist}>
         <TouchableOpacity activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
         {(item.paywall)?<View><View style={styles.paywallIconTriangle} /><AwseomeIcon style={styles.paywallIcon} name="plus" /></View>:<View></View>}
-
-          <Image style={styles.image} source={{uri: appVars.apiUrl +"/"+item.picture.img.src} } >
-          </Image>
-
-          <Text style={styles.headline}>{item.headline}</Text>
-          <Text style={styles.city}>{item.city}</Text>
-          <Text style={styles.teaser}>{item.text}</Text>
+        <Text style={styles.headline}>{item.headline}</Text>
+          <View style={{flex: 1, flexDirection: 'row'}}>
+          <View style={styles.imageContainer}>
+            <Image style={styles.image} source={{uri: appVars.apiUrl +"/"+item.picture.img.src} } />
+          </View>
+          <View style={styles.newslistInner}>
+            <Text style={styles.details}>{item["date"]}</Text>
+            <Text style={styles.city}>{item.city}</Text>
+            <Text style={styles.teaser}>{item.text}</Text>
+            </View>
+          </View>
 
         </TouchableOpacity>
-        <Text style={styles.details}>{item["date"]}</Text>
       </View>
 
     );
@@ -150,7 +153,6 @@ fetchdata = async () => {
 
 	render()
 	{
-    //console.log("rendering");
     return (
       <View style={appStyles.container}>
 
@@ -166,7 +168,7 @@ fetchdata = async () => {
           }
         ItemSeparatorComponent={this.renderSeparator}
         onEndReached={this.handlePageEnd}
-        onEndReachedThreshold={0.5}
+        onEndReachedThreshold={2}
         keyExtractor={(item,index)=> {
           //console.log(item.id);
           return item.id;
@@ -184,13 +186,26 @@ var swidth = Dimensions.get('window').width;
 
 const styles = StyleSheet.create({
 
+  imageContainer: {
+    borderColor: '#cccccc',
+    borderWidth: 1,
+    width: (swidth*0.25)+8,
+    height: (swidth*0.25)+8,
+    marginRight: 10,
+  },
+
   image:{
     width: (swidth*0.25),
     height: (swidth*0.25),
+    margin: 3,
   },
 
   newslist: {
     margin: 5,
+  },
+
+  newslistInner: {
+    width: (swidth*0.75)-28,
   },
 
   paywallIconTriangle:{
