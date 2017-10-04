@@ -35,7 +35,10 @@ module.exports = {
   colorDrawerSeperatorBackgroundColor: "rgba(0, 0, 0, 0.1)",
 
   //fonts
-  fontMain: "GothamNarrow-Medium",
+  fontMain: "GothamNarrow-Bold",
+  fontSub: "GothamNarrow-Book",
+  fontHeadline: "MafraCondensedDeckMedium",
+  fontText: "CandidaStd-Roman",
 
   //labels
   labelHome: "Home",
