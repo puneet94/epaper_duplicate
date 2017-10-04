@@ -229,11 +229,12 @@ fetchdata = async () => {
   }
 
   renderItem = (item) =>{
-    //console.log(appVars.apiUrl +"/"+item.singleSRC);
+    //use now smaller (less kb and smaller ins size) thumbnails from the api
+    //console.log(appVars.apiUrl +"/"+item.picture.img.src);
 
     return(
         <TouchableOpacity style={styles.issue} activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
-          <Image style={styles.image} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } >
+          <Image style={styles.image} source={{uri: appVars.apiUrl +"/"+item.picture.img.src} } >
           {(item.paywall)?<View><View style={styles.paywallIconTriangle} /><AwseomeIcon style={styles.paywallIcon} name="plus" /></View>:<View></View>}
           {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator style={appStyles.test} size="large" color={appVars.colorMain}/>:<View></View>}
           </Image>
