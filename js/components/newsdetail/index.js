@@ -10,8 +10,9 @@ import {
     TouchableOpacity,
     Dimensions,
     RefreshControl,
+
 } from 'react-native';
-import { NavigationActions } from 'react-navigation';
+import HTMLView from 'react-native-htmlview';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
@@ -88,8 +89,8 @@ fetchdata = async () => {
             <Text>{item.caption}</Text>
           </View>
             <Text style={styles.teaser}>{item.teaser}</Text>
-            <View><Text style={styles.city}>{item.city} {item.text}</Text></View>
-
+            <View><Text style={styles.city}>{item.city}</Text></View>
+            <HTMLView value={item.text} stylesheet={htmlstyles}  onLinkPress={(url) => alert('clicked link:'+url)} />
       </View>
 
     );
@@ -124,16 +125,29 @@ var swidth = Dimensions.get('window').width;
 
 // width of standard ~5" screen mobile device is like 320
 // just testing responsive fontsizes to ScreenWidth.
+const htmlstyles =StyleSheet.create({
+  p: {
+    fontSize: swidth/24.610,
+    fontFamily: appVars.fontText,
+    color: appVars.colorBlack,
+    lineHeight: swidth/20,
+  },
+
+  strong: {
+    fontWeight:'bold',
+  },
+  a: {
+    color: appVars.colorMain,
+    fontWeight:'bold',
+  },
+  h3: {
+    fontSize: swidth/16,
+    fontFamily: appVars.fontHeadline,
+    color: appVars.colorBlack,
+  }
+});
 
 const styles = StyleSheet.create({
-
-  test: {
-    position: 'absolute',
-    top: 0,
-    right: 0,
-   zIndex: 100,
-  elevation: 100,
-  },
 
   imageContainer: {
     borderColor: '#cccccc',
@@ -148,7 +162,7 @@ const styles = StyleSheet.create({
     margin: 3,
   },
 
-  newslist: {
+  news: {
     margin: 5,
   },
 
