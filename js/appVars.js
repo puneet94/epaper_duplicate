@@ -2,6 +2,13 @@ import {Platform, Dimensions} from 'react-native';
 
 const ScreenWidth = Dimensions.get('window').width;
 
+  // WTF - needs to edit the Mafra font name
+  if(Platform.OS === 'android') {
+  var fontHeadline = "MafraCondensedDeckMedium";
+  } else {
+  var fontHeadline = "Mafra Condensed Deck";
+  }
+
 module.exports = {
 
   apiUrl: "https://api.mopo-server.de",
@@ -37,7 +44,7 @@ module.exports = {
   //fonts
   fontMain: "GothamNarrow-Bold",
   fontSub: "GothamNarrow-Book",
-  fontHeadline: "MafraCondensedDeckMedium",
+  fontHeadline: fontHeadline,
   fontText: "CandidaStd-Roman",
 
   //labels
