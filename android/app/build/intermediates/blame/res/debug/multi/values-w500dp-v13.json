@@ -1,5 +1,29 @@
 [
     {
+        "outputFile": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w500dp-v13\\values-w500dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 54,
+                    "endOffset": 105
+                },
+                "from": {
+                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-w500dp\\values-w500dp.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 283,
+                        "endColumn": 54,
+                        "endOffset": 333
+                    }
+                }
+            }
+        ]
+    },
+    {
         "outputFile": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w500dp-v13\\values-w500dp-v13.xml",
         "map": [
             {
@@ -48,30 +72,6 @@
         ]
     },
     {
-        "outputFile": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w500dp-v13\\values-w500dp-v13.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 54,
-                    "endOffset": 105
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-w500dp\\values-w500dp.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 283,
-                        "endColumn": 54,
-                        "endOffset": 333
-                    }
-                }
-            }
-        ]
-    },
-    {
         "outputFile": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w500dp-v13/values-w500dp-v13.xml",
         "map": [
             {
@@ -96,7 +96,7 @@
         ]
     },
     {
-        "outputFile": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w500dp-v13\\values-w500dp-v13.xml",
+        "outputFile": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w500dp-v13\\values-w500dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -107,7 +107,7 @@
                     "endOffset": 105
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-w500dp\\values-w500dp.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-w500dp\\values-w500dp.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

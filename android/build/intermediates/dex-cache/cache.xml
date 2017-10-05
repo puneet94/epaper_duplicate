@@ -93,6 +93,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/epaper/react-native-youtube/unspecified/jars/libs/YouTubeAndroidPlayerApi.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a62cbd1027677c96026b383de62307faa6a4da8f">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/YouTubeAndroidPlayerApi_2d4902724a3410c89d38d87a197f23076658399a.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -171,6 +180,15 @@
         revision="23.0.1"
         sha1="acc7f730a7b9cccfc9251d727165bc37bbb8dd67">
         <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.github.barteksc-android-pdf-viewer-2.7.0_0082b70070a7a795fe012e1ca42dd397102e2cc9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/epaper/react-native-youtube/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d34d6cdd207df2f59914796b0dfd585536a8e739">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/epaper-react-native-youtube-unspecified_a85faaa86c586eba91734e7d0bd8c5512085270a.jar" />
     </item>
     <item
         is-multidex="false"

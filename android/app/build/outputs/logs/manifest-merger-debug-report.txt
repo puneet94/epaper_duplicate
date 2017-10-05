@@ -34,6 +34,7 @@ ADDED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml:
 		ADDED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml:9:22-78
 uses-sdk
 ADDED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml:11:5-13:41
+MERGED from [epaper:react-native-youtube:unspecified] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/epaper/react-native-youtube/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [epaper:react-native-pdf:unspecified] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/epaper/react-native-pdf/unspecified/AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.barteksc:android-pdf-viewer:2.7.0] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.github.barteksc/android-pdf-viewer/2.7.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.barteksc:pdfium-android:1.7.0] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.github.barteksc/pdfium-android/1.7.0/AndroidManifest.xml:7:5-9:41
