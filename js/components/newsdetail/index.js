@@ -10,24 +10,29 @@ import {
     TouchableOpacity,
     Dimensions,
     RefreshControl,
+    Button,
 
 } from 'react-native';
 import HTMLView from 'react-native-htmlview';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
+import { NavigationActions } from 'react-navigation';
 
 import store from 'react-native-simple-store';
 
 class NewsDetailScreen extends Component{
 
-  static navigationOptions = ({navigation})=>{
+  _showAlert =()=>{
+      alert('test');
+    }
 
-    return {
-      headerRight: <AwseomeIcon name="share-alt" />
-      //headerMode: 'none'
-    };
-  };
+  static navigationOptions = ({ navigation }) => {
+     const { params = {} } = navigation.state;
+     return {
+         headerRight: <Button title="ALERT" onPress={() => params.handleAlert()} />
+     };
+ };
 
   constructor(props){
     super(props);
@@ -40,6 +45,7 @@ class NewsDetailScreen extends Component{
   }
 
   componentDidMount(){
+    this.props.navigation.setParams({ handleAlert: this._showAlert });
     this.fetchdata();
   }
 
@@ -80,7 +86,7 @@ fetchdata = async () => {
 
       <View style={styles.news}>
         <Text>{item.date}</Text>
-        <Text>{item.subheadline}</Text>
+        <Text>{item.topheadline}</Text>
         <Text style={styles.headline}>{item.headline}</Text>
         <Text>{item.subheadline}</Text>
         <Text>{item.editor}</Text>
@@ -90,7 +96,7 @@ fetchdata = async () => {
           </View>
             <Text style={styles.teaser}>{item.teaser}</Text>
             <View><Text style={styles.city}>{item.city}</Text></View>
-            <HTMLView value={item.text} stylesheet={htmlstyles}  onLinkPress={(url) => alert('clicked link:'+url)} />
+            <HTMLView addLineBreaks={false} value={item.text} stylesheet={htmlstyles} onLinkPress={(url) => alert('clicked link:'+url)} />
       </View>
 
     );
@@ -134,11 +140,11 @@ const htmlstyles =StyleSheet.create({
   },
 
   strong: {
-    fontWeight:'bold',
+    fontWeight: '700'
   },
   a: {
     color: appVars.colorMain,
-    fontWeight:'bold',
+    fontWeight: '700'
   },
   h3: {
     fontSize: swidth/16,
