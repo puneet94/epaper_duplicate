@@ -46,7 +46,6 @@ const ePaperApp = StackNavigator({
   NewsDetail: {
       screen: NewsDetailScreen,
       navigationOptions : ({ navigation }) => ({
-        headerTitle: 'Newsdetail',
         headerStyle: appStyles.headerWrapper,
         headerTitleStyle: appStyles.headerTitle,
       }),

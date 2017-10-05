@@ -122,8 +122,9 @@ fetchdata = async () => {
     this.setState({
       currentItem: item.id
     });
+
     const { navigation } = this.props;
-    navigation.navigate('NewsDetail');
+    navigation.navigate('NewsDetail', {newsid: item.id});
   }
 
   renderItem = (item) =>{
@@ -140,8 +141,8 @@ fetchdata = async () => {
           </View>
           <View style={styles.newslistInner}>
             <Text style={styles.details}>{item["date"]}</Text>
-            <Text style={styles.city}>{item.city}</Text>
-            <Text style={styles.teaser}>{item.text}</Text>
+
+            <Text style={styles.teaser}><Text style={styles.city}>{item.city}</Text>{item.text}</Text>
             </View>
           </View>
 
@@ -184,6 +185,9 @@ export default NewsListScreen;
 
 var swidth = Dimensions.get('window').width;
 
+// width of standard ~5" screen mobile device is like 320
+// just testing responsive fontsizes to ScreenWidth.
+
 const styles = StyleSheet.create({
 
   imageContainer: {
@@ -206,6 +210,22 @@ const styles = StyleSheet.create({
 
   newslistInner: {
     width: (swidth*0.75)-28,
+  },
+
+  headline: {
+    //fontsize:20,
+    fontSize: swidth/16,
+    fontFamily: appVars.fontHeadline,
+    color: appVars.colorBlack,
+    paddingBottom: 5,
+  },
+
+  teaser: {
+    //fontSize: 13,
+    fontSize: swidth/24.610,
+    fontFamily: appVars.fontText,
+    color: appVars.colorBlack,
+    lineHeight: swidth/20,
   },
 
   paywallIconTriangle:{
