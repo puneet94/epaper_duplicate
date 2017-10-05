@@ -14,6 +14,7 @@ import {
 
 } from 'react-native';
 import HTMLView from 'react-native-htmlview';
+import YouTube from 'react-native-youtube';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
@@ -52,7 +53,6 @@ class NewsDetailScreen extends Component{
 
 fetchdata = async () => {
   const navParams = this.props.navigation.state.params;
-  const { page } = this.state;
   const api = appVars.apiUrl+"/news/newsreader.html?authtoken="+appVars.apiKey+"&id="+navParams.newsid;
   let tempapi= api;
   this.setState({ loading: true});
@@ -85,18 +85,36 @@ fetchdata = async () => {
     return(
 
       <View style={styles.news}>
-        <Text>{item.date}</Text>
-        <Text>{item.topheadline}</Text>
+
+        <Text style={styles.topheadline}>{item.topheadline.toUpperCase()}</Text>
         <Text style={styles.headline}>{item.headline}</Text>
-        <Text>{item.subheadline}</Text>
-        <Text>{item.editor}</Text>
+        <Text style={styles.subheadline}>{item.subheadline}</Text>
+
           <View style={styles.imageContainer}>
             <Image style={styles.image} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } />
-            <Text>{item.caption}</Text>
+            <Text>{item.imagecopyright}</Text>
           </View>
-            <Text style={styles.teaser}>{item.teaser}</Text>
-            <View><Text style={styles.city}>{item.city}</Text></View>
-            <HTMLView addLineBreaks={false} value={item.text} stylesheet={htmlstyles} onLinkPress={(url) => alert('clicked link:'+url)} />
+
+          <Text>{item.caption}</Text>
+
+          <HTMLView addLineBreaks={false} value={item.teaser} stylesheet={teaserstyles} />
+          <View><Text style={styles.city}>{item.city}</Text></View>
+          <HTMLView addLineBreaks={false} value={item.text} stylesheet={textstyles} onLinkPress={(url) => alert('clicked link:'+url)} />
+          <View><Text>{item.date}</Text><Text>{item.editor}</Text></View>
+          <YouTube
+            apiKey="AIzaSyDnHRcAVdm_hLVvZNTIBCucsaKMggJeGaU"
+            videoId={item.youtube_id}   // The YouTube video ID
+            play={true}             // control playback of video with true/false
+            fullscreen={false}       // control whether the video should play in fullscreen or inline
+            loop={false}             // control whether the video should loop when ended
+
+            onReady={e => this.setState({ isReady: true })}
+            onChangeState={e => this.setState({ status: e.state })}
+            onChangeQuality={e => this.setState({ quality: e.quality })}
+            onError={e => this.setState({ error: e.error })}
+
+            style={{ alignSelf: 'stretch', height: 300 }}
+            />
       </View>
 
     );
@@ -129,14 +147,13 @@ export default NewsDetailScreen;
 
 var swidth = Dimensions.get('window').width;
 
-// width of standard ~5" screen mobile device is like 320
-// just testing responsive fontsizes to ScreenWidth.
-const htmlstyles =StyleSheet.create({
+
+const teaserstyles = StyleSheet.create({
   p: {
-    fontSize: swidth/24.610,
-    fontFamily: appVars.fontText,
+    fontSize: swidth/23,
+    fontFamily: appVars.fontSub,
     color: appVars.colorBlack,
-    lineHeight: swidth/20,
+    lineHeight: swidth/22,
   },
 
   strong: {
@@ -146,6 +163,30 @@ const htmlstyles =StyleSheet.create({
     color: appVars.colorMain,
     fontWeight: '700'
   },
+  h3: {
+    fontSize: swidth/16,
+    fontFamily: appVars.fontHeadline,
+    color: appVars.colorBlack,
+  }
+});
+
+const textstyles = StyleSheet.create({
+  p: {
+    fontSize: swidth/23,
+    fontFamily: appVars.fontText,
+    color: appVars.colorBlack,
+    lineHeight: swidth/22,
+  },
+
+  strong: {
+    fontWeight: '700'
+  },
+
+  a: {
+    color: appVars.colorMain,
+    fontWeight: '700'
+  },
+
   h3: {
     fontSize: swidth/16,
     fontFamily: appVars.fontHeadline,
@@ -181,7 +222,24 @@ const styles = StyleSheet.create({
     fontSize: swidth/16,
     fontFamily: appVars.fontHeadline,
     color: appVars.colorBlack,
-    paddingBottom: 5,
+    textAlign: 'center',
+  },
+
+  topheadline: {
+    //fontsize:20,
+    fontSize: swidth/36,
+    fontFamily: appVars.fontMain,
+    color: '#666',
+    borderBottomColor: '#ccc',
+    borderBottomWidth: 2,
+  },
+
+  subheadline: {
+    //fontsize:20,
+    fontSize: swidth/28,
+    fontFamily: appVars.fontSub,
+    color: appVars.colorBlack,
+    textAlign: 'center',
   },
 
   teaser: {

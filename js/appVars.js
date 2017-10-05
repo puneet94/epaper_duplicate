@@ -24,7 +24,8 @@ module.exports = {
   // How many newsitems should be grabbed per call.
   apiNewsLimit: "5",
   // which news archives should be shown
-  apiNewsArchives: "1,2,3,4,5,6,7,8,9,11,12,21,22",
+  //apiNewsArchives: "1,2,3,4,5,6,7,8,9,11,12,21,22",
+  apiNewsArchives: "32",
 
 
   serverurl: "https://mopo-server.de",
