@@ -5,7 +5,6 @@ import {
     Text,
     FlatList,
     StyleSheet,
-    Image,
     Platform,
     TouchableOpacity,
     Dimensions,
@@ -19,7 +18,7 @@ import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
-
+import Image from 'react-native-scalable-image';
 import store from 'react-native-simple-store';
 
 class NewsDetailScreen extends Component{
@@ -91,7 +90,7 @@ fetchdata = async () => {
         <Text style={styles.subheadline}>{item.subheadline}</Text>
 
           <View style={styles.imageContainer}>
-            <Image style={styles.image} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } />
+            <Image width={Dimensions.get('window').width-18} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } />
             <Text>{item.imagecopyright}</Text>
           </View>
 
@@ -199,14 +198,7 @@ const styles = StyleSheet.create({
   imageContainer: {
     borderColor: '#cccccc',
     borderWidth: 1,
-    width: swidth-8,
-    height: null,
-  },
-
-  image:{
-    width: (swidth*0.25),
-    height: (swidth*0.25),
-    margin: 3,
+    padding: 3,
   },
 
   news: {
