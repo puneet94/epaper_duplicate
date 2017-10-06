@@ -6,7 +6,6 @@ import {
     StatusBar,
     FlatList,
     StyleSheet,
-    Image,
     Platform,
     TouchableWithoutFeedback,
     TouchableOpacity,
@@ -19,6 +18,8 @@ import {
 } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
+import Image from 'react-native-scalable-image';
+
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 
@@ -234,7 +235,7 @@ fetchdata = async () => {
 
     return(
         <TouchableOpacity style={styles.issue} activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
-          <Image style={styles.image} source={{uri: appVars.apiUrl +"/"+item.picture.img.src} } >
+          <Image maxHeight={Dimensions.get('window').height*0.25-46} source={{uri: appVars.apiUrl +"/"+item.picture.img.src} } >
           {(item.paywall)?<View><View style={styles.paywallIconTriangle} /><AwseomeIcon style={styles.paywallIcon} name="plus" /></View>:<View></View>}
           {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator style={appStyles.test} size="large" color={appVars.colorMain}/>:<View></View>}
           </Image>
@@ -248,7 +249,7 @@ fetchdata = async () => {
     return(
       <View style={styles.maincontainerWrapper}>
         <TouchableOpacity style={styles.issueNewest} activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
-          <Image style={styles.imageNewest} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } >
+          <Image maxHeight={Dimensions.get('window').height*0.75-115} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } >
           {(item.paywall)?<View><View style={styles.paywallIconTriangle} /><AwseomeIcon style={styles.paywallIcon} name="plus" /></View>:<View></View>}
           {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator style={appStyles.test} size="large" color={appVars.colorMain}/>:<View></View>}
           </Image>
@@ -315,10 +316,10 @@ const styles = StyleSheet.create({
     shadowRadius: 1,
     borderBottomColor: "black",
     elevation : 5,
-    paddingTop: 15,
   },
 
   maincontainerWrapper: {
+    paddingTop: 15,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -338,26 +339,11 @@ const styles = StyleSheet.create({
   },
 
   issueNewest:{
-    width: (swidth  * .75),
-    height: (sheight * .75)-105,
     padding: 3,
     backgroundColor: appVars.colorWhite,
     borderColor: '#cccccc',
     borderWidth: 1,
   },
-
-  image:{
-    width: (swidth/4)-20,
-    height: (sheight * .25)-46,
-    resizeMode: 'contain',
-  },
-
-  imageNewest:{
-    width: (swidth  * .75)-8,
-    height: (sheight * .75)-105,
-    resizeMode: 'contain',
-  },
-
 
   paywallIconTriangle:{
     position: 'absolute',
