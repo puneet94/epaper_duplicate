@@ -45,7 +45,13 @@ class NewsListScreen extends Component{
 
 fetchdata = async () => {
   const { page } = this.state;
-  const api = appVars.apiUrl+"/news.html?authtoken="+appVars.apiKey+"&limit="+appVars.apiNewsLimit+"&pid="+appVars.apiNewsArchives;
+  const navParams = this.props.navigation.state.params;
+  if(!navParams) {
+    var archive=appVars.NewsArchivesFallback;
+  } else {
+    var archive=navParams.archive;
+  }
+  const api = appVars.apiUrl+"/news.html?authtoken="+appVars.apiKey+"&limit="+appVars.apiNewsLimit+"&archives="+archive;
   let tempapi= api+"&page_n58=" + this.state.page.toString();
   this.setState({ loading: true});
 
@@ -127,26 +133,61 @@ fetchdata = async () => {
     navigation.navigate('NewsDetail', {newsid: item.id});
   }
 
+  handleMenuClick = async (item)=>{
+    
+        const { navigation } = this.props;
+        navigation.navigate('NewsList', {archive: item.archive});
+      }
+
+  
+  renderMenu = (item)=>{
+    
+        return (     
+          <TouchableOpacity style={{margin: 10, backgroundColor: appVars.colorMain}} activeOpacity = { .5 } onPress={ this.handleMenuClick.bind(this,item)}>
+          <Text style={{padding: 5, color: appVars.colorWhite}}>{item.label}</Text>
+          </TouchableOpacity>
+        );
+      }
+
+    renderSubmenu= ()=>{
+        return (
+          <FlatList
+          style={{padding: 10, backgroundColor: appVars.colorLightGray}}
+          data={appVars.objNewsCategories}
+          extraData={this.state}
+          renderItem={({item}) => this.renderMenu(item)}
+          keyExtractor={(item,index)=> {
+          return item.archive;
+          }}
+          horizontal={true}
+         />
+        );
+      }
+
   renderItem = (item) =>{
 
     return(
-
-      <View style={styles.newslist}>
+      <View style={appStyles.newsList}>
         <TouchableOpacity activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
-        {(item.paywall)?<View><View style={styles.paywallIconTriangle} /><AwseomeIcon style={styles.paywallIcon} name="plus" /></View>:<View></View>}
-        <Text style={styles.headline}>{item.headline}</Text>
-          <View style={{flex: 1, flexDirection: 'row'}}>
-          <View style={styles.imageContainer}>
-            <Image width={(Dimensions.get('window').width*0.25)}  source={{uri: appVars.apiUrl +"/"+item.picture.img.src} } />
-          </View>
-          <View style={styles.newslistInner}>
-            <Text style={styles.details}>{item["date"]}</Text>
-
-            <Text style={styles.teaser}><Text style={styles.city}>{item.city}</Text>{item.text}</Text>
+        
+        {(item.paywall)?<View><View style={appStyles.paywallIconTriangle} /><AwseomeIcon style={appStyles.paywallIcon} name="plus" /></View>:<View></View>}
+        
+        <Text style={appStyles.newsListHeadline}>{item.headline}</Text>
+          
+        <View style={{flex: 1, flexDirection: 'row'}}>
+          <View>
+            <View style={appStyles.imageBorder}>
+            <Image maxHeight={Dimensions.get('window').width*0.25} source={{uri: appVars.apiUrl +"/"+item.picture.img.src} } />
             </View>
           </View>
+          <View style={appStyles.newsListInner}>
+            <Text style={appStyles.newsDate}>{item["date"]}</Text>
 
-        </TouchableOpacity>
+            <Text style={appStyles.newsListTeaser}><Text style={appStyles.newsListCity}>{item.city.toUpperCase()}.</Text>{item.text.replace(/<{1}[^<>]{1,}>{1}/g," ")}</Text>
+          </View>
+          
+        </View>
+      </TouchableOpacity>
       </View>
 
     );
@@ -154,8 +195,15 @@ fetchdata = async () => {
 
 	render()
 	{
+    
     return (
       <View style={appStyles.container}>
+
+        <View>
+          {
+            this.renderSubmenu()
+          }
+        </View>
 
       <FlatList
         data={this.state.data}
@@ -182,69 +230,3 @@ fetchdata = async () => {
 }
 
 export default NewsListScreen;
-
-var swidth = Dimensions.get('window').width;
-
-// width of standard ~5" screen mobile device is like 320
-// just testing responsive fontsizes to ScreenWidth.
-
-const styles = StyleSheet.create({
-
-  imageContainer: {
-    borderColor: '#cccccc',
-    borderWidth: 1,
-    padding: 2,
-    marginRight: 10,
-    height: (Dimensions.get('window').width*0.25)+6,
-  },
-
-  newslist: {
-    margin: 5,
-  },
-
-  newslistInner: {
-    width: (swidth*0.75)-28,
-  },
-
-  headline: {
-    //fontsize:20,
-    fontSize: swidth/16,
-    fontFamily: appVars.fontHeadline,
-    color: appVars.colorBlack,
-    paddingBottom: 5,
-  },
-
-  teaser: {
-    //fontSize: 13,
-    fontSize: swidth/24.610,
-    fontFamily: appVars.fontText,
-    color: appVars.colorBlack,
-    lineHeight: swidth/20,
-  },
-
-  paywallIconTriangle:{
-    position: 'absolute',
-    right: 0,
-    width: 0,
-    height: 0,
-    backgroundColor: 'transparent',
-    borderStyle: 'solid',
-    borderRightWidth: 32,
-    borderTopWidth: 32,
-    borderRightColor: 'transparent',
-    borderTopColor: appVars.colorMain,
-    transform: [
-      {rotate: '90deg'}
-    ]
-  },
-
-  paywallIcon: {
-    position: 'absolute',
-    backgroundColor: 'transparent',
-    right: 2,
-    top: 2,
-    fontSize: 16,
-    color: appVars.colorWhite,
-  },
-
-});

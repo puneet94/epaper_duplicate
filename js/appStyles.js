@@ -20,6 +20,11 @@ function em(value) {
   return unit * value;
 }
 
+// calcuate the lineHeight by the faked em and how many percent - lineHeight(0.825,140)
+function lineHeight(value,lh) {
+  return (unit * value)*(lh/100);
+}
+
 
 module.exports = StyleSheet.create({
   //epaper (home)
@@ -81,12 +86,43 @@ module.exports = StyleSheet.create({
     borderWidth: 1
   },
 
-
+  //newslist 
+  newsList: {
+    margin: 5,
+  },
+  newsListInner: {
+    paddingLeft: 10,
+    width: (x * .75)-20,
+  },
+  newsListHeadline: {
+    fontSize: em(1.500),
+    lineHeight: lineHeight(1.500,120),
+    fontFamily: appVars.fontHeadline,
+    color: appVars.colorBlack,
+    marginBottom: em(0.25),
+  },
+  newsDate: {
+    fontSize: em(0.75),
+    fontFamily: appVars.fontSub,
+    color: appVars.colorDarkGray,
+  },
+  newsListCity: {
+    fontSize: em(0.875),
+    fontFamily: appVars.fontMain,
+    color: appVars.colorDarkGray,
+  },
+  newsListTeaser: {
+    fontSize: em(0.875),
+    lineHeight: lineHeight(0.875,140),
+    fontFamily: appVars.fontText,
+    color: appVars.colorBlack,
+    marginBottom: em(0.875),
+  },
 
   //newsdetail
   topheadlineContainer: {
     borderBottomWidth: 2,
-    borderBottomColor: '#ccc',
+    borderBottomColor: appVars.colorLightGray,
     alignSelf: 'center',
   },
   topheadline: {
@@ -124,6 +160,8 @@ module.exports = StyleSheet.create({
     color: appVars.colorMain,
     marginBottom: em(0.875),
   },
+
+
 
   container: {
     flex: 1,

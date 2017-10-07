@@ -4,10 +4,20 @@ const ScreenWidth = Dimensions.get('window').width;
 
   // WTF - needs to edit the Mafra font name
   if(Platform.OS === 'android') {
-  var fontHeadline = "MafraCondensedDeckMedium";
+    var fontHeadline = "MafraCondensedDeckMedium";
   } else {
-  var fontHeadline = "Mafra Condensed Deck";
+    var fontHeadline = "Mafra Condensed Deck";
   }
+
+  const ObjNewsCategories  = [
+    { archive: 'allem', label: 'Start'},
+    { archive: 'einbeck', label: 'Einbeck'},
+    { archive: 'dassel', label: 'Dassel'},
+    { archive: 'kreiensenem', label: 'Kreiensen'},
+    { archive: 'regionem', label: 'Region'},
+    { archive: 'sportem', label: 'Sport'},
+    { archive: 'polizeiem', label: 'Blaulicht'}
+  ];
 
 module.exports = {
 
@@ -23,9 +33,8 @@ module.exports = {
   // Settings for the new Newsfeed
   // How many newsitems should be grabbed per call.
   apiNewsLimit: "5",
-  // which news archives should be shown
-  //apiNewsArchives: "1,2,3,4,5,6,7,8,9,11,12,21,22",
-  apiNewsArchives: "32",
+  NewsArchivesFallback: "allem",
+  objNewsCategories: ObjNewsCategories,
 
   apiRefreshTime: 5*1000,
   serverurl: "https://mopo-server.de",
@@ -40,6 +49,7 @@ module.exports = {
   colorMain: "#006633",
   colorActive: "#cc0000",
   colorLightGray: "#cccccc",
+  colorDarkGray: "#333333",
   colorSeperatorColor: "rgba(0, 0, 0, 0.1)",
   colorDrawerIsActiveBackgroundColor: "rgba(0, 0, 0, 0.3)",
   colorDrawerSeperatorBackgroundColor: "rgba(0, 0, 0, 0.1)",
