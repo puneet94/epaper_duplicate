@@ -100,7 +100,7 @@ fetchdata = async () => {
 
           <HTMLView addLineBreaks={false} stylesheet={htmlStyles.teaser} value={item.teaser} />
 
-          <HTMLView addLineBreaks={false} value={item.text.replace('<p>', '<p><city>'+item.city.toUpperCase()+'. </city>').replace(/[\r\n]*/g, "")} stylesheet={htmlStyles.text} onLinkPress={(url) => alert('clicked link:'+url)} />
+          <HTMLView addLineBreaks={false} value={item.text.replace('<p>', '<p><city>'+item.city.toUpperCase()+'. </city>')} stylesheet={htmlStyles.text} onLinkPress={(url) => alert('clicked link:'+url)} />
 
           <View><Text>{item.date}</Text><Text>{item.editor}</Text></View>
 
