@@ -62,6 +62,7 @@ module.exports = StyleSheet.create({
     fontSize: em(0.875),
     fontFamily: appVars.fontSub,
     color: appVars.colorMain,
+    marginBottom: em(0.875),
   },
 
 

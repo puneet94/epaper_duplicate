@@ -31,7 +31,7 @@ class NewsDetailScreen extends Component{
   static navigationOptions = ({ navigation }) => {
      const { params = {} } = navigation.state;
      return {
-         headerRight: <Button title="ALERT" onPress={() => params.handleAlert()} />
+         headerRight: <Button title="SHARE" onPress={() => params.handleAlert()} />
      };
  };
 
@@ -98,9 +98,8 @@ fetchdata = async () => {
 
           <Text style={appStyles.imagecaption}>{item.caption}</Text>
 
-          <HTMLView addLineBreaks={false} value={item.teaser} stylesheet={htmlStyles.teaser} />
+          <HTMLView addLineBreaks={false} stylesheet={htmlStyles.teaser} value={item.teaser} />
 
-          <HTMLView addLineBreaks={false} value={item.text.replace('<p>', '<p><city>'+item.city.toUpperCase()+'. </city>')} stylesheet={htmlStyles.text} onLinkPress={(url) => alert('clicked link:'+url)} />
 
           <View><Text>{item.date}</Text><Text>{item.editor}</Text></View>
 

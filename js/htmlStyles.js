@@ -30,8 +30,7 @@ const teaser = StyleSheet.create({
     lineHeight: lineHeight(0.875,140),
     fontFamily: appVars.fontSub,
     color: appVars.colorBlack,
-    marginTop: 3,
-    marginBottom: 3,
+    marginBottom: em(0.875),
   },
   strong: {
     fontWeight: '700'
@@ -45,8 +44,9 @@ const teaser = StyleSheet.create({
     lineHeight: lineHeight(1.250,120),
     fontFamily: appVars.fontHeadline,
     color: appVars.colorBlack,
+    marginBottom: em(1),
   }
-})
+});
 
 const text = StyleSheet.create({
   p: {
@@ -54,6 +54,9 @@ const text = StyleSheet.create({
     lineHeight: lineHeight(0.875,140),
     fontFamily: appVars.fontText,
     color: appVars.colorBlack,
+    marginBottom: em(0.875),
+    paddingLeft: 20,
+    paddingRight: 20,
   },
   strong: {
     fontWeight: '700'
@@ -72,6 +75,7 @@ const text = StyleSheet.create({
     lineHeight: lineHeight(1.250,120),
     fontFamily: appVars.fontHeadline,
     color: appVars.colorBlack,
+    marginBottom: em(1),
   }
 });
 
