@@ -14,6 +14,7 @@ import appStyles from './appStyles';
 
 import MenuScreen from './components/menu';
 import PDFViewScreen from "./components/pdfview";
+import NewsDetailScreen from "./components/newsdetail";
 
 const ePaperApp = StackNavigator({
     Menu : {
@@ -27,8 +28,10 @@ const ePaperApp = StackNavigator({
           } else {
             navigation.navigate('DrawerClose')
           }
-        }}> 
-          <AwseomeIcon name="bars" style={appStyles.headerIcon}  />
+        }}>
+          <View style={appStyles.iconWrapper}>
+            <AwseomeIcon name="bars" style={appStyles.headerIcon} />
+          </View>
         </TouchableWithoutFeedback>
     }),
   },
@@ -39,6 +42,13 @@ const ePaperApp = StackNavigator({
       headerStyle: appStyles.headerWrapper,
       headerTitleStyle: appStyles.headerTitle,
     }),
+  },
+  NewsDetail: {
+      screen: NewsDetailScreen,
+      navigationOptions : ({ navigation }) => ({
+        headerStyle: appStyles.headerWrapper,
+        headerTitleStyle: appStyles.headerTitle,
+      }),
   },
 });
 

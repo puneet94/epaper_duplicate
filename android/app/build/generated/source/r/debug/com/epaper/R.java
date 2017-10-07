@@ -1914,6 +1914,7 @@ containing a value of this type.
         public static final int progress_horizontal=0x7f0d0006;
         public static final int radio=0x7f0d0042;
         public static final int react_test_id=0x7f0d0007;
+        public static final int relativelayout=0x7f0d0070;
         public static final int rn_frame_file=0x7f0d0066;
         public static final int rn_frame_method=0x7f0d0065;
         public static final int rn_redbox_copy_button=0x7f0d006e;
@@ -2010,6 +2011,7 @@ containing a value of this type.
         public static final int select_dialog_multichoice_material=0x7f040026;
         public static final int select_dialog_singlechoice_material=0x7f040027;
         public static final int support_simple_spinner_dropdown_item=0x7f040028;
+        public static final int youtube_layout=0x7f040029;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;

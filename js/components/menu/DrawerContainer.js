@@ -10,16 +10,16 @@ import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 
 class DrawerContainer extends React.Component {
   isActiveClass = (key)=>{
-    
+
     if(this.props.activeItemKey.toLowerCase()===key.toLowerCase()){
       return {
-        backgroundColor: "black"
+        backgroundColor: appVars.colorDrawerIsActiveBackgroundColor
       };
     }
-    
+
   }
   render = ()=> {
-    
+
     const { navigation } = this.props
     return (
     <View style={appStyles.drawerContainer}>
@@ -39,6 +39,15 @@ class DrawerContainer extends React.Component {
         <View style={[appStyles.drawerItem,this.isActiveClass('myissues')]}>
           <AwseomeIcon name="newspaper-o" style={appStyles.drawerIcon}/>
           <Text style={appStyles.drawerLabel}>{appVars.labelMyIssues.toUpperCase()}</Text>
+        </View>
+      </TouchableWithoutFeedback>
+
+      <View style={appStyles.drawerSeperator} />
+
+      <TouchableWithoutFeedback onPress={() => navigation.navigate('NewsList')} >
+        <View style={[appStyles.drawerItem,this.isActiveClass('newslist')]}>
+          <AwseomeIcon name="file-text-o" style={appStyles.drawerIcon}/>
+          <Text style={appStyles.drawerLabel}>{appVars.labelNewsList.toUpperCase()}</Text>
         </View>
       </TouchableWithoutFeedback>
 

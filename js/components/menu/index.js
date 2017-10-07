@@ -6,6 +6,7 @@ import { DrawerNavigator } from 'react-navigation';
 
 import HomeScreen from "../home";
 import IssuesScreen from "../myissues";
+import NewsListScreen from "../newslist";
 import AccountScreen from "../account";
 import DrawerContainer from "./DrawerContainer";
 
@@ -23,6 +24,12 @@ const Menu = DrawerNavigator({
     screen: IssuesScreen,
     navigationOptions : ({ navigation, screenProps }) => ({
       headerTitle: appVars.labelMyIssues.toUpperCase(),
+    }),
+  },
+  NewsList: {
+    screen: NewsListScreen,
+    navigationOptions : ({ navigation, screenProps }) => ({
+      headerTitle: appVars.labelNewsList.toUpperCase(),
     }),
   },
   Account: {

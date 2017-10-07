@@ -22,14 +22,17 @@ class IssuesScreen extends Component {
       //headerMode: 'none'
     };
   };
+
   getMyIssues = async ()=>{
+
+
     let issues = await store.get('userIssues');
-    
+
     this.setState({
       myissues: issues
     });
   }
-  componentDidMount =  ()=>{    
+  componentDidMount =  ()=>{
     this.getMyIssues();
   }
   checkIssueInDeleted = (item)=>{
@@ -37,7 +40,7 @@ class IssuesScreen extends Component {
     for(let i=0;i<deletedIssues.length;i++){
       if(deletedIssues[i].id==item.id){
         return i;
-        
+
       }
     }
     return -1;
@@ -62,15 +65,16 @@ class IssuesScreen extends Component {
             ...this.state.deletedIssues.slice(deletedIndex + 1)]
         })
       }
-      
+
     }else{
       const { navigation } = this.props;
       navigation.navigate('PDFView', {file: item.path});
     }
-    
+
   }
 
   renderIssue = (item)=>{
+
     return (
     <View style={styles.issue}>
       <TouchableOpacity activeOpacity = { .5 } onPress={ ()=>{
@@ -95,7 +99,7 @@ class IssuesScreen extends Component {
     this.setState({
       enabledEdit: true
     },()=>{
-      
+
     });
   }
   resetDelete = ()=>{
@@ -156,9 +160,9 @@ class IssuesScreen extends Component {
      />
     );
   }
- 
+
   render=()=> {
-    
+
     const { navigation } = this.props
     return (
       <View style={appStyles.container}>
@@ -211,8 +215,8 @@ const headerStyles = {
 if (Platform.OS === 'ios') {
   headerStyles.borderBottomWidth= 2;
   headerStyles.borderBottomColor= 'rgba(0, 0, 0, .3)';
-  
-} 
+
+}
 var swidth = Dimensions.get('window').width;
 
 const styles = StyleSheet.create({

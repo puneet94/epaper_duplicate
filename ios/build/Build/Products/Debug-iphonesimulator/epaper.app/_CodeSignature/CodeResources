@@ -6,7 +6,11 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		HcKbKV4z1b94yE326Ffpjly9S2A=
+		1yysVIHz4euMRIIDH10gXWj5e7Q=
+		</data>
+		<key>CandidaStd-Roman.ttf</key>
+		<data>
+		ldqiOXZTz+uGB41ancTkXp6rUTQ=
 		</data>
 		<key>Entypo.ttf</key>
 		<data>
@@ -65,17 +69,29 @@
 		<data>
 		yLUgLGsvOrTOJzFlbX+XYKXM31s=
 		</data>
+		<key>GothamNarrow-Bold.ttf</key>
+		<data>
+		A+5s+vseC3wNQ9Sz1fCRl5C7cHI=
+		</data>
+		<key>GothamNarrow-Book.ttf</key>
+		<data>
+		wW4VsLVxGE722O9ZmEAVzM+LyJo=
+		</data>
 		<key>GothamNarrow-Medium.ttf</key>
 		<data>
 		aQJbMG8qCwiR/Z4sRfZvMTF7eGk=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RCqSvda78GLD7uBAekghPgxEX0k=
+		4/lJMqU++e+4LrEuqogN5WhgeX4=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
 		D3lWcE/mG0nEHqGiIFEkD3AKK0Q=
+		</data>
+		<key>MafraCondensedDeckMedium.ttf</key>
+		<data>
+		58AVsnNvrSZLgjEoy0inOYn3s0s=
 		</data>
 		<key>MaterialCommunityIcons.ttf</key>
 		<data>
@@ -99,7 +115,7 @@
 		</data>
 		<key>PlugIns/epaperTests.xctest.dSYM/Contents/Resources/DWARF/epaperTests</key>
 		<data>
-		J/pIO5UcqdOwDN3FKxWISsxZpiI=
+		3UAlCDYP6zT0OR04CmuJvKPBXyE=
 		</data>
 		<key>PlugIns/epaperTests.xctest/Info.plist</key>
 		<data>
@@ -111,7 +127,7 @@
 		</data>
 		<key>PlugIns/epaperTests.xctest/epaperTests</key>
 		<data>
-		Hsy4Q1X1ouf3hCNI5mSYuv/bD58=
+		f2CG7jA1tKvxIZqqAVCLiQ3I5gA=
 		</data>
 		<key>SimpleLineIcons.ttf</key>
 		<data>
@@ -128,11 +144,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HcKbKV4z1b94yE326Ffpjly9S2A=
+			1yysVIHz4euMRIIDH10gXWj5e7Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			N41amLTctJYHvCPj7UbuyjVOQnIzToRqNiqhElIn89g=
+			prhy0heqz9FOoknI0kogxqZeaUEOB+OojdcZbYo+hJs=
+			</data>
+		</dict>
+		<key>CandidaStd-Roman.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ldqiOXZTz+uGB41ancTkXp6rUTQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			boX74WVpYPr3TLqRTPzMQ7A4BBj6vE2pFGsNU9txQnQ=
 			</data>
 		</dict>
 		<key>Entypo.ttf</key>
@@ -280,6 +307,28 @@
 			psn3f9GzyAkXmzTU+vf5xjnZ5KNVLj89BwSJrmxGCqc=
 			</data>
 		</dict>
+		<key>GothamNarrow-Bold.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			A+5s+vseC3wNQ9Sz1fCRl5C7cHI=
+			</data>
+			<key>hash2</key>
+			<data>
+			XTllZib+ygfmNoeOSLrtfuswi7zzsOk1ODhZFigC1nA=
+			</data>
+		</dict>
+		<key>GothamNarrow-Book.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wW4VsLVxGE722O9ZmEAVzM+LyJo=
+			</data>
+			<key>hash2</key>
+			<data>
+			OvatGVpkKUSAfW578QlXY5YlAfsP12XZYfOIqk4lVmQ=
+			</data>
+		</dict>
 		<key>GothamNarrow-Medium.ttf</key>
 		<dict>
 			<key>hash</key>
@@ -300,6 +349,17 @@
 			<key>hash2</key>
 			<data>
 			u0dnmwuuuEgbf1HGitM65aUmc2y1CxcXzGD/a2X5CKM=
+			</data>
+		</dict>
+		<key>MafraCondensedDeckMedium.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			58AVsnNvrSZLgjEoy0inOYn3s0s=
+			</data>
+			<key>hash2</key>
+			<data>
+			k4cjPZ0StOdZFWGx4w/TdhgZMRE7HN7YZA9R4/pFD/s=
 			</data>
 		</dict>
 		<key>MaterialCommunityIcons.ttf</key>
@@ -350,11 +410,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J/pIO5UcqdOwDN3FKxWISsxZpiI=
+			3UAlCDYP6zT0OR04CmuJvKPBXyE=
 			</data>
 			<key>hash2</key>
 			<data>
-			ONnWIVokgenAYH+7SJ1SnGZMu9uCO43gmMwXhIiEzKA=
+			soCsoyA1z4xULASspgqEV2+mraewA0+0gGWQI/+k+6g=
 			</data>
 		</dict>
 		<key>PlugIns/epaperTests.xctest/Info.plist</key>
@@ -383,11 +443,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Hsy4Q1X1ouf3hCNI5mSYuv/bD58=
+			f2CG7jA1tKvxIZqqAVCLiQ3I5gA=
 			</data>
 			<key>hash2</key>
 			<data>
-			3iIAQG69Vd510BQ2553/g5qIc1clogCVK0hHcFIfxEE=
+			aQiRP0sCyXtW4qq+CvbqCTiZ0loK3qlbuSb/FQZLsOU=
 			</data>
 		</dict>
 		<key>SimpleLineIcons.ttf</key>

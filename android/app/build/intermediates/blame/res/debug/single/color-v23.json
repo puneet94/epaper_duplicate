@@ -1,18 +1,22 @@
 [
     {
-        "merged": "E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
-        "source": "E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\color-v23\\abc_color_highlight_material.xml"
+        "merged": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\color-v23\\abc_color_highlight_material.xml"
     },
     {
-        "merged": "E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
-        "source": "E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\color-v23\\abc_color_highlight_material.xml"
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/color-v23/abc_color_highlight_material.xml"
     },
     {
-        "merged": "E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
-        "source": "E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\color-v23\\abc_color_highlight_material.xml"
+        "merged": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\color-v23\\abc_color_highlight_material.xml"
     },
     {
-        "merged": "E:\\epaper2\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
-        "source": "C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\color-v23\\abc_color_highlight_material.xml"
+        "merged": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/Users/sturm/Desktop/epaper/android/E:\\epaper2\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\color-v23\\abc_color_highlight_material.xml"
     }
 ]
