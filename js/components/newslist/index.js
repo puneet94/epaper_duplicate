@@ -6,7 +6,6 @@ import {
     StatusBar,
     FlatList,
     StyleSheet,
-    Image,
     Platform,
     TouchableWithoutFeedback,
     TouchableOpacity,
@@ -21,6 +20,7 @@ import { NavigationActions } from 'react-navigation';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
+import Image from 'react-native-scalable-image';
 
 import store from 'react-native-simple-store';
 
@@ -137,7 +137,7 @@ fetchdata = async () => {
         <Text style={styles.headline}>{item.headline}</Text>
           <View style={{flex: 1, flexDirection: 'row'}}>
           <View style={styles.imageContainer}>
-            <Image style={styles.image} source={{uri: appVars.apiUrl +"/"+item.picture.img.src} } />
+            <Image width={(Dimensions.get('window').width*0.25)}  source={{uri: appVars.apiUrl +"/"+item.picture.img.src} } />
           </View>
           <View style={styles.newslistInner}>
             <Text style={styles.details}>{item["date"]}</Text>
@@ -193,15 +193,9 @@ const styles = StyleSheet.create({
   imageContainer: {
     borderColor: '#cccccc',
     borderWidth: 1,
-    width: (swidth*0.25)+8,
-    height: (swidth*0.25)+8,
+    padding: 2,
     marginRight: 10,
-  },
-
-  image:{
-    width: (swidth*0.25),
-    height: (swidth*0.25),
-    margin: 3,
+    height: (Dimensions.get('window').width*0.25)+6,
   },
 
   newslist: {
