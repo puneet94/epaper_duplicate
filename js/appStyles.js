@@ -136,13 +136,13 @@ drawerLabel: {
   headerWrapper: {
       backgroundColor: appVars.colorWhite,
   },
-
   iconWrapper: {
     flex:1,
-    width: 40,
+    width: 60,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: appVars.colorWhite,
+    //backgroundColor: "red",
   },
 
   headerIcon: {

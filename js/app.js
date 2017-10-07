@@ -22,14 +22,14 @@ const ePaperApp = StackNavigator({
       navigationOptions: ({navigation}) => ({
         headerStyle: appStyles.headerWrapper,
         headerTitleStyle: appStyles.headerTitle,
-        headerLeft: <TouchableWithoutFeedback onPress={() => {
+        headerLeft: <TouchableWithoutFeedback  onPress={() => {
           if (navigation.state.index === 0) {
             navigation.navigate('DrawerOpen')
           } else {
             navigation.navigate('DrawerClose')
           }
         }}>
-          <View style={appStyles.iconWrapper}>
+          <View style={appStyles.iconWrapper} >
             <AwseomeIcon name="bars" style={appStyles.headerIcon} />
           </View>
         </TouchableWithoutFeedback>

@@ -27,7 +27,7 @@ module.exports = {
   //apiNewsArchives: "1,2,3,4,5,6,7,8,9,11,12,21,22",
   apiNewsArchives: "32",
 
-
+  apiRefreshTime: 5*1000,
   serverurl: "https://mopo-server.de",
   forgotpasswordurl: "https://www.einbecker-morgenpost.de/login/passwort-vergessen.html",
 

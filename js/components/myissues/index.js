@@ -1,11 +1,12 @@
 
 import React, { Component } from 'react'
-import { ToastAndroid,Platform,Text,View,StyleSheet,Dimensions,Image,FlatList,TouchableOpacity,Alert } from 'react-native'
+import { ToastAndroid,Platform,Text,Button,View,StyleSheet,Dimensions,Image,FlatList,TouchableOpacity,Alert } from 'react-native'
 import store from 'react-native-simple-store';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
+
 
 class IssuesScreen extends Component {
   constructor(props){
@@ -16,13 +17,64 @@ class IssuesScreen extends Component {
       enabledEdit: false
     }
   }
-  static navigationOptions = ({navigation})=>{
+  static navigationOptions = ({ navigation }) => {
+    const { params = {} } = navigation.state;
     return {
-      header: null
-      //headerMode: 'none'
+      headerRight: <View style={{width:100}}>
+      {params.enabledEdit?
+      <View style={{flexDirection:"row",justifyContent:"space-around",alignItems:"center"}}>
+        <AwseomeIcon size={24} name="check"  color="black" onPress={()=>{params.selectAll();}}/>
+        <AwseomeIcon size={24} name="trash"  color={params.deletedIssues.length?"black":"#b2b2b2"} onPress={()=>{params.confirmDelete();}}/>
+        <AwseomeIcon size={24} name="times"  color="black" onPress={()=>{params.resetDelete();}}/>
+        </View>:
+      <TouchableOpacity onPress={()=>{params.startEdit();}}>
+        <AwseomeIcon size={24} name="pencil-square-o" style={{alignSelf:"flex-end",paddingRight:15}} color="black"/>
+      </TouchableOpacity>}
+    </View>
     };
   };
 
+ 
+  componentDidMount =  ()=>{
+    this.getMyIssues();
+    this.props.navigation.setParams({ 
+      confirmDelete: this.confirmDelete ,
+      enabledEdit: this.state.enabledEdit,
+      selectAll: this.selectAll,
+      deletedIssues: this.state.deletedIssues,
+      startEdit: this.startEdit,
+      resetDelete: this.resetDelete,
+      getEnabledEdit: this.getEnabledEdit,
+      getDeletedIssues: this.getDeletedIssues
+
+    });
+  }
+  
+  getDeletedIssues = () =>{
+    
+    return this.state.deletedIssues;
+  }
+  getEnabledEdit = () => {
+    
+    return this.state.enabledEdit;
+  }
+  componentWillUpdate = (nextProps,nextState)=> {
+    if (this.props !== nextProps) {
+      if (nextProps.navigation) {
+        console.log("yes");
+        console.log(nextProps);
+        console.log(nextState);
+        /*nextProps.navigation.setParams({ 
+          confirmDelete: this.confirmDelete ,
+          enabledEdit: nextState.enabledEdit,
+          selectAll: this.selectAll,
+          deletedIssues: nextState.deletedIssues,
+          startEdit: this.startEdit,
+          resetDelete: this.resetDelete
+        });*/
+      }
+    }
+  }  
   getMyIssues = async ()=>{
 
 
@@ -31,9 +83,6 @@ class IssuesScreen extends Component {
     this.setState({
       myissues: issues
     });
-  }
-  componentDidMount =  ()=>{
-    this.getMyIssues();
   }
   checkIssueInDeleted = (item)=>{
     let deletedIssues = this.state.deletedIssues;
@@ -61,6 +110,7 @@ class IssuesScreen extends Component {
         });
       }else{
         this.setState({
+          
           deletedIssues: [...this.state.deletedIssues.slice(0, deletedIndex),
             ...this.state.deletedIssues.slice(deletedIndex + 1)]
         })
@@ -98,9 +148,13 @@ class IssuesScreen extends Component {
   startEdit = ()=>{
     this.setState({
       enabledEdit: true
-    },()=>{
-
     });
+  }
+  setStaticValues = ()=>{
+    
+    IssuesScreen.enabledEdit = this.state.enabledEdit;
+    IssuesScreen.deletedIssues = this.state.deletedIssues;
+    
   }
   resetDelete = ()=>{
     this.setState({
@@ -114,6 +168,8 @@ class IssuesScreen extends Component {
     });
   }
   confirmDelete = ()=>{
+
+    
     if(this.state.deletedIssues.length===0){
       ToastAndroid.show('No issue selected', ToastAndroid.SHORT);
       return;
@@ -160,38 +216,37 @@ class IssuesScreen extends Component {
      />
     );
   }
+componentDidUpdate = (prevProps,prevState)=>{
+  if(prevState.deletedIssues.length!==this.state.deletedIssues.length || prevState.enabledEdit !==this.state.enabledEdit){
+  
+  
+  this.props.navigation.setParams({ 
+    confirmDelete: this.confirmDelete ,
+    enabledEdit: this.state.enabledEdit,
+    selectAll: this.selectAll,
+    deletedIssues: this.state.deletedIssues,
+    startEdit: this.startEdit,
+    resetDelete: this.resetDelete,
+    getEnabledEdit: this.getEnabledEdit,
+    getDeletedIssues: this.getDeletedIssues
 
+  });}
+}
   render=()=> {
 
     const { navigation } = this.props
+    this.setStaticValues();
     return (
       <View style={appStyles.container}>
-        <View style={styles.headerContainer}>
-          <View style={{flex:1,flexDirection:"row"}}>
-            <TouchableOpacity onPress={()=>this.props.navigation.navigate('DrawerOpen')}>
-              <AwseomeIcon size={20} name="bars" style={{paddingLeft:15,marginTop:3}} color="black"/>
-            </TouchableOpacity>
-            <View style={{marginLeft: 35,alignItems:"flex-start"}}>
-              <Text style={{color:"black",fontSize: 20,fontWeight:'600'}}>{"MY ISSUES"}</Text>
-            </View>
-          </View>
-          {this.state.enabledEdit?
-          <View style={{flex:0.5,flexDirection:"row",justifyContent:"space-around"}}>
-            <AwseomeIcon size={24} name="check"  color="black" onPress={()=>this.selectAll()}/>
-            <AwseomeIcon size={24} name="trash"  color={this.state.deletedIssues.length?"black":"#b2b2b2"} onPress={()=>{this.confirmDelete()}}/>
-            <AwseomeIcon size={24} name="times"  color="black" onPress={()=>{this.resetDelete()}}/>
-            </View>:
-          <TouchableOpacity onPress={()=>this.startEdit()}>
-            <AwseomeIcon size={24} name="pencil-square-o" style={{paddingRight:15}} color="black"/>
-          </TouchableOpacity>}
-        </View>
-        <View style={{flex:11}}>
+        
+        
+        
           <View style={{flex:1}}>
           {
             this.state.myissues && this.renderIssues()
           }
           </View>
-        </View>
+        
       </View>
     )
   }

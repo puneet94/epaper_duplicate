@@ -23,7 +23,7 @@ import Image from 'react-native-scalable-image';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 
-
+import TimerMixin from 'react-timer-mixin';
 import RNFetchBlob from 'react-native-fetch-blob';
 import store from 'react-native-simple-store';
 const dirs = RNFetchBlob.fs.dirs;
@@ -42,14 +42,18 @@ class HomeScreen extends Component{
       currentItem: null
     }
   }
-
-  componentDidMount(){
-
+  componentDidMount=()=>{
     if(Platform.OS === 'android') {
       this.getPermissions();
     }
-
     this.fetchdata();
+    TimerMixin.setInterval (
+      () => {
+        if(!this.state.downloading){
+        this.handleRefresh();  }
+      },
+      appVars.apiRefreshTime
+    );
   }
 
 fetchdata = async () => {
@@ -57,6 +61,7 @@ fetchdata = async () => {
   const api = appVars.apiUrl+"/epaper.html?authtoken="+appVars.apiKey+"&limit="+appVars.apiEpaperLimit+"&pid="+appVars.apiEpaperArchives;
   let tempapi= api+"&page_n120=" + this.state.page.toString();
   this.setState({ loading: true});
+
 
   if(this.state.refreshing){
     fetch(tempapi)
@@ -243,9 +248,7 @@ fetchdata = async () => {
         </TouchableOpacity>
     );
   }
-
   renderItemNewst = (item) =>{
-    //console.log(appVars.apiUrl +"/"+item.singleSRC);
     return(
       <View style={styles.maincontainerWrapper}>
         <TouchableOpacity style={styles.issueNewest} activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
@@ -257,15 +260,17 @@ fetchdata = async () => {
         </View>
     );
   }
-
 	render()
 	{
-    //console.log("rendering");
+    const mainItem = [];
+    if(this.state.data.length){
+      mainItem.push(this.state.data[0]);
+    }
     return (
       <View>
       <View style={styles.maincontainer}>
       <FlatList
-        data={this.state.data}
+        data={mainItem}
         numColumns={1}
         refreshControl={
           <RefreshControl
@@ -280,15 +285,14 @@ fetchdata = async () => {
         renderItem={({item}) => this.renderItemNewst(item)}
        />
       </View>
-
       <View style={styles.horizontalContainer}>
       <FlatList
-        data={this.state.data}
+        data={this.state.data.slice(1)}
         horizontal={true}
         onEndReached={this.handlePageEnd}
         onEndReachedThreshold={0.5}
         keyExtractor={(item,index)=> {
-          //console.log(item.id);
+          
           return item.id;
           }}
         renderItem={({item}) => this.renderItem(item)}
