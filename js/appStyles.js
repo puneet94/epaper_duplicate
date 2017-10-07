@@ -22,6 +22,43 @@ function em(value) {
 
 
 module.exports = StyleSheet.create({
+  //epaper (home)
+
+  ePaperMainContainer: {
+    backgroundColor: appVars.colorWhite,
+    height: (y * .75)-80,
+    shadowColor: 'black',
+    shadowOffset: { width: 10, height: 20 },
+    shadowOpacity: 1,
+    shadowRadius: 1,
+    borderBottomColor: 'black',
+    elevation : 5,
+  },
+  ePaperMainWrapper: {
+    paddingTop: 15,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  ePaperHorizontalContainer: {
+    backgroundColor: appVars.colorSeperatorColor,
+  },
+  ePaperEditionWrapper: {
+    height: (y * .25),
+    width: (x * .25),
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  ePaperEditionDate:{
+    backgroundColor: appVars.colorMain,
+    color: appVars.colorWhite,
+    textAlign: 'center',
+    fontSize: em(0.666),
+    padding: 3,
+    fontFamily: appVars.fontMain,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+
 
   //newsdetail
   topheadlineContainer: {
@@ -84,7 +121,7 @@ module.exports = StyleSheet.create({
     marginBottom: 5,
   },
 
-  test: {
+  ePaperActivityIndicator: {
     flex: 1,
     backgroundColor:'rgba(255, 255, 255, 0.8)',
   },
@@ -142,12 +179,46 @@ drawerLabel: {
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: appVars.colorWhite,
-    //backgroundColor: "red",
   },
 
   headerIcon: {
       color: appVars.colorMain,
       fontSize: 20,
+  },
+
+
+  // generall stuff
+
+  imageBorder: {
+    padding: 3,
+    backgroundColor: appVars.colorWhite,
+    borderColor: appVars.colorLightGray,
+    borderWidth: 1,
+  },
+
+  paywallIconTriangle:{
+    position: 'absolute',
+    right: 0,
+    width: 0,
+    height: 0,
+    backgroundColor: 'transparent',
+    borderStyle: 'solid',
+    borderRightWidth: 32,
+    borderTopWidth: 32,
+    borderRightColor: 'transparent',
+    borderTopColor: appVars.colorMain,
+    transform: [
+      {rotate: '90deg'}
+    ]
+  },
+
+  paywallIcon: {
+    position: 'absolute',
+    backgroundColor: 'transparent',
+    right: 2,
+    top: 2,
+    fontSize: 16,
+    color: appVars.colorWhite,
   },
 
 });

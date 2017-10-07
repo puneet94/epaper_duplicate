@@ -116,7 +116,7 @@ fetchdata = async () => {
       this.setState({
         downloading: true
       });
-      console.log("download started******************");
+      //console.log("download started******************");
 
       let resp = await RNFetchBlob
       .config({
@@ -203,20 +203,10 @@ fetchdata = async () => {
       this.fetchdata();
     });
   }
-  renderSeparator = () =>{
-    return(
-      <View
-      style={{
-        backgroundColor: 'gray',
-        height: 5,
-      }}
-    />
-    );
-  }
 
   handleClick = async (item)=>{
     if(this.state.downloading){
-      ToastAndroid.show('Download already in progress. Please wait for it to finish', ToastAndroid.SHORT);
+      ToastAndroid.show(appVars.textDownloadAllreadRunning, ToastAndroid.SHORT);
       return;
     }
     if(item.paywall){
@@ -239,25 +229,29 @@ fetchdata = async () => {
     //console.log(appVars.apiUrl +"/"+item.picture.img.src);
 
     return(
-        <TouchableOpacity style={styles.issue} activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
-          <Image maxHeight={Dimensions.get('window').height*0.25-46} source={{uri: appVars.apiUrl +"/"+item.picture.img.src} } >
-          {(item.paywall)?<View><View style={styles.paywallIconTriangle} /><AwseomeIcon style={styles.paywallIcon} name="plus" /></View>:<View></View>}
-          {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator style={appStyles.test} size="large" color={appVars.colorMain}/>:<View></View>}
-          </Image>
-          <Text style={styles.issuedate}>{item["date"]}</Text>
+      <View style={appStyles.ePaperEditionWrapper}>
+        <TouchableOpacity style={appStyles.ePapaperEdition} activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
+          <View style={appStyles.imageBorder}>
+            <Image maxHeight={Dimensions.get('window').height*0.25-46} source={{uri: appVars.apiUrl +"/"+item.picture.img.src} } >
+            {(item.paywall)?<View><View style={appStyles.paywallIconTriangle} /><AwseomeIcon style={appStyles.paywallIcon} name="plus" /></View>:<View></View>}
+            {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator style={appStyles.ePaperActivityIndicator} size="large" color={appVars.colorMain}/>:<View></View>}
+            </Image>
+           <Text style={appStyles.ePaperEditionDate}>{item["date"]}</Text>
+          </View>
         </TouchableOpacity>
+      </View>
     );
   }
   renderItemNewst = (item) =>{
     return(
-      <View style={styles.maincontainerWrapper}>
-        <TouchableOpacity style={styles.issueNewest} activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
+      <View style={appStyles.ePaperMainWrapper}>
+        <TouchableOpacity style={appStyles.imageBorder} activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
           <Image maxHeight={Dimensions.get('window').height*0.75-115} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } >
-          {(item.paywall)?<View><View style={styles.paywallIconTriangle} /><AwseomeIcon style={styles.paywallIcon} name="plus" /></View>:<View></View>}
-          {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator style={appStyles.test} size="large" color={appVars.colorMain}/>:<View></View>}
+          {(item.paywall)?<View><View style={appStyles.paywallIconTriangle} /><AwseomeIcon style={appStyles.paywallIcon} name="plus" /></View>:<View></View>}
+          {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator style={appStyles.ePaperActivityIndicator} size="large" color={appVars.colorMain}/>:<View></View>}
           </Image>
         </TouchableOpacity>
-        </View>
+      </View>
     );
   }
 	render()
@@ -268,7 +262,7 @@ fetchdata = async () => {
     }
     return (
       <View>
-      <View style={styles.maincontainer}>
+      <View style={appStyles.ePaperMainContainer}>
       <FlatList
         data={mainItem}
         numColumns={1}
@@ -285,14 +279,13 @@ fetchdata = async () => {
         renderItem={({item}) => this.renderItemNewst(item)}
        />
       </View>
-      <View style={styles.horizontalContainer}>
+      <View style={appStyles.ePaperHorizontalContainer}>
       <FlatList
         data={this.state.data.slice(1)}
         horizontal={true}
         onEndReached={this.handlePageEnd}
         onEndReachedThreshold={0.5}
-        keyExtractor={(item,index)=> {
-          
+        keyExtractor={(item,index)=> { 
           return item.id;
           }}
         renderItem={({item}) => this.renderItem(item)}
@@ -304,84 +297,3 @@ fetchdata = async () => {
 }
 
 export default HomeScreen;
-
-var swidth = Dimensions.get('window').width;
-var sheight = Dimensions.get('window').height;
-var sratio = sheight / swidth;
-
-const styles = StyleSheet.create({
-
-  maincontainer: {
-    backgroundColor: appVars.colorWhite,
-    height: (sheight * .75)-80,
-    shadowColor: 'black',
-    shadowOffset: { width: 10, height: 20 },
-    shadowOpacity: 1,
-    shadowRadius: 1,
-    borderBottomColor: "black",
-    elevation : 5,
-  },
-
-  maincontainerWrapper: {
-    paddingTop: 15,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-
-  horizontalContainer: {
-    height: (sheight * .25),
-    backgroundColor: appVars.colorSeperatorColor,
-  },
-
-  issue:{
-    marginTop: 10,
-    marginLeft: 10,
-    padding: 3,
-    backgroundColor: appVars.colorWhite,
-    borderColor: '#cccccc',
-    borderWidth: 1,
-  },
-
-  issueNewest:{
-    padding: 3,
-    backgroundColor: appVars.colorWhite,
-    borderColor: '#cccccc',
-    borderWidth: 1,
-  },
-
-  paywallIconTriangle:{
-    position: 'absolute',
-    right: 0,
-    width: 0,
-    height: 0,
-    backgroundColor: 'transparent',
-    borderStyle: 'solid',
-    borderRightWidth: 32,
-    borderTopWidth: 32,
-    borderRightColor: 'transparent',
-    borderTopColor: appVars.colorMain,
-    transform: [
-      {rotate: '90deg'}
-    ]
-  },
-
-  paywallIcon: {
-    position: 'absolute',
-    backgroundColor: 'transparent',
-    right: 2,
-    top: 2,
-    fontSize: 16,
-    color: appVars.colorWhite,
-  },
-
-  issuedate:{
-    backgroundColor: appVars.colorMain,
-    color: appVars.colorWhite,
-    textAlign: 'center',
-    fontSize: 12,
-    padding: 3,
-    fontFamily: appVars.fontMain,
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
-});
