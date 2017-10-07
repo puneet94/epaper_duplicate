@@ -38,6 +38,7 @@ module.exports = {
   colorWhite: "#ffffff",
   colorBlack: "#000000",
   colorMain: "#006633",
+  colorActive: "#cc0000",
   colorLightGray: "#cccccc",
   colorSeperatorColor: "rgba(0, 0, 0, 0.1)",
   colorDrawerIsActiveBackgroundColor: "rgba(0, 0, 0, 0.3)",
@@ -54,10 +55,16 @@ module.exports = {
   labelMyIssues: "My issues",
   labelNewsList: "Newsfeed",
   labelAccount: "Account",
+
+  labelDelete: "Delete",
+  labelCancel: "Cancel",
   
   //text
   textDownloadAllreadRunning: "Download already in progress. Please wait for it to finish.",
-
+  textNoIssueSelected: "No issue selected",
+  textDeleteIssues: "Delete Issues",
+  //textComfirmDeleteIssues: "Are you sure you want to delete these"+${this.state.deletedIssues.length}+"issues",
+  
   STORAGE_KEY : 'TOKEN',
 
 }

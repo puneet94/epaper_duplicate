@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react'
-import { ToastAndroid,Platform,Text,Button,View,StyleSheet,Dimensions,Image,FlatList,TouchableOpacity,Alert } from 'react-native'
+import { ToastAndroid,Platform,Text,Button,View,StyleSheet,Dimensions,FlatList,TouchableOpacity,Alert } from 'react-native';
+import Image from 'react-native-scalable-image';
 import store from 'react-native-simple-store';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
@@ -20,15 +21,15 @@ class IssuesScreen extends Component {
   static navigationOptions = ({ navigation }) => {
     const { params = {} } = navigation.state;
     return {
-      headerRight: <View style={{width:100}}>
+      headerRight: <View>
       {params.enabledEdit?
-      <View style={{flexDirection:"row",justifyContent:"space-around",alignItems:"center"}}>
-        <AwseomeIcon size={24} name="check"  color="black" onPress={()=>{params.selectAll();}}/>
-        <AwseomeIcon size={24} name="trash"  color={params.deletedIssues.length?"black":"#b2b2b2"} onPress={()=>{params.confirmDelete();}}/>
-        <AwseomeIcon size={24} name="times"  color="black" onPress={()=>{params.resetDelete();}}/>
-        </View>:
-      <TouchableOpacity onPress={()=>{params.startEdit();}}>
-        <AwseomeIcon size={24} name="pencil-square-o" style={{alignSelf:"flex-end",paddingRight:15}} color="black"/>
+      <View style={{flexDirection:"row"}}>
+        <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.selectAll();}}><AwseomeIcon size={24} name="check"  color="black"/></TouchableOpacity>
+        <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.confirmDelete();}}><AwseomeIcon size={24} name="trash"  color={params.deletedIssues.length?appVars.colorMain:appVars.colorDrawerIsActiveBackgroundColor}/></TouchableOpacity>
+        <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.resetDelete();}}><AwseomeIcon size={24} name="times"  color={appVars.colorMain} /></TouchableOpacity>
+      </View>:
+      <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.startEdit();}}>
+        <AwseomeIcon size={24} name="pencil" style={{alignSelf:"flex-end",paddingRight:15}} color={appVars.colorMain}/>
       </TouchableOpacity>}
     </View>
     };
@@ -61,9 +62,9 @@ class IssuesScreen extends Component {
   componentWillUpdate = (nextProps,nextState)=> {
     if (this.props !== nextProps) {
       if (nextProps.navigation) {
-        console.log("yes");
-        console.log(nextProps);
-        console.log(nextState);
+        //console.log("yes");
+        //console.log(nextProps);
+        //console.log(nextState);
         /*nextProps.navigation.setParams({ 
           confirmDelete: this.confirmDelete ,
           enabledEdit: nextState.enabledEdit,
@@ -97,7 +98,7 @@ class IssuesScreen extends Component {
   checkSelected = (item)=>{
     if(this.checkIssueInDeleted(item)!=-1){
       return {
-        backgroundColor: 'red'
+        backgroundColor: appVars.colorActive
       };
     }
   }
@@ -126,22 +127,16 @@ class IssuesScreen extends Component {
   renderIssue = (item)=>{
 
     return (
-    <View style={styles.issue}>
-      <TouchableOpacity activeOpacity = { .5 } onPress={ ()=>{
+    <View style={appStyles.myIssuesEditionWrapper}>      
+      <TouchableOpacity style={appStyles.imageBorder} activeOpacity = { .5 } onPress={ ()=>{
         this.showIssue(item)
         }}>
-          <Image style={styles.image} source={{uri:'file://'+item.thumbNail}} >
-            {this.state.enabledEdit && <View style={[{width: 42,
-              height: 42,
-              borderRadius: 21,
-              marginRight: 5,
-              marginTop:5,
-              borderColor:"black",
-              borderWidth: 2},this.checkSelected(item)]}>
-            </View>}
-          </Image>
-        </TouchableOpacity>
-        <Text style={styles.details}>{item["date"]}</Text>
+        <Image maxWidth={(Dimensions.get('window').width*0.333)-15} source={{uri:'file://'+item.thumbNail}} >
+          {this.state.enabledEdit && <View style={[appStyles.myIssueSelect,this.checkSelected(item)]}>
+          </View>}
+        </Image>
+        <Text style={appStyles.ePaperEditionDate}>{item["date"]}</Text>
+      </TouchableOpacity>
     </View>
     );
   }
@@ -171,15 +166,15 @@ class IssuesScreen extends Component {
 
     
     if(this.state.deletedIssues.length===0){
-      ToastAndroid.show('No issue selected', ToastAndroid.SHORT);
+      ToastAndroid.show(appVars.textNoIssueSelected, ToastAndroid.SHORT);
       return;
     }else{
       Alert.alert(
-        'Delete Issues',
+        appVars.textDeleteIssues,
         `Are you sure you want to delete these ${this.state.deletedIssues.length} issues`,
         [
-          {text: 'Delete', onPress: () => this.startDelete() },
-          {text: 'Cancel', onPress: () => console.log('OK Pressed'),style: 'cancel'},
+          {text: appVars.labelDelete, onPress: () => this.startDelete() },
+          {text: appVars.labelCancel, onPress: () => console.log('OK Pressed'),style: 'cancel'},
         ],
         { cancelable: true }
       );
@@ -208,7 +203,7 @@ class IssuesScreen extends Component {
       <FlatList
       data={this.state.myissues}
       extraData={this.state}
-      numColumns={2}
+      numColumns={3}
       keyExtractor={(item,index)=> {
         return item.path;
         }}
@@ -239,9 +234,7 @@ componentDidUpdate = (prevProps,prevState)=>{
     return (
       <View style={appStyles.container}>
         
-        
-        
-          <View style={{flex:1}}>
+          <View style={appStyles.myIssuesMainContainer}>
           {
             this.state.myissues && this.renderIssues()
           }
@@ -252,52 +245,3 @@ componentDidUpdate = (prevProps,prevState)=>{
   }
 }
 export default IssuesScreen;
-const headerStyles = {
-  flex:0.8,
-  backgroundColor: 'white',
-  justifyContent:"space-between",
-  flexDirection:"row",
-  paddingTop: 15,
-  paddingBottom: 0,
-  borderBottomWidth: 0,
-  shadowColor: 'black',
-  shadowOffset: { width: 10, height: 20 },
-  shadowOpacity: 1,
-  shadowRadius: 1,
-  borderBottomColor: "black",
-  elevation : 5
-};
-if (Platform.OS === 'ios') {
-  headerStyles.borderBottomWidth= 2;
-  headerStyles.borderBottomColor= 'rgba(0, 0, 0, .3)';
-
-}
-var swidth = Dimensions.get('window').width;
-
-const styles = StyleSheet.create({
-  headerContainer:headerStyles,
-  demo:{
-    color: 'black',
-  },
-  issuesText:{
-    color:'green'
-  },
-  image:{
-    width: (swidth * .5)-8,
-    height: 300,
-    marginLeft: 5,
-    resizeMode: 'contain',
-    borderWidth: 2,
-    borderColor: appVars.colorMain,
-    flex: 1,
-    justifyContent: "flex-start",
-    alignItems: "flex-end"
-  },
-  issue:{
-    marginTop: 20,
-    marginBottom: 10
-  },
-  details:{
-    fontWeight: 'bold',
-  }
-});

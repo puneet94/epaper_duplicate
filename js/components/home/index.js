@@ -230,14 +230,12 @@ fetchdata = async () => {
 
     return(
       <View style={appStyles.ePaperEditionWrapper}>
-        <TouchableOpacity style={appStyles.ePapaperEdition} activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
-          <View style={appStyles.imageBorder}>
+        <TouchableOpacity style={appStyles.imageBorder} activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
             <Image maxHeight={Dimensions.get('window').height*0.25-46} source={{uri: appVars.apiUrl +"/"+item.picture.img.src} } >
             {(item.paywall)?<View><View style={appStyles.paywallIconTriangle} /><AwseomeIcon style={appStyles.paywallIcon} name="plus" /></View>:<View></View>}
             {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator style={appStyles.ePaperActivityIndicator} size="large" color={appVars.colorMain}/>:<View></View>}
             </Image>
            <Text style={appStyles.ePaperEditionDate}>{item["date"]}</Text>
-          </View>
         </TouchableOpacity>
       </View>
     );

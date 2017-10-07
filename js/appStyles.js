@@ -59,6 +59,29 @@ module.exports = StyleSheet.create({
     alignItems: 'center'
   },
 
+  //myIssues
+  myIssuesMainContainer: {
+    flex: 1,
+    paddingTop: 15,
+  },
+  myIssuesEditionWrapper: {
+    width: (x * .333),
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingBottom: 10,
+  },
+  myIssueSelect: {
+    position: 'absolute',
+    right: 0,
+    top: 0,
+    width: 18,
+    height: 18,
+    borderColor:appVars.colorBlack,
+    backgroundColor: appVars.colorWhite,
+    borderWidth: 1
+  },
+
+
 
   //newsdetail
   topheadlineContainer: {
@@ -101,8 +124,6 @@ module.exports = StyleSheet.create({
     color: appVars.colorMain,
     marginBottom: em(0.875),
   },
-
-
 
   container: {
     flex: 1,
@@ -175,17 +196,15 @@ drawerLabel: {
   },
   iconWrapper: {
     flex:1,
-    width: 60,
+    width: 50,
+    height: 60,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: appVars.colorWhite,
   },
-
   headerIcon: {
       color: appVars.colorMain,
       fontSize: 20,
   },
-
 
   // generall stuff
 
