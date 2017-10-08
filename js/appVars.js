@@ -73,6 +73,8 @@ module.exports = {
   labelHome: "Home",
   labelMyIssues: "My issues",
   labelNewsList: "Newsfeed",
+  labelUpload: "Upload",
+  labelSettings: "Settings",
   labelAccount: "Account",
 
   labelDelete: "Delete",

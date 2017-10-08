@@ -50,6 +50,22 @@ class DrawerContainer extends React.Component {
           <Text style={appStyles.drawerLabel}>{appVars.labelNewsList.toUpperCase()}</Text>
         </View>
       </TouchableWithoutFeedback>
+      <View style={appStyles.drawerSeperator} />
+
+      <TouchableWithoutFeedback onPress={() => navigation.navigate('Upload')} >
+        <View style={[appStyles.drawerItem,this.isActiveClass('upload')]}>
+          <AwseomeIcon name="upload" style={appStyles.drawerIcon}/>
+          <Text style={appStyles.drawerLabel}>{appVars.labelUpload.toUpperCase()}</Text>
+        </View>
+      </TouchableWithoutFeedback>
+      <View style={appStyles.drawerSeperator} />
+      
+      <TouchableWithoutFeedback onPress={() => navigation.navigate('Settings')} style={this.isActiveClass('settings')}>
+        <View style={[appStyles.drawerItem,this.isActiveClass('settings')]}>
+          <AwseomeIcon name="cog" style={appStyles.drawerIcon}/>
+          <Text style={appStyles.drawerLabel}>{appVars.labelSettings.toUpperCase()}</Text>
+        </View>
+      </TouchableWithoutFeedback>
 
       <View style={appStyles.drawerSeperator} />
 

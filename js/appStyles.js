@@ -241,6 +241,9 @@ drawerLabel: {
   headerWrapper: {
       backgroundColor: appVars.colorWhite,
   },
+  headerTitle: {
+    fontFamily: appVars.fontMain,
+  },
   iconWrapper: {
     flex:1,
     width: 50,
@@ -252,6 +255,7 @@ drawerLabel: {
       color: appVars.colorMain,
       fontSize: 20,
   },
+
 
   // generall stuff
 

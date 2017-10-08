@@ -7,7 +7,9 @@ import { DrawerNavigator } from 'react-navigation';
 import HomeScreen from "../home";
 import IssuesScreen from "../myissues";
 import NewsListScreen from "../newslist";
+import UploadScreen from "../upload";
 import AccountScreen from "../account";
+import SettingsScreen from "../settings";
 import DrawerContainer from "./DrawerContainer";
 
 import appVars from '../../appVars';
@@ -32,10 +34,22 @@ const Menu = DrawerNavigator({
       headerTitle: appVars.labelNewsList.toUpperCase(),
     }),
   },
+  Upload: {
+    screen: UploadScreen,
+    navigationOptions : ({ navigation, screenProps }) => ({
+      headerTitle: appVars.labelUpload.toUpperCase(),
+    }),
+  },
   Account: {
     screen: AccountScreen,
     navigationOptions : ({ navigation, screenProps }) => ({
       headerTitle: appVars.labelAccount.toUpperCase(),
+    }),
+  },
+  Settings: {
+    screen: SettingsScreen,
+    navigationOptions : ({ navigation, screenProps }) => ({
+      headerTitle: appVars.labelSettings.toUpperCase(),
     }),
   },
 
