@@ -17,5 +17,4 @@ class NewsImageScreen extends Component {
     }
   }
 
-
 export default NewsImageScreen;

@@ -101,11 +101,7 @@ module.exports = StyleSheet.create({
     color: appVars.colorBlack,
     marginBottom: em(0.25),
   },
-  newsDate: {
-    fontSize: em(0.75),
-    fontFamily: appVars.fontSub,
-    color: appVars.colorDarkGray,
-  },
+
   newsListCity: {
     fontSize: em(0.875),
     fontFamily: appVars.fontMain,
@@ -124,6 +120,12 @@ module.exports = StyleSheet.create({
     borderBottomWidth: 2,
     borderBottomColor: appVars.colorLightGray,
     alignSelf: 'center',
+  },
+  newsDate: {
+    fontSize: em(0.75),
+    width: (x*0.5),
+    fontFamily: appVars.fontSub,
+    color: appVars.colorDarkGray,
   },
   topheadline: {
     fontSize: em(0.75),
@@ -159,6 +161,13 @@ module.exports = StyleSheet.create({
     fontFamily: appVars.fontSub,
     color: appVars.colorMain,
     marginBottom: em(0.875),
+  },
+  newsEditor: {
+    fontSize: em(0.750),
+    width: (x*0.5)-10,
+    textAlign: 'right',
+    fontFamily: appVars.fontMain,
+    color: appVars.colorDarkGray,
   },
 
 

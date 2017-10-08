@@ -5,11 +5,14 @@ const ScreenWidth = Dimensions.get('window').width;
   // WTF - needs to edit the Mafra font name
   if(Platform.OS === 'android') {
     var fontHeadline = "MafraCondensedDeckMedium";
+    var shareIcon = 'md-share';
   } else {
     var fontHeadline = "Mafra Condensed Deck";
+    var shareIcon = 'ios-share-outline';
   }
 
   const ObjNewsCategories  = [
+    { archive: 'demo', label: 'Demo'},
     { archive: 'allem', label: 'Start'},
     { archive: 'einbeck', label: 'Einbeck'},
     { archive: 'dassel', label: 'Dassel'},
@@ -33,13 +36,19 @@ module.exports = {
   // Settings for the new Newsfeed
   // How many newsitems should be grabbed per call.
   apiNewsLimit: "5",
-  NewsArchivesFallback: "allem",
+  NewsArchivesFallback: "demo",
   objNewsCategories: ObjNewsCategories,
 
   apiRefreshTime: 5*1000,
   serverurl: "https://mopo-server.de",
   forgotpasswordurl: "https://www.einbecker-morgenpost.de/login/passwort-vergessen.html",
 
+  // Youtube API KEY
+  YoutubeAPIKey: "AIzaSyDnHRcAVdm_hLVvZNTIBCucsaKMggJeGaU",
+  
+  // icons
+  shareIcon: shareIcon,
+  
   //drawerWidth
   drawerWidth: ScreenWidth*0.69,
 

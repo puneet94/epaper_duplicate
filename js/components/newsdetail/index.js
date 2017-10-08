@@ -10,11 +10,13 @@ import {
     Dimensions,
     RefreshControl,
     Button,
-
+    Share,
 } from 'react-native';
 import HTMLView from 'react-native-htmlview';
-import YouTube from 'react-native-youtube';
+import { YouTubeStandaloneAndroid } from 'react-native-youtube';
+import { YouTubeStandaloneIOS } from 'react-native-youtube';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
+import IoniconsIcon from 'react-native-vector-icons/Ionicons';
 import appStyles from '../../appStyles';
 import htmlStyles from '../../htmlStyles';
 import appVars from '../../appVars';
@@ -24,17 +26,43 @@ import store from 'react-native-simple-store';
 
 class NewsDetailScreen extends Component{
 
-  _showAlert =()=>{
-      alert('test');
+  YouTube =()=>{
+    if(Platform.OS === 'android') {    
+    YouTubeStandaloneAndroid.playVideo({
+      apiKey: appVars.YoutubeAPIKey,     // Your YouTube Developer API Key
+      videoId: this.state.YouTubeId,     // YouTube video ID
+      autoplay: true,             // Autoplay the video
+      startTime: 0,             // Starting point of video (in seconds)
+    })
+      .then(() => console.log('Standalone Player Exited'))
+      .catch(errorMessage => console.error(errorMessage))
+    } else {
+      YouTubeStandaloneIOS.playVideo(this.state.YouTubeId)
+      .then(() => console.log('Standalone Player Exited'))
+      .catch(errorMessage => console.error(errorMessage))
     }
+  }
+
+  SocialShare =()=>{
+    Share.share({
+      message: this.state.shareUrl,
+      url: this.state.shareUrl,
+      title: this.state.shareTitle
+    }, {
+      // Android only:
+      dialogTitle: this.state.shareTitle,
+    })
+  }
 
   static navigationOptions = ({ navigation }) => {
      const { params = {} } = navigation.state;
      return {
-         headerRight: <Button title="SHARE" onPress={() => params.handleAlert()} />
+         headerRight: <View style={{flexDirection:"row"}}>
+           <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleYouTube()}><IoniconsIcon size={24} name="logo-youtube"  color="black"/></TouchableOpacity>
+           <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleSocialShare()}><IoniconsIcon size={24} name={appVars.shareIcon}  color="black"/></TouchableOpacity>
+           </View>
      };
  };
-
   constructor(props){
     super(props);
     this.state = {
@@ -46,7 +74,9 @@ class NewsDetailScreen extends Component{
   }
 
   componentDidMount(){
-    this.props.navigation.setParams({ handleAlert: this._showAlert });
+    this.props.navigation.setParams({ handleYouTube: this.YouTube });
+    this.props.navigation.setParams({ handleSocialShare: this.SocialShare });
+    
     this.fetchdata();
   }
 
@@ -65,6 +95,9 @@ fetchdata = async () => {
           error: res.error || null,
           loading : false,
           refreshing: false,
+          shareUrl: res.response[0].shareurl,
+          shareTitle: res.response[0].headline,
+          YouTubeId: res.response[0].youtube_id,
         })
       })
       .catch(error => {
@@ -83,26 +116,29 @@ fetchdata = async () => {
   renderItem = (item) =>{
     return(
 
-      <View style={styles.news}>
+      <View style={appStyles.newsList}>
 
-        <View style={appStyles.topheadlineContainer}><Text style={appStyles.topheadline}>{item.topheadline.toUpperCase()}</Text></View>
+      {(item.topheadline)?<View style={appStyles.topheadlineContainer}><Text style={appStyles.topheadline}>{item.topheadline.toUpperCase()}</Text></View>:<View></View>}
 
         <Text style={appStyles.headline}>{item.headline}</Text>
 
         <Text style={appStyles.subheadline}>{item.subheadline}</Text>
 
-          <View style={styles.imageContainer}>
+          <View style={appStyles.imageBorder}>
             <Image width={Dimensions.get('window').width-18} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } />
-            <Text style={appStyles.imagecopyright}>{item.imagecopyright}</Text>
+            {(item.imagecopyright)?<Text style={appStyles.imagecopyright}>Foto: {item.imagecopyright}</Text>:<View></View>}
           </View>
 
-          <Text style={appStyles.imagecaption}>{item.caption}</Text>
+          {(item.caption)?<Text style={appStyles.imagecaption}>{item.caption}</Text>:<View></View>}
 
-          <HTMLView addLineBreaks={false} stylesheet={htmlStyles.teaser} value={item.teaser} />
+          {(item.teaser)?<HTMLView addLineBreaks={false} stylesheet={htmlStyles.teaser} value={item.teaser} />:<View></View>}
 
           <HTMLView addLineBreaks={false} value={item.text.replace('<p>', '<p><city>'+item.city.toUpperCase()+'. </city>')} stylesheet={htmlStyles.text} onLinkPress={(url) => alert('clicked link:'+url)} />
 
-          <View><Text>{item.date}</Text><Text>{item.editor}</Text></View>
+          <View style={{flex: 1, flexDirection: 'row'}}>
+            <Text style={appStyles.newsDate}>{item.date}</Text>
+            <Text style={appStyles.newsEditor}>{item.editor}</Text>
+          </View>
 
       </View>
 
@@ -133,25 +169,3 @@ fetchdata = async () => {
 }
 
 export default NewsDetailScreen;
-
-var swidth = Dimensions.get('window').width;
-
-
-const styles = StyleSheet.create({
-
-  imageContainer: {
-    borderColor: '#cccccc',
-    borderWidth: 1,
-    padding: 3,
-  },
-
-  news: {
-    margin: 5,
-  },
-
-  newslistInner: {
-
-  },
-
-
-});
