@@ -36,26 +36,44 @@ class NewsListScreen extends Component{
       refreshing: false,
       downloading: false,
       currentItem: null,
+      selectedArchive: null,
+      bannerAds: []
     }
   }
+  componentWillMount = async ()=>{
+    let bannerAds = await this.fetchBannerAds();
+    bannerAds = await bannerAds.json();
+    
+    this.setState({
+      bannerAds: bannerAds.response.map((singlesource)=>{
+        return appVars.apiUrl +"/"+singlesource.singleSRC;
+      })
 
-  componentDidMount(){
+    });
+  }
+  componentDidMount  = async () => {
     this.fetchdata();
+    
+    
+    /*
+     this.setState({
+      adsApi: {...this.state.adsApi,[arrayIndex]:appVars.apiUrl +"/"+res.response[0].singleSRC}
+    });*/
+    
+    
+
   }
 
   fetchdata = async () => {
     const { page } = this.state;
-    const navParams = this.props.navigation.state.params;
-    if(!navParams) {
-      var archive=appVars.NewsArchivesFallback;
-    } else {
-      var archive=navParams.archive;
-    }
+    var archive=this.state.selectedArchive || appVars.NewsArchivesFallback;
     const api = appVars.apiUrl+"/news.html?authtoken="+appVars.apiKey+"&limit="+appVars.apiNewsLimit+"&archives="+archive;
     let tempapi= api+"&page_n58=" + this.state.page.toString();
+    
     this.setState({ loading: true});
-  
-    if(this.state.refreshing){
+    if(page===1){
+      this.setState({ refreshing: true});
+      
       fetch(tempapi)
         .then(res => res.json())
         .then(res => {
@@ -64,15 +82,18 @@ class NewsListScreen extends Component{
             error: res.error || null,
             loading : false,
             refreshing: false,
-          })
+            
+          });
         })
         .catch(error => {
           this.setState({ error, loading: false });
         })
       } else {
+        
         fetch(tempapi)
           .then(res => res.json())
           .then(res => {
+            
             this.setState({
               data: [...this.state.data, ...res.response],
               error: res.error || null,
@@ -89,7 +110,7 @@ class NewsListScreen extends Component{
   handleRefresh = () =>{
     this.setState({
       page: 1,
-      refreshing:true,
+      refreshing:true
     }, ()=>{
       this.fetchdata();
     })
@@ -102,25 +123,25 @@ class NewsListScreen extends Component{
       this.fetchdata();
     });
   }
-
-  renderAdSeparator = async () => {
-  
+  fetchBannerAds =  ()=>{
     const apiAd = appVars.apiUrl+"/ads.html?authtoken="+appVars.apiKey+"&pid=9,10";
-
-      fetch(apiAd)
-        .then(res => res.json())
-        .then(res => {
-          console.log(res.response[0].singleSRC)
-          return(
-            <View><Image maxHeight={Dimensions.get('window').width*0.25} source={{uri: appVars.apiUrl +"/"+res.response[0].singleSRC} } /></View>
-          );
-        })
-        .catch(error => {
-          this.renderSeparator();
-        })
+    return fetch(apiAd);
+    //.then(res => res.json());
+  }
+  renderAdSeparator =  (index) => {
+    const arrayIndex = (index)%(this.state.bannerAds.length);
+        return(
+          <View>
+            <Image 
+              maxHeight={Dimensions.get('window').width*0.25} 
+              source={{uri: this.state.bannerAds[arrayIndex] }} 
+              />
+            </View>
+        );
   };
 
   renderSeparator = () =>{
+    
     return(
       <View
       style={{
@@ -151,16 +172,25 @@ class NewsListScreen extends Component{
   }
 
   handleMenuClick = async (item)=>{
-    
-        const { navigation } = this.props;
-        navigation.navigate('NewsList', {archive: item.archive});
+        this.setState({
+          selectedArchive: item.archive,
+          page: 1,
+          refreshing:true
+        },()=>{
+          this.fetchdata();
+        });
+        /*const { navigation } = this.props;
+        navigation.navigate('NewsList', {archive: item.archive});*/
       }
 
-  
+  checkActiveMenu = (menu)=>{
+    if(this.state.selectedArchive===menu){
+      return true;
+    }
+  }
   renderMenu = (item)=>{
-    
         return (     
-          <TouchableOpacity style={{margin: 10, backgroundColor: appVars.colorMain}} activeOpacity = { .5 } onPress={ this.handleMenuClick.bind(this,item)}>
+          <TouchableOpacity style={{margin: 10, backgroundColor: this.checkActiveMenu(item.archive)?'red':appVars.colorMain}} activeOpacity = { .5 } onPress={ this.handleMenuClick.bind(this,item)}>
           <Text style={{padding: 5, color: appVars.colorWhite}}>{item.label}</Text>
           </TouchableOpacity>
         );
@@ -181,10 +211,11 @@ class NewsListScreen extends Component{
         );
       }
 
-  renderItem = (item) =>{
-
+  renderItem = (item,index) =>{
+    
     return(
       <View style={appStyles.newsList}>
+
         <TouchableOpacity activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
         
         {(item.paywall)?<View><View style={appStyles.paywallIconTriangle} /><AwseomeIcon style={appStyles.paywallIcon} name="plus" /></View>:<View></View>}
@@ -202,9 +233,10 @@ class NewsListScreen extends Component{
 
             <Text style={appStyles.newsListTeaser}><Text style={appStyles.newsListCity}>{item.city.toUpperCase()}.</Text>{item.text.replace(/<{1}[^<>]{1,}>{1}/g," ")}</Text>
           </View>
-          
         </View>
-      </TouchableOpacity>
+        </TouchableOpacity>
+        
+        {((index+1)%3==0)?this.renderAdSeparator(index):this.renderSeparator()}
       </View>
 
     );
@@ -222,6 +254,8 @@ class NewsListScreen extends Component{
           }
         </View>
 
+
+
       <FlatList
         data={this.state.data}
         numColumns={1}
@@ -232,14 +266,13 @@ class NewsListScreen extends Component{
             colors={[appVars.colorMain]}
           />
           }
-        ItemSeparatorComponent={this.renderSeparator}
+        //ItemSeparatorComponent={()=>this.renderSeparator()}
         onEndReached={this.handlePageEnd}
         onEndReachedThreshold={2}
         keyExtractor={(item,index)=> {
-          //console.log(item.id);
           return item.id;
           }}
-        renderItem={({item}) => this.renderItem(item)}
+        renderItem={({item,index}) => this.renderItem(item,index)}
        />
       </View>
     );

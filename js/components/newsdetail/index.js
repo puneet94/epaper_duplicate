@@ -54,11 +54,12 @@ class NewsDetailScreen extends Component{
     })
   }
 
+  
   static navigationOptions = ({ navigation }) => {
      const { params = {} } = navigation.state;
      return {
          headerRight: <View style={{flexDirection:"row"}}>
-           <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleYouTube()}><IoniconsIcon size={24} name="logo-youtube"  color="black"/></TouchableOpacity>
+           {params.showYoutube && <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleYouTube()}><IoniconsIcon size={24} name="logo-youtube"  color="black"/></TouchableOpacity>}
            <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleSocialShare()}><IoniconsIcon size={24} name={appVars.shareIcon}  color="black"/></TouchableOpacity>
            </View>
      };
@@ -74,12 +75,27 @@ class NewsDetailScreen extends Component{
   }
 
   componentDidMount(){
-    this.props.navigation.setParams({ handleYouTube: this.YouTube });
-    this.props.navigation.setParams({ handleSocialShare: this.SocialShare });
+    
+    this.props.navigation.setParams({ 
+      handleYouTube: this.YouTube,
+      handleSocialShare: this.SocialShare 
+    });
     
     this.fetchdata();
   }
-
+  
+    
+componentDidUpdate = (prevProps,prevState)=>{
+  if(this.state.YouTubeId && !prevState.YouTubeId){
+  
+    this.props.navigation.setParams({ 
+      showYoutube: true,
+      handleYouTube: this.YouTube,
+      handleSocialShare: this.SocialShare 
+    });
+  }
+}
+  
 
 fetchdata = async () => {
   const navParams = this.props.navigation.state.params;
@@ -87,9 +103,15 @@ fetchdata = async () => {
   let tempapi= api;
   this.setState({ loading: true});
 
+
+
+
+
     fetch(tempapi)
       .then(res => res.json())
       .then(res => {
+        console.log("single detail response");
+        console.log(res);
         this.setState({
           data: res.response || [],
           error: res.error || null,
@@ -145,8 +167,7 @@ fetchdata = async () => {
     );
   }
 
-	render()
-	{
+	render = ()=>{
     return (
       <View style={appStyles.container}>
       <FlatList
