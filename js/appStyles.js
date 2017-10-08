@@ -256,7 +256,6 @@ drawerLabel: {
       fontSize: 20,
   },
 
-
   // generall stuff
 
   imageBorder: {

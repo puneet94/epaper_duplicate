@@ -35,7 +35,7 @@ class NewsListScreen extends Component{
       error: null,
       refreshing: false,
       downloading: false,
-      currentItem: null
+      currentItem: null,
     }
   }
 
@@ -43,38 +43,24 @@ class NewsListScreen extends Component{
     this.fetchdata();
   }
 
-fetchdata = async () => {
-  const { page } = this.state;
-  const navParams = this.props.navigation.state.params;
-  if(!navParams) {
-    var archive=appVars.NewsArchivesFallback;
-  } else {
-    var archive=navParams.archive;
-  }
-  const api = appVars.apiUrl+"/news.html?authtoken="+appVars.apiKey+"&limit="+appVars.apiNewsLimit+"&archives="+archive;
-  let tempapi= api+"&page_n58=" + this.state.page.toString();
-  this.setState({ loading: true});
-
-  if(this.state.refreshing){
-    fetch(tempapi)
-      .then(res => res.json())
-      .then(res => {
-        this.setState({
-          data: res.response || [],
-          error: res.error || null,
-          loading : false,
-          refreshing: false,
-        })
-      })
-      .catch(error => {
-        this.setState({ error, loading: false });
-      })
+  fetchdata = async () => {
+    const { page } = this.state;
+    const navParams = this.props.navigation.state.params;
+    if(!navParams) {
+      var archive=appVars.NewsArchivesFallback;
     } else {
+      var archive=navParams.archive;
+    }
+    const api = appVars.apiUrl+"/news.html?authtoken="+appVars.apiKey+"&limit="+appVars.apiNewsLimit+"&archives="+archive;
+    let tempapi= api+"&page_n58=" + this.state.page.toString();
+    this.setState({ loading: true});
+  
+    if(this.state.refreshing){
       fetch(tempapi)
         .then(res => res.json())
         .then(res => {
           this.setState({
-            data: [...this.state.data, ...res.response],
+            data: res.response || [],
             error: res.error || null,
             loading : false,
             refreshing: false,
@@ -82,10 +68,23 @@ fetchdata = async () => {
         })
         .catch(error => {
           this.setState({ error, loading: false });
-        });
-    }
-};
-
+        })
+      } else {
+        fetch(tempapi)
+          .then(res => res.json())
+          .then(res => {
+            this.setState({
+              data: [...this.state.data, ...res.response],
+              error: res.error || null,
+              loading : false,
+              refreshing: false,
+            })
+          })
+          .catch(error => {
+            this.setState({ error, loading: false });
+          });
+      }
+  };
 
   handleRefresh = () =>{
     this.setState({
@@ -103,6 +102,24 @@ fetchdata = async () => {
       this.fetchdata();
     });
   }
+
+  renderAdSeparator = async () => {
+  
+    const apiAd = appVars.apiUrl+"/ads.html?authtoken="+appVars.apiKey+"&pid=9,10";
+
+      fetch(apiAd)
+        .then(res => res.json())
+        .then(res => {
+          console.log(res.response[0].singleSRC)
+          return(
+            <View><Image maxHeight={Dimensions.get('window').width*0.25} source={{uri: appVars.apiUrl +"/"+res.response[0].singleSRC} } /></View>
+          );
+        })
+        .catch(error => {
+          this.renderSeparator();
+        })
+  };
+
   renderSeparator = () =>{
     return(
       <View
