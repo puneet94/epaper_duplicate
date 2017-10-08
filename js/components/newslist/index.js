@@ -14,7 +14,9 @@ import {
     RefreshControl,
     Alert,
     ActivityIndicator,
-    ToastAndroid
+    ToastAndroid,
+    Linking,
+    Button
 } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
@@ -37,7 +39,8 @@ class NewsListScreen extends Component{
       downloading: false,
       currentItem: null,
       selectedArchive: null,
-      bannerAds: []
+      bannerAds: [],
+      bannerAdsUrl: []
     }
   }
   componentWillMount = async ()=>{
@@ -47,6 +50,9 @@ class NewsListScreen extends Component{
     this.setState({
       bannerAds: bannerAds.response.map((singlesource)=>{
         return appVars.apiUrl +"/"+singlesource.singleSRC;
+      }),
+      bannerAdsUrl: bannerAds.response.map((singlesource)=>{
+        return singlesource.url;
       })
 
     });
@@ -123,20 +129,32 @@ class NewsListScreen extends Component{
       this.fetchdata();
     });
   }
-  fetchBannerAds =  ()=>{
-    const apiAd = appVars.apiUrl+"/ads.html?authtoken="+appVars.apiKey+"&pid=9,10";
+
+  handleExternalUrl = function (externalurl){
+    Linking.canOpenURL(externalurl).then(supported => {
+          if (supported) {
+            Linking.openURL(externalurl);
+          } else {
+            console.log("Don't know how to open URI: " + externalurl);
+          }
+      });
+  };
+
+
+  fetchBannerAds = ()=>{
+    const apiAd = appVars.apiUrl+"/ads.html?authtoken="+appVars.apiKey+"&pid=6";
     return fetch(apiAd);
     //.then(res => res.json());
   }
   renderAdSeparator =  (index) => {
     const arrayIndex = (index)%(this.state.bannerAds.length);
         return(
-          <View>
-            <Image 
-              maxHeight={Dimensions.get('window').width*0.25} 
+          <View style={appStyles.listad}>
+            <Image onPress={()=> this.handleExternalUrl(this.state.bannerAdsUrl[arrayIndex])}
+              maxWidth={Dimensions.get('window').width} 
               source={{uri: this.state.bannerAds[arrayIndex] }} 
               />
-            </View>
+          </View>
         );
   };
 
@@ -214,28 +232,28 @@ class NewsListScreen extends Component{
   renderItem = (item,index) =>{
     
     return(
+      <View>
       <View style={appStyles.newsList}>
-
-        <TouchableOpacity activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
-        
-        {(item.paywall)?<View><View style={appStyles.paywallIconTriangle} /><AwseomeIcon style={appStyles.paywallIcon} name="plus" /></View>:<View></View>}
-        
-        <Text style={appStyles.newsListHeadline}>{item.headline}</Text>
+          <TouchableOpacity activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
           
-        <View style={{flex: 1, flexDirection: 'row'}}>
-          <View>
-            <View style={appStyles.imageBorder}>
-            <Image maxHeight={Dimensions.get('window').width*0.25} source={{uri: appVars.apiUrl +"/"+item.picture.img.src} } />
+          {(item.paywall)?<View><View style={appStyles.paywallIconTriangle} /><AwseomeIcon style={appStyles.paywallIcon} name="plus" /></View>:<View></View>}
+          
+          <Text style={appStyles.newsListHeadline}>{item.headline}</Text>
+            
+          <View style={{flex: 1, flexDirection: 'row'}}>
+            <View>
+              <View style={appStyles.imageBorder}>
+              <Image maxHeight={Dimensions.get('window').width*0.25} source={{uri: appVars.apiUrl +"/"+item.picture.img.src} } />
+              </View>
+            </View>
+            <View style={appStyles.newsListInner}>
+              <Text style={appStyles.newsDate}>{item["date"]}</Text>
+
+              <Text style={appStyles.newsListTeaser}><Text style={appStyles.newsListCity}>{item.city.toUpperCase()}.</Text>{item.text.replace(/<{1}[^<>]{1,}>{1}/g," ")}</Text>
             </View>
           </View>
-          <View style={appStyles.newsListInner}>
-            <Text style={appStyles.newsDate}>{item["date"]}</Text>
-
-            <Text style={appStyles.newsListTeaser}><Text style={appStyles.newsListCity}>{item.city.toUpperCase()}.</Text>{item.text.replace(/<{1}[^<>]{1,}>{1}/g," ")}</Text>
-          </View>
-        </View>
-        </TouchableOpacity>
-        
+          </TouchableOpacity>
+        </View>      
         {((index+1)%3==0)?this.renderAdSeparator(index):this.renderSeparator()}
       </View>
 
@@ -244,8 +262,8 @@ class NewsListScreen extends Component{
 
 	render()
 	{
-    
     return (
+      
       <View style={appStyles.container}>
 
         <View>

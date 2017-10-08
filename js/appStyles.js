@@ -265,6 +265,12 @@ drawerLabel: {
     borderWidth: 1,
   },
 
+  listad: {
+    paddingTop: 3,
+    paddingBottom: 3,
+    backgroundColor: appVars.colorSeperatorColor,    
+  },
+
   paywallIconTriangle:{
     position: 'absolute',
     right: 0,
