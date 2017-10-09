@@ -5,10 +5,14 @@ const ScreenWidth = Dimensions.get('window').width;
   // WTF - needs to edit the Mafra font name
   if(Platform.OS === 'android') {
     var fontHeadline = "MafraCondensedDeckMedium";
+    
     var shareIcon = 'md-share';
+    var adArchives = '8';
   } else {
     var fontHeadline = "Mafra Condensed Deck";
+    
     var shareIcon = 'ios-share-outline';
+    var adArchives = '7';
   }
 
   const ObjNewsCategories  = [
@@ -36,8 +40,12 @@ module.exports = {
   // Settings for the new Newsfeed
   // How many newsitems should be grabbed per call.
   apiNewsLimit: "5",
+
   NewsArchivesFallback: "demo",
   objNewsCategories: ObjNewsCategories,
+
+  // Ad / Banner
+  apiAdArchives: adArchives,
 
   apiRefreshTime: 5*1000,
   serverurl: "https://mopo-server.de",

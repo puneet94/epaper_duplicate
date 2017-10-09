@@ -32,11 +32,11 @@ module.exports = StyleSheet.create({
   ePaperMainContainer: {
     backgroundColor: appVars.colorWhite,
     height: (y * .75)-80,
-    shadowColor: 'black',
+    shadowColor: appVars.colorBlack,
     shadowOffset: { width: 10, height: 20 },
     shadowOpacity: 1,
     shadowRadius: 1,
-    borderBottomColor: 'black',
+    borderBottomColor: appVars.colorBlack,
     elevation : 5,
   },
   ePaperMainWrapper: {
@@ -263,14 +263,19 @@ drawerLabel: {
   //submenu
   subMenuContainer: {
     backgroundColor: appVars.colorSeperatorColor,
-    borderBottomWidth: 2,
+    shadowColor: appVars.colorBlack,
+    shadowOffset: { width: 10, height: 20 },
+    shadowOpacity: 1,
+    shadowRadius: 1,
+    borderBottomWidth: 1,
     borderBottomColor: appVars.colorMain,
+    elevation : 5,
   },
   subMenuItem: {
     borderBottomWidth: 2,
     borderBottomColor: 'transparent',
     paddingTop: 6,
-    paddingBottom: 0,
+    paddingBottom: 2,
     marginRight: 10,
     marginLeft: 10,
     justifyContent: 'center',
@@ -280,7 +285,7 @@ drawerLabel: {
     borderBottomWidth: 2,
     borderBottomColor: appVars.colorMain,
     paddingTop: 6,
-    paddingBottom: 0,
+    paddingBottom: 2,
     marginRight: 10,
     marginLeft: 10,
     justifyContent: 'center',
@@ -300,10 +305,12 @@ drawerLabel: {
     borderWidth: 1,
   },
 
-  listad: {
+  listAd: {
     paddingTop: 3,
     paddingBottom: 3,
-    backgroundColor: appVars.colorSeperatorColor,    
+    backgroundColor: appVars.colorSeperatorColor,
+    justifyContent: 'center',
+    alignItems: 'center',   
   },
 
   paywallIconTriangle:{

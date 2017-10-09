@@ -60,13 +60,10 @@ class NewsListScreen extends Component{
   componentDidMount  = async () => {
     this.fetchdata();
     
-    
     /*
      this.setState({
       adsApi: {...this.state.adsApi,[arrayIndex]:appVars.apiUrl +"/"+res.response[0].singleSRC}
     });*/
-    
-    
 
   }
 
@@ -142,14 +139,14 @@ class NewsListScreen extends Component{
 
 
   fetchBannerAds = ()=>{
-    const apiAd = appVars.apiUrl+"/ads.html?authtoken="+appVars.apiKey+"&pid=6";
+    const apiAd = appVars.apiUrl+"/ads.html?authtoken="+appVars.apiKey+"&pid="+appVars.apiAdArchives;
     return fetch(apiAd);
     //.then(res => res.json());
   }
   renderAdSeparator =  (index) => {
     const arrayIndex = (index)%(this.state.bannerAds.length);
         return(
-          <View style={appStyles.listad}>
+          <View style={appStyles.listAd}>
             <Image onPress={()=> this.handleExternalUrl(this.state.bannerAdsUrl[arrayIndex])}
               maxWidth={Dimensions.get('window').width} 
               source={{uri: this.state.bannerAds[arrayIndex] }} 
@@ -275,8 +272,7 @@ class NewsListScreen extends Component{
             this.renderSubmenu()
           }
         </View>
-
-
+        
       <View style={appStyles.newsListContainer}>
       <FlatList
         data={this.state.data}
