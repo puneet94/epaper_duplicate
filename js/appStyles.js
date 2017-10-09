@@ -269,7 +269,8 @@ drawerLabel: {
   subMenuItem: {
     borderBottomWidth: 2,
     borderBottomColor: 'transparent',
-    height: 32,
+    paddingTop: 6,
+    paddingBottom: 0,
     marginRight: 10,
     marginLeft: 10,
     justifyContent: 'center',
@@ -278,7 +279,8 @@ drawerLabel: {
   subMenuItemActive: {
     borderBottomWidth: 2,
     borderBottomColor: appVars.colorMain,
-    height: 32,
+    paddingTop: 6,
+    paddingBottom: 0,
     marginRight: 10,
     marginLeft: 10,
     justifyContent: 'center',
