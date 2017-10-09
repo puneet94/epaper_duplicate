@@ -53,7 +53,6 @@ class NewsDetailScreen extends Component{
       dialogTitle: this.state.shareTitle,
     })
   }
-
   
   static navigationOptions = ({ navigation }) => {
      const { params = {} } = navigation.state;
@@ -135,6 +134,11 @@ fetchdata = async () => {
     })
   }
 
+  handleImageview = async (item)=>{
+    const { navigation } = this.props;
+    navigation.navigate('ImageViewer', {singleSRC: item.singleSRC});
+  }
+
   renderItem = (item) =>{
     return(
 
@@ -147,7 +151,7 @@ fetchdata = async () => {
         <Text style={appStyles.subheadline}>{item.subheadline}</Text>
 
           <View style={appStyles.imageBorder}>
-            <Image width={Dimensions.get('window').width-18} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } />
+            <Image width={Dimensions.get('window').width-18} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } onPress={ this.handleImageview.bind(this,item)} />
             {(item.imagecopyright)?<Text style={appStyles.imagecopyright}>Foto: {item.imagecopyright}</Text>:<View></View>}
           </View>
 
