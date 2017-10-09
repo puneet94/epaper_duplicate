@@ -86,7 +86,10 @@ module.exports = StyleSheet.create({
     borderWidth: 1
   },
 
-  //newslist 
+  //newslist
+  newsListContainer: {
+    
+  },
   newsList: {
     margin: 5,
   },
@@ -239,7 +242,7 @@ drawerLabel: {
 
 //header
   headerWrapper: {
-      backgroundColor: appVars.colorWhite,
+    backgroundColor: appVars.colorWhite,
   },
   headerTitle: {
     fontFamily: appVars.fontMain,
@@ -254,10 +257,40 @@ drawerLabel: {
   headerIcon: {
       color: appVars.colorMain,
       fontSize: 20,
+      textAlign: 'center',
+  },
+
+  //submenu
+  subMenuContainer: {
+    backgroundColor: appVars.colorSeperatorColor,
+    borderBottomWidth: 2,
+    borderBottomColor: appVars.colorMain,
+  },
+  subMenuItem: {
+    borderBottomWidth: 2,
+    borderBottomColor: 'transparent',
+    height: 32,
+    marginRight: 10,
+    marginLeft: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  subMenuItemActive: {
+    borderBottomWidth: 2,
+    borderBottomColor: appVars.colorMain,
+    height: 32,
+    marginRight: 10,
+    marginLeft: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  subMenuTextLabel: {
+    color: appVars.colorBlack,
+    fontSize: 16,
+    fontFamily: appVars.fontSub,
   },
 
   // generall stuff
-
   imageBorder: {
     padding: 3,
     backgroundColor: appVars.colorWhite,

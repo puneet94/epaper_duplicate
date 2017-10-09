@@ -12,14 +12,14 @@ const ScreenWidth = Dimensions.get('window').width;
   }
 
   const ObjNewsCategories  = [
-    { archive: 'demo', label: 'Demo'},
-    { archive: 'allem', label: 'Start'},
-    { archive: 'einbeck', label: 'Einbeck'},
-    { archive: 'dassel', label: 'Dassel'},
-    { archive: 'kreiensenem', label: 'Kreiensen'},
-    { archive: 'regionem', label: 'Region'},
-    { archive: 'sportem', label: 'Sport'},
-    { archive: 'polizeiem', label: 'Blaulicht'}
+    { archive: 'allem', subMenuLabel: 'Start'},
+    { archive: 'demo', subMenuLabel: 'Demo'},
+    { archive: 'einbeck', subMenuLabel: 'Einbeck'},
+    { archive: 'dassel', subMenuLabel: 'Dassel'},
+    { archive: 'kreiensenem', subMenuLabel: 'Kreiensen'},
+    { archive: 'regionem', subMenuLabel: 'Region'},
+    { archive: 'sport', subMenuLabel: 'Sport'},
+    { archive: 'polizeiem', subMenuLabel: 'Blaulicht'}
   ];
 
 module.exports = {

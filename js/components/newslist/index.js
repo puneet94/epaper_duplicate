@@ -206,28 +206,32 @@ class NewsListScreen extends Component{
       return true;
     }
   }
+
   renderMenu = (item)=>{
         return (     
-          <TouchableOpacity style={{margin: 10, backgroundColor: this.checkActiveMenu(item.archive)?'red':appVars.colorMain}} activeOpacity = { .5 } onPress={ this.handleMenuClick.bind(this,item)}>
-          <Text style={{padding: 5, color: appVars.colorWhite}}>{item.label}</Text>
+          <TouchableOpacity activeOpacity = { .5 } onPress={ this.handleMenuClick.bind(this,item)}>
+            <View style={this.checkActiveMenu(item.archive)?appStyles.subMenuItemActive:appStyles.subMenuItem}>
+              <Text style={appStyles.subMenuTextLabel}>{item.subMenuLabel.toUpperCase()}</Text>
+            </View>
           </TouchableOpacity>
         );
       }
 
-    renderSubmenu= ()=>{
-        return (
-          <FlatList
-          style={{padding: 10, backgroundColor: appVars.colorLightGray}}
-          data={appVars.objNewsCategories}
-          extraData={this.state}
-          renderItem={({item}) => this.renderMenu(item)}
-          keyExtractor={(item,index)=> {
-          return item.archive;
-          }}
-          horizontal={true}
-         />
-        );
-      }
+  renderSubmenu= ()=>{
+      return (
+        <View style={appStyles.subMenuContainer}>
+        <FlatList
+        data={appVars.objNewsCategories}
+        extraData={this.state}
+        renderItem={({item}) => this.renderMenu(item)}
+        keyExtractor={(item,index)=> {
+        return item.archive;
+        }}
+        horizontal={true}
+        />
+        </View>
+      );
+    }
 
   renderItem = (item,index) =>{
     
@@ -273,7 +277,7 @@ class NewsListScreen extends Component{
         </View>
 
 
-
+      <View style={appStyles.newsListContainer}>
       <FlatList
         data={this.state.data}
         numColumns={1}
@@ -292,6 +296,7 @@ class NewsListScreen extends Component{
           }}
         renderItem={({item,index}) => this.renderItem(item,index)}
        />
+       </View>
       </View>
     );
 	}
