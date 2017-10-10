@@ -259,6 +259,17 @@ drawerLabel: {
       fontSize: 20,
       textAlign: 'center',
   },
+  
+  //imageModel
+  imageModelHeader: {
+    height: 55,
+    justifyContent: 'center',
+    alignItems: 'flex-end',
+  },
+  imageModelHeaderClose: {
+    margin: 15,
+    color: appVars.colorWhite,
+  },
 
   //submenu
   subMenuContainer: {

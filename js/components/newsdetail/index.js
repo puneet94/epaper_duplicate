@@ -177,7 +177,11 @@ fetchdata = async () => {
             <Modal visible={this.state.shown} animationType={appVars.animationType} transparent={true} onRequestClose={() => {this.closeImageViewer.bind(this)}}>
                 <ImageViewer
                 renderHeader = { () => {
-                                return <Button title='CLOSE' onPress={() => {this.closeImageViewer()}}/>
+                                return <View style={appStyles.imageModelHeader}>
+                                <TouchableOpacity onPress={() => {this.closeImageViewer()}}>
+                                <AwseomeIcon name="close" size={24} style={appStyles.imageModelHeaderClose}/>
+                                </TouchableOpacity>
+                                </View>
                             }}
                  imageUrls={imgsArr}/>
             </Modal>

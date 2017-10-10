@@ -204,9 +204,9 @@ class NewsListScreen extends Component{
     }
   }
 
-  renderMenu = (item)=>{
+  renderMenuItem = (item)=>{
         return (     
-          <TouchableOpacity activeOpacity = { .5 } onPress={ this.handleMenuClick.bind(this,item)}>
+          <TouchableOpacity activeOpacity = { .5 } onPress={this.handleMenuClick.bind(this,item)}>
             <View style={this.checkActiveMenu(item.archive)?appStyles.subMenuItemActive:appStyles.subMenuItem}>
               <Text style={appStyles.subMenuTextLabel}>{item.subMenuLabel.toUpperCase()}</Text>
             </View>
@@ -220,7 +220,7 @@ class NewsListScreen extends Component{
         <FlatList
         data={appVars.objNewsCategories}
         extraData={this.state}
-        renderItem={({item}) => this.renderMenu(item)}
+        renderItem={({item}) => this.renderMenuItem(item)}
         keyExtractor={(item,index)=> {
         return item.archive;
         }}
