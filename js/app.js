@@ -13,9 +13,8 @@ import appVars from './appVars';
 import appStyles from './appStyles';
 
 import MenuScreen from './components/menu';
-import PDFViewScreen from "./components/pdfview";
+import PDFViewScreen from './components/pdfview';
 import NewsDetailScreen from "./components/newsdetail";
-import ImageViewerScreen from "./components/imageviewer";
 
 const ePaperApp = StackNavigator({
     Menu : {
@@ -46,11 +45,6 @@ const ePaperApp = StackNavigator({
       navigationOptions : ({ navigation }) => ({
       }),
   },
-  ImageViewer: {
-    screen: ImageViewerScreen,
-    navigationOptions : ({ navigation }) => ({
-    }),
-},
 });
 
 export default ePaperApp;

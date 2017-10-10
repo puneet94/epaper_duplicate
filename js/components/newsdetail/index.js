@@ -11,6 +11,7 @@ import {
     RefreshControl,
     Button,
     Share,
+    Modal,
 } from 'react-native';
 import HTMLView from 'react-native-htmlview';
 import { YouTubeStandaloneAndroid } from 'react-native-youtube';
@@ -22,9 +23,24 @@ import htmlStyles from '../../htmlStyles';
 import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
 import Image from 'react-native-scalable-image';
+import ImageViewer from 'react-native-image-zoom-viewer';
+
 import store from 'react-native-simple-store';
 
+
 class NewsDetailScreen extends Component{
+
+  constructor(props){
+    super(props);
+    this.state = {
+      loading: false,
+      data: [],
+      error: null,
+      refreshing: false,
+      shown: false,
+      curIndex: 0
+    }
+  }
 
   YouTube =()=>{
     if(Platform.OS === 'android') {    
@@ -63,15 +79,6 @@ class NewsDetailScreen extends Component{
            </View>
      };
  };
-  constructor(props){
-    super(props);
-    this.state = {
-      loading: false,
-      data: [],
-      error: null,
-      refreshing: false,
-    }
-  }
 
   componentDidMount(){
     
@@ -102,10 +109,6 @@ fetchdata = async () => {
   let tempapi= api;
   this.setState({ loading: true});
 
-
-
-
-
     fetch(tempapi)
       .then(res => res.json())
       .then(res => {
@@ -134,12 +137,24 @@ fetchdata = async () => {
     })
   }
 
-  handleImageview = async (item)=>{
-    const { navigation } = this.props;
-    navigation.navigate('ImageViewer', {singleSRC: item.singleSRC});
+  openImageViewer(index){
+    this.setState({
+        shown:true,
+        curIndex:index
+    })
+  }
+
+  closeImageViewer(){
+    this.setState({
+        shown:false,
+        curIndex:0
+    })
   }
 
   renderItem = (item) =>{
+    let imgsArr = [{
+      url: appVars.apiUrl +'/'+item.singleSRC
+  }]
     return(
 
       <View style={appStyles.newsList}>
@@ -149,11 +164,24 @@ fetchdata = async () => {
         <Text style={appStyles.headline}>{item.headline}</Text>
 
         <Text style={appStyles.subheadline}>{item.subheadline}</Text>
+        {
+        imgsArr.map((url,index)=>{
+        return <TouchableOpacity key={index} activeOpacity={0.5} onPress={this.openImageViewer.bind(this,index)}>
+                <View style={appStyles.imageBorder}>
+                  <Image width={Dimensions.get('window').width-18} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } />
+                  {(item.imagecopyright)?<Text style={appStyles.imagecopyright}>Foto: {item.imagecopyright}</Text>:<View></View>}
+                </View>
+              </TouchableOpacity>
+              })
+          }
+            <Modal visible={this.state.shown} animationType={appVars.animationType} transparent={true} onRequestClose={() => {this.closeImageViewer.bind(this)}}>
+                <ImageViewer
+                renderHeader = { () => {
+                                return <Button title='CLOSE' onPress={() => {this.closeImageViewer()}}/>
+                            }}
+                 imageUrls={imgsArr}/>
+            </Modal>
 
-          <View style={appStyles.imageBorder}>
-            <Image width={Dimensions.get('window').width-18} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } onPress={ this.handleImageview.bind(this,item)} />
-            {(item.imagecopyright)?<Text style={appStyles.imagecopyright}>Foto: {item.imagecopyright}</Text>:<View></View>}
-          </View>
 
           {(item.caption)?<Text style={appStyles.imagecaption}>{item.caption}</Text>:<View></View>}
 
@@ -165,7 +193,6 @@ fetchdata = async () => {
             <Text style={appStyles.newsDate}>{item.date}</Text>
             <Text style={appStyles.newsEditor}>{item.editor}</Text>
           </View>
-
       </View>
 
     );

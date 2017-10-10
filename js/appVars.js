@@ -8,11 +8,13 @@ const ScreenWidth = Dimensions.get('window').width;
     
     var shareIcon = 'md-share';
     var adArchives = '8';
+    var animationType = 'slide';
   } else {
     var fontHeadline = "Mafra Condensed Deck";
     
     var shareIcon = 'ios-share-outline';
     var adArchives = '7';
+    var animationType = 'none';
   }
 
   const ObjNewsCategories  = [
@@ -57,6 +59,8 @@ module.exports = {
   // icons
   shareIcon: shareIcon,
   
+  animationType : animationType,
+
   //drawerWidth
   drawerWidth: ScreenWidth*0.69,
 
