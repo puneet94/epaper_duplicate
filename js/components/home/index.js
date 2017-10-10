@@ -106,7 +106,7 @@ fetchdata = async () => {
       if(myissues[i].id==item.id){
          downloadFile = false;
 
-        navigation.navigate('PDFView', {file: myissues[i].path});
+        navigation.navigate('PDFView', {file: myissues[i].path, epaperindex: myissues[i].epaperindex});
         break;
       }
     }
@@ -159,12 +159,13 @@ fetchdata = async () => {
       });
 
       // if you wanna open the pdfview screen
-      navigation.navigate('PDFView', {file: resp.path()});
+      navigation.navigate('PDFView', {file: resp.path(), epaperindex: item.epaperindex});
 
       const issueObject = {
         path: resp.path(),
         thumbNail: imageResp.path(),
         date: item.date,
+        epaperindex: item.epaperindex,
         id: item.id
       };
       console.log("issue saved");

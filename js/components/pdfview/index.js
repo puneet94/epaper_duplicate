@@ -3,11 +3,62 @@ import { StyleSheet,
     TouchableHighlight,
     Dimensions,
     View,
-    Text } from 'react-native'
-import appStyle from '../../appStyles';
+    Text, FlatList, TouchableOpacity } from 'react-native'
+import appStyles from '../../appStyles';
+import appVars from '../../appVars';
 import Pdf from 'react-native-pdf';
 
 class PDFViewScreen extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+          page: 1
+        }
+      }
+
+    handleMenuClick = async (item)=>{
+    this.setState({
+        page: Number(item.page),
+        })
+    }
+
+    checkActiveMenu = (selectedPage)=>{
+        if(this.state.page===Number(selectedPage) || this.state.currentpage===Number(selectedPage)){
+          return true;
+        }
+
+      }
+
+    renderMenuItem = (item)=>{
+        return (     
+          <TouchableOpacity activeOpacity = { .5 } onPress={this.handleMenuClick.bind(this,item)}>
+            <View style={this.checkActiveMenu(item.page)?appStyles.subMenuItemActive:appStyles.subMenuItem}>
+              <Text style={appStyles.subMenuTextLabel}>{item.section.toUpperCase()}</Text>
+            </View>
+          </TouchableOpacity>
+        );
+      }
+
+  renderSubmenu= ()=>{
+    const navParams = this.props.navigation.state.params;
+    let epaperindex = navParams.epaperindex;
+    console.log('here');
+    console.log(epaperindex);
+      return (
+        <View style={appStyles.subMenuContainer}>
+        <FlatList
+        data={epaperindex}
+        extraData={this.state}
+        renderItem={({item}) => this.renderMenuItem(item)}
+        keyExtractor={(item,index)=> {
+        return item.page;
+        }}
+        horizontal={true}
+        />
+        </View>
+      );
+    }
 
       render() {
           const navParams = this.props.navigation.state.params;
@@ -15,11 +66,16 @@ class PDFViewScreen extends Component {
           //let source = require('./test.pdf'); //maybe ios?
 
           return (
-              <View style={styles.container}>
-
+              
+              <View style={appStyles.container}>
+                <View>
+                {
+                    this.renderSubmenu()
+                }
+                </View>
                   <Pdf ref={(pdf)=>{this.pdf = pdf;}}
                       source={source}
-                      page={1}
+                      page={this.state.page}
                       spacing={0}
                       horizontal={false}
                       onLoadComplete={(pageCount)=>{
@@ -27,7 +83,7 @@ class PDFViewScreen extends Component {
                           //console.log(`total page count: ${pageCount}`);
                       }}
                       onPageChanged={(page,pageCount)=>{
-                          this.setState({page:page});
+                          this.setState({currentpage:page});
                           //console.log(`current page: ${page}`);
                       }}
                       onError={(error)=>{
@@ -41,7 +97,7 @@ class PDFViewScreen extends Component {
 
   const styles = StyleSheet.create({
       container: {
-          flex: 1,
+         
           justifyContent: 'flex-start',
           alignItems: 'center',
       },

@@ -119,7 +119,7 @@ class IssuesScreen extends Component {
 
     }else{
       const { navigation } = this.props;
-      navigation.navigate('PDFView', {file: item.path});
+      navigation.navigate('PDFView', {file: item.path, epaperindex: item.epaperindex});
     }
 
   }

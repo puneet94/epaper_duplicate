@@ -67,8 +67,6 @@ class DrawerContainer extends React.Component {
         </View>
       </TouchableWithoutFeedback>
 
-      <View style={appStyles.drawerSeperator} />
-
       <TouchableWithoutFeedback onPress={() => navigation.navigate('Account')} style={this.isActiveClass('account')}>
         <View style={[appStyles.drawerItem,this.isActiveClass('account')]}>
           <AwseomeIcon name="user" style={appStyles.drawerIcon}/>
