@@ -87,16 +87,11 @@ module.exports = StyleSheet.create({
   },
 
   //newslist
-  newsListContainer: {
-    
-  },
-  newsList: {
-    margin: 5,
-  },
   newsListInner: {
     paddingLeft: 10,
-    width: (x * .75)-20,
+    width: (x * .75)-30,
   },
+
   newsListHeadline: {
     fontSize: em(1.500),
     lineHeight: lineHeight(1.500,120),
@@ -104,7 +99,6 @@ module.exports = StyleSheet.create({
     color: appVars.colorBlack,
     marginBottom: em(0.25),
   },
-
   newsListCity: {
     fontSize: em(0.875),
     fontFamily: appVars.fontMain,
@@ -115,7 +109,6 @@ module.exports = StyleSheet.create({
     lineHeight: lineHeight(0.875,140),
     fontFamily: appVars.fontText,
     color: appVars.colorBlack,
-    marginBottom: em(0.875),
   },
 
   //newsdetail
@@ -167,33 +160,9 @@ module.exports = StyleSheet.create({
   },
   newsEditor: {
     fontSize: em(0.750),
-    width: (x*0.5)-10,
-    textAlign: 'right',
+    justifyContent: 'flex-end',
     fontFamily: appVars.fontMain,
     color: appVars.colorDarkGray,
-  },
-
-
-  container: {
-    flex: 1,
-    backgroundColor: '#ffffff',
-  },
-
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-
-  instructions: {
-    textAlign: 'center',
-    color: appVars.colorMain,
-    marginBottom: 5,
-  },
-
-  ePaperActivityIndicator: {
-    flex: 1,
-    backgroundColor:'rgba(255, 255, 255, 0.8)',
   },
 
 //drawer
@@ -330,6 +299,10 @@ drawerLabel: {
   },
 
   // generall stuff
+  container: {
+    flex: 1,
+    backgroundColor: '#ffffff',
+  },
   contenContainer: {
     flex: 1,
     backgroundColor: appVars.colorWhite,
@@ -355,6 +328,12 @@ drawerLabel: {
     fontFamily: appVars.fontText,
     color: appVars.colorBlack,
     marginBottom: em(0.875),
+  },
+
+  submit: {
+    fontSize: em(1),
+    fontFamily: appVars.fontMain,
+    color: appVars.colorWhite,   
   },
 
   imageBorder: {
@@ -395,6 +374,18 @@ drawerLabel: {
     top: 2,
     fontSize: 16,
     color: appVars.colorWhite,
+  },
+
+  ActivityIndicatorFullscreenContainer: {
+    flex: 1,
+    backgroundColor: appVars.colorWhite,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  ePaperActivityIndicator: {
+    flex: 1,
+    backgroundColor:'rgba(255, 255, 255, 0.8)',
   },
 
 });

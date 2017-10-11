@@ -229,7 +229,8 @@ class NewsListScreen extends Component{
     
     return(
       <View>
-      <View style={appStyles.newsList}>
+      <View style={appStyles.contentElement}>
+      
           <TouchableOpacity activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
           
           {(item.paywall)?<View><View style={appStyles.paywallIconTriangle} /><AwseomeIcon style={appStyles.paywallIcon} name="plus" /></View>:<View></View>}

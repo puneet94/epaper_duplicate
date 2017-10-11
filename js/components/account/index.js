@@ -1,6 +1,15 @@
-import React, { Component } from 'react'
-import { Text, View, TextInput, StyleSheet, Button, Alert, ActivityIndicator, Linking } from 'react-native'
-import appStyle from '../../appStyles';
+"use strict"
+import React, { Component } from 'react';
+import {
+    Text,
+    View,
+    TextInput,
+    StyleSheet,
+    Button, Alert,
+    ActivityIndicator,
+    Linking
+} from 'react-native'
+import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 import store from 'react-native-simple-store';
 
@@ -69,8 +78,8 @@ class AccountScreen extends Component {
                 this.setState({
                     loading: false,
                 })
-                Alert.alert("Error logging in");
-                console.log("incorrect login");
+                Alert.alert(appVars.textErrorLogin);
+               // console.log("incorrect login");
             }
 
         }
@@ -79,7 +88,7 @@ class AccountScreen extends Component {
             this.setState({
                 loading: false,
             })
-            Alert.alert("Error logging in");
+            Alert.alert(appVars.textErrorLogin);
         }
 
     };
@@ -108,32 +117,54 @@ class AccountScreen extends Component {
       if(this.state.loading)
       {
           return(
-            <View style={styles.center}>
-              <ActivityIndicator animating={true} />
+            <View style={appStyles.ActivityIndicatorFullscreenContainer}>
+              <ActivityIndicator animating={true} size={96}/>
             </View>
           )
       }
       if(this.state.loggedIn){
           return(
-              <View>
-                <Text>Already logged in</Text>
-                <Button color='green' style={styles.submit} title="LOGOUT" onPress={()=>this.logout()}></Button>
+              <View style={appStyles.contenContainer}>
+                <View style={appStyles.contentElement}>
+                    <Text style={appStyles.contentHeadline}>{appVars.textLogout}</Text>
+                    <Text style={appStyles.contentText}>{appVars.textLogutFollowup}</Text>
+                </View>
+                
+                <View style={appStyles.contentSeperator} />
+                
+                <View style={appStyles.contentElement}>
+                    <Button color={appVars.colorMain} style={appStyles.submit} title={appVars.labelLogoutButton} onPress={()=>this.logout()} />
+                </View>
+
               </View>
           );
       }
     return (
-      <View style={appStyle.container}>
-        <Text style={styles.topText}>Random heading</Text>
-        <Text style={styles.middleText}>Random follow up texxt</Text>
-        <Text style={styles.heading}> E-Mail</Text>
-        <TextInput onChangeText={(value)=> this.setState({email: value})}/>
-        <Text style={styles.heading}> Password </Text>
-        <TextInput onChangeText={(value)=> this.setState({pass: value})}/>
-        <View style={styles.buttonView} >
-        <Button color='green' style={styles.submit} title="Submit" onPress={this.onSubmit.bind(this)} />
+      <View style={appStyles.contenContainer}>
+        <View style={appStyles.contentElement}>
+            <Text style={appStyles.contentHeadline}>{appVars.textLogin}</Text>
+            <Text style={appStyles.contentText}>{appVars.textLoginFollowup}</Text>
         </View>
-        <View style={styles.buttonView} >
-        <Button color='#A8A4A7' style={styles.submit} title="Forgot Password" onPress={this.onForgot} />
+
+        <View style={appStyles.contentElement}>
+            <Text style={appStyles.settingsColStart}>{appVars.labelEmail.toUpperCase()}</Text>
+                <TextInput onChangeText={(value)=> this.setState({email: value})}/>
+        </View>
+
+
+        <View style={appStyles.contentElement}>
+        <Text style={appStyles.settingsColStart}>{appVars.labelPassword.toUpperCase()} </Text>
+        <TextInput onChangeText={(value)=> this.setState({pass: value})}/>
+        </View>
+
+        <View style={appStyles.contentElement}>
+        <Button color={appVars.colorMain} style={appStyles.submit} title={appVars.labelLoginButton} onPress={this.onSubmit.bind(this)} />
+        </View>
+
+        <View style={appStyles.contentSeperator} />
+        
+        <View style={appStyles.contentElement}>
+        <Button color={appVars.colorDarkGray} style={appStyles.submit} title={appVars.labelForgotPassword} onPress={this.onForgot} />
         </View>
       </View>
     )
@@ -141,43 +172,3 @@ class AccountScreen extends Component {
 }
 
 export default AccountScreen;
-
-const styles= StyleSheet.create({
-    topText:{
-        fontSize: 19,
-        paddingTop: 10,
-        paddingLeft: 5,
-    },
-    middleText:{
-        paddingTop: 10,
-        paddingLeft: 5,
-        fontSize: 17,
-    },
-    heading:{
-        fontWeight: 'bold',
-        fontSize: 15,
-        paddingTop: 10,
-        paddingLeft: 5,
-        color: 'black'
-    },
-    submit:{
-        borderRadius:200,
-        borderWidth:1,
-        borderColor:'rgba(0,0,0,0.2)',
-
-    },
-    center: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    buttonView:{
-        marginTop: 10,
-        marginLeft: 5,
-        marginRight: 5,
-        overflow: 'hidden',
-        borderRadius:200,
-        borderWidth:1,
-        borderColor:'rgba(0,0,0,0.2)',
-    }
-})

@@ -157,7 +157,7 @@ fetchdata = async () => {
   }]
     return(
 
-      <View style={appStyles.newsList}>
+      <View style={appStyles.contentElement}>
 
       {(item.topheadline)?<View style={appStyles.topheadlineContainer}><Text style={appStyles.topheadline}>{item.topheadline.toUpperCase()}</Text></View>:<View></View>}
 
@@ -168,7 +168,7 @@ fetchdata = async () => {
         imgsArr.map((url,index)=>{
         return <TouchableOpacity key={index} activeOpacity={0.5} onPress={this.openImageViewer.bind(this,index)}>
                 <View style={appStyles.imageBorder}>
-                  <Image width={Dimensions.get('window').width-18} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } />
+                  <Image width={Dimensions.get('window').width-28} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } />
                   {(item.imagecopyright)?<Text style={appStyles.imagecopyright}>Foto: {item.imagecopyright}</Text>:<View></View>}
                 </View>
               </TouchableOpacity>
@@ -192,11 +192,13 @@ fetchdata = async () => {
           {(item.teaser)?<HTMLView addLineBreaks={false} stylesheet={htmlStyles.teaser} value={item.teaser} />:<View></View>}
 
           <HTMLView addLineBreaks={false} value={item.text.replace('<p>', '<p><city>'+item.city.toUpperCase()+'. </city>')} stylesheet={htmlStyles.text} onLinkPress={(url) => alert('clicked link:'+url)} />
+          
 
-          <View style={{flex: 1, flexDirection: 'row'}}>
+          <View style={{flex: 1, flexDirection: 'row', justifyContent:'space-between'}}>
             <Text style={appStyles.newsDate}>{item.date}</Text>
             <Text style={appStyles.newsEditor}>{item.editor}</Text>
           </View>
+
       </View>
 
     );
@@ -204,7 +206,7 @@ fetchdata = async () => {
 
 	render = ()=>{
     return (
-      <View style={appStyles.container}>
+      <View style={appStyles.contenContainer}>
       <FlatList
         data={this.state.data}
         refreshControl={

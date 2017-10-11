@@ -92,6 +92,17 @@ module.exports = {
   labelDelete: "Delete",
   labelCancel: "Cancel",
   
+  labelPushnotifications: "Push-Nachrichten empfangen",
+  labelFontsize: "Schriftgröße",
+
+  labelLoginButton: "Jetzt Anmelden",
+  labelLogoutButton: "Jetzt Abmelden",
+  labelForgotPassword: "Passwort zurücksetzen",
+  
+  labelEmail: "E-Mail",
+  labelPassword: "Passwort",
+
+
   //text
   textDownloadAllreadRunning: "Download already in progress. Please wait for it to finish.",
   textNoIssueSelected: "No issue selected",
@@ -102,9 +113,11 @@ module.exports = {
   textFontsizeHeadline: "Nachrichten Schriftgröße",
   textFontsize: "Hier können Sie die Schriftgröße nach Ihren Bedürfnissen anpassen.",
 
-  labelPushnotifications: "Push-Nachrichten empfangen",
-  labelFontsize: "Schriftgröße",
-
+  textLogin: "Anmelden",
+  textLoginFollowup: "Um auf unsere DigitalPlus-Inhalte zugreifen zu können, melden Sie sich bitte mit Ihrem Nutzerkonto an.",
+  textLogout: "Sie sind angemeldet!",
+  textLogutFollowup: "Sie können auf alle DigitalPlus-Inhalte zugreifen.",
+  textErrorLogin: "Es ist ein Fehler aufgetreten. Überprüfen Sie Ihre Eingabe",
   
   STORAGE_KEY : 'TOKEN',
 }
