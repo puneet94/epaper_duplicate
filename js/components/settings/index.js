@@ -45,7 +45,7 @@ class SettingsScreen extends Component {
                 <View style={appStyles.settingsWrapper}>    
                     <Text style={appStyles.settingsColStart}>{appVars.labelFontsize}</Text>
                     <View style={appStyles.settingsColEnd}>
-                        <Slider style={appStyles.settingsSlider} minimumValue={16} maximumValue={24} onValueChange={(itemValue, itemIndex) => this.setState({userFontSize: Math.round(itemValue)})}/>
+                        <Slider style={appStyles.settingsSlider} step={2} minimumValue={16} maximumValue={24} onValueChange={(itemValue, itemIndex) => this.setState({userFontSize: itemValue})}/>
                     </View>
                 </View>
             </View>

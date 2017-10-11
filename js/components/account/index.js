@@ -147,14 +147,13 @@ class AccountScreen extends Component {
         </View>
 
         <View style={appStyles.contentElement}>
-            <Text style={appStyles.settingsColStart}>{appVars.labelEmail.toUpperCase()}</Text>
-                <TextInput onChangeText={(value)=> this.setState({email: value})}/>
+        <Text style={appStyles.settingsColStart}>{appVars.labelEmail.toUpperCase()}</Text>
+        <TextInput autoCapitalize="none" autoCorrect={false} textAlignVertical="center" onChangeText={(value)=> this.setState({email: value})}/>
         </View>
-
 
         <View style={appStyles.contentElement}>
         <Text style={appStyles.settingsColStart}>{appVars.labelPassword.toUpperCase()} </Text>
-        <TextInput onChangeText={(value)=> this.setState({pass: value})}/>
+        <TextInput autoCapitalize="none" autoCorrect={false} textAlignVertical="center" onChangeText={(value)=> this.setState({pass: value})}/>
         </View>
 
         <View style={appStyles.contentElement}>
