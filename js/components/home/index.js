@@ -126,7 +126,7 @@ fetchdata = async () => {
               notification : true,
               // Optional, but recommended since android DownloadManager will fail when
               // the url does not contains a file extension, by default the mime type will be text/plain
-              mime : 'application/pdf',
+              mime : 'application/pdf',   
               description : 'File downloaded by download manager.',
               //path: RNFetchBlob.fs.dirs.DownloadDir+"/dummy.pdf",
               path: RNFetchBlob.fs.dirs.DownloadDir+"/"+item.id,
@@ -151,8 +151,6 @@ fetchdata = async () => {
           }
       })
       .fetch('GET', imageSource);
-
-
 
       this.setState({
         downloading: false

@@ -3,19 +3,57 @@ import { StyleSheet,
     TouchableHighlight,
     Dimensions,
     View,
-    Text } from 'react-native'
+    Text,
+    Switch,
+    Picker,
+Slider} from 'react-native'
 import appStyles from '../../appStyles';
+import appVars from '../../appVars';
 
 class SettingsScreen extends Component {
 
+    constructor(props){
+            super(props);
+            this.state = {
+                userFontSize: 16,
+                userPushnotification: true,
+            }
+        }
+      
       render() {
           return (
-              <View style={appStyles.container}>
-                <Text>- Pushnotifications Yes/No</Text>
-                <Text>- Maybe a select where the user can change the numbers the number of "myissues" which keep stored - like a default of 30.. its bigger then 30 delete it automaticly on appstart. </Text>
-                <Text>- Fontsize: normal,big,bigger - there is a value multiplicator in appStyles and htmlStyles.. names base_unit = 16; </Text>
-              </View>
-          )
+            <View style={appStyles.contenContainer}>
+
+            <View style={appStyles.contentElement}>
+            <Text style={appStyles.contentHeadline}>{appVars.textPushnotificationsHeadline}</Text>
+            <Text style={appStyles.contentText}>{appVars.textPushnotifications}</Text>
+                
+                <View style={appStyles.settingsWrapper}>
+                    <Text style={appStyles.settingsColStart}>{appVars.labelPushnotifications}</Text>
+                    <View style={appStyles.settingsColEnd}><Switch onValueChange={(value) => this.setState({userPushnotification: value})} value={this.state.userPushnotification} /></View>
+                
+                </View>
+            </View>
+                
+            <View style={appStyles.contentSeperator} />
+
+            <View style={appStyles.contentElement}>    
+                <Text style={appStyles.contentHeadline}>{appVars.textFontsizeHeadline}</Text>
+                <Text style={appStyles.contentText}>
+                {appVars.textFontsize}
+                </Text>
+                <View style={appStyles.settingsWrapper}>
+                    
+                    <Text style={appStyles.settingsColStart}>{appVars.labelFontsize}</Text>
+                    
+                    <View style={appStyles.settingsColEnd}><Slider style={appStyles.settingsSlider} minimumValue={16} maximumValue={24} onValueChange={(itemValue, itemIndex) => this.setState({userFontSize: Math.round(itemValue)})}/></View>
+                
+                </View>
+            </View>
+               
+            
+            </View>
+        )
     }
   }
 

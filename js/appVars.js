@@ -97,7 +97,14 @@ module.exports = {
   textNoIssueSelected: "No issue selected",
   textDeleteIssues: "Delete Issues",
   //textComfirmDeleteIssues: "Are you sure you want to delete these"+${this.state.deletedIssues.length}+"issues",
+  textPushnotificationsHeadline: "Push-Nachrichten",
+  textPushnotifications: "Über unsere Push-Nachrichten werden Sie direkt über neue Ereignisse informiert. Sie können diesen Service jederzeit aktivieren oder deaktiveren.",
+  textFontsizeHeadline: "Nachrichten Schriftgröße",
+  textFontsize: "Hier können Sie die Schriftgröße nach Ihren Bedürfnissen anpassen.",
+
+  labelPushnotifications: "Push-Nachrichten empfangen",
+  labelFontsize: "Schriftgröße",
+
   
   STORAGE_KEY : 'TOKEN',
-
 }

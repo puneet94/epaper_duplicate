@@ -174,7 +174,6 @@ module.exports = StyleSheet.create({
   },
 
 
-
   container: {
     flex: 1,
     backgroundColor: '#ffffff',
@@ -308,7 +307,56 @@ drawerLabel: {
     fontFamily: appVars.fontSub,
   },
 
+  //settings 
+  settingsWrapper: {
+    flexDirection:'row',
+    justifyContent: 'space-between'
+  },
+
+  settingsColStart: {
+    justifyContent: 'flex-start',
+    width: (x * .50),
+    fontFamily: appVars.fontMain,
+    color: appVars.colorBlack,
+    fontSize: em(0.875),
+  },
+
+  settingsColEnd: {
+    justifyContent: 'flex-end', 
+  },
+
+  settingsSlider: {
+    width: (x * .40),
+  },
+
   // generall stuff
+  contenContainer: {
+    flex: 1,
+    backgroundColor: appVars.colorWhite,
+    paddingTop: 10,
+  },
+  contentSeperator: {
+    backgroundColor: appVars.colorSeperatorColor,
+    height: 5,
+  },
+  contentElement: {
+    margin: 10,
+  }, 
+  contentHeadline: {
+    fontSize: em(1.500),
+    lineHeight: lineHeight(1.500,120),
+    fontFamily: appVars.fontHeadline,
+    color: appVars.colorBlack,
+    marginBottom: em(0.25),
+  },
+  contentText: {
+    fontSize: em(0.875),
+    lineHeight: lineHeight(0.875,140),
+    fontFamily: appVars.fontText,
+    color: appVars.colorBlack,
+    marginBottom: em(0.875),
+  },
+
   imageBorder: {
     padding: 3,
     backgroundColor: appVars.colorWhite,

@@ -158,12 +158,7 @@ class NewsListScreen extends Component{
   renderSeparator = () =>{
     
     return(
-      <View
-      style={{
-        backgroundColor: appVars.colorSeperatorColor,
-        height: 5,
-      }}
-    />
+      <View style={appStyles.contentSeperator}/>
     );
   }
 
