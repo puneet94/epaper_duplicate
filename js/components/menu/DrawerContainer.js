@@ -50,6 +50,14 @@ class DrawerContainer extends React.Component {
           <Text style={appStyles.drawerLabel}>{appVars.labelNewsList.toUpperCase()}</Text>
         </View>
       </TouchableWithoutFeedback>
+
+      <TouchableWithoutFeedback onPress={() => navigation.navigate('GalleryList')} >
+        <View style={[appStyles.drawerItem,this.isActiveClass('gallerylist')]}>
+          <AwseomeIcon name="camera" style={appStyles.drawerIcon}/>
+          <Text style={appStyles.drawerLabel}>{appVars.labelGalleryList.toUpperCase()}</Text>
+        </View>
+      </TouchableWithoutFeedback>
+
       <View style={appStyles.drawerSeperator} />
 
       <TouchableWithoutFeedback onPress={() => navigation.navigate('Upload')} >

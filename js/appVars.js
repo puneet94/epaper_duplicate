@@ -24,7 +24,7 @@ const ScreenWidth = Dimensions.get('window').width;
     { archive: 'dassel', subMenuLabel: 'Dassel'},
     { archive: 'kreiensenem', subMenuLabel: 'Kreiensen'},
     { archive: 'regionem', subMenuLabel: 'Region'},
-    { archive: 'sport', subMenuLabel: 'Sport'},
+    { archive: 'sportem', subMenuLabel: 'Sport'},
     { archive: 'polizeiem', subMenuLabel: 'Blaulicht'}
   ];
 
@@ -45,6 +45,8 @@ module.exports = {
 
   NewsArchivesFallback: "demo",
   objNewsCategories: ObjNewsCategories,
+
+  GalleryArchives: "mediaem",
 
   // Ad / Banner
   apiAdArchives: adArchives,
@@ -85,6 +87,7 @@ module.exports = {
   labelHome: "Home",
   labelMyIssues: "My issues",
   labelNewsList: "Newsfeed",
+  labelGalleryList: "Galleryfeed",
   labelUpload: "Upload",
   labelSettings: "Settings",
   labelAccount: "Account",

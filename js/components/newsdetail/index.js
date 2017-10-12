@@ -12,6 +12,7 @@ import {
     Button,
     Share,
     Modal,
+    ListView,
 } from 'react-native';
 import HTMLView from 'react-native-htmlview';
 import { YouTubeStandaloneAndroid } from 'react-native-youtube';
@@ -24,6 +25,7 @@ import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
 import Image from 'react-native-scalable-image';
 import ImageViewer from 'react-native-image-zoom-viewer';
+import Grid from 'react-native-grid-component';
 
 import store from 'react-native-simple-store';
 
@@ -38,7 +40,7 @@ class NewsDetailScreen extends Component{
       error: null,
       refreshing: false,
       shown: false,
-      curIndex: 0
+      curIndex: 0,
     }
   }
 
@@ -151,10 +153,29 @@ fetchdata = async () => {
     })
   }
 
+ renderGalleryItem  = (data,index) =>{
+    return(
+      <TouchableOpacity style={appStyles.galleryItem} key={index} activeOpacity={0.5} onPress={this.openImageViewer.bind(this,index)}>
+        <View style={appStyles.imageBorder}>
+          <Image maxHeight={(Dimensions.get('window').width*.23)-8} source={{uri: appVars.apiUrl +"/"+data.img.src} } />
+        </View>
+      </TouchableOpacity>
+    )
+  }
+  
+
+  
   renderItem = (item) =>{
-    let imgsArr = [{
+
+  const topImage = [{
       url: appVars.apiUrl +'/'+item.singleSRC
   }]
+
+  const empty = new Array;
+  item.gallery.picture.map((temp)=>{
+   empty.push({url: appVars.apiUrl +'/'+temp.sources[0].src})
+  })
+
     return(
 
       <View style={appStyles.contentElement}>
@@ -165,7 +186,7 @@ fetchdata = async () => {
 
         <Text style={appStyles.subheadline}>{item.subheadline}</Text>
         {
-        imgsArr.map((url,index)=>{
+        topImage.map((index)=>{
         return <TouchableOpacity key={index} activeOpacity={0.5} onPress={this.openImageViewer.bind(this,index)}>
                 <View style={appStyles.imageBorder}>
                   <Image width={Dimensions.get('window').width-28} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } />
@@ -178,12 +199,13 @@ fetchdata = async () => {
                 <ImageViewer
                 renderHeader = { () => {
                                 return <View style={appStyles.imageModelHeader}>
-                                <TouchableOpacity onPress={() => {this.closeImageViewer()}}>
-                                <AwseomeIcon name="close" size={24} style={appStyles.imageModelHeaderClose}/>
-                                </TouchableOpacity>
+                                  <TouchableOpacity onPress={() => {this.closeImageViewer()}}>
+                                    <AwseomeIcon name="close" size={24} style={appStyles.imageModelHeaderClose}/>
+                                  </TouchableOpacity>
                                 </View>
                             }}
-                 imageUrls={imgsArr}/>
+                 imageUrls={topImage}/>
+
             </Modal>
 
 
@@ -192,7 +214,20 @@ fetchdata = async () => {
           {(item.teaser)?<HTMLView addLineBreaks={false} stylesheet={htmlStyles.teaser} value={item.teaser} />:<View></View>}
 
           <HTMLView addLineBreaks={false} value={item.text.replace('<p>', '<p><city>'+item.city.toUpperCase()+'. </city>')} stylesheet={htmlStyles.text} onLinkPress={(url) => alert('clicked link:'+url)} />
+
+          {(item.gallery)?<Grid style={appStyles.galleryContainerlist} renderItem={this.renderGalleryItem} data={item.gallery.picture} itemsPerRow={4} />:<View></View>}  
           
+          <Modal visible={this.state.shown} animationType={appVars.animationType} transparent={true} onRequestClose={() => {this.closeImageViewer.bind(this)}}>
+                <ImageViewer
+                renderHeader = { () => {
+                                return <View style={appStyles.imageModelHeader}>
+                                  <TouchableOpacity onPress={() => {this.closeImageViewer()}}>
+                                    <AwseomeIcon name="close" size={24} style={appStyles.imageModelHeaderClose}/>
+                                  </TouchableOpacity>
+                                </View>
+                            }}
+                 imageUrls={empty}/>
+            </Modal>
 
           <View style={{flex: 1, flexDirection: 'row', justifyContent:'space-between'}}>
             <Text style={appStyles.newsDate}>{item.date}</Text>

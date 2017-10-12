@@ -26,7 +26,7 @@ import Image from 'react-native-scalable-image';
 
 import store from 'react-native-simple-store';
 
-class NewsListScreen extends Component{
+class GalleryListScreen extends Component{
   
   constructor(props){
     super(props);
@@ -38,7 +38,6 @@ class NewsListScreen extends Component{
       refreshing: false,
       downloading: false,
       currentItem: null,
-      selectedArchive: null,
       bannerAds: [],
       bannerAdsUrl: []
     }
@@ -60,16 +59,11 @@ class NewsListScreen extends Component{
   componentDidMount  = async () => {
     this.fetchdata();
     
-    /*
-     this.setState({
-      adsApi: {...this.state.adsApi,[arrayIndex]:appVars.apiUrl +"/"+res.response[0].singleSRC}
-    });*/
-
   }
 
   fetchdata = async () => {
     const { page } = this.state;
-    var archive=this.state.selectedArchive || appVars.NewsArchivesFallback;
+    var archive= appVars.GalleryArchives;
     const api = appVars.apiUrl+"/news.html?authtoken="+appVars.apiKey+"&limit="+appVars.apiNewsLimit+"&archives="+archive;
     let tempapi= api+"&page_n58=" + this.state.page.toString();
     
@@ -127,22 +121,12 @@ class NewsListScreen extends Component{
     });
   }
 
-  handleExternalUrl = function (externalurl){
-    Linking.canOpenURL(externalurl).then(supported => {
-          if (supported) {
-            Linking.openURL(externalurl);
-          } else {
-            console.log("Don't know how to open URI: " + externalurl);
-          }
-      });
-  };
-
-
   fetchBannerAds = ()=>{
     const apiAd = appVars.apiUrl+"/ads.html?authtoken="+appVars.apiKey+"&pid="+appVars.apiAdArchives;
     return fetch(apiAd);
     //.then(res => res.json());
   }
+  
   renderAdSeparator =  (index) => {
     const arrayIndex = (index)%(this.state.bannerAds.length);
         return(
@@ -181,50 +165,12 @@ class NewsListScreen extends Component{
     navigation.navigate('NewsDetail', {newsid: item.id});
   }
 
-  handleMenuClick = async (item)=>{
-        this.setState({
-          selectedArchive: item.archive,
-          page: 1,
-          refreshing:true
-        },()=>{
-          this.fetchdata();
-        });
-        /*const { navigation } = this.props;
-        navigation.navigate('NewsList', {archive: item.archive});*/
-      }
-
   checkActiveMenu = (menu)=>{
     if(this.state.selectedArchive===menu){
       return true;
     }
   }
 
-  renderMenuItem = (item)=>{
-
-        return (     
-          <TouchableOpacity activeOpacity = { .5 } onPress={this.handleMenuClick.bind(this,item)}>
-            <View style={this.checkActiveMenu(item.archive)?appStyles.subMenuItemActive:appStyles.subMenuItem}>
-              <Text style={appStyles.subMenuTextLabel}>{item.subMenuLabel.toUpperCase()}</Text>
-            </View>
-          </TouchableOpacity>
-        );
-      }
-
-  renderSubmenu= ()=>{
-      return (
-        <View style={appStyles.subMenuContainer}>
-        <FlatList
-        data={appVars.objNewsCategories}
-        extraData={this.state}
-        renderItem={({item}) => this.renderMenuItem(item)}
-        keyExtractor={(item,index)=> {
-        return item.archive;
-        }}
-        horizontal={true}
-        />
-        </View>
-      );
-    }
 
   renderItem = (item,index) =>{
     
@@ -264,12 +210,6 @@ class NewsListScreen extends Component{
       
       <View style={appStyles.container}>
 
-        <View>
-          {
-            this.renderSubmenu()
-          }
-        </View>
-        
       <View style={appStyles.newsListContainer}>
       <FlatList
         data={this.state.data}
@@ -281,7 +221,6 @@ class NewsListScreen extends Component{
             colors={[appVars.colorMain]}
           />
           }
-        //ItemSeparatorComponent={()=>this.renderSeparator()}
         onEndReached={this.handlePageEnd}
         onEndReachedThreshold={2}
         keyExtractor={(item,index)=> {
@@ -295,4 +234,4 @@ class NewsListScreen extends Component{
 	}
 }
 
-export default NewsListScreen;
+export default GalleryListScreen;

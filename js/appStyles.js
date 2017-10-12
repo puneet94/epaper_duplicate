@@ -28,7 +28,6 @@ function lineHeight(value,lh) {
 
 module.exports = StyleSheet.create({
   //epaper (home)
-
   ePaperMainContainer: {
     backgroundColor: appVars.colorWhite,
     height: (y * .75)-80,
@@ -111,6 +110,8 @@ module.exports = StyleSheet.create({
     color: appVars.colorBlack,
   },
 
+
+
   //newsdetail
   topheadlineContainer: {
     borderBottomWidth: 2,
@@ -163,6 +164,15 @@ module.exports = StyleSheet.create({
     justifyContent: 'flex-end',
     fontFamily: appVars.fontMain,
     color: appVars.colorDarkGray,
+  },
+
+  galleryContainer: {
+    flex: 1,
+  },
+  galleryItem: {
+    flex: 1,
+    height: (x * .23),
+    margin: 1
   },
 
 //drawer
@@ -301,12 +311,11 @@ drawerLabel: {
   // generall stuff
   container: {
     flex: 1,
-    backgroundColor: '#ffffff',
+    backgroundColor: appVars.colorWhite,
   },
   contenContainer: {
     flex: 1,
     backgroundColor: appVars.colorWhite,
-    paddingTop: 10,
   },
   contentSeperator: {
     backgroundColor: appVars.colorSeperatorColor,

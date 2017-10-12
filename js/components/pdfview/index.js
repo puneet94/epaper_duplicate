@@ -43,8 +43,7 @@ class PDFViewScreen extends Component {
   renderSubmenu= ()=>{
     const navParams = this.props.navigation.state.params;
     let epaperindex = navParams.epaperindex;
-    console.log('here');
-    console.log(epaperindex);
+
       return (
         <View style={appStyles.subMenuContainer}>
         <FlatList
