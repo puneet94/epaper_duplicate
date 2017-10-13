@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		1yysVIHz4euMRIIDH10gXWj5e7Q=
+		XkISLOcg4TotqjO2wDGF+hJ4fzM=
 		</data>
 		<key>CandidaStd-Roman.ttf</key>
 		<data>
@@ -115,7 +115,7 @@
 		</data>
 		<key>PlugIns/epaperTests.xctest.dSYM/Contents/Resources/DWARF/epaperTests</key>
 		<data>
-		3UAlCDYP6zT0OR04CmuJvKPBXyE=
+		ZF/3ZtBT6PyIyCxPOZS/BOtzTg8=
 		</data>
 		<key>PlugIns/epaperTests.xctest/Info.plist</key>
 		<data>
@@ -127,7 +127,7 @@
 		</data>
 		<key>PlugIns/epaperTests.xctest/epaperTests</key>
 		<data>
-		f2CG7jA1tKvxIZqqAVCLiQ3I5gA=
+		nX9Pq1veBcbQxpXgURnupibslaA=
 		</data>
 		<key>SimpleLineIcons.ttf</key>
 		<data>
@@ -144,11 +144,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1yysVIHz4euMRIIDH10gXWj5e7Q=
+			XkISLOcg4TotqjO2wDGF+hJ4fzM=
 			</data>
 			<key>hash2</key>
 			<data>
-			prhy0heqz9FOoknI0kogxqZeaUEOB+OojdcZbYo+hJs=
+			atV64TcsQioMTJub0vndVaBlBxFWB0y+KQmRxFDByzk=
 			</data>
 		</dict>
 		<key>CandidaStd-Roman.ttf</key>
@@ -410,11 +410,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3UAlCDYP6zT0OR04CmuJvKPBXyE=
+			ZF/3ZtBT6PyIyCxPOZS/BOtzTg8=
 			</data>
 			<key>hash2</key>
 			<data>
-			soCsoyA1z4xULASspgqEV2+mraewA0+0gGWQI/+k+6g=
+			W8ND4q9qmt51ORonD/v05qcHV2SEu4lLH3n8hbP7rd4=
 			</data>
 		</dict>
 		<key>PlugIns/epaperTests.xctest/Info.plist</key>
@@ -443,11 +443,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			f2CG7jA1tKvxIZqqAVCLiQ3I5gA=
+			nX9Pq1veBcbQxpXgURnupibslaA=
 			</data>
 			<key>hash2</key>
 			<data>
-			aQiRP0sCyXtW4qq+CvbqCTiZ0loK3qlbuSb/FQZLsOU=
+			BPAG2XNEx8nZtRB+Ur6haL9MRyqaA7eLZRL0P8KmVjg=
 			</data>
 		</dict>
 		<key>SimpleLineIcons.ttf</key>
