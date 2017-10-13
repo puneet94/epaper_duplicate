@@ -25,7 +25,6 @@ import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
 import Image from 'react-native-scalable-image';
 import ImageViewer from 'react-native-image-zoom-viewer';
-import Grid from 'react-native-grid-component';
 
 import store from 'react-native-simple-store';
 
@@ -37,6 +36,8 @@ class NewsDetailScreen extends Component{
     this.state = {
       loading: false,
       data: [],
+      gallerydata: [],
+      gallerypage: 1,
       error: null,
       refreshing: false,
       shown: false,
@@ -114,8 +115,6 @@ fetchdata = async () => {
     fetch(tempapi)
       .then(res => res.json())
       .then(res => {
-        console.log("single detail response");
-        console.log(res);
         this.setState({
           data: res.response || [],
           error: res.error || null,
@@ -126,9 +125,37 @@ fetchdata = async () => {
           YouTubeId: res.response[0].youtube_id,
         })
       })
+      .then(
+        this.fetchgallerydata()
+      )
       .catch(error => {
         this.setState({ error, loading: false });
       })
+};
+
+
+fetchgallerydata = async () => {
+  const navParams = this.props.navigation.state.params; 
+  const { gallerypage } = this.state;
+  const api = appVars.apiUrl+"/gallery.html?authtoken="+appVars.apiKey+"&id="+navParams.newsid;
+  let tempapi= api+"&page_n122=" + this.state.gallerypage.toString();  
+  this.setState({ loading: true});
+
+      fetch(tempapi)
+        .then(res => res.json())
+        .then(res => {
+          
+          this.setState({
+            gallerydata: [...this.state.gallerydata, ...res.response],
+            error: res.error || null,
+            loading : false,
+            refreshing: false,
+          })
+        })
+        .catch(error => {
+          this.setState({ error, loading: false });
+        });
+
 };
 
   handleRefresh = () =>{
@@ -137,6 +164,14 @@ fetchdata = async () => {
     }, ()=>{
       this.fetchdata();
     })
+  }
+
+  handlePageEnd = ()=>{
+    this.setState({
+      gallerypage: this.state.gallerypage+1,
+    }, ()=>{
+      this.fetchgallerydata();
+    });
   }
 
   openImageViewer(index){
@@ -153,11 +188,11 @@ fetchdata = async () => {
     })
   }
 
- renderGalleryItem  = (data,index) =>{
+ renderGalleryItem  = (item,index) =>{
     return(
       <TouchableOpacity style={appStyles.galleryItem} key={index} activeOpacity={0.5} onPress={this.openImageViewer.bind(this,index)}>
         <View style={appStyles.imageBorder}>
-          <Image maxHeight={(Dimensions.get('window').width*.23)-8} source={{uri: appVars.apiUrl +"/"+data.img.src} } />
+          <Image maxHeight={(Dimensions.get('window').width*.23)-8} source={{uri: appVars.apiUrl +"/"+item.img.src} } />
         </View>
       </TouchableOpacity>
     )
@@ -170,11 +205,14 @@ fetchdata = async () => {
   const topImage = [{
       url: appVars.apiUrl +'/'+item.singleSRC
   }]
-
+  // dont know it better - we need for the big picture view a array of all items - so i gave the api newsreader api also all items... but pagination is not possible there.
+  
   const empty = new Array;
+  if(item.galleryid) {
   item.gallery.picture.map((temp)=>{
    empty.push({url: appVars.apiUrl +'/'+temp.sources[0].src})
   })
+}
 
     return(
 
@@ -214,10 +252,17 @@ fetchdata = async () => {
           {(item.teaser)?<HTMLView addLineBreaks={false} stylesheet={htmlStyles.teaser} value={item.teaser} />:<View></View>}
 
           <HTMLView addLineBreaks={false} value={item.text.replace('<p>', '<p><city>'+item.city.toUpperCase()+'. </city>')} stylesheet={htmlStyles.text} onLinkPress={(url) => alert('clicked link:'+url)} />
-
-          {(item.gallery)?<Grid style={appStyles.galleryContainerlist} renderItem={this.renderGalleryItem} data={item.gallery.picture} itemsPerRow={4} />:<View></View>}  
           
-          <Modal visible={this.state.shown} animationType={appVars.animationType} transparent={true} onRequestClose={() => {this.closeImageViewer.bind(this)}}>
+            <FlatList
+            data={this.state.gallerydata}
+            numColumns={4}
+            keyExtractor={(item,index)=> {
+                return item.img.src;
+              }}
+            renderItem={({item}) => this.renderGalleryItem(item)}
+            />
+
+            <Modal visible={this.state.shown} animationType={appVars.animationType} transparent={true} onRequestClose={() => {this.closeImageViewer.bind(this)}}>
                 <ImageViewer
                 renderHeader = { () => {
                                 return <View style={appStyles.imageModelHeader}>
@@ -228,6 +273,9 @@ fetchdata = async () => {
                             }}
                  imageUrls={empty}/>
             </Modal>
+
+
+
 
           <View style={{flex: 1, flexDirection: 'row', justifyContent:'space-between'}}>
             <Text style={appStyles.newsDate}>{item.date}</Text>
@@ -251,6 +299,8 @@ fetchdata = async () => {
             colors={[appVars.colorMain]}
           />
           }
+        onEndReachedThreshold={.5}
+        onEndReached={this.handlePageEnd}
         keyExtractor={(item,index)=> {
           return item.id;
           }}

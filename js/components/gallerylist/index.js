@@ -222,7 +222,7 @@ class GalleryListScreen extends Component{
           />
           }
         onEndReached={this.handlePageEnd}
-        onEndReachedThreshold={2}
+        onEndReachedThreshold={.5}
         keyExtractor={(item,index)=> {
           return item.id;
           }}

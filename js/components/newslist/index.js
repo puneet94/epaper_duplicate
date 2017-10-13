@@ -280,10 +280,9 @@ class NewsListScreen extends Component{
             onRefresh={this.handleRefresh}
             colors={[appVars.colorMain]}
           />
-          }
-        //ItemSeparatorComponent={()=>this.renderSeparator()}
+        }
         onEndReached={this.handlePageEnd}
-        onEndReachedThreshold={2}
+        onEndReachedThreshold={1}
         keyExtractor={(item,index)=> {
           return item.id;
           }}
