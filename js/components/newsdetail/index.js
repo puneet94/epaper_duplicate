@@ -24,7 +24,7 @@ import htmlStyles from '../../htmlStyles';
 import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
 import Image from 'react-native-scalable-image';
-import ImageViewer from 'react-native-image-zoom-viewer';
+import Gallery from 'react-native-image-gallery';
 
 import store from 'react-native-simple-store';
 
@@ -41,9 +41,8 @@ class NewsDetailScreen extends Component{
       error: null,
       refreshing: false,
       shown: false,
-      curIndex: 0,
-    }
   }
+}
 
   YouTube =()=>{
     if(Platform.OS === 'android') {    
@@ -104,7 +103,6 @@ componentDidUpdate = (prevProps,prevState)=>{
     });
   }
 }
-  
 
 fetchdata = async () => {
   const navParams = this.props.navigation.state.params;
@@ -122,7 +120,7 @@ fetchdata = async () => {
           refreshing: false,
           shareUrl: res.response[0].shareurl,
           shareTitle: res.response[0].headline,
-          YouTubeId: res.response[0].youtube_id,
+          YouTubeId: res.response[0].youtube_id, 
         })
       })
       .then(
@@ -138,7 +136,7 @@ fetchgallerydata = async () => {
   const navParams = this.props.navigation.state.params; 
   const { gallerypage } = this.state;
   const api = appVars.apiUrl+"/gallery.html?authtoken="+appVars.apiKey+"&id="+navParams.newsid;
-  let tempapi= api+"&page_n122=" + this.state.gallerypage.toString();  
+  let tempapi= api+"&limit=8&page_n122=" + this.state.gallerypage.toString();  
   this.setState({ loading: true});
 
       fetch(tempapi)
@@ -149,7 +147,7 @@ fetchgallerydata = async () => {
             gallerydata: [...this.state.gallerydata, ...res.response],
             error: res.error || null,
             loading : false,
-            refreshing: false,
+            refreshing: false
           })
         })
         .catch(error => {
@@ -174,23 +172,21 @@ fetchgallerydata = async () => {
     });
   }
 
-  openImageViewer(index){
-    this.setState({
-        shown:true,
-        curIndex:index
-    })
+  openImageViewer = async (item)=>{
+        const { navigation } = this.props;
+        navigation.navigate('ImageViewer', {item: item});
   }
 
-  closeImageViewer(){
-    this.setState({
-        shown:false,
-        curIndex:0
-    })
-  }
+  openGalleryViewer = async (item)=>{
+    const navParams = this.props.navigation.state.params;     
+    const { navigation } = this.props;
+    
+    navigation.navigate('ImageViewer', {item: item, newsid: navParams.newsid});
+}
 
  renderGalleryItem  = (item,index) =>{
     return(
-      <TouchableOpacity style={appStyles.galleryItem} key={index} activeOpacity={0.5} onPress={this.openImageViewer.bind(this,index)}>
+      <TouchableOpacity style={appStyles.galleryItem} key={index} activeOpacity={0.5} onPress={this.openGalleryViewer.bind(this,item)}>
         <View style={appStyles.imageBorder}>
           <Image maxHeight={(Dimensions.get('window').width*.23)-8} source={{uri: appVars.apiUrl +"/"+item.img.src} } />
         </View>
@@ -198,21 +194,7 @@ fetchgallerydata = async () => {
     )
   }
   
-
-  
-  renderItem = (item) =>{
-
-  const topImage = [{
-      url: appVars.apiUrl +'/'+item.singleSRC
-  }]
-  // dont know it better - we need for the big picture view a array of all items - so i gave the api newsreader api also all items... but pagination is not possible there.
-  
-  const empty = new Array;
-  if(item.galleryid) {
-  item.gallery.picture.map((temp)=>{
-   empty.push({url: appVars.apiUrl +'/'+temp.sources[0].src})
-  })
-}
+ renderItem = (item) =>{
 
     return(
 
@@ -223,29 +205,12 @@ fetchgallerydata = async () => {
         <Text style={appStyles.headline}>{item.headline}</Text>
 
         <Text style={appStyles.subheadline}>{item.subheadline}</Text>
-        {
-        topImage.map((index)=>{
-        return <TouchableOpacity key={index} activeOpacity={0.5} onPress={this.openImageViewer.bind(this,index)}>
+        <TouchableOpacity activeOpacity={0.5} onPress={this.openImageViewer.bind(this,item)}>
                 <View style={appStyles.imageBorder}>
                   <Image width={Dimensions.get('window').width-28} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } />
                   {(item.imagecopyright)?<Text style={appStyles.imagecopyright}>Foto: {item.imagecopyright}</Text>:<View></View>}
                 </View>
-              </TouchableOpacity>
-              })
-          }
-            <Modal visible={this.state.shown} animationType={appVars.animationType} transparent={true} onRequestClose={() => {this.closeImageViewer.bind(this)}}>
-                <ImageViewer
-                renderHeader = { () => {
-                                return <View style={appStyles.imageModelHeader}>
-                                  <TouchableOpacity onPress={() => {this.closeImageViewer()}}>
-                                    <AwseomeIcon name="close" size={24} style={appStyles.imageModelHeaderClose}/>
-                                  </TouchableOpacity>
-                                </View>
-                            }}
-                 imageUrls={topImage}/>
-
-            </Modal>
-
+        </TouchableOpacity>
 
           {(item.caption)?<Text style={appStyles.imagecaption}>{item.caption}</Text>:<View></View>}
 
@@ -261,21 +226,6 @@ fetchgallerydata = async () => {
               }}
             renderItem={({item}) => this.renderGalleryItem(item)}
             />
-
-            <Modal visible={this.state.shown} animationType={appVars.animationType} transparent={true} onRequestClose={() => {this.closeImageViewer.bind(this)}}>
-                <ImageViewer
-                renderHeader = { () => {
-                                return <View style={appStyles.imageModelHeader}>
-                                  <TouchableOpacity onPress={() => {this.closeImageViewer()}}>
-                                    <AwseomeIcon name="close" size={24} style={appStyles.imageModelHeaderClose}/>
-                                  </TouchableOpacity>
-                                </View>
-                            }}
-                 imageUrls={empty}/>
-            </Modal>
-
-
-
 
           <View style={{flex: 1, flexDirection: 'row', justifyContent:'space-between'}}>
             <Text style={appStyles.newsDate}>{item.date}</Text>

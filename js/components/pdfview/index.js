@@ -27,7 +27,6 @@ class PDFViewScreen extends Component {
         if(this.state.page===Number(selectedPage) || this.state.currentpage===Number(selectedPage)){
           return true;
         }
-
       }
 
     renderMenuItem = (item)=>{

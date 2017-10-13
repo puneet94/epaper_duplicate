@@ -200,7 +200,6 @@ class NewsListScreen extends Component{
   }
 
   renderMenuItem = (item)=>{
-
         return (     
           <TouchableOpacity activeOpacity = { .5 } onPress={this.handleMenuClick.bind(this,item)}>
             <View style={this.checkActiveMenu(item.archive)?appStyles.subMenuItemActive:appStyles.subMenuItem}>
