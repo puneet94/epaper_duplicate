@@ -21,7 +21,6 @@ dependencies: \
   /Users/sturm/Desktop/epaper/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/../Libraries/WebSocket/RCTReconnectingWebSocket.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/../Libraries/WebSocket/RCTSRWebSocket.h \
-  /Users/sturm/Desktop/epaper/node_modules/react-native/React/../Libraries/WebSocket/RCTWebSocketObserver.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/DevSupport/RCTPackagerConnectionBridgeConfig.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/DevSupport/RCTPackagerConnectionConfig.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/DevSupport/RCTReloadPackagerMethod.h \

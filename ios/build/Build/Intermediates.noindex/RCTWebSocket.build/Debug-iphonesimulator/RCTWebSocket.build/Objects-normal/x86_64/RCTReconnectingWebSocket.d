@@ -13,4 +13,5 @@ dependencies: \
   /Users/sturm/Desktop/epaper/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
   /Users/sturm/Desktop/epaper/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
   /Users/sturm/Desktop/epaper/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/sturm/Desktop/epaper/ios/build/Build/Products/Debug-iphonesimulator/include/fishhook/fishhook.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/Libraries/WebSocket/RCTSRWebSocket.h

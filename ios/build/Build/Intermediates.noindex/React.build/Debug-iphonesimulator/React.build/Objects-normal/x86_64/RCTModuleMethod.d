@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/sturm/Desktop/epaper/node_modules/react-native/React/Base/RCTModuleMethod.m \
+  /Users/sturm/Desktop/epaper/node_modules/react-native/React/Base/RCTModuleMethod.mm \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/Base/RCTModuleMethod.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/Base/RCTBridgeMethod.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/Base/RCTBridgeModule.h \
@@ -22,5 +22,7 @@ dependencies: \
   /Users/sturm/Desktop/epaper/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
   /Users/sturm/Desktop/epaper/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
   /Users/sturm/Desktop/epaper/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/sturm/Desktop/epaper/node_modules/react-native/React/Base/RCTCxxConvert.h \
+  /Users/sturm/Desktop/epaper/node_modules/react-native/React/Base/RCTManagedPointer.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/Base/RCTParserUtils.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/Profiler/RCTProfile.h

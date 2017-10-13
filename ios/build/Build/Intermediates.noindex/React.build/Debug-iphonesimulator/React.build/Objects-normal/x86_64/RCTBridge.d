@@ -20,6 +20,7 @@ dependencies: \
   /Users/sturm/Desktop/epaper/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
   /Users/sturm/Desktop/epaper/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/sturm/Desktop/epaper/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/Base/RCTJSEnvironment.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/Base/RCTModuleData.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/Base/RCTPerformanceLogger.h \

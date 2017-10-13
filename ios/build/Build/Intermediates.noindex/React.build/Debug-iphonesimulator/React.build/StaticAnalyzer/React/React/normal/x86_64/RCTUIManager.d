@@ -40,5 +40,5 @@ dependencies: \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/Views/RCTShadowView.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/Base/RCTRootViewInternal.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/Views/RCTScrollableProtocol.h \
-  /Users/sturm/Desktop/epaper/node_modules/react-native/React/Views/RCTShadowView+Hierarchy.h \
+  /Users/sturm/Desktop/epaper/node_modules/react-native/React/Views/RCTShadowView+Internal.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/Modules/RCTUIManagerObserverCoordinator.h

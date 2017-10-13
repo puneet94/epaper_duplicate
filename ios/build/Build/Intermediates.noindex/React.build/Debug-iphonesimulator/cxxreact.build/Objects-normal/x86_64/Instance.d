@@ -385,11 +385,11 @@ dependencies: \
   /Users/sturm/Desktop/epaper/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/noncopyable.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/json.h \
   /Users/sturm/Desktop/epaper/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCHelpers.h \
+  /Users/sturm/Desktop/epaper/node_modules/react-native/ReactCommon/cxxreact/JSBigString.h \
+  /Users/sturm/Desktop/epaper/node_modules/react-native/ReactCommon/cxxreact/JSModulesUnbundle.h \
+  /Users/sturm/Desktop/epaper/node_modules/react-native/ReactCommon/cxxreact/MessageQueueThread.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/ReactCommon/cxxreact/MethodCall.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/ReactCommon/cxxreact/RecoverableError.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/ReactCommon/cxxreact/SystraceSection.h \
-  /Users/sturm/Desktop/epaper/node_modules/react-native/ReactCommon/cxxreact/MessageQueueThread.h \
-  /Users/sturm/Desktop/epaper/node_modules/react-native/ReactCommon/cxxreact/JSBigString.h \
-  /Users/sturm/Desktop/epaper/node_modules/react-native/ReactCommon/cxxreact/JSModulesUnbundle.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/Memory.h \
   /Users/sturm/Desktop/epaper/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/MoveWrapper.h
