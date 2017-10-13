@@ -10,6 +10,7 @@ import {
     Picker,
     Slider
 } from 'react-native'
+
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 

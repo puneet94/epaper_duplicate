@@ -91,6 +91,11 @@ module.exports = {
   labelUpload: "Upload",
   labelSettings: "Settings",
   labelAccount: "Account",
+  labelEmail: "E-Mail",
+  labelPhone: "Phone",
+  labelPassword: "Passwort",
+  labelTermsofuse: "Terms of use?",
+  labelSubmit: "Submit",
 
   labelDelete: "Delete",
   labelCancel: "Cancel",
@@ -102,9 +107,9 @@ module.exports = {
   labelLogoutButton: "Jetzt Abmelden",
   labelForgotPassword: "Passwort zurücksetzen",
   
-  labelEmail: "E-Mail",
-  labelPassword: "Passwort",
-
+  labelSelectSource: "select source",
+  labelFromCamera: "from camera",
+  labelFromLib: "from photoalbum",
 
   //text
   textDownloadAllreadRunning: "Download already in progress. Please wait for it to finish.",
@@ -121,6 +126,9 @@ module.exports = {
   textLogout: "Sie sind angemeldet!",
   textLogutFollowup: "Sie können auf alle DigitalPlus-Inhalte zugreifen.",
   textErrorLogin: "Es ist ein Fehler aufgetreten. Überprüfen Sie Ihre Eingabe",
+
+  textInstantNewsHeadline: "Direktmelder",
+  textInstantNews: "Etwas Spannendes ist passiert und Sie sind mittendrin? Schicken Sie unsere Redaktion direkt einen Hinweis!",
   
   STORAGE_KEY : 'TOKEN',
 }
