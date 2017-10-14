@@ -66,6 +66,9 @@ module.exports = {
   //drawerWidth
   drawerWidth: ScreenWidth*0.69,
 
+  //BaseUnit
+  baseUnit: 16,
+  
   //colors
   colorWhite: "#ffffff",
   colorBlack: "#000000",

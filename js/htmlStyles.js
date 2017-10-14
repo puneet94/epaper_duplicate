@@ -9,7 +9,7 @@ const ratioX = x < 375 ? (x < 320 ? 0.75 : 0.875) : 1;
 const ratioY = y < 568 ? (y < 480 ? 0.75 : 0.875) : 1;
 
 // base font size value
-const base_unit = 16;
+const base_unit = appVars.baseUnit;
 
 // Fake EM by changing font size according to Ratio
 const unit = base_unit * ratioX;
