@@ -16,6 +16,7 @@ import { StyleSheet,
 } from 'react-native'
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
+import RNFetchBlob from 'react-native-fetch-blob';
 import ImagePicker from 'react-native-image-picker';
 
 
