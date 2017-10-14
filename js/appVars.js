@@ -94,22 +94,23 @@ module.exports = {
   labelEmail: "E-Mail",
   labelPhone: "Phone",
   labelPassword: "Passwort",
-  labelTermsofuse: "Terms of use?",
+  labelTermsofuse: "Accepted Terms of use?",
   labelSubmit: "Submit",
 
   labelDelete: "Delete",
   labelCancel: "Cancel",
   
-  labelPushnotifications: "Push-Nachrichten empfangen",
-  labelFontsize: "Schriftgröße",
+  labelPushnotifications: "Activate Push-Notifcations?",
+  labelFontsize: "Your Fontsize",
 
-  labelLoginButton: "Jetzt Anmelden",
-  labelLogoutButton: "Jetzt Abmelden",
-  labelForgotPassword: "Passwort zurücksetzen",
+  labelLoginButton: "login",
+  labelLogoutButton: "logout",
+  labelForgotPassword: "Reset password",
   
   labelSelectSource: "select source",
   labelFromCamera: "from camera",
   labelFromLib: "from photoalbum",
+  labelMsg: "Message",
 
   //text
   textDownloadAllreadRunning: "Download already in progress. Please wait for it to finish.",

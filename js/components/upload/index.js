@@ -4,6 +4,7 @@ import { StyleSheet,
     TouchableHighlight,
     Dimensions,
     View,
+    ScrollView,
     Text,
     TextInput,
     Switch,
@@ -73,7 +74,7 @@ class UploadScreen extends Component {
 
       render() {
           return (
-              <View style={appStyles.contenContainer}>
+              <ScrollView style={appStyles.contenContainer}>
 
                 <View style={appStyles.contentElement}>
                 <Text style={appStyles.contentHeadline}>{appVars.textInstantNewsHeadline}</Text>
@@ -81,13 +82,18 @@ class UploadScreen extends Component {
                 </View>
 
                 <View style={appStyles.contentElement}>
+                <Text style={appStyles.settingsColStart}>{appVars.labelMsg.toUpperCase()}</Text>
+                <TextInput autoCapitalize={'none'} multiline={true} autoCorrect={true} autoGrow={true} onChangeText={(value)=> this.setState({msg: value})}/>
+                </View>
+
+                <View style={appStyles.contentElement}>
                 <Text style={appStyles.settingsColStart}>{appVars.labelEmail.toUpperCase()}</Text>
-                <TextInput autoCapitalize="none" autoCorrect={false} textAlignVertical="center" onChangeText={(value)=> this.setState({email: value})}/>
+                <TextInput keyboardType={'email-address'} autoCapitalize={'none'} autoCorrect={false} onChangeText={(value)=> this.setState({email: value})}/>
                 </View>
 
                 <View style={appStyles.contentElement}>
                 <Text style={appStyles.settingsColStart}>{appVars.labelPhone.toUpperCase()}</Text>
-                <TextInput autoCapitalize="none" autoCorrect={false} textAlignVertical="center" onChangeText={(value)=> this.setState({phone: value})}/>
+                <TextInput keyboardType={'phone-pad'} autoCapitalize={'none'} autoCorrect={false} onChangeText={(value)=> this.setState({phone: value})}/>
                 </View>
 
                 <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)}>
@@ -112,7 +118,7 @@ class UploadScreen extends Component {
                 <Button color={appVars.colorMain} style={appStyles.submit} title={appVars.labelSubmit} onPress={this.onSubmit.bind(this)} />
                 </View>
 
-              </View>
+              </ScrollView>
           )
     }
   }
