@@ -17,16 +17,23 @@ class ImageViewerScreen extends Component {
     const navParams = this.props.navigation.state.params;
     let item = navParams.item;
     let newsid = navParams.newsid;
+
     if(newsid) {
+      let images = navParams.images.map((temp)=>{
+        //return appVars.apiUrl +'/'+temp.sources[0].src;
+        return {source: { uri: appVars.apiUrl +'/'+temp.sources[0].src },dimensions:{width:temp.sources[0].width,height:temp.sources[0].height} }
+        });
       this.state = {
         index: 0,
-        initialPage: 0,
-        images: [],
+        page: 0,
+        initialPage: navParams.initialPage,
+        images
       };
     } else {
       this.state = {
         index: 0,
-        initialPage: 0,
+        page: 0,
+        initialPage: navParams.initialPage,
         images: [
           { source: { uri: appVars.apiUrl +'/'+item.singleSRC } },
         ]
@@ -34,9 +41,8 @@ class ImageViewerScreen extends Component {
     }
       this.onChangeImage = this.onChangeImage.bind(this);
   }
-
-componentDidMount(){
-    this.fetchgallerydata();
+/*componentDidMount(){
+    //this.fetchgallerydata();
   }
 
   fetchgallerydata = async () => {
@@ -53,22 +59,23 @@ componentDidMount(){
           .catch(error => {
             this.setState({ error});
           });
-  };
+  };*/
 
   onChangeImage (index) {
     this.setState({ index });
   }
-
+/*
   ArrImages (apiresonse) {
     const newArrImages = [];
+    console.log("response from api");
+    console.log(apiresonse);
     apiresonse.map((temp)=>{
       newArrImages.push({source: { uri: appVars.apiUrl +'/'+temp.sources[0].src } })
       })
       return newArrImages;
-  }
-  
+  }*/
       render() {
-        console.log(this.state.images);
+        
           return (
               <View style={appStyles.contenContainer}>
                 <Gallery
@@ -76,8 +83,20 @@ componentDidMount(){
                   images={this.state.images}
                   errorComponent={this.renderError}
                   onPageSelected={this.onChangeImage}
-                  initialPage={0}
+                  initialPage={this.state.initialPage}
                 />
+{/*          <Gallery
+              style={{flex: 1, backgroundColor: 'transparent'}}
+              initialPage={this.state.initialPage}
+              pageMargin={10}
+              images={this.state.images}
+              
+              onPageSelected={(page) => {
+           this.setState({page});
+        }}
+            />*/}
+      
+
               </View>
           )
     }

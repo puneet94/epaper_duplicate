@@ -58,7 +58,6 @@ class AccountScreen extends Component {
         }
       }
 
-
     onSubmit=async function (){
         //Alert.alert("email: "+ this.state.email + "pass: " + this.state.pass);
         this.setState({
@@ -71,7 +70,7 @@ class AccountScreen extends Component {
             const response = await fetch(apiHitPoint);
             const json = await response.json();
             if(json["@status"] === "OK"){
-                console.log(json["response"].userkey);
+                
                 await this.storeToken(json["response"].userkey);
             }
             else{

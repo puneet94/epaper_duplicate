@@ -9,11 +9,17 @@ import appVars from '../../appVars';
 import Pdf from 'react-native-pdf';
 
 class PDFViewScreen extends Component {
-
+    
     constructor(props){
+        
         super(props);
+        const navParams = this.props.navigation.state.params;
+        let epaperindex = navParams.epaperindex;
+       
         this.state = {
-          page: 1
+          page: 1,
+          currentMenuIndex: 1,
+            epaperindex
         }
       }
 
@@ -22,11 +28,13 @@ class PDFViewScreen extends Component {
         page: Number(item.page),
         })
     }
-
     checkActiveMenu = (selectedPage)=>{
+        if(this.state.currentMenuIndex==selectedPage){
+            return true;
+        }/*
         if(this.state.page===Number(selectedPage) || this.state.currentpage===Number(selectedPage)){
           return true;
-        }
+        }*/
       }
 
     renderMenuItem = (item)=>{
@@ -38,11 +46,31 @@ class PDFViewScreen extends Component {
           </TouchableOpacity>
         );
       }
-
+      activeMenuIndex = (pageNo)=>{
+          if(this.state.epaperindex){
+            let epaperindex = this.state.epaperindex;
+            let currentMenuIndex = 1;
+            let scrollIndex = 0;
+          for(let i= epaperindex.length-1;i>=0;i--){
+              if(pageNo>=epaperindex[i].page){
+                  currentMenuIndex = epaperindex[i].page
+                  scrollIndex = i;
+                  break;     
+              }
+          }
+         this.menuList.scrollToIndex({ index: scrollIndex });
+          this.setState({
+              currentMenuIndex ,
+              scrollIndex
+          });
+          }
+          
+      }
   renderSubmenu= ()=>{
     const navParams = this.props.navigation.state.params;
     let epaperindex = navParams.epaperindex;
-
+    
+        console.log(navParams);
       return (
         <View style={appStyles.subMenuContainer}>
         <FlatList
@@ -53,6 +81,7 @@ class PDFViewScreen extends Component {
         return item.page;
         }}
         horizontal={true}
+        ref={(ref) => { this.menuList = ref; }}
         />
         </View>
       );
@@ -70,6 +99,7 @@ class PDFViewScreen extends Component {
                 {
                     this.renderSubmenu()
                 }
+
                 </View>
                   <Pdf ref={(pdf)=>{this.pdf = pdf;}}
                       source={source}
@@ -82,7 +112,9 @@ class PDFViewScreen extends Component {
                       }}
                       onPageChanged={(page,pageCount)=>{
                           this.setState({currentpage:page});
-                          //console.log(`current page: ${page}`);
+                          this.activeMenuIndex(page);
+                        console.log("the current");
+                          console.log(`current page: ${page}`);
                       }}
                       onError={(error)=>{
                           //console.log(error);
@@ -92,10 +124,8 @@ class PDFViewScreen extends Component {
           )
     }
   }
-
   const styles = StyleSheet.create({
       container: {
-         
           justifyContent: 'flex-start',
           alignItems: 'center',
       },
