@@ -25,9 +25,7 @@ import appVars from '../../appVars';
 import Image from 'react-native-scalable-image';
 
 import store from 'react-native-simple-store';
-
 class GalleryListScreen extends Component{
-  
   constructor(props){
     super(props);
     this.state = {

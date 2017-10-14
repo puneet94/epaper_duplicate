@@ -130,8 +130,6 @@ fetchdata = async () => {
         this.setState({ error, loading: false });
       })
 };
-
-
 fetchgallerydata = async () => {
   const navParams = this.props.navigation.state.params; 
   const { gallerypage } = this.state;
@@ -177,16 +175,19 @@ fetchgallerydata = async () => {
         navigation.navigate('ImageViewer', {item: item});
   }
 
-  openGalleryViewer = async (item)=>{
+  openGalleryViewer = async (item,index)=>{
     const navParams = this.props.navigation.state.params;     
     const { navigation } = this.props;
-    
-    navigation.navigate('ImageViewer', {item: item, newsid: navParams.newsid});
+    console.log("hit image viewer");
+    console.log(navParams.newsid);
+    console.log(item);
+    navigation.navigate('ImageViewer', {item: item, newsid: navParams.newsid,initialPage:index,images:this.state.gallerydata});
 }
 
  renderGalleryItem  = (item,index) =>{
+   
     return(
-      <TouchableOpacity style={appStyles.galleryItem} key={index} activeOpacity={0.5} onPress={this.openGalleryViewer.bind(this,item)}>
+      <TouchableOpacity style={appStyles.galleryItem} key={index} activeOpacity={0.5} onPress={()=>this.openGalleryViewer(item,index)}>
         <View style={appStyles.imageBorder}>
           <Image maxHeight={(Dimensions.get('window').width*.23)-8} source={{uri: appVars.apiUrl +"/"+item.img.src} } />
         </View>
@@ -224,9 +225,8 @@ fetchgallerydata = async () => {
             keyExtractor={(item,index)=> {
                 return item.img.src;
               }}
-            renderItem={({item}) => this.renderGalleryItem(item)}
+            renderItem={({item,index}) => this.renderGalleryItem(item,index)}
             />
-
           <View style={{flex: 1, flexDirection: 'row', justifyContent:'space-between'}}>
             <Text style={appStyles.newsDate}>{item.date}</Text>
             <Text style={appStyles.newsEditor}>{item.editor}</Text>

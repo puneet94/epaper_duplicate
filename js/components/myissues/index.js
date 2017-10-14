@@ -15,7 +15,9 @@ class IssuesScreen extends Component {
     this.state = {
       myissues: null,
       deletedIssues: [],
-      enabledEdit: false
+      enabledEdit: false,
+      deSelectedAll: true,
+      selectedAll: false
     }
   }
   static navigationOptions = ({ navigation }) => {
@@ -24,7 +26,8 @@ class IssuesScreen extends Component {
       headerRight: <View>
       {params.enabledEdit?
       <View style={{flexDirection:"row"}}>
-        <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.selectAll();}}><AwseomeIcon size={24} name="check"  color="black"/></TouchableOpacity>
+        {params.deSelectedAll && <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.selectAll();}}><AwseomeIcon size={24} name="check"  color="black"/></TouchableOpacity>}
+        {params.selectedAll && <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.deSelectAll();}}><AwseomeIcon size={24} name="check"  color="green"/></TouchableOpacity>}
         <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.confirmDelete();}}><AwseomeIcon size={24} name="trash"  color={params.deletedIssues.length?appVars.colorMain:appVars.colorDrawerIsActiveBackgroundColor}/></TouchableOpacity>
         <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.resetDelete();}}><AwseomeIcon size={24} name="times"  color={appVars.colorMain} /></TouchableOpacity>
       </View>:
@@ -46,7 +49,11 @@ class IssuesScreen extends Component {
       startEdit: this.startEdit,
       resetDelete: this.resetDelete,
       getEnabledEdit: this.getEnabledEdit,
-      getDeletedIssues: this.getDeletedIssues
+      getDeletedIssues: this.getDeletedIssues,
+      deSelectAll: this.deSelectAll,
+      selectedAll: this.state.selectedAll,
+      deSelectedAll: this.state.deSelectedAll
+  
 
     });
   }
@@ -59,23 +66,7 @@ class IssuesScreen extends Component {
     
     return this.state.enabledEdit;
   }
-  componentWillUpdate = (nextProps,nextState)=> {
-    if (this.props !== nextProps) {
-      if (nextProps.navigation) {
-        //console.log("yes");
-        //console.log(nextProps);
-        //console.log(nextState);
-        /*nextProps.navigation.setParams({ 
-          confirmDelete: this.confirmDelete ,
-          enabledEdit: nextState.enabledEdit,
-          selectAll: this.selectAll,
-          deletedIssues: nextState.deletedIssues,
-          startEdit: this.startEdit,
-          resetDelete: this.resetDelete
-        });*/
-      }
-    }
-  }  
+    
   getMyIssues = async ()=>{
 
 
@@ -102,21 +93,38 @@ class IssuesScreen extends Component {
       };
     }
   }
+  checkSelectedAll = ()=>{
+    
+    if(this.state.myissues.length===this.state.deletedIssues.length){
+      this.setState({
+        deSelectedAll: false,
+        selectedAll: true
+      });
+    }else{
+      this.setState({
+        deSelectedAll: true,
+        selectedAll: false
+      });
+    }
+  }
   showIssue = (item)=>{
     if(this.state.enabledEdit){
       let deletedIndex = this.checkIssueInDeleted(item);
       if(deletedIndex==-1){
         this.setState({
           deletedIssues: [...this.state.deletedIssues,item]
+        },()=>{
+          this.checkSelectedAll();
         });
       }else{
         this.setState({
-          
           deletedIssues: [...this.state.deletedIssues.slice(0, deletedIndex),
             ...this.state.deletedIssues.slice(deletedIndex + 1)]
-        })
+        },()=>{
+          this.checkSelectedAll();
+        });
       }
-
+      
     }else{
       const { navigation } = this.props;
       navigation.navigate('PDFView', {file: item.path, epaperindex: item.epaperindex});
@@ -145,12 +153,7 @@ class IssuesScreen extends Component {
       enabledEdit: true
     });
   }
-  setStaticValues = ()=>{
-    
-    IssuesScreen.enabledEdit = this.state.enabledEdit;
-    IssuesScreen.deletedIssues = this.state.deletedIssues;
-    
-  }
+  
   resetDelete = ()=>{
     this.setState({
       enabledEdit: false,
@@ -159,7 +162,16 @@ class IssuesScreen extends Component {
   }
   selectAll = ()=>{
     this.setState({
-      deletedIssues: this.state.myissues
+      deletedIssues: this.state.myissues,
+      deSelectedAll: false,
+      selectedAll: true
+    });
+  }
+  deSelectAll = ()=>{
+    this.setState({
+      deletedIssues: [],
+      deSelectedAll: true,
+      selectedAll: false
     });
   }
   confirmDelete = ()=>{
@@ -223,14 +235,17 @@ componentDidUpdate = (prevProps,prevState)=>{
     startEdit: this.startEdit,
     resetDelete: this.resetDelete,
     getEnabledEdit: this.getEnabledEdit,
-    getDeletedIssues: this.getDeletedIssues
+    getDeletedIssues: this.getDeletedIssues,
+    deSelectAll: this.deSelectAll,
+    selectedAll: this.state.selectedAll,
+    deSelectedAll: this.state.deSelectedAll
 
   });}
 }
   render=()=> {
 
     const { navigation } = this.props
-    this.setStaticValues();
+    
     return (
       <View style={appStyles.container}>
         

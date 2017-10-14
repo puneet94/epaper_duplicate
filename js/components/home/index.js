@@ -97,7 +97,6 @@ fetchdata = async () => {
   downloadFile = async (url,item)=>{
     let downloadFile = true;
     //let issues = await store.get('userIssues');
-
       var myissues = await store.get('userIssues');
 
     const { navigation } = this.props;
@@ -166,8 +165,7 @@ fetchdata = async () => {
         epaperindex: item.epaperindex,
         id: item.id
       };
-      console.log("issue saved");
-      console.log(issueObject);
+      
       store.push('userIssues',issueObject );
     }
   }
@@ -255,6 +253,7 @@ fetchdata = async () => {
 	{
     const mainItem = [];
     if(this.state.data.length){
+      
       mainItem.push(this.state.data[0]);
     }
     return (
