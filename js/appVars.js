@@ -27,8 +27,7 @@ const ScreenWidth = Dimensions.get('window').width;
     { archive: 'sportem', subMenuLabel: 'Sport'},
     { archive: 'polizeiem', subMenuLabel: 'Blaulicht'}
   ];
-
-module.exports = {
+const APP_CONSTANTS =   {
 
   apiUrl: "https://api.mopo-server.de",
   apiKey: "04a0a1ca18a1beaa24dfcecfe224d53f",
@@ -60,7 +59,9 @@ module.exports = {
   
   // icons
   shareIcon: shareIcon,
-  
+  uploadAPI :"https://api.mopo-server.de/share/app/",
+  uploadAPISuccess: "thank you for your feedback",
+  uploadAPIFail: "Please try again",
   animationType : animationType,
 
   //drawerWidth
@@ -136,3 +137,11 @@ module.exports = {
   
   STORAGE_KEY : 'TOKEN',
 }
+import store from 'react-native-simple-store';
+const getAppConstants = async (obj)=>{
+  obj.baseUnit = await store.get('BASE_UNIT') || 18;
+  console.log("got from storage");
+  console.log(obj.baseUnit);
+}
+getAppConstants(APP_CONSTANTS);
+module.exports = APP_CONSTANTS;

@@ -10,7 +10,7 @@ import {
     Picker,
     Slider
 } from 'react-native'
-
+import store from 'react-native-simple-store';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 
@@ -46,7 +46,7 @@ class SettingsScreen extends Component {
                 <View style={appStyles.settingsWrapper}>    
                     <Text style={appStyles.settingsColStart}>{appVars.labelFontsize}</Text>
                     <View style={appStyles.settingsColEnd}>
-                        <Slider style={appStyles.settingsSlider} step={2} minimumValue={16} maximumValue={24} onValueChange={(itemValue, itemIndex) => this.setState({userFontSize: itemValue})}/>
+                        <Slider style={appStyles.settingsSlider} step={2} minimumValue={16} maximumValue={42} onValueChange={(itemValue, itemIndex) => {this.setState({userFontSize: itemValue});store.save('BASE_UNIT',itemValue)}}/>
                     </View>
                 </View>
             </View>
