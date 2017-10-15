@@ -11,6 +11,7 @@ import { StyleSheet,
     Button,
     Alert,
     PixelRatio,
+    ActivityIndicator,
     TouchableOpacity,
     Image,
 } from 'react-native'
@@ -19,21 +20,90 @@ import appVars from '../../appVars';
 import RNFetchBlob from 'react-native-fetch-blob';
 import ImagePicker from 'react-native-image-picker';
 
-
 class UploadScreen extends Component {
     
     constructor(props){
         super(props);
         this.state = {
             userTermsOfUse: false,
-            avatarSource: null,        }
+            avatarSource: null,        
+            avatarPath: null,
+            file64Data : null,
+            formLoading: false
+          };
+    }
+    onSubmit = async ()=>{
+      this.setState({
+        formLoading: true
+      });
+      const payload = {
+        message: this.state.msg,
+        email: this.state.email,
+        phone: this.state.phone,
+        imageFile:  this.state.file64Data,
+        userTermsOfUse: this.state.userTermsOfUse
+      }
+      var data = new FormData();
+      data.append( "formData",  JSON.stringify(payload));
+      try {
+        let response = await fetch(appVars.uploadAPI+"?authtoken="+appVars.apiKey, {
+          method: 'POST',
+          body: data
+        });
+        let jsonresponse = await response.json();
+        Alert.alert(appVars.uploadAPISuccess);
+      } catch (error) {
+        
+        Alert.alert(appVars.uploadAPIFail);
+        
+      }finally{
+        this.setState({
+          formLoading: false,
+          userTermsOfUse: false,
+          avatarSource: null,        
+          avatarPath: null,
+          file64Data : null
+        });
+      }
+      
+    }
+    /*onSubmit=async ()=>{
+      this.uploadImage();
+      try{
+      let response = await RNFetchBlob.fetch('POST', "https://api.mopo-server.de/share/app/?authtoken="+appVars.apiKey, {
+        Authorization : "Bearer access-token",    
+        // this is required, otherwise it won't be process as a multipart/form-data request
+        'Content-Type' : 'multipart/form-data',
+      }, [
+        // append field data from file path
+        {
+          name : 'avatar',
+          filename : this.state.fileName,
+          type: this.state.fileType,
+          // Change BASE64 encoded data to a file path with prefix `RNFetchBlob-file://`.
+          // Or simply wrap the file path with RNFetchBlob.wrap().
+          data: RNFetchBlob.wrap(this.state.avatarPath)
+        },
+      ]);
+
+      console.log("response from upload");
+      console.log(response);
+
+
     }
 
-    onSubmit=async function (){
 
-    };
-
+    catch(e){
+      console.log("error in upload");
+      console.log(e);
+    }}
+*/
     
+
+
+
+
+
       selectPhotoTapped() {
         const options = {
           quality: 1.0,
@@ -61,19 +131,31 @@ class UploadScreen extends Component {
             console.log('User tapped custom button: ', response.customButton);
           }
           else {
+
             let source = { uri: response.uri };
-    
+            
+            //console.log(response.data);
             // You can also display the image using data:
             // let source = { uri: 'data:image/jpeg;base64,' + response.data };
-    
             this.setState({
-              avatarSource: source
+              avatarSource: source,
+              avatarPath: response.path,
+              fileName: response.fileName,
+              fileType: response.type,
+              file64Data: response.data
             });
           }
         });
       }
 
       render() {
+        if(this.state.formLoading){
+          return(
+            <View style={appStyles.ActivityIndicatorFullscreenContainer}>
+              <ActivityIndicator animating={true} size={96}/>
+            </View>
+          )
+        }
           return (
               <ScrollView style={appStyles.contenContainer}>
 
