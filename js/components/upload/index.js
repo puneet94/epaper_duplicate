@@ -198,7 +198,7 @@ class UploadScreen extends Component {
                 <View style={appStyles.contentSeperator} />
                 
                 <View style={appStyles.contentElement}>
-                <Button color={appVars.colorMain} style={appStyles.submit} title={appVars.labelSubmit} onPress={this.onSubmit.bind(this)} />
+                <Button disabled={!this.state.userTermsOfUse} color={appVars.colorMain} style={appStyles.submit} title={appVars.labelSubmit} onPress={this.onSubmit.bind(this)} />
                 </View>
 
               </ScrollView>
