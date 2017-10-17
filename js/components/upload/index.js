@@ -26,8 +26,8 @@ class UploadScreen extends Component {
         super(props);
         this.state = {
             userTermsOfUse: false,
-            avatarSource: null,        
-            avatarPath: null,
+            imageSorce: null,        
+            imagePath: null,
             file64Data : null,
             formLoading: false
           };
@@ -46,7 +46,7 @@ class UploadScreen extends Component {
       var data = new FormData();
       data.append( "formData",  JSON.stringify(payload));
       try {
-        let response = await fetch(appVars.uploadAPI+"?authtoken="+appVars.apiKey, {
+        let response = await fetch(appVars.apiUrl+"/fileupload.html?authtoken="+appVars.apiKey, {
           method: 'POST',
           body: data
         });
@@ -60,55 +60,19 @@ class UploadScreen extends Component {
         this.setState({
           formLoading: false,
           userTermsOfUse: false,
-          avatarSource: null,        
-          avatarPath: null,
+          imageSorce: null,        
+          imagePath: null,
           file64Data : null
         });
       }
       
     }
-    /*onSubmit=async ()=>{
-      this.uploadImage();
-      try{
-      let response = await RNFetchBlob.fetch('POST', "https://api.mopo-server.de/share/app/?authtoken="+appVars.apiKey, {
-        Authorization : "Bearer access-token",    
-        // this is required, otherwise it won't be process as a multipart/form-data request
-        'Content-Type' : 'multipart/form-data',
-      }, [
-        // append field data from file path
-        {
-          name : 'avatar',
-          filename : this.state.fileName,
-          type: this.state.fileType,
-          // Change BASE64 encoded data to a file path with prefix `RNFetchBlob-file://`.
-          // Or simply wrap the file path with RNFetchBlob.wrap().
-          data: RNFetchBlob.wrap(this.state.avatarPath)
-        },
-      ]);
-
-      console.log("response from upload");
-      console.log(response);
-
-
-    }
-
-
-    catch(e){
-      console.log("error in upload");
-      console.log(e);
-    }}
-*/
-    
-
-
-
-
 
       selectPhotoTapped() {
         const options = {
           quality: 1.0,
-          maxWidth: 1600,
-          maxHeight: 1600,
+          maxWidth: 2400,
+          maxHeight: 2400,
           title: appVars.labelSelectSource,
           cancelButtonTitle: appVars.labelCancel,
           takePhotoButtonTitle: appVars.labelFromCamera,
@@ -119,16 +83,16 @@ class UploadScreen extends Component {
         };
     
         ImagePicker.showImagePicker(options, (response) => {
-          console.log('Response = ', response);
+          //console.log('Response = ', response);
     
           if (response.didCancel) {
-            console.log('User cancelled photo picker');
+            //console.log('User cancelled photo picker');
           }
           else if (response.error) {
-            console.log('ImagePicker Error: ', response.error);
+            //console.log('ImagePicker Error: ', response.error);
           }
           else if (response.customButton) {
-            console.log('User tapped custom button: ', response.customButton);
+            //console.log('User tapped custom button: ', response.customButton);
           }
           else {
 
@@ -138,8 +102,8 @@ class UploadScreen extends Component {
             // You can also display the image using data:
             // let source = { uri: 'data:image/jpeg;base64,' + response.data };
             this.setState({
-              avatarSource: source,
-              avatarPath: response.path,
+              imageSorce: source,
+              imagePath: response.path,
               fileName: response.fileName,
               fileType: response.type,
               file64Data: response.data
@@ -180,9 +144,9 @@ class UploadScreen extends Component {
                 </View>
 
                 <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)}>
-                    <View style={[styles.avatar, styles.avatarContainer, {marginBottom: 20}]}>
-                    { this.state.avatarSource === null ? <Text>Select a Photo</Text> :
-                        <Image style={styles.avatar} source={this.state.avatarSource} />
+                    <View style={[styles.image, styles.imageContainer, {marginBottom: 20}]}>
+                    { this.state.imageSorce === null ? <Text>Select a Photo</Text> :
+                        <Image style={styles.image} source={this.state.imageSorce} />
                     }
                     </View>
           </TouchableOpacity>
@@ -198,7 +162,7 @@ class UploadScreen extends Component {
                 <View style={appStyles.contentSeperator} />
                 
                 <View style={appStyles.contentElement}>
-                <Button disabled={!this.state.userTermsOfUse} color={appVars.colorMain} style={appStyles.submit} title={appVars.labelSubmit} onPress={this.onSubmit.bind(this)} />
+                <Button disabled={!this.state.userTermsOfUse || !this.state.phone || !this.state.email} color={appVars.colorMain} style={appStyles.submit} title={appVars.labelSubmit} onPress={this.onSubmit.bind(this)} />
                 </View>
 
               </ScrollView>
@@ -215,13 +179,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF'
   },
-  avatarContainer: {
+  imageContainer: {
     borderColor: '#9B9B9B',
     borderWidth: 1 / PixelRatio.get(),
     justifyContent: 'center',
     alignItems: 'center'
   },
-  avatar: {
+  image: {
     borderRadius: 75,
     width: 150,
     height: 150
