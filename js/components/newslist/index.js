@@ -214,6 +214,7 @@ class NewsListScreen extends Component{
         <View style={appStyles.subMenuContainer}>
         <FlatList
         data={appVars.objNewsCategories}
+        showsHorizontalScrollIndicator={false}
         extraData={this.state}
         renderItem={({item}) => this.renderMenuItem(item)}
         keyExtractor={(item,index)=> {

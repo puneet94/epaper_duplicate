@@ -59,7 +59,8 @@ const APP_CONSTANTS =   {
   
   // icons
   shareIcon: shareIcon,
-  uploadAPI :"https://api.mopo-server.de/share/app/",
+  
+  //upload
   uploadAPISuccess: "thank you for your feedback",
   uploadAPIFail: "Please try again",
   animationType : animationType,

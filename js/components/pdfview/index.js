@@ -76,6 +76,7 @@ class PDFViewScreen extends Component {
         <FlatList
         data={epaperindex}
         extraData={this.state}
+        showsHorizontalScrollIndicator={false}
         renderItem={({item}) => this.renderMenuItem(item)}
         keyExtractor={(item,index)=> {
         return item.page;
