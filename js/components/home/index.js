@@ -14,11 +14,11 @@ import {
     RefreshControl,
     Alert,
     ActivityIndicator,
-    ToastAndroid
+    ToastAndroid,
+    Image
 } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
-import Image from 'react-native-scalable-image';
 
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
@@ -161,6 +161,8 @@ fetchdata = async () => {
       const issueObject = {
         path: resp.path(),
         thumbNail: imageResp.path(),
+        thumbNailWidth: item.width,
+        thumbNailHeight: item.height,
         date: item.date,
         epaperindex: item.epaperindex,
         id: item.id
@@ -221,14 +223,22 @@ fetchdata = async () => {
     this.downloadFile('https://mopo-server.de/'+ item["downloadPath"], item);
   }
 
-  renderItem = (item) =>{
-    //use now smaller (less kb and smaller ins size) thumbnails from the api
-    //console.log(appVars.apiUrl +"/"+item.picture.img.src);
+  ratioImageHeigh = (width,height,multiplicate) =>{
+    return height*(appVars.screenX*multiplicate/width);
+  }
+  ratioImageWidth = (width,height,multiplicate) =>{
+    return width*(appVars.screenY*multiplicate/height);
+  }
 
+  renderItem = (item) =>{
     return(
       <View style={appStyles.ePaperEditionWrapper}>
         <TouchableOpacity style={appStyles.imageBorder} activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
-            <Image maxHeight={Dimensions.get('window').height*0.25-46} source={{uri: appVars.apiUrl +"/"+item.picture.img.src} } >
+            
+              <Image 
+                  style={{width: ((appVars.screenX*.21)), height: this.ratioImageHeigh(item.width,item.height,.21)}}
+                  source={{uri: appVars.apiUrl +"/"+item.picture.img.src} }
+                  >
             {(item.paywall)?<View><View style={appStyles.paywallIconTriangle} /><AwseomeIcon style={appStyles.paywallIcon} name="plus" /></View>:<View></View>}
             {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator style={appStyles.ePaperActivityIndicator} size="large" color={appVars.colorMain}/>:<View></View>}
             </Image>
@@ -237,11 +247,13 @@ fetchdata = async () => {
       </View>
     );
   }
+
   renderItemNewst = (item) =>{
     return(
       <View style={appStyles.ePaperMainWrapper}>
         <TouchableOpacity style={appStyles.imageBorder} activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
-          <Image maxHeight={Dimensions.get('window').height*0.75-115} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } >
+          <Image style={{width: this.ratioImageWidth(item.width,item.height,.75)-55, height: ((appVars.screenY*.75)-120)}}
+                  source={{uri: appVars.apiUrl +"/"+item.singleSRC} }>
           {(item.paywall)?<View><View style={appStyles.paywallIconTriangle} /><AwseomeIcon style={appStyles.paywallIcon} name="plus" /></View>:<View></View>}
           {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator style={appStyles.ePaperActivityIndicator} size="large" color={appVars.colorMain}/>:<View></View>}
           </Image>
@@ -279,6 +291,7 @@ fetchdata = async () => {
       <FlatList
         data={this.state.data.slice(1)}
         horizontal={true}
+        showsHorizontalScrollIndicator={false}
         onEndReached={this.handlePageEnd}
         onEndReachedThreshold={0.5}
         keyExtractor={(item,index)=> { 

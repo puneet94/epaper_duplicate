@@ -27,16 +27,13 @@ function lineHeight(value,lh) {
 
 
 module.exports = StyleSheet.create({
+
   //epaper (home)
   ePaperMainContainer: {
     backgroundColor: appVars.colorWhite,
     height: (y * .75)-80,
-    shadowColor: appVars.colorBlack,
-    shadowOffset: { width: 10, height: 20 },
-    shadowOpacity: 1,
-    shadowRadius: 1,
-    borderBottomColor: appVars.colorBlack,
-    elevation : 5,
+    borderBottomColor: appVars.colorMain,
+    borderBottomWidth: 2,
   },
   ePaperMainWrapper: {
     paddingTop: 15,
@@ -64,15 +61,12 @@ module.exports = StyleSheet.create({
   },
 
   //myIssues
-  myIssuesMainContainer: {
-    flex: 1,
-    paddingTop: 15,
-  },
+  
   myIssuesEditionWrapper: {
-    width: (x * .333),
     justifyContent: 'center',
     alignItems: 'center',
-    paddingBottom: 10,
+    paddingLeft: 10,
+    paddingTop: 15,
   },
   myIssueSelect: {
     position: 'absolute',
@@ -172,6 +166,7 @@ module.exports = StyleSheet.create({
   galleryItem: {
     flex: 1,
     height: (x * .23),
+    width: (x * 23),
     margin: 1
   },
 
@@ -252,19 +247,14 @@ drawerLabel: {
   //submenu
   subMenuContainer: {
     backgroundColor: appVars.colorSeperatorColor,
-    shadowColor: appVars.colorBlack,
-    shadowOffset: { width: 10, height: 20 },
-    shadowOpacity: 1,
-    shadowRadius: 1,
-    borderBottomWidth: 1,
+    borderBottomWidth: 2,
     borderBottomColor: appVars.colorMain,
-    elevation : 5,
   },
   subMenuItem: {
     borderBottomWidth: 2,
     borderBottomColor: 'transparent',
-    paddingTop: 6,
-    paddingBottom: 2,
+    paddingTop: 10,
+    paddingBottom: 5,
     marginRight: 10,
     marginLeft: 10,
     justifyContent: 'center',
@@ -273,8 +263,8 @@ drawerLabel: {
   subMenuItemActive: {
     borderBottomWidth: 2,
     borderBottomColor: appVars.colorMain,
-    paddingTop: 6,
-    paddingBottom: 2,
+    paddingTop: 10,
+    paddingBottom: 5,
     marginRight: 10,
     marginLeft: 10,
     justifyContent: 'center',
@@ -283,7 +273,13 @@ drawerLabel: {
   subMenuTextLabel: {
     color: appVars.colorBlack,
     fontSize: 16,
-    fontFamily: appVars.fontSub,
+    fontFamily: appVars.fontMain,
+  },
+  subMenuSeperator: {
+    flex: 0,
+    width: 1,
+    margin: 8,
+    backgroundColor: appVars.colorDrawerSeperatorBackgroundColor,
   },
 
   //settings 

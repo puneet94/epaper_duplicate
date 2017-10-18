@@ -38,12 +38,15 @@ class PDFViewScreen extends Component {
       }
 
     renderMenuItem = (item)=>{
-        return (     
+        return (
+        <View style={{flexDirection: 'row'}}>
           <TouchableOpacity activeOpacity = { .5 } onPress={this.handleMenuClick.bind(this,item)}>
             <View style={this.checkActiveMenu(item.page)?appStyles.subMenuItemActive:appStyles.subMenuItem}>
               <Text style={appStyles.subMenuTextLabel}>{item.section.toUpperCase()}</Text>
             </View>
           </TouchableOpacity>
+          <View style={appStyles.subMenuSeperator}></View>
+        </View>
         );
       }
       activeMenuIndex = (pageNo)=>{

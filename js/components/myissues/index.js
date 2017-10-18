@@ -1,7 +1,16 @@
 
 import React, { Component } from 'react'
-import { ToastAndroid,Platform,Text,Button,View,StyleSheet,Dimensions,FlatList,TouchableOpacity,Alert } from 'react-native';
-import Image from 'react-native-scalable-image';
+import { ToastAndroid,
+  Platform,
+  Text,
+  Button,
+  View,
+  StyleSheet,
+  Dimensions,
+  FlatList,
+  TouchableOpacity,
+  Alert,
+  Image } from 'react-native';
 import store from 'react-native-simple-store';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
@@ -26,13 +35,13 @@ class IssuesScreen extends Component {
       headerRight: <View>
       {params.enabledEdit?
       <View style={{flexDirection:"row"}}>
-        {params.deSelectedAll && <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.selectAll();}}><AwseomeIcon size={24} name="check"  color="black"/></TouchableOpacity>}
-        {params.selectedAll && <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.deSelectAll();}}><AwseomeIcon size={24} name="check"  color="green"/></TouchableOpacity>}
+        {params.deSelectedAll && <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.selectAll();}}><AwseomeIcon size={24} name="check"  color={appVars.colorBlack}/></TouchableOpacity>}
+        {params.selectedAll && <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.deSelectAll();}}><AwseomeIcon size={24} name="check"  color={appVars.colorMain}/></TouchableOpacity>}
         <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.confirmDelete();}}><AwseomeIcon size={24} name="trash"  color={params.deletedIssues.length?appVars.colorMain:appVars.colorDrawerIsActiveBackgroundColor}/></TouchableOpacity>
         <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.resetDelete();}}><AwseomeIcon size={24} name="times"  color={appVars.colorMain} /></TouchableOpacity>
       </View>:
       <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.startEdit();}}>
-        <AwseomeIcon size={24} name="pencil" style={{alignSelf:"flex-end",paddingRight:15}} color={appVars.colorMain}/>
+        <AwseomeIcon size={24} name="edit" style={{alignSelf:"flex-end",paddingRight:15}} color={appVars.colorMain}/>
       </TouchableOpacity>}
     </View>
     };
@@ -132,16 +141,24 @@ class IssuesScreen extends Component {
 
   }
 
-  renderIssue = (item)=>{
+  ratioImageHeigh = (width,height,multiplicate) =>{
+    return height*(appVars.screenX*multiplicate/width);
+  }
 
+  renderIssue = (item)=>{
     return (
-    <View style={appStyles.myIssuesEditionWrapper}>      
+   
+    <View style={appStyles.myIssuesEditionWrapper}>
+
       <TouchableOpacity style={appStyles.imageBorder} activeOpacity = { .5 } onPress={ ()=>{
         this.showIssue(item)
         }}>
-        <Image maxWidth={(Dimensions.get('window').width*0.333)-15} source={{uri:'file://'+item.thumbNail}} >
-          {this.state.enabledEdit && <View style={[appStyles.myIssueSelect,this.checkSelected(item)]}>
-          </View>}
+        
+        <Image 
+                  style={{width: ((appVars.screenX*.32)-16), height: this.ratioImageHeigh(item.thumbNailWidth,item.thumbNailHeight,.32)-16}}
+                  source={{uri:'file://'+item.thumbNail}}
+                  >
+          {this.state.enabledEdit && <View style={[appStyles.myIssueSelect,this.checkSelected(item)]}></View>}
         </Image>
         <Text style={appStyles.ePaperEditionDate}>{item["date"]}</Text>
       </TouchableOpacity>
@@ -249,14 +266,11 @@ componentDidUpdate = (prevProps,prevState)=>{
     return (
       <View style={appStyles.container}>
         
-          <View style={appStyles.myIssuesMainContainer}>
           {
             this.state.myissues && this.renderIssues()
           }
-          </View>
-        
       </View>
-    )
+            )
   }
 }
 export default IssuesScreen;

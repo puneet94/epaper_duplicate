@@ -1,6 +1,7 @@
 import {Platform, Dimensions} from 'react-native';
 
 const ScreenWidth = Dimensions.get('window').width;
+const ScreenHeight = Dimensions.get('window').height;
 
   // WTF - needs to edit the Mafra font name
   if(Platform.OS === 'android') {
@@ -28,6 +29,9 @@ const ScreenWidth = Dimensions.get('window').width;
     { archive: 'polizeiem', subMenuLabel: 'Blaulicht'}
   ];
 const APP_CONSTANTS =   {
+
+  screenX: ScreenWidth,
+  screenY: ScreenHeight,  
 
   apiUrl: "https://api.mopo-server.de",
   apiKey: "04a0a1ca18a1beaa24dfcecfe224d53f",

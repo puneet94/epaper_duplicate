@@ -13,6 +13,7 @@ import {
     Share,
     Modal,
     ListView,
+    Image,
 } from 'react-native';
 import HTMLView from 'react-native-htmlview';
 import { YouTubeStandaloneAndroid } from 'react-native-youtube';
@@ -23,9 +24,7 @@ import appStyles from '../../appStyles';
 import htmlStyles from '../../htmlStyles';
 import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
-import Image from 'react-native-scalable-image';
 import Gallery from 'react-native-image-gallery';
-
 import store from 'react-native-simple-store';
 
 
@@ -189,12 +188,16 @@ fetchgallerydata = async () => {
     return(
       <TouchableOpacity style={appStyles.galleryItem} key={index} activeOpacity={0.5} onPress={()=>this.openGalleryViewer(item,index)}>
         <View style={appStyles.imageBorder}>
-          <Image maxHeight={(Dimensions.get('window').width*.23)-8} source={{uri: appVars.apiUrl +"/"+item.img.src} } />
+          <Image style={{resizeMode: 'contain', width: (appVars.screenX*0.23)-8, height: (appVars.screenX*0.23)-8}} source={{uri: appVars.apiUrl +"/"+item.img.src} } />
         </View>
       </TouchableOpacity>
     )
   }
-  
+
+  ratioImageHeigh = (width,height,multiplicate) =>{
+    return height*(appVars.screenX*multiplicate/width);
+  }
+
  renderItem = (item) =>{
 
     return(
@@ -208,7 +211,10 @@ fetchgallerydata = async () => {
         <Text style={appStyles.subheadline}>{item.subheadline}</Text>
         <TouchableOpacity activeOpacity={0.5} onPress={this.openImageViewer.bind(this,item)}>
                 <View style={appStyles.imageBorder}>
-                  <Image width={Dimensions.get('window').width-28} source={{uri: appVars.apiUrl +"/"+item.singleSRC} } />
+                  <Image 
+                  style={{width: ((appVars.screenX)-28), height: this.ratioImageHeigh(item.width,item.height,1)-28}}
+                  source={{uri: appVars.apiUrl +"/"+item.singleSRC} }
+                  />
                   {(item.imagecopyright)?<Text style={appStyles.imagecopyright}>Foto: {item.imagecopyright}</Text>:<View></View>}
                 </View>
         </TouchableOpacity>

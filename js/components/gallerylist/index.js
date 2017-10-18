@@ -16,13 +16,13 @@ import {
     ActivityIndicator,
     ToastAndroid,
     Linking,
-    Button
+    Button,
+    Image
 } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
-import Image from 'react-native-scalable-image';
 
 import store from 'react-native-simple-store';
 class GalleryListScreen extends Component{
@@ -37,7 +37,9 @@ class GalleryListScreen extends Component{
       downloading: false,
       currentItem: null,
       bannerAds: [],
-      bannerAdsUrl: []
+      bannerAdsUrl: [],
+      bannerAdsWidth: [],
+      bannerAdsHeight: [],
     }
   }
   componentWillMount = async ()=>{
@@ -50,6 +52,12 @@ class GalleryListScreen extends Component{
       }),
       bannerAdsUrl: bannerAds.response.map((singlesource)=>{
         return singlesource.url;
+      }),
+      bannerAdsWidth: bannerAds.response.map((singlesource)=>{
+        return singlesource.width;
+      }),
+      bannerAdsHeight: bannerAds.response.map((singlesource)=>{
+        return singlesource.height;
       })
 
     });
@@ -119,20 +127,37 @@ class GalleryListScreen extends Component{
     });
   }
 
+  handleExternalUrl = function (externalurl){
+    Linking.canOpenURL(externalurl).then(supported => {
+          if (supported) {
+            Linking.openURL(externalurl);
+          } else {
+            console.log("Don't know how to open URI: " + externalurl);
+          }
+      });
+  }
+
   fetchBannerAds = ()=>{
     const apiAd = appVars.apiUrl+"/ads.html?authtoken="+appVars.apiKey+"&pid="+appVars.apiAdArchives;
     return fetch(apiAd);
     //.then(res => res.json());
   }
   
+  ratioImageHeigh = (width,height,multiplicate) =>{
+    return height*(appVars.screenX*multiplicate/width);
+  }
+
   renderAdSeparator =  (index) => {
     const arrayIndex = (index)%(this.state.bannerAds.length);
         return(
           <View style={appStyles.listAd}>
-            <Image onPress={()=> this.handleExternalUrl(this.state.bannerAdsUrl[arrayIndex])}
+            <TouchableOpacity activeOpacity = { .5 } onPress={()=> this.handleExternalUrl(this.state.bannerAdsUrl[arrayIndex])}>
+            <Image
               maxWidth={Dimensions.get('window').width} 
-              source={{uri: this.state.bannerAds[arrayIndex] }} 
+              source={{uri: this.state.bannerAds[arrayIndex] }}
+              style={{width: ((appVars.screenX)), height: this.ratioImageHeigh(this.state.bannerAdsWidth[arrayIndex],this.state.bannerAdsHeight[arrayIndex],1)}}
               />
+              </TouchableOpacity>
           </View>
         );
   };
@@ -185,7 +210,7 @@ class GalleryListScreen extends Component{
           <View style={{flex: 1, flexDirection: 'row'}}>
             <View>
               <View style={appStyles.imageBorder}>
-              <Image maxHeight={Dimensions.get('window').width*0.25} source={{uri: appVars.apiUrl +"/"+item.picture.img.src} } />
+              <Image style={{width: appVars.screenX*0.25, height: appVars.screenX*0.25}} source={{uri: appVars.apiUrl +"/"+item.picture.img.src} } />
               </View>
             </View>
             <View style={appStyles.newsListInner}>
