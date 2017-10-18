@@ -143,7 +143,7 @@ class NewsListScreen extends Component{
             console.log("Don't know how to open URI: " + externalurl);
           }
       });
-  };
+  }
 
   ratioImageHeigh = (width,height,multiplicate) =>{
     return height*(appVars.screenX*multiplicate/width);
@@ -255,7 +255,7 @@ class NewsListScreen extends Component{
           
           {(item.paywall)?<View><View style={appStyles.paywallIconTriangle} /><AwseomeIcon style={appStyles.paywallIcon} name="plus" /></View>:<View></View>}
           
-          <Text style={appStyles.newsListHeadline}>{item.headline}</Text>
+          <Text style={appStyles.newsListHeadline} numberOfLines={1}>{item.headline}</Text>
             
           <View style={{flex: 1, flexDirection: 'row'}}>
             <View>
@@ -266,7 +266,7 @@ class NewsListScreen extends Component{
             <View style={appStyles.newsListInner}>
               <Text style={appStyles.newsDate}>{item["date"]}</Text>
 
-              <Text style={appStyles.newsListTeaser}><Text style={appStyles.newsListCity}>{item.city.toUpperCase()}.</Text>{item.text.replace(/<{1}[^<>]{1,}>{1}/g," ")}</Text>
+              <Text style={appStyles.newsListTeaser} numberOfLines={5}><Text style={appStyles.newsListCity}>{item.city.toUpperCase()}.</Text>{item.text.replace(/<{1}[^<>]{1,}>{1}/g," ")}</Text>
             </View>
           </View>
           </TouchableOpacity>

@@ -91,6 +91,7 @@ module.exports = StyleSheet.create({
     fontFamily: appVars.fontHeadline,
     color: appVars.colorBlack,
     marginBottom: em(0.25),
+    marginRight: 20,
   },
   newsListCity: {
     fontSize: em(0.875),
@@ -134,6 +135,10 @@ module.exports = StyleSheet.create({
     fontFamily: appVars.fontSub,
     color: appVars.colorBlack,
     textAlign: 'center',
+    marginBottom: em(0.500),
+  },
+  imageContainer: {
+    marginBottom: em(0.875),
   },
   imagecopyright: {
     position: 'absolute',
@@ -151,7 +156,6 @@ module.exports = StyleSheet.create({
     fontSize: em(0.875),
     fontFamily: appVars.fontSub,
     color: appVars.colorMain,
-    marginBottom: em(0.875),
   },
   newsEditor: {
     fontSize: em(0.750),

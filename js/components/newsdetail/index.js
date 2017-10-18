@@ -14,6 +14,7 @@ import {
     Modal,
     ListView,
     Image,
+    Linking,
 } from 'react-native';
 import HTMLView from 'react-native-htmlview';
 import { YouTubeStandaloneAndroid } from 'react-native-youtube';
@@ -25,6 +26,7 @@ import htmlStyles from '../../htmlStyles';
 import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
 import Gallery from 'react-native-image-gallery';
+import YouTube from 'react-native-youtube'
 import store from 'react-native-simple-store';
 
 
@@ -169,6 +171,16 @@ fetchgallerydata = async () => {
     });
   }
 
+  handleExternalUrl = (externalurl)=>{
+    Linking.canOpenURL(externalurl).then(supported => {
+          if (supported) {
+            Linking.openURL(externalurl);
+          } else {
+            console.log("Don't know how to open URI: " + externalurl);
+          }
+      });
+  }
+
   openImageViewer = async (item)=>{
         const { navigation } = this.props;
         navigation.navigate('ImageViewer', {item: item});
@@ -209,7 +221,23 @@ fetchgallerydata = async () => {
         <Text style={appStyles.headline}>{item.headline}</Text>
 
         <Text style={appStyles.subheadline}>{item.subheadline}</Text>
-        <TouchableOpacity activeOpacity={0.5} onPress={this.openImageViewer.bind(this,item)}>
+
+
+        {(item.youtube_id)?
+          <YouTube
+          videoId={item.youtube_id}   // The YouTube video ID
+          play={true}             // control playback of video with true/false
+          fullscreen={false}       // control whether the video should play in fullscreen or inline
+          loop={true}             // control whether the video should loop when ended
+          apiKey={appVars.YoutubeAPIKey}
+          onReady={e => this.setState({ isReady: true })}
+          onChangeState={e => this.setState({ status: e.state })}
+          onChangeQuality={e => this.setState({ quality: e.quality })}
+          onError={e => this.setState({ error: e.error })}
+
+          style={{ marginBottom: 10, height: (appVars.screenX/16)*9 }}
+          />:
+        <TouchableOpacity style={appStyles.imageContainer} activeOpacity={0.5} onPress={this.openImageViewer.bind(this,item)}>
                 <View style={appStyles.imageBorder}>
                   <Image 
                   style={{width: ((appVars.screenX)-28), height: this.ratioImageHeigh(item.width,item.height,1)-28}}
@@ -217,13 +245,13 @@ fetchgallerydata = async () => {
                   />
                   {(item.imagecopyright)?<Text style={appStyles.imagecopyright}>Foto: {item.imagecopyright}</Text>:<View></View>}
                 </View>
+                {(item.caption)?<Text style={appStyles.imagecaption}>{item.caption}</Text>:<View></View>}
         </TouchableOpacity>
+        }
 
-          {(item.caption)?<Text style={appStyles.imagecaption}>{item.caption}</Text>:<View></View>}
+          {(item.teaser)?<HTMLView addLineBreaks={false} stylesheet={htmlStyles.teaser} value={item.teaser} onLinkPress={(url) => this.handleExternalUrl(url)} />:<View></View>}
 
-          {(item.teaser)?<HTMLView addLineBreaks={false} stylesheet={htmlStyles.teaser} value={item.teaser} />:<View></View>}
-
-          <HTMLView addLineBreaks={false} value={item.text.replace('<p>', '<p><city>'+item.city.toUpperCase()+'. </city>')} stylesheet={htmlStyles.text} onLinkPress={(url) => alert('clicked link:'+url)} />
+          <HTMLView addLineBreaks={false} value={item.text.replace('<p>', '<p><city>'+item.city.toUpperCase()+'. </city>')} stylesheet={htmlStyles.text} onLinkPress={(url) => this.handleExternalUrl(url)} />
           
             <FlatList
             data={this.state.gallerydata}

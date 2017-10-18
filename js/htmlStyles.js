@@ -37,14 +37,14 @@ const teaser = StyleSheet.create({
   },
   a: {
     color: appVars.colorMain,
-    fontWeight: '700'
+    fontWeight: '700',
   },
   h3: {
     fontSize: em(1.250),
     lineHeight: lineHeight(1.250,120),
     fontFamily: appVars.fontHeadline,
     color: appVars.colorBlack,
-    marginBottom: em(1),
+    marginBottom: em(0.500),
   }
 });
 
@@ -63,7 +63,7 @@ const text = StyleSheet.create({
   },
   a: {
     color: appVars.colorMain,
-    fontWeight: '700'
+    fontWeight: '700',
   },
   city: {
       fontSize: em(0.875),
@@ -75,7 +75,7 @@ const text = StyleSheet.create({
     lineHeight: lineHeight(1.250,120),
     fontFamily: appVars.fontHeadline,
     color: appVars.colorBlack,
-    marginBottom: em(1),
+    marginBottom: em(0.500),
   }
 });
 
