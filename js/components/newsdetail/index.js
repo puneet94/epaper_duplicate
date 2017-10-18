@@ -14,11 +14,9 @@ import {
     Modal,
     ListView,
     Image,
-    Linking,
+    Linking
 } from 'react-native';
 import HTMLView from 'react-native-htmlview';
-import { YouTubeStandaloneAndroid } from 'react-native-youtube';
-import { YouTubeStandaloneIOS } from 'react-native-youtube';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 import IoniconsIcon from 'react-native-vector-icons/Ionicons';
 import appStyles from '../../appStyles';
@@ -27,11 +25,11 @@ import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
 import Gallery from 'react-native-image-gallery';
 import YouTube from 'react-native-youtube'
+import RNAudioStreamer from 'react-native-audio-streamer';
 import store from 'react-native-simple-store';
 
-
 class NewsDetailScreen extends Component{
-
+  
   constructor(props){
     super(props);
     this.state = {
@@ -41,26 +39,8 @@ class NewsDetailScreen extends Component{
       gallerypage: 1,
       error: null,
       refreshing: false,
-      shown: false,
   }
 }
-
-  YouTube =()=>{
-    if(Platform.OS === 'android') {    
-    YouTubeStandaloneAndroid.playVideo({
-      apiKey: appVars.YoutubeAPIKey,     // Your YouTube Developer API Key
-      videoId: this.state.YouTubeId,     // YouTube video ID
-      autoplay: true,             // Autoplay the video
-      startTime: 0,             // Starting point of video (in seconds)
-    })
-      .then(() => console.log('Standalone Player Exited'))
-      .catch(errorMessage => console.error(errorMessage))
-    } else {
-      YouTubeStandaloneIOS.playVideo(this.state.YouTubeId)
-      .then(() => console.log('Standalone Player Exited'))
-      .catch(errorMessage => console.error(errorMessage))
-    }
-  }
 
   SocialShare =()=>{
     Share.share({
@@ -72,12 +52,23 @@ class NewsDetailScreen extends Component{
       dialogTitle: this.state.shareTitle,
     })
   }
+
+  playReadspeaker =()=>{
+    RNAudioStreamer.setUrl(appVars.ReadspeakerUrl+this.state.shareUrl)
+    RNAudioStreamer.play();
+  }
+
+  stopReadspeaker =()=>{
+    RNAudioStreamer.pause();
+  }
   
   static navigationOptions = ({ navigation }) => {
      const { params = {} } = navigation.state;
      return {
          headerRight: <View style={{flexDirection:"row"}}>
-           {params.showYoutube && <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleYouTube()}><IoniconsIcon size={24} name="logo-youtube"  color="black"/></TouchableOpacity>}
+           
+           <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerPlay()}><AwseomeIcon size={24} name="podcast" color="black"/></TouchableOpacity>
+           <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerStop()}><AwseomeIcon size={24} name="stop-circle" color="black"/></TouchableOpacity>
            <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleSocialShare()}><IoniconsIcon size={24} name={appVars.shareIcon}  color="black"/></TouchableOpacity>
            </View>
      };
@@ -86,24 +77,14 @@ class NewsDetailScreen extends Component{
   componentDidMount(){
     
     this.props.navigation.setParams({ 
-      handleYouTube: this.YouTube,
-      handleSocialShare: this.SocialShare 
-    });
+      handleSocialShare: this.SocialShare,
+      handleReadspeakerPlay: this.playReadspeaker,
+      handleReadspeakerStop: this.stopReadspeaker,
+    });    
     
     this.fetchdata();
   }
-  
-    
-componentDidUpdate = (prevProps,prevState)=>{
-  if(this.state.YouTubeId && !prevState.YouTubeId){
-  
-    this.props.navigation.setParams({ 
-      showYoutube: true,
-      handleYouTube: this.YouTube,
-      handleSocialShare: this.SocialShare 
-    });
-  }
-}
+
 
 fetchdata = async () => {
   const navParams = this.props.navigation.state.params;
@@ -189,13 +170,13 @@ fetchgallerydata = async () => {
   openGalleryViewer = async (item,index)=>{
     const navParams = this.props.navigation.state.params;     
     const { navigation } = this.props;
-    console.log("hit image viewer");
-    console.log(navParams.newsid);
-    console.log(item);
+    //console.log("hit image viewer");
+    //console.log(navParams.newsid);
+    //console.log(item);
     navigation.navigate('ImageViewer', {item: item, newsid: navParams.newsid,initialPage:index,images:this.state.gallerydata});
-}
+  }
 
- renderGalleryItem  = (item,index) =>{
+  renderGalleryItem  = (item,index) =>{
    
     return(
       <TouchableOpacity style={appStyles.galleryItem} key={index} activeOpacity={0.5} onPress={()=>this.openGalleryViewer(item,index)}>
@@ -230,11 +211,6 @@ fetchgallerydata = async () => {
           fullscreen={false}       // control whether the video should play in fullscreen or inline
           loop={true}             // control whether the video should loop when ended
           apiKey={appVars.YoutubeAPIKey}
-          onReady={e => this.setState({ isReady: true })}
-          onChangeState={e => this.setState({ status: e.state })}
-          onChangeQuality={e => this.setState({ quality: e.quality })}
-          onError={e => this.setState({ error: e.error })}
-
           style={{ marginBottom: 10, height: (appVars.screenX/16)*9 }}
           />:
         <TouchableOpacity style={appStyles.imageContainer} activeOpacity={0.5} onPress={this.openImageViewer.bind(this,item)}>
@@ -274,6 +250,7 @@ fetchgallerydata = async () => {
 	render = ()=>{
     return (
       <View style={appStyles.contenContainer}>
+
       <FlatList
         data={this.state.data}
         refreshControl={

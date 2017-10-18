@@ -23,7 +23,6 @@ import { NavigationActions } from 'react-navigation';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
-
 import store from 'react-native-simple-store';
 
 class NewsListScreen extends Component{
@@ -48,7 +47,6 @@ class NewsListScreen extends Component{
   componentWillMount = async ()=>{
     let bannerAds = await this.fetchBannerAds();
     bannerAds = await bannerAds.json();
-    
     this.setState({
       bannerAds: bannerAds.response.map((singlesource)=>{
         return appVars.apiUrl +"/"+singlesource.singleSRC;

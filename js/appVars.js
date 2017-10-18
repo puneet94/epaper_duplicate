@@ -61,6 +61,9 @@ const APP_CONSTANTS =   {
   // Youtube API KEY
   YoutubeAPIKey: "AIzaSyDnHRcAVdm_hLVvZNTIBCucsaKMggJeGaU",
   
+  // Readspeaker API
+  ReadspeakerUrl: "https://app-eu.readspeaker.com/cgi-bin/rsent?customerid=8397&lang=de_de&readid=readspeaker&url=",
+
   // icons
   shareIcon: shareIcon,
   
