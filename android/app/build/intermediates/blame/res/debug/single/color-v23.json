@@ -1,22 +1,54 @@
 [
     {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
         "merged": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
         "source": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\color-v23\\abc_color_highlight_material.xml"
     },
     {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
-        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/color-v23/abc_color_highlight_material.xml"
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color-v23/abc_tint_switch_thumb.xml"
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
         "source": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\color-v23\\abc_color_highlight_material.xml"
     },
     {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
         "merged": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
         "source": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\color-v23\\abc_color_highlight_material.xml"
     },
     {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
         "merged": "/Users/sturm/Desktop/epaper/android/E:\\epaper2\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
         "source": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color-v23/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color-v23/abc_tint_spinner.xml"
     }
 ]

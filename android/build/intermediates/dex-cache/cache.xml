@@ -3,6 +3,15 @@
 
     <item
         is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/libs/internal_impl-23.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.0_c914a00bbaadc48ca4f0a9b2c82180f28370e845.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -39,6 +48,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a432629397351d3ec7f27a23d258b229b81af08f">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-cast-9.4.0_c1e11b099dd4329519cab0991d98de22bf2b4091.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -66,12 +84,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_79be513370cd356b2ae7e607ef5f071291f77166.jar" />
+        sha1="292a9fa091757208efa65e77eef63088247e51f3">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.2.0_fd043ca6a63cbd33b411daebab582086bb9ff5f2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.2.0_1d5e6346b24ffc2d3b0d0e2a41210210dd15792e.jar" />
     </item>
     <item
         is-multidex="false"
@@ -90,6 +117,15 @@
         revision="23.0.1"
         sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
         <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_b7741757c4fb0adeaca6460c6854ca50623c64cf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.4.0_ad5aa866d1fc45c540e9be92ecb111b806d6b4da.jar" />
     </item>
     <item
         is-multidex="false"
@@ -183,12 +219,30 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.4.0_be2d33c4ce810ea1ac61385c4a669aa67d641558.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.3.1_a50452d002c413efcc83ce6420ba2767b29584be.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/epaper/react-native-track-player/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c1d49397d15db739d7c54c2eeed71c6d792e3364">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/epaper-react-native-track-player-unspecified_4313f2e2166c8de39de1acd6a31bddcdb7f5b47d.jar" />
     </item>
     <item
         is-multidex="false"
@@ -219,6 +273,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="03829a2618892d438a1f59c6286699ca1f476e93">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-cast-framework-9.4.0_cdd8c9fdc0d4d411003a6ee1a55b645484410bf8.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/epaper/react-native-vector-icons/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -234,6 +297,33 @@
         revision="23.0.1"
         sha1="d34d6cdd207df2f59914796b0dfd585536a8e739">
         <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/epaper-react-native-youtube-unspecified_a85faaa86c586eba91734e7d0bd8c5512085270a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.4.0_848186ea96aef9188f47ef3f41bea3504c63e944.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-mediarouter-v7-23.0.0_77d78febbdf8a37ebd840a6ea1ede6a6254bc5f2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8c108c22c99e794eff255bb34d2a461200c4cbb0">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.2.0_db2d7e42675eadf13ea29de87fe23a1caeb99640.jar" />
     </item>
     <item
         is-multidex="false"
