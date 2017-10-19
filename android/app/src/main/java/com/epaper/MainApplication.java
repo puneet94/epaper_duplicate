@@ -3,7 +3,7 @@ package com.epaper;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import fm.indiecast.rnaudiostreamer.RNAudioStreamerPackage;
+import guichaguri.trackplayer.TrackPlayer;
 import com.inprogress.reactnativeyoutube.ReactNativeYouTube;
 import com.oblador.vectoricons.VectorIconsPackage;
 import org.wonday.pdf.RCTPdfView;
@@ -29,7 +29,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new RNAudioStreamerPackage(),
+            new TrackPlayer(),
             new ReactNativeYouTube(),
             new VectorIconsPackage(),
             new RCTPdfView(),

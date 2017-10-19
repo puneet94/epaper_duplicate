@@ -25,8 +25,10 @@ import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
 import Gallery from 'react-native-image-gallery';
 import YouTube from 'react-native-youtube'
-import RNAudioStreamer from 'react-native-audio-streamer';
+import TrackPlayer from 'react-native-track-player';
 import store from 'react-native-simple-store';
+
+
 
 class NewsDetailScreen extends Component{
   
@@ -53,13 +55,21 @@ class NewsDetailScreen extends Component{
     })
   }
 
-  playReadspeaker =()=>{
-    RNAudioStreamer.setUrl(appVars.ReadspeakerUrl+this.state.shareUrl)
-    RNAudioStreamer.play();
+
+
+  playReadspeaker = async() => {
+  
+    // 
+    // MP3 URL: appVars.ReadspeakerUrl+this.state.shareUrl
+    // console.log(appVars.ReadspeakerUrl+this.state.shareUrl)
+    // https://github.com/react-native-kit/react-native-track-player
+    // PLAY / STOP at the TOP RIGHT JUST NEEDS TO SHOW ONE OF THE BUTTONS - DEPENDS ON PLAYER STATUS
+    //
+   
   }
 
   stopReadspeaker =()=>{
-    RNAudioStreamer.pause();
+    TrackPlayer.pause()
   }
   
   static navigationOptions = ({ navigation }) => {
@@ -67,8 +77,10 @@ class NewsDetailScreen extends Component{
      return {
          headerRight: <View style={{flexDirection:"row"}}>
            
+
            <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerPlay()}><AwseomeIcon size={24} name="podcast" color="black"/></TouchableOpacity>
            <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerStop()}><AwseomeIcon size={24} name="stop-circle" color="black"/></TouchableOpacity>
+
            <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleSocialShare()}><IoniconsIcon size={24} name={appVars.shareIcon}  color="black"/></TouchableOpacity>
            </View>
      };
@@ -248,9 +260,10 @@ fetchgallerydata = async () => {
   }
 
 	render = ()=>{
+
+
     return (
       <View style={appStyles.contenContainer}>
-
       <FlatList
         data={this.state.data}
         refreshControl={
