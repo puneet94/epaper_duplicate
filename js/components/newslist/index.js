@@ -37,7 +37,7 @@ class NewsListScreen extends Component{
       refreshing: false,
       downloading: false,
       currentItem: null,
-      selectedArchive: null,
+      selectedArchive: appVars.NewsArchivesFallback,
       bannerAds: [],
       bannerAdsUrl: [],
       bannerAdsWidth: [],
@@ -91,7 +91,10 @@ class NewsListScreen extends Component{
             error: res.error || null,
             loading : false,
             refreshing: false,
-            
+          },()=>{
+            setTimeout(()=>{
+              this.newsList.scrollToOffset({ x:0,y:0,animated: true });
+            },10);
           });
         })
         .catch(error => {
@@ -300,6 +303,7 @@ class NewsListScreen extends Component{
         }
         onEndReached={this.handlePageEnd}
         onEndReachedThreshold={1}
+        ref={(ref) => { this.newsList = ref; }}
         keyExtractor={(item,index)=> {
           return item.id;
           }}

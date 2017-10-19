@@ -14,7 +14,8 @@ import {
     Modal,
     ListView,
     Image,
-    Linking
+    Linking,
+    Alert
 } from 'react-native';
 import HTMLView from 'react-native-htmlview';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
@@ -24,8 +25,11 @@ import htmlStyles from '../../htmlStyles';
 import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
 import Gallery from 'react-native-image-gallery';
-import YouTube from 'react-native-youtube'
-import TrackPlayer from 'react-native-track-player';
+import YouTube from 'react-native-youtube';
+
+//The code to be uncommented
+//import { ReactNativeAudioStreaming } from 'react-native-audio-streaming';
+
 import store from 'react-native-simple-store';
 
 
@@ -41,6 +45,8 @@ class NewsDetailScreen extends Component{
       gallerypage: 1,
       error: null,
       refreshing: false,
+      audioPaused: true
+      
   }
 }
 
@@ -55,10 +61,40 @@ class NewsDetailScreen extends Component{
     })
   }
 
+  playReadspeaker = async () => {
+    const url = appVars.ReadspeakerUrl+this.state.shareUrl;//"http://lacavewebradio.chickenkiller.com:8000/stream.mp3";
+    //ReactNativeAudioStreaming.pause();
+    //ReactNativeAudioStreaming.resume();
+    this.setState({
+      audioPaused: false
+    });
+
+    //The code to be uncommented
+
+    /*
+    ReactNativeAudioStreaming.play(url, {showIniOSMediaCenter: true, showInAndroidNotifications: true});
+    */
+    
+    /*
+    try{
+      await TrackPlayer.add({
+        id: 'track',
+        url: "https://rstts-eu.readspeaker.com/cgi-bin/nph-rspeak/8ed7ff4aed11382d3748681218ee9172.mp3",//appVars.ReadspeakerUrl+this.state.shareUrl,
+        title: 'Despacito',
+        artist: 'Luis Fonsi Feat. Daddy Yankee'
+        //artwork: 'https://images-eu.ssl-images-amazon.com/images/I/61JH2ggghmL._AC_US160_.jpg'
+      });
+      TrackPlayer.play();
+      
+      
+    }
+    catch(e){
+      console.log("exception in track play");
+      console.log(e);
+    }*/
+     
 
 
-  playReadspeaker = async() => {
-  
     // 
     // MP3 URL: appVars.ReadspeakerUrl+this.state.shareUrl
     // console.log(appVars.ReadspeakerUrl+this.state.shareUrl)
@@ -69,7 +105,15 @@ class NewsDetailScreen extends Component{
   }
 
   stopReadspeaker =()=>{
-    TrackPlayer.pause()
+    //TrackPlayer.destroy();
+    //TrackPlayer.pause();
+    //The code to be uncommented
+    /*
+    ReactNativeAudioStreaming.pause();
+    */
+    this.setState({
+      audioPaused: true
+    });
   }
   
   static navigationOptions = ({ navigation }) => {
@@ -77,27 +121,42 @@ class NewsDetailScreen extends Component{
      return {
          headerRight: <View style={{flexDirection:"row"}}>
            
-
-           <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerPlay()}><AwseomeIcon size={24} name="podcast" color="black"/></TouchableOpacity>
-           <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerStop()}><AwseomeIcon size={24} name="stop-circle" color="black"/></TouchableOpacity>
+          {params.audioPaused?<TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerPlay()}><AwseomeIcon size={24} name="podcast" color="black"/></TouchableOpacity>:<TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerStop()}><AwseomeIcon size={24} name="stop-circle" color="black"/></TouchableOpacity>}
+           
+           
 
            <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleSocialShare()}><IoniconsIcon size={24} name={appVars.shareIcon}  color="black"/></TouchableOpacity>
            </View>
      };
  };
 
-  componentDidMount(){
-    
+  componentDidMount = async ()=>{
+   
     this.props.navigation.setParams({ 
       handleSocialShare: this.SocialShare,
       handleReadspeakerPlay: this.playReadspeaker,
       handleReadspeakerStop: this.stopReadspeaker,
+      audioPaused: this.state.audioPaused
     });    
+     this.fetchdata();
     
-    this.fetchdata();
   }
+  
+componentDidUpdate = (prevProps,prevState)=>{
+  if(prevState.audioPaused!==this.state.audioPaused){
+    this.props.navigation.setParams({ 
+      handleSocialShare: this.SocialShare,
+      handleReadspeakerPlay: this.playReadspeaker,
+      handleReadspeakerStop: this.stopReadspeaker,
+      audioPaused: this.state.audioPaused
+    });    
+    }
+}
+componentWillUnmount=()=>{
 
-
+  //The code to be uncommented
+  //ReactNativeAudioStreaming.stop();
+}
 fetchdata = async () => {
   const navParams = this.props.navigation.state.params;
   const api = appVars.apiUrl+"/news/newsreader.html?authtoken="+appVars.apiKey+"&id="+navParams.newsid;
@@ -115,7 +174,9 @@ fetchdata = async () => {
           shareUrl: res.response[0].shareurl,
           shareTitle: res.response[0].headline,
           YouTubeId: res.response[0].youtube_id, 
-        })
+        },()=>{
+          //this.playReadspeaker();
+        });
       })
       .then(
         this.fetchgallerydata()
@@ -253,7 +314,7 @@ fetchgallerydata = async () => {
             <Text style={appStyles.newsDate}>{item.date}</Text>
             <Text style={appStyles.newsEditor}>{item.editor}</Text>
           </View>
-
+          
       </View>
 
     );
