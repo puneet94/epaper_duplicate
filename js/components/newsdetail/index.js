@@ -26,10 +26,7 @@ import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
 import Gallery from 'react-native-image-gallery';
 import YouTube from 'react-native-youtube';
-
-//The code to be uncommented
-//import { ReactNativeAudioStreaming } from 'react-native-audio-streaming';
-
+import RNAudioStreamer from 'react-native-audio-streamer';
 import store from 'react-native-simple-store';
 
 
@@ -62,58 +59,19 @@ class NewsDetailScreen extends Component{
   }
 
   playReadspeaker = async () => {
-    const url = appVars.ReadspeakerUrl+this.state.shareUrl;//"http://lacavewebradio.chickenkiller.com:8000/stream.mp3";
-    //ReactNativeAudioStreaming.pause();
-    //ReactNativeAudioStreaming.resume();
+    const ReadspeakerUrl = appVars.ReadspeakerUrl+this.state.shareUrl;//"http://lacavewebradio.chickenkiller.com:8000/stream.mp3";
     this.setState({
       audioPaused: false
     });
-
-    //The code to be uncommented
-
-    /*
-    ReactNativeAudioStreaming.play(url, {showIniOSMediaCenter: true, showInAndroidNotifications: true});
-    */
-    
-    /*
-    try{
-      await TrackPlayer.add({
-        id: 'track',
-        url: "https://rstts-eu.readspeaker.com/cgi-bin/nph-rspeak/8ed7ff4aed11382d3748681218ee9172.mp3",//appVars.ReadspeakerUrl+this.state.shareUrl,
-        title: 'Despacito',
-        artist: 'Luis Fonsi Feat. Daddy Yankee'
-        //artwork: 'https://images-eu.ssl-images-amazon.com/images/I/61JH2ggghmL._AC_US160_.jpg'
-      });
-      TrackPlayer.play();
-      
-      
-    }
-    catch(e){
-      console.log("exception in track play");
-      console.log(e);
-    }*/
-     
-
-
-    // 
-    // MP3 URL: appVars.ReadspeakerUrl+this.state.shareUrl
-    // console.log(appVars.ReadspeakerUrl+this.state.shareUrl)
-    // https://github.com/react-native-kit/react-native-track-player
-    // PLAY / STOP at the TOP RIGHT JUST NEEDS TO SHOW ONE OF THE BUTTONS - DEPENDS ON PLAYER STATUS
-    //
-   
+    RNAudioStreamer.setUrl(ReadspeakerUrl)
+    RNAudioStreamer.play()
   }
 
   stopReadspeaker =()=>{
-    //TrackPlayer.destroy();
-    //TrackPlayer.pause();
-    //The code to be uncommented
-    /*
-    ReactNativeAudioStreaming.pause();
-    */
     this.setState({
       audioPaused: true
     });
+    RNAudioStreamer.pause()    
   }
   
   static navigationOptions = ({ navigation }) => {
@@ -123,8 +81,6 @@ class NewsDetailScreen extends Component{
            
           {params.audioPaused?<TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerPlay()}><AwseomeIcon size={24} name="podcast" color="black"/></TouchableOpacity>:<TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerStop()}><AwseomeIcon size={24} name="stop-circle" color="black"/></TouchableOpacity>}
            
-           
-
            <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleSocialShare()}><IoniconsIcon size={24} name={appVars.shareIcon}  color="black"/></TouchableOpacity>
            </View>
      };

@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -57,6 +56,7 @@
 		DDAB878CB0A148F0B38668FE /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E609862FD1AB49008D2D0E54 /* MaterialCommunityIcons.ttf */; };
 		DDF876F01AB747CBB52DA0AA /* MafraCondensedDeckMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4211576525904FDF81A16CFF /* MafraCondensedDeckMedium.ttf */; };
 		E06E24A2AD69443A89D6B1A3 /* GothamNarrow-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E2A50D97FFE460B9E7577F5 /* GothamNarrow-Bold.ttf */; };
+		60505BEFFD3D4E1FA9713A23 /* libRNAudioStreamer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C50225E5E5B4CEB8B059396 /* libRNAudioStreamer.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -365,6 +365,8 @@
 		DB85DB2B0F12442CAB39574F /* libRNFetchBlob.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFetchBlob.a; sourceTree = "<group>"; };
 		E609862FD1AB49008D2D0E54 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		ED0A8E4368C1467AA02B6D00 /* libRNImagePicker.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNImagePicker.a; sourceTree = "<group>"; };
+		2457FF9ECEB249538E698D2D /* RNAudioStreamer.xcodeproj */ = {isa = PBXFileReference; name = "RNAudioStreamer.xcodeproj"; path = "../node_modules/react-native-audio-streamer/ios/RNAudioStreamer.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		9C50225E5E5B4CEB8B059396 /* libRNAudioStreamer.a */ = {isa = PBXFileReference; name = "libRNAudioStreamer.a"; path = "libRNAudioStreamer.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,6 +400,7 @@
 				3B5AB823EDB746A2A3907DDC /* libRCTPdf.a in Frameworks */,
 				81EB89D3E5974A218284CA63 /* libRNVectorIcons.a in Frameworks */,
 				9AA6119DD74B4EF6860C9FCA /* libRCTYouTube.a in Frameworks */,
+				60505BEFFD3D4E1FA9713A23 /* libRNAudioStreamer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +627,7 @@
 				70F33014537B481DA4D14AC3 /* RCTPdf.xcodeproj */,
 				015049FF8ADE47649487805A /* RNVectorIcons.xcodeproj */,
 				4A41946169654228A88BCA0E /* RCTYouTube.xcodeproj */,
+				2457FF9ECEB249538E698D2D /* RNAudioStreamer.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1286,12 +1290,14 @@
 					"$(SRCROOT)/../node_modules/react-native-pdf/ios/RCTPdf/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-youtube/**",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
 				);
 				INFOPLIST_FILE = epaperTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1319,12 +1325,14 @@
 					"$(SRCROOT)/../node_modules/react-native-pdf/ios/RCTPdf/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-youtube/**",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
 				);
 				INFOPLIST_FILE = epaperTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1354,6 +1362,7 @@
 					"$(SRCROOT)/../node_modules/react-native-pdf/ios/RCTPdf/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-youtube/**",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
 				);
 				INFOPLIST_FILE = epaper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1381,6 +1390,7 @@
 					"$(SRCROOT)/../node_modules/react-native-pdf/ios/RCTPdf/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-youtube/**",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
 				);
 				INFOPLIST_FILE = epaper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1414,11 +1424,13 @@
 					"$(SRCROOT)/../node_modules/react-native-pdf/ios/RCTPdf/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-youtube/**",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
 				);
 				INFOPLIST_FILE = "epaper-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1456,11 +1468,13 @@
 					"$(SRCROOT)/../node_modules/react-native-pdf/ios/RCTPdf/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-youtube/**",
+					"$(SRCROOT)/../node_modules/react-native-audio-streamer/ios/RNAudioStreamer/**",
 				);
 				INFOPLIST_FILE = "epaper-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1499,6 +1513,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.epaper-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1523,6 +1538,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
