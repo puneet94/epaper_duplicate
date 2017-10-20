@@ -15,7 +15,8 @@ import {
     Alert,
     ActivityIndicator,
     ToastAndroid,
-    Image
+    Image,
+    ImageBackground
 } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
@@ -235,13 +236,13 @@ fetchdata = async () => {
       <View style={appStyles.ePaperEditionWrapper}>
         <TouchableOpacity style={appStyles.imageBorder} activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
             
-              <Image 
+              <ImageBackground 
                   style={{width: ((appVars.screenX*.21)), height: this.ratioImageHeigh(item.width,item.height,.21)}}
                   source={{uri: appVars.apiUrl +"/"+item.picture.img.src} }
                   >
             {(item.paywall)?<View><View style={appStyles.paywallIconTriangle} /><AwseomeIcon style={appStyles.paywallIcon} name="plus" /></View>:<View></View>}
             {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator style={appStyles.ePaperActivityIndicator} size="large" color={appVars.colorMain}/>:<View></View>}
-            </Image>
+            </ImageBackground>
            <Text style={appStyles.ePaperEditionDate}>{item["date"]}</Text>
         </TouchableOpacity>
       </View>
@@ -252,11 +253,11 @@ fetchdata = async () => {
     return(
       <View style={appStyles.ePaperMainWrapper}>
         <TouchableOpacity style={appStyles.imageBorder} activeOpacity = { .5 } onPress={ this.handleClick.bind(this,item)}>
-          <Image style={{width: this.ratioImageWidth(item.width,item.height,.75)-55, height: ((appVars.screenY*.75)-120)}}
+          <ImageBackground style={{width: this.ratioImageWidth(item.width,item.height,.75)-55, height: ((appVars.screenY*.75)-120)}}
                   source={{uri: appVars.apiUrl +"/"+item.singleSRC} }>
           {(item.paywall)?<View><View style={appStyles.paywallIconTriangle} /><AwseomeIcon style={appStyles.paywallIcon} name="plus" /></View>:<View></View>}
           {(this.state.downloading && (this.state.currentItem==item.id))?<ActivityIndicator style={appStyles.ePaperActivityIndicator} size="large" color={appVars.colorMain}/>:<View></View>}
-          </Image>
+          </ImageBackground>
         </TouchableOpacity>
       </View>
     );

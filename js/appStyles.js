@@ -84,7 +84,6 @@ module.exports = StyleSheet.create({
     paddingLeft: 10,
     width: (x * .75)-30,
   },
-
   newsListHeadline: {
     fontSize: em(1.500),
     lineHeight: lineHeight(1.500,120),
@@ -92,6 +91,7 @@ module.exports = StyleSheet.create({
     color: appVars.colorBlack,
     marginBottom: em(0.25),
     marginRight: 20,
+    backgroundColor: 'transparent',
   },
   newsListCity: {
     fontSize: em(0.875),
@@ -329,7 +329,7 @@ drawerLabel: {
     lineHeight: lineHeight(1.500,120),
     fontFamily: appVars.fontHeadline,
     color: appVars.colorBlack,
-    marginBottom: em(0.25),
+    marginBottom: em(0.25), 
   },
   contentText: {
     fontSize: em(0.875),

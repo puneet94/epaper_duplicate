@@ -10,7 +10,8 @@ import { ToastAndroid,
   FlatList,
   TouchableOpacity,
   Alert,
-  Image } from 'react-native';
+  Image,
+  ImageBackground } from 'react-native';
 import store from 'react-native-simple-store';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
@@ -154,12 +155,12 @@ class IssuesScreen extends Component {
         this.showIssue(item)
         }}>
         
-        <Image 
+        <ImageBackground 
                   style={{width: ((appVars.screenX*.32)-16), height: this.ratioImageHeigh(item.thumbNailWidth,item.thumbNailHeight,.32)-16}}
                   source={{uri:'file://'+item.thumbNail}}
                   >
           {this.state.enabledEdit && <View style={[appStyles.myIssueSelect,this.checkSelected(item)]}></View>}
-        </Image>
+        </ImageBackground>
         <Text style={appStyles.ePaperEditionDate}>{item["date"]}</Text>
       </TouchableOpacity>
     </View>
