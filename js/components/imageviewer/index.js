@@ -40,6 +40,7 @@ class ImageViewerScreen extends Component {
       };
     }
       this.onChangeImage = this.onChangeImage.bind(this);
+
   }
 /*componentDidMount(){
     //this.fetchgallerydata();
@@ -74,29 +75,38 @@ class ImageViewerScreen extends Component {
       })
       return newArrImages;
   }*/
+
+  renderError () {
+    return (
+        <View style={{ flex: 1, backgroundColor: 'black', alignItems: 'center', justifyContent: 'center' }}>
+             <Text style={{ color: 'white', fontSize: 15, fontStyle: 'italic' }}>This image cannot be displayed...</Text>
+             <Text style={{ color: 'white', fontSize: 15, fontStyle: 'italic' }}>... but this is fine :)</Text>
+        </View>
+    );
+}
+
+get galleryCount () {
+  const { index, images } = this.state;
+  return (
+      <View style={{ top: 0, height: 65, backgroundColor: 'rgba(0, 0, 0, 0.7)', width: '100%', position: 'absolute', justifyContent: 'center' }}>
+          <Text style={{ textAlign: 'right', color: 'white', fontSize: 15, fontStyle: 'italic', paddingRight: '10%' }}>{ index + 1 } / { images.length }</Text>
+      </View>
+  );
+}
+
       render() {
         
           return (
               <View style={appStyles.contenContainer}>
                 <Gallery
-                  style={{ flex: 1, backgroundColor: 'black' }}
+                  initialPage={this.state.initialPage}
+                  style={{ flex: 1, backgroundColor: appVars.colorBlack}}
                   images={this.state.images}
                   errorComponent={this.renderError}
                   onPageSelected={this.onChangeImage}
-                  initialPage={this.state.initialPage}
+                  
                 />
-{/*          <Gallery
-              style={{flex: 1, backgroundColor: 'transparent'}}
-              initialPage={this.state.initialPage}
-              pageMargin={10}
-              images={this.state.images}
-              
-              onPageSelected={(page) => {
-           this.setState({page});
-        }}
-            />*/}
-      
-
+                { this.galleryCount }
               </View>
           )
     }
