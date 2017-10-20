@@ -170,7 +170,7 @@ module.exports = StyleSheet.create({
   galleryItem: {
     flex: 1,
     height: (x * .23),
-    width: (x * 23),
+    width: (x * .23),
     margin: 1
   },
 
@@ -395,6 +395,5 @@ drawerLabel: {
   ePaperActivityIndicator: {
     flex: 1,
     backgroundColor:'rgba(255, 255, 255, 0.8)',
-  },
-
+  }
 });
