@@ -137,7 +137,7 @@ android {
 }
 
 dependencies {
-    compile project(':react-native-track-player')
+    compile project(':react-native-audio-streaming')
     compile project(':react-native-youtube')
     compile project(':react-native-vector-icons')
     compile project(':react-native-pdf')
