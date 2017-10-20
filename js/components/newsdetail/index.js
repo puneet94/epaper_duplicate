@@ -42,8 +42,8 @@ class NewsDetailScreen extends Component{
       gallerypage: 1,
       error: null,
       refreshing: false,
-      audioPaused: true
-      
+      audioPaused: true,
+      YoutubePlayerHeight: ((appVars.screenX/16)*9)-1,
   }
 }
 
@@ -109,10 +109,12 @@ componentDidUpdate = (prevProps,prevState)=>{
     }
 }
 componentWillUnmount=()=>{
-
-  //The code to be uncommented
-  //ReactNativeAudioStreaming.stop();
+  this.setState({
+    audioPaused: true
+  });
+  RNAudioStreamer.pause()
 }
+
 fetchdata = async () => {
   const navParams = this.props.navigation.state.params;
   const api = appVars.apiUrl+"/news/newsreader.html?authtoken="+appVars.apiKey+"&id="+navParams.newsid;
@@ -220,6 +222,11 @@ fetchgallerydata = async () => {
     return height*(appVars.screenX*multiplicate/width);
   }
 
+  handleYoutubeReady = () => {
+    setTimeout(() => this.setState({ YoutubePlayerHeight: (appVars.screenX/16)*9 }), 200);
+}
+
+
  renderItem = (item) =>{
 
     return(
@@ -231,17 +238,18 @@ fetchgallerydata = async () => {
         <Text style={appStyles.headline}>{item.headline}</Text>
 
         <Text style={appStyles.subheadline}>{item.subheadline}</Text>
-
-
-        {(item.youtube_id)?
+        {(item.youtube_id)?<View>
           <YouTube
           videoId={item.youtube_id}   // The YouTube video ID
           play={true}             // control playback of video with true/false
           fullscreen={false}       // control whether the video should play in fullscreen or inline
-          loop={true}             // control whether the video should loop when ended
+          loop={false}             // control whether the video should loop when ended
           apiKey={appVars.YoutubeAPIKey}
-          style={{ marginBottom: 10, height: (appVars.screenX/16)*9 }}
-          />:
+          controls={1}
+          onReady= {this.handleYoutubeReady}
+          style= {{ alignSelf: 'stretch', height: this.state.YoutubePlayerHeight, marginBottom: 10, }}
+          />
+          </View>:
         <TouchableOpacity style={appStyles.imageContainer} activeOpacity={0.5} onPress={this.openImageViewer.bind(this,item)}>
                 <View style={appStyles.imageBorder}>
                   <Image 
