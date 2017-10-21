@@ -8,7 +8,9 @@ import {
 
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
-import Gallery from 'react-native-image-gallery';
+// import Gallery from 'react-native-image-gallery';
+import Gallery from 'react-native-gallery';
+
 
 
 class ImageViewerScreen extends Component {
@@ -22,7 +24,7 @@ class ImageViewerScreen extends Component {
       let images = navParams.images.map((temp)=>{
        // return appVars.apiUrl +'/'+temp.sources[0].src;
         //return {source: { uri: appVars.apiUrl +'/'+temp.sources[0].src },dimensions:{width:temp.sources[0].width,height:temp.sources[0].height} }
-        return {source: { uri: appVars.apiUrl +'/'+temp.sources[0].src },dimensions:{width:400,height:400} }
+        //return {source: { uri: appVars.apiUrl +'/'+temp.sources[0].src },dimensions:{width:400,height:400} }
         });
       this.state = {
         index: 0,
@@ -78,7 +80,7 @@ class ImageViewerScreen extends Component {
       newArrImages.push({source: { uri: appVars.apiUrl +'/'+temp.sources[0].src } })
       })
       return newArrImages;
-  }*/
+  }
 
   renderError () {
     return (
@@ -97,20 +99,19 @@ get galleryCount () {
       </View>
   );
 }
-
+*/
       render() {
         
           return (
               <View style={appStyles.contenContainer}>
                 <Gallery
-                  initialPage={this.state.initialPage}
-                  style={{ flex: 1, width: 400, height: 400,backgroundColor: appVars.colorMain}}
-                  images={this.state.images}
-                  errorComponent={this.renderError}
-                  onPageSelected={this.onChangeImage}
-                  
-                />
-                { this.galleryCount }
+                style={{flex: 1, backgroundColor: 'black'}}
+                images={[
+                  'https://files.mopo-server.de/assets/images/2/sa_eule_01-387f85b2.jpg',
+                  'https://files.mopo-server.de/assets/images/3/sa_roll-c2935693.jpg',
+                  'https://files.mopo-server.de/assets/images/0/sa_ahls-71d2b7f0.jpg'
+                ]}
+              />
               </View>
           )
     }

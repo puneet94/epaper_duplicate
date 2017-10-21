@@ -50,7 +50,6 @@ const ePaperApp = StackNavigator({
   ImageViewer: {
     screen: ImageViewerScreen,
     navigationOptions : ({ navigation }) => ({
-      header: false,
     }),
 },
 });
