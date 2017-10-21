@@ -9,7 +9,7 @@ import {
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 // import Gallery from 'react-native-image-gallery';
-import Gallery from 'react-native-gallery';
+import Gallery from '../gallery';
 
 
 
@@ -22,7 +22,7 @@ class ImageViewerScreen extends Component {
 
     if(newsid) {
       let images = navParams.images.map((temp)=>{
-       // return appVars.apiUrl +'/'+temp.sources[0].src;
+        return appVars.apiUrl +'/'+temp.sources[0].src;
         //return {source: { uri: appVars.apiUrl +'/'+temp.sources[0].src },dimensions:{width:temp.sources[0].width,height:temp.sources[0].height} }
         //return {source: { uri: appVars.apiUrl +'/'+temp.sources[0].src },dimensions:{width:400,height:400} }
         });
@@ -33,63 +33,24 @@ class ImageViewerScreen extends Component {
         images
       };
 
-    console.log("***images****");
-    console.log(images);
     } else {
       this.state = {
         index: 0,
         page: 0,
         initialPage: navParams.initialPage,
         images: [
-          { source: { uri: appVars.apiUrl +'/'+item.singleSRC } },
+           appVars.apiUrl +'/'+item.singleSRC 
         ]
       };
     }
       this.onChangeImage = this.onChangeImage.bind(this);
 
   }
-/*componentDidMount(){
-    //this.fetchgallerydata();
-  }
-
-  fetchgallerydata = async () => {
-    const navParams = this.props.navigation.state.params;
-    const api = appVars.apiUrl+"/gallery.html?authtoken="+appVars.apiKey+"&id="+navParams.newsid;
-    let tempapi= api;
-        fetch(tempapi)
-          .then(res => res.json())
-          .then(res => {            
-            this.setState({
-              images: this.ArrImages(res.response),
-            })
-          })
-          .catch(error => {
-            this.setState({ error});
-          });
-  };*/
-
   onChangeImage (index) {
     this.setState({ index });
   }
 /*
-  ArrImages (apiresonse) {
-    const newArrImages = [];
-    console.log("response from api");
-    console.log(apiresonse);
-    apiresonse.map((temp)=>{
-      newArrImages.push({source: { uri: appVars.apiUrl +'/'+temp.sources[0].src } })
-      })
-      return newArrImages;
-  }
-
-  renderError () {
-    return (
-        <View style={{ flex: 1, backgroundColor: 'black', alignItems: 'center', justifyContent: 'center' }}>
-             <Text style={{ color: 'white', fontSize: 15, fontStyle: 'italic' }}>This image cannot be displayed...</Text>
-             <Text style={{ color: 'white', fontSize: 15, fontStyle: 'italic' }}>... but this is fine :)</Text>
-        </View>
-    );
-}
+  
 
 get galleryCount () {
   const { index, images } = this.state;
@@ -100,17 +61,14 @@ get galleryCount () {
   );
 }
 */
-      render() {
+      render=()=> {
         
           return (
               <View style={appStyles.contenContainer}>
                 <Gallery
                 style={{flex: 1, backgroundColor: 'black'}}
-                images={[
-                  'https://files.mopo-server.de/assets/images/2/sa_eule_01-387f85b2.jpg',
-                  'https://files.mopo-server.de/assets/images/3/sa_roll-c2935693.jpg',
-                  'https://files.mopo-server.de/assets/images/0/sa_ahls-71d2b7f0.jpg'
-                ]}
+                images={this.state.images}
+                initialPage = {this.state.initialPage}
               />
               </View>
           )
