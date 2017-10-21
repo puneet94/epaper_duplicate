@@ -116,10 +116,14 @@ fetchdata = async () => {
       this.setState({
         downloading: true
       });
-      //console.log("download started******************");
-
-      let resp = await RNFetchBlob
+      
+      try {
+        
+      
+      var resp = await RNFetchBlob
       .config({
+        //path: RNFetchBlob.fs.dirs.DownloadDir+"/dummy.pdf",
+        path: RNFetchBlob.fs.dirs.DocumentDir+"/"+item.id+".pdf",
           addAndroidDownloads : {
               useDownloadManager : true, // <-- this is the only thing required
               // Optional, override notification setting (default to true)
@@ -134,9 +138,11 @@ fetchdata = async () => {
           }
       })
       .fetch('GET', url);
+
       const imageSource = appVars.apiUrl +"/"+item.singleSRC;
       let imageResp = await RNFetchBlob
       .config({
+        path: RNFetchBlob.fs.dirs.DocumentDir+"/"+item.singleSRC,
           addAndroidDownloads : {
               useDownloadManager : true, // <-- this is the only thing required
               // Optional, override notification setting (default to true)
@@ -152,12 +158,10 @@ fetchdata = async () => {
       })
       .fetch('GET', imageSource);
 
-      this.setState({
-        downloading: false
-      });
+      
 
       // if you wanna open the pdfview screen
-      navigation.navigate('PDFView', {file: resp.path(), epaperindex: item.epaperindex});
+      
 
       const issueObject = {
         path: resp.path(),
@@ -168,8 +172,21 @@ fetchdata = async () => {
         epaperindex: item.epaperindex,
         id: item.id
       };
+      Alert.alert("Download Successful");
       
       store.push('userIssues',issueObject );
+      navigation.navigate('PDFView', {file: resp.path(), epaperindex: item.epaperindex});
+    } catch (error) {
+      Alert.alert("error in download. PLease try again later.");
+      console.log("error in download");
+      console.log(error);t
+      
+    }
+      finally{
+        this.setState({
+          downloading: false
+        });
+      }
     }
   }
 

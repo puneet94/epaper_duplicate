@@ -73,7 +73,7 @@ class PDFViewScreen extends Component {
     const navParams = this.props.navigation.state.params;
     let epaperindex = navParams.epaperindex;
     
-        console.log(navParams);
+        //console.log(navParams);
       return (
         <View style={appStyles.subMenuContainer}>
         <FlatList
@@ -117,8 +117,8 @@ class PDFViewScreen extends Component {
                       onPageChanged={(page,pageCount)=>{
                           this.setState({currentpage:page});
                           this.activeMenuIndex(page);
-                        console.log("the current");
-                          console.log(`current page: ${page}`);
+                        //console.log("the current");
+                        //console.log(`current page: ${page}`);
                       }}
                       onError={(error)=>{
                           //console.log(error);

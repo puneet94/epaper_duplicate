@@ -20,8 +20,9 @@ class ImageViewerScreen extends Component {
 
     if(newsid) {
       let images = navParams.images.map((temp)=>{
-        //return appVars.apiUrl +'/'+temp.sources[0].src;
-        return {source: { uri: appVars.apiUrl +'/'+temp.sources[0].src },dimensions:{width:temp.sources[0].width,height:temp.sources[0].height} }
+       // return appVars.apiUrl +'/'+temp.sources[0].src;
+        //return {source: { uri: appVars.apiUrl +'/'+temp.sources[0].src },dimensions:{width:temp.sources[0].width,height:temp.sources[0].height} }
+        return {source: { uri: appVars.apiUrl +'/'+temp.sources[0].src },dimensions:{width:400,height:400} }
         });
       this.state = {
         index: 0,
@@ -29,6 +30,9 @@ class ImageViewerScreen extends Component {
         initialPage: navParams.initialPage,
         images
       };
+
+    console.log("***images****");
+    console.log(images);
     } else {
       this.state = {
         index: 0,
@@ -100,7 +104,7 @@ get galleryCount () {
               <View style={appStyles.contenContainer}>
                 <Gallery
                   initialPage={this.state.initialPage}
-                  style={{ flex: 1, backgroundColor: appVars.colorBlack}}
+                  style={{ flex: 1, width: 400, height: 400,backgroundColor: appVars.colorMain}}
                   images={this.state.images}
                   errorComponent={this.renderError}
                   onPageSelected={this.onChangeImage}
