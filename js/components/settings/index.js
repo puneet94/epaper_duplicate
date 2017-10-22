@@ -15,7 +15,6 @@ import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 
 class SettingsScreen extends Component {
-
     constructor(props){
             super(props);
             this.state = {
@@ -23,13 +22,20 @@ class SettingsScreen extends Component {
                 userPushnotification: true,
             }
         }
-      
+      componentWillMount = async()=>{
+        let fontSize = Number.parseInt(await store.get('fontSize'),10);
+        if(fontSize){
+          this.setState({
+            fontSize
+          });
+        }
+      }
       render() {
           return (
         <View style={appStyles.contenContainer}>
 
             <View style={appStyles.contentElement}>
-            <Text style={appStyles.contentHeadline}>{appVars.textPushnotificationsHeadline}</Text>
+            <Text style={[appStyles.contentHeadline,{fontSize:this.state.fontSize}]}>{appVars.textPushnotificationsHeadline}</Text>
             <Text style={appStyles.contentText}>{appVars.textPushnotifications}</Text>
                 <View style={appStyles.settingsWrapper}>
                     <Text style={appStyles.settingsColStart}>{appVars.labelPushnotifications}</Text>
@@ -46,7 +52,7 @@ class SettingsScreen extends Component {
                 <View style={appStyles.settingsWrapper}>    
                     <Text style={appStyles.settingsColStart}>{appVars.labelFontsize}</Text>
                     <View style={appStyles.settingsColEnd}>
-                        <Slider style={appStyles.settingsSlider} step={2} minimumValue={16} maximumValue={42} onValueChange={(itemValue, itemIndex) => {this.setState({userFontSize: itemValue});store.save('BASE_UNIT',itemValue)}}/>
+                        <Slider style={appStyles.settingsSlider} value={this.state.fontSize} step={2} minimumValue={16} maximumValue={42} onValueChange={(itemValue, itemIndex) => {this.setState({userFontSize: itemValue,fontSize:itemValue});store.save('fontSize',itemValue)}}/>
                     </View>
                 </View>
             </View>
