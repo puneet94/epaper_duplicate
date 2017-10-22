@@ -43,9 +43,19 @@ class NewsDetailScreen extends Component{
       refreshing: false,
       audioPaused: true,
       YoutubePlayerHeight: ((appVars.screenX/16)*9)-1,
+      fontSize: appVars.baseUnit
   }
 }
+componentWillMount = async ()=>{
+  let fontSize = Number.parseInt(await store.get('fontSize'),10);
+  if(fontSize){
+    this.setState({
+      fontSize
+    });
+  }
+  
 
+}
   SocialShare =()=>{
     Share.share({
       message: this.state.shareUrl,
@@ -93,10 +103,16 @@ class NewsDetailScreen extends Component{
       handleReadspeakerStop: this.stopReadspeaker,
       audioPaused: this.state.audioPaused
     });    
-     this.fetchdata();
-    
+     this.fetchdata(); 
   }
-  
+  componentWillUpdate = async (nextProps,nextState)=>{
+    let fontSize = Number.parseInt(await store.get('fontSize'),10);
+    if(fontSize && fontSize!==nextState.fontSize){
+      this.setState({
+        fontSize
+      });
+    }
+  }
 componentDidUpdate = (prevProps,prevState)=>{
   if(prevState.audioPaused!==this.state.audioPaused){
     this.props.navigation.setParams({ 
@@ -234,7 +250,7 @@ fetchgallerydata = async () => {
 
       {(item.topheadline)?<View style={appStyles.topheadlineContainer}><Text style={appStyles.topheadline}>{item.topheadline.toUpperCase()}</Text></View>:<View></View>}
 
-        <Text style={appStyles.headline}>{item.headline}</Text>
+        <Text style={[appStyles.headline,{fontSize:this.state.fontSize}]}>{item.headline}</Text>
 
         <Text style={appStyles.subheadline}>{item.subheadline}</Text>
         {(item.youtube_id)?<View>
