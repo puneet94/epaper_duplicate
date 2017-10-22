@@ -3,10 +3,11 @@ import { StyleSheet,
     TouchableHighlight,
     Dimensions,
     View,
-    Text, FlatList, TouchableOpacity,Alert } from 'react-native'
+    Text, FlatList, TouchableOpacity,Alert,Platform, WebView} from 'react-native'
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 import Pdf from 'react-native-pdf';
+
 
 class PDFViewScreen extends Component {
     
@@ -111,29 +112,35 @@ class PDFViewScreen extends Component {
               <View style={appStyles.container}>
                 <View>
                 {
-                    this.renderSubmenu()
+                    Platform.OS!=='ios'&&this.renderSubmenu()
                 }
 
                 </View>
-                  <Pdf
+                {Platform.OS==='ios'?
+                <WebView
                     source={this.getPDFSource()}
-                      page={this.state.page}
-                      spacing={0}
-                      horizontal={false}
-                      onLoadComplete={(pageCount)=>{
-                          this.setState({pageCount: pageCount});
-      
-                      }}
-                      onPageChanged={(page,pageCount)=>{
-                          this.setState({currentpage:page});
-                          this.activeMenuIndex(page);
-                        //console.log("the current");
-                        //console.log(`current page: ${page}`);
-                      }}
-                      onError={(error)=>{
-                          console.log(error);
-                      }}
-                      style={styles.pdf}/>
+                    style={styles.pdf}
+                />:
+                <Pdf ref={(pdf)=>{this.pdfView = pdf;}}
+                source={this.getPDFSource()}
+                  page={this.state.page}
+                  spacing={0}
+                  horizontal={false}
+                  onLoadComplete={(pageCount)=>{
+                      this.setState({pageCount: pageCount});
+  
+                  }}
+                  onPageChanged={(page,pageCount)=>{
+                      this.setState({currentpage:page});
+                      this.activeMenuIndex(page);
+                    //console.log("the current");
+                    //console.log(`current page: ${page}`);
+                  }}
+                  onError={(error)=>{
+                      console.log(error);
+                  }}
+                  style={styles.pdf}/>}
+
               </View>
           )
     }
