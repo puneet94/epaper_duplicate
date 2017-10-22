@@ -54,7 +54,7 @@ const APP_CONSTANTS =   {
   // Ad / Banner
   apiAdArchives: adArchives,
 
-  apiRefreshTime: 5*1000,
+  apiRefreshTime: 5*1000000,
   serverurl: "https://mopo-server.de",
   forgotpasswordurl: "https://www.einbecker-morgenpost.de/login/passwort-vergessen.html",
 

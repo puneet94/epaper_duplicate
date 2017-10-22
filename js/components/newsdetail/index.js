@@ -24,7 +24,6 @@ import appStyles from '../../appStyles';
 import htmlStyles from '../../htmlStyles';
 import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
-import Gallery from 'react-native-image-gallery';
 import YouTube from 'react-native-youtube';
 import RNAudioStreamer from 'react-native-audio-streamer';
 import store from 'react-native-simple-store';

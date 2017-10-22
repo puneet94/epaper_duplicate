@@ -3,7 +3,7 @@ import { StyleSheet,
     TouchableHighlight,
     Dimensions,
     View,
-    Text, FlatList, TouchableOpacity } from 'react-native'
+    Text, FlatList, TouchableOpacity,Alert } from 'react-native'
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 import Pdf from 'react-native-pdf';
@@ -11,11 +11,9 @@ import Pdf from 'react-native-pdf';
 class PDFViewScreen extends Component {
     
     constructor(props){
-        
         super(props);
         const navParams = this.props.navigation.state.params;
-        let epaperindex = navParams.epaperindex;
-       
+        let epaperindex = navParams.epaperindex;        
         this.state = {
           page: 1,
           currentMenuIndex: 1,
@@ -91,13 +89,25 @@ class PDFViewScreen extends Component {
       );
     }
 
+    getPDFSource= ()=>{
+        const navParams = this.props.navigation.state.params;
+        const urlString= "file://"+navParams.file;
+        let source = {'uri': urlString};
+        return source;
+    }
+
       render() {
-          const navParams = this.props.navigation.state.params;
-          let source = {uri:navParams.file};
+          //const navParams = this.props.navigation.state.params;
+          //const urlString= "file://"+navParams.file;
+          //let source = {'uri': navParams.file};
+          //"file://'+navParams.file+'"};
+          //let source = {uri:navParams.file};
+          //Alert.alert(source.uri);
+          // {uri:"file:///absolute/path/to/xxx.pdf"}
+          //console.log(source);
           //let source = require('./test.pdf'); //maybe ios?
 
-          return (
-              
+          return (  
               <View style={appStyles.container}>
                 <View>
                 {
@@ -105,14 +115,14 @@ class PDFViewScreen extends Component {
                 }
 
                 </View>
-                  <Pdf ref={(pdf)=>{this.pdf = pdf;}}
-                      source={source}
+                  <Pdf
+                    source={this.getPDFSource()}
                       page={this.state.page}
                       spacing={0}
                       horizontal={false}
                       onLoadComplete={(pageCount)=>{
                           this.setState({pageCount: pageCount});
-                          //console.log(`total page count: ${pageCount}`);
+      
                       }}
                       onPageChanged={(page,pageCount)=>{
                           this.setState({currentpage:page});
@@ -121,7 +131,7 @@ class PDFViewScreen extends Component {
                         //console.log(`current page: ${page}`);
                       }}
                       onError={(error)=>{
-                          //console.log(error);
+                          console.log(error);
                       }}
                       style={styles.pdf}/>
               </View>

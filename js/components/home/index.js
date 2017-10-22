@@ -95,7 +95,7 @@ fetchdata = async () => {
     }
 };
 
-  downloadFile = async (url,item)=>{
+  downloadFile = async (item)=>{
     let downloadFile = true;
     //let issues = await store.get('userIssues');
       var myissues = await store.get('userIssues');
@@ -119,11 +119,12 @@ fetchdata = async () => {
       
       try {
         
-      
-      var resp = await RNFetchBlob
+      const pdfSource = appVars.apiUrl +"/"+item.downloadPath;        
+      let resp = await RNFetchBlob
       .config({
         //path: RNFetchBlob.fs.dirs.DownloadDir+"/dummy.pdf",
-        path: RNFetchBlob.fs.dirs.DocumentDir+"/"+item.id+".pdf",
+        fileCache: false,
+        path: RNFetchBlob.fs.dirs.DocumentDir+"/epaper/"+item.downloadPath,
           addAndroidDownloads : {
               useDownloadManager : true, // <-- this is the only thing required
               // Optional, override notification setting (default to true)
@@ -137,12 +138,13 @@ fetchdata = async () => {
               mediaScannable : true,
           }
       })
-      .fetch('GET', url);
+      .fetch('GET', pdfSource);
 
       const imageSource = appVars.apiUrl +"/"+item.singleSRC;
       let imageResp = await RNFetchBlob
       .config({
-        path: RNFetchBlob.fs.dirs.DocumentDir+"/"+item.singleSRC,
+        path: RNFetchBlob.fs.dirs.DocumentDir+"/epaper/"+item.singleSRC,
+        fileCache: false,        
           addAndroidDownloads : {
               useDownloadManager : true, // <-- this is the only thing required
               // Optional, override notification setting (default to true)
@@ -157,12 +159,7 @@ fetchdata = async () => {
           }
       })
       .fetch('GET', imageSource);
-
       
-
-      // if you wanna open the pdfview screen
-      
-
       const issueObject = {
         path: resp.path(),
         thumbNail: imageResp.path(),
@@ -172,14 +169,14 @@ fetchdata = async () => {
         epaperindex: item.epaperindex,
         id: item.id
       };
-      Alert.alert("Download Successful");
-      
+      //Alert.alert(resp.path());
+      //Alert.alert("Download Successful");
       store.push('userIssues',issueObject );
       navigation.navigate('PDFView', {file: resp.path(), epaperindex: item.epaperindex});
     } catch (error) {
       Alert.alert("error in download. PLease try again later.");
       console.log("error in download");
-      console.log(error);t
+      console.log(error);
       
     }
       finally{
@@ -238,7 +235,7 @@ fetchdata = async () => {
     this.setState({
       currentItem: item.id
     });
-    this.downloadFile('https://mopo-server.de/'+ item["downloadPath"], item);
+    this.downloadFile(item);
   }
 
   ratioImageHeigh = (width,height,multiplicate) =>{
