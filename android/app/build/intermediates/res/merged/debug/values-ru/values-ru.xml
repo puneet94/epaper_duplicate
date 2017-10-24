@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="zero">Аннотаций нет</item>
+        <item quantity="one">%d аннотация</item>
+        <item quantity="many">%d аннотаций</item>
+        <item quantity="other">%d аннотации</item>
+        <item quantity="few">%d аннотации</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="one">%d страница</item>
+        <item quantity="many">%d страниц</item>
+        <item quantity="other">%d страницы</item>
+        <item quantity="few">%d страницы</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="zero">Совпадений не обнаружено</item>
+        <item quantity="one">Обнаружено %d совпадение</item>
+        <item quantity="many">Обнаружено %d совпадений</item>
+        <item quantity="other">Обнаружено %d совпадения</item>
+        <item quantity="few">Обнаружено %d совпадения</item>
+    </plurals>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Перейти на главный экран"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
@@ -19,70 +39,188 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Открыть доступ"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Открыть доступ пользователю %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Свернуть"</string>
-    <string msgid="366047012176970604" name="cast_casting_to_device">"Трансляция на устройство \"%s\""</string>
-    <string msgid="2888745622334830481" name="cast_closed_captions">"Субтитры"</string>
-    <string msgid="4476421850100851087" name="cast_closed_captions_unavailable">"Субтитры недоступны"</string>
-    <string msgid="4431992200264667209" name="cast_disconnect">"Отключить"</string>
-    <string msgid="8886260998635257149" name="cast_expanded_controller_background_image">"Обложка"</string>
-    <string msgid="7334411994450681286" name="cast_expanded_controller_loading">"Загрузка…"</string>
-    <string msgid="7884080323096468593" name="cast_forward">"Перемотать вперед"</string>
-    <string msgid="6424889955881797947" name="cast_forward_10">"Перемотать на 10 секунд вперед"</string>
-    <string msgid="7868672855975238403" name="cast_forward_30">"Перемотать на 30 секунд вперед"</string>
-    <string msgid="6885943100773268783" name="cast_intro_overlay_button_text">"@android:string/ok"</string>
-    <string msgid="5637297909372905371" name="cast_mute">"Отключить звук"</string>
-    <string msgid="5319032370587661362" name="cast_notification_connected_message">"Подключено к <ns1:g id="NAME">%1$s</ns1:g>"</string>
-    <string msgid="2758865089947797888" name="cast_notification_connecting_message">"Подключение к <ns1:g id="NAME">%1$s</ns1:g>…"</string>
-    <string msgid="5232008641593292969" name="cast_notification_disconnect">"Отключить"</string>
-    <string msgid="5308503786390460607" name="cast_pause">"Приостановить"</string>
-    <string msgid="5906987965619702702" name="cast_play">"Воспроизвести"</string>
-    <string msgid="1739665135565985480" name="cast_rewind">"Перемотать назад"</string>
-    <string msgid="6432793028560778843" name="cast_rewind_10">"Перемотать на 10 секунд назад"</string>
-    <string msgid="4677199707225681325" name="cast_rewind_30">"Перемотать на 30 секунд назад"</string>
-    <string msgid="9078075166993780241" name="cast_seek_bar">"Ползунок перемотки"</string>
-    <string msgid="3991548379225047363" name="cast_skip_next">"Перейти к следующему объекту"</string>
-    <string msgid="8369073097776576935" name="cast_skip_prev">"Перейти к предыдущему объекту"</string>
-    <string msgid="9191388946729723891" name="cast_stop">"Остановить"</string>
-    <string msgid="1219622777438777099" name="cast_stop_live_stream">"Остановить трансляцию"</string>
-    <string msgid="4250321332248956563" name="cast_tracks_chooser_dialog_audio">"Аудио"</string>
-    <string msgid="1162380934229249476" name="cast_tracks_chooser_dialog_cancel">"Отмена"</string>
-    <string msgid="3012268736704635952" name="cast_tracks_chooser_dialog_default_track_name">"Трек <ns1:g id="POSITION">%1$d</ns1:g>"</string>
-    <string msgid="5563446400083425854" name="cast_tracks_chooser_dialog_no_audio_tracks">"Нет доступных аудиотреков"</string>
-    <string msgid="7413336699113748535" name="cast_tracks_chooser_dialog_no_text_tracks">"Нет доступных текстовых треков"</string>
-    <string msgid="2332432312191219516" name="cast_tracks_chooser_dialog_no_tracks_available">"Нет доступных треков"</string>
-    <string msgid="1176688358580178396" name="cast_tracks_chooser_dialog_none">"Нет"</string>
-    <string msgid="3804878371876790270" name="cast_tracks_chooser_dialog_ok">"ОК"</string>
-    <string msgid="2454147715032376208" name="cast_tracks_chooser_dialog_subtitles">"Субтитры"</string>
-    <string msgid="2913461521603516868" name="cast_unmute">"Включить звук"</string>
-    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Включить"</string>
-    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Для работы приложения \"<ns1:g id="APP_NAME">%1$s</ns1:g>\" требуется включить сервисы Google Play."</string>
-    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Включите сервисы Google Play"</string>
-    <string msgid="7118643132557593940" name="common_google_play_services_install_button">"Установить"</string>
-    <string msgid="1666261992894286769" name="common_google_play_services_install_text_phone">"Для работы приложения \"<ns1:g id="APP_NAME">%1$s</ns1:g>\" требуется установить сервисы Google Play."</string>
-    <string msgid="1701766622451829291" name="common_google_play_services_install_text_tablet">"Для работы приложения \"<ns1:g id="APP_NAME">%1$s</ns1:g>\" требуется установить сервисы Google Play."</string>
-    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Установите сервисы Google Play"</string>
-    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Ошибка сервисов Google Play"</string>
-    <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"Приложению \"<ns1:g id="APP_NAME">%1$s</ns1:g>\" не удается подключиться к сервисам Google Play. Если проблема не исчезнет, обратитесь к разработчику."</string>
-    <string msgid="1064791666906610763" name="common_google_play_services_unsupported_text">"Сервисы Google Play, необходимые для работы приложения \"<ns1:g id="APP_NAME">%1$s</ns1:g>\", не поддерживаются на вашем устройстве. Обратитесь к производителю."</string>
-    <string msgid="539866123733096737" name="common_google_play_services_unsupported_title">"Сервисы Google Play"</string>
-    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Обновить"</string>
-    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"Чтобы запустить приложение \"<ns1:g id="APP_NAME">%1$s</ns1:g>\", обновите сервисы Google Play."</string>
-    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Обновите сервисы Google Play"</string>
-    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"Сервисы Google Play, необходимые для работы приложения \"<ns1:g id="APP_NAME">%1$s</ns1:g>\", в настоящий момент обновляются."</string>
-    <string msgid="2270671469198016014" name="common_google_play_services_updating_title">"Обновление сервисов Google Play…"</string>
-    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Версия сервисов Google Play устарела. Они автоматически обновятся в ближайшее время."</string>
-    <string msgid="5201977337835724196" name="common_open_on_phone">"Открыть на телефоне"</string>
-    <string msgid="3441753203274453993" name="common_signin_button_text">"Войти"</string>
-    <string msgid="669893613918351210" name="common_signin_button_text_long">"Войти через аккаунт Google"</string>
-    <string msgid="8327680881775995150" name="mr_media_route_button_content_description">"Транслировать."</string>
-    <string msgid="7553005460920830010" name="mr_media_route_chooser_searching">"Поиск устройств…"</string>
-    <string msgid="7106830097177242655" name="mr_media_route_chooser_title">"Подключение к устройству"</string>
-    <string msgid="109793632378378069" name="mr_media_route_controller_disconnect">"Отключить"</string>
-    <string msgid="3641544772007543920" name="mr_media_route_controller_no_info_available">"Данных нет"</string>
-    <string msgid="8315773974194466049" name="mr_media_route_controller_pause">"Приостановить."</string>
-    <string msgid="5214423499524760404" name="mr_media_route_controller_play">"Воспроизвести."</string>
-    <string msgid="379358765881274425" name="mr_media_route_controller_settings_description">"Настройки передачи файлов"</string>
-    <string msgid="5398645111664294430" name="mr_media_route_controller_stop">"Остановить трансляцию"</string>
-    <string msgid="5441529851481176817" name="mr_system_route_name">"Система"</string>
-    <string msgid="7498112907524977311" name="mr_user_route_category_name">"Устройства"</string>
+    <string name="exo_controls_fastforward_description">"Перемотать вперед"</string>
+    <string name="exo_controls_next_description">"Следующий трек"</string>
+    <string name="exo_controls_pause_description">"Приостановить"</string>
+    <string name="exo_controls_play_description">"Воспроизвести"</string>
+    <string name="exo_controls_previous_description">"Предыдущий трек"</string>
+    <string name="exo_controls_rewind_description">"Перемотать назад"</string>
+    <string name="exo_controls_stop_description">"Остановить"</string>
+    <string name="pspdf__action_menu_copy">Скопировать</string>
+    <string name="pspdf__action_menu_speak">Произнести</string>
+    <string name="pspdf__activity_menu_no_outline">Без содержания</string>
+    <string name="pspdf__activity_menu_outline">Содержание</string>
+    <string name="pspdf__activity_menu_pagegrid">Сетка</string>
+    <string name="pspdf__activity_menu_search">Поиск</string>
+    <string name="pspdf__activity_menu_settings">Настройки</string>
+    <string name="pspdf__activity_title_unnamed_document">Безымянный PDF</string>
+    <string name="pspdf__add">Добавить</string>
+    <string name="pspdf__add_bookmark">Добавить закладку</string>
+    <string name="pspdf__add_page">Добавить страницу</string>
+    <string name="pspdf__add_signature">Добавить подпись</string>
+    <string name="pspdf__all">Все</string>
+    <string name="pspdf__annotation_creator_author_name">Имя автора</string>
+    <string name="pspdf__annotation_creator_info_text">Введите имя автора, которое вы хотите использовать для новых аннотаций.</string>
+    <string name="pspdf__annotation_editing_embed">Встроить аннотации</string>
+    <string name="pspdf__annotation_editing_embed_description">Аннотации останутся изменяемыми и встроенными в PDF.</string>
+    <string name="pspdf__annotation_editing_flatten">Вклеить аннотации</string>
+    <string name="pspdf__annotation_editing_flatten_description">Аннотации будут объединены с содержимым PDF и доступны только для чтения.</string>
+    <string name="pspdf__annotation_editing_ignore">Игнорировать аннотации</string>
+    <string name="pspdf__annotation_editing_ignore_description">PDF не будет содержать аннотаций.</string>
+    <string name="pspdf__annotation_list_page">Страница %1$d</string>
+    <string name="pspdf__annotation_type_camera">Камера</string>
+    <string name="pspdf__annotation_type_circle">Эллипс</string>
+    <string name="pspdf__annotation_type_freetext">Текст</string>
+    <string name="pspdf__annotation_type_highlight">Выделение</string>
+    <string name="pspdf__annotation_type_ink">Чернила</string>
+    <string name="pspdf__annotation_type_line">Линия</string>
+    <string name="pspdf__annotation_type_link">Ссылка</string>
+    <string name="pspdf__annotation_type_note">Заметка</string>
+    <string name="pspdf__annotation_type_polygon">Многоугольник</string>
+    <string name="pspdf__annotation_type_polyline">Ломаная линия</string>
+    <string name="pspdf__annotation_type_rich_media">Рич-медиа</string>
+    <string name="pspdf__annotation_type_screen">Экран</string>
+    <string name="pspdf__annotation_type_sound">Звук</string>
+    <string name="pspdf__annotation_type_square">Прямоугольник</string>
+    <string name="pspdf__annotation_type_squiggly">Волнистое подчеркивание</string>
+    <string name="pspdf__annotation_type_stamp">Печать</string>
+    <string name="pspdf__annotation_type_strikeout">Зачеркивание</string>
+    <string name="pspdf__annotation_type_underline">Подчеркивание</string>
+    <string name="pspdf__annotations">Аннотации</string>
+    <string name="pspdf__bookmarked">В закладкax</string>
+    <string name="pspdf__bookmarks">Закладки</string>
+    <string name="pspdf__clear">Очистить</string>
+    <string name="pspdf__close">Закрыть</string>
+    <string name="pspdf__copy">Скопировать</string>
+    <string name="pspdf__create_stamp">Создать печать</string>
+    <string name="pspdf__current_page">Текущая страница (%1$d)</string>
+    <string name="pspdf__custom_stamp">Свой текст</string>
+    <string name="pspdf__custom_value">Пользовательское значение</string>
+    <string name="pspdf__custom_value_hint">Введите значение или выберите из списка</string>
+    <string name="pspdf__customer_signature">Личная подпись</string>
+    <string name="pspdf__date_switch">Дата</string>
+    <string name="pspdf__default_values">Значения по умолчанию</string>
+    <string name="pspdf__delete">Удалить</string>
+    <string name="pspdf__delete_pages">Удалить страницы</string>
+    <string name="pspdf__document_could_not_be_saved">Не удалось сохранить документ.</string>
+    <string name="pspdf__document_edit_not_supported">Этот документ не поддерживает редактирование.</string>
+    <string name="pspdf__document_name">Имя документа</string>
+    <string name="pspdf__done">Готово</string>
+    <string name="pspdf__duplicate_pages">Дублировать страницы</string>
+    <string name="pspdf__edit">Править</string>
+    <string name="pspdf__edit_menu_color">Цвет</string>
+    <string name="pspdf__edit_menu_fill_color">Цвет заливки</string>
+    <string name="pspdf__edit_menu_freetext">Текст</string>
+    <string name="pspdf__edit_menu_highlight">Выделение</string>
+    <string name="pspdf__edit_menu_ink">Чернила</string>
+    <string name="pspdf__edit_menu_note">Заметка</string>
+    <string name="pspdf__edit_menu_squiggly">Волнистое подчеркивание</string>
+    <string name="pspdf__edit_menu_strikeout">Зачеркивание</string>
+    <string name="pspdf__edit_menu_underline">Подчеркивание</string>
+    <string name="pspdf__export_pages">Экспортировать страницы</string>
+    <string name="pspdf__exporting">Идет экспорт…</string>
+    <string name="pspdf__file_not_available">При попытке открыть файл произошла неизвестная ошибка.</string>
+    <string name="pspdf__forms_clear_field">Очистить поле</string>
+    <string name="pspdf__fragment_password_hint">Введите пароль.</string>
+    <string name="pspdf__gallery_item_img_desc">Изображение</string>
+    <string name="pspdf__landscape">Альбомная</string>
+    <string name="pspdf__loading">Загрузка…</string>
+    <string name="pspdf__more_options">Ещё</string>
+    <string name="pspdf__my_signature">Моя подпись</string>
+    <string name="pspdf__name">Имя</string>
+    <string name="pspdf__no_annotations">Аннотаций нет</string>
+    <string name="pspdf__no_applications_found">Отсутствуют приложения для открытия PDF-документов.</string>
+    <string name="pspdf__no_bookmarks">Нет закладок</string>
+    <string name="pspdf__no_signatures">Нет подписей</string>
+    <string name="pspdf__ok">ОК</string>
+    <string name="pspdf__open">Открыть</string>
+    <string name="pspdf__orientation">Ориентация</string>
+    <string name="pspdf__page_overlay">%1$d из %2$d</string>
+    <string name="pspdf__page_overlay_double_page">%1$d–%2$d из %3$d</string>
+    <string name="pspdf__page_overlay_with_label">%1$s (%2$d из %3$d)</string>
+    <string name="pspdf__page_pattern_dot_5mm">Точка 5 мм</string>
+    <string name="pspdf__page_pattern_grid_5mm">Сетка 5 мм</string>
+    <string name="pspdf__page_pattern_line_5mm">Линии 5 мм</string>
+    <string name="pspdf__page_pattern_line_7mm">Линии 7 мм</string>
+    <string name="pspdf__page_pattern_none">Нет</string>
+    <string name="pspdf__page_range">Диапазон</string>
+    <string name="pspdf__page_size_a4">A4</string>
+    <string name="pspdf__page_size_a5">A5</string>
+    <string name="pspdf__page_size_us_legal">US Legal</string>
+    <string name="pspdf__page_size_us_letter">US Letter</string>
+    <string name="pspdf__page_with_number">Страница %1$d</string>
+    <string name="pspdf__pages">Страницы</string>
+    <string name="pspdf__password">Пароль</string>
+    <string name="pspdf__picker_line_end">Конец линии</string>
+    <string name="pspdf__picker_line_ends_fill_color">Начать и закончить цвет</string>
+    <string name="pspdf__picker_line_start">Начало линии</string>
+    <string name="pspdf__picker_line_style">Стиль линий</string>
+    <string name="pspdf__picker_thickness">Толщина</string>
+    <string name="pspdf__portrait">Книжная</string>
+    <string name="pspdf__print">Печать</string>
+    <string name="pspdf__print_with_annotations">Печать с аннотациями</string>
+    <string name="pspdf__print_without_annotations">Печать без аннотаций</string>
+    <string name="pspdf__redo">Повторить</string>
+    <string name="pspdf__remove">Удалить</string>
+    <string name="pspdf__remove_bookmark">Удалить закладку</string>
+    <string name="pspdf__replace">Заменить</string>
+    <string name="pspdf__replace_file_message">Выбранная папка уже содержит файл с именем «%1$s». Заменить существующий файл?</string>
+    <string name="pspdf__rotate_pages">Повернуть страницы</string>
+    <string name="pspdf__sample">Образец</string>
+    <string name="pspdf__save">Сохранить</string>
+    <string name="pspdf__save_as">Сохранить как…</string>
+    <string name="pspdf__saving">Сохранение…</string>
+    <string name="pspdf__search_btn_next">Далее</string>
+    <string name="pspdf__search_btn_previous">Назад</string>
+    <string name="pspdf__search_complete">Поиск завершен</string>
+    <string name="pspdf__search_hint">Поиск</string>
+    <string name="pspdf__search_no_matches">Совпадений не обнаружено</string>
+    <string name="pspdf__search_outline_hint">Поиск в содержании</string>
+    <string name="pspdf__search_result_of">%1$d из %2$d</string>
+    <string name="pspdf__settings_menu_auto">Авто</string>
+    <string name="pspdf__settings_menu_continuous">Непрерывно</string>
+    <string name="pspdf__settings_menu_default">По умолчанию</string>
+    <string name="pspdf__settings_menu_double">Две страницы</string>
+    <string name="pspdf__settings_menu_horizontal">Горизонтально</string>
+    <string name="pspdf__settings_menu_jump">По одной странице</string>
+    <string name="pspdf__settings_menu_keep_screen_on">Не выключать экран</string>
+    <string name="pspdf__settings_menu_night">Ночь</string>
+    <string name="pspdf__settings_menu_page_layout">Макет страницы</string>
+    <string name="pspdf__settings_menu_page_transition">Переход</string>
+    <string name="pspdf__settings_menu_scroll_direction">Направление прокрутки</string>
+    <string name="pspdf__settings_menu_single">Одна страница</string>
+    <string name="pspdf__settings_menu_theme">Тема</string>
+    <string name="pspdf__settings_menu_vertical">Вертикально</string>
+    <string name="pspdf__share">Поделиться</string>
+    <string name="pspdf__signature">Подпись</string>
+    <string name="pspdf__signature_sign_here">Подпишите здесь</string>
+    <string name="pspdf__signatures">Подписи</string>
+    <string name="pspdf__size">Размер</string>
+    <string name="pspdf__stamp_accepted">Принято</string>
+    <string name="pspdf__stamp_approved">Одобрено</string>
+    <string name="pspdf__stamp_completed">Завершено</string>
+    <string name="pspdf__stamp_confidential">Конфиденциально</string>
+    <string name="pspdf__stamp_draft">Черновик</string>
+    <string name="pspdf__stamp_final">Окончательный</string>
+    <string name="pspdf__stamp_for_comment">Для комментариев</string>
+    <string name="pspdf__stamp_for_public_release">Публичный выпуск</string>
+    <string name="pspdf__stamp_information_only">Только информация</string>
+    <string name="pspdf__stamp_initial_here">ФИО</string>
+    <string name="pspdf__stamp_not_approved">Не одобрено</string>
+    <string name="pspdf__stamp_not_for_public_release">Не для публичного выпуска</string>
+    <string name="pspdf__stamp_preliminary_results">Предварительно</string>
+    <string name="pspdf__stamp_rejected">Отклонено</string>
+    <string name="pspdf__stamp_revised">Изменено</string>
+    <string name="pspdf__stamp_sign_here">Место подписи</string>
+    <string name="pspdf__stamp_text">Текст печати</string>
+    <string name="pspdf__stamp_void">Аннулировать</string>
+    <string name="pspdf__stamp_witness">Удостоверить</string>
+    <string name="pspdf__text_copied_to_clipboard">Текст скопирован в буфер обмена.</string>
+    <string name="pspdf__time_switch">Время</string>
+    <string name="pspdf__tts_not_available">Служба преобразования текста в речь недоступна. Убедитесь, что ваше устройство подключено к интернету, или что на нем установлен и включен Синтезатор речи Google.</string>
+    <string name="pspdf__undo">Отменить</string>
+    <string name="pspdf__unit_pt">%1$s пт</string>
+    <string name="pspdf__use_document_size">Использовать размер документа</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Поиск"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">">999"</string>
 </resources>

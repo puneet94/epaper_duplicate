@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="zero">Inga anteckningar</item>
+        <item quantity="one">%d anteckning</item>
+        <item quantity="other">%d anteckningar</item>
+        <item quantity="few">%d anteckningar</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="one">%d sida</item>
+        <item quantity="other">%d sidor</item>
+        <item quantity="few">%d sidor</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="zero">Hittade inga träffar</item>
+        <item quantity="one">Hittade %d träff</item>
+        <item quantity="other">Hittade %d träffar</item>
+        <item quantity="few">Hittade %d träffar</item>
+    </plurals>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Visa startsidan"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
@@ -19,70 +36,188 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Dela med"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Dela med %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Komprimera"</string>
-    <string msgid="366047012176970604" name="cast_casting_to_device">"Castar till %1$s"</string>
-    <string msgid="2888745622334830481" name="cast_closed_captions">"Textning"</string>
-    <string msgid="4476421850100851087" name="cast_closed_captions_unavailable">"Textning är inte tillgänglig"</string>
-    <string msgid="4431992200264667209" name="cast_disconnect">"Koppla från"</string>
-    <string msgid="8886260998635257149" name="cast_expanded_controller_background_image">"Skivomslag"</string>
-    <string msgid="7334411994450681286" name="cast_expanded_controller_loading">"Läser in …"</string>
-    <string msgid="7884080323096468593" name="cast_forward">"Framåt"</string>
-    <string msgid="6424889955881797947" name="cast_forward_10">"Tio sekunder framåt"</string>
-    <string msgid="7868672855975238403" name="cast_forward_30">"Trettio sekunder framåt"</string>
-    <string msgid="6885943100773268783" name="cast_intro_overlay_button_text">"@android:string/ok"</string>
-    <string msgid="5637297909372905371" name="cast_mute">"Stäng av ljudet"</string>
-    <string msgid="5319032370587661362" name="cast_notification_connected_message">"Ansluten till <ns1:g id="NAME">%1$s</ns1:g>"</string>
-    <string msgid="2758865089947797888" name="cast_notification_connecting_message">"Ansluter till <ns1:g id="NAME">%1$s</ns1:g>"</string>
-    <string msgid="5232008641593292969" name="cast_notification_disconnect">"Koppla från"</string>
-    <string msgid="5308503786390460607" name="cast_pause">"Pausa"</string>
-    <string msgid="5906987965619702702" name="cast_play">"Spela upp"</string>
-    <string msgid="1739665135565985480" name="cast_rewind">"Spola tillbaka"</string>
-    <string msgid="6432793028560778843" name="cast_rewind_10">"Spola tillbaka tio sekunder"</string>
-    <string msgid="4677199707225681325" name="cast_rewind_30">"Spola tillbaka trettio sekunder"</string>
-    <string msgid="9078075166993780241" name="cast_seek_bar">"Sökreglage för uppspelning"</string>
-    <string msgid="3991548379225047363" name="cast_skip_next">"Hoppa till nästa objekt"</string>
-    <string msgid="8369073097776576935" name="cast_skip_prev">"Hoppa till föregående objekt"</string>
-    <string msgid="9191388946729723891" name="cast_stop">"Stoppa"</string>
-    <string msgid="1219622777438777099" name="cast_stop_live_stream">"Stoppa liveströmningen"</string>
-    <string msgid="4250321332248956563" name="cast_tracks_chooser_dialog_audio">"Ljud"</string>
-    <string msgid="1162380934229249476" name="cast_tracks_chooser_dialog_cancel">"Avbryt"</string>
-    <string msgid="3012268736704635952" name="cast_tracks_chooser_dialog_default_track_name">"Spår <ns1:g id="POSITION">%1$d</ns1:g>"</string>
-    <string msgid="5563446400083425854" name="cast_tracks_chooser_dialog_no_audio_tracks">"Det finns inga ljudspår"</string>
-    <string msgid="7413336699113748535" name="cast_tracks_chooser_dialog_no_text_tracks">"Det finns inga textspår"</string>
-    <string msgid="2332432312191219516" name="cast_tracks_chooser_dialog_no_tracks_available">"Det finns inga spår"</string>
-    <string msgid="1176688358580178396" name="cast_tracks_chooser_dialog_none">"Inga"</string>
-    <string msgid="3804878371876790270" name="cast_tracks_chooser_dialog_ok">"Ok"</string>
-    <string msgid="2454147715032376208" name="cast_tracks_chooser_dialog_subtitles">"Undertexter"</string>
-    <string msgid="2913461521603516868" name="cast_unmute">"Slå på ljudet"</string>
-    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Aktivera"</string>
-    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> fungerar inte om du inte aktiverar Google Play-tjänster."</string>
-    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Aktivera Google Play-tjänster"</string>
-    <string msgid="7118643132557593940" name="common_google_play_services_install_button">"Hämta Google Play-tjänster"</string>
-    <string msgid="1666261992894286769" name="common_google_play_services_install_text_phone">"Du måste installera Google Play-tjänster för att kunna köra <ns1:g id="APP_NAME">%1$s</ns1:g> på mobilen."</string>
-    <string msgid="1701766622451829291" name="common_google_play_services_install_text_tablet">"Du måste installera Google Play-tjänster för att kunna köra <ns1:g id="APP_NAME">%1$s</ns1:g> på surfplattan."</string>
-    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Hämta Google Play-tjänster"</string>
-    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Fel på Google Play-tjänster"</string>
-    <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> har problem med Google Play-tjänster. Om problemet kvarstår kontaktar du utvecklaren."</string>
-    <string msgid="1064791666906610763" name="common_google_play_services_unsupported_text">"För <ns1:g id="APP_NAME">%1$s</ns1:g> krävs Google Play-tjänster, och dessa stöds inte på enheten. Kontakta tillverkaren om du vill ha hjälp."</string>
-    <string msgid="539866123733096737" name="common_google_play_services_unsupported_title">"Google Play-tjänster"</string>
-    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Uppdatera"</string>
-    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> kan inte köras om du inte uppdaterar Google Play-tjänsterna."</string>
-    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Uppdatera Google Play-tjänster"</string>
-    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> kan inte köras utan Google Play-tjänster, och dessa uppdateras för närvarande."</string>
-    <string msgid="2270671469198016014" name="common_google_play_services_updating_title">"Google Play-tjänster uppdateras"</string>
-    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"En ny version av Google Play-tjänster krävs. Den uppdateras automatiskt inom kort."</string>
-    <string msgid="5201977337835724196" name="common_open_on_phone">"Öppna på mobilen"</string>
-    <string msgid="3441753203274453993" name="common_signin_button_text">"Logga in"</string>
-    <string msgid="669893613918351210" name="common_signin_button_text_long">"Logga in med Google"</string>
-    <string msgid="8327680881775995150" name="mr_media_route_button_content_description">"Casta"</string>
-    <string msgid="7553005460920830010" name="mr_media_route_chooser_searching">"Söker efter enheter ..."</string>
-    <string msgid="7106830097177242655" name="mr_media_route_chooser_title">"Anslut till enhet"</string>
-    <string msgid="109793632378378069" name="mr_media_route_controller_disconnect">"Koppla från"</string>
-    <string msgid="3641544772007543920" name="mr_media_route_controller_no_info_available">"Det finns ingen information"</string>
-    <string msgid="8315773974194466049" name="mr_media_route_controller_pause">"Pausa"</string>
-    <string msgid="5214423499524760404" name="mr_media_route_controller_play">"Spela upp"</string>
-    <string msgid="379358765881274425" name="mr_media_route_controller_settings_description">"Inställningar för omdirigering"</string>
-    <string msgid="5398645111664294430" name="mr_media_route_controller_stop">"Sluta casta"</string>
-    <string msgid="5441529851481176817" name="mr_system_route_name">"System"</string>
-    <string msgid="7498112907524977311" name="mr_user_route_category_name">"Enheter"</string>
+    <string name="exo_controls_fastforward_description">"Snabbspola framåt"</string>
+    <string name="exo_controls_next_description">"Nästa spår"</string>
+    <string name="exo_controls_pause_description">"Pausa"</string>
+    <string name="exo_controls_play_description">"Spela upp"</string>
+    <string name="exo_controls_previous_description">"Föregående spår"</string>
+    <string name="exo_controls_rewind_description">"Spola tillbaka"</string>
+    <string name="exo_controls_stop_description">"Avbryt"</string>
+    <string name="pspdf__action_menu_copy">Kopiera</string>
+    <string name="pspdf__action_menu_speak">Tala</string>
+    <string name="pspdf__activity_menu_no_outline">Inget innehåll</string>
+    <string name="pspdf__activity_menu_outline">Innehåll</string>
+    <string name="pspdf__activity_menu_pagegrid">Rutnät</string>
+    <string name="pspdf__activity_menu_search">Sök</string>
+    <string name="pspdf__activity_menu_settings">Inställningar</string>
+    <string name="pspdf__activity_title_unnamed_document">Namnlös PDF</string>
+    <string name="pspdf__add">Lägg till</string>
+    <string name="pspdf__add_bookmark">Lägg till bokmärke</string>
+    <string name="pspdf__add_page">Lägg till sida</string>
+    <string name="pspdf__add_signature">Lägg till signatur</string>
+    <string name="pspdf__all">Alla</string>
+    <string name="pspdf__annotation_creator_author_name">Författarnamn</string>
+    <string name="pspdf__annotation_creator_info_text">Ange det författarnamn som ska användas för nya anteckningar.</string>
+    <string name="pspdf__annotation_editing_embed">Bädda in anteckningar</string>
+    <string name="pspdf__annotation_editing_embed_description">Anteckningarna går att redigera och följer med PDF:en.</string>
+    <string name="pspdf__annotation_editing_flatten">Infoga anteckningar</string>
+    <string name="pspdf__annotation_editing_flatten_description">Anteckningarna infogas i PDF:en och kan bara läsas.</string>
+    <string name="pspdf__annotation_editing_ignore">Ignorera anteckningar</string>
+    <string name="pspdf__annotation_editing_ignore_description">PDF:en kommer inte att innehålla några anteckningar.</string>
+    <string name="pspdf__annotation_list_page">Sida %1$d</string>
+    <string name="pspdf__annotation_type_camera">Kamera</string>
+    <string name="pspdf__annotation_type_circle">Ellips</string>
+    <string name="pspdf__annotation_type_freetext">Meddelande</string>
+    <string name="pspdf__annotation_type_highlight">Markera</string>
+    <string name="pspdf__annotation_type_ink">Teckning</string>
+    <string name="pspdf__annotation_type_line">Linje</string>
+    <string name="pspdf__annotation_type_link">Länk</string>
+    <string name="pspdf__annotation_type_note">Anteckning</string>
+    <string name="pspdf__annotation_type_polygon">Polygon</string>
+    <string name="pspdf__annotation_type_polyline">Polylinje</string>
+    <string name="pspdf__annotation_type_rich_media">Multimedia</string>
+    <string name="pspdf__annotation_type_screen">Skärma</string>
+    <string name="pspdf__annotation_type_sound">Ljud</string>
+    <string name="pspdf__annotation_type_square">Rektangel</string>
+    <string name="pspdf__annotation_type_squiggly">Våglinje</string>
+    <string name="pspdf__annotation_type_stamp">Stämpel</string>
+    <string name="pspdf__annotation_type_strikeout">Överstruken</string>
+    <string name="pspdf__annotation_type_underline">Understruken</string>
+    <string name="pspdf__annotations">Anteckningar</string>
+    <string name="pspdf__bookmarked">Bokmärkt</string>
+    <string name="pspdf__bookmarks">Bokmärken</string>
+    <string name="pspdf__clear">Rensa</string>
+    <string name="pspdf__close">Stäng</string>
+    <string name="pspdf__copy">Kopiera</string>
+    <string name="pspdf__create_stamp">Skapa stämpel</string>
+    <string name="pspdf__current_page">Aktuell sida (%1$d)</string>
+    <string name="pspdf__custom_stamp">Anpassad</string>
+    <string name="pspdf__custom_value">Anpassat värde</string>
+    <string name="pspdf__custom_value_hint">Skriv värde eller välj från lista</string>
+    <string name="pspdf__customer_signature">Engångssignatur</string>
+    <string name="pspdf__date_switch">Datum</string>
+    <string name="pspdf__default_values">Förvalda värden</string>
+    <string name="pspdf__delete">Radera</string>
+    <string name="pspdf__delete_pages">Radera sidor</string>
+    <string name="pspdf__document_could_not_be_saved">Det gick inte att spara dokumentet.</string>
+    <string name="pspdf__document_edit_not_supported">Detta dokument kan inte redigeras.</string>
+    <string name="pspdf__document_name">Dokumentnamn</string>
+    <string name="pspdf__done">Klar</string>
+    <string name="pspdf__duplicate_pages">Duplicera sidor</string>
+    <string name="pspdf__edit">Redigera</string>
+    <string name="pspdf__edit_menu_color">Färg</string>
+    <string name="pspdf__edit_menu_fill_color">Fyllningsfärg</string>
+    <string name="pspdf__edit_menu_freetext">Meddelande</string>
+    <string name="pspdf__edit_menu_highlight">Markera</string>
+    <string name="pspdf__edit_menu_ink">Teckning</string>
+    <string name="pspdf__edit_menu_note">Anteckning</string>
+    <string name="pspdf__edit_menu_squiggly">Våglinje</string>
+    <string name="pspdf__edit_menu_strikeout">Överstruken</string>
+    <string name="pspdf__edit_menu_underline">Understruken</string>
+    <string name="pspdf__export_pages">Exportera sidor</string>
+    <string name="pspdf__exporting">Exporterar…</string>
+    <string name="pspdf__file_not_available">Ett okänt fel inträffade när filen skulle öppnas.</string>
+    <string name="pspdf__forms_clear_field">Rensa fält</string>
+    <string name="pspdf__fragment_password_hint">Ange lösenordet.</string>
+    <string name="pspdf__gallery_item_img_desc">Bild</string>
+    <string name="pspdf__landscape">Liggande</string>
+    <string name="pspdf__loading">Läser in…</string>
+    <string name="pspdf__more_options">Fler alternativ</string>
+    <string name="pspdf__my_signature">Min signatur</string>
+    <string name="pspdf__name">Namn</string>
+    <string name="pspdf__no_annotations">Inga anteckningar</string>
+    <string name="pspdf__no_applications_found">Det finns inga installerade program som kan öppna PDF-dokument.</string>
+    <string name="pspdf__no_bookmarks">Inga bokmärken</string>
+    <string name="pspdf__no_signatures">Inga signaturer</string>
+    <string name="pspdf__ok">Gå</string>
+    <string name="pspdf__open">Öppna</string>
+    <string name="pspdf__orientation">Riktning</string>
+    <string name="pspdf__page_overlay">%1$d av %2$d</string>
+    <string name="pspdf__page_overlay_double_page">%1$d-%2$d av %3$d</string>
+    <string name="pspdf__page_overlay_with_label">%1$s (%2$d av %3$d)</string>
+    <string name="pspdf__page_pattern_dot_5mm">Punkt 5mm</string>
+    <string name="pspdf__page_pattern_grid_5mm">Rutnät 5mm</string>
+    <string name="pspdf__page_pattern_line_5mm">Linjer 5mm</string>
+    <string name="pspdf__page_pattern_line_7mm">Linjer 7mm</string>
+    <string name="pspdf__page_pattern_none">Ingen</string>
+    <string name="pspdf__page_range">Uppsättning</string>
+    <string name="pspdf__page_size_a4">A4</string>
+    <string name="pspdf__page_size_a5">A5</string>
+    <string name="pspdf__page_size_us_legal">US Legal</string>
+    <string name="pspdf__page_size_us_letter">US Letter</string>
+    <string name="pspdf__page_with_number">Sida %1$d</string>
+    <string name="pspdf__pages">Sidor</string>
+    <string name="pspdf__password">Lösenord</string>
+    <string name="pspdf__picker_line_end">Linjeslut</string>
+    <string name="pspdf__picker_line_ends_fill_color">Start- och slutfärg</string>
+    <string name="pspdf__picker_line_start">Linjestart</string>
+    <string name="pspdf__picker_line_style">Linjestil</string>
+    <string name="pspdf__picker_thickness">Tjocklek</string>
+    <string name="pspdf__portrait">Stående</string>
+    <string name="pspdf__print">Skriv ut</string>
+    <string name="pspdf__print_with_annotations">Skriv ut med anteckningar</string>
+    <string name="pspdf__print_without_annotations">Skriv ut utan anteckningar</string>
+    <string name="pspdf__redo">Gör om</string>
+    <string name="pspdf__remove">Ta bort</string>
+    <string name="pspdf__remove_bookmark">Ta bort bokmärke</string>
+    <string name="pspdf__replace">Ersätt</string>
+    <string name="pspdf__replace_file_message">Det finns redan en fil med namnet  "%1$s" på destinationen. Ska filen ersättas?</string>
+    <string name="pspdf__rotate_pages">Rotera sidor</string>
+    <string name="pspdf__sample">Exempel</string>
+    <string name="pspdf__save">Spara</string>
+    <string name="pspdf__save_as">Spara som…</string>
+    <string name="pspdf__saving">Sparar…</string>
+    <string name="pspdf__search_btn_next">Nästa</string>
+    <string name="pspdf__search_btn_previous">Föregående</string>
+    <string name="pspdf__search_complete">Sökningen är klar</string>
+    <string name="pspdf__search_hint">Sök</string>
+    <string name="pspdf__search_no_matches">Hittade inga träffar</string>
+    <string name="pspdf__search_outline_hint">Sök innehåll</string>
+    <string name="pspdf__search_result_of">%1$d av %2$d</string>
+    <string name="pspdf__settings_menu_auto">Automatisk</string>
+    <string name="pspdf__settings_menu_continuous">Kontinuerlig</string>
+    <string name="pspdf__settings_menu_default">Förval</string>
+    <string name="pspdf__settings_menu_double">Dubbel</string>
+    <string name="pspdf__settings_menu_horizontal">Vågrätt</string>
+    <string name="pspdf__settings_menu_jump">Hoppa</string>
+    <string name="pspdf__settings_menu_keep_screen_on">Behåll skärmen på</string>
+    <string name="pspdf__settings_menu_night">Natt</string>
+    <string name="pspdf__settings_menu_page_layout">Sidlayout</string>
+    <string name="pspdf__settings_menu_page_transition">Sidövergång</string>
+    <string name="pspdf__settings_menu_scroll_direction">Rullningsriktning</string>
+    <string name="pspdf__settings_menu_single">Enkel</string>
+    <string name="pspdf__settings_menu_theme">Tema</string>
+    <string name="pspdf__settings_menu_vertical">Lodrätt</string>
+    <string name="pspdf__share">Dela</string>
+    <string name="pspdf__signature">Underskrift</string>
+    <string name="pspdf__signature_sign_here">Signera här</string>
+    <string name="pspdf__signatures">Underskrifter</string>
+    <string name="pspdf__size">Storlek</string>
+    <string name="pspdf__stamp_accepted">Godkänt</string>
+    <string name="pspdf__stamp_approved">Godkänt</string>
+    <string name="pspdf__stamp_completed">Genomfört</string>
+    <string name="pspdf__stamp_confidential">Konfidentiellt</string>
+    <string name="pspdf__stamp_draft">Utkast</string>
+    <string name="pspdf__stamp_final">Färdigt</string>
+    <string name="pspdf__stamp_for_comment">För kommentar</string>
+    <string name="pspdf__stamp_for_public_release">Offentligt</string>
+    <string name="pspdf__stamp_information_only">Endast för information</string>
+    <string name="pspdf__stamp_initial_here">Initialsignera här</string>
+    <string name="pspdf__stamp_not_approved">Ej godkänt</string>
+    <string name="pspdf__stamp_not_for_public_release">Ej offentligt</string>
+    <string name="pspdf__stamp_preliminary_results">Preliminära resultat</string>
+    <string name="pspdf__stamp_rejected">Förkastat</string>
+    <string name="pspdf__stamp_revised">Ändrat</string>
+    <string name="pspdf__stamp_sign_here">Signera här</string>
+    <string name="pspdf__stamp_text">Stämpeltext</string>
+    <string name="pspdf__stamp_void">Ogiltigt</string>
+    <string name="pspdf__stamp_witness">Bevittnat</string>
+    <string name="pspdf__text_copied_to_clipboard">Text har kopierats till urklipp.</string>
+    <string name="pspdf__time_switch">Tid</string>
+    <string name="pspdf__tts_not_available">Text-till-taltjänsten är inte tillgänglig. Kontrollera att internetanslutningen är aktiv eller att Googles text-till-talmotor är installerad och påslagen på din enhet.</string>
+    <string name="pspdf__undo">Ångra</string>
+    <string name="pspdf__unit_pt">%1$s pt</string>
+    <string name="pspdf__use_document_size">Använd dokumentets storlek</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Sök"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">">999"</string>
 </resources>

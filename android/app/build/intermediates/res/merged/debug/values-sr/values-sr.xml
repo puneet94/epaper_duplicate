@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="zero">Bez oznaka</item>
+        <item quantity="one">%d oznaka</item>
+        <item quantity="two">%d oznake</item>
+        <item quantity="other">%d oznaka</item>
+        <item quantity="few">%d oznaka</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="one">%d stranica</item>
+        <item quantity="two">%d stranice</item>
+        <item quantity="other">%d stranica</item>
+        <item quantity="few">%d stranica</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="zero">Nema pronađenih rezultata</item>
+        <item quantity="one">%d pronađen rezultat</item>
+        <item quantity="two">%d pronađena rezultata</item>
+        <item quantity="other">%d pronađenih rezultata</item>
+        <item quantity="few">%d pronađenih rezultata</item>
+    </plurals>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Одлазак на Почетну"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
@@ -19,70 +39,188 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Дели са"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Дели са апликацијом %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Скупи"</string>
-    <string msgid="366047012176970604" name="cast_casting_to_device">"Пребацивање на %1$s"</string>
-    <string msgid="2888745622334830481" name="cast_closed_captions">"Опционални титл"</string>
-    <string msgid="4476421850100851087" name="cast_closed_captions_unavailable">"Опционални титл је недоступан"</string>
-    <string msgid="4431992200264667209" name="cast_disconnect">"Прекини везу"</string>
-    <string msgid="8886260998635257149" name="cast_expanded_controller_background_image">"Омот албума"</string>
-    <string msgid="7334411994450681286" name="cast_expanded_controller_loading">"Учитава се…"</string>
-    <string msgid="7884080323096468593" name="cast_forward">"Проследи"</string>
-    <string msgid="6424889955881797947" name="cast_forward_10">"Премотај десет секунди унапред"</string>
-    <string msgid="7868672855975238403" name="cast_forward_30">"Премотај тридесет секунди унапред"</string>
-    <string msgid="6885943100773268783" name="cast_intro_overlay_button_text">"@android:string/ok"</string>
-    <string msgid="5637297909372905371" name="cast_mute">"Искључи звук"</string>
-    <string msgid="5319032370587661362" name="cast_notification_connected_message">"Повезано је са <ns1:g id="NAME">%1$s</ns1:g>"</string>
-    <string msgid="2758865089947797888" name="cast_notification_connecting_message">"Повезивање са <ns1:g id="NAME">%1$s</ns1:g>"</string>
-    <string msgid="5232008641593292969" name="cast_notification_disconnect">"Прекини везу"</string>
-    <string msgid="5308503786390460607" name="cast_pause">"Паузирајте"</string>
-    <string msgid="5906987965619702702" name="cast_play">"Пусти"</string>
-    <string msgid="1739665135565985480" name="cast_rewind">"Тастер за премотавање уназад"</string>
-    <string msgid="6432793028560778843" name="cast_rewind_10">"Премотај десет секунди уназад"</string>
-    <string msgid="4677199707225681325" name="cast_rewind_30">"Премотај тридесет секунди уназад"</string>
-    <string msgid="9078075166993780241" name="cast_seek_bar">"Контрола за тражење при репродукцији"</string>
-    <string msgid="3991548379225047363" name="cast_skip_next">"Прескочи на следећу ставку"</string>
-    <string msgid="8369073097776576935" name="cast_skip_prev">"Прескочи на претходну ставку"</string>
-    <string msgid="9191388946729723891" name="cast_stop">"Тастер за заустављање"</string>
-    <string msgid="1219622777438777099" name="cast_stop_live_stream">"Заустави стрим уживо"</string>
-    <string msgid="4250321332248956563" name="cast_tracks_chooser_dialog_audio">"Звук"</string>
-    <string msgid="1162380934229249476" name="cast_tracks_chooser_dialog_cancel">"Откажи"</string>
-    <string msgid="3012268736704635952" name="cast_tracks_chooser_dialog_default_track_name">"<ns1:g id="POSITION">%1$d</ns1:g>. песма"</string>
-    <string msgid="5563446400083425854" name="cast_tracks_chooser_dialog_no_audio_tracks">"Нема доступних аудио записа"</string>
-    <string msgid="7413336699113748535" name="cast_tracks_chooser_dialog_no_text_tracks">"Нема доступних текстуалних записа"</string>
-    <string msgid="2332432312191219516" name="cast_tracks_chooser_dialog_no_tracks_available">"Нема доступних записа"</string>
-    <string msgid="1176688358580178396" name="cast_tracks_chooser_dialog_none">"Ништа"</string>
-    <string msgid="3804878371876790270" name="cast_tracks_chooser_dialog_ok">"Потврди"</string>
-    <string msgid="2454147715032376208" name="cast_tracks_chooser_dialog_subtitles">"Титлови"</string>
-    <string msgid="2913461521603516868" name="cast_unmute">"Укључи звук"</string>
-    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Омогући"</string>
-    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> неће функционисати ако не омогућите Google Play услуге."</string>
-    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Омогућите Google Play услуге"</string>
-    <string msgid="7118643132557593940" name="common_google_play_services_install_button">"Преузми Google Play услуге"</string>
-    <string msgid="1666261992894286769" name="common_google_play_services_install_text_phone">"<ns1:g id="APP_NAME">%1$s</ns1:g> не може да се покрене без Google Play услуга, које нису инсталиране на телефону."</string>
-    <string msgid="1701766622451829291" name="common_google_play_services_install_text_tablet">"<ns1:g id="APP_NAME">%1$s</ns1:g> не може да се покрене без Google Play услуга, које нису инсталиране на таблету."</string>
-    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Преузмите Google Play услуге"</string>
-    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Грешка Google Play услуга"</string>
-    <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> има проблема са Google Play услугама. Ако се проблем и даље јавља, обратите се програмеру да бисте добили помоћ."</string>
-    <string msgid="1064791666906610763" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> користи Google Play услуге, које уређај не подржава. Контактирајте произвођача да бисте добили помоћ."</string>
-    <string msgid="539866123733096737" name="common_google_play_services_unsupported_title">"Google Play услуге"</string>
-    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Ажурирај"</string>
-    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> не може да се покрене ако не ажурирате Google Play услуге."</string>
-    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Ажурирајте Google Play услуге"</string>
-    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> не може да се покрене без Google Play услуга, које се тренутно ажурирају."</string>
-    <string msgid="2270671469198016014" name="common_google_play_services_updating_title">"Google Play услуге се ажурирају"</string>
-    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Потребна је нова верзија Google Play услуга. Ускоро ће се ажурирати."</string>
-    <string msgid="5201977337835724196" name="common_open_on_phone">"Отвори на телефону"</string>
-    <string msgid="3441753203274453993" name="common_signin_button_text">"Пријави ме"</string>
-    <string msgid="669893613918351210" name="common_signin_button_text_long">"Пријави ме на Google"</string>
-    <string msgid="8327680881775995150" name="mr_media_route_button_content_description">"Пребацуј"</string>
-    <string msgid="7553005460920830010" name="mr_media_route_chooser_searching">"Претраживање уређаја…"</string>
-    <string msgid="7106830097177242655" name="mr_media_route_chooser_title">"Повежите са уређајем"</string>
-    <string msgid="109793632378378069" name="mr_media_route_controller_disconnect">"Прекини везу"</string>
-    <string msgid="3641544772007543920" name="mr_media_route_controller_no_info_available">"Нису доступне никакве информације"</string>
-    <string msgid="8315773974194466049" name="mr_media_route_controller_pause">"Паузирај"</string>
-    <string msgid="5214423499524760404" name="mr_media_route_controller_play">"Пусти"</string>
-    <string msgid="379358765881274425" name="mr_media_route_controller_settings_description">"Подешавања путање"</string>
-    <string msgid="5398645111664294430" name="mr_media_route_controller_stop">"Заустави пребацивање"</string>
-    <string msgid="5441529851481176817" name="mr_system_route_name">"Систем"</string>
-    <string msgid="7498112907524977311" name="mr_user_route_category_name">"Уређаји"</string>
+    <string name="exo_controls_fastforward_description">"Премотај унапред"</string>
+    <string name="exo_controls_next_description">"Следећа песма"</string>
+    <string name="exo_controls_pause_description">"Пауза"</string>
+    <string name="exo_controls_play_description">"Пусти"</string>
+    <string name="exo_controls_previous_description">"Претходна песма"</string>
+    <string name="exo_controls_rewind_description">"Премотај уназад"</string>
+    <string name="exo_controls_stop_description">"Заустави"</string>
+    <string name="pspdf__action_menu_copy">Copy</string>
+    <string name="pspdf__action_menu_speak">Speak</string>
+    <string name="pspdf__activity_menu_no_outline">No Outline</string>
+    <string name="pspdf__activity_menu_outline">Outline</string>
+    <string name="pspdf__activity_menu_pagegrid">Grid</string>
+    <string name="pspdf__activity_menu_search">Search</string>
+    <string name="pspdf__activity_menu_settings">Settings</string>
+    <string name="pspdf__activity_title_unnamed_document">Unnamed PDF</string>
+    <string name="pspdf__add">Add</string>
+    <string name="pspdf__add_bookmark">Add Bookmark</string>
+    <string name="pspdf__add_page">Add Page</string>
+    <string name="pspdf__add_signature">Add Signature</string>
+    <string name="pspdf__all">All</string>
+    <string name="pspdf__annotation_creator_author_name">Author Name</string>
+    <string name="pspdf__annotation_creator_info_text">Please enter the author name you want to use for newly inserted annotations.</string>
+    <string name="pspdf__annotation_editing_embed">Embed Annotations</string>
+    <string name="pspdf__annotation_editing_embed_description">Annotations will remain editable and are embedded into the PDF.</string>
+    <string name="pspdf__annotation_editing_flatten">Flatten Annotations</string>
+    <string name="pspdf__annotation_editing_flatten_description">Annotations are rendered in the PDF and are readonly.</string>
+    <string name="pspdf__annotation_editing_ignore">Ignore Annotations</string>
+    <string name="pspdf__annotation_editing_ignore_description">The PDF will not contain any annotations.</string>
+    <string name="pspdf__annotation_list_page">Page %1$d</string>
+    <string name="pspdf__annotation_type_camera">Camera</string>
+    <string name="pspdf__annotation_type_circle">Ellipse</string>
+    <string name="pspdf__annotation_type_freetext">Text</string>
+    <string name="pspdf__annotation_type_highlight">Highlight</string>
+    <string name="pspdf__annotation_type_ink">Ink</string>
+    <string name="pspdf__annotation_type_line">Line</string>
+    <string name="pspdf__annotation_type_link">Link</string>
+    <string name="pspdf__annotation_type_note">Note</string>
+    <string name="pspdf__annotation_type_polygon">Polygon</string>
+    <string name="pspdf__annotation_type_polyline">Polyline</string>
+    <string name="pspdf__annotation_type_rich_media">Rich Media</string>
+    <string name="pspdf__annotation_type_screen">Screen</string>
+    <string name="pspdf__annotation_type_sound">Sound</string>
+    <string name="pspdf__annotation_type_square">Rectangle</string>
+    <string name="pspdf__annotation_type_squiggly">Squiggle</string>
+    <string name="pspdf__annotation_type_stamp">Stamp</string>
+    <string name="pspdf__annotation_type_strikeout">Strike Out</string>
+    <string name="pspdf__annotation_type_underline">Underline</string>
+    <string name="pspdf__annotations">Annotations</string>
+    <string name="pspdf__bookmarked">Bookmarked</string>
+    <string name="pspdf__bookmarks">Bookmarks</string>
+    <string name="pspdf__clear">Clear</string>
+    <string name="pspdf__close">Close</string>
+    <string name="pspdf__copy">Copy</string>
+    <string name="pspdf__create_stamp">Create Stamp</string>
+    <string name="pspdf__current_page">Current Page (%1$d)</string>
+    <string name="pspdf__custom_stamp">Custom</string>
+    <string name="pspdf__custom_value">Custom Value</string>
+    <string name="pspdf__custom_value_hint">Type value or pick from list</string>
+    <string name="pspdf__customer_signature">Customer Signature</string>
+    <string name="pspdf__date_switch">Date</string>
+    <string name="pspdf__default_values">Default Values</string>
+    <string name="pspdf__delete">Delete</string>
+    <string name="pspdf__delete_pages">Delete Pages</string>
+    <string name="pspdf__document_could_not_be_saved">The document could not be saved.</string>
+    <string name="pspdf__document_edit_not_supported">This document does not support editing.</string>
+    <string name="pspdf__document_name">Document Name</string>
+    <string name="pspdf__done">Done</string>
+    <string name="pspdf__duplicate_pages">Duplicate Pages</string>
+    <string name="pspdf__edit">Edit</string>
+    <string name="pspdf__edit_menu_color">Color</string>
+    <string name="pspdf__edit_menu_fill_color">Fill Color</string>
+    <string name="pspdf__edit_menu_freetext">Text</string>
+    <string name="pspdf__edit_menu_highlight">Highlight</string>
+    <string name="pspdf__edit_menu_ink">Ink</string>
+    <string name="pspdf__edit_menu_note">Note</string>
+    <string name="pspdf__edit_menu_squiggly">Squiggle</string>
+    <string name="pspdf__edit_menu_strikeout">Strike Out</string>
+    <string name="pspdf__edit_menu_underline">Underline</string>
+    <string name="pspdf__export_pages">Export Pages</string>
+    <string name="pspdf__exporting">Exporting…</string>
+    <string name="pspdf__file_not_available">An unknown error has occured while trying to open this file.</string>
+    <string name="pspdf__forms_clear_field">Clear Field</string>
+    <string name="pspdf__fragment_password_hint">Please enter the password.</string>
+    <string name="pspdf__gallery_item_img_desc">Image</string>
+    <string name="pspdf__landscape">Landscape</string>
+    <string name="pspdf__loading">Loading…</string>
+    <string name="pspdf__more_options">Још опција</string>
+    <string name="pspdf__my_signature">My Signature</string>
+    <string name="pspdf__name">Name</string>
+    <string name="pspdf__no_annotations">Bez oznaka</string>
+    <string name="pspdf__no_applications_found">There are no applications installed that can open PDF documents.</string>
+    <string name="pspdf__no_bookmarks">No Bookmarks</string>
+    <string name="pspdf__no_signatures">No Signatures</string>
+    <string name="pspdf__ok">OK</string>
+    <string name="pspdf__open">Open</string>
+    <string name="pspdf__orientation">Orientation</string>
+    <string name="pspdf__page_overlay">%1$d of %2$d</string>
+    <string name="pspdf__page_overlay_double_page">%1$d-%2$d of %3$d</string>
+    <string name="pspdf__page_overlay_with_label">%1$s (%2$d of %3$d)</string>
+    <string name="pspdf__page_pattern_dot_5mm">Dot 5mm</string>
+    <string name="pspdf__page_pattern_grid_5mm">Grid 5mm</string>
+    <string name="pspdf__page_pattern_line_5mm">Lines 5mm</string>
+    <string name="pspdf__page_pattern_line_7mm">Lines 7mm</string>
+    <string name="pspdf__page_pattern_none">None</string>
+    <string name="pspdf__page_range">Range</string>
+    <string name="pspdf__page_size_a4">A4</string>
+    <string name="pspdf__page_size_a5">A5</string>
+    <string name="pspdf__page_size_us_legal">US Legal</string>
+    <string name="pspdf__page_size_us_letter">US Letter</string>
+    <string name="pspdf__page_with_number">Page %1$d</string>
+    <string name="pspdf__pages">Pages</string>
+    <string name="pspdf__password">Password</string>
+    <string name="pspdf__picker_line_end">Line End</string>
+    <string name="pspdf__picker_line_ends_fill_color">Start and End Color</string>
+    <string name="pspdf__picker_line_start">Line Start</string>
+    <string name="pspdf__picker_line_style">Line Style</string>
+    <string name="pspdf__picker_thickness">Thickness</string>
+    <string name="pspdf__portrait">Portrait</string>
+    <string name="pspdf__print">Print</string>
+    <string name="pspdf__print_with_annotations">Print with annotations</string>
+    <string name="pspdf__print_without_annotations">Print without annotations</string>
+    <string name="pspdf__redo">Redo</string>
+    <string name="pspdf__remove">Remove</string>
+    <string name="pspdf__remove_bookmark">Remove Bookmark</string>
+    <string name="pspdf__replace">Replace</string>
+    <string name="pspdf__replace_file_message">A file named "%1$s" already exists at the selected destination. Do you want to replace it?</string>
+    <string name="pspdf__rotate_pages">Rotate Pages</string>
+    <string name="pspdf__sample">Sample</string>
+    <string name="pspdf__save">Save</string>
+    <string name="pspdf__save_as">Save As…</string>
+    <string name="pspdf__saving">Saving…</string>
+    <string name="pspdf__search_btn_next">Next</string>
+    <string name="pspdf__search_btn_previous">Previous</string>
+    <string name="pspdf__search_complete">Search Completed</string>
+    <string name="pspdf__search_hint">Search</string>
+    <string name="pspdf__search_no_matches">Nema pronađenih rezultata</string>
+    <string name="pspdf__search_outline_hint">Search Outline</string>
+    <string name="pspdf__search_result_of">%1$d of %2$d</string>
+    <string name="pspdf__settings_menu_auto">Automatic</string>
+    <string name="pspdf__settings_menu_continuous">Continuous</string>
+    <string name="pspdf__settings_menu_default">Default</string>
+    <string name="pspdf__settings_menu_double">Double</string>
+    <string name="pspdf__settings_menu_horizontal">Horizontal</string>
+    <string name="pspdf__settings_menu_jump">Jump</string>
+    <string name="pspdf__settings_menu_keep_screen_on">Keep screen on</string>
+    <string name="pspdf__settings_menu_night">Night</string>
+    <string name="pspdf__settings_menu_page_layout">Page Layout</string>
+    <string name="pspdf__settings_menu_page_transition">Page Transition</string>
+    <string name="pspdf__settings_menu_scroll_direction">Scroll Direction</string>
+    <string name="pspdf__settings_menu_single">Single</string>
+    <string name="pspdf__settings_menu_theme">Theme</string>
+    <string name="pspdf__settings_menu_vertical">Vertical</string>
+    <string name="pspdf__share">Share</string>
+    <string name="pspdf__signature">Signature</string>
+    <string name="pspdf__signature_sign_here">Please sign here</string>
+    <string name="pspdf__signatures">Signatures</string>
+    <string name="pspdf__size">Size</string>
+    <string name="pspdf__stamp_accepted">Accepted</string>
+    <string name="pspdf__stamp_approved">Approved</string>
+    <string name="pspdf__stamp_completed">Completed</string>
+    <string name="pspdf__stamp_confidential">Confidential</string>
+    <string name="pspdf__stamp_draft">Draft</string>
+    <string name="pspdf__stamp_final">Final</string>
+    <string name="pspdf__stamp_for_comment">For Comment</string>
+    <string name="pspdf__stamp_for_public_release">For Public Release</string>
+    <string name="pspdf__stamp_information_only">Information only</string>
+    <string name="pspdf__stamp_initial_here">Initial Here</string>
+    <string name="pspdf__stamp_not_approved">Not Approved</string>
+    <string name="pspdf__stamp_not_for_public_release">Not For Public Release</string>
+    <string name="pspdf__stamp_preliminary_results">Preliminary Results</string>
+    <string name="pspdf__stamp_rejected">Rejected</string>
+    <string name="pspdf__stamp_revised">Revised</string>
+    <string name="pspdf__stamp_sign_here">Sign Here</string>
+    <string name="pspdf__stamp_text">Stamp Text</string>
+    <string name="pspdf__stamp_void">Void</string>
+    <string name="pspdf__stamp_witness">Witness</string>
+    <string name="pspdf__text_copied_to_clipboard">Text copied to clipboard.</string>
+    <string name="pspdf__time_switch">Time</string>
+    <string name="pspdf__tts_not_available">Text-to-speech service unavailable. Make sure you have an active internet connection or Google Text-to-speech engine installed and enabled on your device.</string>
+    <string name="pspdf__undo">Undo</string>
+    <string name="pspdf__unit_pt">%1$s pt</string>
+    <string name="pspdf__use_document_size">Use Document Size</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Претражи"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">">999"</string>
 </resources>

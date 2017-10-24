@@ -3,15 +3,6 @@
 
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/libs/internal_impl-23.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.0_c914a00bbaadc48ca4f0a9b2c82180f28370e845.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -21,12 +12,30 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/epaper/react-native-fetch-blob/unspecified/jars/classes.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="5aca1188aec5f45a7580589b8537e9a8a4d9a86f">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/epaper-react-native-fetch-blob-unspecified_4b76404c36f963c2192674484d0480551d759baf.jar" />
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.3.1_f51b7be30c4762405edb96e60c852b075b0b3e52.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/io.reactivex.rxjava2/rxandroid/2.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4119ea97a7191ff9b8f33b534ea220448f62f491">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/io.reactivex.rxjava2-rxandroid-2.0.1_52880d1a7d87ad4531a4fe86977c4ac73e42f667.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/epaper/react-native-image-picker/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9f95540d3b14aed0250ba28dd07beece0df87598">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/epaper-react-native-image-picker-unspecified_e8b2d754d6b0caefeee028d43cb2c789c0dfdd35.jar" />
     </item>
     <item
         is-multidex="false"
@@ -39,21 +48,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_b7fa17e072114d51255337549d9e28e9c9f71960.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="a432629397351d3ec7f27a23d258b229b81af08f">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-cast-9.4.0_c1e11b099dd4329519cab0991d98de22bf2b4091.jar" />
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.3.1_53e87438816a32130e32121f31e005211c705e76.jar" />
     </item>
     <item
         is-multidex="false"
@@ -66,39 +66,48 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/epaper/react-native-pspdfkit/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_b7b4e965268462a5e86be54eeff8824435360a18.jar" />
+        revision="25.0.2"
+        sha1="a4c7d8e1b0133cc2ec6cd5fb2b17469446edd00f">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/epaper-react-native-pspdfkit-unspecified_c2eae8e64f6e556a601a186709765fdab2a403d0.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/epaper/react-native-youtube/unspecified/jars/libs/YouTubeAndroidPlayerApi.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="a62cbd1027677c96026b383de62307faa6a4da8f">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/YouTubeAndroidPlayerApi_2d4902724a3410c89d38d87a197f23076658399a.jar" />
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.3.1_589c3905cf929db292e85b0074d9c6675ab40656.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.0/jars/classes.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="292a9fa091757208efa65e77eef63088247e51f3">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.2.0_fd043ca6a63cbd33b411daebab582086bb9ff5f2.jar" />
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.3.1_d0daececea68913c7d4ae7a975b730882bea136f.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/jars/classes.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.1.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.2.0_1d5e6346b24ffc2d3b0d0e2a41210210dd15792e.jar" />
+        sha1="1b6a8c5921674faf26796e185a60d62065b4f157">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.google.android.exoplayer-exoplayer-r2.1.1_6db0ca3bdeeb9ce885e57e42570079b927916f47.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.getkeepsafe.relinker/relinker/1.2.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b64dd5f01bc37de289f90fd59299b0c76d119611">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.getkeepsafe.relinker-relinker-1.2.2_f821eecdbd3b2f39798b29688dd8ecaf30261031.jar" />
     </item>
     <item
         is-multidex="false"
@@ -111,57 +120,57 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_b7741757c4fb0adeaca6460c6854ca50623c64cf.jar" />
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.3.1_a50452d002c413efcc83ce6420ba2767b29584be.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.4.0/jars/classes.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.1.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="8a36d229011e75f0caef408e1adf0d3fd4d94e02">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.4.0_ad5aa866d1fc45c540e9be92ecb111b806d6b4da.jar" />
+        revision="25.0.2"
+        sha1="1b6a8c5921674faf26796e185a60d62065b4f157">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.google.android.exoplayer-exoplayer-r2.1.1_6db0ca3bdeeb9ce885e57e42570079b927916f47.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_27dfc883440db8c4ed7c11bdde7bc49638bb335e.jar" />
+        revision="25.0.2"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_4a7ed830181504812016fa051629277cef8c0110.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.github.barteksc/android-pdf-viewer/2.7.0/jars/classes.jar"
+        jar="/Users/sturm/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="acc7f730a7b9cccfc9251d727165bc37bbb8dd67">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.github.barteksc-android-pdf-viewer-2.7.0_0082b70070a7a795fe012e1ca42dd397102e2cc9.jar" />
+        revision="25.0.2"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_b608d5c116fbbbeda0d0a784e3f32397d37c4bb8.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.3.1_f51b7be30c4762405edb96e60c852b075b0b3e52.jar" />
+        revision="25.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.3.1_646e861fe489542e15a158a9cd7ea3697d1bdcf1.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.3.1_aa816741594212c0caf532eef9fe59d159bea1d2.jar" />
+        revision="25.0.2"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.3.1_e9f43f02be0c28b77457d091dac569590a69c730.jar" />
     </item>
     <item
         is-multidex="false"
@@ -174,21 +183,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.49.3/jars/classes.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/epaper/react-native-audio-streamer/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="e013739f7ddb6740bf196dc515d8999a6030f9ea">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.49.3_cdab9262279e24e69d07bdcacaa429df3b0bb09e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/sturm/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_eb6462ac625703a59b0514b55c2b77b2ac70eb39.jar" />
+        sha1="4256fec0757c9e2edefa63d007d2aa4bb19ef4e2">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/epaper-react-native-audio-streamer-unspecified_8a72634b208627c3f8766004827c46a606f03ed6.jar" />
     </item>
     <item
         is-multidex="false"
@@ -201,66 +201,75 @@
     </item>
     <item
         is-multidex="false"
+        jar="/usr/local/opt/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_adc25731e75a3978eae2ccb702c92254820a9b34.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
+        revision="25.0.2"
         sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
         <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_6de7f8d63af1290cf4c14395f5e0fb68e25105bb.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_1005a3c49521b1e492760b825552ae96d05dd24c.jar" />
+        revision="25.0.2"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_e19f662c58ff8add7b0f08a39fe5b8937cea595c.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/jars/classes.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.49.3/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="3dee4ce5844d39d843d503fb8fe04e51e5bfffac">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.4.0_be2d33c4ce810ea1ac61385c4a669aa67d641558.jar" />
+        revision="25.0.2"
+        sha1="e013739f7ddb6740bf196dc515d8999a6030f9ea">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.49.3_cdab9262279e24e69d07bdcacaa429df3b0bb09e.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
+        jar="/Users/sturm/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.0/14b8c877d98005ba3941c9257cfe09f6ed0e0d74/reactive-streams-1.0.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.3.1_a50452d002c413efcc83ce6420ba2767b29584be.jar" />
+        revision="25.0.2"
+        sha1="14b8c877d98005ba3941c9257cfe09f6ed0e0d74">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/reactive-streams-1.0.0_07fb118014d7020bf6201e6e7b2cc57f6c543380.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/epaper/react-native-track-player/unspecified/jars/classes.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="c1d49397d15db739d7c54c2eeed71c6d792e3364">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/epaper-react-native-track-player-unspecified_4313f2e2166c8de39de1acd6a31bddcdb7f5b47d.jar" />
+        revision="25.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.3.1_187ffc733e5f93a178fd9a6c792f6d64f3fb7f94.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/epaper/react-native-youtube/unspecified/jars/libs/YouTubeAndroidPlayerApi.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_20572a0152ee390bfae7ac65e8c980835b1db670.jar" />
+        revision="25.0.2"
+        sha1="a62cbd1027677c96026b383de62307faa6a4da8f">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/YouTubeAndroidPlayerApi_2d4902724a3410c89d38d87a197f23076658399a.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.49.3/jars/libs/infer-annotations-4.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.3.1_c867941a4ad427c38b37fc6638c33134524c6c0b.jar" />
+        revision="25.0.2"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_3ae8d2f7939ab4648e05135b3ecbf675026198bb.jar" />
     </item>
     <item
         is-multidex="false"
@@ -273,12 +282,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/jars/classes.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="03829a2618892d438a1f59c6286699ca1f476e93">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-cast-framework-9.4.0_cdd8c9fdc0d4d411003a6ee1a55b645484410bf8.jar" />
+        revision="25.0.2"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_b7fa17e072114d51255337549d9e28e9c9f71960.jar" />
     </item>
     <item
         is-multidex="false"
@@ -300,48 +309,30 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/jars/classes.jar"
+        jar="/Users/sturm/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="618485fef3ebe12127f7622abbc9b5b39057b5c2">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.4.0_848186ea96aef9188f47ef3f41bea3504c63e944.jar" />
+        revision="25.0.2"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_b7741757c4fb0adeaca6460c6854ca50623c64cf.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/classes.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-mediarouter-v7-23.0.0_77d78febbdf8a37ebd840a6ea1ede6a6254bc5f2.jar" />
+        revision="25.0.2"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_6b7bcaef5fbb228f0799b42fc875865d31636b4a.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.0/jars/classes.jar"
+        jar="/Users/sturm/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="8c108c22c99e794eff255bb34d2a461200c4cbb0">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.2.0_db2d7e42675eadf13ea29de87fe23a1caeb99640.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/usr/local/opt/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_adc25731e75a3978eae2ccb702c92254820a9b34.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/epaper/react-native-pdf/unspecified/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c7b6bb8afabb4b60f9719d1e233885f315a9c0af">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/epaper-react-native-pdf-unspecified_1ef0908abf9351834083646cc05c604247b148c9.jar" />
+        revision="25.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_eb6462ac625703a59b0514b55c2b77b2ac70eb39.jar" />
     </item>
     <item
         is-multidex="false"
@@ -354,30 +345,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/epaper/react-native-audio-streamer/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.3.1_53e87438816a32130e32121f31e005211c705e76.jar" />
+        revision="25.0.2"
+        sha1="4256fec0757c9e2edefa63d007d2aa4bb19ef4e2">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/epaper-react-native-audio-streamer-unspecified_8a72634b208627c3f8766004827c46a606f03ed6.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.github.barteksc/pdfium-android/1.7.0/jars/classes.jar"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="100c2548728b6c99e002328d3590b750a6afa9e5">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.github.barteksc-pdfium-android-1.7.0_4514176074d7bba42f7182a683fc0a489b27a753.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
-        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.3.1_d0d65b8aef3abc0f341b350e38f23b49d114a276.jar" />
+        revision="25.0.2"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_1005a3c49521b1e492760b825552ae96d05dd24c.jar" />
     </item>
     <item
         is-multidex="false"
@@ -387,6 +369,249 @@
         revision="23.0.1"
         sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
         <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_b608d5c116fbbbeda0d0a784e3f32397d37c4bb8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/epaper/react-native-fetch-blob/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5aca1188aec5f45a7580589b8537e9a8a4d9a86f">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/epaper-react-native-fetch-blob-unspecified_4b76404c36f963c2192674484d0480551d759baf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_b7fa17e072114d51255337549d9e28e9c9f71960.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.3.1_c867941a4ad427c38b37fc6638c33134524c6c0b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_b7b4e965268462a5e86be54eeff8824435360a18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/epaper/react-native-youtube/unspecified/jars/libs/YouTubeAndroidPlayerApi.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a62cbd1027677c96026b383de62307faa6a4da8f">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/YouTubeAndroidPlayerApi_2d4902724a3410c89d38d87a197f23076658399a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_b7741757c4fb0adeaca6460c6854ca50623c64cf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_27dfc883440db8c4ed7c11bdde7bc49638bb335e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.3.1_27096f381b6dfcb581928079e6b7b69a9f620f3b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_20572a0152ee390bfae7ac65e8c980835b1db670.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_c6c649e74e04e0d8098170eb8557d1f851742774.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.49.3/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e013739f7ddb6740bf196dc515d8999a6030f9ea">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.49.3_cdab9262279e24e69d07bdcacaa429df3b0bb09e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/epaper/react-native-youtube/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d34d6cdd207df2f59914796b0dfd585536a8e739">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/epaper-react-native-youtube-unspecified_a85faaa86c586eba91734e7d0bd8c5512085270a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_eb6462ac625703a59b0514b55c2b77b2ac70eb39.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.3.1_d0d65b8aef3abc0f341b350e38f23b49d114a276.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_6de7f8d63af1290cf4c14395f5e0fb68e25105bb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_1005a3c49521b1e492760b825552ae96d05dd24c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_27dfc883440db8c4ed7c11bdde7bc49638bb335e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_e1c969d7828acc2021aa5ff4b0b9680795078e2c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="864e7da35d8eda8f77dca0d5bae3eadcd200596f">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.pspdfkit-pspdfkit-demo-3.3.3_d955bdb672a47445041baa11fe7b545f52a5fcfc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_20572a0152ee390bfae7ac65e8c980835b1db670.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/epaper/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f2cf527de8d0bd35d72088fafea02395ba4a9eec">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/epaper-react-native-vector-icons-unspecified_15091107ade524afb3667237f59822f6d0671392.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_b7b4e965268462a5e86be54eeff8824435360a18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-25.3.1_a3bd438e041a99535859de31854d93cecff99c85.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_115e16c12c306c5b209748be5188f8c5aced7d77.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/epaper/react-native-fetch-blob/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5aca1188aec5f45a7580589b8537e9a8a4d9a86f">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/epaper-react-native-fetch-blob-unspecified_4b76404c36f963c2192674484d0480551d759baf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.1/99895d4dc6d79efbb74360f13c556d95533ad8f8/rxjava-2.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="99895d4dc6d79efbb74360f13c556d95533ad8f8">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/rxjava-2.1.1_d23a6f7c9eb953310f45712b59267c5e4daf6d3c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/sturm/Desktop/epaper/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.3.1_aa816741594212c0caf532eef9fe59d159bea1d2.jar" />
     </item>
 
 </items>

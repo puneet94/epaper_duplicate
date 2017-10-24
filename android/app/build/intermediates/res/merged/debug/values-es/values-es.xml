@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="zero">Ninguna anotación</item>
+        <item quantity="one">%d anotación</item>
+        <item quantity="other">%d anotaciones</item>
+        <item quantity="few">%d anotaciones</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="one">%d página</item>
+        <item quantity="other">%d páginas</item>
+        <item quantity="few">%d páginas</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="zero">Ningún resultado</item>
+        <item quantity="one">%d resultado</item>
+        <item quantity="other">%d resultados</item>
+        <item quantity="few">%d resultados</item>
+    </plurals>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Ir a la pantalla de inicio"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
@@ -19,70 +36,188 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Compartir con"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Compartir con %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Contraer"</string>
-    <string msgid="366047012176970604" name="cast_casting_to_device">"Enviando a %1$s"</string>
-    <string msgid="2888745622334830481" name="cast_closed_captions">"Subtítulos"</string>
-    <string msgid="4476421850100851087" name="cast_closed_captions_unavailable">"Subtítulos no disponibles"</string>
-    <string msgid="4431992200264667209" name="cast_disconnect">"Desconectar"</string>
-    <string msgid="8886260998635257149" name="cast_expanded_controller_background_image">"Portada del álbum"</string>
-    <string msgid="7334411994450681286" name="cast_expanded_controller_loading">"Cargando…"</string>
-    <string msgid="7884080323096468593" name="cast_forward">"Avanzar"</string>
-    <string msgid="6424889955881797947" name="cast_forward_10">"Avanzar 10 segundos"</string>
-    <string msgid="7868672855975238403" name="cast_forward_30">"Avanzar 30 segundos"</string>
-    <string msgid="6885943100773268783" name="cast_intro_overlay_button_text">"@android:string/ok"</string>
-    <string msgid="5637297909372905371" name="cast_mute">"Silenciar"</string>
-    <string msgid="5319032370587661362" name="cast_notification_connected_message">"Conectado a <ns1:g id="NAME">%1$s</ns1:g>"</string>
-    <string msgid="2758865089947797888" name="cast_notification_connecting_message">"Conectando a <ns1:g id="NAME">%1$s</ns1:g>"</string>
-    <string msgid="5232008641593292969" name="cast_notification_disconnect">"Desconectar"</string>
-    <string msgid="5308503786390460607" name="cast_pause">"Pausar"</string>
-    <string msgid="5906987965619702702" name="cast_play">"Reproducir"</string>
-    <string msgid="1739665135565985480" name="cast_rewind">"Rebobinar"</string>
-    <string msgid="6432793028560778843" name="cast_rewind_10">"Rebobinar 10 segundos"</string>
-    <string msgid="4677199707225681325" name="cast_rewind_30">"Rebobinar 30 segundos"</string>
-    <string msgid="9078075166993780241" name="cast_seek_bar">"Control para buscar posición de reproducción"</string>
-    <string msgid="3991548379225047363" name="cast_skip_next">"Saltar al siguiente elemento"</string>
-    <string msgid="8369073097776576935" name="cast_skip_prev">"Saltar al elemento anterior"</string>
-    <string msgid="9191388946729723891" name="cast_stop">"Detener"</string>
-    <string msgid="1219622777438777099" name="cast_stop_live_stream">"Detener streaming en directo"</string>
-    <string msgid="4250321332248956563" name="cast_tracks_chooser_dialog_audio">"Audio"</string>
-    <string msgid="1162380934229249476" name="cast_tracks_chooser_dialog_cancel">"Cancelar"</string>
-    <string msgid="3012268736704635952" name="cast_tracks_chooser_dialog_default_track_name">"Pista <ns1:g id="POSITION">%1$d</ns1:g>"</string>
-    <string msgid="5563446400083425854" name="cast_tracks_chooser_dialog_no_audio_tracks">"No hay pistas de audio disponibles"</string>
-    <string msgid="7413336699113748535" name="cast_tracks_chooser_dialog_no_text_tracks">"No hay pistas de texto disponibles"</string>
-    <string msgid="2332432312191219516" name="cast_tracks_chooser_dialog_no_tracks_available">"No hay pistas disponibles"</string>
-    <string msgid="1176688358580178396" name="cast_tracks_chooser_dialog_none">"Ninguna"</string>
-    <string msgid="3804878371876790270" name="cast_tracks_chooser_dialog_ok">"Aceptar"</string>
-    <string msgid="2454147715032376208" name="cast_tracks_chooser_dialog_subtitles">"Subtítulos"</string>
-    <string msgid="2913461521603516868" name="cast_unmute">"Activar sonido"</string>
-    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Habilitar"</string>
-    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no funcionará hasta que no habilites Servicios de Google Play."</string>
-    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Habilita Servicios de Google Play"</string>
-    <string msgid="7118643132557593940" name="common_google_play_services_install_button">"Descargar Servicios de Google Play"</string>
-    <string msgid="1666261992894286769" name="common_google_play_services_install_text_phone">"<ns1:g id="APP_NAME">%1$s</ns1:g> no se ejecutará si Servicios de Google Play no está instalado en tu teléfono."</string>
-    <string msgid="1701766622451829291" name="common_google_play_services_install_text_tablet">"<ns1:g id="APP_NAME">%1$s</ns1:g> no se ejecutará si Servicios de Google Play no está instalado en tu tablet."</string>
-    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Descargar Servicios de Google Play"</string>
-    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Error de Servicios de Google Play"</string>
-    <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> tiene problemas conServicios de Google Play. Si el problema persiste, ponte en contacto con el desarrollador para obtener ayuda."</string>
-    <string msgid="1064791666906610763" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> se basa en Servicios de Google Play, pero no es compatible con tu dispositivo. Ponte en contacto con el fabricante para obtener asistencia."</string>
-    <string msgid="539866123733096737" name="common_google_play_services_unsupported_title">"Servicios de Google Play"</string>
-    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Actualizar"</string>
-    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no funcionará hasta que no actualicesServicios de Google Play."</string>
-    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Actualiza Servicios de Google Play"</string>
-    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no se ejecutará hasta que finalice la actualización en curso de Servicios de Google Play."</string>
-    <string msgid="2270671469198016014" name="common_google_play_services_updating_title">"Actualizando Servicios de Google Play"</string>
-    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Se necesita una nueva versión de Servicios de Google Play. Se actualizará en breve."</string>
-    <string msgid="5201977337835724196" name="common_open_on_phone">"Abrir en teléfono"</string>
-    <string msgid="3441753203274453993" name="common_signin_button_text">"Iniciar sesión"</string>
-    <string msgid="669893613918351210" name="common_signin_button_text_long">"Iniciar sesión con Google"</string>
-    <string msgid="8327680881775995150" name="mr_media_route_button_content_description">"Enviar contenido"</string>
-    <string msgid="7553005460920830010" name="mr_media_route_chooser_searching">"Buscando dispositivos…"</string>
-    <string msgid="7106830097177242655" name="mr_media_route_chooser_title">"Conectar a dispositivo"</string>
-    <string msgid="109793632378378069" name="mr_media_route_controller_disconnect">"Desconectar"</string>
-    <string msgid="3641544772007543920" name="mr_media_route_controller_no_info_available">"No hay información disponible"</string>
-    <string msgid="8315773974194466049" name="mr_media_route_controller_pause">"Pausa"</string>
-    <string msgid="5214423499524760404" name="mr_media_route_controller_play">"Reproducir"</string>
-    <string msgid="379358765881274425" name="mr_media_route_controller_settings_description">"Ajustes de ruta"</string>
-    <string msgid="5398645111664294430" name="mr_media_route_controller_stop">"Dejar de enviar contenido"</string>
-    <string msgid="5441529851481176817" name="mr_system_route_name">"Sistema"</string>
-    <string msgid="7498112907524977311" name="mr_user_route_category_name">"Dispositivos"</string>
+    <string name="exo_controls_fastforward_description">"Avance rápido"</string>
+    <string name="exo_controls_next_description">"Siguiente canción"</string>
+    <string name="exo_controls_pause_description">"Pausar"</string>
+    <string name="exo_controls_play_description">"Reproducir"</string>
+    <string name="exo_controls_previous_description">"Canción anterior"</string>
+    <string name="exo_controls_rewind_description">"Rebobinar"</string>
+    <string name="exo_controls_stop_description">"Detener"</string>
+    <string name="pspdf__action_menu_copy">Copiar</string>
+    <string name="pspdf__action_menu_speak">Voz</string>
+    <string name="pspdf__activity_menu_no_outline">Sin contorno</string>
+    <string name="pspdf__activity_menu_outline">Contorno</string>
+    <string name="pspdf__activity_menu_pagegrid">Cuadrícula</string>
+    <string name="pspdf__activity_menu_search">Buscar</string>
+    <string name="pspdf__activity_menu_settings">Ajustes</string>
+    <string name="pspdf__activity_title_unnamed_document">PDF sin nombre</string>
+    <string name="pspdf__add">Añadir</string>
+    <string name="pspdf__add_bookmark">Añadir marcador</string>
+    <string name="pspdf__add_page">Añadir página</string>
+    <string name="pspdf__add_signature">Añadir firma</string>
+    <string name="pspdf__all">Todo</string>
+    <string name="pspdf__annotation_creator_author_name">Nombre del autor</string>
+    <string name="pspdf__annotation_creator_info_text">Escriba el nombre de autor que desea usar al insertar nuevas anotaciones.</string>
+    <string name="pspdf__annotation_editing_embed">Incrustar anotaciones</string>
+    <string name="pspdf__annotation_editing_embed_description">Las anotaciones se incrustan en el PDF y seguirán siendo editables.</string>
+    <string name="pspdf__annotation_editing_flatten">Acoplar anotaciones</string>
+    <string name="pspdf__annotation_editing_flatten_description">Las anotaciones se plasman en el PDF y no se pueden modificar.</string>
+    <string name="pspdf__annotation_editing_ignore">Ignorar anotaciones</string>
+    <string name="pspdf__annotation_editing_ignore_description">El PDF no contendrá ninguna anotación.</string>
+    <string name="pspdf__annotation_list_page">Página %1$d</string>
+    <string name="pspdf__annotation_type_camera">Cámara</string>
+    <string name="pspdf__annotation_type_circle">Elipse</string>
+    <string name="pspdf__annotation_type_freetext">Texto</string>
+    <string name="pspdf__annotation_type_highlight">Resaltado</string>
+    <string name="pspdf__annotation_type_ink">Dibujo</string>
+    <string name="pspdf__annotation_type_line">Línea</string>
+    <string name="pspdf__annotation_type_link">Enlace</string>
+    <string name="pspdf__annotation_type_note">Nota</string>
+    <string name="pspdf__annotation_type_polygon">Polígono</string>
+    <string name="pspdf__annotation_type_polyline">Polilínea</string>
+    <string name="pspdf__annotation_type_rich_media">Multimedia</string>
+    <string name="pspdf__annotation_type_screen">Pantalla</string>
+    <string name="pspdf__annotation_type_sound">Sonido</string>
+    <string name="pspdf__annotation_type_square">Rectángulo</string>
+    <string name="pspdf__annotation_type_squiggly">Garabato</string>
+    <string name="pspdf__annotation_type_stamp">Sello</string>
+    <string name="pspdf__annotation_type_strikeout">Tachado</string>
+    <string name="pspdf__annotation_type_underline">Subrayado</string>
+    <string name="pspdf__annotations">Anotaciones</string>
+    <string name="pspdf__bookmarked">Con marcador</string>
+    <string name="pspdf__bookmarks">Marcadores</string>
+    <string name="pspdf__clear">Borrar</string>
+    <string name="pspdf__close">Cerrar</string>
+    <string name="pspdf__copy">Copiar</string>
+    <string name="pspdf__create_stamp">Crear sello</string>
+    <string name="pspdf__current_page">Página actual (%1$d)</string>
+    <string name="pspdf__custom_stamp">Personalizado</string>
+    <string name="pspdf__custom_value">Valor personalizado</string>
+    <string name="pspdf__custom_value_hint">Escriba el valor o selecciónelo en la lista</string>
+    <string name="pspdf__customer_signature">Firma personal</string>
+    <string name="pspdf__date_switch">Fecha</string>
+    <string name="pspdf__default_values">Valores predeterminados</string>
+    <string name="pspdf__delete">Eliminar</string>
+    <string name="pspdf__delete_pages">Eliminar páginas</string>
+    <string name="pspdf__document_could_not_be_saved">El documento no se ha podido guardar.</string>
+    <string name="pspdf__document_edit_not_supported">Este documento no permite la edición.</string>
+    <string name="pspdf__document_name">Nombre del documento</string>
+    <string name="pspdf__done">OK</string>
+    <string name="pspdf__duplicate_pages">Duplicar páginas</string>
+    <string name="pspdf__edit">Editar</string>
+    <string name="pspdf__edit_menu_color">Color</string>
+    <string name="pspdf__edit_menu_fill_color">Color de relleno</string>
+    <string name="pspdf__edit_menu_freetext">Texto</string>
+    <string name="pspdf__edit_menu_highlight">Resaltado</string>
+    <string name="pspdf__edit_menu_ink">Dibujo</string>
+    <string name="pspdf__edit_menu_note">Nota</string>
+    <string name="pspdf__edit_menu_squiggly">Garabato</string>
+    <string name="pspdf__edit_menu_strikeout">Tachado</string>
+    <string name="pspdf__edit_menu_underline">Subrayado</string>
+    <string name="pspdf__export_pages">Exportar páginas</string>
+    <string name="pspdf__exporting">Exportando…</string>
+    <string name="pspdf__file_not_available">Ha ocurrido un error desconocido al intentar abrir este archivo.</string>
+    <string name="pspdf__forms_clear_field">Borrar campo</string>
+    <string name="pspdf__fragment_password_hint">Escriba la contraseña.</string>
+    <string name="pspdf__gallery_item_img_desc">Imagen</string>
+    <string name="pspdf__landscape">Horizontal</string>
+    <string name="pspdf__loading">Cargando…</string>
+    <string name="pspdf__more_options">Más opciones</string>
+    <string name="pspdf__my_signature">Mi firma</string>
+    <string name="pspdf__name">Nombre</string>
+    <string name="pspdf__no_annotations">Ninguna anotación</string>
+    <string name="pspdf__no_applications_found">No hay instalada ninguna aplicación que pueda abrir documentos PDF.</string>
+    <string name="pspdf__no_bookmarks">No hay marcadores</string>
+    <string name="pspdf__no_signatures">No hay firmas</string>
+    <string name="pspdf__ok">Aceptar</string>
+    <string name="pspdf__open">Abrir</string>
+    <string name="pspdf__orientation">Orientación</string>
+    <string name="pspdf__page_overlay">%1$d de %2$d</string>
+    <string name="pspdf__page_overlay_double_page">%1$d-%2$d de %3$d</string>
+    <string name="pspdf__page_overlay_with_label">%1$s (%2$d de %3$d)</string>
+    <string name="pspdf__page_pattern_dot_5mm">Puntos 5mm</string>
+    <string name="pspdf__page_pattern_grid_5mm">Cuadrícula 5mm</string>
+    <string name="pspdf__page_pattern_line_5mm">Líneas 5mm</string>
+    <string name="pspdf__page_pattern_line_7mm">Líneas 7mm</string>
+    <string name="pspdf__page_pattern_none">Ninguna</string>
+    <string name="pspdf__page_range">Intervalo</string>
+    <string name="pspdf__page_size_a4">A4</string>
+    <string name="pspdf__page_size_a5">A5</string>
+    <string name="pspdf__page_size_us_legal">Legal EE. UU.</string>
+    <string name="pspdf__page_size_us_letter">Carta EE. UU.</string>
+    <string name="pspdf__page_with_number">Página %1$d</string>
+    <string name="pspdf__pages">Páginas</string>
+    <string name="pspdf__password">Contraseña</string>
+    <string name="pspdf__picker_line_end">Fin de línea</string>
+    <string name="pspdf__picker_line_ends_fill_color">Color de inicio y de fin</string>
+    <string name="pspdf__picker_line_start">Inicio</string>
+    <string name="pspdf__picker_line_style">Estilo de línea</string>
+    <string name="pspdf__picker_thickness">Grosor</string>
+    <string name="pspdf__portrait">Vertical</string>
+    <string name="pspdf__print">Imprimir</string>
+    <string name="pspdf__print_with_annotations">Imprimir con anotaciones</string>
+    <string name="pspdf__print_without_annotations">Imprimir sin anotaciones</string>
+    <string name="pspdf__redo">Rehacer</string>
+    <string name="pspdf__remove">Borrar</string>
+    <string name="pspdf__remove_bookmark">Eliminar marcador</string>
+    <string name="pspdf__replace">Reemplazar</string>
+    <string name="pspdf__replace_file_message">Ya hay un archivo llamado «%1$s» en el destino seleccionado. ¿Desea reemplazarlo?</string>
+    <string name="pspdf__rotate_pages">Girar páginas</string>
+    <string name="pspdf__sample">Muestra</string>
+    <string name="pspdf__save">Guardar</string>
+    <string name="pspdf__save_as">Guardar como…</string>
+    <string name="pspdf__saving">Guardando…</string>
+    <string name="pspdf__search_btn_next">Siguiente</string>
+    <string name="pspdf__search_btn_previous">Anterior</string>
+    <string name="pspdf__search_complete">Búsqueda finalizada</string>
+    <string name="pspdf__search_hint">Buscar</string>
+    <string name="pspdf__search_no_matches">Ningún resultado</string>
+    <string name="pspdf__search_outline_hint">Buscar en esquema</string>
+    <string name="pspdf__search_result_of">%1$d de %2$d</string>
+    <string name="pspdf__settings_menu_auto">Automático</string>
+    <string name="pspdf__settings_menu_continuous">Continuo</string>
+    <string name="pspdf__settings_menu_default">Por omisión</string>
+    <string name="pspdf__settings_menu_double">Doble</string>
+    <string name="pspdf__settings_menu_horizontal">Horizontal</string>
+    <string name="pspdf__settings_menu_jump">Salto</string>
+    <string name="pspdf__settings_menu_keep_screen_on">Mantener la pantalla encendida</string>
+    <string name="pspdf__settings_menu_night">Noche</string>
+    <string name="pspdf__settings_menu_page_layout">Presentación de página</string>
+    <string name="pspdf__settings_menu_page_transition">Transición de página</string>
+    <string name="pspdf__settings_menu_scroll_direction">Dirección de desplazamiento</string>
+    <string name="pspdf__settings_menu_single">Individual</string>
+    <string name="pspdf__settings_menu_theme">Tema</string>
+    <string name="pspdf__settings_menu_vertical">Vertical</string>
+    <string name="pspdf__share">Compartir</string>
+    <string name="pspdf__signature">Firma</string>
+    <string name="pspdf__signature_sign_here">Firme aquí</string>
+    <string name="pspdf__signatures">Firmas</string>
+    <string name="pspdf__size">Tamaño</string>
+    <string name="pspdf__stamp_accepted">Aceptado</string>
+    <string name="pspdf__stamp_approved">Aprobado</string>
+    <string name="pspdf__stamp_completed">Completado</string>
+    <string name="pspdf__stamp_confidential">Confidencial</string>
+    <string name="pspdf__stamp_draft">Borrador</string>
+    <string name="pspdf__stamp_final">Definitivo</string>
+    <string name="pspdf__stamp_for_comment">Comentar</string>
+    <string name="pspdf__stamp_for_public_release">Para divulgar</string>
+    <string name="pspdf__stamp_information_only">Solo informativo</string>
+    <string name="pspdf__stamp_initial_here">Iniciales aquí</string>
+    <string name="pspdf__stamp_not_approved">No aprobado</string>
+    <string name="pspdf__stamp_not_for_public_release">No divulgar</string>
+    <string name="pspdf__stamp_preliminary_results">Resultados preliminares</string>
+    <string name="pspdf__stamp_rejected">Rechazado</string>
+    <string name="pspdf__stamp_revised">Revisado</string>
+    <string name="pspdf__stamp_sign_here">Firmar aquí</string>
+    <string name="pspdf__stamp_text">Texto del sello</string>
+    <string name="pspdf__stamp_void">Nulo</string>
+    <string name="pspdf__stamp_witness">Testigo</string>
+    <string name="pspdf__text_copied_to_clipboard">Texto copiado al portapapeles.</string>
+    <string name="pspdf__time_switch">Hora</string>
+    <string name="pspdf__tts_not_available">El servicio de texto a voz no está disponible. Compruebe que tenga conexión a internet o que haya instalado el sistema de conversión de texto a voz de Google en su dispositivo y esté activado.</string>
+    <string name="pspdf__undo">Deshacer</string>
+    <string name="pspdf__unit_pt">%1$s pt</string>
+    <string name="pspdf__use_document_size">Usar tamaño de documento</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Buscar"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"+999"</string>
 </resources>

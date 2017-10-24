@@ -995,7 +995,7 @@
                     "endOffset": 155
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -1014,7 +1014,7 @@
                     "endOffset": 263
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -1033,7 +1033,7 @@
                     "endOffset": 386
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -1052,7 +1052,7 @@
                     "endOffset": 490
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -1067,17 +1067,17 @@
                     "startLine": 6,
                     "startColumn": 4,
                     "startOffset": 495,
-                    "endColumn": 116,
-                    "endOffset": 607
+                    "endColumn": 113,
+                    "endOffset": 604
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
                         "startOffset": 495,
-                        "endColumn": 116,
-                        "endOffset": 607
+                        "endColumn": 113,
+                        "endOffset": 604
                     }
                 }
             },
@@ -1085,18 +1085,18 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 612,
+                    "startOffset": 609,
                     "endColumn": 85,
-                    "endOffset": 693
+                    "endOffset": 690
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 612,
+                        "startOffset": 609,
                         "endColumn": 85,
-                        "endOffset": 693
+                        "endOffset": 690
                     }
                 }
             },
@@ -1104,18 +1104,18 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 698,
+                    "startOffset": 695,
                     "endColumn": 110,
-                    "endOffset": 804
+                    "endOffset": 801
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 698,
+                        "startOffset": 695,
                         "endColumn": 110,
-                        "endOffset": 804
+                        "endOffset": 801
                     }
                 }
             },
@@ -1123,18 +1123,18 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 809,
+                    "startOffset": 806,
                     "endColumn": 115,
-                    "endOffset": 920
+                    "endOffset": 917
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 809,
+                        "startOffset": 806,
                         "endColumn": 115,
-                        "endOffset": 920
+                        "endOffset": 917
                     }
                 }
             },
@@ -1142,18 +1142,18 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 925,
+                    "startOffset": 922,
                     "endColumn": 79,
-                    "endOffset": 1000
+                    "endOffset": 997
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 925,
+                        "startOffset": 922,
                         "endColumn": 79,
-                        "endOffset": 1000
+                        "endOffset": 997
                     }
                 }
             },
@@ -1161,18 +1161,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 1005,
+                    "startOffset": 1002,
                     "endColumn": 78,
-                    "endOffset": 1079
+                    "endOffset": 1076
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 1005,
+                        "startOffset": 1002,
                         "endColumn": 78,
-                        "endOffset": 1079
+                        "endOffset": 1076
                     }
                 }
             },
@@ -1180,18 +1180,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1084,
+                    "startOffset": 1081,
                     "endColumn": 83,
-                    "endOffset": 1163
+                    "endOffset": 1160
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1084,
+                        "startOffset": 1081,
                         "endColumn": 83,
-                        "endOffset": 1163
+                        "endOffset": 1160
                     }
                 }
             },
@@ -1199,18 +1199,18 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 1168,
+                    "startOffset": 1165,
                     "endColumn": 108,
-                    "endOffset": 1272
+                    "endOffset": 1269
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1168,
+                        "startOffset": 1165,
                         "endColumn": 108,
-                        "endOffset": 1272
+                        "endOffset": 1269
                     }
                 }
             },
@@ -1218,18 +1218,18 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 1277,
+                    "startOffset": 1274,
                     "endColumn": 106,
-                    "endOffset": 1379
+                    "endOffset": 1376
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1277,
+                        "startOffset": 1274,
                         "endColumn": 106,
-                        "endOffset": 1379
+                        "endOffset": 1376
                     }
                 }
             },
@@ -1237,18 +1237,18 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 1384,
+                    "startOffset": 1381,
                     "endColumn": 100,
-                    "endOffset": 1480
+                    "endOffset": 1477
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1384,
+                        "startOffset": 1381,
                         "endColumn": 100,
-                        "endOffset": 1480
+                        "endOffset": 1477
                     }
                 }
             },
@@ -1256,18 +1256,18 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1485,
+                    "startOffset": 1482,
                     "endColumn": 107,
-                    "endOffset": 1588
+                    "endOffset": 1585
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1485,
+                        "startOffset": 1482,
                         "endColumn": 107,
-                        "endOffset": 1588
+                        "endOffset": 1585
                     }
                 }
             },
@@ -1275,18 +1275,18 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1593,
+                    "startOffset": 1590,
                     "endColumn": 104,
-                    "endOffset": 1693
+                    "endOffset": 1690
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 1593,
+                        "startOffset": 1590,
                         "endColumn": 104,
-                        "endOffset": 1693
+                        "endOffset": 1690
                     }
                 }
             },
@@ -1294,18 +1294,18 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1698,
-                    "endColumn": 104,
-                    "endOffset": 1798
+                    "startOffset": 1695,
+                    "endColumn": 106,
+                    "endOffset": 1797
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 1698,
-                        "endColumn": 104,
-                        "endOffset": 1798
+                        "startOffset": 1695,
+                        "endColumn": 106,
+                        "endOffset": 1797
                     }
                 }
             },
@@ -1313,18 +1313,18 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1803,
-                    "endColumn": 98,
-                    "endOffset": 1897
+                    "startOffset": 1802,
+                    "endColumn": 123,
+                    "endOffset": 1921
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 1803,
-                        "endColumn": 98,
-                        "endOffset": 1897
+                        "startOffset": 1802,
+                        "endColumn": 123,
+                        "endOffset": 1921
                     }
                 }
             },
@@ -1332,18 +1332,18 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1902,
-                    "endColumn": 119,
-                    "endOffset": 2017
+                    "startOffset": 1926,
+                    "endColumn": 98,
+                    "endOffset": 2020
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 282,
-                        "endColumn": 119,
-                        "endOffset": 397
+                        "startOffset": 1926,
+                        "endColumn": 98,
+                        "endOffset": 2020
                     }
                 }
             },
@@ -1351,18 +1351,18 @@
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 2022,
-                    "endColumn": 113,
-                    "endOffset": 2131
+                    "startOffset": 2025,
+                    "endColumn": 84,
+                    "endOffset": 2105
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 402,
-                        "endColumn": 113,
-                        "endOffset": 511
+                        "startOffset": 55,
+                        "endColumn": 84,
+                        "endOffset": 135
                     }
                 }
             },
@@ -1370,18 +1370,18 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 2136,
-                    "endColumn": 104,
-                    "endOffset": 2236
+                    "startOffset": 2110,
+                    "endColumn": 74,
+                    "endOffset": 2180
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 516,
-                        "endColumn": 104,
-                        "endOffset": 616
+                        "startOffset": 140,
+                        "endColumn": 74,
+                        "endOffset": 210
                     }
                 }
             },
@@ -1389,18 +1389,18 @@
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 2241,
-                    "endColumn": 99,
-                    "endOffset": 2336
+                    "startOffset": 2185,
+                    "endColumn": 77,
+                    "endOffset": 2258
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 621,
-                        "endColumn": 99,
-                        "endOffset": 716
+                        "startOffset": 215,
+                        "endColumn": 77,
+                        "endOffset": 288
                     }
                 }
             },
@@ -1408,18 +1408,18 @@
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 2341,
-                    "endColumn": 127,
-                    "endOffset": 2464
+                    "startOffset": 2263,
+                    "endColumn": 71,
+                    "endOffset": 2330
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 721,
-                        "endColumn": 127,
-                        "endOffset": 844
+                        "startOffset": 293,
+                        "endColumn": 71,
+                        "endOffset": 360
                     }
                 }
             },
@@ -1427,18 +1427,18 @@
                 "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 2469,
-                    "endColumn": 106,
-                    "endOffset": 2571
+                    "startOffset": 2335,
+                    "endColumn": 78,
+                    "endOffset": 2409
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 849,
-                        "endColumn": 106,
-                        "endOffset": 951
+                        "startOffset": 365,
+                        "endColumn": 78,
+                        "endOffset": 439
                     }
                 }
             },
@@ -1446,18 +1446,18 @@
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 2576,
-                    "endColumn": 100,
-                    "endOffset": 2672
+                    "startOffset": 2414,
+                    "endColumn": 78,
+                    "endOffset": 2488
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 956,
-                        "endColumn": 100,
-                        "endOffset": 1052
+                        "startOffset": 444,
+                        "endColumn": 78,
+                        "endOffset": 518
                     }
                 }
             },
@@ -1465,18 +1465,18 @@
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 2677,
-                    "endColumn": 128,
-                    "endOffset": 2801
+                    "startOffset": 2493,
+                    "endColumn": 70,
+                    "endOffset": 2559
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 1057,
-                        "endColumn": 128,
-                        "endOffset": 1181
+                        "startOffset": 523,
+                        "endColumn": 70,
+                        "endOffset": 589
                     }
                 }
             },
@@ -1484,18 +1484,18 @@
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 2806,
-                    "endColumn": 114,
-                    "endOffset": 2916
+                    "startOffset": 2564,
+                    "endColumn": 83,
+                    "endOffset": 2643
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 1186,
-                        "endColumn": 114,
-                        "endOffset": 1296
+                        "startOffset": 2025,
+                        "endColumn": 83,
+                        "endOffset": 2104
                     }
                 }
             },
@@ -1503,56 +1503,18 @@
                 "to": {
                     "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 2921,
-                    "endColumn": 84,
-                    "endOffset": 3001
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-uz-rUZ/values-uz-rUZ.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1301,
-                        "endColumn": 84,
-                        "endOffset": 1381
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 30,
-                    "startColumn": 4,
-                    "startOffset": 3006,
-                    "endColumn": 96,
-                    "endOffset": 3098
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-uz-rUZ/values-uz-rUZ.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1386,
-                        "endColumn": 96,
-                        "endOffset": 1478
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 31,
-                    "startColumn": 4,
-                    "startOffset": 3103,
+                    "startOffset": 2648,
                     "endColumn": 100,
-                    "endOffset": 3199
+                    "endOffset": 2744
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-uz-rUZ/values-uz-rUZ.xml",
                     "position": {
-                        "startLine": 20,
+                        "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 1902,
+                        "startOffset": 2109,
                         "endColumn": 100,
-                        "endOffset": 1998
+                        "endOffset": 2205
                     }
                 }
             }

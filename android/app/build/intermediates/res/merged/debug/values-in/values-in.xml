@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="zero">Tak ada anotasi</item>
+        <item quantity="one">%d Anotasi</item>
+        <item quantity="other">%d Anotasi</item>
+        <item quantity="few">%d Anotasi</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="one">%d Halaman</item>
+        <item quantity="other">%d Halaman</item>
+        <item quantity="few">%d Halaman</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="zero">Tak ada yang cocok</item>
+        <item quantity="one">Ditemukan %d yang cocok</item>
+        <item quantity="other">Ditemukan %d yang cocok</item>
+        <item quantity="few">Ditemukan %d yang cocok</item>
+    </plurals>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Navigasi ke beranda"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
@@ -19,70 +36,188 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Bagikan dengan"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Bagikan dengan %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Ciutkan"</string>
-    <string msgid="366047012176970604" name="cast_casting_to_device">"Mentransmisi ke %1$s"</string>
-    <string msgid="2888745622334830481" name="cast_closed_captions">"Teks tertutup"</string>
-    <string msgid="4476421850100851087" name="cast_closed_captions_unavailable">"Teks tertutup tidak tersedia"</string>
-    <string msgid="4431992200264667209" name="cast_disconnect">"Putuskan sambungan"</string>
-    <string msgid="8886260998635257149" name="cast_expanded_controller_background_image">"Sampul album"</string>
-    <string msgid="7334411994450681286" name="cast_expanded_controller_loading">"Memuat..."</string>
-    <string msgid="7884080323096468593" name="cast_forward">"Maju"</string>
-    <string msgid="6424889955881797947" name="cast_forward_10">"Maju sepuluh detik"</string>
-    <string msgid="7868672855975238403" name="cast_forward_30">"Maju tiga puluh detik"</string>
-    <string msgid="6885943100773268783" name="cast_intro_overlay_button_text">"@android:string/ok"</string>
-    <string msgid="5637297909372905371" name="cast_mute">"Bisukan"</string>
-    <string msgid="5319032370587661362" name="cast_notification_connected_message">"Tersambung ke <ns1:g id="NAME">%1$s</ns1:g>"</string>
-    <string msgid="2758865089947797888" name="cast_notification_connecting_message">"Menyambung ke <ns1:g id="NAME">%1$s</ns1:g>"</string>
-    <string msgid="5232008641593292969" name="cast_notification_disconnect">"Putuskan sambungan"</string>
-    <string msgid="5308503786390460607" name="cast_pause">"Jeda"</string>
-    <string msgid="5906987965619702702" name="cast_play">"Putar"</string>
-    <string msgid="1739665135565985480" name="cast_rewind">"Putar Mundur"</string>
-    <string msgid="6432793028560778843" name="cast_rewind_10">"Putar mundur sepuluh detik"</string>
-    <string msgid="4677199707225681325" name="cast_rewind_30">"Putar mundur tiga puluh detik"</string>
-    <string msgid="9078075166993780241" name="cast_seek_bar">"Kontrol pencari pemutaran"</string>
-    <string msgid="3991548379225047363" name="cast_skip_next">"Lewati ke item berikutnya"</string>
-    <string msgid="8369073097776576935" name="cast_skip_prev">"Lewati ke item sebelumnya"</string>
-    <string msgid="9191388946729723891" name="cast_stop">"Berhenti"</string>
-    <string msgid="1219622777438777099" name="cast_stop_live_stream">"Berhenti streaming langsung"</string>
-    <string msgid="4250321332248956563" name="cast_tracks_chooser_dialog_audio">"Audio"</string>
-    <string msgid="1162380934229249476" name="cast_tracks_chooser_dialog_cancel">"Batal"</string>
-    <string msgid="3012268736704635952" name="cast_tracks_chooser_dialog_default_track_name">"Lacak <ns1:g id="POSITION">%1$d</ns1:g>"</string>
-    <string msgid="5563446400083425854" name="cast_tracks_chooser_dialog_no_audio_tracks">"Trek Audio Tidak Tersedia"</string>
-    <string msgid="7413336699113748535" name="cast_tracks_chooser_dialog_no_text_tracks">"Trek Teks Tidak Tersedia"</string>
-    <string msgid="2332432312191219516" name="cast_tracks_chooser_dialog_no_tracks_available">"Trek tidak tersedia"</string>
-    <string msgid="1176688358580178396" name="cast_tracks_chooser_dialog_none">"Tidak Ada"</string>
-    <string msgid="3804878371876790270" name="cast_tracks_chooser_dialog_ok">"Oke"</string>
-    <string msgid="2454147715032376208" name="cast_tracks_chooser_dialog_subtitles">"Subtitel"</string>
-    <string msgid="2913461521603516868" name="cast_unmute">"Suarakan"</string>
-    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Aktifkan"</string>
-    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> tidak akan berfungsi jika layanan Google Play tidak diaktifkan."</string>
-    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Aktifkan layanan Google Play"</string>
-    <string msgid="7118643132557593940" name="common_google_play_services_install_button">"Dapatkan layanan Google Play"</string>
-    <string msgid="1666261992894286769" name="common_google_play_services_install_text_phone">"<ns1:g id="APP_NAME">%1$s</ns1:g> tidak akan berjalan tanpa layanan Google Play, yang tidak ada di ponsel Anda."</string>
-    <string msgid="1701766622451829291" name="common_google_play_services_install_text_tablet">"<ns1:g id="APP_NAME">%1$s</ns1:g> tidak akan berjalan tanpa layanan Google Play, yang tidak ada di tablet Anda."</string>
-    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Dapatkan layanan Google Play"</string>
-    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Kesalahan layanan Google Play"</string>
-    <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> kesulitan dengan layanan Google Play. Jika masalah terus berlanjut, hubungi pengembang untuk mendapatkan bantuan."</string>
-    <string msgid="1064791666906610763" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> memerlukan layanan Google Play, yang tidak didukung oleh perangkat Anda. Hubungi pabrikan untuk mendapat bantuan."</string>
-    <string msgid="539866123733096737" name="common_google_play_services_unsupported_title">"Layanan Google Play"</string>
-    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Perbarui"</string>
-    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> tidak akan berjalan jika layanan Google Play tidak diperbarui."</string>
-    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Perbarui layanan Google Play"</string>
-    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> tidak akan berjalan tanpa layanan Google Play, yang saat ini sedang diperbarui."</string>
-    <string msgid="2270671469198016014" name="common_google_play_services_updating_title">"Layanan Google Play sedang diperbarui"</string>
-    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Perlu versi baru layanan Google Play. Akan segera memperbarui sendiri."</string>
-    <string msgid="5201977337835724196" name="common_open_on_phone">"Buka di ponsel"</string>
-    <string msgid="3441753203274453993" name="common_signin_button_text">"Masuk"</string>
-    <string msgid="669893613918351210" name="common_signin_button_text_long">"Masuk dengan Google"</string>
-    <string msgid="8327680881775995150" name="mr_media_route_button_content_description">"Transmisi"</string>
-    <string msgid="7553005460920830010" name="mr_media_route_chooser_searching">"Menelusuri perangkat…"</string>
-    <string msgid="7106830097177242655" name="mr_media_route_chooser_title">"Sambungkan ke perangkat"</string>
-    <string msgid="109793632378378069" name="mr_media_route_controller_disconnect">"Putuskan sambungan"</string>
-    <string msgid="3641544772007543920" name="mr_media_route_controller_no_info_available">"Tidak ada info yang tersedia"</string>
-    <string msgid="8315773974194466049" name="mr_media_route_controller_pause">"Jeda"</string>
-    <string msgid="5214423499524760404" name="mr_media_route_controller_play">"Putar"</string>
-    <string msgid="379358765881274425" name="mr_media_route_controller_settings_description">"Setelan rute"</string>
-    <string msgid="5398645111664294430" name="mr_media_route_controller_stop">"Hentikan transmisi"</string>
-    <string msgid="5441529851481176817" name="mr_system_route_name">"Sistem"</string>
-    <string msgid="7498112907524977311" name="mr_user_route_category_name">"Perangkat"</string>
+    <string name="exo_controls_fastforward_description">"Maju cepat"</string>
+    <string name="exo_controls_next_description">"Lagu berikutnya"</string>
+    <string name="exo_controls_pause_description">"Jeda"</string>
+    <string name="exo_controls_play_description">"Putar"</string>
+    <string name="exo_controls_previous_description">"Lagu sebelumnya"</string>
+    <string name="exo_controls_rewind_description">"Putar Ulang"</string>
+    <string name="exo_controls_stop_description">"Berhenti"</string>
+    <string name="pspdf__action_menu_copy">Salin</string>
+    <string name="pspdf__action_menu_speak">Ucapkan</string>
+    <string name="pspdf__activity_menu_no_outline">Tidak Ada Kerangka</string>
+    <string name="pspdf__activity_menu_outline">Kerangka</string>
+    <string name="pspdf__activity_menu_pagegrid">Kisi</string>
+    <string name="pspdf__activity_menu_search">Cari</string>
+    <string name="pspdf__activity_menu_settings">Pengaturan</string>
+    <string name="pspdf__activity_title_unnamed_document">PDF tanpa nama</string>
+    <string name="pspdf__add">Tambah</string>
+    <string name="pspdf__add_bookmark">Beri Penanda</string>
+    <string name="pspdf__add_page">Tambah Halaman</string>
+    <string name="pspdf__add_signature">Tambah Tanda Tangan</string>
+    <string name="pspdf__all">Semua</string>
+    <string name="pspdf__annotation_creator_author_name">Nama Penulis</string>
+    <string name="pspdf__annotation_creator_info_text">Masukkan nama penulis yang ingin digunakan untuk anotasi yang baru disisipkan.</string>
+    <string name="pspdf__annotation_editing_embed">Lekatkan anotasi</string>
+    <string name="pspdf__annotation_editing_embed_description">Anotasi tetap dapat diedit dan dilekatkan ke PDF.</string>
+    <string name="pspdf__annotation_editing_flatten">Gabungkan Anotasi</string>
+    <string name="pspdf__annotation_editing_flatten_description">Anotasi disertakan di PDF dan hanya dapat dibaca.</string>
+    <string name="pspdf__annotation_editing_ignore">Abaikan Anotasi</string>
+    <string name="pspdf__annotation_editing_ignore_description">PDF tidak akan berisi anotasi apa pun.</string>
+    <string name="pspdf__annotation_list_page">Halaman %1$d</string>
+    <string name="pspdf__annotation_type_camera">Kamera</string>
+    <string name="pspdf__annotation_type_circle">Elips</string>
+    <string name="pspdf__annotation_type_freetext">Teks</string>
+    <string name="pspdf__annotation_type_highlight">Sorotan</string>
+    <string name="pspdf__annotation_type_ink">Tinta</string>
+    <string name="pspdf__annotation_type_line">Garis</string>
+    <string name="pspdf__annotation_type_link">Tautan</string>
+    <string name="pspdf__annotation_type_note">Catatan</string>
+    <string name="pspdf__annotation_type_polygon">Poligon</string>
+    <string name="pspdf__annotation_type_polyline">Polyline</string>
+    <string name="pspdf__annotation_type_rich_media">Media Kaya</string>
+    <string name="pspdf__annotation_type_screen">Layar</string>
+    <string name="pspdf__annotation_type_sound">Bunyi</string>
+    <string name="pspdf__annotation_type_square">Persegi Panjang</string>
+    <string name="pspdf__annotation_type_squiggly">Garis Lekak-lekuk</string>
+    <string name="pspdf__annotation_type_stamp">Stempel</string>
+    <string name="pspdf__annotation_type_strikeout">Coret</string>
+    <string name="pspdf__annotation_type_underline">Garis Bawah</string>
+    <string name="pspdf__annotations">Anotasi</string>
+    <string name="pspdf__bookmarked">Ditandai</string>
+    <string name="pspdf__bookmarks">Penanda</string>
+    <string name="pspdf__clear">Bersihkan</string>
+    <string name="pspdf__close">Tutup</string>
+    <string name="pspdf__copy">Salin</string>
+    <string name="pspdf__create_stamp">Buat Stempel</string>
+    <string name="pspdf__current_page">Halaman Saat Ini (%1$d)</string>
+    <string name="pspdf__custom_stamp">Khusus</string>
+    <string name="pspdf__custom_value">Nilai Khusus</string>
+    <string name="pspdf__custom_value_hint">Ketik nilai atau pilih dari daftar</string>
+    <string name="pspdf__customer_signature">Tanda Tangan Satu Kali</string>
+    <string name="pspdf__date_switch">Tanggal</string>
+    <string name="pspdf__default_values">Nilai Default</string>
+    <string name="pspdf__delete">Hapus</string>
+    <string name="pspdf__delete_pages">Hapus Halaman</string>
+    <string name="pspdf__document_could_not_be_saved">Dokumen tidak dapat disimpan.</string>
+    <string name="pspdf__document_edit_not_supported">Dokumen ini tidak mendukung pengeditan.</string>
+    <string name="pspdf__document_name">Nama Dokumen</string>
+    <string name="pspdf__done">Selesai</string>
+    <string name="pspdf__duplicate_pages">Duplikatkan Halaman</string>
+    <string name="pspdf__edit">Edit</string>
+    <string name="pspdf__edit_menu_color">Warna</string>
+    <string name="pspdf__edit_menu_fill_color">Warna Isi</string>
+    <string name="pspdf__edit_menu_freetext">Teks</string>
+    <string name="pspdf__edit_menu_highlight">Sorotan</string>
+    <string name="pspdf__edit_menu_ink">Tinta</string>
+    <string name="pspdf__edit_menu_note">Catatan</string>
+    <string name="pspdf__edit_menu_squiggly">Garis Lekak-lekuk</string>
+    <string name="pspdf__edit_menu_strikeout">Coret</string>
+    <string name="pspdf__edit_menu_underline">Garis Bawah</string>
+    <string name="pspdf__export_pages">Ekspor Halaman</string>
+    <string name="pspdf__exporting">Mengekspor…</string>
+    <string name="pspdf__file_not_available">Terjadi kesalahan yang tidak diketahui saat coba membuka file ini.</string>
+    <string name="pspdf__forms_clear_field">Bersihkan Bidang</string>
+    <string name="pspdf__fragment_password_hint">Masukkan kata sandi.</string>
+    <string name="pspdf__gallery_item_img_desc">Gambar</string>
+    <string name="pspdf__landscape">Lanskap</string>
+    <string name="pspdf__loading">Memuat…</string>
+    <string name="pspdf__more_options">Opsi lainnya</string>
+    <string name="pspdf__my_signature">Tanda Tangan Saya</string>
+    <string name="pspdf__name">Nama</string>
+    <string name="pspdf__no_annotations">Tak ada anotasi</string>
+    <string name="pspdf__no_applications_found">Tidak ada aplikasi terinstal yang dapat membuka dokumen PDF.</string>
+    <string name="pspdf__no_bookmarks">Tidak Ada Penanda</string>
+    <string name="pspdf__no_signatures">Tidak Ada Tanda Tangan</string>
+    <string name="pspdf__ok">OKE</string>
+    <string name="pspdf__open">Buka</string>
+    <string name="pspdf__orientation">Orientasi</string>
+    <string name="pspdf__page_overlay">%1$d dari %2$d</string>
+    <string name="pspdf__page_overlay_double_page">%1$d-%2$d dari %3$d</string>
+    <string name="pspdf__page_overlay_with_label">%1$s (%2$d dari %3$d)</string>
+    <string name="pspdf__page_pattern_dot_5mm">Titik 5mm</string>
+    <string name="pspdf__page_pattern_grid_5mm">Kisi 5mm</string>
+    <string name="pspdf__page_pattern_line_5mm">Baris 5mm</string>
+    <string name="pspdf__page_pattern_line_7mm">Baris 7mm</string>
+    <string name="pspdf__page_pattern_none">Tidak ada</string>
+    <string name="pspdf__page_range">Rentang</string>
+    <string name="pspdf__page_size_a4">A4</string>
+    <string name="pspdf__page_size_a5">A5</string>
+    <string name="pspdf__page_size_us_legal">Legal AS</string>
+    <string name="pspdf__page_size_us_letter">Letter AS</string>
+    <string name="pspdf__page_with_number">Halaman %1$d</string>
+    <string name="pspdf__pages">Halaman</string>
+    <string name="pspdf__password">Kata Sandi</string>
+    <string name="pspdf__picker_line_end">Garis Berakhir</string>
+    <string name="pspdf__picker_line_ends_fill_color">Warna Awal dan Akhir</string>
+    <string name="pspdf__picker_line_start">Garis Mulai</string>
+    <string name="pspdf__picker_line_style">Gaya Garis</string>
+    <string name="pspdf__picker_thickness">Ketebalan</string>
+    <string name="pspdf__portrait">Potret</string>
+    <string name="pspdf__print">Cetak</string>
+    <string name="pspdf__print_with_annotations">Cetak bersama anotasi</string>
+    <string name="pspdf__print_without_annotations">Cetak tanpa anotasi</string>
+    <string name="pspdf__redo">Ulangi</string>
+    <string name="pspdf__remove">Hapus</string>
+    <string name="pspdf__remove_bookmark">Hapus Penanda</string>
+    <string name="pspdf__replace">Ganti</string>
+    <string name="pspdf__replace_file_message">File bernama "%1$s" sudah ada di tujuan yang dipilih. Apakah Anda ingin menggantinya?</string>
+    <string name="pspdf__rotate_pages">Putar Halaman</string>
+    <string name="pspdf__sample">Contoh</string>
+    <string name="pspdf__save">Simpan</string>
+    <string name="pspdf__save_as">Simpan Sebagai…</string>
+    <string name="pspdf__saving">Menyimpan…</string>
+    <string name="pspdf__search_btn_next">Berikutnya</string>
+    <string name="pspdf__search_btn_previous">Sebelumnya</string>
+    <string name="pspdf__search_complete">Pencarian Selesai</string>
+    <string name="pspdf__search_hint">Cari</string>
+    <string name="pspdf__search_no_matches">Tak ada yang cocok</string>
+    <string name="pspdf__search_outline_hint">Cari di Kerangka</string>
+    <string name="pspdf__search_result_of">%1$d dari %2$d</string>
+    <string name="pspdf__settings_menu_auto">Otomatis</string>
+    <string name="pspdf__settings_menu_continuous">Kontinu</string>
+    <string name="pspdf__settings_menu_default">Pola</string>
+    <string name="pspdf__settings_menu_double">Ganda</string>
+    <string name="pspdf__settings_menu_horizontal">Lanskap</string>
+    <string name="pspdf__settings_menu_jump">Lompat</string>
+    <string name="pspdf__settings_menu_keep_screen_on">Layar Tetap Menyala</string>
+    <string name="pspdf__settings_menu_night">Malam</string>
+    <string name="pspdf__settings_menu_page_layout">Tata Letak Halaman</string>
+    <string name="pspdf__settings_menu_page_transition">Transisi Halaman</string>
+    <string name="pspdf__settings_menu_scroll_direction">Arah Gulir</string>
+    <string name="pspdf__settings_menu_single">Tunggal</string>
+    <string name="pspdf__settings_menu_theme">Tema</string>
+    <string name="pspdf__settings_menu_vertical">Vertikal</string>
+    <string name="pspdf__share">Bagikan</string>
+    <string name="pspdf__signature">Tanda Tangan</string>
+    <string name="pspdf__signature_sign_here">Tanda tangan di sini</string>
+    <string name="pspdf__signatures">Tanda Tangan</string>
+    <string name="pspdf__size">Ukuran</string>
+    <string name="pspdf__stamp_accepted">Diterima</string>
+    <string name="pspdf__stamp_approved">Disetujui</string>
+    <string name="pspdf__stamp_completed">Selesai</string>
+    <string name="pspdf__stamp_confidential">Rahasia</string>
+    <string name="pspdf__stamp_draft">Draf</string>
+    <string name="pspdf__stamp_final">Akhir</string>
+    <string name="pspdf__stamp_for_comment">Untuk Komentar</string>
+    <string name="pspdf__stamp_for_public_release">Untuk Rilis Publik</string>
+    <string name="pspdf__stamp_information_only">Hanya informasi</string>
+    <string name="pspdf__stamp_initial_here">Inisial Di Sini</string>
+    <string name="pspdf__stamp_not_approved">Belum Disetujui</string>
+    <string name="pspdf__stamp_not_for_public_release">Bukan Untuk Rilis Publik</string>
+    <string name="pspdf__stamp_preliminary_results">Hasil Awal</string>
+    <string name="pspdf__stamp_rejected">Ditolak</string>
+    <string name="pspdf__stamp_revised">Revisi</string>
+    <string name="pspdf__stamp_sign_here">Tandai Di Sini</string>
+    <string name="pspdf__stamp_text">Teks Stempel</string>
+    <string name="pspdf__stamp_void">Kosong</string>
+    <string name="pspdf__stamp_witness">Tanda</string>
+    <string name="pspdf__text_copied_to_clipboard">Teks disalin ke papan klip.</string>
+    <string name="pspdf__time_switch">Waktu</string>
+    <string name="pspdf__tts_not_available">Layanan Teks-ke-suara tidak tersedia. Pastikan koneksi internet Anda aktif atau mesin Teks-ke-suara Google terinstal dan diaktifkan di perangkat Anda.</string>
+    <string name="pspdf__undo">Kembalikan</string>
+    <string name="pspdf__unit_pt">%1$s poin</string>
+    <string name="pspdf__use_document_size">Gunakan Ukuran Dokumen</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Telusuri"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="zero">沒有註解</item>
+        <item quantity="one">%d個註解</item>
+        <item quantity="other">%d個註解</item>
+        <item quantity="few">%d個註解</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="one">%d頁</item>
+        <item quantity="other">%d頁</item>
+        <item quantity="few">%d頁</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="zero">找不到配對</item>
+        <item quantity="one">找到%d個配對</item>
+        <item quantity="other">找到%d個配對</item>
+        <item quantity="few">找到%d個配對</item>
+    </plurals>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"瀏覽首頁"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s：%2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s - %2$s：%3$s"</string>
@@ -19,70 +36,188 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"選擇分享對象"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"與「%s」分享"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"收合"</string>
-    <string msgid="366047012176970604" name="cast_casting_to_device">"正在投放到 %s"</string>
-    <string msgid="2888745622334830481" name="cast_closed_captions">"隱藏式輔助字幕"</string>
-    <string msgid="4476421850100851087" name="cast_closed_captions_unavailable">"無法使用隱藏式輔助字幕"</string>
-    <string msgid="4431992200264667209" name="cast_disconnect">"中斷連線"</string>
-    <string msgid="8886260998635257149" name="cast_expanded_controller_background_image">"專輯封面"</string>
-    <string msgid="7334411994450681286" name="cast_expanded_controller_loading">"載入中…"</string>
-    <string msgid="7884080323096468593" name="cast_forward">"快轉"</string>
-    <string msgid="6424889955881797947" name="cast_forward_10">"快轉 10 秒"</string>
-    <string msgid="7868672855975238403" name="cast_forward_30">"快轉 30 秒"</string>
-    <string msgid="6885943100773268783" name="cast_intro_overlay_button_text">"@android:string/ok"</string>
-    <string msgid="5637297909372905371" name="cast_mute">"靜音"</string>
-    <string msgid="5319032370587661362" name="cast_notification_connected_message">"已連線至「<ns1:g id="NAME">%1$s</ns1:g>」"</string>
-    <string msgid="2758865089947797888" name="cast_notification_connecting_message">"正在連線至「<ns1:g id="NAME">%1$s</ns1:g>」"</string>
-    <string msgid="5232008641593292969" name="cast_notification_disconnect">"中斷連線"</string>
-    <string msgid="5308503786390460607" name="cast_pause">"暫停"</string>
-    <string msgid="5906987965619702702" name="cast_play">"播放"</string>
-    <string msgid="1739665135565985480" name="cast_rewind">"倒轉"</string>
-    <string msgid="6432793028560778843" name="cast_rewind_10">"倒轉 10 秒"</string>
-    <string msgid="4677199707225681325" name="cast_rewind_30">"倒轉 30 秒"</string>
-    <string msgid="9078075166993780241" name="cast_seek_bar">"播放搜尋控制介面"</string>
-    <string msgid="3991548379225047363" name="cast_skip_next">"跳到下一個項目"</string>
-    <string msgid="8369073097776576935" name="cast_skip_prev">"跳到上一個項目"</string>
-    <string msgid="9191388946729723891" name="cast_stop">"停止"</string>
-    <string msgid="1219622777438777099" name="cast_stop_live_stream">"停止即時串流"</string>
-    <string msgid="4250321332248956563" name="cast_tracks_chooser_dialog_audio">"音訊"</string>
-    <string msgid="1162380934229249476" name="cast_tracks_chooser_dialog_cancel">"取消"</string>
-    <string msgid="3012268736704635952" name="cast_tracks_chooser_dialog_default_track_name">"第 <ns1:g id="POSITION">%1$d</ns1:g> 軌"</string>
-    <string msgid="5563446400083425854" name="cast_tracks_chooser_dialog_no_audio_tracks">"沒有任何可用的音軌"</string>
-    <string msgid="7413336699113748535" name="cast_tracks_chooser_dialog_no_text_tracks">"沒有任何可用的文字軌"</string>
-    <string msgid="2332432312191219516" name="cast_tracks_chooser_dialog_no_tracks_available">"沒有任何可用的歌曲"</string>
-    <string msgid="1176688358580178396" name="cast_tracks_chooser_dialog_none">"無"</string>
-    <string msgid="3804878371876790270" name="cast_tracks_chooser_dialog_ok">"確定"</string>
-    <string msgid="2454147715032376208" name="cast_tracks_chooser_dialog_subtitles">"字幕"</string>
-    <string msgid="2913461521603516868" name="cast_unmute">"取消靜音"</string>
-    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"啟用"</string>
-    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"您必須啟用 Google Play 服務，才能執行「<ns1:g id="APP_NAME">%1$s</ns1:g>」。"</string>
-    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"啟用 Google Play 服務"</string>
-    <string msgid="7118643132557593940" name="common_google_play_services_install_button">"取得 Google Play 服務"</string>
-    <string msgid="1666261992894286769" name="common_google_play_services_install_text_phone">"您的手機並未安裝 Google Play 服務，因此無法執行「<ns1:g id="APP_NAME">%1$s</ns1:g>」。"</string>
-    <string msgid="1701766622451829291" name="common_google_play_services_install_text_tablet">"您的平板電腦並未安裝 Google Play 服務，因此無法執行「<ns1:g id="APP_NAME">%1$s</ns1:g>」。"</string>
-    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"取得 Google Play 服務"</string>
-    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Google Play 服務發生錯誤"</string>
-    <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"「<ns1:g id="APP_NAME">%1$s</ns1:g>」無法存取 Google Play 服務。如果問題無法解決，請與開發人員聯絡，向對方尋求協助。"</string>
-    <string msgid="1064791666906610763" name="common_google_play_services_unsupported_text">"「<ns1:g id="APP_NAME">%1$s</ns1:g>」需要搭配 Google Play 服務才能運作，但您的裝置並不支援相關服務。請與您的裝置製造商聯絡以尋求協助。"</string>
-    <string msgid="539866123733096737" name="common_google_play_services_unsupported_title">"Google Play 服務"</string>
-    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"更新"</string>
-    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"您必須更新 Google Play 服務，才能執行「<ns1:g id="APP_NAME">%1$s</ns1:g>」。"</string>
-    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"更新 Google Play 服務"</string>
-    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"執行「<ns1:g id="APP_NAME">%1$s</ns1:g>」所需的 Google Play 服務正在更新。"</string>
-    <string msgid="2270671469198016014" name="common_google_play_services_updating_title">"Google Play 服務更新中"</string>
-    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"必須使用新版 Google Play 服務。該服務稍後就會自動更新。"</string>
-    <string msgid="5201977337835724196" name="common_open_on_phone">"在手機上開啟"</string>
-    <string msgid="3441753203274453993" name="common_signin_button_text">"登入"</string>
-    <string msgid="669893613918351210" name="common_signin_button_text_long">"使用 Google 帳戶登入"</string>
-    <string msgid="8327680881775995150" name="mr_media_route_button_content_description">"投放"</string>
-    <string msgid="7553005460920830010" name="mr_media_route_chooser_searching">"正在搜尋裝置..."</string>
-    <string msgid="7106830097177242655" name="mr_media_route_chooser_title">"連線至裝置"</string>
-    <string msgid="109793632378378069" name="mr_media_route_controller_disconnect">"中斷連線"</string>
-    <string msgid="3641544772007543920" name="mr_media_route_controller_no_info_available">"沒有可用的資訊"</string>
-    <string msgid="8315773974194466049" name="mr_media_route_controller_pause">"暫停"</string>
-    <string msgid="5214423499524760404" name="mr_media_route_controller_play">"播放"</string>
-    <string msgid="379358765881274425" name="mr_media_route_controller_settings_description">"路由設定"</string>
-    <string msgid="5398645111664294430" name="mr_media_route_controller_stop">"停止投放"</string>
-    <string msgid="5441529851481176817" name="mr_system_route_name">"系統"</string>
-    <string msgid="7498112907524977311" name="mr_user_route_category_name">"裝置"</string>
+    <string name="exo_controls_fastforward_description">"快轉"</string>
+    <string name="exo_controls_next_description">"下一首曲目"</string>
+    <string name="exo_controls_pause_description">"暫停"</string>
+    <string name="exo_controls_play_description">"播放"</string>
+    <string name="exo_controls_previous_description">"上一首曲目"</string>
+    <string name="exo_controls_rewind_description">"倒轉"</string>
+    <string name="exo_controls_stop_description">"停止"</string>
+    <string name="pspdf__action_menu_copy">複製</string>
+    <string name="pspdf__action_menu_speak">朗讀</string>
+    <string name="pspdf__activity_menu_no_outline">無輪廓</string>
+    <string name="pspdf__activity_menu_outline">中空字</string>
+    <string name="pspdf__activity_menu_pagegrid">格框</string>
+    <string name="pspdf__activity_menu_search">搜尋</string>
+    <string name="pspdf__activity_menu_settings">設定</string>
+    <string name="pspdf__activity_title_unnamed_document">無名PDF</string>
+    <string name="pspdf__add">加入</string>
+    <string name="pspdf__add_bookmark">添加書籤</string>
+    <string name="pspdf__add_page">添加頁面</string>
+    <string name="pspdf__add_signature">加上簽名</string>
+    <string name="pspdf__all">全部</string>
+    <string name="pspdf__annotation_creator_author_name">作者名字</string>
+    <string name="pspdf__annotation_creator_info_text">請為新註釋加入自選的作者名字。</string>
+    <string name="pspdf__annotation_editing_embed">嵌入註釋</string>
+    <string name="pspdf__annotation_editing_embed_description">註釋仍然可以編輯，並嵌進PDF中。</string>
+    <string name="pspdf__annotation_editing_flatten">展平註釋</string>
+    <string name="pspdf__annotation_editing_flatten_description">註釋在PDF中呈現，只能讀取。</string>
+    <string name="pspdf__annotation_editing_ignore">不理會註釋</string>
+    <string name="pspdf__annotation_editing_ignore_description">此 PDF 不會包含任何註釋。</string>
+    <string name="pspdf__annotation_list_page">第%1$d頁</string>
+    <string name="pspdf__annotation_type_camera">相機</string>
+    <string name="pspdf__annotation_type_circle">橢圓形</string>
+    <string name="pspdf__annotation_type_freetext">文字</string>
+    <string name="pspdf__annotation_type_highlight">螢光標示</string>
+    <string name="pspdf__annotation_type_ink">墨水</string>
+    <string name="pspdf__annotation_type_line">線條</string>
+    <string name="pspdf__annotation_type_link">連結</string>
+    <string name="pspdf__annotation_type_note">備忘</string>
+    <string name="pspdf__annotation_type_polygon">多邊形</string>
+    <string name="pspdf__annotation_type_polyline">多點線</string>
+    <string name="pspdf__annotation_type_rich_media">富媒體</string>
+    <string name="pspdf__annotation_type_screen">螢幕</string>
+    <string name="pspdf__annotation_type_sound">音效</string>
+    <string name="pspdf__annotation_type_square">長方形</string>
+    <string name="pspdf__annotation_type_squiggly">波浪線</string>
+    <string name="pspdf__annotation_type_stamp">印章</string>
+    <string name="pspdf__annotation_type_strikeout">刪除線</string>
+    <string name="pspdf__annotation_type_underline">底線</string>
+    <string name="pspdf__annotations">註解</string>
+    <string name="pspdf__bookmarked">已加入書籤</string>
+    <string name="pspdf__bookmarks">書籤</string>
+    <string name="pspdf__clear">清除</string>
+    <string name="pspdf__close">關閉</string>
+    <string name="pspdf__copy">複製</string>
+    <string name="pspdf__create_stamp">自訂印章</string>
+    <string name="pspdf__current_page">當前頁面（%1$d）</string>
+    <string name="pspdf__custom_stamp">自定</string>
+    <string name="pspdf__custom_value">自選值</string>
+    <string name="pspdf__custom_value_hint">鍵入數值，或從清單中選擇</string>
+    <string name="pspdf__customer_signature">一次性簽名</string>
+    <string name="pspdf__date_switch">日期</string>
+    <string name="pspdf__default_values">預設值</string>
+    <string name="pspdf__delete">刪除</string>
+    <string name="pspdf__delete_pages">刪除頁面</string>
+    <string name="pspdf__document_could_not_be_saved">未能儲存此文件。</string>
+    <string name="pspdf__document_edit_not_supported">此文件不支援編輯功能。</string>
+    <string name="pspdf__document_name">文件名稱</string>
+    <string name="pspdf__done">完成</string>
+    <string name="pspdf__duplicate_pages">複製頁面</string>
+    <string name="pspdf__edit">編輯</string>
+    <string name="pspdf__edit_menu_color">顏色</string>
+    <string name="pspdf__edit_menu_fill_color">填充顏色</string>
+    <string name="pspdf__edit_menu_freetext">文字</string>
+    <string name="pspdf__edit_menu_highlight">螢光標示</string>
+    <string name="pspdf__edit_menu_ink">墨水</string>
+    <string name="pspdf__edit_menu_note">備忘</string>
+    <string name="pspdf__edit_menu_squiggly">波浪線</string>
+    <string name="pspdf__edit_menu_strikeout">刪除線</string>
+    <string name="pspdf__edit_menu_underline">底線</string>
+    <string name="pspdf__export_pages">輸出頁面</string>
+    <string name="pspdf__exporting">正在輸出…</string>
+    <string name="pspdf__file_not_available">嘗試打開這個檔案時，出現了不明錯誤。</string>
+    <string name="pspdf__forms_clear_field">刪除</string>
+    <string name="pspdf__fragment_password_hint">請鍵入密碼。</string>
+    <string name="pspdf__gallery_item_img_desc">影像</string>
+    <string name="pspdf__landscape">橫向</string>
+    <string name="pspdf__loading">正在載入…</string>
+    <string name="pspdf__more_options">更多選項</string>
+    <string name="pspdf__my_signature">我的簽名</string>
+    <string name="pspdf__name">名字</string>
+    <string name="pspdf__no_annotations">沒有註解</string>
+    <string name="pspdf__no_applications_found">沒有安裝可以打開 PDF 檔案的應用程序。</string>
+    <string name="pspdf__no_bookmarks">無書籤</string>
+    <string name="pspdf__no_signatures">無簽署</string>
+    <string name="pspdf__ok">好</string>
+    <string name="pspdf__open">打開</string>
+    <string name="pspdf__orientation">方向</string>
+    <string name="pspdf__page_overlay">%1$d／%2$d頁</string>
+    <string name="pspdf__page_overlay_double_page">第%1$d至%2$d頁（全%3$d頁）</string>
+    <string name="pspdf__page_overlay_with_label">%1$s（%2$d／%3$d）</string>
+    <string name="pspdf__page_pattern_dot_5mm">點：5毫米</string>
+    <string name="pspdf__page_pattern_grid_5mm">格子：5毫米</string>
+    <string name="pspdf__page_pattern_line_5mm">線條：5毫米</string>
+    <string name="pspdf__page_pattern_line_7mm">線條：7毫米</string>
+    <string name="pspdf__page_pattern_none">無</string>
+    <string name="pspdf__page_range">範圍</string>
+    <string name="pspdf__page_size_a4">A4</string>
+    <string name="pspdf__page_size_a5">A5</string>
+    <string name="pspdf__page_size_us_legal">US Legal</string>
+    <string name="pspdf__page_size_us_letter">US Letter</string>
+    <string name="pspdf__page_with_number">第%1$d頁</string>
+    <string name="pspdf__pages">頁面</string>
+    <string name="pspdf__password">密碼</string>
+    <string name="pspdf__picker_line_end">線條終端</string>
+    <string name="pspdf__picker_line_ends_fill_color">起始與結束顏色</string>
+    <string name="pspdf__picker_line_start">線條開始</string>
+    <string name="pspdf__picker_line_style">線條樣式</string>
+    <string name="pspdf__picker_thickness">粗細</string>
+    <string name="pspdf__portrait">縱向</string>
+    <string name="pspdf__print">列印</string>
+    <string name="pspdf__print_with_annotations">連同註釋打印</string>
+    <string name="pspdf__print_without_annotations">打印文件（不包括註釋）</string>
+    <string name="pspdf__redo">重作</string>
+    <string name="pspdf__remove">刪除</string>
+    <string name="pspdf__remove_bookmark">刪除書籤</string>
+    <string name="pspdf__replace">替換</string>
+    <string name="pspdf__replace_file_message">你選取的目的地已有名為「%1$s」的檔案。要替換它嗎？</string>
+    <string name="pspdf__rotate_pages">旋轉頁面</string>
+    <string name="pspdf__sample">樣本</string>
+    <string name="pspdf__save">儲存</string>
+    <string name="pspdf__save_as">儲存為…</string>
+    <string name="pspdf__saving">正在儲存…</string>
+    <string name="pspdf__search_btn_next">下一步</string>
+    <string name="pspdf__search_btn_previous">上一個</string>
+    <string name="pspdf__search_complete">搜尋完畢</string>
+    <string name="pspdf__search_hint">搜尋</string>
+    <string name="pspdf__search_no_matches">找不到配對</string>
+    <string name="pspdf__search_outline_hint">搜尋大綱</string>
+    <string name="pspdf__search_result_of">%1$d／%2$d頁</string>
+    <string name="pspdf__settings_menu_auto">自動</string>
+    <string name="pspdf__settings_menu_continuous">連續</string>
+    <string name="pspdf__settings_menu_default">預設</string>
+    <string name="pspdf__settings_menu_double">雙頁</string>
+    <string name="pspdf__settings_menu_horizontal">橫式</string>
+    <string name="pspdf__settings_menu_jump">跳換</string>
+    <string name="pspdf__settings_menu_keep_screen_on">避免螢幕進入待命狀態</string>
+    <string name="pspdf__settings_menu_night">暗色</string>
+    <string name="pspdf__settings_menu_page_layout">頁面排版</string>
+    <string name="pspdf__settings_menu_page_transition">翻頁</string>
+    <string name="pspdf__settings_menu_scroll_direction">捲動方向</string>
+    <string name="pspdf__settings_menu_single">單頁</string>
+    <string name="pspdf__settings_menu_theme">主題</string>
+    <string name="pspdf__settings_menu_vertical">直式</string>
+    <string name="pspdf__share">分享</string>
+    <string name="pspdf__signature">簽名</string>
+    <string name="pspdf__signature_sign_here">請簽署</string>
+    <string name="pspdf__signatures">簽名檔</string>
+    <string name="pspdf__size">大小</string>
+    <string name="pspdf__stamp_accepted">已收到</string>
+    <string name="pspdf__stamp_approved">已批准</string>
+    <string name="pspdf__stamp_completed">已完成</string>
+    <string name="pspdf__stamp_confidential">密件</string>
+    <string name="pspdf__stamp_draft">草稿</string>
+    <string name="pspdf__stamp_final">終稿</string>
+    <string name="pspdf__stamp_for_comment">供評註</string>
+    <string name="pspdf__stamp_for_public_release">可公佈</string>
+    <string name="pspdf__stamp_information_only">僅供參考</string>
+    <string name="pspdf__stamp_initial_here">這裏草簽</string>
+    <string name="pspdf__stamp_not_approved">未批准</string>
+    <string name="pspdf__stamp_not_for_public_release">不可公佈</string>
+    <string name="pspdf__stamp_preliminary_results">初步結果</string>
+    <string name="pspdf__stamp_rejected">被拒絕</string>
+    <string name="pspdf__stamp_revised">已修訂</string>
+    <string name="pspdf__stamp_sign_here">在此簽名</string>
+    <string name="pspdf__stamp_text">印章文字</string>
+    <string name="pspdf__stamp_void">失效</string>
+    <string name="pspdf__stamp_witness">證人</string>
+    <string name="pspdf__text_copied_to_clipboard">文字已複製到剪貼簿。</string>
+    <string name="pspdf__time_switch">時間</string>
+    <string name="pspdf__tts_not_available">現在不能使用文字轉語音功能。請檢查你的互聯網已連線，或你的裝置中已安裝 Google 的文字轉語音功能，並且它在開啟狀態。</string>
+    <string name="pspdf__undo">還原</string>
+    <string name="pspdf__unit_pt">%1$s 級字</string>
+    <string name="pspdf__use_document_size">使用文件尺寸</string>
+    <string msgid="146198913615257606" name="search_menu_title">"搜尋"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

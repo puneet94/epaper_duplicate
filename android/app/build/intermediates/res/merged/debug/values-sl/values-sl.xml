@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="zero">Brez označb</item>
+        <item quantity="one">%d označba</item>
+        <item quantity="two">%d označbi</item>
+        <item quantity="other">%d označb</item>
+        <item quantity="few">%d označb</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="one">%d stran</item>
+        <item quantity="two">%d strani</item>
+        <item quantity="other">%d strani</item>
+        <item quantity="few">%d strani</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="zero">Ni najdenih zadetkov</item>
+        <item quantity="one">%d najden zadetek</item>
+        <item quantity="two">%d najdena zadetka</item>
+        <item quantity="other">%d najdenih zadetkov</item>
+        <item quantity="few">%d najdenih zadetkov</item>
+    </plurals>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Krmarjenje domov"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
@@ -19,70 +39,188 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Deljenje z"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Deljenje z:"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Strni"</string>
-    <string msgid="366047012176970604" name="cast_casting_to_device">"Predvajanje v: %s"</string>
-    <string msgid="2888745622334830481" name="cast_closed_captions">"Podnapisi"</string>
-    <string msgid="4476421850100851087" name="cast_closed_captions_unavailable">"Podnapisi niso na voljo"</string>
-    <string msgid="4431992200264667209" name="cast_disconnect">"Prekini povezavo"</string>
-    <string msgid="8886260998635257149" name="cast_expanded_controller_background_image">"Naslovnica albuma"</string>
-    <string msgid="7334411994450681286" name="cast_expanded_controller_loading">"Nalaganje …"</string>
-    <string msgid="7884080323096468593" name="cast_forward">"Previj naprej"</string>
-    <string msgid="6424889955881797947" name="cast_forward_10">"Previj za 10 sekund naprej"</string>
-    <string msgid="7868672855975238403" name="cast_forward_30">"Previj za 30 sekund naprej"</string>
-    <string msgid="6885943100773268783" name="cast_intro_overlay_button_text">"@android:string/ok"</string>
-    <string msgid="5637297909372905371" name="cast_mute">"Izklop zvoka"</string>
-    <string msgid="5319032370587661362" name="cast_notification_connected_message">"Vzpostavljena povezava z zaslonom <ns1:g id="NAME">%1$s</ns1:g>"</string>
-    <string msgid="2758865089947797888" name="cast_notification_connecting_message">"Povezovanje z zaslonom <ns1:g id="NAME">%1$s</ns1:g>"</string>
-    <string msgid="5232008641593292969" name="cast_notification_disconnect">"Prekini povezavo"</string>
-    <string msgid="5308503786390460607" name="cast_pause">"Zaustavitev"</string>
-    <string msgid="5906987965619702702" name="cast_play">"Predvajanje"</string>
-    <string msgid="1739665135565985480" name="cast_rewind">"Previj nazaj"</string>
-    <string msgid="6432793028560778843" name="cast_rewind_10">"Previj za 10 sekund nazaj"</string>
-    <string msgid="4677199707225681325" name="cast_rewind_30">"Previj za 30 sekund nazaj"</string>
-    <string msgid="9078075166993780241" name="cast_seek_bar">"Drsnik za predvajanje"</string>
-    <string msgid="3991548379225047363" name="cast_skip_next">"Skoči na naslednji element"</string>
-    <string msgid="8369073097776576935" name="cast_skip_prev">"Skoči na prejšnji element"</string>
-    <string msgid="9191388946729723891" name="cast_stop">"Ustavi"</string>
-    <string msgid="1219622777438777099" name="cast_stop_live_stream">"Ustavi pretočno predvajanje v živo"</string>
-    <string msgid="4250321332248956563" name="cast_tracks_chooser_dialog_audio">"Zvok"</string>
-    <string msgid="1162380934229249476" name="cast_tracks_chooser_dialog_cancel">"Prekliči"</string>
-    <string msgid="3012268736704635952" name="cast_tracks_chooser_dialog_default_track_name">"Skladba št. <ns1:g id="POSITION">%1$d</ns1:g>"</string>
-    <string msgid="5563446400083425854" name="cast_tracks_chooser_dialog_no_audio_tracks">"Noben zvočni posnetek ni na voljo."</string>
-    <string msgid="7413336699113748535" name="cast_tracks_chooser_dialog_no_text_tracks">"Noben posnetek z besedilom ni na voljo."</string>
-    <string msgid="2332432312191219516" name="cast_tracks_chooser_dialog_no_tracks_available">"Noben posnetek ni na voljo."</string>
-    <string msgid="1176688358580178396" name="cast_tracks_chooser_dialog_none">"Brez"</string>
-    <string msgid="3804878371876790270" name="cast_tracks_chooser_dialog_ok">"V redu"</string>
-    <string msgid="2454147715032376208" name="cast_tracks_chooser_dialog_subtitles">"Podnapisi"</string>
-    <string msgid="2913461521603516868" name="cast_unmute">"Vklop zvoka"</string>
-    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Omogoči"</string>
-    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Aplikacija <ns1:g id="APP_NAME">%1$s</ns1:g> ne bo delovala, če ne omogočite storitev Google Play."</string>
-    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Omogočanje storitev Google Play"</string>
-    <string msgid="7118643132557593940" name="common_google_play_services_install_button">"Namesti storitve Google Play"</string>
-    <string msgid="1666261992894286769" name="common_google_play_services_install_text_phone">"Aplikacija <ns1:g id="APP_NAME">%1$s</ns1:g> ne deluje brez storitev Google Play, vendar teh ni v telefonu."</string>
-    <string msgid="1701766622451829291" name="common_google_play_services_install_text_tablet">"Aplikacija <ns1:g id="APP_NAME">%1$s</ns1:g> ne deluje brez storitev Google Play, vendar teh ni v tabličnem računalniku."</string>
-    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Namestitev storitev Google Play"</string>
-    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Napaka storitev Google Play"</string>
-    <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"Aplikacija <ns1:g id="APP_NAME">%1$s</ns1:g> ima težave s storitvami Google Play. Če težava ne bo odpravljena, se za pomoč obrnite na razvijalca."</string>
-    <string msgid="1064791666906610763" name="common_google_play_services_unsupported_text">"Aplikacija <ns1:g id="APP_NAME">%1$s</ns1:g> potrebuje storitve Google Play, ki jih vaša naprava ne podpira. Za pomoč se obrnite na proizvajalca."</string>
-    <string msgid="539866123733096737" name="common_google_play_services_unsupported_title">"Storitve Google Play"</string>
-    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Posodobi"</string>
-    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"Aplikacija <ns1:g id="APP_NAME">%1$s</ns1:g> ne bo delovala, če ne posodobite storitev Google Play."</string>
-    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Posodobitev storitev Google Play"</string>
-    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"Aplikacija <ns1:g id="APP_NAME">%1$s</ns1:g> ne deluje brez storitev Google Play, ki se trenutno posodabljajo."</string>
-    <string msgid="2270671469198016014" name="common_google_play_services_updating_title">"Storitve Google Play se posodabljajo"</string>
-    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Potrebujete novo različico storitev Google Play. V kratkem se bodo posodobile."</string>
-    <string msgid="5201977337835724196" name="common_open_on_phone">"Odpiranje v telefonu"</string>
-    <string msgid="3441753203274453993" name="common_signin_button_text">"Prijava"</string>
-    <string msgid="669893613918351210" name="common_signin_button_text_long">"Prijava z Google Računom"</string>
-    <string msgid="8327680881775995150" name="mr_media_route_button_content_description">"Predvajanje"</string>
-    <string msgid="7553005460920830010" name="mr_media_route_chooser_searching">"Iskanje naprav …"</string>
-    <string msgid="7106830097177242655" name="mr_media_route_chooser_title">"Povezovanje z napravo"</string>
-    <string msgid="109793632378378069" name="mr_media_route_controller_disconnect">"Prekini povezavo"</string>
-    <string msgid="3641544772007543920" name="mr_media_route_controller_no_info_available">"Podatki niso na voljo"</string>
-    <string msgid="8315773974194466049" name="mr_media_route_controller_pause">"Zaustavi"</string>
-    <string msgid="5214423499524760404" name="mr_media_route_controller_play">"Predvajaj"</string>
-    <string msgid="379358765881274425" name="mr_media_route_controller_settings_description">"Nastavitve poti"</string>
-    <string msgid="5398645111664294430" name="mr_media_route_controller_stop">"Ustavi predvajanje"</string>
-    <string msgid="5441529851481176817" name="mr_system_route_name">"Sistem"</string>
-    <string msgid="7498112907524977311" name="mr_user_route_category_name">"Naprave"</string>
+    <string name="exo_controls_fastforward_description">"Previj naprej"</string>
+    <string name="exo_controls_next_description">"Naslednja skladba"</string>
+    <string name="exo_controls_pause_description">"Zaustavi"</string>
+    <string name="exo_controls_play_description">"Predvajaj"</string>
+    <string name="exo_controls_previous_description">"Prejšnja skladba"</string>
+    <string name="exo_controls_rewind_description">"Previj nazaj"</string>
+    <string name="exo_controls_stop_description">"Ustavi"</string>
+    <string name="pspdf__action_menu_copy">Kopiraj</string>
+    <string name="pspdf__action_menu_speak">Govori</string>
+    <string name="pspdf__activity_menu_no_outline">Ni kazala</string>
+    <string name="pspdf__activity_menu_outline">Kazalo</string>
+    <string name="pspdf__activity_menu_pagegrid">Mreža</string>
+    <string name="pspdf__activity_menu_search">Išči</string>
+    <string name="pspdf__activity_menu_settings">Nastavitve</string>
+    <string name="pspdf__activity_title_unnamed_document">Neimenovan PDF</string>
+    <string name="pspdf__add">Dodaj</string>
+    <string name="pspdf__add_bookmark">Dodaj zaznamek</string>
+    <string name="pspdf__add_page">Dodaj stran</string>
+    <string name="pspdf__add_signature">Dodaj podpis</string>
+    <string name="pspdf__all">Vse</string>
+    <string name="pspdf__annotation_creator_author_name">Avtor</string>
+    <string name="pspdf__annotation_creator_info_text">Prosim vnesite ime avtorja za novo ustvarjene označbe.</string>
+    <string name="pspdf__annotation_editing_embed">Vključi označbe</string>
+    <string name="pspdf__annotation_editing_embed_description">Označbe bodo vključene v PDF z možnostjo urejanja.</string>
+    <string name="pspdf__annotation_editing_flatten">Splošči označbe</string>
+    <string name="pspdf__annotation_editing_flatten_description">Označbe bodo izrisane v PDF brez možnosti nadaljnjega urejanja.</string>
+    <string name="pspdf__annotation_editing_ignore">Zavrži označbe</string>
+    <string name="pspdf__annotation_editing_ignore_description">PDF ne bo imel vključenih označb.</string>
+    <string name="pspdf__annotation_list_page">Stran %1$d</string>
+    <string name="pspdf__annotation_type_camera">Kamera</string>
+    <string name="pspdf__annotation_type_circle">Elipsa</string>
+    <string name="pspdf__annotation_type_freetext">Besedilo</string>
+    <string name="pspdf__annotation_type_highlight">Poudarjeno</string>
+    <string name="pspdf__annotation_type_ink">Črnilo</string>
+    <string name="pspdf__annotation_type_line">Črta</string>
+    <string name="pspdf__annotation_type_link">Povezava</string>
+    <string name="pspdf__annotation_type_note">Zapisek</string>
+    <string name="pspdf__annotation_type_polygon">Mnogokotnik</string>
+    <string name="pspdf__annotation_type_polyline">Lomljena črta</string>
+    <string name="pspdf__annotation_type_rich_media">Večpredstavnost</string>
+    <string name="pspdf__annotation_type_screen">Prikazovalnik</string>
+    <string name="pspdf__annotation_type_sound">Zvok</string>
+    <string name="pspdf__annotation_type_square">Pravokotnik</string>
+    <string name="pspdf__annotation_type_squiggly">Vijugasto</string>
+    <string name="pspdf__annotation_type_stamp">Štampiljka</string>
+    <string name="pspdf__annotation_type_strikeout">Prečrtano</string>
+    <string name="pspdf__annotation_type_underline">Podčrtano</string>
+    <string name="pspdf__annotations">Označbe</string>
+    <string name="pspdf__bookmarked">Zaznamovane</string>
+    <string name="pspdf__bookmarks">Zaznamki</string>
+    <string name="pspdf__clear">Počisti</string>
+    <string name="pspdf__close">Zapri</string>
+    <string name="pspdf__copy">Kopiraj</string>
+    <string name="pspdf__create_stamp">Ustvari štampiljko</string>
+    <string name="pspdf__current_page">Trenutna stran (%1$d)</string>
+    <string name="pspdf__custom_stamp">Po meri</string>
+    <string name="pspdf__custom_value">Vrednost po meri</string>
+    <string name="pspdf__custom_value_hint">Vnesite vrednost ali jo izberite iz seznama</string>
+    <string name="pspdf__customer_signature">Podpis stranke</string>
+    <string name="pspdf__date_switch">Datum</string>
+    <string name="pspdf__default_values">Privzete vrednosti</string>
+    <string name="pspdf__delete">Izbriši</string>
+    <string name="pspdf__delete_pages">Izbriši strani</string>
+    <string name="pspdf__document_could_not_be_saved">Dokumenta ni bilo mogoče shraniti.</string>
+    <string name="pspdf__document_edit_not_supported">Ta dokument ne podpira urejanja.</string>
+    <string name="pspdf__document_name">Ime dokcumenta</string>
+    <string name="pspdf__done">Končaj</string>
+    <string name="pspdf__duplicate_pages">Podvoji strani</string>
+    <string name="pspdf__edit">Uredi</string>
+    <string name="pspdf__edit_menu_color">Barva</string>
+    <string name="pspdf__edit_menu_fill_color">Barva polnila</string>
+    <string name="pspdf__edit_menu_freetext">Besedilo</string>
+    <string name="pspdf__edit_menu_highlight">Poudarjeno</string>
+    <string name="pspdf__edit_menu_ink">Črnilo</string>
+    <string name="pspdf__edit_menu_note">Zapisek</string>
+    <string name="pspdf__edit_menu_squiggly">Vijugasto</string>
+    <string name="pspdf__edit_menu_strikeout">Prečrtano</string>
+    <string name="pspdf__edit_menu_underline">Podčrtano</string>
+    <string name="pspdf__export_pages">Izvozi strani</string>
+    <string name="pspdf__exporting">Izvažam…</string>
+    <string name="pspdf__file_not_available">Pri odpiranju datoteke je prišlo do neznane napake.</string>
+    <string name="pspdf__forms_clear_field">Izbriši</string>
+    <string name="pspdf__fragment_password_hint">Prosim vnesite geslo.</string>
+    <string name="pspdf__gallery_item_img_desc">Slika</string>
+    <string name="pspdf__landscape">Ležeče</string>
+    <string name="pspdf__loading">Nalagam…</string>
+    <string name="pspdf__more_options">Več opcij</string>
+    <string name="pspdf__my_signature">Moj podpis</string>
+    <string name="pspdf__name">Ime</string>
+    <string name="pspdf__no_annotations">Brez označb</string>
+    <string name="pspdf__no_applications_found">Ni nameščenih aplikacij, ki bi lahko odprle PDF dokumente.</string>
+    <string name="pspdf__no_bookmarks">Ni zaznamkov</string>
+    <string name="pspdf__no_signatures">Ni podpisov</string>
+    <string name="pspdf__ok">V redu</string>
+    <string name="pspdf__open">Odpri</string>
+    <string name="pspdf__orientation">Orientacija</string>
+    <string name="pspdf__page_overlay">%1$d od %2$d</string>
+    <string name="pspdf__page_overlay_double_page">%1$d-%2$d od %3$d</string>
+    <string name="pspdf__page_overlay_with_label">%1$s (%2$d od %3$d)</string>
+    <string name="pspdf__page_pattern_dot_5mm">5mm pike</string>
+    <string name="pspdf__page_pattern_grid_5mm">5mm mreža</string>
+    <string name="pspdf__page_pattern_line_5mm">5mm črte</string>
+    <string name="pspdf__page_pattern_line_7mm">7mm črte</string>
+    <string name="pspdf__page_pattern_none">Prazna stran</string>
+    <string name="pspdf__page_range">Območje</string>
+    <string name="pspdf__page_size_a4">A4</string>
+    <string name="pspdf__page_size_a5">A5</string>
+    <string name="pspdf__page_size_us_legal">US Legal</string>
+    <string name="pspdf__page_size_us_letter">US Letter</string>
+    <string name="pspdf__page_with_number">Stran %1$d</string>
+    <string name="pspdf__pages">Strani</string>
+    <string name="pspdf__password">Geslo</string>
+    <string name="pspdf__picker_line_end">Konec črte</string>
+    <string name="pspdf__picker_line_ends_fill_color">Barva zaključka</string>
+    <string name="pspdf__picker_line_start">Začetek črte</string>
+    <string name="pspdf__picker_line_style">Slog črte</string>
+    <string name="pspdf__picker_thickness">Debelina</string>
+    <string name="pspdf__portrait">Pokončno</string>
+    <string name="pspdf__print">Natisni</string>
+    <string name="pspdf__print_with_annotations">Natisni z označbami</string>
+    <string name="pspdf__print_without_annotations">Natisni brez označb</string>
+    <string name="pspdf__redo">Uveljavi</string>
+    <string name="pspdf__remove">Odstrani</string>
+    <string name="pspdf__remove_bookmark">Odstrani zaznamek</string>
+    <string name="pspdf__replace">Zamenjaj</string>
+    <string name="pspdf__replace_file_message">Datoteka "%1$s" že obstaja. Jo želite zamenjati?</string>
+    <string name="pspdf__rotate_pages">Obrni strani</string>
+    <string name="pspdf__sample">Vzorec</string>
+    <string name="pspdf__save">Shrani</string>
+    <string name="pspdf__save_as">Shrani kot…</string>
+    <string name="pspdf__saving">Shranjujem…</string>
+    <string name="pspdf__search_btn_next">Naslednji</string>
+    <string name="pspdf__search_btn_previous">Prejšnji</string>
+    <string name="pspdf__search_complete">Iskanje končano</string>
+    <string name="pspdf__search_hint">Išči</string>
+    <string name="pspdf__search_no_matches">Ni najdenih zadetkov</string>
+    <string name="pspdf__search_outline_hint">Išči po kazalu</string>
+    <string name="pspdf__search_result_of">%1$d od %2$d</string>
+    <string name="pspdf__settings_menu_auto">Avtomatično</string>
+    <string name="pspdf__settings_menu_continuous">Zvezno</string>
+    <string name="pspdf__settings_menu_default">Privzeto</string>
+    <string name="pspdf__settings_menu_double">Dvojno</string>
+    <string name="pspdf__settings_menu_horizontal">Vodoravno</string>
+    <string name="pspdf__settings_menu_jump">Samostojno</string>
+    <string name="pspdf__settings_menu_keep_screen_on">Zaslon vedno prižgan</string>
+    <string name="pspdf__settings_menu_night">Noč</string>
+    <string name="pspdf__settings_menu_page_layout">Postavitev strani</string>
+    <string name="pspdf__settings_menu_page_transition">Menjava strani</string>
+    <string name="pspdf__settings_menu_scroll_direction">Smer listanja</string>
+    <string name="pspdf__settings_menu_single">Samostojno</string>
+    <string name="pspdf__settings_menu_theme">Tema</string>
+    <string name="pspdf__settings_menu_vertical">Navpično</string>
+    <string name="pspdf__share">Deli</string>
+    <string name="pspdf__signature">Podpis</string>
+    <string name="pspdf__signature_sign_here">Prosim podpišite tukaj</string>
+    <string name="pspdf__signatures">Podpisi</string>
+    <string name="pspdf__size">Velikost</string>
+    <string name="pspdf__stamp_accepted">Sprejeto</string>
+    <string name="pspdf__stamp_approved">Potrjeno</string>
+    <string name="pspdf__stamp_completed">Zaključeno</string>
+    <string name="pspdf__stamp_confidential">Zaupno</string>
+    <string name="pspdf__stamp_draft">Osnutek</string>
+    <string name="pspdf__stamp_final">Končno</string>
+    <string name="pspdf__stamp_for_comment">Za diskusijo</string>
+    <string name="pspdf__stamp_for_public_release">Za javno objavo</string>
+    <string name="pspdf__stamp_information_only">Samo informativno</string>
+    <string name="pspdf__stamp_initial_here">Parafirajte tukaj</string>
+    <string name="pspdf__stamp_not_approved">Ni potrjeno</string>
+    <string name="pspdf__stamp_not_for_public_release">Ni za javno objavo</string>
+    <string name="pspdf__stamp_preliminary_results">Preliminarni rezultati</string>
+    <string name="pspdf__stamp_rejected">Zavrnjeno</string>
+    <string name="pspdf__stamp_revised">Revidiran</string>
+    <string name="pspdf__stamp_sign_here">Podpišite tukaj</string>
+    <string name="pspdf__stamp_text">Besedilo štampiljke</string>
+    <string name="pspdf__stamp_void">Nično</string>
+    <string name="pspdf__stamp_witness">Priča</string>
+    <string name="pspdf__text_copied_to_clipboard">Besedilo, kopirano v odložišče.</string>
+    <string name="pspdf__time_switch">Čas</string>
+    <string name="pspdf__tts_not_available">Storitev za govor trenutno ni na voljo. Preverite internetno povezavo in namestitev Google TTS.</string>
+    <string name="pspdf__undo">Razveljavi</string>
+    <string name="pspdf__unit_pt">%1$s pt</string>
+    <string name="pspdf__use_document_size">Velikost v dokumentu</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Iskanje"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

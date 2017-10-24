@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
+    <plurals name="pspdf__annotations_number">
+        <item quantity="zero">Δεν υπάρχουν σχόλια</item>
+        <item quantity="one">%d σχόλιο</item>
+        <item quantity="other">%d σχόλια</item>
+        <item quantity="few">%d σχόλια</item>
+    </plurals>
+    <plurals name="pspdf__pages_number">
+        <item quantity="one">%d σελίδα</item>
+        <item quantity="other">%d σελίδες</item>
+        <item quantity="few">%d σελίδες</item>
+    </plurals>
+    <plurals name="pspdf__search_results_found">
+        <item quantity="zero">Δεν βρέθηκαν αποτελέσματα</item>
+        <item quantity="one">Βρέθηκε %d αποτέλεσμα</item>
+        <item quantity="other">Βρέθηκαν %d αποτελέσματα</item>
+        <item quantity="few">Βρέθηκαν %d αποτελέσματα</item>
+    </plurals>
     <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Πλοήγηση στην αρχική σελίδα"</string>
     <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
@@ -19,70 +36,188 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Κοινή χρήση με"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Κοινή χρήση με %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Σύμπτυξη"</string>
-    <string msgid="366047012176970604" name="cast_casting_to_device">"Μετάδοση σε %1$s"</string>
-    <string msgid="2888745622334830481" name="cast_closed_captions">"Υπότιτλοι"</string>
-    <string msgid="4476421850100851087" name="cast_closed_captions_unavailable">"Οι υπότιτλοι δεν είναι διαθέσιμοι"</string>
-    <string msgid="4431992200264667209" name="cast_disconnect">"Αποσύνδεση"</string>
-    <string msgid="8886260998635257149" name="cast_expanded_controller_background_image">"Εξώφυλλο άλμπουμ"</string>
-    <string msgid="7334411994450681286" name="cast_expanded_controller_loading">"Φόρτωση…"</string>
-    <string msgid="7884080323096468593" name="cast_forward">"Προώθηση"</string>
-    <string msgid="6424889955881797947" name="cast_forward_10">"Προώθηση 10 δευτερόλεπτα μπροστά"</string>
-    <string msgid="7868672855975238403" name="cast_forward_30">"Προώθηση 30 δευτερόλεπτα μπροστά"</string>
-    <string msgid="6885943100773268783" name="cast_intro_overlay_button_text">"@android:string/ok"</string>
-    <string msgid="5637297909372905371" name="cast_mute">"Σίγαση"</string>
-    <string msgid="5319032370587661362" name="cast_notification_connected_message">"Συνδέθηκε με το <ns1:g id="NAME">%1$s</ns1:g>"</string>
-    <string msgid="2758865089947797888" name="cast_notification_connecting_message">"Γίνεται σύνδεση με το <ns1:g id="NAME">%1$s</ns1:g>"</string>
-    <string msgid="5232008641593292969" name="cast_notification_disconnect">"Αποσύνδεση"</string>
-    <string msgid="5308503786390460607" name="cast_pause">"Παύση"</string>
-    <string msgid="5906987965619702702" name="cast_play">"Αναπαραγωγή"</string>
-    <string msgid="1739665135565985480" name="cast_rewind">"Επαναφορά"</string>
-    <string msgid="6432793028560778843" name="cast_rewind_10">"Επαναφορά 10 δευτερόλεπτα πίσω"</string>
-    <string msgid="4677199707225681325" name="cast_rewind_30">"Επαναφορά 30 δευτερόλεπτα πίσω"</string>
-    <string msgid="9078075166993780241" name="cast_seek_bar">"Στοιχείο ελέγχου αναζήτησης αναπαραγωγής"</string>
-    <string msgid="3991548379225047363" name="cast_skip_next">"Μετάβαση στο επόμενο στοιχείο"</string>
-    <string msgid="8369073097776576935" name="cast_skip_prev">"Μετάβαση στο προηγούμενο στοιχείο"</string>
-    <string msgid="9191388946729723891" name="cast_stop">"Διακοπή"</string>
-    <string msgid="1219622777438777099" name="cast_stop_live_stream">"Διακοπή ζωντανής ροής"</string>
-    <string msgid="4250321332248956563" name="cast_tracks_chooser_dialog_audio">"Ήχος"</string>
-    <string msgid="1162380934229249476" name="cast_tracks_chooser_dialog_cancel">"Ακύρωση"</string>
-    <string msgid="3012268736704635952" name="cast_tracks_chooser_dialog_default_track_name">"Εντοπισμός <ns1:g id="POSITION">%1$d</ns1:g>"</string>
-    <string msgid="5563446400083425854" name="cast_tracks_chooser_dialog_no_audio_tracks">"Δεν υπάρχουν διαθέσιμα κομμάτια ήχου"</string>
-    <string msgid="7413336699113748535" name="cast_tracks_chooser_dialog_no_text_tracks">"Δεν υπάρχουν διαθέσιμα κομμάτια κειμένου"</string>
-    <string msgid="2332432312191219516" name="cast_tracks_chooser_dialog_no_tracks_available">"Δεν υπάρχουν διαθέσιμα κομμάτια"</string>
-    <string msgid="1176688358580178396" name="cast_tracks_chooser_dialog_none">"Κανένα"</string>
-    <string msgid="3804878371876790270" name="cast_tracks_chooser_dialog_ok">"ΟΚ"</string>
-    <string msgid="2454147715032376208" name="cast_tracks_chooser_dialog_subtitles">"Υπότιτλοι"</string>
-    <string msgid="2913461521603516868" name="cast_unmute">"Κατάργηση σίγασης"</string>
-    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Ενεργοποίηση"</string>
-    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Η εφαρμογή <ns1:g id="APP_NAME">%1$s</ns1:g> δεν θα λειτουργήσει εάν δεν έχετε ενεργοποιήσει τις υπηρεσίες Google Play."</string>
-    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Ενεργοποίηση υπηρεσιών Google Play"</string>
-    <string msgid="7118643132557593940" name="common_google_play_services_install_button">"Λήψη υπηρεσιών Google Play"</string>
-    <string msgid="1666261992894286769" name="common_google_play_services_install_text_phone">"Η εφαρμογή <ns1:g id="APP_NAME">%1$s</ns1:g> δεν θα εκτελεστεί χωρίς τις υπηρεσίες Google Play, οι οποίες λείπουν από το τηλέφωνό σας."</string>
-    <string msgid="1701766622451829291" name="common_google_play_services_install_text_tablet">"Η εφαρμογή <ns1:g id="APP_NAME">%1$s</ns1:g> δεν θα εκτελεστεί χωρίς τις υπηρεσίες Google Play, οι οποίες λείπουν από το tablet σας."</string>
-    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Λήψη υπηρεσιών Google Play"</string>
-    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Σφάλμα Υπηρεσιών Google Play"</string>
-    <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"Παρουσιάζονται προβλήματα με τις υπηρεσίες Google Play στην εφαρμογή <ns1:g id="APP_NAME">%1$s</ns1:g>. Εάν το πρόβλημα εξακολουθεί να παρουσιάζεται, επικοινωνήστε με τον προγραμματιστή για βοήθεια."</string>
-    <string msgid="1064791666906610763" name="common_google_play_services_unsupported_text">"Η εφαρμογή <ns1:g id="APP_NAME">%1$s</ns1:g> βασίζεται στις υπηρεσίες Google Play, οι οποίες δεν υποστηρίζονται από τη συσκευή σας. Επικοινωνήστε με τον κατασκευαστή για βοήθεια."</string>
-    <string msgid="539866123733096737" name="common_google_play_services_unsupported_title">"Υπηρεσίες Google Play"</string>
-    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Ενημέρωση"</string>
-    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"Η εφαρμογή <ns1:g id="APP_NAME">%1$s</ns1:g> θα εκτελεστεί αφού ενημερώσετε τις Υπηρεσίες Google Play."</string>
-    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Ενημέρωση υπηρεσιών Google Play"</string>
-    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"Η εφαρμογή <ns1:g id="APP_NAME">%1$s</ns1:g> δεν θα εκτελεστεί χωρίς τις υπηρεσίες Google Play, οι οποίες ενημερώνονται αυτήν τη στιγμή."</string>
-    <string msgid="2270671469198016014" name="common_google_play_services_updating_title">"Ενημέρωση των υπηρεσιών Google Play"</string>
-    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Απαιτείται νέα έκδοση των υπηρεσιών Google Play. Θα ενημερωθεί σύντομα."</string>
-    <string msgid="5201977337835724196" name="common_open_on_phone">"Άνοιγμα σε τηλέφωνο"</string>
-    <string msgid="3441753203274453993" name="common_signin_button_text">"Σύνδεση"</string>
-    <string msgid="669893613918351210" name="common_signin_button_text_long">"Συνδεθείτε με το Google"</string>
-    <string msgid="8327680881775995150" name="mr_media_route_button_content_description">"Μετάδοση"</string>
-    <string msgid="7553005460920830010" name="mr_media_route_chooser_searching">"Αναζήτηση συσκευών…"</string>
-    <string msgid="7106830097177242655" name="mr_media_route_chooser_title">"Σύνδεση με τη συσκευή"</string>
-    <string msgid="109793632378378069" name="mr_media_route_controller_disconnect">"Αποσύνδεση"</string>
-    <string msgid="3641544772007543920" name="mr_media_route_controller_no_info_available">"Δεν υπάρχουν διαθέσιμες πληροφορίες"</string>
-    <string msgid="8315773974194466049" name="mr_media_route_controller_pause">"Παύση"</string>
-    <string msgid="5214423499524760404" name="mr_media_route_controller_play">"Αναπαραγωγή"</string>
-    <string msgid="379358765881274425" name="mr_media_route_controller_settings_description">"Ρυθμίσεις διαδρομής"</string>
-    <string msgid="5398645111664294430" name="mr_media_route_controller_stop">"Διακοπή μετάδοσης"</string>
-    <string msgid="5441529851481176817" name="mr_system_route_name">"Σύστημα"</string>
-    <string msgid="7498112907524977311" name="mr_user_route_category_name">"Συσκευές"</string>
+    <string name="exo_controls_fastforward_description">"Γρήγορη προώθηση"</string>
+    <string name="exo_controls_next_description">"Επόμενο κομμάτι"</string>
+    <string name="exo_controls_pause_description">"Παύση"</string>
+    <string name="exo_controls_play_description">"Αναπαραγωγή"</string>
+    <string name="exo_controls_previous_description">"Προηγούμενο κομμάτι"</string>
+    <string name="exo_controls_rewind_description">"Επαναφορά"</string>
+    <string name="exo_controls_stop_description">"Διακοπή"</string>
+    <string name="pspdf__action_menu_copy">Αντιγραφή</string>
+    <string name="pspdf__action_menu_speak">Εκφώνηση</string>
+    <string name="pspdf__activity_menu_no_outline">Δεν υπάρχει διάρθρωση</string>
+    <string name="pspdf__activity_menu_outline">Διάρθρωση</string>
+    <string name="pspdf__activity_menu_pagegrid">Πλέγμα</string>
+    <string name="pspdf__activity_menu_search">Αναζήτηση</string>
+    <string name="pspdf__activity_menu_settings">Ρυθμίσεις</string>
+    <string name="pspdf__activity_title_unnamed_document">Ανώνυμο PDF</string>
+    <string name="pspdf__add">Προσθήκη</string>
+    <string name="pspdf__add_bookmark">Προσθήκη σελιδοδείκτη</string>
+    <string name="pspdf__add_page">Προσθήκη σελίδας</string>
+    <string name="pspdf__add_signature">Προσθήκη υπογραφής</string>
+    <string name="pspdf__all">Όλες</string>
+    <string name="pspdf__annotation_creator_author_name">Όνομα συντάκτη</string>
+    <string name="pspdf__annotation_creator_info_text">Εισαγάγετε το όνομα συντάκτη που θέλετε να χρησιμοποιείτε για τα νέα σχόλια.</string>
+    <string name="pspdf__annotation_editing_embed">Ενσωμάτωση σχολίων</string>
+    <string name="pspdf__annotation_editing_embed_description">Τα σχόλια θα μπορούν να υποστούν επεξεργασία και είναι ενσωματωμένα στο PDF.</string>
+    <string name="pspdf__annotation_editing_flatten">Σχόλια σε επίπεδη δομή</string>
+    <string name="pspdf__annotation_editing_flatten_description">Τα σχόλια αποδίδονται στο PDF και είναι μόνο για ανάγνωση.</string>
+    <string name="pspdf__annotation_editing_ignore">Αγνόηση σχολίων</string>
+    <string name="pspdf__annotation_editing_ignore_description">Το PDF δεν θα περιέχει σχόλια.</string>
+    <string name="pspdf__annotation_list_page">Σελίδα %1$d</string>
+    <string name="pspdf__annotation_type_camera">Κάμερα</string>
+    <string name="pspdf__annotation_type_circle">Έλλειψη</string>
+    <string name="pspdf__annotation_type_freetext">Κείμενο</string>
+    <string name="pspdf__annotation_type_highlight">Επισήμανση</string>
+    <string name="pspdf__annotation_type_ink">Μελάνι</string>
+    <string name="pspdf__annotation_type_line">Γραμμή</string>
+    <string name="pspdf__annotation_type_link">Σύνδεσμος</string>
+    <string name="pspdf__annotation_type_note">Σημείωση</string>
+    <string name="pspdf__annotation_type_polygon">Πολύγωνο</string>
+    <string name="pspdf__annotation_type_polyline">Πολύγραμμο</string>
+    <string name="pspdf__annotation_type_rich_media">Εμπλουτισμένο περιεχόμενο</string>
+    <string name="pspdf__annotation_type_screen">Οθόνη</string>
+    <string name="pspdf__annotation_type_sound">Ήχος</string>
+    <string name="pspdf__annotation_type_square">Ορθογώνιο</string>
+    <string name="pspdf__annotation_type_squiggly">Κυματιστό</string>
+    <string name="pspdf__annotation_type_stamp">Σφραγίδα</string>
+    <string name="pspdf__annotation_type_strikeout">Διακριτή διαγραφή</string>
+    <string name="pspdf__annotation_type_underline">Υπογράμμιση</string>
+    <string name="pspdf__annotations">Σχόλια</string>
+    <string name="pspdf__bookmarked">Με σελιδοδείκτες</string>
+    <string name="pspdf__bookmarks">Σελιδοδείκτες</string>
+    <string name="pspdf__clear">Εκκαθάριση</string>
+    <string name="pspdf__close">Κλείσιμο</string>
+    <string name="pspdf__copy">Αντιγραφή</string>
+    <string name="pspdf__create_stamp">Δημιουργία σφραγίδας</string>
+    <string name="pspdf__current_page">Τρέχουσα σελίδα (%1$d)</string>
+    <string name="pspdf__custom_stamp">Προσαρμογή</string>
+    <string name="pspdf__custom_value">Προσαρμοσμένη τιμή</string>
+    <string name="pspdf__custom_value_hint">Πληκτρολογήστε τιμή ή επιλέξτε από τη λίστα</string>
+    <string name="pspdf__customer_signature">Υπογραφή μία φορά</string>
+    <string name="pspdf__date_switch">Ημερομηνία</string>
+    <string name="pspdf__default_values">Προεπιλεγμένες τιμές</string>
+    <string name="pspdf__delete">Διαγραφή</string>
+    <string name="pspdf__delete_pages">Διαγραφή σελίδων</string>
+    <string name="pspdf__document_could_not_be_saved">Δεν ήταν δυνατή η αποθήκευση του εγγράφου.</string>
+    <string name="pspdf__document_edit_not_supported">Αυτό το έγγραφο δεν υποστηρίζει την επεξεργασία.</string>
+    <string name="pspdf__document_name">Όνομα εγγράφου</string>
+    <string name="pspdf__done">Τέλος</string>
+    <string name="pspdf__duplicate_pages">Διπλότυπο σελίδων</string>
+    <string name="pspdf__edit">Επεξεργασία</string>
+    <string name="pspdf__edit_menu_color">Χρώμα</string>
+    <string name="pspdf__edit_menu_fill_color">Χρώμα γεμίσματος</string>
+    <string name="pspdf__edit_menu_freetext">Κείμενο</string>
+    <string name="pspdf__edit_menu_highlight">Επισήμανση</string>
+    <string name="pspdf__edit_menu_ink">Μελάνι</string>
+    <string name="pspdf__edit_menu_note">Σημείωση</string>
+    <string name="pspdf__edit_menu_squiggly">Κυματιστό</string>
+    <string name="pspdf__edit_menu_strikeout">Διακριτή διαγραφή</string>
+    <string name="pspdf__edit_menu_underline">Υπογράμμιση</string>
+    <string name="pspdf__export_pages">Εξαγωγή σελίδων</string>
+    <string name="pspdf__exporting">Γίνεται εξαγωγή…</string>
+    <string name="pspdf__file_not_available">Συνέβη άγνωστο σφάλμα κατά την προσπάθεια ανοίγματος αυτού του αρχείου.</string>
+    <string name="pspdf__forms_clear_field">Εκκαθάριση πεδίου</string>
+    <string name="pspdf__fragment_password_hint">Εισαγάγετε το συνθηματικό.</string>
+    <string name="pspdf__gallery_item_img_desc">Εικόνα</string>
+    <string name="pspdf__landscape">Τοπίο</string>
+    <string name="pspdf__loading">Γίνεται φόρτωση…</string>
+    <string name="pspdf__more_options">Περισσότερες επιλογές</string>
+    <string name="pspdf__my_signature">Η υπογραφή μου</string>
+    <string name="pspdf__name">Όνομα</string>
+    <string name="pspdf__no_annotations">Δεν υπάρχουν σχόλια</string>
+    <string name="pspdf__no_applications_found">Δεν υπάρχει καμία εγκατεστημένη εφαρμογή που μπορεί να ανοίγει έγγραφα PDF.</string>
+    <string name="pspdf__no_bookmarks">Δεν υπάρχουν σελιδοδείκτες</string>
+    <string name="pspdf__no_signatures">Δεν υπάρχουν υπογραφές</string>
+    <string name="pspdf__ok">Μετάβαση</string>
+    <string name="pspdf__open">Άνοιγμα</string>
+    <string name="pspdf__orientation">Προσανατολισμός</string>
+    <string name="pspdf__page_overlay">%1$d από %2$d</string>
+    <string name="pspdf__page_overlay_double_page">%1$d-%2$d από %3$d</string>
+    <string name="pspdf__page_overlay_with_label">%1$s (%2$d από %3$d)</string>
+    <string name="pspdf__page_pattern_dot_5mm">Τελείες 5mm</string>
+    <string name="pspdf__page_pattern_grid_5mm">Πλέγμα 5mm</string>
+    <string name="pspdf__page_pattern_line_5mm">Γραμμές 5mm</string>
+    <string name="pspdf__page_pattern_line_7mm">Γραμμές 7mm</string>
+    <string name="pspdf__page_pattern_none">Κανένα</string>
+    <string name="pspdf__page_range">Εύρος</string>
+    <string name="pspdf__page_size_a4">A4</string>
+    <string name="pspdf__page_size_a5">A5</string>
+    <string name="pspdf__page_size_us_legal">US Legal</string>
+    <string name="pspdf__page_size_us_letter">US Letter</string>
+    <string name="pspdf__page_with_number">Σελίδα %1$d</string>
+    <string name="pspdf__pages">Σελίδες</string>
+    <string name="pspdf__password">Συνθηματικό</string>
+    <string name="pspdf__picker_line_end">Τέλος γραμμής</string>
+    <string name="pspdf__picker_line_ends_fill_color">Χρώμα έναρξης και τέλους</string>
+    <string name="pspdf__picker_line_start">Αρχή γραμμής</string>
+    <string name="pspdf__picker_line_style">Στιλ γραμμής</string>
+    <string name="pspdf__picker_thickness">Πάχος</string>
+    <string name="pspdf__portrait">Πορτρέτο</string>
+    <string name="pspdf__print">Εκτύπωση</string>
+    <string name="pspdf__print_with_annotations">Εκτύπωση με σχόλια</string>
+    <string name="pspdf__print_without_annotations">Εκτύπωση χωρίς σχόλια</string>
+    <string name="pspdf__redo">Επανάληψη</string>
+    <string name="pspdf__remove">Αφαίρεση</string>
+    <string name="pspdf__remove_bookmark">Αφαίρεση σελιδοδείκτη</string>
+    <string name="pspdf__replace">Αντικατάσταση</string>
+    <string name="pspdf__replace_file_message">Ένα αρχείο με όνομα «%1$s» ήδη υπάρχει στον επιλεγμένο προορισμό. Θέλετε να το αντικαταστήσετε</string>
+    <string name="pspdf__rotate_pages">Περιστροφή σελίδων</string>
+    <string name="pspdf__sample">Δείγμα</string>
+    <string name="pspdf__save">Αποθήκευση</string>
+    <string name="pspdf__save_as">Αποθήκευση ως…</string>
+    <string name="pspdf__saving">Γίνεται αποθήκευση…</string>
+    <string name="pspdf__search_btn_next">Επόμενο</string>
+    <string name="pspdf__search_btn_previous">Προηγούμενο</string>
+    <string name="pspdf__search_complete">Η αναζήτηση ολοκληρώθηκε</string>
+    <string name="pspdf__search_hint">Αναζήτηση</string>
+    <string name="pspdf__search_no_matches">Δεν βρέθηκαν αποτελέσματα</string>
+    <string name="pspdf__search_outline_hint">Αναζήτηση διάρθρωσης</string>
+    <string name="pspdf__search_result_of">%1$d από %2$d</string>
+    <string name="pspdf__settings_menu_auto">Αυτόματα</string>
+    <string name="pspdf__settings_menu_continuous">Συνεχόμενα</string>
+    <string name="pspdf__settings_menu_default">Προεπιλογή</string>
+    <string name="pspdf__settings_menu_double">Διπλά</string>
+    <string name="pspdf__settings_menu_horizontal">Οριζόντια</string>
+    <string name="pspdf__settings_menu_jump">Μεταπήδηση</string>
+    <string name="pspdf__settings_menu_keep_screen_on">Διατήρηση οθόνης ενεργής</string>
+    <string name="pspdf__settings_menu_night">Νύκτα</string>
+    <string name="pspdf__settings_menu_page_layout">Διάταξη σελίδας</string>
+    <string name="pspdf__settings_menu_page_transition">Μετάβαση σελίδας</string>
+    <string name="pspdf__settings_menu_scroll_direction">Κατεύθυνση κύλισης</string>
+    <string name="pspdf__settings_menu_single">Μονή</string>
+    <string name="pspdf__settings_menu_theme">Θέμα</string>
+    <string name="pspdf__settings_menu_vertical">Κατακόρυφα</string>
+    <string name="pspdf__share">Κοινή χρήση</string>
+    <string name="pspdf__signature">Υπογραφή</string>
+    <string name="pspdf__signature_sign_here">Παρακαλώ υπογράψτε εδώ</string>
+    <string name="pspdf__signatures">Υπογραφές</string>
+    <string name="pspdf__size">Μέγεθος</string>
+    <string name="pspdf__stamp_accepted">Έγινε αποδοχή</string>
+    <string name="pspdf__stamp_approved">Εγκρίθηκε</string>
+    <string name="pspdf__stamp_completed">Ολοκληρώθηκε</string>
+    <string name="pspdf__stamp_confidential">Εμπιστευτικό</string>
+    <string name="pspdf__stamp_draft">Πρόχειρο</string>
+    <string name="pspdf__stamp_final">Τελικό</string>
+    <string name="pspdf__stamp_for_comment">Για σχολιασμό</string>
+    <string name="pspdf__stamp_for_public_release">Για έκδοση στο κοινό</string>
+    <string name="pspdf__stamp_information_only">Πληροφορίες μόνο</string>
+    <string name="pspdf__stamp_initial_here">Αρχικά εδώ</string>
+    <string name="pspdf__stamp_not_approved">Δεν έχει εγκριθεί</string>
+    <string name="pspdf__stamp_not_for_public_release">Δεν προορίζεται για έκδοση στο κοινό</string>
+    <string name="pspdf__stamp_preliminary_results">Προκαταρκτικά αποτελέσματα</string>
+    <string name="pspdf__stamp_rejected">Έγινε απόρριψη</string>
+    <string name="pspdf__stamp_revised">Έγινε αναθεώρηση</string>
+    <string name="pspdf__stamp_sign_here">Υπογραφή εδώ</string>
+    <string name="pspdf__stamp_text">Κείμενο σφραγίδας</string>
+    <string name="pspdf__stamp_void">Άκυρο</string>
+    <string name="pspdf__stamp_witness">Μάρτυρας</string>
+    <string name="pspdf__text_copied_to_clipboard">Το κείμενο αντιγράφηκε στο πρόχειρο.</string>
+    <string name="pspdf__time_switch">Ώρα</string>
+    <string name="pspdf__tts_not_available">Δεν είναι διαθέσιμη η υπηρεσία κειμένου σε ομιλία. Βεβαιωθείτε ότι έχετε ενεργή σύνδεση στο internet ή μηχανή Google κειμένου σε ομιλία εγκατεστημένη και ενεργοποιημένη στη συσκευή σας.</string>
+    <string name="pspdf__undo">Αναίρεση</string>
+    <string name="pspdf__unit_pt">%1$s στ.</string>
+    <string name="pspdf__use_document_size">Χρήση μεγέθους εγγράφου</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Αναζήτηση"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>
