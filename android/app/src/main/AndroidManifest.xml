@@ -19,6 +19,9 @@
       android:icon="@mipmap/ic_launcher"
       android:label="@string/app_name"
       android:theme="@style/epaperTheme">
+      <meta-data
+      android:name="pspdfkit_license_key"
+      android:value="sqkrOTqSGeFadbyy7qR-iZ44vbkpIH20ci-Cv_yaFu-XIgB8cqCJP26vlVlCv13n3is3vembwQt2NlG1OnLwohs-mDy_Cc_HA-PcdhXo7Pug9gp8Djr4ZANPKo6qVoOwV0d5QaVphIQKCH8tgMH3hWCBdFyFOy7Ml_V1eIpFU91cgNlTeuRcQEQKniZcep1MPQH1CYhQkPf_Vjdju0O548b_ksuEpzz_Mq377Ti1k2E-QzJrqWPnO6VAZE0U9K75uw0TIgypqdh8vWgpLNzZ6--IZ89Hi2ThsSqDz6aqaBhFN502GbtoDNl5QwrnT3EDah9YRrjlZDb3CGwmIxl9A8qPD77I3352bp4leenwP6hSp2ogFiYFwZbS6i15uOw8je_rkykX44l7SeNUDiT9ELabIleGf9pX09LMXJ6iWNAN4yRi8b5doWRLgv-CXQeG"/>
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"

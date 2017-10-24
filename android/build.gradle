@@ -17,6 +17,14 @@ allprojects {
         mavenLocal()
         jcenter()
         maven {
+             url 'https://customers.pspdfkit.com/maven/'
+
+             credentials {
+                username 'pspdfkit'
+                password 'TRIAL-VeeWoBwWCZ9GkSvdNWTus-6ZMig0Fm8LQg1SSXCgsgdlqMt0mmFcAQWJBpqijl4r6a7O0xERMNZDmLNHgEDMLg'
+             }
+         }
+        maven {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
             url "$rootDir/../node_modules/react-native/android"
         }

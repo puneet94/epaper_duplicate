@@ -99,6 +99,7 @@ android {
 
     defaultConfig {
         applicationId "com.epaper"
+        multiDexEnabled true
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
@@ -137,6 +138,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-pspdfkit')
     compile project(':react-native-audio-streamer')
     compile project(':react-native-youtube')
     compile project(':react-native-vector-icons')

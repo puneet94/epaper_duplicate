@@ -27,6 +27,14 @@ import appVars from '../../appVars';
 import TimerMixin from 'react-timer-mixin';
 import RNFetchBlob from 'react-native-fetch-blob';
 import store from 'react-native-simple-store';
+import PSPDFKit from 'PSPDFKit';
+
+const CONFIGURATION = {
+  scrollContinuously : false,
+  showPageNumberOverlay : true,
+  pageScrollDirection : "vertical"
+};
+
 const dirs = RNFetchBlob.fs.dirs;
 
 class HomeScreen extends Component{
@@ -105,8 +113,8 @@ fetchdata = async () => {
     for(let i=0;i<myissues.length;i++){
       if(myissues[i].id==item.id){
          downloadFile = false;
-
-        navigation.navigate('PDFView', {file: myissues[i].path, epaperindex: myissues[i].epaperindex});
+        
+         PSPDFKit.present(myissues[i].path, CONFIGURATION);
         break;
       }
     }
@@ -172,7 +180,7 @@ fetchdata = async () => {
       //Alert.alert(resp.path());
       //Alert.alert("Download Successful");
       store.push('userIssues',issueObject );
-      navigation.navigate('PDFView', {file: resp.path(), epaperindex: item.epaperindex});
+      PSPDFKit.present(resp.path(), CONFIGURATION);
     } catch (error) {
       Alert.alert("error in download. PLease try again later.");
       console.log("error in download");
