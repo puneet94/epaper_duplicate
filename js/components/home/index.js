@@ -119,7 +119,7 @@ fetchdata = async () => {
       
       try {
         
-      const pdfSource = appVars.apiUrl +"/"+item.downloadPath;        
+      const pdfSource = appVars.downloadApiUrl +"/"+item.downloadPath;        
       let resp = await RNFetchBlob
       .config({
         //path: RNFetchBlob.fs.dirs.DownloadDir+"/dummy.pdf",
@@ -140,7 +140,7 @@ fetchdata = async () => {
       })
       .fetch('GET', pdfSource);
 
-      const imageSource = appVars.apiUrl +"/"+item.singleSRC;
+      const imageSource = appVars.downloadApiUrl +"/"+item.singleSRC;
       let imageResp = await RNFetchBlob
       .config({
         path: RNFetchBlob.fs.dirs.DocumentDir+"/epaper/"+item.singleSRC,

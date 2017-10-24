@@ -34,6 +34,7 @@ const APP_CONSTANTS =   {
   screenY: ScreenHeight,  
 
   apiUrl: "https://api.mopo-server.de",
+  downloadApiUrl: "http://mark-sturm.de",
   apiKey: "04a0a1ca18a1beaa24dfcecfe224d53f",
 
   // we can change now the limit of items. like get 4 items on phones and like 8 on tablets...
