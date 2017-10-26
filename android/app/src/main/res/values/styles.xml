@@ -1,5 +1,5 @@
 <resources>
-  <style name="epaperTheme" parent="epaperTheme.Base"></style>
+  <style name="epaperTheme" parent="epaperTheme.Base"/>
    <style name="epaperTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
     <item name="android:windowBackground">@drawable/launch_screen</item>
     <item name="windowNoTitle">true</item>
@@ -8,4 +8,87 @@
     <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
     <item name="colorAccent">@color/colorAccent</item>
   </style>
+
+<style name="epaperTheme.PSPDFKitTheme.Base"/>
+  <style name="epaperTheme.PSPDFKitTheme" parent="Theme.AppCompat.Light.NoActionBar">
+      <item name="android:windowBackground">@drawable/launch_screen</item>
+          <item name="colorPrimary">@color/colorWhite</item>
+          <item name="colorPrimaryDark">@color/colorPrimary</item>
+          <item name="colorAccent">@color/colorPrimary</item>
+
+          <item name="windowActionBar">false</item>
+          <item name="windowNoTitle">true</item>
+          <item name="windowActionModeOverlay">true</item>
+          <item name="alertDialogTheme">@style/pspdf__AlertDialog</item>
+          <item name="textColorError">@color/pspdf__color_error</item>
+          <item name="pspdf__backgroundColor">@color/colorWhite</item>
+          <item name="pspdf__contextualToolbarBackground">@color/colorWhite</item>
+          <item name="pspdf__contextualToolbarSubmenuBackground">@color/colorPrimary</item>
+          <item name="pspdf__actionBarIconsStyle">@style/BarIcons</item>
+          <item name="pspdf__outlineViewStyle">@style/OutlineViewStyle</item>
+          <item name="pspdf__inlineSearchStyle">@style/SearchViewInlineStyle</item>
+          <item name="pspdf__scrollableThumbnailBarStyle">@style/ScrollableThumbnailBarStyle</item>
+          <item name="pspdf__searchResultHighlighterStyle">@style/pspdf__SearchResultHighlighter</item>
+          <item name="pspdf__annotationCreationToolbarIconsStyle">@style/AnnotationCreationToolbarIcons</item>
+          <item name="pspdf__annotationEditingToolbarIconsStyle">@style/BarIcons</item>
+          <item name="pspdf__textSelectionToolbarIconsStyle">@style/BarIcons</item>
+          <item name="pspdf__documentEditingToolbarIconsStyle">@style/BarIcons</item>
+          <item name="pspdf__actionMenuStyle">@style/pspdf__ActionMenu</item>
+          
+</style>
+
+
+<style name="ScrollableThumbnailBarStyle">
+    <!-- These are the defaults also inherited from the parent style. Tweak them as you like! -->
+    <item name="pspdf__backgroundColor">@android:color/transparent</item>
+    <item name="pspdf__thumbnailWidth">@dimen/pspdf__scrollable_thumbnail_width</item>
+    <item name="pspdf__thumbnailHeight">@dimen/pspdf__scrollable_thumbnail_height</item>
+    <item name="pspdf__thumbnailBorderColor">#CCCCCC</item>
+    <item name="pspdf__thumbnailSelectedBorderColor">@android:color/transparent</item>
+</style>
+
+<style name="SearchViewInlineStyle">
+    <!-- These are the defaults also inherited from the parent style. Tweak them as you like! -->
+    <item name="pspdf__backgroundColor">@android:color/transparent</item>
+    <item name="pspdf__borderColor">@color/colorBlack</item>
+    <item name="pspdf__borderWidth">1dp</item>
+    <item name="pspdf__textColor">@color/colorBlack</item>
+    <item name="pspdf__hintTextColor">#CCCCCC</item>
+    <item name="pspdf__navigationTextColor">@color/colorBlack</item>
+    <item name="pspdf__prevIconDrawable">@drawable/pspdf__ic_chevron_left_white</item>
+    <item name="pspdf__nextIconDrawable">@drawable/pspdf__ic_chevron_right_white</item>
+    <item name="pspdf__prevIconColorTint">@color/colorBlack</item>
+    <item name="pspdf__nextIconColorTint">@color/colorBlack</item>
+    <item name="pspdf__backIconColorTint">@color/colorBlack</item>
+</style>
+
+<style name="OutlineViewStyle">
+    <!-- These are the defaults also inherited from the parent style. Tweak them as you like! -->
+    <item name="pspdf__backgroundColor">@color/pspdf__color_white</item>
+    <item name="pspdf__listItemSelector">@null</item>
+    <item name="pspdf__defaultTextColor">@color/pspdf__color_black</item>
+    <item name="pspdf__tabIndicatorColor">?colorAccent</item>
+    <item name="pspdf__bookmarksBarBackgroundColor">?colorPrimary</item>
+    <item name="pspdf__bookmarksBarIconColor">@color/colorBlack</item>
+    <item name="pspdf__bookmarksAddIcon">@drawable/pspdf__ic_add</item>
+    <item name="pspdf__bookmarksEditIcon">@drawable/pspdf__ic_edit</item>
+    <item name="pspdf__bookmarksDoneIcon">@drawable/pspdf__ic_done</item>
+    <item name="pspdf__bookmarksDeleteIcon">@drawable/pspdf__ic_delete</item>
+    <item name="pspdf__bookmarksDeleteIconColor">@android:color/white</item>
+    <item name="pspdf__bookmarksDeleteBackgroundColor">@color/pspdf__color_error</item>
+</style>
+
+<style name="BarIcons">
+    <item name="pspdf__iconsColor">@color/colorBlack</item>
+    <item name="pspdf__iconsColorActivated">@color/colorBlack</item>
+</style>
+
+
+<style name="AnnotationCreationToolbarIcons">
+    <item name="pspdf__iconsColor">@color/colorBlack</item>
+    <item name="pspdf__iconsColorActivated">@color/colorBlack</item>
+</style>
+
+    
+
 </resources>

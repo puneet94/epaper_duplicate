@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react'
-import { ToastAndroid,
+import {
+  ToastAndroid,
   Platform,
   Text,
   Button,
@@ -11,13 +12,16 @@ import { ToastAndroid,
   TouchableOpacity,
   Alert,
   Image,
-  ImageBackground } from 'react-native';
+  ImageBackground,
+  NativeModules
+} from 'react-native';
 import store from 'react-native-simple-store';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 
+var PSPDFKit = NativeModules.PSPDFKit;
 
 class IssuesScreen extends Component {
   constructor(props){
@@ -63,8 +67,6 @@ class IssuesScreen extends Component {
       deSelectAll: this.deSelectAll,
       selectedAll: this.state.selectedAll,
       deSelectedAll: this.state.deSelectedAll
-  
-
     });
   }
   
@@ -138,7 +140,7 @@ class IssuesScreen extends Component {
     }else{
       const { navigation } = this.props;
       //console.log(item.path);
-      navigation.navigate('PDFView', {file: item.path, epaperindex: item.epaperindex});
+      PSPDFKit.present(item.path, appVars.PDFVIEWER_CONFIGURATION);      
     }
 
   }

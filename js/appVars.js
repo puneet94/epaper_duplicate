@@ -28,15 +28,17 @@ const ScreenHeight = Dimensions.get('window').height;
     { archive: 'sportem', subMenuLabel: 'Sport'},
     { archive: 'polizeiem', subMenuLabel: 'Blaulicht'}
   ];
+
 const APP_CONSTANTS =   {
 
   screenX: ScreenWidth,
   screenY: ScreenHeight,  
 
   apiUrl: "https://api.mopo-server.de",
-  downloadApiUrl: "http://mark-sturm.de",
+  downloadApiUrl: "https://files.mopo-server.de",
   apiKey: "04a0a1ca18a1beaa24dfcecfe224d53f",
 
+  //
   // we can change now the limit of items. like get 4 items on phones and like 8 on tablets...
   // How many epaper-items should be grabbed per call.
   apiEpaperLimit: "4",
@@ -145,6 +147,25 @@ const APP_CONSTANTS =   {
   textInstantNews: "Etwas Spannendes ist passiert und Sie sind mittendrin? Schicken Sie unsere Redaktion direkt einen Hinweis!",
   
   STORAGE_KEY : 'TOKEN',
+
+  // keep in mind at the ConfigurationAdapter.java
+  // LINE 279
+  // configuration.hideSettingsMenu();
+  // configuration.hideDocumentTitleOverlay();
+
+  PDFVIEWER_CONFIGURATION : {
+    startPage: 0,
+    showShareAction: false,
+    showPrintAction: false,
+    showThumbnailGridAction: false,
+    showPageNumberOverlay : true,
+    showAnnotationListAction: false,
+    enableAnnotationEditing: false,
+    showThumbnailBar: 'scrollable',
+    HudViewMode: 'automatic',
+    pageTransition: 'scrollPerSpread',
+  }
+
 }
 import store from 'react-native-simple-store';
 const getAppConstants = async (obj)=>{

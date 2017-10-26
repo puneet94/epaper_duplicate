@@ -16,7 +16,8 @@ import {
     ActivityIndicator,
     ToastAndroid,
     Image,
-    ImageBackground
+    ImageBackground,
+    NativeModules,
 } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
@@ -27,13 +28,8 @@ import appVars from '../../appVars';
 import TimerMixin from 'react-timer-mixin';
 import RNFetchBlob from 'react-native-fetch-blob';
 import store from 'react-native-simple-store';
-import PSPDFKit from 'PSPDFKit';
 
-const CONFIGURATION = {
-  scrollContinuously : false,
-  showPageNumberOverlay : true,
-  pageScrollDirection : "vertical"
-};
+var PSPDFKit = NativeModules.PSPDFKit;
 
 const dirs = RNFetchBlob.fs.dirs;
 
@@ -114,7 +110,7 @@ fetchdata = async () => {
       if(myissues[i].id==item.id){
          downloadFile = false;
         
-         PSPDFKit.present(myissues[i].path, CONFIGURATION);
+         PSPDFKit.present(myissues[i].path, appVars.PDFVIEWER_CONFIGURATION);
         break;
       }
     }
@@ -180,7 +176,7 @@ fetchdata = async () => {
       //Alert.alert(resp.path());
       //Alert.alert("Download Successful");
       store.push('userIssues',issueObject );
-      PSPDFKit.present(resp.path(), CONFIGURATION);
+      PSPDFKit.present(resp.path(), appVars.PDFVIEWER_CONFIGURATION);
     } catch (error) {
       Alert.alert("error in download. PLease try again later.");
       console.log("error in download");
