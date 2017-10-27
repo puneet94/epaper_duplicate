@@ -24,6 +24,44 @@ import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 import store from 'react-native-simple-store';
+import { TabNavigator } from 'react-navigation';
+const navigatorObject = {};
+const newsListComponent = (screenId)=>{
+  return (props) => <NewsListScreen {...props} screenId={screenId} />
+}
+for(let i =0;i<appVars.objNewsCategories.length;i++){
+  
+  navigatorObject[appVars.objNewsCategories[i].subMenuLabel] = {
+    screen: newsListComponent(appVars.objNewsCategories[i].archive)
+  }
+}
+
+const NewsFeedNavigator = TabNavigator(navigatorObject, {
+  tabBarPosition: 'top',
+  animationEnabled: true,
+  tabBarOptions: {
+    scrollEnabled: true,
+    tabStyle: {
+      width: 120
+    },
+    style: {
+      backgroundColor: "white"
+    },
+    labelStyle : {
+      color: "black",
+      fontSize: 16,
+      fontWeight: "600",
+      paddingTop: 0,
+      paddingBottom: 0,
+      paddingRight: 0,
+      paddingLeft: 0
+    },
+    indicatorStyle:{
+      backgroundColor: appVars.colorMain,
+      height: 5
+    }
+  },
+});
 
 class NewsListScreen extends Component{
   
@@ -37,12 +75,13 @@ class NewsListScreen extends Component{
       refreshing: false,
       downloading: false,
       currentItem: null,
-      selectedArchive: appVars.NewsArchivesFallback,
+      selectedArchive: this.props.screenId,
       bannerAds: [],
       bannerAdsUrl: [],
       bannerAdsWidth: [],
       bannerAdsHeight: [],
     }
+
   }
   componentWillMount = async ()=>{
     let bannerAds = await this.fetchBannerAds();
@@ -278,17 +317,12 @@ class NewsListScreen extends Component{
     );
   }
 
-	render()
-	{
+	render=()=>{
     return (
       
       <View style={appStyles.container}>
 
-        <View>
-          {
-            this.renderSubmenu()
-          }
-        </View>
+       
         
       <View style={appStyles.newsListContainer}>
       <FlatList
@@ -315,4 +349,4 @@ class NewsListScreen extends Component{
 	}
 }
 
-export default NewsListScreen;
+export default NewsFeedNavigator;//NewsListScreen;
