@@ -23,6 +23,10 @@ import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 
 var PSPDFKit = NativeModules.PSPDFKit;
 
+if(Platform.OS != 'android') {
+  PSPDFKit.setLicenseKey(appVars.PDFVIEWER_KEY);
+}
+
 class IssuesScreen extends Component {
   constructor(props){
     super(props);

@@ -31,6 +31,10 @@ import store from 'react-native-simple-store';
 
 var PSPDFKit = NativeModules.PSPDFKit;
 
+if(Platform.OS === 'ios') {
+  PSPDFKit.setLicenseKey(appVars.PDFVIEWER_KEY);
+}
+
 const dirs = RNFetchBlob.fs.dirs;
 
 class HomeScreen extends Component{

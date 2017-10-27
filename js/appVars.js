@@ -1,4 +1,4 @@
-import {Platform, Dimensions} from 'react-native';
+import {Platform, Dimensions, processColor} from 'react-native';
 
 const ScreenWidth = Dimensions.get('window').width;
 const ScreenHeight = Dimensions.get('window').height;
@@ -10,12 +10,41 @@ const ScreenHeight = Dimensions.get('window').height;
     var shareIcon = 'md-share';
     var adArchives = '8';
     var animationType = 'slide';
+
+    var PDFVIEWER_CONFIGURATION = {
+      startPage: 0,
+      showShareAction: false,
+      showPrintAction: false,
+      showThumbnailGridAction: false,
+      showPageNumberOverlay : true,
+      showAnnotationListAction: false,
+      enableAnnotationEditing: false,
+      showThumbnailBar: 'scrollable',
+      HudViewMode: 'automatic',
+      pageTransition: 'scrollPerSpread',
+    };
+
+
   } else {
+    // ios
     var fontHeadline = "Mafra Condensed Deck";
     
     var shareIcon = 'ios-share-outline';
     var adArchives = '7';
     var animationType = 'none';
+
+    var PDFVIEWER_CONFIGURATION = {
+      startPage: 0,
+      backgroundColor: processColor('#FFFFFF'),
+      textSelectionEnabled: 'NO',
+      outlineButtonItem: 'NO',
+      enableAnnotationEditing: 'NO',
+      searchMode: 'inline',
+      thumbnailBarMode: 'scrollable',
+      pageTransition: 'scrollPerSpread',
+    };
+    
+    var PDFVIEWER_KEY = 'cZN9KGK7uEOYmVg7u8GnYZxj88r3e/gO1yfl19mCEvGYeCQphzxfWOMfN8ZpCHaxLwntquVSg/aeqf2R0X6OXwsEWKIBoiXGEsoJUWcVtzJr9tzRKRMxKLW1t/ijaSwTegHa8dYIViEaEnIh/7QDbkqU5a364IVOK2agObJmhKFohS/6JN3JyuoE0vLm9pQAe+VDS1z5MrJqqAl4SZUwHJtispY9GBiEDedmW6Ly/UuZP5ORr/gxeICujuVgs4ly0Ji1QsWdHUO2+3Z1W7lXW37DZxxCiwJGyJ1tCefse3KcEE4GDIcbNSf43WbSE+ZrMG/IdPvpZXiOp41tXPVkowESks0C0DtIao435lJ2V1WKCGMv3YoOIog418M+ImhiAbEfABBVFXocNSNPdzU9yl5ZO1vX+CH4eUDfZU5eDSRIxPTsJrt6SDtlCvbslSPA';
   }
 
   const ObjNewsCategories  = [
@@ -148,30 +177,21 @@ const APP_CONSTANTS =   {
   
   STORAGE_KEY : 'TOKEN',
 
+  PDFVIEWER_KEY : PDFVIEWER_KEY,
+
   // keep in mind at the ConfigurationAdapter.java
   // LINE 279
   // configuration.hideSettingsMenu();
   // configuration.hideDocumentTitleOverlay();
 
-  PDFVIEWER_CONFIGURATION : {
-    startPage: 0,
-    showShareAction: false,
-    showPrintAction: false,
-    showThumbnailGridAction: false,
-    showPageNumberOverlay : true,
-    showAnnotationListAction: false,
-    enableAnnotationEditing: false,
-    showThumbnailBar: 'scrollable',
-    HudViewMode: 'automatic',
-    pageTransition: 'scrollPerSpread',
-  }
+  PDFVIEWER_CONFIGURATION : PDFVIEWER_CONFIGURATION,
 
 }
 import store from 'react-native-simple-store';
 const getAppConstants = async (obj)=>{
   obj.baseUnit = await store.get('BASE_UNIT') || 18;
-  console.log("got from storage");
-  console.log(obj.baseUnit);
+  //console.log("got from storage");
+  //console.log(obj.baseUnit);
 }
 getAppConstants(APP_CONSTANTS);
 module.exports = APP_CONSTANTS;
