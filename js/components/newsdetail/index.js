@@ -14,20 +14,18 @@ import {
     Modal,
     ListView,
     Image,
-    Linking,
     Alert
 } from 'react-native';
 import HTMLView from 'react-native-htmlview';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 import IoniconsIcon from 'react-native-vector-icons/Ionicons';
 import appStyles from '../../appStyles';
-import htmlStyles from '../../htmlStyles';
 import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
 import YouTube from 'react-native-youtube';
 import RNAudioStreamer from 'react-native-audio-streamer';
 import store from 'react-native-simple-store';
-
+import { em_s, lineHeight_s, handleExternalUrl } from '../../core/helpers';
 
 
 class NewsDetailScreen extends Component{
@@ -48,7 +46,9 @@ class NewsDetailScreen extends Component{
 }
 componentWillMount = async ()=>{
   store.delete('deepLinkNewsId');
+  
   let fontSize = Number.parseInt(await store.get('fontSize'),10);
+
   if(fontSize){
     this.setState({
       fontSize
@@ -122,6 +122,7 @@ componentDidUpdate = (prevProps,prevState)=>{
     });    
     }
 }
+
 componentWillUnmount=()=>{
   this.setState({
     audioPaused: true
@@ -147,7 +148,6 @@ fetchdata = async () => {
           shareTitle: res.response[0].headline,
           YouTubeId: res.response[0].youtube_id, 
         },()=>{
-          //this.playReadspeaker();
         });
       })
       .then(
@@ -197,16 +197,6 @@ fetchgallerydata = async () => {
     });
   }
 
-  handleExternalUrl = (externalurl)=>{
-    Linking.canOpenURL(externalurl).then(supported => {
-          if (supported) {
-            Linking.openURL(externalurl);
-          } else {
-            console.log("Don't know how to open URI: " + externalurl);
-          }
-      });
-  }
-
   openImageViewer = async (item)=>{
         const { navigation } = this.props;
         navigation.navigate('ImageViewer', {item: item});
@@ -215,9 +205,6 @@ fetchgallerydata = async () => {
   openGalleryViewer = async (item,index)=>{
     const navParams = this.props.navigation.state.params;     
     const { navigation } = this.props;
-    //console.log("hit image viewer");
-    //console.log(navParams.newsid);
-    //console.log(item);
     navigation.navigate('ImageViewer', {item: item, newsid: navParams.newsid,initialPage:index,images:this.state.gallerydata});
   }
 
@@ -247,11 +234,10 @@ fetchgallerydata = async () => {
 
       <View style={appStyles.contentElement}>
 
-      {(item.topheadline)?<View style={appStyles.topheadlineContainer}><Text style={appStyles.topheadline}>{item.topheadline.toUpperCase()}</Text></View>:<View></View>}
+      {(item.topheadline)?<View style={appStyles.topheadlineContainer}><Text style={[appStyles.topheadline,{fontSize:em_s(.75,this.state.fontSize)}]}>{item.topheadline.toUpperCase()}</Text></View>:<View></View>}
+        <Text style={[appStyles.headline,{fontSize:em_s(2.250,this.state.fontSize)}]}>{item.headline}</Text>
 
-        <Text style={[appStyles.headline,{fontSize:this.state.fontSize}]}>{item.headline}</Text>
-
-        <Text style={appStyles.subheadline}>{item.subheadline}</Text>
+        <Text style={[appStyles.subheadline,{fontSize:em_s(1,this.state.fontSize), marginBottom: em_s(0.500,this.state.fontSize)}]}>{item.subheadline}</Text>
         {(item.youtube_id)?<View>
           <YouTube
           videoId={item.youtube_id}   // The YouTube video ID
@@ -270,15 +256,74 @@ fetchgallerydata = async () => {
                   style={{width: ((appVars.screenX)-28), height: this.ratioImageHeigh(item.width,item.height,1)-28}}
                   source={{uri: appVars.apiUrl +"/"+item.singleSRC} }
                   />
-                  {(item.imagecopyright)?<Text style={appStyles.imagecopyright}>Foto: {item.imagecopyright}</Text>:<View></View>}
+                  {(item.imagecopyright)?<Text style={[appStyles.imagecopyright,{fontSize:em_s(0.750,this.state.fontSize)}]}>Foto: {item.imagecopyright}</Text>:<View></View>}
                 </View>
-                {(item.caption)?<Text style={appStyles.imagecaption}>{item.caption}</Text>:<View></View>}
+                {(item.caption)?<Text style={[appStyles.imagecaption,{fontSize:em_s(0.875,this.state.fontSize),marginBottom: em_s(0.500,this.state.fontSize)}]}>{item.caption}</Text>:<View></View>}
         </TouchableOpacity>
         }
 
-          {(item.teaser)?<HTMLView addLineBreaks={false} stylesheet={htmlStyles.teaser} value={item.teaser} onLinkPress={(url) => this.handleExternalUrl(url)} />:<View></View>}
+          {(item.teaser)?<HTMLView addLineBreaks={false} stylesheet={
+          StyleSheet.create({
+            p: {
+              fontSize: em_s(0.875,this.state.fontSize),
+              lineHeight: lineHeight_s(0.875,this.state.fontSize,150),
+              fontFamily: appVars.fontSub,
+              color: appVars.colorBlack,
+              marginBottom: em_s(0.875,this.state.fontSize),
+            },
+            strong: {
+              fontWeight: '700'
+            },
+            a: {
+              color: appVars.colorMain,
+              fontWeight: '700',
+            },
+            h3: {
+              fontSize: em_s(1.250,this.state.fontSize),
+              lineHeight: lineHeight_s(1.250,this.state.fontSize,120),
+              fontFamily: appVars.fontHeadline,
+              color: appVars.colorBlack,
+              marginBottom: em_s(0.500,this.state.fontSize),
+            }
+          })
+          }
+          value={item.teaser} onLinkPress={(url) => handleExternalUrl(url)} />:<View></View>}
 
-          <HTMLView addLineBreaks={false} value={item.text.replace('<p>', '<p><city>'+item.city.toUpperCase()+'. </city>')} stylesheet={htmlStyles.text} onLinkPress={(url) => this.handleExternalUrl(url)} />
+          <HTMLView addLineBreaks={false} value={item.text.replace('<p>', '<p><city>'+item.city.toUpperCase()+'. </city>')} 
+          
+          stylesheet={StyleSheet.create({
+            p: {
+              fontSize: em_s(0.875,this.state.fontSize),
+              lineHeight: lineHeight_s(0.875,this.state.fontSize,150),
+              fontFamily: appVars.fontText,
+              color: appVars.colorBlack,
+              marginBottom: em_s(0.875,this.state.fontSize),
+              paddingLeft: 20,
+              paddingRight: 20,
+            },
+            strong: {
+              fontWeight: '700'
+            },
+            a: {
+              color: appVars.colorMain,
+              fontWeight: '700',
+            },
+            city: {
+                fontSize: em_s(0.875, this.state.fontSize),
+                fontFamily: appVars.fontMain,
+                color: '#333',
+            },
+            h3: {
+              fontSize: em_s(1.250,this.state.fontSize),
+              lineHeight: lineHeight_s(1.250,this.state.fontSize,120),
+              fontFamily: appVars.fontHeadline,
+              color: appVars.colorBlack,
+              marginBottom: em_s(0.500,this.state.fontSize),
+            }
+          })  
+          }
+          
+          onLinkPress={(url) => handleExternalUrl(url)} />
           
             <FlatList
             data={this.state.gallerydata}

@@ -23,6 +23,7 @@ import { NavigationActions } from 'react-navigation';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
+import { em_s, lineHeight_s } from '../../core/helpers';
 
 import store from 'react-native-simple-store';
 class GalleryListScreen extends Component{
@@ -40,9 +41,18 @@ class GalleryListScreen extends Component{
       bannerAdsUrl: [],
       bannerAdsWidth: [],
       bannerAdsHeight: [],
+      fontSize: appVars.baseUnit,      
     }
   }
   componentWillMount = async ()=>{
+    let fontSize = Number.parseInt(await store.get('fontSize'),10);
+    
+      if(fontSize){
+        this.setState({
+          fontSize
+        });
+      }
+    
     let bannerAds = await this.fetchBannerAds();
     bannerAds = await bannerAds.json();
     
@@ -205,7 +215,7 @@ class GalleryListScreen extends Component{
           
           {(item.paywall)?<View><View style={appStyles.paywallIconTriangle} /><AwseomeIcon style={appStyles.paywallIcon} name="plus" /></View>:<View></View>}
           
-          <Text style={appStyles.newsListHeadline}  numberOfLines={1}>{item.headline}</Text>
+          <Text style={[appStyles.newsListHeadline,{fontSize:em_s(1.5,this.state.fontSize), lineHeight: lineHeight_s(1.5,this.state.fontSize,120), marginBottom: em_s(0.250,this.state.fontSize)}]} numberOfLines={1}>{item.headline}</Text>
             
           <View style={{flex: 1, flexDirection: 'row'}}>
             <View>
@@ -216,11 +226,11 @@ class GalleryListScreen extends Component{
             <View style={appStyles.newsListInner}>
               <Text style={appStyles.newsDate}>{item["date"]}</Text>
 
-              <Text style={appStyles.newsListTeaser}  numberOfLines={5}><Text style={appStyles.newsListCity}>{item.city.toUpperCase()}.</Text>{item.text.replace(/<{1}[^<>]{1,}>{1}/g," ")}</Text>
+              <Text style={[appStyles.newsListTeaser,{fontSize:em_s(0.875,this.state.fontSize), lineHeight: lineHeight_s(0.875,this.state.fontSize,150)}]} numberOfLines={5}><Text style={appStyles.newsListCity}>{item.city.toUpperCase()}.</Text>{item.text.replace(/<{1}[^<>]{1,}>{1}/g," ")}</Text>
             </View>
           </View>
           </TouchableOpacity>
-        </View>      
+        </View>     
         {((index+1)%3==0)?this.renderAdSeparator(index):this.renderSeparator()}
       </View>
 

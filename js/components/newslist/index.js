@@ -24,6 +24,7 @@ import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 import store from 'react-native-simple-store';
+import { em_s, lineHeight_s } from '../../core/helpers';
 import { TabNavigator } from 'react-navigation';
 const navigatorObject = {};
 const newsListComponent = (screenId)=>{
@@ -41,16 +42,17 @@ const NewsFeedNavigator = TabNavigator(navigatorObject, {
   animationEnabled: true,
   tabBarOptions: {
     scrollEnabled: true,
+    pressColor: appVars.colorLightGray,
     tabStyle: {
       width: 120
     },
     style: {
-      backgroundColor: "white"
+      backgroundColor: appVars.colorWhite,
     },
     labelStyle : {
       color: "black",
-      fontSize: 16,
-      fontWeight: "600",
+      fontFamily: appVars.fontMain,
+      fontSize: 14,
       paddingTop: 0,
       paddingBottom: 0,
       paddingRight: 0,
@@ -58,7 +60,7 @@ const NewsFeedNavigator = TabNavigator(navigatorObject, {
     },
     indicatorStyle:{
       backgroundColor: appVars.colorMain,
-      height: 5
+      height: 2
     }
   },
 });
@@ -80,10 +82,18 @@ class NewsListScreen extends Component{
       bannerAdsUrl: [],
       bannerAdsWidth: [],
       bannerAdsHeight: [],
+      fontSize: appVars.baseUnit,      
     }
 
   }
   componentWillMount = async ()=>{
+    let fontSize = Number.parseInt(await store.get('fontSize'),10);
+    
+      if(fontSize){
+        this.setState({
+          fontSize
+        });
+      }
     let bannerAds = await this.fetchBannerAds();
     bannerAds = await bannerAds.json();
     this.setState({
@@ -104,12 +114,6 @@ class NewsListScreen extends Component{
   }
   componentDidMount  = async () => {
     this.fetchdata();
-    
-    /*
-     this.setState({
-      adsApi: {...this.state.adsApi,[arrayIndex]:appVars.apiUrl +"/"+res.response[0].singleSRC}
-    });*/
-
   }
 
   fetchdata = async () => {
@@ -175,16 +179,6 @@ class NewsListScreen extends Component{
     });
   }
 
-  handleExternalUrl = function (externalurl){
-    Linking.canOpenURL(externalurl).then(supported => {
-          if (supported) {
-            Linking.openURL(externalurl);
-          } else {
-            console.log("Don't know how to open URI: " + externalurl);
-          }
-      });
-  }
-
   ratioImageHeigh = (width,height,multiplicate) =>{
     return height*(appVars.screenX*multiplicate/width);
   }
@@ -192,7 +186,6 @@ class NewsListScreen extends Component{
   fetchBannerAds = ()=>{
     const apiAd = appVars.apiUrl+"/ads.html?authtoken="+appVars.apiKey+"&pid="+appVars.apiAdArchives;
     return fetch(apiAd);
-    //.then(res => res.json());
   }
 
   renderAdSeparator =  (index) => {
@@ -236,55 +229,6 @@ class NewsListScreen extends Component{
     navigation.navigate('NewsDetail', {newsid: item.id});
   }
 
-  handleMenuClick = async (item)=>{
-        this.setState({
-          selectedArchive: item.archive,
-          page: 1,
-          refreshing:true
-        },()=>{
-          this.fetchdata();
-        });
-        /*const { navigation } = this.props;
-        navigation.navigate('NewsList', {archive: item.archive});*/
-      }
-
-  checkActiveMenu = (menu)=>{
-    if(this.state.selectedArchive===menu){
-      return true;
-    }
-  }
-
-  renderMenuItem = (item)=>{
-        return (     
-          <View style={{flexDirection: 'row'}}>
-          <TouchableOpacity activeOpacity = { .5 } onPress={this.handleMenuClick.bind(this,item)}>
-            <View style={this.checkActiveMenu(item.archive)?appStyles.subMenuItemActive:appStyles.subMenuItem}>
-              <Text style={appStyles.subMenuTextLabel}>{item.subMenuLabel.toUpperCase()}</Text>
-            </View>
-          </TouchableOpacity>
-          <View style={appStyles.subMenuSeperator}></View>
-          </View>
-          
-        );
-      }
-
-  renderSubmenu= ()=>{
-      return (
-        <View style={appStyles.subMenuContainer}>
-        <FlatList
-        data={appVars.objNewsCategories}
-        showsHorizontalScrollIndicator={false}
-        extraData={this.state}
-        renderItem={({item}) => this.renderMenuItem(item)}
-        keyExtractor={(item,index)=> {
-        return item.archive;
-        }}
-        horizontal={true}
-        />
-        </View>
-      );
-    }
-
   renderItem = (item,index) =>{
     
     return(
@@ -295,7 +239,7 @@ class NewsListScreen extends Component{
           
           {(item.paywall)?<View><View style={appStyles.paywallIconTriangle} /><AwseomeIcon style={appStyles.paywallIcon} name="plus" /></View>:<View></View>}
           
-          <Text style={appStyles.newsListHeadline} numberOfLines={1}>{item.headline}</Text>
+          <Text style={[appStyles.newsListHeadline,{fontSize:em_s(1.5,this.state.fontSize), lineHeight: lineHeight_s(1.5,this.state.fontSize,120), marginBottom: em_s(0.250,this.state.fontSize)}]} numberOfLines={1}>{item.headline}</Text>
             
           <View style={{flex: 1, flexDirection: 'row'}}>
             <View>
@@ -306,7 +250,7 @@ class NewsListScreen extends Component{
             <View style={appStyles.newsListInner}>
               <Text style={appStyles.newsDate}>{item["date"]}</Text>
 
-              <Text style={appStyles.newsListTeaser} numberOfLines={5}><Text style={appStyles.newsListCity}>{item.city.toUpperCase()}.</Text>{item.text.replace(/<{1}[^<>]{1,}>{1}/g," ")}</Text>
+              <Text style={[appStyles.newsListTeaser,{fontSize:em_s(0.875,this.state.fontSize), lineHeight: lineHeight_s(0.875,this.state.fontSize,150)}]} numberOfLines={5}><Text style={appStyles.newsListCity}>{item.city.toUpperCase()}.</Text>{item.text.replace(/<{1}[^<>]{1,}>{1}/g," ")}</Text>
             </View>
           </View>
           </TouchableOpacity>

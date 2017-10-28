@@ -49,7 +49,7 @@ class SettingsScreen extends Component {
         <View style={appStyles.contenContainer}>
 
             <View style={appStyles.contentElement}>
-                <Text style={[appStyles.contentHeadline,{fontSize:this.state.fontSize}]}>{appVars.textPushnotificationsHeadline}</Text>
+                <Text style={appStyles.contentHeadline}>{appVars.textPushnotificationsHeadline}</Text>
                 <Text style={appStyles.contentText}>{appVars.textPushnotifications}</Text>
                 <View style={appStyles.settingsWrapper}>
                     <Text style={appStyles.settingsColStart}>{appVars.labelPushnotifications}</Text>
@@ -68,7 +68,7 @@ class SettingsScreen extends Component {
                 <View style={appStyles.settingsWrapper}>    
                     <Text style={appStyles.settingsColStart}>{appVars.labelFontsize}</Text>
                     <View style={appStyles.settingsColEnd}>
-                        <Slider style={appStyles.settingsSlider} value={this.state.fontSize} step={2} minimumValue={16} maximumValue={42} onValueChange={(itemValue, itemIndex) => {this.setState({userFontSize: itemValue,fontSize:itemValue});store.save('fontSize',itemValue)}}/>
+                        <Slider style={appStyles.settingsSlider} value={this.state.fontSize} step={1} minimumValue={16} maximumValue={28} onValueChange={(itemValue, itemIndex) => {this.setState({userFontSize: itemValue,fontSize:itemValue});store.save('fontSize',itemValue)}}/>
                     </View>
                 </View>
             </View>

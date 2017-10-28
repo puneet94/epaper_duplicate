@@ -1,30 +1,10 @@
 import {StyleSheet, Platform, Dimensions} from 'react-native';
 import appVars from './appVars';
 
-// Precalculate Device Dimensions for better performance
+import { em,lineHeight } from './core/helpers'
+
 const x = Dimensions.get('window').width;
 const y = Dimensions.get('window').height;
-
-// Calculating ratio from iPhone breakpoints
-const ratioX = x < 375 ? (x < 320 ? 0.75 : 0.875) : 1;
-const ratioY = y < 568 ? (y < 480 ? 0.75 : 0.875) : 1;
-
-// We set our base font size value
-const base_unit = appVars.baseUnit;
-
-// Simulating EM by changing font size according to Ratio
-const unit = base_unit * ratioX;
-
-// We add an em() shortcut function
-function em(value) {
-  return unit * value;
-}
-
-// calcuate the lineHeight by the faked em and how many percent - lineHeight(0.825,140)
-function lineHeight(value,lh) {
-  return (unit * value)*(lh/100);
-}
-
 
 module.exports = StyleSheet.create({
 
@@ -32,7 +12,7 @@ module.exports = StyleSheet.create({
   ePaperMainContainer: {
     backgroundColor: appVars.colorWhite,
     height: (y * .75)-80,
-    borderBottomColor: appVars.colorMain,
+    borderBottomColor: appVars.colorWhite,
     borderBottomWidth: 2,
   },
   ePaperMainWrapper: {
@@ -41,7 +21,7 @@ module.exports = StyleSheet.create({
     alignItems: 'center',
   },
   ePaperHorizontalContainer: {
-    backgroundColor: appVars.colorSeperatorColor,
+    backgroundColor: appVars.colorWhite,
   },
   ePaperEditionWrapper: {
     height: (y * .25),
@@ -153,6 +133,7 @@ module.exports = StyleSheet.create({
     backgroundColor: 'transparent',
   },
   imagecaption: {
+    marginTop: em(0.150),
     fontSize: em(0.875),
     fontFamily: appVars.fontSub,
     color: appVars.colorMain,
