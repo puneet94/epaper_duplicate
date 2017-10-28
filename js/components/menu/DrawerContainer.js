@@ -10,17 +10,22 @@ import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 
 import OneSignal from 'react-native-onesignal'; // Import package from node modules
 
-
+import store from 'react-native-simple-store';
 class DrawerContainer extends React.Component {
 
-  componentWillMount() {
+  componentWillMount = async ()=> {
     OneSignal.addEventListener('received', this.onReceived);
     OneSignal.addEventListener('opened', this.onOpened);
     OneSignal.addEventListener('registered', this.onRegistered);
     OneSignal.addEventListener('ids', this.onIds);
+    let newsid = await store.get('deepLinkNewsId'); 
+    store.delete('deepLinkNewsId');
+    if(newsid){
+      this.naviagatePage(newsid);
+    }
 }
 
-componentWillUnmount() {
+componentWillUnmount=()=> {
     OneSignal.removeEventListener('received', this.onReceived);
     OneSignal.removeEventListener('opened', this.onOpened);
     OneSignal.removeEventListener('registered', this.onRegistered);
@@ -28,22 +33,24 @@ componentWillUnmount() {
 }
 
 onReceived(notification) {
-    console.log("Notification received: ", notification);
+  
 }
-
-onOpened(openResult) {
-  console.log('Message: ', openResult.notification.payload.body);
-  console.log('Data: ', openResult.notification.payload.additionalData);
-  console.log('isActive: ', openResult.notification.isAppInFocus);
-  console.log('openResult: ', openResult);
+naviagatePage = (newsid)=>{
+  const { navigation } = this.props;
+  navigation.navigate('NewsDetail', {newsid});
+}
+onOpened=(openResult)=> {
+  this.naviagatePage(openResult.notification.payload.additionalData.newsid);  
 }
 
 onRegistered(notifData) {
-    console.log("Device had been registered for push notifications!", notifData);
+
+
+  
 }
 
 onIds(device) {
-console.log('Device info: ', device);
+
 }
 
   isActiveClass = (key)=>{

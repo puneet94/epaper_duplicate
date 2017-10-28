@@ -6,14 +6,16 @@ import {
     Dimensions,
     View,
     Text,
+    Alert,
     Switch,
     Picker,
+    ToastAndroid,
     Slider
 } from 'react-native'
 import store from 'react-native-simple-store';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
-
+import OneSignal from 'react-native-onesignal'
 class SettingsScreen extends Component {
     constructor(props){
             super(props);
@@ -29,17 +31,31 @@ class SettingsScreen extends Component {
             fontSize
           });
         }
+        OneSignal.getPermissionSubscriptionState((status)=>{
+            this.setState({
+                userPushnotification: status.subscriptionEnabled
+            });
+            
+        });
       }
+      changePushNotification = (value)=>{
+        this.setState({userPushnotification: value});
+        OneSignal.setSubscription(value);
+        ToastAndroid.show(`Push notifications ${value?"enabled":"disabled"}`, ToastAndroid.SHORT);
+      }
+      
       render() {
           return (
         <View style={appStyles.contenContainer}>
 
             <View style={appStyles.contentElement}>
-            <Text style={[appStyles.contentHeadline,{fontSize:this.state.fontSize}]}>{appVars.textPushnotificationsHeadline}</Text>
-            <Text style={appStyles.contentText}>{appVars.textPushnotifications}</Text>
+                <Text style={[appStyles.contentHeadline,{fontSize:this.state.fontSize}]}>{appVars.textPushnotificationsHeadline}</Text>
+                <Text style={appStyles.contentText}>{appVars.textPushnotifications}</Text>
                 <View style={appStyles.settingsWrapper}>
                     <Text style={appStyles.settingsColStart}>{appVars.labelPushnotifications}</Text>
-                    <View style={appStyles.settingsColEnd}><Switch onValueChange={(value) => this.setState({userPushnotification: value})} value={this.state.userPushnotification} /></View>
+                    <View style={appStyles.settingsColEnd}>
+                        <Switch onValueChange={ this.changePushNotification} value={this.state.userPushnotification} />
+                    </View>
                </View>
             </View>
             
