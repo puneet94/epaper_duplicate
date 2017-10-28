@@ -47,14 +47,13 @@ class NewsDetailScreen extends Component{
   }
 }
 componentWillMount = async ()=>{
+  store.delete('deepLinkNewsId');
   let fontSize = Number.parseInt(await store.get('fontSize'),10);
   if(fontSize){
     this.setState({
       fontSize
     });
   }
-  
-
 }
   SocialShare =()=>{
     Share.share({
