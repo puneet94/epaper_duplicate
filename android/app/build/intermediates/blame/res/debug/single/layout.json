@@ -292,6 +292,10 @@
         "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/layout/pspdf__search_view_modular.xml"
     },
     {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/layout/onesignal_bgimage_notif_layout.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.onesignal/OneSignal/3.6.5/res/layout/onesignal_bgimage_notif_layout.xml"
+    },
+    {
         "merged": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
         "source": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\layout\\abc_list_menu_item_radio.xml"
     },

@@ -1,4 +1,4 @@
-#Tue Oct 24 13:47:23 CEST 2017
+#Sat Oct 28 22:07:16 CEST 2017
 base.0=/Users/sturm/Desktop/epaper/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.1=classes2.dex
 renamed.0=classes.dex

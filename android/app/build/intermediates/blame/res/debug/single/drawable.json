@@ -28,12 +28,16 @@
         "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_mini_controller_play.xml"
     },
     {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light_focused.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
         "merged": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
         "source": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\drawable\\abc_dialog_material_background_light.xml"
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
-        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/drawable/common_google_signin_btn_text_dark.xml"
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
@@ -180,6 +184,10 @@
         "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/drawable/abc_tab_indicator_material.xml"
     },
     {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_normal.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
         "merged": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
         "source": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\drawable\\abc_textfield_search_material.xml"
     },
@@ -280,6 +288,10 @@
         "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/drawable/common_plus_signin_btn_text_light.xml"
     },
     {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light_normal.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
         "merged": "/Users/sturm/Desktop/epaper/android/E:\\epaper2\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
         "source": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
@@ -297,7 +309,7 @@
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
-        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/drawable/common_google_signin_btn_icon_light.xml"
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
@@ -492,6 +504,10 @@
         "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_expanded_controller_mute.xml"
     },
     {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_focused.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
         "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/drawable/abc_list_selector_holo_dark.xml"
     },
@@ -514,6 +530,10 @@
     {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
         "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_disabled.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_text_disabled.xml"
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
@@ -644,6 +664,10 @@
         "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_ic_expanded_controller_pause.xml"
     },
     {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
         "merged": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
         "source": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
@@ -690,6 +714,14 @@
     {
         "merged": "/Users/sturm/Desktop/epaper/android/E:\\epaper2\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
         "source": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_normal.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_focused.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_text_dark_focused.xml"
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/E:\\epaper2\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
@@ -757,7 +789,7 @@
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
-        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/drawable/common_google_signin_btn_text_light.xml"
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
@@ -834,6 +866,10 @@
     {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/pspdf__list_divider_light.xml",
         "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/drawable/pspdf__list_divider_light.xml"
+    },
+    {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_disabled.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_icon_disabled.xml"
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
@@ -924,7 +960,11 @@
         "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.4.0/res/drawable/cast_expanded_controller_actionbar_bg_gradient_light.xml"
     },
     {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_focused.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
-        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/drawable/common_google_signin_btn_icon_dark.xml"
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/drawable/common_google_signin_btn_icon_dark.xml"
     }
 ]
