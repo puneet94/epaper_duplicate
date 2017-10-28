@@ -3,6 +3,7 @@ package com.epaper;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.geektime.rnonesignalandroid.ReactNativeOneSignalPackage;
 import com.pspdfkit.react.PSPDFKitPackage;
 import fm.indiecast.rnaudiostreamer.RNAudioStreamerPackage;
 import com.inprogress.reactnativeyoutube.ReactNativeYouTube;
@@ -29,6 +30,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new ReactNativeOneSignalPackage(),
             new PSPDFKitPackage(),
             new RNAudioStreamerPackage(),
             new ReactNativeYouTube(),

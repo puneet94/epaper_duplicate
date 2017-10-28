@@ -104,6 +104,8 @@ android {
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
+        manifestPlaceholders = [onesignal_app_id: "f79d0825-79e2-4a0f-b6e5-505355bc1f5d",
+                                onesignal_google_project_number: "652329348244"]
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
@@ -138,6 +140,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-onesignal')
     compile project(':react-native-pspdfkit')
     compile project(':react-native-audio-streamer')
     compile project(':react-native-youtube')

@@ -3493,6 +3493,12 @@ react-native-image-picker@^0.26.7:
   version "0.26.7"
   resolved "https://registry.yarnpkg.com/react-native-image-picker/-/react-native-image-picker-0.26.7.tgz#ad2ee957f7f6cc01396893ea03d84cb2adb2e376"
 
+react-native-onesignal@^3.0.6:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/react-native-onesignal/-/react-native-onesignal-3.0.6.tgz#cbba9813fef876aa4c3b02977eda15a80abd8cb3"
+  dependencies:
+    invariant "^2.2.2"
+
 "react-native-pspdfkit@github:PSPDFKit/react-native":
   version "1.5.0"
   resolved "https://codeload.github.com/PSPDFKit/react-native/tar.gz/a35f35d6b35aa0ba932297ee4477c2e44a985164"
