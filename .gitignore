@@ -37,7 +37,6 @@ npm-debug.log
 yarn-error.log
 
 # android
-android/app/build
 ios/
 
 # BUCK
