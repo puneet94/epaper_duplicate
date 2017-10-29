@@ -44,18 +44,22 @@ class HomeScreen extends Component{
     this.state = {
       loading: false,
       data: [],
-      page: 1,
+      page: 0,
       error: null,
+      pages: 0,
       refreshing: false,
       downloading: false,
       currentItem: null
     }
   }
+  componentWillMount  = ()=>{
+    this.fetchdata();
+  }
   componentDidMount=()=>{
     if(Platform.OS === 'android') {
       this.getPermissions();
     }
-    this.fetchdata();
+    
     TimerMixin.setInterval (
       () => {
         if(!this.state.downloading){
@@ -69,10 +73,11 @@ fetchdata = async () => {
   const { page } = this.state;
   const api = appVars.apiUrl+"/epaper.html?authtoken="+appVars.apiKey+"&limit="+appVars.apiEpaperLimit+"&pid="+appVars.apiEpaperArchives;
   let tempapi= api+"&page_n120=" + this.state.page.toString();
-  this.setState({ loading: true});
+  
 
-
-  if(this.state.refreshing){
+  
+  if(this.state.refreshing && !this.state.loading){
+    
     fetch(tempapi)
       .then(res => res.json())
       .then(res => {
@@ -81,20 +86,24 @@ fetchdata = async () => {
           error: res.error || null,
           loading : false,
           refreshing: false,
+          pages: res['@pages']
         })
       })
       .catch(error => {
         this.setState({ error, loading: false });
-      })
-    } else {
+      });
+
+    } else if(!this.state.loading) {
       fetch(tempapi)
         .then(res => res.json())
         .then(res => {
+          
           this.setState({
             data: [...this.state.data, ...res.response],
             error: res.error || null,
             loading : false,
             refreshing: false,
+            pages: res['@pages']
           })
         })
         .catch(error => {
@@ -118,7 +127,7 @@ fetchdata = async () => {
         break;
       }
     }
-    //console.log(url);
+    
 
     if(downloadFile){
       this.setState({
@@ -177,8 +186,7 @@ fetchdata = async () => {
         epaperindex: item.epaperindex,
         id: item.id
       };
-      //Alert.alert(resp.path());
-      //Alert.alert("Download Successful");
+      
       store.push('userIssues',issueObject );
       PSPDFKit.present(resp.path(), appVars.PDFVIEWER_CONFIGURATION);
     } catch (error) {
@@ -213,17 +221,22 @@ fetchdata = async () => {
     this.setState({
       page: 1,
       refreshing:true,
+      loading: true
     }, ()=>{
       this.fetchdata();
     })
   }
 
   handlePageEnd = ()=>{
-    this.setState({
-      page: this.state.page+1,
-    }, ()=>{
-      this.fetchdata();
-    });
+    if((this.state.page+1)<=this.state.pages){
+      
+      this.setState({
+        page: this.state.page+1,
+        loading: true
+      }, ()=>{
+          this.fetchdata();
+      });
+    }
   }
 
   handleClick = async (item)=>{
@@ -316,12 +329,14 @@ fetchdata = async () => {
         horizontal={true}
         showsHorizontalScrollIndicator={false}
         onEndReached={this.handlePageEnd}
-        onEndReachedThreshold={0.5}
+        onEndReachedThreshold={0.1}
+        initialNumToRender={10}
         keyExtractor={(item,index)=> { 
           return item.id;
           }}
         renderItem={({item}) => this.renderItem(item)}
        />
+
        </View>
       </View>
     );
