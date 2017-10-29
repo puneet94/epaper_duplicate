@@ -117,7 +117,7 @@ class AccountScreen extends Component {
       {
           return(
             <View style={appStyles.ActivityIndicatorFullscreenContainer}>
-              <ActivityIndicator animating={true} size={96}/>
+              <ActivityIndicator animating={true} size={'large'}/>
             </View>
           )
       }
