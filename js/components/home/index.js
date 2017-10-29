@@ -35,6 +35,7 @@ if(Platform.OS === 'ios') {
   PSPDFKit.setLicenseKey(appVars.PDFVIEWER_KEY);
 }
 
+
 const dirs = RNFetchBlob.fs.dirs;
 
 class HomeScreen extends Component{
@@ -44,25 +45,27 @@ class HomeScreen extends Component{
     this.state = {
       loading: false,
       data: [],
-      page: 0,
+      page: 1,
       error: null,
       pages: 0,
       refreshing: false,
       downloading: false,
       currentItem: null
-    }
+    };
+    //this.fetchingData = true;
   }
-  componentWillMount  = ()=>{
-    this.fetchdata();
+  componentWillMount  = ()=>{    
   }
   componentDidMount=()=>{
     if(Platform.OS === 'android') {
       this.getPermissions();
     }
-    
+
+    this.fetchingData = false;
+    this.fetchdata();
     TimerMixin.setInterval (
       () => {
-        if(!this.state.downloading){
+        if(!this.state.downloading && !this.fetchingData){
         this.handleRefresh();  }
       },
       appVars.apiRefreshTime
@@ -70,15 +73,14 @@ class HomeScreen extends Component{
   }
 
 fetchdata = async () => {
+  //Alert.alert("fetch called");
   const { page } = this.state;
+  
   const api = appVars.apiUrl+"/epaper.html?authtoken="+appVars.apiKey+"&limit="+appVars.apiEpaperLimit+"&pid="+appVars.apiEpaperArchives;
   let tempapi= api+"&page_n120=" + this.state.page.toString();
-  
-
-  
-  if(this.state.refreshing && !this.state.loading){
-    
-    fetch(tempapi)
+  if(this.state.refreshing && !this.fetchingData){
+    this.fetchingData = true;
+      fetch(tempapi)
       .then(res => res.json())
       .then(res => {
         this.setState({
@@ -87,17 +89,21 @@ fetchdata = async () => {
           loading : false,
           refreshing: false,
           pages: res['@pages']
-        })
+        });
       })
       .catch(error => {
         this.setState({ error, loading: false });
+      }).finally(()=>{
+        
+        this.fetchingData = false;
+        this.setState({ loading: false });
       });
-
-    } else if(!this.state.loading) {
-      fetch(tempapi)
+    } else if(!this.fetchingData) {
+      this.fetchingData = true;
+      
+        fetch(tempapi)
         .then(res => res.json())
         .then(res => {
-          
           this.setState({
             data: [...this.state.data, ...res.response],
             error: res.error || null,
@@ -108,7 +114,13 @@ fetchdata = async () => {
         })
         .catch(error => {
           this.setState({ error, loading: false });
+        }).finally(()=>{
+          
+          this.fetchingData = false;
+          this.setState({ loading: false });
         });
+      
+      
     }
 };
 
@@ -134,8 +146,7 @@ fetchdata = async () => {
         downloading: true
       });
       
-      try {
-        
+      try {  
       const pdfSource = appVars.downloadApiUrl +"/"+item.downloadPath;        
       let resp = await RNFetchBlob
       .config({
@@ -227,8 +238,12 @@ fetchdata = async () => {
     })
   }
 
+
+
+
   handlePageEnd = ()=>{
-    if((this.state.page+1)<=this.state.pages){
+    
+    if(((this.state.page+1)<=this.state.pages)&&(!this.fetchingData)){
       
       this.setState({
         page: this.state.page+1,
@@ -297,6 +312,17 @@ fetchdata = async () => {
       </View>
     );
   }
+  renderFooter = ()=>{
+    if(this.state.page>=this.state.pages){
+      return <View></View>
+    }else{
+      return (
+        <View style={{flex: 1,justifyContent:"center",alignItems:"center"}}>
+          <ActivityIndicator animating size="large" />
+        </View>
+      );
+    }
+  }
 	render()
 	{
     const mainItem = [];
@@ -330,11 +356,11 @@ fetchdata = async () => {
         showsHorizontalScrollIndicator={false}
         onEndReached={this.handlePageEnd}
         onEndReachedThreshold={0.1}
-        initialNumToRender={10}
         keyExtractor={(item,index)=> { 
           return item.id;
           }}
         renderItem={({item}) => this.renderItem(item)}
+        ListFooterComponent={this.renderFooter}
        />
 
        </View>
