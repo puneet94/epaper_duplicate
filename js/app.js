@@ -32,7 +32,9 @@ const emdigitalApp = StackNavigator({
           }
         }}>
           <View style={appStyles.iconWrapper} >
-            <AwseomeIcon name="bars" style={appStyles.headerIcon} />
+          {(navigation.state.index === 0)?
+            <AwseomeIcon name="bars" style={appStyles.headerIcon} />:
+            <AwseomeIcon name="close" style={appStyles.headerIcon} />}
           </View>
         </TouchableWithoutFeedback>
     }),
