@@ -38,7 +38,7 @@ if(Platform.OS === 'ios') {
 
 const dirs = RNFetchBlob.fs.dirs;
 
-class HomeScreen extends Component{
+class ePaperScreen extends Component{
 
   constructor(props){
     super(props);
@@ -369,4 +369,4 @@ fetchdata = async () => {
 	}
 }
 
-export default HomeScreen;
+export default ePaperScreen;

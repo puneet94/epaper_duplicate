@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View, Image, TouchableWithoutFeedback} from 'react-native'
+import { StyleSheet, Text, View, ScrollView, Image, TouchableWithoutFeedback} from 'react-native'
 
 import appVars from '../../appVars';
 import appStyles from '../../appStyles';
@@ -39,6 +39,7 @@ naviagatePage = (newsid)=>{
   const { navigation } = this.props;
   navigation.navigate('NewsDetail', {newsid});
 }
+
 onOpened=(openResult)=> {
   this.naviagatePage(openResult.notification.payload.additionalData.newsid);  
 }
@@ -66,25 +67,9 @@ onIds(device) {
 
     const { navigation } = this.props
     return (
-    <View style={appStyles.drawerContainer}>
+    <ScrollView style={appStyles.drawerContainer}>
 
       <Image source={require('../../../assets/images/logo.png')} style={appStyles.drawerLogo}/>
-
-      <View style={appStyles.drawerSeperator} />
-
-      <TouchableWithoutFeedback onPress={() => navigation.navigate('Home')} style={this.isActiveClass('home')}>
-        <View style={[appStyles.drawerItem,this.isActiveClass('home')]}>
-          <AwseomeIcon name="home" style={appStyles.drawerIcon}/>
-          <Text style={appStyles.drawerLabel}>{appVars.labelHome.toUpperCase()}</Text>
-        </View>
-      </TouchableWithoutFeedback>
-
-      <TouchableWithoutFeedback onPress={() => navigation.navigate('MyIssues')} >
-        <View style={[appStyles.drawerItem,this.isActiveClass('myissues')]}>
-          <AwseomeIcon name="newspaper-o" style={appStyles.drawerIcon}/>
-          <Text style={appStyles.drawerLabel}>{appVars.labelMyIssues.toUpperCase()}</Text>
-        </View>
-      </TouchableWithoutFeedback>
 
       <View style={appStyles.drawerSeperator} />
 
@@ -99,6 +84,22 @@ onIds(device) {
         <View style={[appStyles.drawerItem,this.isActiveClass('gallerylist')]}>
           <AwseomeIcon name="camera" style={appStyles.drawerIcon}/>
           <Text style={appStyles.drawerLabel}>{appVars.labelGalleryList.toUpperCase()}</Text>
+        </View>
+      </TouchableWithoutFeedback>
+
+      <View style={appStyles.drawerSeperator} />
+
+      <TouchableWithoutFeedback onPress={() => navigation.navigate('epaper')} style={this.isActiveClass('epaper')}>
+        <View style={[appStyles.drawerItem,this.isActiveClass('epaper')]}>
+          <AwseomeIcon name="home" style={appStyles.drawerIcon}/>
+          <Text style={appStyles.drawerLabel}>{appVars.labelePaper.toUpperCase()}</Text>
+        </View>
+      </TouchableWithoutFeedback>
+
+      <TouchableWithoutFeedback onPress={() => navigation.navigate('MyIssues')} >
+        <View style={[appStyles.drawerItem,this.isActiveClass('myissues')]}>
+          <AwseomeIcon name="newspaper-o" style={appStyles.drawerIcon}/>
+          <Text style={appStyles.drawerLabel}>{appVars.labelMyIssues.toUpperCase()}</Text>
         </View>
       </TouchableWithoutFeedback>
 
@@ -126,7 +127,7 @@ onIds(device) {
         </View>
       </TouchableWithoutFeedback>
 
-    </View>
+    </ScrollView>
     )
   }
 }

@@ -4,7 +4,7 @@ import{Image,ScrollView} from "react-native";
 import { DrawerNavigator } from 'react-navigation';
 
 
-import HomeScreen from "../home";
+import ePaperScreen from "../epaper";
 import IssuesScreen from "../myissues";
 import NewsListScreen from "../newslist";
 import GalleryListScreen from "../gallerylist";
@@ -17,18 +17,6 @@ import appVars from '../../appVars';
 import appStyles from '../../appStyles';
 
 const Menu = DrawerNavigator({
-  Home: {
-    screen: HomeScreen,
-    navigationOptions : ({ navigation, screenProps }) => ({
-      headerTitle: appVars.labelHome.toUpperCase(),
-    }),
-  },
-  MyIssues: {
-    screen: IssuesScreen,
-    navigationOptions : ({ navigation, screenProps }) => ({
-      headerTitle: appVars.labelMyIssues.toUpperCase(),
-    }),
-  },
   NewsList: {
     screen: NewsListScreen,
     navigationOptions : ({ navigation, screenProps }) => ({
@@ -39,6 +27,18 @@ const Menu = DrawerNavigator({
     screen: GalleryListScreen,
     navigationOptions : ({ navigation, screenProps }) => ({
       headerTitle: appVars.labelGalleryList.toUpperCase(),
+    }),
+  },
+  epaper: {
+    screen: ePaperScreen,
+    navigationOptions : ({ navigation, screenProps }) => ({
+      headerTitle: appVars.labelePaper.toUpperCase(),
+    }),
+  },
+  MyIssues: {
+    screen: IssuesScreen,
+    navigationOptions : ({ navigation, screenProps }) => ({
+      headerTitle: appVars.labelMyIssues.toUpperCase(),
     }),
   },
   Upload: {

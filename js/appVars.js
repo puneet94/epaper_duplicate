@@ -127,7 +127,7 @@ const APP_CONSTANTS =   {
   fontText: "CandidaStd-Roman",
 
   //labels
-  labelHome: "Home",
+  labelePaper: "ePaper",
   labelMyIssues: "My issues",
   labelNewsList: "Newsfeed",
   labelGalleryList: "Galleryfeed",
