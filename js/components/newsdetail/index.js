@@ -23,7 +23,7 @@ import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
 import YouTube from 'react-native-youtube';
-//import RNAudioStreamer from 'react-native-audio-streamer';
+import { ReactNativeAudioStreaming } from 'react-native-audio-streaming';
 import store from 'react-native-simple-store';
 import { em_s, lineHeight_s, handleExternalUrl } from '../../core/helpers';
 
@@ -67,19 +67,19 @@ componentWillMount = async ()=>{
   }
 
   playReadspeaker = async () => {
-    const ReadspeakerUrl = appVars.ReadspeakerUrl+this.state.shareUrl;//"http://lacavewebradio.chickenkiller.com:8000/stream.mp3";
+    const ReadspeakerUrl = appVars.ReadspeakerUrl+this.state.shareUrl;
     this.setState({
       audioPaused: false
     });
-    //RNAudioStreamer.setUrl(ReadspeakerUrl)
-    //RNAudioStreamer.play()
+    ReactNativeAudioStreaming.play(ReadspeakerUrl, {showIniOSMediaCenter: true, showInAndroidNotifications: true});
+    
   }
 
   stopReadspeaker =()=>{
     this.setState({
       audioPaused: true
     });
-    //RNAudioStreamer.pause()    
+    ReactNativeAudioStreaming.stop();
   }
   
   static navigationOptions = ({ navigation }) => {
@@ -87,9 +87,9 @@ componentWillMount = async ()=>{
      return {
          headerRight: <View style={{flexDirection:"row"}}>
            
-          {params.audioPaused?<TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerPlay()}><AwseomeIcon size={24} name="podcast" color="black"/></TouchableOpacity>:<TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerStop()}><AwseomeIcon size={24} name="stop-circle" color="black"/></TouchableOpacity>}
+          {params.audioPaused?<TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerPlay()}><AwseomeIcon size={24} name="assistive-listening-systems" color={appVars.colorBlack}/></TouchableOpacity>:<TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerStop()}><AwseomeIcon size={24} name="stop-circle" color={appVars.colorBlack}/></TouchableOpacity>}
            
-           <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleSocialShare()}><IoniconsIcon size={24} name={appVars.shareIcon}  color="black"/></TouchableOpacity>
+           <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleSocialShare()}><IoniconsIcon size={24} name={appVars.shareIcon} color={appVars.colorBlack}/></TouchableOpacity>
            </View>
      };
  };
@@ -127,7 +127,7 @@ componentWillUnmount=()=>{
   this.setState({
     audioPaused: true
   });
-  //RNAudioStreamer.pause()
+  ReactNativeAudioStreaming.stop();
 }
 
 fetchdata = async () => {
