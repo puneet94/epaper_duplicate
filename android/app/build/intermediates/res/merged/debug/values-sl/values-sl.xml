@@ -56,13 +56,6 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Odpiranje v telefonu"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Prijava"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Prijava z Google Računom"</string>
-    <string name="exo_controls_fastforward_description">"Previj naprej"</string>
-    <string name="exo_controls_next_description">"Naslednja skladba"</string>
-    <string name="exo_controls_pause_description">"Zaustavi"</string>
-    <string name="exo_controls_play_description">"Predvajaj"</string>
-    <string name="exo_controls_previous_description">"Prejšnja skladba"</string>
-    <string name="exo_controls_rewind_description">"Previj nazaj"</string>
-    <string name="exo_controls_stop_description">"Ustavi"</string>
     <string name="pspdf__action_menu_copy">Kopiraj</string>
     <string name="pspdf__action_menu_speak">Govori</string>
     <string name="pspdf__activity_menu_no_outline">Ni kazala</string>

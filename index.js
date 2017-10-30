@@ -1,6 +1,6 @@
 import { AppRegistry } from 'react-native';
 import ReactApp from './index';
-import epaper from './js/app';
+import emdigital from './js/app';
 import OneSignal from 'react-native-onesignal';
 import store from 'react-native-simple-store';
 OneSignal.addEventListener('opened', async (values)=>{    
@@ -10,4 +10,4 @@ OneSignal.addEventListener('opened', async (values)=>{
     
 });
   
-AppRegistry.registerComponent('epaper', () => epaper);
+AppRegistry.registerComponent('emdigital', () => emdigital);

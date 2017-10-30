@@ -53,13 +53,6 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Åbn på telefonen"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Log ind"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Log ind med Google"</string>
-    <string name="exo_controls_fastforward_description">"Spol frem"</string>
-    <string name="exo_controls_next_description">"Næste nummer"</string>
-    <string name="exo_controls_pause_description">"Pause"</string>
-    <string name="exo_controls_play_description">"Afspil"</string>
-    <string name="exo_controls_previous_description">"Forrige nummer"</string>
-    <string name="exo_controls_rewind_description">"Spol tilbage"</string>
-    <string name="exo_controls_stop_description">"Stop"</string>
     <string name="pspdf__action_menu_copy">Kopier</string>
     <string name="pspdf__action_menu_speak">Læs op</string>
     <string name="pspdf__activity_menu_no_outline">Intet indhold</string>

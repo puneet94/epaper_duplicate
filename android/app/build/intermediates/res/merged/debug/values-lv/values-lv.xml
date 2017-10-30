@@ -36,13 +36,6 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Atvērt tālrunī"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Pierakstīties"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Pierakstīties ar Google kontu"</string>
-    <string name="exo_controls_fastforward_description">"Ātri patīt"</string>
-    <string name="exo_controls_next_description">"Nākamais ieraksts"</string>
-    <string name="exo_controls_pause_description">"Pārtraukt"</string>
-    <string name="exo_controls_play_description">"Atskaņot"</string>
-    <string name="exo_controls_previous_description">"Iepriekšējais ieraksts"</string>
-    <string name="exo_controls_rewind_description">"Attīt atpakaļ"</string>
-    <string name="exo_controls_stop_description">"Apturēt"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Meklēt"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

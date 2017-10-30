@@ -53,13 +53,6 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Otevřít v telefonu"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Přihlásit se"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Přihlásit se k účtu Google"</string>
-    <string name="exo_controls_fastforward_description">"Přetočit vpřed"</string>
-    <string name="exo_controls_next_description">"Další skladba"</string>
-    <string name="exo_controls_pause_description">"Pozastavit"</string>
-    <string name="exo_controls_play_description">"Přehrát"</string>
-    <string name="exo_controls_previous_description">"Předchozí skladba"</string>
-    <string name="exo_controls_rewind_description">"Přetočit zpět"</string>
-    <string name="exo_controls_stop_description">"Zastavit"</string>
     <string name="pspdf__action_menu_copy">Kopírovat</string>
     <string name="pspdf__action_menu_speak">Číst</string>
     <string name="pspdf__activity_menu_no_outline">Žádný obsah</string>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.epaper"
+    package="com.emdigital"
     android:versionCode="1"
-    android:versionName="1.0" > <!-- Precise location If you want to use promptLocation for letting OneSignal know the user location. -->
+    android:versionName="1.0" > <!-- Approximate location - If you want to use promptLocation for letting OneSignal know the user location. -->
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="25" />
@@ -13,20 +13,16 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Approximate location - If you want to use promptLocation for letting OneSignal know the user location. -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="false" />
-    <uses-feature
-        android:name="android.hardware.camera.autofocus"
-        android:required="false" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
     <permission
-        android:name="com.epaper.permission.C2D_MESSAGE"
+        android:name="com.emdigital.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.epaper.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.emdigital.permission.C2D_MESSAGE" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <!--
@@ -58,26 +54,21 @@
     <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
     <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
 
-    <meta-data
-        android:name="android.support.VERSION"
-        android:value="25.3.1" />
-
     <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
-        android:name="com.epaper.MainApplication"
+        android:name="com.emdigital.MainApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:supportsRtl="true"
         android:theme="@style/epaperTheme" >
         <meta-data
             android:name="pspdfkit_license_key"
             android:value="sqkrOTqSGeFadbyy7qR-iZ44vbkpIH20ci-Cv_yaFu-XIgB8cqCJP26vlVlCv13n3is3vembwQt2NlG1OnLwohs-mDy_Cc_HA-PcdhXo7Pug9gp8Djr4ZANPKo6qVoOwV0d5QaVphIQKCH8tgMH3hWCBdFyFOy7Ml_V1eIpFU91cgNlTeuRcQEQKniZcep1MPQH1CYhQkPf_Vjdju0O548b_ksuEpzz_Mq377Ti1k2E-QzJrqWPnO6VAZE0U9K75uw0TIgypqdh8vWgpLNzZ6--IZ89Hi2ThsSqDz6aqaBhFN502GbtoDNl5QwrnT3EDah9YRrjlZDb3CGwmIxl9A8qPD77I3352bp4leenwP6hSp2ogFiYFwZbS6i15uOw8je_rkykX44l7SeNUDiT9ELabIleGf9pX09LMXJ6iWNAN4yRi8b5doWRLgv-CXQeG" />
 
         <activity
-            android:name="com.epaper.MainActivity"
+            android:name="com.emdigital.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/app_name"
             android:launchMode="singleTop"
@@ -95,6 +86,25 @@
             android:name="com.pspdfkit.ui.PdfActivity"
             android:theme="@style/epaperTheme.PSPDFKitTheme.Base"
             android:windowSoftInputMode="adjustNothing" />
+        <!-- Printing pdf documents -->
+        <activity
+            android:name="com.pspdfkit.document.printing.PrintActivity"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false" /> <!-- Content provider used for initializing the library. -->
+        <provider
+            android:name="com.pspdfkit.PSPDFKitInitializationProvider"
+            android:authorities="com.emdigital.com.pspdfkit.PSPDFKitInitializationProvider"
+            android:exported="false" />
+        <provider
+            android:name="com.pspdfkit.media.AssetsContentProvider"
+            android:authorities="com.emdigital.pdf.assets"
+            android:exported="false" />
+        <provider
+            android:name="com.pspdfkit.document.sharing.DocumentSharingProvider"
+            android:authorities="com.emdigital.pdf.share"
+            android:exported="true"
+            android:grantUriPermissions="true" />
 
         <meta-data
             android:name="onesignal_app_id"
@@ -111,7 +121,7 @@
             <intent-filter android:priority="999" >
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
 
-                <category android:name="com.epaper" />
+                <category android:name="com.emdigital" />
             </intent-filter>
         </receiver>
         <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
@@ -157,28 +167,11 @@
 
         <meta-data
             android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" /> <!-- Printing pdf documents -->
-        <activity
-            android:name="com.pspdfkit.document.printing.PrintActivity"
-            android:configChanges="orientation|screenSize"
-            android:excludeFromRecents="true"
-            android:exported="false" /> <!-- Content provider used for initializing the library. -->
-        <provider
-            android:name="com.pspdfkit.PSPDFKitInitializationProvider"
-            android:authorities="com.epaper.com.pspdfkit.PSPDFKitInitializationProvider"
-            android:exported="false" />
-        <provider
-            android:name="com.pspdfkit.media.AssetsContentProvider"
-            android:authorities="com.epaper.pdf.assets"
-            android:exported="false" />
-        <provider
-            android:name="com.pspdfkit.document.sharing.DocumentSharingProvider"
-            android:authorities="com.epaper.pdf.share"
-            android:exported="true"
-            android:grantUriPermissions="true" />
+            android:value="@integer/google_play_services_version" />
+
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.epaper.provider"
+            android:authorities="com.emdigital.provider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data

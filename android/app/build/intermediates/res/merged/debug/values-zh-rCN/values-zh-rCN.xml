@@ -53,13 +53,6 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"在手机上打开"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"登录"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"使用 Google 帐号登录"</string>
-    <string name="exo_controls_fastforward_description">"快进"</string>
-    <string name="exo_controls_next_description">"下一曲"</string>
-    <string name="exo_controls_pause_description">"暂停"</string>
-    <string name="exo_controls_play_description">"播放"</string>
-    <string name="exo_controls_previous_description">"上一曲"</string>
-    <string name="exo_controls_rewind_description">"快退"</string>
-    <string name="exo_controls_stop_description">"停止"</string>
     <string name="pspdf__action_menu_copy">拷贝</string>
     <string name="pspdf__action_menu_speak">朗读</string>
     <string name="pspdf__activity_menu_no_outline">无大纲</string>

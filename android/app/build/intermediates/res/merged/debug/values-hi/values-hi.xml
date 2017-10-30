@@ -36,13 +36,6 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"फ़ोन पर खोलें"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"प्रवेश करें"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Google के साथ प्रवेश करें"</string>
-    <string name="exo_controls_fastforward_description">"फ़ास्ट फ़ॉरवर्ड"</string>
-    <string name="exo_controls_next_description">"अगला ट्रैक"</string>
-    <string name="exo_controls_pause_description">"रोकें"</string>
-    <string name="exo_controls_play_description">"चलाएं"</string>
-    <string name="exo_controls_previous_description">"पिछला ट्रैक"</string>
-    <string name="exo_controls_rewind_description">"रिवाइंड करें"</string>
-    <string name="exo_controls_stop_description">"बंद करें"</string>
     <string msgid="146198913615257606" name="search_menu_title">"खोज"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

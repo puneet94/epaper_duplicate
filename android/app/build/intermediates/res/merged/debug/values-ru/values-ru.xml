@@ -56,13 +56,6 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Открыть на телефоне"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Войти"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Войти через аккаунт Google"</string>
-    <string name="exo_controls_fastforward_description">"Перемотать вперед"</string>
-    <string name="exo_controls_next_description">"Следующий трек"</string>
-    <string name="exo_controls_pause_description">"Приостановить"</string>
-    <string name="exo_controls_play_description">"Воспроизвести"</string>
-    <string name="exo_controls_previous_description">"Предыдущий трек"</string>
-    <string name="exo_controls_rewind_description">"Перемотать назад"</string>
-    <string name="exo_controls_stop_description">"Остановить"</string>
     <string name="pspdf__action_menu_copy">Скопировать</string>
     <string name="pspdf__action_menu_speak">Произнести</string>
     <string name="pspdf__activity_menu_no_outline">Без содержания</string>

@@ -18,13 +18,6 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Səsli axtarış"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Bununla paylaşın"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Dağıt"</string>
-    <string name="exo_controls_fastforward_description">"Sürətlə irəli"</string>
-    <string name="exo_controls_next_description">"Növbəti trek"</string>
-    <string name="exo_controls_pause_description">"Pauza"</string>
-    <string name="exo_controls_play_description">"Oyun"</string>
-    <string name="exo_controls_previous_description">"Öncəki trek"</string>
-    <string name="exo_controls_rewind_description">"Geri sarıma"</string>
-    <string name="exo_controls_stop_description">"Dayandır"</string>
     <string msgid="146198913615257606" name="search_menu_title">"Axtarış"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

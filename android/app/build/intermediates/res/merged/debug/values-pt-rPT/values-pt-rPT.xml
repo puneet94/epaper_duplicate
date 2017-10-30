@@ -53,13 +53,6 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Abrir no telemóvel"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Iniciar sessão"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Iniciar sessão com o Google"</string>
-    <string name="exo_controls_fastforward_description">"Avançar"</string>
-    <string name="exo_controls_next_description">"Faixa seguinte"</string>
-    <string name="exo_controls_pause_description">"Interromper"</string>
-    <string name="exo_controls_play_description">"Reproduzir"</string>
-    <string name="exo_controls_previous_description">"Faixa anterior"</string>
-    <string name="exo_controls_rewind_description">"Rebobinar"</string>
-    <string name="exo_controls_stop_description">"Parar"</string>
     <string name="pspdf__action_menu_copy">Copiar</string>
     <string name="pspdf__action_menu_speak">Falar</string>
     <string name="pspdf__activity_menu_no_outline">Sem contorno</string>

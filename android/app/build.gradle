@@ -98,14 +98,13 @@ android {
     buildToolsVersion "25.0.2"
 
     defaultConfig {
-        applicationId "com.epaper"
+        applicationId "com.emdigital"
         multiDexEnabled true
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
-        manifestPlaceholders = [onesignal_app_id: "f79d0825-79e2-4a0f-b6e5-505355bc1f5d",
-                                onesignal_google_project_number: "652329348244"]
+        manifestPlaceholders = [onesignal_app_id: "f79d0825-79e2-4a0f-b6e5-505355bc1f5d",onesignal_google_project_number: "652329348244"]
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
@@ -140,11 +139,10 @@ android {
 }
 
 dependencies {
-    compile project(':react-native-onesignal')
-    compile project(':react-native-pspdfkit')
-    compile project(':react-native-audio-streamer')
     compile project(':react-native-youtube')
     compile project(':react-native-vector-icons')
+    compile project(':react-native-pspdfkit')
+    compile project(':react-native-onesignal')
     compile project(':react-native-image-picker')
     compile project(':react-native-fetch-blob')
     compile fileTree(dir: "libs", include: ["*.jar"])

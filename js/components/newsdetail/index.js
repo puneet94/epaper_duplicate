@@ -23,7 +23,7 @@ import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
 import YouTube from 'react-native-youtube';
-import RNAudioStreamer from 'react-native-audio-streamer';
+//import RNAudioStreamer from 'react-native-audio-streamer';
 import store from 'react-native-simple-store';
 import { em_s, lineHeight_s, handleExternalUrl } from '../../core/helpers';
 
@@ -71,15 +71,15 @@ componentWillMount = async ()=>{
     this.setState({
       audioPaused: false
     });
-    RNAudioStreamer.setUrl(ReadspeakerUrl)
-    RNAudioStreamer.play()
+    //RNAudioStreamer.setUrl(ReadspeakerUrl)
+    //RNAudioStreamer.play()
   }
 
   stopReadspeaker =()=>{
     this.setState({
       audioPaused: true
     });
-    RNAudioStreamer.pause()    
+    //RNAudioStreamer.pause()    
   }
   
   static navigationOptions = ({ navigation }) => {
@@ -127,7 +127,7 @@ componentWillUnmount=()=>{
   this.setState({
     audioPaused: true
   });
-  RNAudioStreamer.pause()
+  //RNAudioStreamer.pause()
 }
 
 fetchdata = async () => {

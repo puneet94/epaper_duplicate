@@ -53,13 +53,6 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"スマートフォンで開く"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"ログイン"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Googleにログイン"</string>
-    <string name="exo_controls_fastforward_description">"早送り"</string>
-    <string name="exo_controls_next_description">"次のトラック"</string>
-    <string name="exo_controls_pause_description">"一時停止"</string>
-    <string name="exo_controls_play_description">"再生"</string>
-    <string name="exo_controls_previous_description">"前のトラック"</string>
-    <string name="exo_controls_rewind_description">"巻き戻し"</string>
-    <string name="exo_controls_stop_description">"停止"</string>
     <string name="pspdf__action_menu_copy">コピー</string>
     <string name="pspdf__action_menu_speak">読み上げ</string>
     <string name="pspdf__activity_menu_no_outline">アウトラインがありません</string>

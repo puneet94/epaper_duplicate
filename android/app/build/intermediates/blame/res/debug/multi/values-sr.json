@@ -1,1046 +1,5 @@
 [
     {
-        "outputFile": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sr\\values-sr.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 108,
-                    "endOffset": 159
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 280,
-                        "endColumn": 108,
-                        "endOffset": 384
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 164,
-                    "endColumn": 107,
-                    "endOffset": 267
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 389,
-                        "endColumn": 107,
-                        "endOffset": 492
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 272,
-                    "endColumn": 122,
-                    "endOffset": 390
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 497,
-                        "endColumn": 122,
-                        "endOffset": 615
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 395,
-                    "endColumn": 102,
-                    "endOffset": 493
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 620,
-                        "endColumn": 102,
-                        "endOffset": 718
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 498,
-                    "endColumn": 105,
-                    "endOffset": 599
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 723,
-                        "endColumn": 105,
-                        "endOffset": 824
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 604,
-                    "endColumn": 85,
-                    "endOffset": 685
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 829,
-                        "endColumn": 85,
-                        "endOffset": 910
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 690,
-                    "endColumn": 103,
-                    "endOffset": 789
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 915,
-                        "endColumn": 103,
-                        "endOffset": 1014
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 794,
-                    "endColumn": 117,
-                    "endOffset": 907
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 1019,
-                        "endColumn": 117,
-                        "endOffset": 1132
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 912,
-                    "endColumn": 87,
-                    "endOffset": 995
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1137,
-                        "endColumn": 87,
-                        "endOffset": 1220
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 11,
-                    "startColumn": 4,
-                    "startOffset": 1000,
-                    "endColumn": 104,
-                    "endOffset": 1100
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1225,
-                        "endColumn": 104,
-                        "endOffset": 1325
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 1105,
-                    "endColumn": 107,
-                    "endOffset": 1208
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1330,
-                        "endColumn": 107,
-                        "endOffset": 1433
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 13,
-                    "startColumn": 4,
-                    "startOffset": 1213,
-                    "endColumn": 100,
-                    "endOffset": 1309
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1438,
-                        "endColumn": 100,
-                        "endOffset": 1534
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 1314,
-                    "endColumn": 103,
-                    "endOffset": 1413
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1539,
-                        "endColumn": 103,
-                        "endOffset": 1638
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 1418,
-                    "endColumn": 107,
-                    "endOffset": 1521
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1643,
-                        "endColumn": 107,
-                        "endOffset": 1746
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 1526,
-                    "endColumn": 100,
-                    "endOffset": 1622
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 1751,
-                        "endColumn": 100,
-                        "endOffset": 1847
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 17,
-                    "startColumn": 4,
-                    "startOffset": 1627,
-                    "endColumn": 127,
-                    "endOffset": 1750
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1852,
-                        "endColumn": 127,
-                        "endOffset": 1975
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 18,
-                    "startColumn": 4,
-                    "startOffset": 1755,
-                    "endColumn": 96,
-                    "endOffset": 1847
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 1980,
-                        "endColumn": 96,
-                        "endOffset": 2072
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 19,
-                    "startColumn": 4,
-                    "startOffset": 1852,
-                    "endColumn": 100,
-                    "endOffset": 1948
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 2077,
-                        "endColumn": 100,
-                        "endOffset": 2173
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sr\\values-sr.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 108,
-                    "endOffset": 159
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 280,
-                        "endColumn": 108,
-                        "endOffset": 384
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 164,
-                    "endColumn": 107,
-                    "endOffset": 267
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 389,
-                        "endColumn": 107,
-                        "endOffset": 492
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 272,
-                    "endColumn": 122,
-                    "endOffset": 390
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 497,
-                        "endColumn": 122,
-                        "endOffset": 615
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 395,
-                    "endColumn": 102,
-                    "endOffset": 493
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 620,
-                        "endColumn": 102,
-                        "endOffset": 718
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 498,
-                    "endColumn": 105,
-                    "endOffset": 599
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 723,
-                        "endColumn": 105,
-                        "endOffset": 824
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 604,
-                    "endColumn": 85,
-                    "endOffset": 685
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 829,
-                        "endColumn": 85,
-                        "endOffset": 910
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 690,
-                    "endColumn": 103,
-                    "endOffset": 789
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 915,
-                        "endColumn": 103,
-                        "endOffset": 1014
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 794,
-                    "endColumn": 117,
-                    "endOffset": 907
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 1019,
-                        "endColumn": 117,
-                        "endOffset": 1132
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 912,
-                    "endColumn": 87,
-                    "endOffset": 995
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1137,
-                        "endColumn": 87,
-                        "endOffset": 1220
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 11,
-                    "startColumn": 4,
-                    "startOffset": 1000,
-                    "endColumn": 104,
-                    "endOffset": 1100
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1225,
-                        "endColumn": 104,
-                        "endOffset": 1325
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 1105,
-                    "endColumn": 107,
-                    "endOffset": 1208
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1330,
-                        "endColumn": 107,
-                        "endOffset": 1433
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 13,
-                    "startColumn": 4,
-                    "startOffset": 1213,
-                    "endColumn": 100,
-                    "endOffset": 1309
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1438,
-                        "endColumn": 100,
-                        "endOffset": 1534
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 1314,
-                    "endColumn": 103,
-                    "endOffset": 1413
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1539,
-                        "endColumn": 103,
-                        "endOffset": 1638
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 1418,
-                    "endColumn": 107,
-                    "endOffset": 1521
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1643,
-                        "endColumn": 107,
-                        "endOffset": 1746
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 1526,
-                    "endColumn": 100,
-                    "endOffset": 1622
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 1751,
-                        "endColumn": 100,
-                        "endOffset": 1847
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 17,
-                    "startColumn": 4,
-                    "startOffset": 1627,
-                    "endColumn": 127,
-                    "endOffset": 1750
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1852,
-                        "endColumn": 127,
-                        "endOffset": 1975
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 18,
-                    "startColumn": 4,
-                    "startOffset": 1755,
-                    "endColumn": 96,
-                    "endOffset": 1847
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 1980,
-                        "endColumn": 96,
-                        "endOffset": 2072
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 19,
-                    "startColumn": 4,
-                    "startOffset": 1852,
-                    "endColumn": 100,
-                    "endOffset": 1948
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\home\\naman\\Desktop\\freelance\\epaper\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 2077,
-                        "endColumn": 100,
-                        "endOffset": 2173
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/Users/sturm/Desktop/epaper/android/E:\\epaper2\\epaper\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sr\\values-sr.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 108,
-                    "endOffset": 159
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 280,
-                        "endColumn": 108,
-                        "endOffset": 384
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 164,
-                    "endColumn": 107,
-                    "endOffset": 267
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 389,
-                        "endColumn": 107,
-                        "endOffset": 492
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 272,
-                    "endColumn": 122,
-                    "endOffset": 390
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 497,
-                        "endColumn": 122,
-                        "endOffset": 615
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 395,
-                    "endColumn": 102,
-                    "endOffset": 493
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 620,
-                        "endColumn": 102,
-                        "endOffset": 718
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 498,
-                    "endColumn": 105,
-                    "endOffset": 599
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 723,
-                        "endColumn": 105,
-                        "endOffset": 824
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 604,
-                    "endColumn": 85,
-                    "endOffset": 685
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 829,
-                        "endColumn": 85,
-                        "endOffset": 910
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 690,
-                    "endColumn": 103,
-                    "endOffset": 789
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 915,
-                        "endColumn": 103,
-                        "endOffset": 1014
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 794,
-                    "endColumn": 117,
-                    "endOffset": 907
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 1019,
-                        "endColumn": 117,
-                        "endOffset": 1132
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 912,
-                    "endColumn": 87,
-                    "endOffset": 995
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1137,
-                        "endColumn": 87,
-                        "endOffset": 1220
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 11,
-                    "startColumn": 4,
-                    "startOffset": 1000,
-                    "endColumn": 104,
-                    "endOffset": 1100
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1225,
-                        "endColumn": 104,
-                        "endOffset": 1325
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 1105,
-                    "endColumn": 107,
-                    "endOffset": 1208
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1330,
-                        "endColumn": 107,
-                        "endOffset": 1433
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 13,
-                    "startColumn": 4,
-                    "startOffset": 1213,
-                    "endColumn": 100,
-                    "endOffset": 1309
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1438,
-                        "endColumn": 100,
-                        "endOffset": 1534
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 1314,
-                    "endColumn": 103,
-                    "endOffset": 1413
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1539,
-                        "endColumn": 103,
-                        "endOffset": 1638
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 1418,
-                    "endColumn": 107,
-                    "endOffset": 1521
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1643,
-                        "endColumn": 107,
-                        "endOffset": 1746
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 1526,
-                    "endColumn": 100,
-                    "endOffset": 1622
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 1751,
-                        "endColumn": 100,
-                        "endOffset": 1847
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 17,
-                    "startColumn": 4,
-                    "startOffset": 1627,
-                    "endColumn": 127,
-                    "endOffset": 1750
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1852,
-                        "endColumn": 127,
-                        "endOffset": 1975
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 18,
-                    "startColumn": 4,
-                    "startOffset": 1755,
-                    "endColumn": 96,
-                    "endOffset": 1847
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 1980,
-                        "endColumn": 96,
-                        "endOffset": 2072
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 19,
-                    "startColumn": 4,
-                    "startOffset": 1852,
-                    "endColumn": 100,
-                    "endOffset": 1948
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/C:\\Users\\vineet mahendra\\.android\\build-cache\\fe05969b2786506afbaeb637fa6b48589bf01dbe\\output\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 2077,
-                        "endColumn": 100,
-                        "endOffset": 2173
-                    }
-                }
-            }
-        ]
-    },
-    {
         "outputFile": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sr/values-sr.xml",
         "map": [
             {
@@ -1795,141 +754,8 @@
                     "startLine": 58,
                     "startColumn": 4,
                     "startOffset": 5491,
-                    "endColumn": 83,
-                    "endOffset": 5570
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.1.1/res/values-sr/values-sr.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 83,
-                        "endOffset": 134
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 59,
-                    "startColumn": 4,
-                    "startOffset": 5575,
-                    "endColumn": 73,
-                    "endOffset": 5644
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.1.1/res/values-sr/values-sr.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 139,
-                        "endColumn": 73,
-                        "endOffset": 208
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 60,
-                    "startColumn": 4,
-                    "startOffset": 5649,
-                    "endColumn": 66,
-                    "endOffset": 5711
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.1.1/res/values-sr/values-sr.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 213,
-                        "endColumn": 66,
-                        "endOffset": 275
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 61,
-                    "startColumn": 4,
-                    "startOffset": 5716,
-                    "endColumn": 65,
-                    "endOffset": 5777
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.1.1/res/values-sr/values-sr.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 280,
-                        "endColumn": 65,
-                        "endOffset": 341
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 62,
-                    "startColumn": 4,
-                    "startOffset": 5782,
-                    "endColumn": 79,
-                    "endOffset": 5857
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.1.1/res/values-sr/values-sr.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 346,
-                        "endColumn": 79,
-                        "endOffset": 421
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 63,
-                    "startColumn": 4,
-                    "startOffset": 5862,
-                    "endColumn": 77,
-                    "endOffset": 5935
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.1.1/res/values-sr/values-sr.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 426,
-                        "endColumn": 77,
-                        "endOffset": 499
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 64,
-                    "startColumn": 4,
-                    "startOffset": 5940,
-                    "endColumn": 68,
-                    "endOffset": 6004
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.exoplayer/exoplayer/r2.1.1/res/values-sr/values-sr.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 504,
-                        "endColumn": 68,
-                        "endOffset": 568
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 65,
-                    "startColumn": 4,
-                    "startOffset": 6009,
                     "endColumn": 56,
-                    "endOffset": 6061
+                    "endOffset": 5543
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -1944,11 +770,11 @@
             },
             {
                 "to": {
-                    "startLine": 66,
+                    "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 6066,
+                    "startOffset": 5548,
                     "endColumn": 58,
-                    "endOffset": 6120
+                    "endOffset": 5602
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -1963,11 +789,11 @@
             },
             {
                 "to": {
-                    "startLine": 67,
+                    "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 6125,
+                    "startOffset": 5607,
                     "endColumn": 70,
-                    "endOffset": 6191
+                    "endOffset": 5673
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -1982,11 +808,11 @@
             },
             {
                 "to": {
-                    "startLine": 68,
+                    "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 6196,
+                    "startOffset": 5678,
                     "endColumn": 64,
-                    "endOffset": 6256
+                    "endOffset": 5738
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2001,11 +827,11 @@
             },
             {
                 "to": {
-                    "startLine": 69,
+                    "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 6261,
+                    "startOffset": 5743,
                     "endColumn": 62,
-                    "endOffset": 6319
+                    "endOffset": 5801
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2020,11 +846,11 @@
             },
             {
                 "to": {
-                    "startLine": 70,
+                    "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 6324,
+                    "startOffset": 5806,
                     "endColumn": 62,
-                    "endOffset": 6382
+                    "endOffset": 5864
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2039,11 +865,11 @@
             },
             {
                 "to": {
-                    "startLine": 71,
+                    "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 6387,
+                    "startOffset": 5869,
                     "endColumn": 66,
-                    "endOffset": 6449
+                    "endOffset": 5931
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2058,11 +884,11 @@
             },
             {
                 "to": {
-                    "startLine": 72,
+                    "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 6454,
+                    "startOffset": 5936,
                     "endColumn": 78,
-                    "endOffset": 6528
+                    "endOffset": 6010
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2077,11 +903,11 @@
             },
             {
                 "to": {
-                    "startLine": 73,
+                    "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 6533,
+                    "startOffset": 6015,
                     "endColumn": 42,
-                    "endOffset": 6571
+                    "endOffset": 6053
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2096,11 +922,11 @@
             },
             {
                 "to": {
-                    "startLine": 74,
+                    "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 6576,
+                    "startOffset": 6058,
                     "endColumn": 60,
-                    "endOffset": 6632
+                    "endOffset": 6114
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2115,11 +941,11 @@
             },
             {
                 "to": {
-                    "startLine": 75,
+                    "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 6637,
+                    "startOffset": 6119,
                     "endColumn": 52,
-                    "endOffset": 6685
+                    "endOffset": 6167
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2134,11 +960,11 @@
             },
             {
                 "to": {
-                    "startLine": 76,
+                    "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 6690,
+                    "startOffset": 6172,
                     "endColumn": 62,
-                    "endOffset": 6748
+                    "endOffset": 6230
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2153,11 +979,11 @@
             },
             {
                 "to": {
-                    "startLine": 77,
+                    "startLine": 70,
                     "startColumn": 4,
-                    "startOffset": 6753,
+                    "startOffset": 6235,
                     "endColumn": 42,
-                    "endOffset": 6791
+                    "endOffset": 6273
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2172,11 +998,11 @@
             },
             {
                 "to": {
-                    "startLine": 78,
+                    "startLine": 71,
                     "startColumn": 4,
-                    "startOffset": 6796,
+                    "startOffset": 6278,
                     "endColumn": 77,
-                    "endOffset": 6869
+                    "endOffset": 6351
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2191,11 +1017,11 @@
             },
             {
                 "to": {
-                    "startLine": 79,
+                    "startLine": 72,
                     "startColumn": 4,
-                    "startOffset": 6874,
+                    "startOffset": 6356,
                     "endColumn": 140,
-                    "endOffset": 7010
+                    "endOffset": 6492
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2210,11 +1036,11 @@
             },
             {
                 "to": {
-                    "startLine": 80,
+                    "startLine": 73,
                     "startColumn": 4,
-                    "startOffset": 7015,
+                    "startOffset": 6497,
                     "endColumn": 77,
-                    "endOffset": 7088
+                    "endOffset": 6570
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2229,11 +1055,11 @@
             },
             {
                 "to": {
-                    "startLine": 81,
+                    "startLine": 74,
                     "startColumn": 4,
-                    "startOffset": 7093,
+                    "startOffset": 6575,
                     "endColumn": 135,
-                    "endOffset": 7224
+                    "endOffset": 6706
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2248,11 +1074,11 @@
             },
             {
                 "to": {
-                    "startLine": 82,
+                    "startLine": 75,
                     "startColumn": 4,
-                    "startOffset": 7229,
+                    "startOffset": 6711,
                     "endColumn": 81,
-                    "endOffset": 7306
+                    "endOffset": 6788
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2267,11 +1093,11 @@
             },
             {
                 "to": {
-                    "startLine": 83,
+                    "startLine": 76,
                     "startColumn": 4,
-                    "startOffset": 7311,
+                    "startOffset": 6793,
                     "endColumn": 127,
-                    "endOffset": 7434
+                    "endOffset": 6916
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2286,11 +1112,11 @@
             },
             {
                 "to": {
-                    "startLine": 84,
+                    "startLine": 77,
                     "startColumn": 4,
-                    "startOffset": 7439,
+                    "startOffset": 6921,
                     "endColumn": 79,
-                    "endOffset": 7514
+                    "endOffset": 6996
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2305,11 +1131,11 @@
             },
             {
                 "to": {
-                    "startLine": 85,
+                    "startLine": 78,
                     "startColumn": 4,
-                    "startOffset": 7519,
+                    "startOffset": 7001,
                     "endColumn": 114,
-                    "endOffset": 7629
+                    "endOffset": 7111
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2324,11 +1150,11 @@
             },
             {
                 "to": {
-                    "startLine": 86,
+                    "startLine": 79,
                     "startColumn": 4,
-                    "startOffset": 7634,
+                    "startOffset": 7116,
                     "endColumn": 65,
-                    "endOffset": 7695
+                    "endOffset": 7177
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2343,11 +1169,11 @@
             },
             {
                 "to": {
-                    "startLine": 87,
+                    "startLine": 80,
                     "startColumn": 4,
-                    "startOffset": 7700,
+                    "startOffset": 7182,
                     "endColumn": 64,
-                    "endOffset": 7760
+                    "endOffset": 7242
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2362,11 +1188,11 @@
             },
             {
                 "to": {
-                    "startLine": 88,
+                    "startLine": 81,
                     "startColumn": 4,
-                    "startOffset": 7765,
+                    "startOffset": 7247,
                     "endColumn": 65,
-                    "endOffset": 7826
+                    "endOffset": 7308
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2381,11 +1207,11 @@
             },
             {
                 "to": {
-                    "startLine": 89,
+                    "startLine": 82,
                     "startColumn": 4,
-                    "startOffset": 7831,
+                    "startOffset": 7313,
                     "endColumn": 64,
-                    "endOffset": 7891
+                    "endOffset": 7373
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2400,11 +1226,11 @@
             },
             {
                 "to": {
-                    "startLine": 90,
+                    "startLine": 83,
                     "startColumn": 4,
-                    "startOffset": 7896,
+                    "startOffset": 7378,
                     "endColumn": 70,
-                    "endOffset": 7962
+                    "endOffset": 7444
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2419,11 +1245,11 @@
             },
             {
                 "to": {
-                    "startLine": 91,
+                    "startLine": 84,
                     "startColumn": 4,
-                    "startOffset": 7967,
+                    "startOffset": 7449,
                     "endColumn": 58,
-                    "endOffset": 8021
+                    "endOffset": 7503
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2438,11 +1264,11 @@
             },
             {
                 "to": {
-                    "startLine": 92,
+                    "startLine": 85,
                     "startColumn": 4,
-                    "startOffset": 8026,
+                    "startOffset": 7508,
                     "endColumn": 60,
-                    "endOffset": 8082
+                    "endOffset": 7564
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2457,11 +1283,11 @@
             },
             {
                 "to": {
-                    "startLine": 93,
+                    "startLine": 86,
                     "startColumn": 4,
-                    "startOffset": 8087,
+                    "startOffset": 7569,
                     "endColumn": 60,
-                    "endOffset": 8143
+                    "endOffset": 7625
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2476,11 +1302,11 @@
             },
             {
                 "to": {
-                    "startLine": 94,
+                    "startLine": 87,
                     "startColumn": 4,
-                    "startOffset": 8148,
+                    "startOffset": 7630,
                     "endColumn": 60,
-                    "endOffset": 8204
+                    "endOffset": 7686
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2495,11 +1321,11 @@
             },
             {
                 "to": {
-                    "startLine": 95,
+                    "startLine": 88,
                     "startColumn": 4,
-                    "startOffset": 8209,
+                    "startOffset": 7691,
                     "endColumn": 66,
-                    "endOffset": 8271
+                    "endOffset": 7753
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2514,11 +1340,11 @@
             },
             {
                 "to": {
-                    "startLine": 96,
+                    "startLine": 89,
                     "startColumn": 4,
-                    "startOffset": 8276,
+                    "startOffset": 7758,
                     "endColumn": 68,
-                    "endOffset": 8340
+                    "endOffset": 7822
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2533,11 +1359,11 @@
             },
             {
                 "to": {
-                    "startLine": 97,
+                    "startLine": 90,
                     "startColumn": 4,
-                    "startOffset": 8345,
+                    "startOffset": 7827,
                     "endColumn": 72,
-                    "endOffset": 8413
+                    "endOffset": 7895
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2552,11 +1378,11 @@
             },
             {
                 "to": {
-                    "startLine": 98,
+                    "startLine": 91,
                     "startColumn": 4,
-                    "startOffset": 8418,
+                    "startOffset": 7900,
                     "endColumn": 64,
-                    "endOffset": 8478
+                    "endOffset": 7960
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2571,11 +1397,11 @@
             },
             {
                 "to": {
-                    "startLine": 99,
+                    "startLine": 92,
                     "startColumn": 4,
-                    "startOffset": 8483,
+                    "startOffset": 7965,
                     "endColumn": 62,
-                    "endOffset": 8541
+                    "endOffset": 8023
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2590,11 +1416,11 @@
             },
             {
                 "to": {
-                    "startLine": 100,
+                    "startLine": 93,
                     "startColumn": 4,
-                    "startOffset": 8546,
+                    "startOffset": 8028,
                     "endColumn": 67,
-                    "endOffset": 8609
+                    "endOffset": 8091
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2609,11 +1435,11 @@
             },
             {
                 "to": {
-                    "startLine": 101,
+                    "startLine": 94,
                     "startColumn": 4,
-                    "startOffset": 8614,
+                    "startOffset": 8096,
                     "endColumn": 68,
-                    "endOffset": 8678
+                    "endOffset": 8160
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2628,11 +1454,11 @@
             },
             {
                 "to": {
-                    "startLine": 102,
+                    "startLine": 95,
                     "startColumn": 4,
-                    "startOffset": 8683,
+                    "startOffset": 8165,
                     "endColumn": 62,
-                    "endOffset": 8741
+                    "endOffset": 8223
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2647,11 +1473,11 @@
             },
             {
                 "to": {
-                    "startLine": 103,
+                    "startLine": 96,
                     "startColumn": 4,
-                    "startOffset": 8746,
+                    "startOffset": 8228,
                     "endColumn": 71,
-                    "endOffset": 8813
+                    "endOffset": 8295
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2666,11 +1492,11 @@
             },
             {
                 "to": {
-                    "startLine": 104,
+                    "startLine": 97,
                     "startColumn": 4,
-                    "startOffset": 8818,
+                    "startOffset": 8300,
                     "endColumn": 70,
-                    "endOffset": 8884
+                    "endOffset": 8366
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2685,11 +1511,11 @@
             },
             {
                 "to": {
-                    "startLine": 105,
+                    "startLine": 98,
                     "startColumn": 4,
-                    "startOffset": 8889,
+                    "startOffset": 8371,
                     "endColumn": 58,
-                    "endOffset": 8943
+                    "endOffset": 8425
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2704,11 +1530,11 @@
             },
             {
                 "to": {
-                    "startLine": 106,
+                    "startLine": 99,
                     "startColumn": 4,
-                    "startOffset": 8948,
+                    "startOffset": 8430,
                     "endColumn": 56,
-                    "endOffset": 9000
+                    "endOffset": 8482
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2723,11 +1549,11 @@
             },
             {
                 "to": {
-                    "startLine": 107,
+                    "startLine": 100,
                     "startColumn": 4,
-                    "startOffset": 9005,
+                    "startOffset": 8487,
                     "endColumn": 54,
-                    "endOffset": 9055
+                    "endOffset": 8537
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2742,11 +1568,11 @@
             },
             {
                 "to": {
-                    "startLine": 108,
+                    "startLine": 101,
                     "startColumn": 4,
-                    "startOffset": 9060,
+                    "startOffset": 8542,
                     "endColumn": 46,
-                    "endOffset": 9102
+                    "endOffset": 8584
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2761,11 +1587,11 @@
             },
             {
                 "to": {
-                    "startLine": 109,
+                    "startLine": 102,
                     "startColumn": 4,
-                    "startOffset": 9107,
+                    "startOffset": 8589,
                     "endColumn": 46,
-                    "endOffset": 9149
+                    "endOffset": 8631
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2780,11 +1606,11 @@
             },
             {
                 "to": {
-                    "startLine": 110,
+                    "startLine": 103,
                     "startColumn": 4,
-                    "startOffset": 9154,
+                    "startOffset": 8636,
                     "endColumn": 44,
-                    "endOffset": 9194
+                    "endOffset": 8676
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2799,11 +1625,11 @@
             },
             {
                 "to": {
-                    "startLine": 111,
+                    "startLine": 104,
                     "startColumn": 4,
-                    "startOffset": 9199,
+                    "startOffset": 8681,
                     "endColumn": 60,
-                    "endOffset": 9255
+                    "endOffset": 8737
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2818,11 +1644,11 @@
             },
             {
                 "to": {
-                    "startLine": 112,
+                    "startLine": 105,
                     "startColumn": 4,
-                    "startOffset": 9260,
+                    "startOffset": 8742,
                     "endColumn": 67,
-                    "endOffset": 9323
+                    "endOffset": 8805
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2837,11 +1663,11 @@
             },
             {
                 "to": {
-                    "startLine": 113,
+                    "startLine": 106,
                     "startColumn": 4,
-                    "startOffset": 9328,
+                    "startOffset": 8810,
                     "endColumn": 54,
-                    "endOffset": 9378
+                    "endOffset": 8860
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2856,11 +1682,11 @@
             },
             {
                 "to": {
-                    "startLine": 114,
+                    "startLine": 107,
                     "startColumn": 4,
-                    "startOffset": 9383,
+                    "startOffset": 8865,
                     "endColumn": 60,
-                    "endOffset": 9439
+                    "endOffset": 8921
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2875,11 +1701,11 @@
             },
             {
                 "to": {
-                    "startLine": 115,
+                    "startLine": 108,
                     "startColumn": 4,
-                    "startOffset": 9444,
+                    "startOffset": 8926,
                     "endColumn": 81,
-                    "endOffset": 9521
+                    "endOffset": 9003
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2894,11 +1720,11 @@
             },
             {
                 "to": {
-                    "startLine": 116,
+                    "startLine": 109,
                     "startColumn": 4,
-                    "startOffset": 9526,
+                    "startOffset": 9008,
                     "endColumn": 72,
-                    "endOffset": 9594
+                    "endOffset": 9076
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2913,11 +1739,11 @@
             },
             {
                 "to": {
-                    "startLine": 117,
+                    "startLine": 110,
                     "startColumn": 4,
-                    "startOffset": 9599,
+                    "startOffset": 9081,
                     "endColumn": 51,
-                    "endOffset": 9646
+                    "endOffset": 9128
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2932,11 +1758,11 @@
             },
             {
                 "to": {
-                    "startLine": 118,
+                    "startLine": 111,
                     "startColumn": 4,
-                    "startOffset": 9651,
+                    "startOffset": 9133,
                     "endColumn": 64,
-                    "endOffset": 9711
+                    "endOffset": 9193
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2951,11 +1777,11 @@
             },
             {
                 "to": {
-                    "startLine": 119,
+                    "startLine": 112,
                     "startColumn": 4,
-                    "startOffset": 9716,
+                    "startOffset": 9198,
                     "endColumn": 48,
-                    "endOffset": 9760
+                    "endOffset": 9242
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2970,11 +1796,11 @@
             },
             {
                 "to": {
-                    "startLine": 120,
+                    "startLine": 113,
                     "startColumn": 4,
-                    "startOffset": 9765,
+                    "startOffset": 9247,
                     "endColumn": 60,
-                    "endOffset": 9821
+                    "endOffset": 9303
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -2989,11 +1815,11 @@
             },
             {
                 "to": {
-                    "startLine": 121,
+                    "startLine": 114,
                     "startColumn": 4,
-                    "startOffset": 9826,
+                    "startOffset": 9308,
                     "endColumn": 95,
-                    "endOffset": 9917
+                    "endOffset": 9399
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3008,11 +1834,11 @@
             },
             {
                 "to": {
-                    "startLine": 122,
+                    "startLine": 115,
                     "startColumn": 4,
-                    "startOffset": 9922,
+                    "startOffset": 9404,
                     "endColumn": 102,
-                    "endOffset": 10020
+                    "endOffset": 9502
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3027,11 +1853,11 @@
             },
             {
                 "to": {
-                    "startLine": 123,
+                    "startLine": 116,
                     "startColumn": 4,
-                    "startOffset": 10025,
+                    "startOffset": 9507,
                     "endColumn": 62,
-                    "endOffset": 10083
+                    "endOffset": 9565
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3046,11 +1872,11 @@
             },
             {
                 "to": {
-                    "startLine": 124,
+                    "startLine": 117,
                     "startColumn": 4,
-                    "startOffset": 10088,
+                    "startOffset": 9570,
                     "endColumn": 44,
-                    "endOffset": 10128
+                    "endOffset": 9610
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3065,11 +1891,11 @@
             },
             {
                 "to": {
-                    "startLine": 125,
+                    "startLine": 118,
                     "startColumn": 4,
-                    "startOffset": 10133,
+                    "startOffset": 9615,
                     "endColumn": 66,
-                    "endOffset": 10195
+                    "endOffset": 9677
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3084,11 +1910,11 @@
             },
             {
                 "to": {
-                    "startLine": 126,
+                    "startLine": 119,
                     "startColumn": 4,
-                    "startOffset": 10200,
+                    "startOffset": 9682,
                     "endColumn": 44,
-                    "endOffset": 10240
+                    "endOffset": 9722
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3103,11 +1929,11 @@
             },
             {
                 "to": {
-                    "startLine": 127,
+                    "startLine": 120,
                     "startColumn": 4,
-                    "startOffset": 10245,
+                    "startOffset": 9727,
                     "endColumn": 56,
-                    "endOffset": 10297
+                    "endOffset": 9779
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3122,11 +1948,11 @@
             },
             {
                 "to": {
-                    "startLine": 128,
+                    "startLine": 121,
                     "startColumn": 4,
-                    "startOffset": 10302,
+                    "startOffset": 9784,
                     "endColumn": 66,
-                    "endOffset": 10364
+                    "endOffset": 9846
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3141,11 +1967,11 @@
             },
             {
                 "to": {
-                    "startLine": 129,
+                    "startLine": 122,
                     "startColumn": 4,
-                    "startOffset": 10369,
+                    "startOffset": 9851,
                     "endColumn": 58,
-                    "endOffset": 10423
+                    "endOffset": 9905
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3160,11 +1986,11 @@
             },
             {
                 "to": {
-                    "startLine": 130,
+                    "startLine": 123,
                     "startColumn": 4,
-                    "startOffset": 10428,
+                    "startOffset": 9910,
                     "endColumn": 64,
-                    "endOffset": 10488
+                    "endOffset": 9970
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3179,11 +2005,11 @@
             },
             {
                 "to": {
-                    "startLine": 131,
+                    "startLine": 124,
                     "startColumn": 4,
-                    "startOffset": 10493,
+                    "startOffset": 9975,
                     "endColumn": 52,
-                    "endOffset": 10541
+                    "endOffset": 10023
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3198,11 +2024,11 @@
             },
             {
                 "to": {
-                    "startLine": 132,
+                    "startLine": 125,
                     "startColumn": 4,
-                    "startOffset": 10546,
+                    "startOffset": 10028,
                     "endColumn": 54,
-                    "endOffset": 10596
+                    "endOffset": 10078
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3217,11 +2043,11 @@
             },
             {
                 "to": {
-                    "startLine": 133,
+                    "startLine": 126,
                     "startColumn": 4,
-                    "startOffset": 10601,
+                    "startOffset": 10083,
                     "endColumn": 62,
-                    "endOffset": 10659
+                    "endOffset": 10141
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3236,11 +2062,11 @@
             },
             {
                 "to": {
-                    "startLine": 134,
+                    "startLine": 127,
                     "startColumn": 4,
-                    "startOffset": 10664,
+                    "startOffset": 10146,
                     "endColumn": 65,
-                    "endOffset": 10725
+                    "endOffset": 10207
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3255,11 +2081,11 @@
             },
             {
                 "to": {
-                    "startLine": 135,
+                    "startLine": 128,
                     "startColumn": 4,
-                    "startOffset": 10730,
+                    "startOffset": 10212,
                     "endColumn": 64,
-                    "endOffset": 10790
+                    "endOffset": 10272
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3274,11 +2100,11 @@
             },
             {
                 "to": {
-                    "startLine": 136,
+                    "startLine": 129,
                     "startColumn": 4,
-                    "startOffset": 10795,
+                    "startOffset": 10277,
                     "endColumn": 60,
-                    "endOffset": 10851
+                    "endOffset": 10333
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3293,11 +2119,11 @@
             },
             {
                 "to": {
-                    "startLine": 137,
+                    "startLine": 130,
                     "startColumn": 4,
-                    "startOffset": 10856,
+                    "startOffset": 10338,
                     "endColumn": 55,
-                    "endOffset": 10907
+                    "endOffset": 10389
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3312,11 +2138,11 @@
             },
             {
                 "to": {
-                    "startLine": 138,
+                    "startLine": 131,
                     "startColumn": 4,
-                    "startOffset": 10912,
+                    "startOffset": 10394,
                     "endColumn": 114,
-                    "endOffset": 11022
+                    "endOffset": 10504
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3331,11 +2157,11 @@
             },
             {
                 "to": {
-                    "startLine": 139,
+                    "startLine": 132,
                     "startColumn": 4,
-                    "startOffset": 11027,
+                    "startOffset": 10509,
                     "endColumn": 64,
-                    "endOffset": 11087
+                    "endOffset": 10569
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3350,11 +2176,11 @@
             },
             {
                 "to": {
-                    "startLine": 140,
+                    "startLine": 133,
                     "startColumn": 4,
-                    "startOffset": 11092,
+                    "startOffset": 10574,
                     "endColumn": 84,
-                    "endOffset": 11172
+                    "endOffset": 10654
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3369,11 +2195,11 @@
             },
             {
                 "to": {
-                    "startLine": 141,
+                    "startLine": 134,
                     "startColumn": 4,
-                    "startOffset": 11177,
+                    "startOffset": 10659,
                     "endColumn": 62,
-                    "endOffset": 11235
+                    "endOffset": 10717
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3388,11 +2214,11 @@
             },
             {
                 "to": {
-                    "startLine": 142,
+                    "startLine": 135,
                     "startColumn": 4,
-                    "startOffset": 11240,
+                    "startOffset": 10722,
                     "endColumn": 54,
-                    "endOffset": 11290
+                    "endOffset": 10772
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3407,11 +2233,11 @@
             },
             {
                 "to": {
-                    "startLine": 143,
+                    "startLine": 136,
                     "startColumn": 4,
-                    "startOffset": 11295,
+                    "startOffset": 10777,
                     "endColumn": 51,
-                    "endOffset": 11342
+                    "endOffset": 10824
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3426,11 +2252,11 @@
             },
             {
                 "to": {
-                    "startLine": 144,
+                    "startLine": 137,
                     "startColumn": 4,
-                    "startOffset": 11347,
+                    "startOffset": 10829,
                     "endColumn": 58,
-                    "endOffset": 11401
+                    "endOffset": 10883
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3445,11 +2271,11 @@
             },
             {
                 "to": {
-                    "startLine": 145,
+                    "startLine": 138,
                     "startColumn": 4,
-                    "startOffset": 11406,
+                    "startOffset": 10888,
                     "endColumn": 60,
-                    "endOffset": 11462
+                    "endOffset": 10944
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3464,11 +2290,11 @@
             },
             {
                 "to": {
-                    "startLine": 146,
+                    "startLine": 139,
                     "startColumn": 4,
-                    "startOffset": 11467,
+                    "startOffset": 10949,
                     "endColumn": 44,
-                    "endOffset": 11507
+                    "endOffset": 10989
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3483,11 +2309,11 @@
             },
             {
                 "to": {
-                    "startLine": 147,
+                    "startLine": 140,
                     "startColumn": 4,
-                    "startOffset": 11512,
+                    "startOffset": 10994,
                     "endColumn": 60,
-                    "endOffset": 11568
+                    "endOffset": 11050
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3502,11 +2328,11 @@
             },
             {
                 "to": {
-                    "startLine": 148,
+                    "startLine": 141,
                     "startColumn": 4,
-                    "startOffset": 11573,
+                    "startOffset": 11055,
                     "endColumn": 121,
-                    "endOffset": 11690
+                    "endOffset": 11172
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3521,11 +2347,11 @@
             },
             {
                 "to": {
-                    "startLine": 149,
+                    "startLine": 142,
                     "startColumn": 4,
-                    "startOffset": 11695,
+                    "startOffset": 11177,
                     "endColumn": 60,
-                    "endOffset": 11751
+                    "endOffset": 11233
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3540,11 +2366,11 @@
             },
             {
                 "to": {
-                    "startLine": 150,
+                    "startLine": 143,
                     "startColumn": 4,
-                    "startOffset": 11756,
+                    "startOffset": 11238,
                     "endColumn": 62,
-                    "endOffset": 11814
+                    "endOffset": 11296
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3559,11 +2385,11 @@
             },
             {
                 "to": {
-                    "startLine": 151,
+                    "startLine": 144,
                     "startColumn": 4,
-                    "startOffset": 11819,
+                    "startOffset": 11301,
                     "endColumn": 40,
-                    "endOffset": 11855
+                    "endOffset": 11337
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3578,11 +2404,11 @@
             },
             {
                 "to": {
-                    "startLine": 152,
+                    "startLine": 145,
                     "startColumn": 4,
-                    "startOffset": 11860,
+                    "startOffset": 11342,
                     "endColumn": 44,
-                    "endOffset": 11900
+                    "endOffset": 11382
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3597,11 +2423,11 @@
             },
             {
                 "to": {
-                    "startLine": 153,
+                    "startLine": 146,
                     "startColumn": 4,
-                    "startOffset": 11905,
+                    "startOffset": 11387,
                     "endColumn": 58,
-                    "endOffset": 11959
+                    "endOffset": 11441
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3616,11 +2442,11 @@
             },
             {
                 "to": {
-                    "startLine": 154,
+                    "startLine": 147,
                     "startColumn": 4,
-                    "startOffset": 11964,
+                    "startOffset": 11446,
                     "endColumn": 60,
-                    "endOffset": 12020
+                    "endOffset": 11502
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3635,11 +2461,11 @@
             },
             {
                 "to": {
-                    "startLine": 155,
+                    "startLine": 148,
                     "startColumn": 4,
-                    "startOffset": 12025,
+                    "startOffset": 11507,
                     "endColumn": 77,
-                    "endOffset": 12098
+                    "endOffset": 11580
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3654,11 +2480,11 @@
             },
             {
                 "to": {
-                    "startLine": 156,
+                    "startLine": 149,
                     "startColumn": 4,
-                    "startOffset": 12103,
+                    "startOffset": 11585,
                     "endColumn": 78,
-                    "endOffset": 12177
+                    "endOffset": 11659
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3673,11 +2499,11 @@
             },
             {
                 "to": {
-                    "startLine": 157,
+                    "startLine": 150,
                     "startColumn": 4,
-                    "startOffset": 12182,
+                    "startOffset": 11664,
                     "endColumn": 63,
-                    "endOffset": 12241
+                    "endOffset": 11723
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3692,11 +2518,11 @@
             },
             {
                 "to": {
-                    "startLine": 158,
+                    "startLine": 151,
                     "startColumn": 4,
-                    "startOffset": 12246,
+                    "startOffset": 11728,
                     "endColumn": 65,
-                    "endOffset": 12307
+                    "endOffset": 11789
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3711,11 +2537,11 @@
             },
             {
                 "to": {
-                    "startLine": 159,
+                    "startLine": 152,
                     "startColumn": 4,
-                    "startOffset": 12312,
+                    "startOffset": 11794,
                     "endColumn": 66,
-                    "endOffset": 12374
+                    "endOffset": 11856
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3730,11 +2556,11 @@
             },
             {
                 "to": {
-                    "startLine": 160,
+                    "startLine": 153,
                     "startColumn": 4,
-                    "startOffset": 12379,
+                    "startOffset": 11861,
                     "endColumn": 66,
-                    "endOffset": 12441
+                    "endOffset": 11923
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3749,11 +2575,11 @@
             },
             {
                 "to": {
-                    "startLine": 161,
+                    "startLine": 154,
                     "startColumn": 4,
-                    "startOffset": 12446,
+                    "startOffset": 11928,
                     "endColumn": 57,
-                    "endOffset": 12499
+                    "endOffset": 11981
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3768,11 +2594,11 @@
             },
             {
                 "to": {
-                    "startLine": 162,
+                    "startLine": 155,
                     "startColumn": 4,
-                    "startOffset": 12504,
+                    "startOffset": 11986,
                     "endColumn": 51,
-                    "endOffset": 12551
+                    "endOffset": 12033
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3787,11 +2613,11 @@
             },
             {
                 "to": {
-                    "startLine": 163,
+                    "startLine": 156,
                     "startColumn": 4,
-                    "startOffset": 12556,
+                    "startOffset": 12038,
                     "endColumn": 50,
-                    "endOffset": 12602
+                    "endOffset": 12084
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3806,11 +2632,11 @@
             },
             {
                 "to": {
-                    "startLine": 164,
+                    "startLine": 157,
                     "startColumn": 4,
-                    "startOffset": 12607,
+                    "startOffset": 12089,
                     "endColumn": 50,
-                    "endOffset": 12653
+                    "endOffset": 12135
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3825,11 +2651,11 @@
             },
             {
                 "to": {
-                    "startLine": 165,
+                    "startLine": 158,
                     "startColumn": 4,
-                    "startOffset": 12658,
+                    "startOffset": 12140,
                     "endColumn": 62,
-                    "endOffset": 12716
+                    "endOffset": 12198
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3844,11 +2670,11 @@
             },
             {
                 "to": {
-                    "startLine": 166,
+                    "startLine": 159,
                     "startColumn": 4,
-                    "startOffset": 12721,
+                    "startOffset": 12203,
                     "endColumn": 64,
-                    "endOffset": 12781
+                    "endOffset": 12263
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3863,11 +2689,11 @@
             },
             {
                 "to": {
-                    "startLine": 167,
+                    "startLine": 160,
                     "startColumn": 4,
-                    "startOffset": 12786,
+                    "startOffset": 12268,
                     "endColumn": 61,
-                    "endOffset": 12843
+                    "endOffset": 12325
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3882,11 +2708,11 @@
             },
             {
                 "to": {
-                    "startLine": 168,
+                    "startLine": 161,
                     "startColumn": 4,
-                    "startOffset": 12848,
+                    "startOffset": 12330,
                     "endColumn": 46,
-                    "endOffset": 12890
+                    "endOffset": 12372
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3901,11 +2727,11 @@
             },
             {
                 "to": {
-                    "startLine": 169,
+                    "startLine": 162,
                     "startColumn": 4,
-                    "startOffset": 12895,
+                    "startOffset": 12377,
                     "endColumn": 52,
-                    "endOffset": 12943
+                    "endOffset": 12425
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3920,11 +2746,11 @@
             },
             {
                 "to": {
-                    "startLine": 170,
+                    "startLine": 163,
                     "startColumn": 4,
-                    "startOffset": 12948,
+                    "startOffset": 12430,
                     "endColumn": 59,
-                    "endOffset": 13003
+                    "endOffset": 12485
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3939,11 +2765,11 @@
             },
             {
                 "to": {
-                    "startLine": 171,
+                    "startLine": 164,
                     "startColumn": 4,
-                    "startOffset": 13008,
+                    "startOffset": 12490,
                     "endColumn": 82,
-                    "endOffset": 13086
+                    "endOffset": 12568
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3958,11 +2784,11 @@
             },
             {
                 "to": {
-                    "startLine": 172,
+                    "startLine": 165,
                     "startColumn": 4,
-                    "startOffset": 13091,
+                    "startOffset": 12573,
                     "endColumn": 63,
-                    "endOffset": 13150
+                    "endOffset": 12632
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3977,11 +2803,11 @@
             },
             {
                 "to": {
-                    "startLine": 173,
+                    "startLine": 166,
                     "startColumn": 4,
-                    "startOffset": 13155,
+                    "startOffset": 12637,
                     "endColumn": 63,
-                    "endOffset": 13214
+                    "endOffset": 12696
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -3996,11 +2822,11 @@
             },
             {
                 "to": {
-                    "startLine": 174,
+                    "startLine": 167,
                     "startColumn": 4,
-                    "startOffset": 13219,
+                    "startOffset": 12701,
                     "endColumn": 61,
-                    "endOffset": 13276
+                    "endOffset": 12758
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4015,11 +2841,11 @@
             },
             {
                 "to": {
-                    "startLine": 175,
+                    "startLine": 168,
                     "startColumn": 4,
-                    "startOffset": 13281,
+                    "startOffset": 12763,
                     "endColumn": 52,
-                    "endOffset": 13329
+                    "endOffset": 12811
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4034,11 +2860,11 @@
             },
             {
                 "to": {
-                    "startLine": 176,
+                    "startLine": 169,
                     "startColumn": 4,
-                    "startOffset": 13334,
+                    "startOffset": 12816,
                     "endColumn": 46,
-                    "endOffset": 13376
+                    "endOffset": 12858
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4053,11 +2879,11 @@
             },
             {
                 "to": {
-                    "startLine": 177,
+                    "startLine": 170,
                     "startColumn": 4,
-                    "startOffset": 13381,
+                    "startOffset": 12863,
                     "endColumn": 80,
-                    "endOffset": 13457
+                    "endOffset": 12939
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4072,11 +2898,11 @@
             },
             {
                 "to": {
-                    "startLine": 178,
+                    "startLine": 171,
                     "startColumn": 4,
-                    "startOffset": 13462,
+                    "startOffset": 12944,
                     "endColumn": 86,
-                    "endOffset": 13544
+                    "endOffset": 13026
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4091,11 +2917,11 @@
             },
             {
                 "to": {
-                    "startLine": 179,
+                    "startLine": 172,
                     "startColumn": 4,
-                    "startOffset": 13549,
+                    "startOffset": 13031,
                     "endColumn": 44,
-                    "endOffset": 13589
+                    "endOffset": 13071
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4110,11 +2936,11 @@
             },
             {
                 "to": {
-                    "startLine": 180,
+                    "startLine": 173,
                     "startColumn": 4,
-                    "startOffset": 13594,
+                    "startOffset": 13076,
                     "endColumn": 48,
-                    "endOffset": 13638
+                    "endOffset": 13120
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4129,11 +2955,11 @@
             },
             {
                 "to": {
-                    "startLine": 181,
+                    "startLine": 174,
                     "startColumn": 4,
-                    "startOffset": 13643,
+                    "startOffset": 13125,
                     "endColumn": 66,
-                    "endOffset": 13705
+                    "endOffset": 13187
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4148,11 +2974,11 @@
             },
             {
                 "to": {
-                    "startLine": 182,
+                    "startLine": 175,
                     "startColumn": 4,
-                    "startOffset": 13710,
+                    "startOffset": 13192,
                     "endColumn": 50,
-                    "endOffset": 13756
+                    "endOffset": 13238
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4167,11 +2993,11 @@
             },
             {
                 "to": {
-                    "startLine": 183,
+                    "startLine": 176,
                     "startColumn": 4,
-                    "startOffset": 13761,
+                    "startOffset": 13243,
                     "endColumn": 146,
-                    "endOffset": 13903
+                    "endOffset": 13385
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4186,11 +3012,11 @@
             },
             {
                 "to": {
-                    "startLine": 184,
+                    "startLine": 177,
                     "startColumn": 4,
-                    "startOffset": 13908,
+                    "startOffset": 13390,
                     "endColumn": 60,
-                    "endOffset": 13964
+                    "endOffset": 13446
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4205,11 +3031,11 @@
             },
             {
                 "to": {
-                    "startLine": 185,
+                    "startLine": 178,
                     "startColumn": 4,
-                    "startOffset": 13969,
+                    "startOffset": 13451,
                     "endColumn": 48,
-                    "endOffset": 14013
+                    "endOffset": 13495
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4224,11 +3050,11 @@
             },
             {
                 "to": {
-                    "startLine": 186,
+                    "startLine": 179,
                     "startColumn": 4,
-                    "startOffset": 14018,
+                    "startOffset": 13500,
                     "endColumn": 44,
-                    "endOffset": 14058
+                    "endOffset": 13540
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4243,11 +3069,11 @@
             },
             {
                 "to": {
-                    "startLine": 187,
+                    "startLine": 180,
                     "startColumn": 4,
-                    "startOffset": 14063,
+                    "startOffset": 13545,
                     "endColumn": 51,
-                    "endOffset": 14110
+                    "endOffset": 13592
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4262,11 +3088,11 @@
             },
             {
                 "to": {
-                    "startLine": 188,
+                    "startLine": 181,
                     "startColumn": 4,
-                    "startOffset": 14115,
+                    "startOffset": 13597,
                     "endColumn": 49,
-                    "endOffset": 14160
+                    "endOffset": 13642
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4281,11 +3107,11 @@
             },
             {
                 "to": {
-                    "startLine": 189,
+                    "startLine": 182,
                     "startColumn": 4,
-                    "startOffset": 14165,
+                    "startOffset": 13647,
                     "endColumn": 55,
-                    "endOffset": 14216
+                    "endOffset": 13698
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4300,11 +3126,11 @@
             },
             {
                 "to": {
-                    "startLine": 190,
+                    "startLine": 183,
                     "startColumn": 4,
-                    "startOffset": 14221,
+                    "startOffset": 13703,
                     "endColumn": 63,
-                    "endOffset": 14280
+                    "endOffset": 13762
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4319,11 +3145,11 @@
             },
             {
                 "to": {
-                    "startLine": 191,
+                    "startLine": 184,
                     "startColumn": 4,
-                    "startOffset": 14285,
+                    "startOffset": 13767,
                     "endColumn": 67,
-                    "endOffset": 14348
+                    "endOffset": 13830
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4338,11 +3164,11 @@
             },
             {
                 "to": {
-                    "startLine": 192,
+                    "startLine": 185,
                     "startColumn": 4,
-                    "startOffset": 14353,
+                    "startOffset": 13835,
                     "endColumn": 53,
-                    "endOffset": 14402
+                    "endOffset": 13884
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4357,11 +3183,11 @@
             },
             {
                 "to": {
-                    "startLine": 193,
+                    "startLine": 186,
                     "startColumn": 4,
-                    "startOffset": 14407,
+                    "startOffset": 13889,
                     "endColumn": 78,
-                    "endOffset": 14481
+                    "endOffset": 13963
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4376,11 +3202,11 @@
             },
             {
                 "to": {
-                    "startLine": 194,
+                    "startLine": 187,
                     "startColumn": 4,
-                    "startOffset": 14486,
+                    "startOffset": 13968,
                     "endColumn": 69,
-                    "endOffset": 14551
+                    "endOffset": 14033
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4395,11 +3221,11 @@
             },
             {
                 "to": {
-                    "startLine": 195,
+                    "startLine": 188,
                     "startColumn": 4,
-                    "startOffset": 14556,
+                    "startOffset": 14038,
                     "endColumn": 64,
-                    "endOffset": 14616
+                    "endOffset": 14098
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4414,11 +3240,11 @@
             },
             {
                 "to": {
-                    "startLine": 196,
+                    "startLine": 189,
                     "startColumn": 4,
-                    "startOffset": 14621,
+                    "startOffset": 14103,
                     "endColumn": 63,
-                    "endOffset": 14680
+                    "endOffset": 14162
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4433,11 +3259,11 @@
             },
             {
                 "to": {
-                    "startLine": 197,
+                    "startLine": 190,
                     "startColumn": 4,
-                    "startOffset": 14685,
+                    "startOffset": 14167,
                     "endColumn": 70,
-                    "endOffset": 14751
+                    "endOffset": 14233
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4452,11 +3278,11 @@
             },
             {
                 "to": {
-                    "startLine": 198,
+                    "startLine": 191,
                     "startColumn": 4,
-                    "startOffset": 14756,
+                    "startOffset": 14238,
                     "endColumn": 64,
-                    "endOffset": 14816
+                    "endOffset": 14298
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4471,11 +3297,11 @@
             },
             {
                 "to": {
-                    "startLine": 199,
+                    "startLine": 192,
                     "startColumn": 4,
-                    "startOffset": 14821,
+                    "startOffset": 14303,
                     "endColumn": 62,
-                    "endOffset": 14879
+                    "endOffset": 14361
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4490,11 +3316,11 @@
             },
             {
                 "to": {
-                    "startLine": 200,
+                    "startLine": 193,
                     "startColumn": 4,
-                    "startOffset": 14884,
+                    "startOffset": 14366,
                     "endColumn": 70,
-                    "endOffset": 14950
+                    "endOffset": 14432
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4509,11 +3335,11 @@
             },
             {
                 "to": {
-                    "startLine": 201,
+                    "startLine": 194,
                     "startColumn": 4,
-                    "startOffset": 14955,
+                    "startOffset": 14437,
                     "endColumn": 58,
-                    "endOffset": 15009
+                    "endOffset": 14491
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4528,11 +3354,11 @@
             },
             {
                 "to": {
-                    "startLine": 202,
+                    "startLine": 195,
                     "startColumn": 4,
-                    "startOffset": 15014,
+                    "startOffset": 14496,
                     "endColumn": 78,
-                    "endOffset": 15088
+                    "endOffset": 14570
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4547,11 +3373,11 @@
             },
             {
                 "to": {
-                    "startLine": 203,
+                    "startLine": 196,
                     "startColumn": 4,
-                    "startOffset": 15093,
+                    "startOffset": 14575,
                     "endColumn": 60,
-                    "endOffset": 15149
+                    "endOffset": 14631
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4566,11 +3392,11 @@
             },
             {
                 "to": {
-                    "startLine": 204,
+                    "startLine": 197,
                     "startColumn": 4,
-                    "startOffset": 15154,
+                    "startOffset": 14636,
                     "endColumn": 72,
-                    "endOffset": 15222
+                    "endOffset": 14704
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4585,11 +3411,11 @@
             },
             {
                 "to": {
-                    "startLine": 205,
+                    "startLine": 198,
                     "startColumn": 4,
-                    "startOffset": 15227,
+                    "startOffset": 14709,
                     "endColumn": 80,
-                    "endOffset": 15303
+                    "endOffset": 14785
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4604,11 +3430,11 @@
             },
             {
                 "to": {
-                    "startLine": 206,
+                    "startLine": 199,
                     "startColumn": 4,
-                    "startOffset": 15308,
+                    "startOffset": 14790,
                     "endColumn": 82,
-                    "endOffset": 15386
+                    "endOffset": 14868
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4623,11 +3449,11 @@
             },
             {
                 "to": {
-                    "startLine": 207,
+                    "startLine": 200,
                     "startColumn": 4,
-                    "startOffset": 15391,
+                    "startOffset": 14873,
                     "endColumn": 62,
-                    "endOffset": 15449
+                    "endOffset": 14931
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4642,11 +3468,11 @@
             },
             {
                 "to": {
-                    "startLine": 208,
+                    "startLine": 201,
                     "startColumn": 4,
-                    "startOffset": 15454,
+                    "startOffset": 14936,
                     "endColumn": 60,
-                    "endOffset": 15510
+                    "endOffset": 14992
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4661,11 +3487,11 @@
             },
             {
                 "to": {
-                    "startLine": 209,
+                    "startLine": 202,
                     "startColumn": 4,
-                    "startOffset": 15515,
+                    "startOffset": 14997,
                     "endColumn": 66,
-                    "endOffset": 15577
+                    "endOffset": 15059
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4680,11 +3506,11 @@
             },
             {
                 "to": {
-                    "startLine": 210,
+                    "startLine": 203,
                     "startColumn": 4,
-                    "startOffset": 15582,
+                    "startOffset": 15064,
                     "endColumn": 46,
-                    "endOffset": 15624
+                    "endOffset": 15106
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4699,11 +3525,11 @@
             },
             {
                 "to": {
-                    "startLine": 211,
+                    "startLine": 204,
                     "startColumn": 4,
-                    "startOffset": 15629,
+                    "startOffset": 15111,
                     "endColumn": 54,
-                    "endOffset": 15679
+                    "endOffset": 15161
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4718,11 +3544,11 @@
             },
             {
                 "to": {
-                    "startLine": 212,
+                    "startLine": 205,
                     "startColumn": 4,
-                    "startOffset": 15684,
+                    "startOffset": 15166,
                     "endColumn": 71,
-                    "endOffset": 15751
+                    "endOffset": 15233
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4737,11 +3563,11 @@
             },
             {
                 "to": {
-                    "startLine": 213,
+                    "startLine": 206,
                     "startColumn": 4,
-                    "startOffset": 15756,
+                    "startOffset": 15238,
                     "endColumn": 56,
-                    "endOffset": 15808
+                    "endOffset": 15290
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4756,11 +3582,11 @@
             },
             {
                 "to": {
-                    "startLine": 214,
+                    "startLine": 207,
                     "startColumn": 4,
-                    "startOffset": 15813,
+                    "startOffset": 15295,
                     "endColumn": 44,
-                    "endOffset": 15853
+                    "endOffset": 15335
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4775,11 +3601,11 @@
             },
             {
                 "to": {
-                    "startLine": 215,
+                    "startLine": 208,
                     "startColumn": 4,
-                    "startOffset": 15858,
+                    "startOffset": 15340,
                     "endColumn": 58,
-                    "endOffset": 15912
+                    "endOffset": 15394
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4794,11 +3620,11 @@
             },
             {
                 "to": {
-                    "startLine": 216,
+                    "startLine": 209,
                     "startColumn": 4,
-                    "startOffset": 15917,
+                    "startOffset": 15399,
                     "endColumn": 58,
-                    "endOffset": 15971
+                    "endOffset": 15453
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4813,11 +3639,11 @@
             },
             {
                 "to": {
-                    "startLine": 217,
+                    "startLine": 210,
                     "startColumn": 4,
-                    "startOffset": 15976,
+                    "startOffset": 15458,
                     "endColumn": 60,
-                    "endOffset": 16032
+                    "endOffset": 15514
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4832,11 +3658,11 @@
             },
             {
                 "to": {
-                    "startLine": 218,
+                    "startLine": 211,
                     "startColumn": 4,
-                    "startOffset": 16037,
+                    "startOffset": 15519,
                     "endColumn": 66,
-                    "endOffset": 16099
+                    "endOffset": 15581
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4851,11 +3677,11 @@
             },
             {
                 "to": {
-                    "startLine": 219,
+                    "startLine": 212,
                     "startColumn": 4,
-                    "startOffset": 16104,
+                    "startOffset": 15586,
                     "endColumn": 52,
-                    "endOffset": 16152
+                    "endOffset": 15634
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4870,11 +3696,11 @@
             },
             {
                 "to": {
-                    "startLine": 220,
+                    "startLine": 213,
                     "startColumn": 4,
-                    "startOffset": 16157,
+                    "startOffset": 15639,
                     "endColumn": 52,
-                    "endOffset": 16205
+                    "endOffset": 15687
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4889,11 +3715,11 @@
             },
             {
                 "to": {
-                    "startLine": 221,
+                    "startLine": 214,
                     "startColumn": 4,
-                    "startOffset": 16210,
+                    "startOffset": 15692,
                     "endColumn": 64,
-                    "endOffset": 16270
+                    "endOffset": 15752
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4908,11 +3734,11 @@
             },
             {
                 "to": {
-                    "startLine": 222,
+                    "startLine": 215,
                     "startColumn": 4,
-                    "startOffset": 16275,
+                    "startOffset": 15757,
                     "endColumn": 78,
-                    "endOffset": 16349
+                    "endOffset": 15831
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4927,11 +3753,11 @@
             },
             {
                 "to": {
-                    "startLine": 223,
+                    "startLine": 216,
                     "startColumn": 4,
-                    "startOffset": 16354,
+                    "startOffset": 15836,
                     "endColumn": 74,
-                    "endOffset": 16424
+                    "endOffset": 15906
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4946,11 +3772,11 @@
             },
             {
                 "to": {
-                    "startLine": 224,
+                    "startLine": 217,
                     "startColumn": 4,
-                    "startOffset": 16429,
+                    "startOffset": 15911,
                     "endColumn": 66,
-                    "endOffset": 16491
+                    "endOffset": 15973
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4965,11 +3791,11 @@
             },
             {
                 "to": {
-                    "startLine": 225,
+                    "startLine": 218,
                     "startColumn": 4,
-                    "startOffset": 16496,
+                    "startOffset": 15978,
                     "endColumn": 66,
-                    "endOffset": 16558
+                    "endOffset": 16040
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -4984,11 +3810,11 @@
             },
             {
                 "to": {
-                    "startLine": 226,
+                    "startLine": 219,
                     "startColumn": 4,
-                    "startOffset": 16563,
+                    "startOffset": 16045,
                     "endColumn": 86,
-                    "endOffset": 16645
+                    "endOffset": 16127
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -5003,11 +3829,11 @@
             },
             {
                 "to": {
-                    "startLine": 227,
+                    "startLine": 220,
                     "startColumn": 4,
-                    "startOffset": 16650,
+                    "startOffset": 16132,
                     "endColumn": 80,
-                    "endOffset": 16726
+                    "endOffset": 16208
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -5022,11 +3848,11 @@
             },
             {
                 "to": {
-                    "startLine": 228,
+                    "startLine": 221,
                     "startColumn": 4,
-                    "startOffset": 16731,
+                    "startOffset": 16213,
                     "endColumn": 58,
-                    "endOffset": 16785
+                    "endOffset": 16267
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -5041,11 +3867,11 @@
             },
             {
                 "to": {
-                    "startLine": 229,
+                    "startLine": 222,
                     "startColumn": 4,
-                    "startOffset": 16790,
+                    "startOffset": 16272,
                     "endColumn": 56,
-                    "endOffset": 16842
+                    "endOffset": 16324
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -5060,11 +3886,11 @@
             },
             {
                 "to": {
-                    "startLine": 230,
+                    "startLine": 223,
                     "startColumn": 4,
-                    "startOffset": 16847,
+                    "startOffset": 16329,
                     "endColumn": 60,
-                    "endOffset": 16903
+                    "endOffset": 16385
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -5079,11 +3905,11 @@
             },
             {
                 "to": {
-                    "startLine": 231,
+                    "startLine": 224,
                     "startColumn": 4,
-                    "startOffset": 16908,
+                    "startOffset": 16390,
                     "endColumn": 56,
-                    "endOffset": 16960
+                    "endOffset": 16442
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -5098,11 +3924,11 @@
             },
             {
                 "to": {
-                    "startLine": 232,
+                    "startLine": 225,
                     "startColumn": 4,
-                    "startOffset": 16965,
+                    "startOffset": 16447,
                     "endColumn": 50,
-                    "endOffset": 17011
+                    "endOffset": 16493
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -5117,11 +3943,11 @@
             },
             {
                 "to": {
-                    "startLine": 233,
+                    "startLine": 226,
                     "startColumn": 4,
-                    "startOffset": 17016,
+                    "startOffset": 16498,
                     "endColumn": 56,
-                    "endOffset": 17068
+                    "endOffset": 16550
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -5136,11 +3962,11 @@
             },
             {
                 "to": {
-                    "startLine": 234,
+                    "startLine": 227,
                     "startColumn": 4,
-                    "startOffset": 17073,
+                    "startOffset": 16555,
                     "endColumn": 85,
-                    "endOffset": 17154
+                    "endOffset": 16636
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -5155,11 +3981,11 @@
             },
             {
                 "to": {
-                    "startLine": 235,
+                    "startLine": 228,
                     "startColumn": 4,
-                    "startOffset": 17159,
+                    "startOffset": 16641,
                     "endColumn": 51,
-                    "endOffset": 17206
+                    "endOffset": 16688
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -5174,11 +4000,11 @@
             },
             {
                 "to": {
-                    "startLine": 236,
+                    "startLine": 229,
                     "startColumn": 4,
-                    "startOffset": 17211,
+                    "startOffset": 16693,
                     "endColumn": 207,
-                    "endOffset": 17414
+                    "endOffset": 16896
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -5193,11 +4019,11 @@
             },
             {
                 "to": {
-                    "startLine": 237,
+                    "startLine": 230,
                     "startColumn": 4,
-                    "startOffset": 17419,
+                    "startOffset": 16901,
                     "endColumn": 44,
-                    "endOffset": 17459
+                    "endOffset": 16941
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -5212,11 +4038,11 @@
             },
             {
                 "to": {
-                    "startLine": 238,
+                    "startLine": 231,
                     "startColumn": 4,
-                    "startOffset": 17464,
+                    "startOffset": 16946,
                     "endColumn": 50,
-                    "endOffset": 17510
+                    "endOffset": 16992
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -5231,11 +4057,11 @@
             },
             {
                 "to": {
-                    "startLine": 239,
+                    "startLine": 232,
                     "startColumn": 4,
-                    "startOffset": 17515,
+                    "startOffset": 16997,
                     "endColumn": 70,
-                    "endOffset": 17581
+                    "endOffset": 17063
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values-sr/values-sr.xml",
@@ -5250,11 +4076,11 @@
             },
             {
                 "to": {
-                    "startLine": 240,
+                    "startLine": 233,
                     "startColumn": 4,
-                    "startOffset": 17586,
+                    "startOffset": 17068,
                     "endColumn": 83,
-                    "endOffset": 17665
+                    "endOffset": 17147
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-sr/values-sr.xml",
@@ -5269,11 +4095,11 @@
             },
             {
                 "to": {
-                    "startLine": 241,
+                    "startLine": 234,
                     "startColumn": 4,
-                    "startOffset": 17670,
+                    "startOffset": 17152,
                     "endColumn": 100,
-                    "endOffset": 17766
+                    "endOffset": 17248
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values-sr/values-sr.xml",
@@ -5283,353 +4109,6 @@
                         "startOffset": 2097,
                         "endColumn": 100,
                         "endOffset": 2193
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sr\\values-sr.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 108,
-                    "endOffset": 159
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 280,
-                        "endColumn": 108,
-                        "endOffset": 384
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 164,
-                    "endColumn": 107,
-                    "endOffset": 267
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 389,
-                        "endColumn": 107,
-                        "endOffset": 492
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 272,
-                    "endColumn": 122,
-                    "endOffset": 390
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 497,
-                        "endColumn": 122,
-                        "endOffset": 615
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 395,
-                    "endColumn": 102,
-                    "endOffset": 493
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 620,
-                        "endColumn": 102,
-                        "endOffset": 718
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 498,
-                    "endColumn": 105,
-                    "endOffset": 599
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 723,
-                        "endColumn": 105,
-                        "endOffset": 824
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 604,
-                    "endColumn": 85,
-                    "endOffset": 685
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 829,
-                        "endColumn": 85,
-                        "endOffset": 910
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 690,
-                    "endColumn": 103,
-                    "endOffset": 789
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 915,
-                        "endColumn": 103,
-                        "endOffset": 1014
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 794,
-                    "endColumn": 117,
-                    "endOffset": 907
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 1019,
-                        "endColumn": 117,
-                        "endOffset": 1132
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 912,
-                    "endColumn": 87,
-                    "endOffset": 995
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1137,
-                        "endColumn": 87,
-                        "endOffset": 1220
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 11,
-                    "startColumn": 4,
-                    "startOffset": 1000,
-                    "endColumn": 104,
-                    "endOffset": 1100
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1225,
-                        "endColumn": 104,
-                        "endOffset": 1325
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 1105,
-                    "endColumn": 107,
-                    "endOffset": 1208
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1330,
-                        "endColumn": 107,
-                        "endOffset": 1433
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 13,
-                    "startColumn": 4,
-                    "startOffset": 1213,
-                    "endColumn": 100,
-                    "endOffset": 1309
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 1438,
-                        "endColumn": 100,
-                        "endOffset": 1534
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 1314,
-                    "endColumn": 103,
-                    "endOffset": 1413
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 1539,
-                        "endColumn": 103,
-                        "endOffset": 1638
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 1418,
-                    "endColumn": 107,
-                    "endOffset": 1521
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1643,
-                        "endColumn": 107,
-                        "endOffset": 1746
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 1526,
-                    "endColumn": 100,
-                    "endOffset": 1622
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 1751,
-                        "endColumn": 100,
-                        "endOffset": 1847
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 17,
-                    "startColumn": 4,
-                    "startOffset": 1627,
-                    "endColumn": 127,
-                    "endOffset": 1750
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1852,
-                        "endColumn": 127,
-                        "endOffset": 1975
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 18,
-                    "startColumn": 4,
-                    "startOffset": 1755,
-                    "endColumn": 96,
-                    "endOffset": 1847
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 1980,
-                        "endColumn": 96,
-                        "endOffset": 2072
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 19,
-                    "startColumn": 4,
-                    "startOffset": 1852,
-                    "endColumn": 100,
-                    "endOffset": 1948
-                },
-                "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/E:\\Users\\sturm\\Desktop\\epaperem\\android\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.1\\res\\values-sr\\values-sr.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 2077,
-                        "endColumn": 100,
-                        "endOffset": 2173
                     }
                 }
             }

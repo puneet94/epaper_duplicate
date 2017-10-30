@@ -53,13 +53,6 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Avaa puhelimessa"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Kirjaudu sisään"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Kirjaudu Google-tilille"</string>
-    <string name="exo_controls_fastforward_description">"Kelaa eteen"</string>
-    <string name="exo_controls_next_description">"Seuraava raita"</string>
-    <string name="exo_controls_pause_description">"Tauko"</string>
-    <string name="exo_controls_play_description">"Toista"</string>
-    <string name="exo_controls_previous_description">"Edellinen raita"</string>
-    <string name="exo_controls_rewind_description">"Kelaa taakse"</string>
-    <string name="exo_controls_stop_description">"Seis"</string>
     <string name="pspdf__action_menu_copy">Kopioi</string>
     <string name="pspdf__action_menu_speak">Puhu</string>
     <string name="pspdf__activity_menu_no_outline">Ei runkoa</string>

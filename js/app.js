@@ -18,7 +18,7 @@ import NewsDetailScreen from "./components/newsdetail";
 import ImageViewerScreen from "./components/imageviewer";
 
 
-const ePaperApp = StackNavigator({
+const emdigitalApp = StackNavigator({
     Menu : {
       screen: MenuScreen,
       navigationOptions: ({navigation}) => ({
@@ -54,4 +54,4 @@ const ePaperApp = StackNavigator({
 },
 });
 
-export default ePaperApp;
+export default emdigitalApp;

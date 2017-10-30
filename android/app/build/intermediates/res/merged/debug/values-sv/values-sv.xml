@@ -53,13 +53,6 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Öppna på mobilen"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Logga in"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Logga in med Google"</string>
-    <string name="exo_controls_fastforward_description">"Snabbspola framåt"</string>
-    <string name="exo_controls_next_description">"Nästa spår"</string>
-    <string name="exo_controls_pause_description">"Pausa"</string>
-    <string name="exo_controls_play_description">"Spela upp"</string>
-    <string name="exo_controls_previous_description">"Föregående spår"</string>
-    <string name="exo_controls_rewind_description">"Spola tillbaka"</string>
-    <string name="exo_controls_stop_description">"Avbryt"</string>
     <string name="pspdf__action_menu_copy">Kopiera</string>
     <string name="pspdf__action_menu_speak">Tala</string>
     <string name="pspdf__activity_menu_no_outline">Inget innehåll</string>
