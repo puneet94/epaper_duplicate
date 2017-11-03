@@ -152,8 +152,8 @@ module.exports = StyleSheet.create({
   },
   galleryItem: {
     flex: 1,
-    height: (x * .23),
-    width: (x * .23),
+    height: (x * .25)-5,
+    width: (x * .25)-5,
     margin: 1
   },
 

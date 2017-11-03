@@ -112,18 +112,18 @@ onIds(device) {
         </View>
       </TouchableWithoutFeedback>
       <View style={appStyles.drawerSeperator} />
-      
-      <TouchableWithoutFeedback onPress={() => navigation.navigate('Settings')} style={this.isActiveClass('settings')}>
-        <View style={[appStyles.drawerItem,this.isActiveClass('settings')]}>
-          <AwseomeIcon name="cog" style={appStyles.drawerIcon}/>
-          <Text style={appStyles.drawerLabel}>{appVars.labelSettings.toUpperCase()}</Text>
-        </View>
-      </TouchableWithoutFeedback>
 
       <TouchableWithoutFeedback onPress={() => navigation.navigate('Account')} style={this.isActiveClass('account')}>
         <View style={[appStyles.drawerItem,this.isActiveClass('account')]}>
           <AwseomeIcon name="user" style={appStyles.drawerIcon}/>
           <Text style={appStyles.drawerLabel}>{appVars.labelAccount.toUpperCase()}</Text>
+        </View>
+      </TouchableWithoutFeedback>
+      
+      <TouchableWithoutFeedback onPress={() => navigation.navigate('Settings')} style={this.isActiveClass('settings')}>
+        <View style={[appStyles.drawerItem,this.isActiveClass('settings')]}>
+          <AwseomeIcon name="cog" style={appStyles.drawerIcon}/>
+          <Text style={appStyles.drawerLabel}>{appVars.labelSettings.toUpperCase()}</Text>
         </View>
       </TouchableWithoutFeedback>
 

@@ -2329,7 +2329,7 @@
     <item name="android:windowExitAnimation">@anim/slide_down</item>
   </style>
     <style name="OutlineViewStyle">
-    
+    <!-- These are the defaults also inherited from the parent style. Tweak them as you like! -->
     <item name="pspdf__backgroundColor">@color/pspdf__color_white</item>
     <item name="pspdf__listItemSelector">@null</item>
     <item name="pspdf__defaultTextColor">@color/pspdf__color_black</item>
@@ -2745,7 +2745,7 @@
         <item name="android:paddingRight">@dimen/abc_action_bar_overflow_padding_end_material</item>
     </style>
     <style name="ScrollableThumbnailBarStyle">
-    
+    <!-- These are the defaults also inherited from the parent style. Tweak them as you like! -->
     <item name="pspdf__backgroundColor">@android:color/transparent</item>
     <item name="pspdf__thumbnailWidth">@dimen/pspdf__scrollable_thumbnail_width</item>
     <item name="pspdf__thumbnailHeight">@dimen/pspdf__scrollable_thumbnail_height</item>
@@ -2753,7 +2753,7 @@
     <item name="pspdf__thumbnailSelectedBorderColor">@android:color/transparent</item>
 </style>
     <style name="SearchViewInlineStyle">
-    
+    <!-- These are the defaults also inherited from the parent style. Tweak them as you like! -->
     <item name="pspdf__backgroundColor">@android:color/transparent</item>
     <item name="pspdf__borderColor">@color/colorBlack</item>
     <item name="pspdf__borderWidth">1dp</item>

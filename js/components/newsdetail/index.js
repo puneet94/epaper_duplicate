@@ -213,7 +213,7 @@ fetchgallerydata = async () => {
     return(
       <TouchableOpacity style={appStyles.galleryItem} key={index} activeOpacity={0.5} onPress={()=>this.openGalleryViewer(item,index)}>
         <View style={appStyles.imageBorder}>
-          <Image style={{resizeMode: 'contain', width: (appVars.screenX*0.23)-8, height: (appVars.screenX*0.23)-8}} source={{uri: appVars.apiUrl +"/"+item.img.src} } />
+          <Image style={{resizeMode: 'contain', width: (appVars.screenX*0.25)-15, height: (appVars.screenX*0.25)-15}} source={{uri: appVars.apiUrl +"/"+item.img.src} } />
         </View>
       </TouchableOpacity>
     )

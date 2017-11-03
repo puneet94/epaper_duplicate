@@ -7226,14 +7226,7 @@
                     "endOffset": 89111
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/src/main/res/values/strings.xml",
-                    "position": {
-                        "startLine": 1,
-                        "startColumn": 4,
-                        "startOffset": 16,
-                        "endColumn": 47,
-                        "endOffset": 59
-                    }
+                    "file": "/Users/sturm/Desktop/epaper/android/app/src/main/res/values/strings.xml"
                 }
             },
             {
@@ -11925,20 +11918,28 @@
                     "startOffset": 173777,
                     "endLine": 2344,
                     "endColumn": 8,
-                    "endOffset": 174692
+                    "endOffset": 174785
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/src/main/res/values/styles.xml"
+                    "file": "/Users/sturm/Desktop/epaper/android/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 59,
+                        "startColumn": 0,
+                        "startOffset": 3632,
+                        "endLine": 73,
+                        "endColumn": 8,
+                        "endOffset": 4640
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 2345,
                     "startColumn": 4,
-                    "startOffset": 174697,
+                    "startOffset": 174790,
                     "endLine": 2385,
                     "endColumn": 12,
-                    "endOffset": 177806
+                    "endOffset": 177899
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -11948,10 +11949,10 @@
                 "to": {
                     "startLine": 2386,
                     "startColumn": 4,
-                    "startOffset": 177811,
+                    "startOffset": 177904,
                     "endLine": 2428,
                     "endColumn": 12,
-                    "endOffset": 181435
+                    "endOffset": 181528
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -11961,10 +11962,10 @@
                 "to": {
                     "startLine": 2429,
                     "startColumn": 4,
-                    "startOffset": 181440,
+                    "startOffset": 181533,
                     "endLine": 2433,
                     "endColumn": 12,
-                    "endOffset": 181672
+                    "endOffset": 181765
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -11974,10 +11975,10 @@
                 "to": {
                     "startLine": 2434,
                     "startColumn": 4,
-                    "startOffset": 181677,
+                    "startOffset": 181770,
                     "endLine": 2440,
                     "endColumn": 12,
-                    "endOffset": 182150
+                    "endOffset": 182243
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -11987,10 +11988,10 @@
                 "to": {
                     "startLine": 2441,
                     "startColumn": 4,
-                    "startOffset": 182155,
+                    "startOffset": 182248,
                     "endLine": 2445,
                     "endColumn": 12,
-                    "endOffset": 182399
+                    "endOffset": 182492
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12000,10 +12001,10 @@
                 "to": {
                     "startLine": 2446,
                     "startColumn": 4,
-                    "startOffset": 182404,
+                    "startOffset": 182497,
                     "endLine": 2449,
                     "endColumn": 12,
-                    "endOffset": 182639
+                    "endOffset": 182732
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12013,10 +12014,10 @@
                 "to": {
                     "startLine": 2450,
                     "startColumn": 4,
-                    "startOffset": 182644,
+                    "startOffset": 182737,
                     "endLine": 2453,
                     "endColumn": 12,
-                    "endOffset": 182878
+                    "endOffset": 182971
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12026,10 +12027,10 @@
                 "to": {
                     "startLine": 2454,
                     "startColumn": 4,
-                    "startOffset": 182883,
+                    "startOffset": 182976,
                     "endLine": 2460,
                     "endColumn": 12,
-                    "endOffset": 183387
+                    "endOffset": 183480
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12039,10 +12040,10 @@
                 "to": {
                     "startLine": 2461,
                     "startColumn": 4,
-                    "startOffset": 183392,
+                    "startOffset": 183485,
                     "endLine": 2464,
                     "endColumn": 12,
-                    "endOffset": 183624
+                    "endOffset": 183717
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12052,10 +12053,10 @@
                 "to": {
                     "startLine": 2465,
                     "startColumn": 4,
-                    "startOffset": 183629,
+                    "startOffset": 183722,
                     "endLine": 2471,
                     "endColumn": 12,
-                    "endOffset": 184060
+                    "endOffset": 184153
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12065,10 +12066,10 @@
                 "to": {
                     "startLine": 2472,
                     "startColumn": 4,
-                    "startOffset": 184065,
+                    "startOffset": 184158,
                     "endLine": 2475,
                     "endColumn": 12,
-                    "endOffset": 184319
+                    "endOffset": 184412
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12078,10 +12079,10 @@
                 "to": {
                     "startLine": 2476,
                     "startColumn": 4,
-                    "startOffset": 184324,
+                    "startOffset": 184417,
                     "endLine": 2479,
                     "endColumn": 12,
-                    "endOffset": 184603
+                    "endOffset": 184696
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12091,10 +12092,10 @@
                 "to": {
                     "startLine": 2480,
                     "startColumn": 4,
-                    "startOffset": 184608,
+                    "startOffset": 184701,
                     "endLine": 2490,
                     "endColumn": 12,
-                    "endOffset": 185406
+                    "endOffset": 185499
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12104,10 +12105,10 @@
                 "to": {
                     "startLine": 2491,
                     "startColumn": 4,
-                    "startOffset": 185411,
+                    "startOffset": 185504,
                     "endLine": 2495,
                     "endColumn": 12,
-                    "endOffset": 185694
+                    "endOffset": 185787
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12117,10 +12118,10 @@
                 "to": {
                     "startLine": 2496,
                     "startColumn": 4,
-                    "startOffset": 185699,
+                    "startOffset": 185792,
                     "endLine": 2509,
                     "endColumn": 12,
-                    "endOffset": 186693
+                    "endOffset": 186786
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12130,9 +12131,9 @@
                 "to": {
                     "startLine": 2510,
                     "startColumn": 4,
-                    "startOffset": 186698,
+                    "startOffset": 186791,
                     "endColumn": 91,
-                    "endOffset": 186785
+                    "endOffset": 186878
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12142,10 +12143,10 @@
                 "to": {
                     "startLine": 2511,
                     "startColumn": 4,
-                    "startOffset": 186790,
+                    "startOffset": 186883,
                     "endLine": 2516,
                     "endColumn": 12,
-                    "endOffset": 187238
+                    "endOffset": 187331
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12155,10 +12156,10 @@
                 "to": {
                     "startLine": 2517,
                     "startColumn": 4,
-                    "startOffset": 187243,
+                    "startOffset": 187336,
                     "endLine": 2521,
                     "endColumn": 12,
-                    "endOffset": 187556
+                    "endOffset": 187649
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12168,10 +12169,10 @@
                 "to": {
                     "startLine": 2522,
                     "startColumn": 4,
-                    "startOffset": 187561,
+                    "startOffset": 187654,
                     "endLine": 2525,
                     "endColumn": 12,
-                    "endOffset": 187876
+                    "endOffset": 187969
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12181,10 +12182,10 @@
                 "to": {
                     "startLine": 2526,
                     "startColumn": 4,
-                    "startOffset": 187881,
+                    "startOffset": 187974,
                     "endLine": 2528,
                     "endColumn": 12,
-                    "endOffset": 188073
+                    "endOffset": 188166
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12194,10 +12195,10 @@
                 "to": {
                     "startLine": 2529,
                     "startColumn": 4,
-                    "startOffset": 188078,
+                    "startOffset": 188171,
                     "endLine": 2531,
                     "endColumn": 12,
-                    "endOffset": 188276
+                    "endOffset": 188369
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12207,10 +12208,10 @@
                 "to": {
                     "startLine": 2532,
                     "startColumn": 4,
-                    "startOffset": 188281,
+                    "startOffset": 188374,
                     "endLine": 2536,
                     "endColumn": 12,
-                    "endOffset": 188575
+                    "endOffset": 188668
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12220,10 +12221,10 @@
                 "to": {
                     "startLine": 2537,
                     "startColumn": 4,
-                    "startOffset": 188580,
+                    "startOffset": 188673,
                     "endLine": 2556,
                     "endColumn": 12,
-                    "endOffset": 190263
+                    "endOffset": 190356
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12233,10 +12234,10 @@
                 "to": {
                     "startLine": 2557,
                     "startColumn": 4,
-                    "startOffset": 190268,
+                    "startOffset": 190361,
                     "endLine": 2561,
                     "endColumn": 12,
-                    "endOffset": 190579
+                    "endOffset": 190672
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12246,10 +12247,10 @@
                 "to": {
                     "startLine": 2562,
                     "startColumn": 4,
-                    "startOffset": 190584,
+                    "startOffset": 190677,
                     "endLine": 2565,
                     "endColumn": 12,
-                    "endOffset": 190814
+                    "endOffset": 190907
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12259,10 +12260,10 @@
                 "to": {
                     "startLine": 2566,
                     "startColumn": 4,
-                    "startOffset": 190819,
+                    "startOffset": 190912,
                     "endLine": 2571,
                     "endColumn": 12,
-                    "endOffset": 191254
+                    "endOffset": 191347
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12272,10 +12273,10 @@
                 "to": {
                     "startLine": 2572,
                     "startColumn": 4,
-                    "startOffset": 191259,
+                    "startOffset": 191352,
                     "endLine": 2574,
                     "endColumn": 12,
-                    "endOffset": 191436
+                    "endOffset": 191529
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12285,10 +12286,10 @@
                 "to": {
                     "startLine": 2575,
                     "startColumn": 4,
-                    "startOffset": 191441,
+                    "startOffset": 191534,
                     "endLine": 2577,
                     "endColumn": 12,
-                    "endOffset": 191635
+                    "endOffset": 191728
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12298,9 +12299,9 @@
                 "to": {
                     "startLine": 2578,
                     "startColumn": 4,
-                    "startOffset": 191640,
+                    "startOffset": 191733,
                     "endColumn": 42,
-                    "endOffset": 191678
+                    "endOffset": 191771
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12310,10 +12311,10 @@
                 "to": {
                     "startLine": 2579,
                     "startColumn": 4,
-                    "startOffset": 191683,
+                    "startOffset": 191776,
                     "endLine": 2581,
                     "endColumn": 12,
-                    "endOffset": 191844
+                    "endOffset": 191937
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12323,10 +12324,10 @@
                 "to": {
                     "startLine": 2582,
                     "startColumn": 4,
-                    "startOffset": 191849,
+                    "startOffset": 191942,
                     "endLine": 2587,
                     "endColumn": 12,
-                    "endOffset": 192160
+                    "endOffset": 192253
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12336,10 +12337,10 @@
                 "to": {
                     "startLine": 2588,
                     "startColumn": 4,
-                    "startOffset": 192165,
+                    "startOffset": 192258,
                     "endLine": 2593,
                     "endColumn": 12,
-                    "endOffset": 192489
+                    "endOffset": 192582
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -12349,10 +12350,10 @@
                 "to": {
                     "startLine": 2594,
                     "startColumn": 4,
-                    "startOffset": 192494,
+                    "startOffset": 192587,
                     "endLine": 2635,
                     "endColumn": 12,
-                    "endOffset": 195613
+                    "endOffset": 195706
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12362,10 +12363,10 @@
                 "to": {
                     "startLine": 2636,
                     "startColumn": 4,
-                    "startOffset": 195618,
+                    "startOffset": 195711,
                     "endLine": 2678,
                     "endColumn": 12,
-                    "endOffset": 198880
+                    "endOffset": 198973
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12375,9 +12376,9 @@
                 "to": {
                     "startLine": 2679,
                     "startColumn": 4,
-                    "startOffset": 198885,
+                    "startOffset": 198978,
                     "endColumn": 61,
-                    "endOffset": 198942
+                    "endOffset": 199035
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12387,10 +12388,10 @@
                 "to": {
                     "startLine": 2680,
                     "startColumn": 4,
-                    "startOffset": 198947,
+                    "startOffset": 199040,
                     "endLine": 2689,
                     "endColumn": 12,
-                    "endOffset": 199520
+                    "endOffset": 199613
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12400,10 +12401,10 @@
                 "to": {
                     "startLine": 2690,
                     "startColumn": 4,
-                    "startOffset": 199525,
+                    "startOffset": 199618,
                     "endLine": 2698,
                     "endColumn": 12,
-                    "endOffset": 200104
+                    "endOffset": 200197
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12413,9 +12414,9 @@
                 "to": {
                     "startLine": 2699,
                     "startColumn": 4,
-                    "startOffset": 200109,
+                    "startOffset": 200202,
                     "endColumn": 85,
-                    "endOffset": 200190
+                    "endOffset": 200283
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12425,10 +12426,10 @@
                 "to": {
                     "startLine": 2700,
                     "startColumn": 4,
-                    "startOffset": 200195,
+                    "startOffset": 200288,
                     "endLine": 2701,
                     "endColumn": 12,
-                    "endOffset": 200303
+                    "endOffset": 200396
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12438,10 +12439,10 @@
                 "to": {
                     "startLine": 2702,
                     "startColumn": 4,
-                    "startOffset": 200308,
+                    "startOffset": 200401,
                     "endLine": 2705,
                     "endColumn": 12,
-                    "endOffset": 200532
+                    "endOffset": 200625
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12451,10 +12452,10 @@
                 "to": {
                     "startLine": 2706,
                     "startColumn": 4,
-                    "startOffset": 200537,
+                    "startOffset": 200630,
                     "endLine": 2708,
                     "endColumn": 12,
-                    "endOffset": 200692
+                    "endOffset": 200785
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12464,10 +12465,10 @@
                 "to": {
                     "startLine": 2709,
                     "startColumn": 4,
-                    "startOffset": 200697,
+                    "startOffset": 200790,
                     "endLine": 2711,
                     "endColumn": 12,
-                    "endOffset": 200844
+                    "endOffset": 200937
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12477,10 +12478,10 @@
                 "to": {
                     "startLine": 2712,
                     "startColumn": 4,
-                    "startOffset": 200849,
+                    "startOffset": 200942,
                     "endLine": 2714,
                     "endColumn": 12,
-                    "endOffset": 201015
+                    "endOffset": 201108
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12490,10 +12491,10 @@
                 "to": {
                     "startLine": 2715,
                     "startColumn": 4,
-                    "startOffset": 201020,
+                    "startOffset": 201113,
                     "endLine": 2717,
                     "endColumn": 12,
-                    "endOffset": 201182
+                    "endOffset": 201275
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12503,10 +12504,10 @@
                 "to": {
                     "startLine": 2718,
                     "startColumn": 4,
-                    "startOffset": 201187,
+                    "startOffset": 201280,
                     "endLine": 2721,
                     "endColumn": 12,
-                    "endOffset": 201425
+                    "endOffset": 201518
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12516,10 +12517,10 @@
                 "to": {
                     "startLine": 2722,
                     "startColumn": 4,
-                    "startOffset": 201430,
+                    "startOffset": 201523,
                     "endLine": 2724,
                     "endColumn": 12,
-                    "endOffset": 201595
+                    "endOffset": 201688
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12529,10 +12530,10 @@
                 "to": {
                     "startLine": 2725,
                     "startColumn": 4,
-                    "startOffset": 201600,
+                    "startOffset": 201693,
                     "endLine": 2727,
                     "endColumn": 12,
-                    "endOffset": 201768
+                    "endOffset": 201861
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12542,10 +12543,10 @@
                 "to": {
                     "startLine": 2728,
                     "startColumn": 4,
-                    "startOffset": 201773,
+                    "startOffset": 201866,
                     "endLine": 2730,
                     "endColumn": 12,
-                    "endOffset": 201939
+                    "endOffset": 202032
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12555,10 +12556,10 @@
                 "to": {
                     "startLine": 2731,
                     "startColumn": 4,
-                    "startOffset": 201944,
+                    "startOffset": 202037,
                     "endLine": 2734,
                     "endColumn": 12,
-                    "endOffset": 202213
+                    "endOffset": 202306
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12568,10 +12569,10 @@
                 "to": {
                     "startLine": 2735,
                     "startColumn": 4,
-                    "startOffset": 202218,
+                    "startOffset": 202311,
                     "endLine": 2737,
                     "endColumn": 12,
-                    "endOffset": 202412
+                    "endOffset": 202505
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12581,10 +12582,10 @@
                 "to": {
                     "startLine": 2738,
                     "startColumn": 4,
-                    "startOffset": 202417,
+                    "startOffset": 202510,
                     "endLine": 2741,
                     "endColumn": 12,
-                    "endOffset": 202617
+                    "endOffset": 202710
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12594,10 +12595,10 @@
                 "to": {
                     "startLine": 2742,
                     "startColumn": 4,
-                    "startOffset": 202622,
+                    "startOffset": 202715,
                     "endLine": 2745,
                     "endColumn": 12,
-                    "endOffset": 202947
+                    "endOffset": 203040
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12607,36 +12608,52 @@
                 "to": {
                     "startLine": 2746,
                     "startColumn": 4,
-                    "startOffset": 202952,
+                    "startOffset": 203045,
                     "endLine": 2753,
                     "endColumn": 8,
-                    "endOffset": 203405
+                    "endOffset": 203591
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/src/main/res/values/styles.xml"
+                    "file": "/Users/sturm/Desktop/epaper/android/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 0,
+                        "startOffset": 2200,
+                        "endLine": 42,
+                        "endColumn": 8,
+                        "endOffset": 2746
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 2754,
                     "startColumn": 4,
-                    "startOffset": 203410,
+                    "startOffset": 203596,
                     "endLine": 2767,
                     "endColumn": 8,
-                    "endOffset": 204199
+                    "endOffset": 204478
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/src/main/res/values/styles.xml"
+                    "file": "/Users/sturm/Desktop/epaper/android/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 0,
+                        "startOffset": 2748,
+                        "endLine": 57,
+                        "endColumn": 8,
+                        "endOffset": 3630
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 2768,
                     "startColumn": 4,
-                    "startOffset": 204204,
+                    "startOffset": 204483,
                     "endLine": 2770,
                     "endColumn": 12,
-                    "endOffset": 204400
+                    "endOffset": 204679
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.49.3/res/values/values.xml"
@@ -12646,10 +12663,10 @@
                 "to": {
                     "startLine": 2771,
                     "startColumn": 4,
-                    "startOffset": 204405,
+                    "startOffset": 204684,
                     "endLine": 2773,
                     "endColumn": 12,
-                    "endOffset": 204589
+                    "endOffset": 204868
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.49.3/res/values/values.xml"
@@ -12659,9 +12676,9 @@
                 "to": {
                     "startLine": 2774,
                     "startColumn": 4,
-                    "startOffset": 204594,
+                    "startOffset": 204873,
                     "endColumn": 83,
-                    "endOffset": 204673
+                    "endOffset": 204952
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12671,9 +12688,9 @@
                 "to": {
                     "startLine": 2775,
                     "startColumn": 4,
-                    "startOffset": 204678,
+                    "startOffset": 204957,
                     "endColumn": 95,
-                    "endOffset": 204769
+                    "endOffset": 205048
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12683,9 +12700,9 @@
                 "to": {
                     "startLine": 2776,
                     "startColumn": 4,
-                    "startOffset": 204774,
+                    "startOffset": 205053,
                     "endColumn": 95,
-                    "endOffset": 204865
+                    "endOffset": 205144
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12695,9 +12712,9 @@
                 "to": {
                     "startLine": 2777,
                     "startColumn": 4,
-                    "startOffset": 204870,
+                    "startOffset": 205149,
                     "endColumn": 97,
-                    "endOffset": 204963
+                    "endOffset": 205242
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12707,9 +12724,9 @@
                 "to": {
                     "startLine": 2778,
                     "startColumn": 4,
-                    "startOffset": 204968,
+                    "startOffset": 205247,
                     "endColumn": 99,
-                    "endOffset": 205063
+                    "endOffset": 205342
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12719,9 +12736,9 @@
                 "to": {
                     "startLine": 2779,
                     "startColumn": 4,
-                    "startOffset": 205068,
+                    "startOffset": 205347,
                     "endColumn": 101,
-                    "endOffset": 205165
+                    "endOffset": 205444
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12731,9 +12748,9 @@
                 "to": {
                     "startLine": 2780,
                     "startColumn": 4,
-                    "startOffset": 205170,
+                    "startOffset": 205449,
                     "endColumn": 101,
-                    "endOffset": 205267
+                    "endOffset": 205546
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12743,9 +12760,9 @@
                 "to": {
                     "startLine": 2781,
                     "startColumn": 4,
-                    "startOffset": 205272,
+                    "startOffset": 205551,
                     "endColumn": 101,
-                    "endOffset": 205369
+                    "endOffset": 205648
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12755,9 +12772,9 @@
                 "to": {
                     "startLine": 2782,
                     "startColumn": 4,
-                    "startOffset": 205374,
+                    "startOffset": 205653,
                     "endColumn": 101,
-                    "endOffset": 205471
+                    "endOffset": 205750
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12767,9 +12784,9 @@
                 "to": {
                     "startLine": 2783,
                     "startColumn": 4,
-                    "startOffset": 205476,
+                    "startOffset": 205755,
                     "endColumn": 101,
-                    "endOffset": 205573
+                    "endOffset": 205852
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12779,9 +12796,9 @@
                 "to": {
                     "startLine": 2784,
                     "startColumn": 4,
-                    "startOffset": 205578,
+                    "startOffset": 205857,
                     "endColumn": 99,
-                    "endOffset": 205673
+                    "endOffset": 205952
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12791,9 +12808,9 @@
                 "to": {
                     "startLine": 2785,
                     "startColumn": 4,
-                    "startOffset": 205678,
+                    "startOffset": 205957,
                     "endColumn": 95,
-                    "endOffset": 205769
+                    "endOffset": 206048
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12803,9 +12820,9 @@
                 "to": {
                     "startLine": 2786,
                     "startColumn": 4,
-                    "startOffset": 205774,
+                    "startOffset": 206053,
                     "endColumn": 111,
-                    "endOffset": 205881
+                    "endOffset": 206160
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12815,9 +12832,9 @@
                 "to": {
                     "startLine": 2787,
                     "startColumn": 4,
-                    "startOffset": 205886,
+                    "startOffset": 206165,
                     "endColumn": 128,
-                    "endOffset": 206010
+                    "endOffset": 206289
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12827,9 +12844,9 @@
                 "to": {
                     "startLine": 2788,
                     "startColumn": 4,
-                    "startOffset": 206015,
+                    "startOffset": 206294,
                     "endColumn": 122,
-                    "endOffset": 206133
+                    "endOffset": 206412
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12839,9 +12856,9 @@
                 "to": {
                     "startLine": 2789,
                     "startColumn": 4,
-                    "startOffset": 206138,
+                    "startOffset": 206417,
                     "endColumn": 130,
-                    "endOffset": 206264
+                    "endOffset": 206543
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12851,9 +12868,9 @@
                 "to": {
                     "startLine": 2790,
                     "startColumn": 4,
-                    "startOffset": 206269,
+                    "startOffset": 206548,
                     "endColumn": 130,
-                    "endOffset": 206395
+                    "endOffset": 206674
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12863,9 +12880,9 @@
                 "to": {
                     "startLine": 2791,
                     "startColumn": 4,
-                    "startOffset": 206400,
+                    "startOffset": 206679,
                     "endColumn": 97,
-                    "endOffset": 206493
+                    "endOffset": 206772
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12875,9 +12892,9 @@
                 "to": {
                     "startLine": 2792,
                     "startColumn": 4,
-                    "startOffset": 206498,
+                    "startOffset": 206777,
                     "endColumn": 113,
-                    "endOffset": 206607
+                    "endOffset": 206886
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12887,9 +12904,9 @@
                 "to": {
                     "startLine": 2793,
                     "startColumn": 4,
-                    "startOffset": 206612,
+                    "startOffset": 206891,
                     "endColumn": 93,
-                    "endOffset": 206701
+                    "endOffset": 206980
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12899,10 +12916,10 @@
                 "to": {
                     "startLine": 2794,
                     "startColumn": 4,
-                    "startOffset": 206706,
+                    "startOffset": 206985,
                     "endLine": 2797,
                     "endColumn": 12,
-                    "endOffset": 206900
+                    "endOffset": 207179
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12912,10 +12929,10 @@
                 "to": {
                     "startLine": 2798,
                     "startColumn": 4,
-                    "startOffset": 206905,
+                    "startOffset": 207184,
                     "endLine": 2801,
                     "endColumn": 12,
-                    "endOffset": 207104
+                    "endOffset": 207383
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12925,9 +12942,9 @@
                 "to": {
                     "startLine": 2802,
                     "startColumn": 4,
-                    "startOffset": 207109,
+                    "startOffset": 207388,
                     "endColumn": 68,
-                    "endOffset": 207173
+                    "endOffset": 207452
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12937,9 +12954,9 @@
                 "to": {
                     "startLine": 2803,
                     "startColumn": 4,
-                    "startOffset": 207178,
+                    "startOffset": 207457,
                     "endColumn": 115,
-                    "endOffset": 207289
+                    "endOffset": 207568
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12949,9 +12966,9 @@
                 "to": {
                     "startLine": 2804,
                     "startColumn": 4,
-                    "startOffset": 207294,
+                    "startOffset": 207573,
                     "endColumn": 127,
-                    "endOffset": 207417
+                    "endOffset": 207696
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12961,9 +12978,9 @@
                 "to": {
                     "startLine": 2805,
                     "startColumn": 4,
-                    "startOffset": 207422,
+                    "startOffset": 207701,
                     "endColumn": 63,
-                    "endOffset": 207481
+                    "endOffset": 207760
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12973,10 +12990,10 @@
                 "to": {
                     "startLine": 2806,
                     "startColumn": 4,
-                    "startOffset": 207486,
+                    "startOffset": 207765,
                     "endLine": 2809,
                     "endColumn": 12,
-                    "endOffset": 207685
+                    "endOffset": 207964
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12986,9 +13003,9 @@
                 "to": {
                     "startLine": 2810,
                     "startColumn": 4,
-                    "startOffset": 207690,
+                    "startOffset": 207969,
                     "endColumn": 68,
-                    "endOffset": 207754
+                    "endOffset": 208033
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -12998,10 +13015,10 @@
                 "to": {
                     "startLine": 2811,
                     "startColumn": 4,
-                    "startOffset": 207759,
+                    "startOffset": 208038,
                     "endLine": 2814,
                     "endColumn": 12,
-                    "endOffset": 207957
+                    "endOffset": 208236
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13011,9 +13028,9 @@
                 "to": {
                     "startLine": 2815,
                     "startColumn": 4,
-                    "startOffset": 207962,
+                    "startOffset": 208241,
                     "endColumn": 69,
-                    "endOffset": 208027
+                    "endOffset": 208306
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13023,10 +13040,10 @@
                 "to": {
                     "startLine": 2816,
                     "startColumn": 4,
-                    "startOffset": 208032,
+                    "startOffset": 208311,
                     "endLine": 2817,
                     "endColumn": 12,
-                    "endOffset": 208167
+                    "endOffset": 208446
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13036,10 +13053,10 @@
                 "to": {
                     "startLine": 2818,
                     "startColumn": 4,
-                    "startOffset": 208172,
+                    "startOffset": 208451,
                     "endLine": 2819,
                     "endColumn": 12,
-                    "endOffset": 208301
+                    "endOffset": 208580
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13049,9 +13066,9 @@
                 "to": {
                     "startLine": 2820,
                     "startColumn": 4,
-                    "startOffset": 208306,
+                    "startOffset": 208585,
                     "endColumn": 95,
-                    "endOffset": 208397
+                    "endOffset": 208676
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13061,9 +13078,9 @@
                 "to": {
                     "startLine": 2821,
                     "startColumn": 4,
-                    "startOffset": 208402,
+                    "startOffset": 208681,
                     "endColumn": 111,
-                    "endOffset": 208509
+                    "endOffset": 208788
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13073,9 +13090,9 @@
                 "to": {
                     "startLine": 2822,
                     "startColumn": 4,
-                    "startOffset": 208514,
+                    "startOffset": 208793,
                     "endColumn": 99,
-                    "endOffset": 208609
+                    "endOffset": 208888
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13085,9 +13102,9 @@
                 "to": {
                     "startLine": 2823,
                     "startColumn": 4,
-                    "startOffset": 208614,
+                    "startOffset": 208893,
                     "endColumn": 115,
-                    "endOffset": 208725
+                    "endOffset": 209004
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13097,9 +13114,9 @@
                 "to": {
                     "startLine": 2824,
                     "startColumn": 4,
-                    "startOffset": 208730,
+                    "startOffset": 209009,
                     "endColumn": 95,
-                    "endOffset": 208821
+                    "endOffset": 209100
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13109,9 +13126,9 @@
                 "to": {
                     "startLine": 2825,
                     "startColumn": 4,
-                    "startOffset": 208826,
+                    "startOffset": 209105,
                     "endColumn": 111,
-                    "endOffset": 208933
+                    "endOffset": 209212
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13121,10 +13138,10 @@
                 "to": {
                     "startLine": 2826,
                     "startColumn": 4,
-                    "startOffset": 208938,
+                    "startOffset": 209217,
                     "endLine": 2827,
                     "endColumn": 12,
-                    "endOffset": 209073
+                    "endOffset": 209352
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13134,9 +13151,9 @@
                 "to": {
                     "startLine": 2828,
                     "startColumn": 4,
-                    "startOffset": 209078,
+                    "startOffset": 209357,
                     "endColumn": 135,
-                    "endOffset": 209209
+                    "endOffset": 209488
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13146,10 +13163,10 @@
                 "to": {
                     "startLine": 2829,
                     "startColumn": 4,
-                    "startOffset": 209214,
+                    "startOffset": 209493,
                     "endLine": 2830,
                     "endColumn": 12,
-                    "endOffset": 209373
+                    "endOffset": 209652
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13159,9 +13176,9 @@
                 "to": {
                     "startLine": 2831,
                     "startColumn": 4,
-                    "startOffset": 209378,
+                    "startOffset": 209657,
                     "endColumn": 129,
-                    "endOffset": 209503
+                    "endOffset": 209782
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13171,10 +13188,10 @@
                 "to": {
                     "startLine": 2832,
                     "startColumn": 4,
-                    "startOffset": 209508,
+                    "startOffset": 209787,
                     "endLine": 2833,
                     "endColumn": 12,
-                    "endOffset": 209661
+                    "endOffset": 209940
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13184,10 +13201,10 @@
                 "to": {
                     "startLine": 2834,
                     "startColumn": 4,
-                    "startOffset": 209666,
+                    "startOffset": 209945,
                     "endLine": 2835,
                     "endColumn": 12,
-                    "endOffset": 209811
+                    "endOffset": 210090
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13197,9 +13214,9 @@
                 "to": {
                     "startLine": 2836,
                     "startColumn": 4,
-                    "startOffset": 209816,
+                    "startOffset": 210095,
                     "endColumn": 140,
-                    "endOffset": 209952
+                    "endOffset": 210231
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13209,10 +13226,10 @@
                 "to": {
                     "startLine": 2837,
                     "startColumn": 4,
-                    "startOffset": 209957,
+                    "startOffset": 210236,
                     "endLine": 2838,
                     "endColumn": 12,
-                    "endOffset": 210096
+                    "endOffset": 210375
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13222,9 +13239,9 @@
                 "to": {
                     "startLine": 2839,
                     "startColumn": 4,
-                    "startOffset": 210101,
+                    "startOffset": 210380,
                     "endColumn": 134,
-                    "endOffset": 210231
+                    "endOffset": 210510
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13234,9 +13251,9 @@
                 "to": {
                     "startLine": 2840,
                     "startColumn": 4,
-                    "startOffset": 210236,
+                    "startOffset": 210515,
                     "endColumn": 111,
-                    "endOffset": 210343
+                    "endOffset": 210622
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13246,9 +13263,9 @@
                 "to": {
                     "startLine": 2841,
                     "startColumn": 4,
-                    "startOffset": 210348,
+                    "startOffset": 210627,
                     "endColumn": 149,
-                    "endOffset": 210493
+                    "endOffset": 210772
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13258,9 +13275,9 @@
                 "to": {
                     "startLine": 2842,
                     "startColumn": 4,
-                    "startOffset": 210498,
+                    "startOffset": 210777,
                     "endColumn": 127,
-                    "endOffset": 210621
+                    "endOffset": 210900
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13270,9 +13287,9 @@
                 "to": {
                     "startLine": 2843,
                     "startColumn": 4,
-                    "startOffset": 210626,
+                    "startOffset": 210905,
                     "endColumn": 127,
-                    "endOffset": 210749
+                    "endOffset": 211028
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13282,10 +13299,10 @@
                 "to": {
                     "startLine": 2844,
                     "startColumn": 4,
-                    "startOffset": 210754,
+                    "startOffset": 211033,
                     "endLine": 2845,
                     "endColumn": 12,
-                    "endOffset": 210885
+                    "endOffset": 211164
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13295,9 +13312,9 @@
                 "to": {
                     "startLine": 2846,
                     "startColumn": 4,
-                    "startOffset": 210890,
+                    "startOffset": 211169,
                     "endColumn": 131,
-                    "endOffset": 211017
+                    "endOffset": 211296
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13307,9 +13324,9 @@
                 "to": {
                     "startLine": 2847,
                     "startColumn": 4,
-                    "startOffset": 211022,
+                    "startOffset": 211301,
                     "endColumn": 129,
-                    "endOffset": 211147
+                    "endOffset": 211426
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13319,9 +13336,9 @@
                 "to": {
                     "startLine": 2848,
                     "startColumn": 4,
-                    "startOffset": 211152,
+                    "startOffset": 211431,
                     "endColumn": 129,
-                    "endOffset": 211277
+                    "endOffset": 211556
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13331,9 +13348,9 @@
                 "to": {
                     "startLine": 2849,
                     "startColumn": 4,
-                    "startOffset": 211282,
+                    "startOffset": 211561,
                     "endColumn": 111,
-                    "endOffset": 211389
+                    "endOffset": 211668
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13343,9 +13360,9 @@
                 "to": {
                     "startLine": 2850,
                     "startColumn": 4,
-                    "startOffset": 211394,
+                    "startOffset": 211673,
                     "endColumn": 139,
-                    "endOffset": 211529
+                    "endOffset": 211808
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13355,10 +13372,10 @@
                 "to": {
                     "startLine": 2851,
                     "startColumn": 4,
-                    "startOffset": 211534,
+                    "startOffset": 211813,
                     "endLine": 2853,
                     "endColumn": 12,
-                    "endOffset": 211730
+                    "endOffset": 212009
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -13368,9 +13385,9 @@
                 "to": {
                     "startLine": 2854,
                     "startColumn": 4,
-                    "startOffset": 211735,
+                    "startOffset": 212014,
                     "endColumn": 91,
-                    "endOffset": 211822
+                    "endOffset": 212101
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -13380,10 +13397,10 @@
                 "to": {
                     "startLine": 2855,
                     "startColumn": 4,
-                    "startOffset": 211827,
+                    "startOffset": 212106,
                     "endLine": 2857,
                     "endColumn": 12,
-                    "endOffset": 212001
+                    "endOffset": 212280
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -13393,10 +13410,10 @@
                 "to": {
                     "startLine": 2858,
                     "startColumn": 4,
-                    "startOffset": 212006,
+                    "startOffset": 212285,
                     "endLine": 2860,
                     "endColumn": 12,
-                    "endOffset": 212169
+                    "endOffset": 212448
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -13406,10 +13423,10 @@
                 "to": {
                     "startLine": 2861,
                     "startColumn": 4,
-                    "startOffset": 212174,
+                    "startOffset": 212453,
                     "endLine": 2863,
                     "endColumn": 12,
-                    "endOffset": 212344
+                    "endOffset": 212623
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -13419,10 +13436,10 @@
                 "to": {
                     "startLine": 2864,
                     "startColumn": 4,
-                    "startOffset": 212349,
+                    "startOffset": 212628,
                     "endLine": 2867,
                     "endColumn": 12,
-                    "endOffset": 212597
+                    "endOffset": 212876
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -13432,10 +13449,10 @@
                 "to": {
                     "startLine": 2868,
                     "startColumn": 4,
-                    "startOffset": 212602,
+                    "startOffset": 212881,
                     "endLine": 2872,
                     "endColumn": 12,
-                    "endOffset": 212888
+                    "endOffset": 213167
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -13445,9 +13462,9 @@
                 "to": {
                     "startLine": 2873,
                     "startColumn": 4,
-                    "startOffset": 212893,
+                    "startOffset": 213172,
                     "endColumn": 67,
-                    "endOffset": 212956
+                    "endOffset": 213235
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13457,9 +13474,9 @@
                 "to": {
                     "startLine": 2874,
                     "startColumn": 4,
-                    "startOffset": 212961,
+                    "startOffset": 213240,
                     "endColumn": 72,
-                    "endOffset": 213029
+                    "endOffset": 213308
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13469,9 +13486,9 @@
                 "to": {
                     "startLine": 2875,
                     "startColumn": 4,
-                    "startOffset": 213034,
+                    "startOffset": 213313,
                     "endColumn": 73,
-                    "endOffset": 213103
+                    "endOffset": 213382
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13481,9 +13498,9 @@
                 "to": {
                     "startLine": 2876,
                     "startColumn": 4,
-                    "startOffset": 213108,
+                    "startOffset": 213387,
                     "endColumn": 72,
-                    "endOffset": 213176
+                    "endOffset": 213455
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13493,9 +13510,9 @@
                 "to": {
                     "startLine": 2877,
                     "startColumn": 4,
-                    "startOffset": 213181,
+                    "startOffset": 213460,
                     "endColumn": 73,
-                    "endOffset": 213250
+                    "endOffset": 213529
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13505,10 +13522,10 @@
                 "to": {
                     "startLine": 2878,
                     "startColumn": 4,
-                    "startOffset": 213255,
+                    "startOffset": 213534,
                     "endLine": 2879,
                     "endColumn": 12,
-                    "endOffset": 213396
+                    "endOffset": 213675
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13518,10 +13535,10 @@
                 "to": {
                     "startLine": 2880,
                     "startColumn": 4,
-                    "startOffset": 213401,
+                    "startOffset": 213680,
                     "endLine": 2881,
                     "endColumn": 12,
-                    "endOffset": 213540
+                    "endOffset": 213819
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13531,10 +13548,10 @@
                 "to": {
                     "startLine": 2882,
                     "startColumn": 4,
-                    "startOffset": 213545,
+                    "startOffset": 213824,
                     "endLine": 2883,
                     "endColumn": 12,
-                    "endOffset": 213678
+                    "endOffset": 213957
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13544,9 +13561,9 @@
                 "to": {
                     "startLine": 2884,
                     "startColumn": 4,
-                    "startOffset": 213683,
+                    "startOffset": 213962,
                     "endColumn": 25,
-                    "endOffset": 213704
+                    "endOffset": 213983
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.49.3/res/values/values.xml"
@@ -13556,9 +13573,9 @@
                 "to": {
                     "startLine": 2885,
                     "startColumn": 4,
-                    "startOffset": 213709,
+                    "startOffset": 213988,
                     "endColumn": 65,
-                    "endOffset": 213770
+                    "endOffset": 214049
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13568,9 +13585,9 @@
                 "to": {
                     "startLine": 2886,
                     "startColumn": 4,
-                    "startOffset": 213775,
+                    "startOffset": 214054,
                     "endColumn": 89,
-                    "endOffset": 213860
+                    "endOffset": 214139
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13580,9 +13597,9 @@
                 "to": {
                     "startLine": 2887,
                     "startColumn": 4,
-                    "startOffset": 213865,
+                    "startOffset": 214144,
                     "endColumn": 75,
-                    "endOffset": 213936
+                    "endOffset": 214215
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13592,9 +13609,9 @@
                 "to": {
                     "startLine": 2888,
                     "startColumn": 4,
-                    "startOffset": 213941,
+                    "startOffset": 214220,
                     "endColumn": 103,
-                    "endOffset": 214040
+                    "endOffset": 214319
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13604,9 +13621,9 @@
                 "to": {
                     "startLine": 2889,
                     "startColumn": 4,
-                    "startOffset": 214045,
+                    "startOffset": 214324,
                     "endColumn": 89,
-                    "endOffset": 214130
+                    "endOffset": 214409
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13616,9 +13633,9 @@
                 "to": {
                     "startLine": 2890,
                     "startColumn": 4,
-                    "startOffset": 214135,
+                    "startOffset": 214414,
                     "endColumn": 101,
-                    "endOffset": 214232
+                    "endOffset": 214511
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13628,9 +13645,9 @@
                 "to": {
                     "startLine": 2891,
                     "startColumn": 4,
-                    "startOffset": 214237,
+                    "startOffset": 214516,
                     "endColumn": 107,
-                    "endOffset": 214340
+                    "endOffset": 214619
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13640,9 +13657,9 @@
                 "to": {
                     "startLine": 2892,
                     "startColumn": 4,
-                    "startOffset": 214345,
+                    "startOffset": 214624,
                     "endColumn": 107,
-                    "endOffset": 214448
+                    "endOffset": 214727
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13652,9 +13669,9 @@
                 "to": {
                     "startLine": 2893,
                     "startColumn": 4,
-                    "startOffset": 214453,
+                    "startOffset": 214732,
                     "endColumn": 99,
-                    "endOffset": 214548
+                    "endOffset": 214827
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13664,9 +13681,9 @@
                 "to": {
                     "startLine": 2894,
                     "startColumn": 4,
-                    "startOffset": 214553,
+                    "startOffset": 214832,
                     "endColumn": 79,
-                    "endOffset": 214628
+                    "endOffset": 214907
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13676,9 +13693,9 @@
                 "to": {
                     "startLine": 2895,
                     "startColumn": 4,
-                    "startOffset": 214633,
+                    "startOffset": 214912,
                     "endColumn": 91,
-                    "endOffset": 214720
+                    "endOffset": 214999
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13688,9 +13705,9 @@
                 "to": {
                     "startLine": 2896,
                     "startColumn": 4,
-                    "startOffset": 214725,
+                    "startOffset": 215004,
                     "endColumn": 97,
-                    "endOffset": 214818
+                    "endOffset": 215097
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13700,10 +13717,10 @@
                 "to": {
                     "startLine": 2897,
                     "startColumn": 4,
-                    "startOffset": 214823,
+                    "startOffset": 215102,
                     "endLine": 2898,
                     "endColumn": 12,
-                    "endOffset": 214928
+                    "endOffset": 215207
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13713,9 +13730,9 @@
                 "to": {
                     "startLine": 2899,
                     "startColumn": 4,
-                    "startOffset": 214933,
+                    "startOffset": 215212,
                     "endColumn": 77,
-                    "endOffset": 215006
+                    "endOffset": 215285
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13725,9 +13742,9 @@
                 "to": {
                     "startLine": 2900,
                     "startColumn": 4,
-                    "startOffset": 215011,
+                    "startOffset": 215290,
                     "endColumn": 105,
-                    "endOffset": 215112
+                    "endOffset": 215391
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13737,9 +13754,9 @@
                 "to": {
                     "startLine": 2901,
                     "startColumn": 4,
-                    "startOffset": 215117,
+                    "startOffset": 215396,
                     "endColumn": 91,
-                    "endOffset": 215204
+                    "endOffset": 215483
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13749,9 +13766,9 @@
                 "to": {
                     "startLine": 2902,
                     "startColumn": 4,
-                    "startOffset": 215209,
+                    "startOffset": 215488,
                     "endColumn": 103,
-                    "endOffset": 215308
+                    "endOffset": 215587
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13761,9 +13778,9 @@
                 "to": {
                     "startLine": 2903,
                     "startColumn": 4,
-                    "startOffset": 215313,
+                    "startOffset": 215592,
                     "endColumn": 109,
-                    "endOffset": 215418
+                    "endOffset": 215697
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13773,10 +13790,10 @@
                 "to": {
                     "startLine": 2904,
                     "startColumn": 4,
-                    "startOffset": 215423,
+                    "startOffset": 215702,
                     "endLine": 2905,
                     "endColumn": 12,
-                    "endOffset": 215540
+                    "endOffset": 215819
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13786,10 +13803,10 @@
                 "to": {
                     "startLine": 2906,
                     "startColumn": 4,
-                    "startOffset": 215545,
+                    "startOffset": 215824,
                     "endLine": 2909,
                     "endColumn": 12,
-                    "endOffset": 215703
+                    "endOffset": 215982
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13799,10 +13816,10 @@
                 "to": {
                     "startLine": 2910,
                     "startColumn": 4,
-                    "startOffset": 215708,
+                    "startOffset": 215987,
                     "endLine": 2913,
                     "endColumn": 12,
-                    "endOffset": 215860
+                    "endOffset": 216139
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13812,9 +13829,9 @@
                 "to": {
                     "startLine": 2914,
                     "startColumn": 4,
-                    "startOffset": 215865,
+                    "startOffset": 216144,
                     "endColumn": 34,
-                    "endOffset": 215895
+                    "endOffset": 216174
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.49.3/res/values/values.xml"
@@ -13824,10 +13841,10 @@
                 "to": {
                     "startLine": 2915,
                     "startColumn": 4,
-                    "startOffset": 215900,
+                    "startOffset": 216179,
                     "endLine": 2921,
                     "endColumn": 10,
-                    "endOffset": 216313
+                    "endOffset": 216592
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.49.3/res/values/values.xml"
@@ -13837,10 +13854,10 @@
                 "to": {
                     "startLine": 2922,
                     "startColumn": 4,
-                    "startOffset": 216318,
+                    "startOffset": 216597,
                     "endLine": 2924,
                     "endColumn": 12,
-                    "endOffset": 216467
+                    "endOffset": 216746
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -13850,10 +13867,10 @@
                 "to": {
                     "startLine": 2925,
                     "startColumn": 4,
-                    "startOffset": 216472,
+                    "startOffset": 216751,
                     "endLine": 2929,
                     "endColumn": 12,
-                    "endOffset": 216825
+                    "endOffset": 217104
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -13863,10 +13880,10 @@
                 "to": {
                     "startLine": 2930,
                     "startColumn": 4,
-                    "startOffset": 216830,
+                    "startOffset": 217109,
                     "endLine": 2932,
                     "endColumn": 12,
-                    "endOffset": 216992
+                    "endOffset": 217271
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -13876,10 +13893,10 @@
                 "to": {
                     "startLine": 2933,
                     "startColumn": 4,
-                    "startOffset": 216997,
+                    "startOffset": 217276,
                     "endLine": 2937,
                     "endColumn": 12,
-                    "endOffset": 217362
+                    "endOffset": 217641
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -13889,10 +13906,10 @@
                 "to": {
                     "startLine": 2938,
                     "startColumn": 4,
-                    "startOffset": 217367,
+                    "startOffset": 217646,
                     "endLine": 2941,
                     "endColumn": 12,
-                    "endOffset": 217522
+                    "endOffset": 217801
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -13902,10 +13919,10 @@
                 "to": {
                     "startLine": 2942,
                     "startColumn": 4,
-                    "startOffset": 217527,
+                    "startOffset": 217806,
                     "endLine": 2945,
                     "endColumn": 12,
-                    "endOffset": 217676
+                    "endOffset": 217955
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -13915,10 +13932,10 @@
                 "to": {
                     "startLine": 2946,
                     "startColumn": 4,
-                    "startOffset": 217681,
+                    "startOffset": 217960,
                     "endLine": 2952,
                     "endColumn": 10,
-                    "endOffset": 218054
+                    "endOffset": 218333
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.49.3/res/values/values.xml"
@@ -13928,10 +13945,10 @@
                 "to": {
                     "startLine": 2953,
                     "startColumn": 4,
-                    "startOffset": 218059,
+                    "startOffset": 218338,
                     "endLine": 2955,
                     "endColumn": 10,
-                    "endOffset": 218231
+                    "endOffset": 218510
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.49.3/res/values/values.xml"
@@ -13941,10 +13958,10 @@
                 "to": {
                     "startLine": 2956,
                     "startColumn": 4,
-                    "startOffset": 218236,
+                    "startOffset": 218515,
                     "endLine": 2958,
                     "endColumn": 10,
-                    "endOffset": 218410
+                    "endOffset": 218689
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.49.3/res/values/values.xml"
@@ -13954,10 +13971,10 @@
                 "to": {
                     "startLine": 2959,
                     "startColumn": 4,
-                    "startOffset": 218415,
+                    "startOffset": 218694,
                     "endLine": 2961,
                     "endColumn": 12,
-                    "endOffset": 218593
+                    "endOffset": 218872
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.49.3/res/values/values.xml"
@@ -13967,10 +13984,10 @@
                 "to": {
                     "startLine": 2962,
                     "startColumn": 4,
-                    "startOffset": 218598,
+                    "startOffset": 218877,
                     "endLine": 2967,
                     "endColumn": 12,
-                    "endOffset": 218958
+                    "endOffset": 219237
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.49.3/res/values/values.xml"
@@ -13980,9 +13997,9 @@
                 "to": {
                     "startLine": 2968,
                     "startColumn": 4,
-                    "startOffset": 218963,
+                    "startOffset": 219242,
                     "endColumn": 79,
-                    "endOffset": 219038
+                    "endOffset": 219317
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -13992,9 +14009,9 @@
                 "to": {
                     "startLine": 2969,
                     "startColumn": 4,
-                    "startOffset": 219043,
+                    "startOffset": 219322,
                     "endColumn": 99,
-                    "endOffset": 219138
+                    "endOffset": 219417
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14004,9 +14021,9 @@
                 "to": {
                     "startLine": 2970,
                     "startColumn": 4,
-                    "startOffset": 219143,
+                    "startOffset": 219422,
                     "endColumn": 89,
-                    "endOffset": 219228
+                    "endOffset": 219507
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14016,9 +14033,9 @@
                 "to": {
                     "startLine": 2971,
                     "startColumn": 4,
-                    "startOffset": 219233,
+                    "startOffset": 219512,
                     "endColumn": 109,
-                    "endOffset": 219338
+                    "endOffset": 219617
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14028,9 +14045,9 @@
                 "to": {
                     "startLine": 2972,
                     "startColumn": 4,
-                    "startOffset": 219343,
+                    "startOffset": 219622,
                     "endColumn": 93,
-                    "endOffset": 219432
+                    "endOffset": 219711
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14040,9 +14057,9 @@
                 "to": {
                     "startLine": 2973,
                     "startColumn": 4,
-                    "startOffset": 219437,
+                    "startOffset": 219716,
                     "endColumn": 105,
-                    "endOffset": 219538
+                    "endOffset": 219817
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14052,9 +14069,9 @@
                 "to": {
                     "startLine": 2974,
                     "startColumn": 4,
-                    "startOffset": 219543,
+                    "startOffset": 219822,
                     "endColumn": 91,
-                    "endOffset": 219630
+                    "endOffset": 219909
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14064,10 +14081,10 @@
                 "to": {
                     "startLine": 2975,
                     "startColumn": 4,
-                    "startOffset": 219635,
+                    "startOffset": 219914,
                     "endLine": 2976,
                     "endColumn": 12,
-                    "endOffset": 219730
+                    "endOffset": 220009
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14077,10 +14094,10 @@
                 "to": {
                     "startLine": 2977,
                     "startColumn": 4,
-                    "startOffset": 219735,
+                    "startOffset": 220014,
                     "endLine": 2978,
                     "endColumn": 12,
-                    "endOffset": 219842
+                    "endOffset": 220121
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14090,10 +14107,10 @@
                 "to": {
                     "startLine": 2979,
                     "startColumn": 4,
-                    "startOffset": 219847,
+                    "startOffset": 220126,
                     "endLine": 2980,
                     "endColumn": 12,
-                    "endOffset": 219956
+                    "endOffset": 220235
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14103,10 +14120,10 @@
                 "to": {
                     "startLine": 2981,
                     "startColumn": 4,
-                    "startOffset": 219961,
+                    "startOffset": 220240,
                     "endLine": 2982,
                     "endColumn": 12,
-                    "endOffset": 220072
+                    "endOffset": 220351
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14116,10 +14133,10 @@
                 "to": {
                     "startLine": 2983,
                     "startColumn": 4,
-                    "startOffset": 220077,
+                    "startOffset": 220356,
                     "endLine": 2984,
                     "endColumn": 12,
-                    "endOffset": 220188
+                    "endOffset": 220467
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14129,9 +14146,9 @@
                 "to": {
                     "startLine": 2985,
                     "startColumn": 4,
-                    "startOffset": 220193,
+                    "startOffset": 220472,
                     "endColumn": 93,
-                    "endOffset": 220282
+                    "endOffset": 220561
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14141,9 +14158,9 @@
                 "to": {
                     "startLine": 2986,
                     "startColumn": 4,
-                    "startOffset": 220287,
+                    "startOffset": 220566,
                     "endColumn": 113,
-                    "endOffset": 220396
+                    "endOffset": 220675
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14153,9 +14170,9 @@
                 "to": {
                     "startLine": 2987,
                     "startColumn": 4,
-                    "startOffset": 220401,
+                    "startOffset": 220680,
                     "endColumn": 111,
-                    "endOffset": 220508
+                    "endOffset": 220787
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14165,10 +14182,10 @@
                 "to": {
                     "startLine": 2988,
                     "startColumn": 4,
-                    "startOffset": 220513,
+                    "startOffset": 220792,
                     "endLine": 2989,
                     "endColumn": 12,
-                    "endOffset": 220610
+                    "endOffset": 220889
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14178,10 +14195,10 @@
                 "to": {
                     "startLine": 2990,
                     "startColumn": 4,
-                    "startOffset": 220615,
+                    "startOffset": 220894,
                     "endLine": 2991,
                     "endColumn": 12,
-                    "endOffset": 220730
+                    "endOffset": 221009
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14191,10 +14208,10 @@
                 "to": {
                     "startLine": 2992,
                     "startColumn": 4,
-                    "startOffset": 220735,
+                    "startOffset": 221014,
                     "endLine": 2993,
                     "endColumn": 12,
-                    "endOffset": 220852
+                    "endOffset": 221131
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14204,9 +14221,9 @@
                 "to": {
                     "startLine": 2994,
                     "startColumn": 4,
-                    "startOffset": 220857,
+                    "startOffset": 221136,
                     "endColumn": 81,
-                    "endOffset": 220934
+                    "endOffset": 221213
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14216,9 +14233,9 @@
                 "to": {
                     "startLine": 2995,
                     "startColumn": 4,
-                    "startOffset": 220939,
+                    "startOffset": 221218,
                     "endColumn": 103,
-                    "endOffset": 221038
+                    "endOffset": 221317
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14228,9 +14245,9 @@
                 "to": {
                     "startLine": 2996,
                     "startColumn": 4,
-                    "startOffset": 221043,
+                    "startOffset": 221322,
                     "endColumn": 119,
-                    "endOffset": 221158
+                    "endOffset": 221437
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14240,9 +14257,9 @@
                 "to": {
                     "startLine": 2997,
                     "startColumn": 4,
-                    "startOffset": 221163,
+                    "startOffset": 221442,
                     "endColumn": 125,
-                    "endOffset": 221284
+                    "endOffset": 221563
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14252,9 +14269,9 @@
                 "to": {
                     "startLine": 2998,
                     "startColumn": 4,
-                    "startOffset": 221289,
+                    "startOffset": 221568,
                     "endColumn": 97,
-                    "endOffset": 221382
+                    "endOffset": 221661
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14264,9 +14281,9 @@
                 "to": {
                     "startLine": 2999,
                     "startColumn": 4,
-                    "startOffset": 221387,
+                    "startOffset": 221666,
                     "endColumn": 93,
-                    "endOffset": 221476
+                    "endOffset": 221755
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14276,9 +14293,9 @@
                 "to": {
                     "startLine": 3000,
                     "startColumn": 4,
-                    "startOffset": 221481,
+                    "startOffset": 221760,
                     "endColumn": 87,
-                    "endOffset": 221564
+                    "endOffset": 221843
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14288,9 +14305,9 @@
                 "to": {
                     "startLine": 3001,
                     "startColumn": 4,
-                    "startOffset": 221569,
+                    "startOffset": 221848,
                     "endColumn": 111,
-                    "endOffset": 221676
+                    "endOffset": 221955
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14300,9 +14317,9 @@
                 "to": {
                     "startLine": 3002,
                     "startColumn": 4,
-                    "startOffset": 221681,
+                    "startOffset": 221960,
                     "endColumn": 115,
-                    "endOffset": 221792
+                    "endOffset": 222071
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14312,9 +14329,9 @@
                 "to": {
                     "startLine": 3003,
                     "startColumn": 4,
-                    "startOffset": 221797,
+                    "startOffset": 222076,
                     "endColumn": 121,
-                    "endOffset": 221914
+                    "endOffset": 222193
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14324,9 +14341,9 @@
                 "to": {
                     "startLine": 3004,
                     "startColumn": 4,
-                    "startOffset": 221919,
+                    "startOffset": 222198,
                     "endColumn": 111,
-                    "endOffset": 222026
+                    "endOffset": 222305
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14336,10 +14353,10 @@
                 "to": {
                     "startLine": 3005,
                     "startColumn": 4,
-                    "startOffset": 222031,
+                    "startOffset": 222310,
                     "endLine": 3007,
                     "endColumn": 12,
-                    "endOffset": 222201
+                    "endOffset": 222480
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14349,9 +14366,9 @@
                 "to": {
                     "startLine": 3008,
                     "startColumn": 4,
-                    "startOffset": 222206,
+                    "startOffset": 222485,
                     "endColumn": 115,
-                    "endOffset": 222317
+                    "endOffset": 222596
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14361,9 +14378,9 @@
                 "to": {
                     "startLine": 3009,
                     "startColumn": 4,
-                    "startOffset": 222322,
+                    "startOffset": 222601,
                     "endColumn": 85,
-                    "endOffset": 222403
+                    "endOffset": 222682
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14373,9 +14390,9 @@
                 "to": {
                     "startLine": 3010,
                     "startColumn": 4,
-                    "startOffset": 222408,
+                    "startOffset": 222687,
                     "endColumn": 91,
-                    "endOffset": 222495
+                    "endOffset": 222774
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14385,10 +14402,10 @@
                 "to": {
                     "startLine": 3011,
                     "startColumn": 4,
-                    "startOffset": 222500,
+                    "startOffset": 222779,
                     "endLine": 3012,
                     "endColumn": 12,
-                    "endOffset": 222607
+                    "endOffset": 222886
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14398,10 +14415,10 @@
                 "to": {
                     "startLine": 3013,
                     "startColumn": 4,
-                    "startOffset": 222612,
+                    "startOffset": 222891,
                     "endLine": 3014,
                     "endColumn": 12,
-                    "endOffset": 222731
+                    "endOffset": 223010
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14411,9 +14428,9 @@
                 "to": {
                     "startLine": 3015,
                     "startColumn": 4,
-                    "startOffset": 222736,
+                    "startOffset": 223015,
                     "endColumn": 66,
-                    "endOffset": 222798
+                    "endOffset": 223077
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14423,10 +14440,10 @@
                 "to": {
                     "startLine": 3016,
                     "startColumn": 4,
-                    "startOffset": 222803,
+                    "startOffset": 223082,
                     "endLine": 3017,
                     "endColumn": 12,
-                    "endOffset": 222924
+                    "endOffset": 223203
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14436,9 +14453,9 @@
                 "to": {
                     "startLine": 3018,
                     "startColumn": 4,
-                    "startOffset": 222929,
+                    "startOffset": 223208,
                     "endColumn": 67,
-                    "endOffset": 222992
+                    "endOffset": 223271
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14448,10 +14465,10 @@
                 "to": {
                     "startLine": 3019,
                     "startColumn": 4,
-                    "startOffset": 222997,
+                    "startOffset": 223276,
                     "endLine": 3020,
                     "endColumn": 12,
-                    "endOffset": 223120
+                    "endOffset": 223399
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14461,10 +14478,10 @@
                 "to": {
                     "startLine": 3021,
                     "startColumn": 4,
-                    "startOffset": 223125,
+                    "startOffset": 223404,
                     "endLine": 3022,
                     "endColumn": 12,
-                    "endOffset": 223264
+                    "endOffset": 223543
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14474,10 +14491,10 @@
                 "to": {
                     "startLine": 3023,
                     "startColumn": 4,
-                    "startOffset": 223269,
+                    "startOffset": 223548,
                     "endLine": 3024,
                     "endColumn": 12,
-                    "endOffset": 223392
+                    "endOffset": 223671
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14487,9 +14504,9 @@
                 "to": {
                     "startLine": 3025,
                     "startColumn": 4,
-                    "startOffset": 223397,
+                    "startOffset": 223676,
                     "endColumn": 68,
-                    "endOffset": 223461
+                    "endOffset": 223740
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14499,9 +14516,9 @@
                 "to": {
                     "startLine": 3026,
                     "startColumn": 4,
-                    "startOffset": 223466,
+                    "startOffset": 223745,
                     "endColumn": 94,
-                    "endOffset": 223556
+                    "endOffset": 223835
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14511,9 +14528,9 @@
                 "to": {
                     "startLine": 3027,
                     "startColumn": 4,
-                    "startOffset": 223561,
+                    "startOffset": 223840,
                     "endColumn": 114,
-                    "endOffset": 223671
+                    "endOffset": 223950
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14523,9 +14540,9 @@
                 "to": {
                     "startLine": 3028,
                     "startColumn": 4,
-                    "startOffset": 223676,
+                    "startOffset": 223955,
                     "endColumn": 112,
-                    "endOffset": 223784
+                    "endOffset": 224063
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14535,9 +14552,9 @@
                 "to": {
                     "startLine": 3029,
                     "startColumn": 4,
-                    "startOffset": 223789,
+                    "startOffset": 224068,
                     "endColumn": 98,
-                    "endOffset": 223883
+                    "endOffset": 224162
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14547,9 +14564,9 @@
                 "to": {
                     "startLine": 3030,
                     "startColumn": 4,
-                    "startOffset": 223888,
+                    "startOffset": 224167,
                     "endColumn": 108,
-                    "endOffset": 223992
+                    "endOffset": 224271
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14559,9 +14576,9 @@
                 "to": {
                     "startLine": 3031,
                     "startColumn": 4,
-                    "startOffset": 223997,
+                    "startOffset": 224276,
                     "endColumn": 110,
-                    "endOffset": 224103
+                    "endOffset": 224382
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14571,9 +14588,9 @@
                 "to": {
                     "startLine": 3032,
                     "startColumn": 4,
-                    "startOffset": 224108,
+                    "startOffset": 224387,
                     "endColumn": 110,
-                    "endOffset": 224214
+                    "endOffset": 224493
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14583,9 +14600,9 @@
                 "to": {
                     "startLine": 3033,
                     "startColumn": 4,
-                    "startOffset": 224219,
+                    "startOffset": 224498,
                     "endColumn": 100,
-                    "endOffset": 224315
+                    "endOffset": 224594
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14595,9 +14612,9 @@
                 "to": {
                     "startLine": 3034,
                     "startColumn": 4,
-                    "startOffset": 224320,
+                    "startOffset": 224599,
                     "endColumn": 104,
-                    "endOffset": 224420
+                    "endOffset": 224699
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14607,9 +14624,9 @@
                 "to": {
                     "startLine": 3035,
                     "startColumn": 4,
-                    "startOffset": 224425,
+                    "startOffset": 224704,
                     "endColumn": 99,
-                    "endOffset": 224520
+                    "endOffset": 224799
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14619,10 +14636,10 @@
                 "to": {
                     "startLine": 3036,
                     "startColumn": 4,
-                    "startOffset": 224525,
+                    "startOffset": 224804,
                     "endLine": 3037,
                     "endColumn": 12,
-                    "endOffset": 224650
+                    "endOffset": 224929
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14632,9 +14649,9 @@
                 "to": {
                     "startLine": 3038,
                     "startColumn": 4,
-                    "startOffset": 224655,
+                    "startOffset": 224934,
                     "endColumn": 90,
-                    "endOffset": 224741
+                    "endOffset": 225020
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14644,9 +14661,9 @@
                 "to": {
                     "startLine": 3039,
                     "startColumn": 4,
-                    "startOffset": 224746,
+                    "startOffset": 225025,
                     "endColumn": 122,
-                    "endOffset": 224864
+                    "endOffset": 225143
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14656,9 +14673,9 @@
                 "to": {
                     "startLine": 3040,
                     "startColumn": 4,
-                    "startOffset": 224869,
+                    "startOffset": 225148,
                     "endColumn": 93,
-                    "endOffset": 224958
+                    "endOffset": 225237
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14668,10 +14685,10 @@
                 "to": {
                     "startLine": 3041,
                     "startColumn": 4,
-                    "startOffset": 224963,
+                    "startOffset": 225242,
                     "endLine": 3042,
                     "endColumn": 12,
-                    "endOffset": 225070
+                    "endOffset": 225349
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14681,9 +14698,9 @@
                 "to": {
                     "startLine": 3043,
                     "startColumn": 4,
-                    "startOffset": 225075,
+                    "startOffset": 225354,
                     "endColumn": 85,
-                    "endOffset": 225156
+                    "endOffset": 225435
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14693,9 +14710,9 @@
                 "to": {
                     "startLine": 3044,
                     "startColumn": 4,
-                    "startOffset": 225161,
+                    "startOffset": 225440,
                     "endColumn": 103,
-                    "endOffset": 225260
+                    "endOffset": 225539
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14705,9 +14722,9 @@
                 "to": {
                     "startLine": 3045,
                     "startColumn": 4,
-                    "startOffset": 225265,
+                    "startOffset": 225544,
                     "endColumn": 95,
-                    "endOffset": 225356
+                    "endOffset": 225635
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14717,9 +14734,9 @@
                 "to": {
                     "startLine": 3046,
                     "startColumn": 4,
-                    "startOffset": 225361,
+                    "startOffset": 225640,
                     "endColumn": 74,
-                    "endOffset": 225431
+                    "endOffset": 225710
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14729,9 +14746,9 @@
                 "to": {
                     "startLine": 3047,
                     "startColumn": 4,
-                    "startOffset": 225436,
+                    "startOffset": 225715,
                     "endColumn": 69,
-                    "endOffset": 225501
+                    "endOffset": 225780
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14741,9 +14758,9 @@
                 "to": {
                     "startLine": 3048,
                     "startColumn": 4,
-                    "startOffset": 225506,
+                    "startOffset": 225785,
                     "endColumn": 87,
-                    "endOffset": 225589
+                    "endOffset": 225868
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14753,10 +14770,10 @@
                 "to": {
                     "startLine": 3049,
                     "startColumn": 4,
-                    "startOffset": 225594,
+                    "startOffset": 225873,
                     "endLine": 3050,
                     "endColumn": 12,
-                    "endOffset": 225707
+                    "endOffset": 225986
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14766,10 +14783,10 @@
                 "to": {
                     "startLine": 3051,
                     "startColumn": 4,
-                    "startOffset": 225712,
+                    "startOffset": 225991,
                     "endLine": 3052,
                     "endColumn": 12,
-                    "endOffset": 225811
+                    "endOffset": 226090
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14779,10 +14796,10 @@
                 "to": {
                     "startLine": 3053,
                     "startColumn": 4,
-                    "startOffset": 225816,
+                    "startOffset": 226095,
                     "endLine": 3054,
                     "endColumn": 12,
-                    "endOffset": 225915
+                    "endOffset": 226194
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14792,10 +14809,10 @@
                 "to": {
                     "startLine": 3055,
                     "startColumn": 4,
-                    "startOffset": 225920,
+                    "startOffset": 226199,
                     "endLine": 3056,
                     "endColumn": 12,
-                    "endOffset": 226041
+                    "endOffset": 226320
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14805,9 +14822,9 @@
                 "to": {
                     "startLine": 3057,
                     "startColumn": 4,
-                    "startOffset": 226046,
+                    "startOffset": 226325,
                     "endColumn": 87,
-                    "endOffset": 226129
+                    "endOffset": 226408
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14817,9 +14834,9 @@
                 "to": {
                     "startLine": 3058,
                     "startColumn": 4,
-                    "startOffset": 226134,
+                    "startOffset": 226413,
                     "endColumn": 107,
-                    "endOffset": 226237
+                    "endOffset": 226516
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14829,9 +14846,9 @@
                 "to": {
                     "startLine": 3059,
                     "startColumn": 4,
-                    "startOffset": 226242,
+                    "startOffset": 226521,
                     "endColumn": 99,
-                    "endOffset": 226337
+                    "endOffset": 226616
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14841,9 +14858,9 @@
                 "to": {
                     "startLine": 3060,
                     "startColumn": 4,
-                    "startOffset": 226342,
+                    "startOffset": 226621,
                     "endColumn": 89,
-                    "endOffset": 226427
+                    "endOffset": 226706
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14853,9 +14870,9 @@
                 "to": {
                     "startLine": 3061,
                     "startColumn": 4,
-                    "startOffset": 226432,
+                    "startOffset": 226711,
                     "endColumn": 109,
-                    "endOffset": 226537
+                    "endOffset": 226816
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14865,9 +14882,9 @@
                 "to": {
                     "startLine": 3062,
                     "startColumn": 4,
-                    "startOffset": 226542,
+                    "startOffset": 226821,
                     "endColumn": 83,
-                    "endOffset": 226621
+                    "endOffset": 226900
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14877,9 +14894,9 @@
                 "to": {
                     "startLine": 3063,
                     "startColumn": 4,
-                    "startOffset": 226626,
+                    "startOffset": 226905,
                     "endColumn": 101,
-                    "endOffset": 226723
+                    "endOffset": 227002
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14889,9 +14906,9 @@
                 "to": {
                     "startLine": 3064,
                     "startColumn": 4,
-                    "startOffset": 226728,
+                    "startOffset": 227007,
                     "endColumn": 83,
-                    "endOffset": 226807
+                    "endOffset": 227086
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14901,9 +14918,9 @@
                 "to": {
                     "startLine": 3065,
                     "startColumn": 4,
-                    "startOffset": 226812,
+                    "startOffset": 227091,
                     "endColumn": 53,
-                    "endOffset": 226861
+                    "endOffset": 227140
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14913,9 +14930,9 @@
                 "to": {
                     "startLine": 3066,
                     "startColumn": 4,
-                    "startOffset": 226866,
+                    "startOffset": 227145,
                     "endColumn": 63,
-                    "endOffset": 226925
+                    "endOffset": 227204
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14925,9 +14942,9 @@
                 "to": {
                     "startLine": 3067,
                     "startColumn": 4,
-                    "startOffset": 226930,
+                    "startOffset": 227209,
                     "endColumn": 105,
-                    "endOffset": 227031
+                    "endOffset": 227310
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14937,9 +14954,9 @@
                 "to": {
                     "startLine": 3068,
                     "startColumn": 4,
-                    "startOffset": 227036,
+                    "startOffset": 227315,
                     "endColumn": 109,
-                    "endOffset": 227141
+                    "endOffset": 227420
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14949,9 +14966,9 @@
                 "to": {
                     "startLine": 3069,
                     "startColumn": 4,
-                    "startOffset": 227146,
+                    "startOffset": 227425,
                     "endColumn": 83,
-                    "endOffset": 227225
+                    "endOffset": 227504
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14961,9 +14978,9 @@
                 "to": {
                     "startLine": 3070,
                     "startColumn": 4,
-                    "startOffset": 227230,
+                    "startOffset": 227509,
                     "endColumn": 119,
-                    "endOffset": 227345
+                    "endOffset": 227624
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/values/values.xml"
@@ -14973,10 +14990,10 @@
                 "to": {
                     "startLine": 3071,
                     "startColumn": 4,
-                    "startOffset": 227350,
+                    "startOffset": 227629,
                     "endLine": 3072,
                     "endColumn": 12,
-                    "endOffset": 227445
+                    "endOffset": 227724
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -14986,10 +15003,10 @@
                 "to": {
                     "startLine": 3073,
                     "startColumn": 4,
-                    "startOffset": 227450,
+                    "startOffset": 227729,
                     "endLine": 3076,
                     "endColumn": 12,
-                    "endOffset": 227686
+                    "endOffset": 227965
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -14999,10 +15016,10 @@
                 "to": {
                     "startLine": 3077,
                     "startColumn": 4,
-                    "startOffset": 227691,
+                    "startOffset": 227970,
                     "endLine": 3083,
                     "endColumn": 12,
-                    "endOffset": 228121
+                    "endOffset": 228400
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -15012,10 +15029,10 @@
                 "to": {
                     "startLine": 3084,
                     "startColumn": 4,
-                    "startOffset": 228126,
+                    "startOffset": 228405,
                     "endLine": 3087,
                     "endColumn": 12,
-                    "endOffset": 228328
+                    "endOffset": 228607
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -15025,10 +15042,10 @@
                 "to": {
                     "startLine": 3088,
                     "startColumn": 4,
-                    "startOffset": 228333,
+                    "startOffset": 228612,
                     "endLine": 3090,
                     "endColumn": 12,
-                    "endOffset": 228487
+                    "endOffset": 228766
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -15038,10 +15055,10 @@
                 "to": {
                     "startLine": 3091,
                     "startColumn": 4,
-                    "startOffset": 228492,
+                    "startOffset": 228771,
                     "endLine": 3099,
                     "endColumn": 12,
-                    "endOffset": 229052
+                    "endOffset": 229331
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -15051,10 +15068,10 @@
                 "to": {
                     "startLine": 3100,
                     "startColumn": 4,
-                    "startOffset": 229057,
+                    "startOffset": 229336,
                     "endLine": 3105,
                     "endColumn": 12,
-                    "endOffset": 229413
+                    "endOffset": 229692
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -15064,10 +15081,10 @@
                 "to": {
                     "startLine": 3106,
                     "startColumn": 4,
-                    "startOffset": 229418,
+                    "startOffset": 229697,
                     "endLine": 3108,
                     "endColumn": 12,
-                    "endOffset": 229542
+                    "endOffset": 229821
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -15077,10 +15094,10 @@
                 "to": {
                     "startLine": 3109,
                     "startColumn": 4,
-                    "startOffset": 229547,
+                    "startOffset": 229826,
                     "endLine": 3117,
                     "endColumn": 12,
-                    "endOffset": 230209
+                    "endOffset": 230488
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -15090,10 +15107,10 @@
                 "to": {
                     "startLine": 3118,
                     "startColumn": 4,
-                    "startOffset": 230214,
+                    "startOffset": 230493,
                     "endLine": 3121,
                     "endColumn": 12,
-                    "endOffset": 230389
+                    "endOffset": 230668
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -15103,10 +15120,10 @@
                 "to": {
                     "startLine": 3122,
                     "startColumn": 4,
-                    "startOffset": 230394,
+                    "startOffset": 230673,
                     "endLine": 3130,
                     "endColumn": 12,
-                    "endOffset": 231098
+                    "endOffset": 231377
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/values/values.xml"
@@ -15116,23 +15133,31 @@
                 "to": {
                     "startLine": 3131,
                     "startColumn": 4,
-                    "startOffset": 231103,
+                    "startOffset": 231382,
                     "endLine": 3138,
                     "endColumn": 10,
-                    "endOffset": 231529
+                    "endOffset": 231808
                 },
                 "from": {
-                    "file": "/Users/sturm/Desktop/epaper/android/app/src/main/res/values/styles.xml"
+                    "file": "/Users/sturm/Desktop/epaper/android/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 3,
+                        "startOffset": 15,
+                        "endLine": 8,
+                        "endColumn": 10,
+                        "endOffset": 441
+                    }
                 }
             },
             {
                 "to": {
                     "startLine": 3139,
                     "startColumn": 4,
-                    "startOffset": 231534,
+                    "startOffset": 231813,
                     "endLine": 3162,
                     "endColumn": 8,
-                    "endOffset": 233287
+                    "endOffset": 233566
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/src/main/res/values/styles.xml"
@@ -15142,10 +15167,10 @@
                 "to": {
                     "startLine": 3163,
                     "startColumn": 4,
-                    "startOffset": 233292,
+                    "startOffset": 233571,
                     "endLine": 3179,
                     "endColumn": 12,
-                    "endOffset": 234419
+                    "endOffset": 234698
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15155,10 +15180,10 @@
                 "to": {
                     "startLine": 3180,
                     "startColumn": 4,
-                    "startOffset": 234424,
+                    "startOffset": 234703,
                     "endLine": 3187,
                     "endColumn": 12,
-                    "endOffset": 234987
+                    "endOffset": 235266
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15168,9 +15193,9 @@
                 "to": {
                     "startLine": 3188,
                     "startColumn": 4,
-                    "startOffset": 234992,
+                    "startOffset": 235271,
                     "endColumn": 83,
-                    "endOffset": 235071
+                    "endOffset": 235350
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15180,10 +15205,10 @@
                 "to": {
                     "startLine": 3189,
                     "startColumn": 4,
-                    "startOffset": 235076,
+                    "startOffset": 235355,
                     "endLine": 3194,
                     "endColumn": 12,
-                    "endOffset": 235591
+                    "endOffset": 235870
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15193,10 +15218,10 @@
                 "to": {
                     "startLine": 3195,
                     "startColumn": 4,
-                    "startOffset": 235596,
+                    "startOffset": 235875,
                     "endLine": 3206,
                     "endColumn": 12,
-                    "endOffset": 236415
+                    "endOffset": 236694
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15206,10 +15231,10 @@
                 "to": {
                     "startLine": 3207,
                     "startColumn": 4,
-                    "startOffset": 236420,
+                    "startOffset": 236699,
                     "endLine": 3213,
                     "endColumn": 12,
-                    "endOffset": 236850
+                    "endOffset": 237129
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15219,10 +15244,10 @@
                 "to": {
                     "startLine": 3214,
                     "startColumn": 4,
-                    "startOffset": 236855,
+                    "startOffset": 237134,
                     "endLine": 3223,
                     "endColumn": 12,
-                    "endOffset": 237687
+                    "endOffset": 237966
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15232,10 +15257,10 @@
                 "to": {
                     "startLine": 3224,
                     "startColumn": 4,
-                    "startOffset": 237692,
+                    "startOffset": 237971,
                     "endLine": 3226,
                     "endColumn": 12,
-                    "endOffset": 237858
+                    "endOffset": 238137
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15245,10 +15270,10 @@
                 "to": {
                     "startLine": 3227,
                     "startColumn": 4,
-                    "startOffset": 237863,
+                    "startOffset": 238142,
                     "endLine": 3229,
                     "endColumn": 12,
-                    "endOffset": 237991
+                    "endOffset": 238270
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15258,10 +15283,10 @@
                 "to": {
                     "startLine": 3230,
                     "startColumn": 4,
-                    "startOffset": 237996,
+                    "startOffset": 238275,
                     "endLine": 3232,
                     "endColumn": 12,
-                    "endOffset": 238141
+                    "endOffset": 238420
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15271,10 +15296,10 @@
                 "to": {
                     "startLine": 3233,
                     "startColumn": 4,
-                    "startOffset": 238146,
+                    "startOffset": 238425,
                     "endLine": 3238,
                     "endColumn": 12,
-                    "endOffset": 238529
+                    "endOffset": 238808
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15284,10 +15309,10 @@
                 "to": {
                     "startLine": 3239,
                     "startColumn": 4,
-                    "startOffset": 238534,
+                    "startOffset": 238813,
                     "endLine": 3248,
                     "endColumn": 12,
-                    "endOffset": 239126
+                    "endOffset": 239405
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15297,10 +15322,10 @@
                 "to": {
                     "startLine": 3249,
                     "startColumn": 4,
-                    "startOffset": 239131,
+                    "startOffset": 239410,
                     "endLine": 3251,
                     "endColumn": 12,
-                    "endOffset": 239285
+                    "endOffset": 239564
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15310,10 +15335,10 @@
                 "to": {
                     "startLine": 3252,
                     "startColumn": 4,
-                    "startOffset": 239290,
+                    "startOffset": 239569,
                     "endLine": 3263,
                     "endColumn": 12,
-                    "endOffset": 240120
+                    "endOffset": 240399
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15323,10 +15348,10 @@
                 "to": {
                     "startLine": 3264,
                     "startColumn": 4,
-                    "startOffset": 240125,
+                    "startOffset": 240404,
                     "endLine": 3268,
                     "endColumn": 12,
-                    "endOffset": 240358
+                    "endOffset": 240637
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15336,10 +15361,10 @@
                 "to": {
                     "startLine": 3269,
                     "startColumn": 4,
-                    "startOffset": 240363,
+                    "startOffset": 240642,
                     "endLine": 3275,
                     "endColumn": 12,
-                    "endOffset": 240776
+                    "endOffset": 241055
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15349,10 +15374,10 @@
                 "to": {
                     "startLine": 3276,
                     "startColumn": 4,
-                    "startOffset": 240781,
+                    "startOffset": 241060,
                     "endLine": 3282,
                     "endColumn": 12,
-                    "endOffset": 241401
+                    "endOffset": 241680
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15362,10 +15387,10 @@
                 "to": {
                     "startLine": 3283,
                     "startColumn": 4,
-                    "startOffset": 241406,
+                    "startOffset": 241685,
                     "endLine": 3285,
                     "endColumn": 12,
-                    "endOffset": 241543
+                    "endOffset": 241822
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15375,10 +15400,10 @@
                 "to": {
                     "startLine": 3286,
                     "startColumn": 4,
-                    "startOffset": 241548,
+                    "startOffset": 241827,
                     "endLine": 3294,
                     "endColumn": 12,
-                    "endOffset": 242139
+                    "endOffset": 242418
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15388,10 +15413,10 @@
                 "to": {
                     "startLine": 3295,
                     "startColumn": 4,
-                    "startOffset": 242144,
+                    "startOffset": 242423,
                     "endLine": 3299,
                     "endColumn": 12,
-                    "endOffset": 242443
+                    "endOffset": 242722
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15401,10 +15426,10 @@
                 "to": {
                     "startLine": 3300,
                     "startColumn": 4,
-                    "startOffset": 242448,
+                    "startOffset": 242727,
                     "endLine": 3302,
                     "endColumn": 12,
-                    "endOffset": 242572
+                    "endOffset": 242851
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15414,10 +15439,10 @@
                 "to": {
                     "startLine": 3303,
                     "startColumn": 4,
-                    "startOffset": 242577,
+                    "startOffset": 242856,
                     "endLine": 3316,
                     "endColumn": 12,
-                    "endOffset": 243549
+                    "endOffset": 243828
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15427,10 +15452,10 @@
                 "to": {
                     "startLine": 3317,
                     "startColumn": 4,
-                    "startOffset": 243554,
+                    "startOffset": 243833,
                     "endLine": 3324,
                     "endColumn": 12,
-                    "endOffset": 244011
+                    "endOffset": 244290
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15440,10 +15465,10 @@
                 "to": {
                     "startLine": 3325,
                     "startColumn": 4,
-                    "startOffset": 244016,
+                    "startOffset": 244295,
                     "endLine": 3333,
                     "endColumn": 12,
-                    "endOffset": 244586
+                    "endOffset": 244865
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15453,10 +15478,10 @@
                 "to": {
                     "startLine": 3334,
                     "startColumn": 4,
-                    "startOffset": 244591,
+                    "startOffset": 244870,
                     "endLine": 3340,
                     "endColumn": 12,
-                    "endOffset": 245076
+                    "endOffset": 245355
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15466,10 +15491,10 @@
                 "to": {
                     "startLine": 3341,
                     "startColumn": 4,
-                    "startOffset": 245081,
+                    "startOffset": 245360,
                     "endLine": 3351,
                     "endColumn": 12,
-                    "endOffset": 246090
+                    "endOffset": 246369
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15479,10 +15504,10 @@
                 "to": {
                     "startLine": 3352,
                     "startColumn": 4,
-                    "startOffset": 246095,
+                    "startOffset": 246374,
                     "endLine": 3364,
                     "endColumn": 12,
-                    "endOffset": 247000
+                    "endOffset": 247279
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15492,10 +15517,10 @@
                 "to": {
                     "startLine": 3365,
                     "startColumn": 4,
-                    "startOffset": 247005,
+                    "startOffset": 247284,
                     "endLine": 3377,
                     "endColumn": 12,
-                    "endOffset": 247948
+                    "endOffset": 248227
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15505,10 +15530,10 @@
                 "to": {
                     "startLine": 3378,
                     "startColumn": 4,
-                    "startOffset": 247953,
+                    "startOffset": 248232,
                     "endLine": 3384,
                     "endColumn": 12,
-                    "endOffset": 248301
+                    "endOffset": 248580
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15518,10 +15543,10 @@
                 "to": {
                     "startLine": 3385,
                     "startColumn": 4,
-                    "startOffset": 248306,
+                    "startOffset": 248585,
                     "endLine": 3387,
                     "endColumn": 12,
-                    "endOffset": 248447
+                    "endOffset": 248726
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15531,10 +15556,10 @@
                 "to": {
                     "startLine": 3388,
                     "startColumn": 4,
-                    "startOffset": 248452,
+                    "startOffset": 248731,
                     "endLine": 3394,
                     "endColumn": 12,
-                    "endOffset": 248955
+                    "endOffset": 249234
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15544,10 +15569,10 @@
                 "to": {
                     "startLine": 3395,
                     "startColumn": 4,
-                    "startOffset": 248960,
+                    "startOffset": 249239,
                     "endLine": 3398,
                     "endColumn": 12,
-                    "endOffset": 249156
+                    "endOffset": 249435
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15557,10 +15582,10 @@
                 "to": {
                     "startLine": 3399,
                     "startColumn": 4,
-                    "startOffset": 249161,
+                    "startOffset": 249440,
                     "endLine": 3417,
                     "endColumn": 12,
-                    "endOffset": 250715
+                    "endOffset": 250994
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15570,10 +15595,10 @@
                 "to": {
                     "startLine": 3418,
                     "startColumn": 4,
-                    "startOffset": 250720,
+                    "startOffset": 250999,
                     "endLine": 3427,
                     "endColumn": 12,
-                    "endOffset": 251377
+                    "endOffset": 251656
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15583,10 +15608,10 @@
                 "to": {
                     "startLine": 3428,
                     "startColumn": 4,
-                    "startOffset": 251382,
+                    "startOffset": 251661,
                     "endLine": 3436,
                     "endColumn": 12,
-                    "endOffset": 251968
+                    "endOffset": 252247
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15596,10 +15621,10 @@
                 "to": {
                     "startLine": 3437,
                     "startColumn": 4,
-                    "startOffset": 251973,
+                    "startOffset": 252252,
                     "endLine": 3442,
                     "endColumn": 12,
-                    "endOffset": 252329
+                    "endOffset": 252608
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15609,10 +15634,10 @@
                 "to": {
                     "startLine": 3443,
                     "startColumn": 4,
-                    "startOffset": 252334,
+                    "startOffset": 252613,
                     "endLine": 3447,
                     "endColumn": 12,
-                    "endOffset": 252662
+                    "endOffset": 252941
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15622,10 +15647,10 @@
                 "to": {
                     "startLine": 3448,
                     "startColumn": 4,
-                    "startOffset": 252667,
+                    "startOffset": 252946,
                     "endLine": 3451,
                     "endColumn": 12,
-                    "endOffset": 252849
+                    "endOffset": 253128
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
@@ -15635,10 +15660,10 @@
                 "to": {
                     "startLine": 3452,
                     "startColumn": 4,
-                    "startOffset": 252854,
+                    "startOffset": 253133,
                     "endLine": 3454,
                     "endColumn": 12,
-                    "endOffset": 252984
+                    "endOffset": 253263
                 },
                 "from": {
                     "file": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/values/values.xml"
