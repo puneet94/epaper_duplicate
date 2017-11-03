@@ -75,14 +75,14 @@ onIds(device) {
 
       <TouchableWithoutFeedback onPress={() => navigation.navigate('NewsList')} >
         <View style={[appStyles.drawerItem,this.isActiveClass('newslist')]}>
-          <AwseomeIcon name="file-text-o" style={appStyles.drawerIcon}/>
+          <AwseomeIcon name="home" style={appStyles.drawerIcon}/>
           <Text style={appStyles.drawerLabel}>{appVars.labelNewsList.toUpperCase()}</Text>
         </View>
       </TouchableWithoutFeedback>
 
       <TouchableWithoutFeedback onPress={() => navigation.navigate('GalleryList')} >
         <View style={[appStyles.drawerItem,this.isActiveClass('gallerylist')]}>
-          <AwseomeIcon name="camera" style={appStyles.drawerIcon}/>
+          <AwseomeIcon name="camera-retro" style={appStyles.drawerIcon}/>
           <Text style={appStyles.drawerLabel}>{appVars.labelGalleryList.toUpperCase()}</Text>
         </View>
       </TouchableWithoutFeedback>
@@ -91,14 +91,14 @@ onIds(device) {
 
       <TouchableWithoutFeedback onPress={() => navigation.navigate('epaper')} style={this.isActiveClass('epaper')}>
         <View style={[appStyles.drawerItem,this.isActiveClass('epaper')]}>
-          <AwseomeIcon name="home" style={appStyles.drawerIcon}/>
+          <AwseomeIcon name="newspaper-o" style={appStyles.drawerIcon}/>
           <Text style={appStyles.drawerLabel}>{appVars.labelePaper.toUpperCase()}</Text>
         </View>
       </TouchableWithoutFeedback>
 
       <TouchableWithoutFeedback onPress={() => navigation.navigate('MyIssues')} >
         <View style={[appStyles.drawerItem,this.isActiveClass('myissues')]}>
-          <AwseomeIcon name="newspaper-o" style={appStyles.drawerIcon}/>
+          <AwseomeIcon name="files-o" style={appStyles.drawerIcon}/>
           <Text style={appStyles.drawerLabel}>{appVars.labelMyIssues.toUpperCase()}</Text>
         </View>
       </TouchableWithoutFeedback>
@@ -124,6 +124,22 @@ onIds(device) {
         <View style={[appStyles.drawerItem,this.isActiveClass('account')]}>
           <AwseomeIcon name="user" style={appStyles.drawerIcon}/>
           <Text style={appStyles.drawerLabel}>{appVars.labelAccount.toUpperCase()}</Text>
+        </View>
+      </TouchableWithoutFeedback>
+
+      <View style={appStyles.drawerSeperator} />
+
+      <TouchableWithoutFeedback onPress={() => navigation.navigate('Imprint')} style={this.isActiveClass('imprint')}>
+        <View style={[appStyles.drawerItem,this.isActiveClass('imprint')]}>
+          <AwseomeIcon name="balance-scale" style={appStyles.drawerIcon}/>
+          <Text style={appStyles.drawerLabel}>{appVars.labelImprint.toUpperCase()}</Text>
+        </View>
+      </TouchableWithoutFeedback>
+
+      <TouchableWithoutFeedback onPress={() => navigation.navigate('PrivacyPolicy')} style={this.isActiveClass('privacypolicy')}>
+        <View style={[appStyles.drawerItem,this.isActiveClass('privacypolicy')]}>
+          <AwseomeIcon name="info" style={appStyles.drawerIcon}/>
+          <Text style={appStyles.drawerLabel}>{appVars.labelPrivacyPolicy.toUpperCase()}</Text>
         </View>
       </TouchableWithoutFeedback>
 

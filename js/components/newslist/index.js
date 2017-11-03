@@ -24,7 +24,7 @@ import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 import store from 'react-native-simple-store';
-import { em_s, lineHeight_s } from '../../core/helpers';
+import { em_s, lineHeight_s, handleExternalUrl } from '../../core/helpers';
 import { TabNavigator } from 'react-navigation';
 const navigatorObject = {};
 const newsListComponent = (screenId)=>{
@@ -42,19 +42,22 @@ const NewsFeedNavigator = TabNavigator(navigatorObject, {
   animationEnabled: true,
   tabBarOptions: {
     scrollEnabled: true,
+    upperCaseLabel:true,
     pressColor: appVars.colorLightGray,
     tabStyle: {
       width: 120
     },
     style: {
       backgroundColor: appVars.colorWhite,
+      elevation: 0,
+      borderBottomColor: '#ecf0f1',
+      borderBottomWidth: 1,
     },
     labelStyle : {
-      color: "black",
-      fontFamily: appVars.fontMain,
-      fontSize: 14,
-      paddingTop: 0,
-      paddingBottom: 0,
+      color: "#7e7e7e",
+      fontSize: 13,
+      paddingTop: 4,
+      paddingBottom: 4,
       paddingRight: 0,
       paddingLeft: 0
     },
@@ -192,7 +195,7 @@ class NewsListScreen extends Component{
     const arrayIndex = (index)%(this.state.bannerAds.length);
         return(
           <View style={appStyles.listAd}>
-            <TouchableOpacity activeOpacity = { .5 } onPress={()=> this.handleExternalUrl(this.state.bannerAdsUrl[arrayIndex])}>
+            <TouchableOpacity activeOpacity = { .5 } onPress={()=> handleExternalUrl(this.state.bannerAdsUrl[arrayIndex])}>
             <Image
               maxWidth={Dimensions.get('window').width} 
               source={{uri: this.state.bannerAds[arrayIndex] }}

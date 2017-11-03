@@ -23,7 +23,7 @@ import { NavigationActions } from 'react-navigation';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
-import { em_s, lineHeight_s } from '../../core/helpers';
+import { em_s, lineHeight_s, handleExternalUrl} from '../../core/helpers';
 
 import store from 'react-native-simple-store';
 class GalleryListScreen extends Component{
@@ -137,16 +137,6 @@ class GalleryListScreen extends Component{
     });
   }
 
-  handleExternalUrl = function (externalurl){
-    Linking.canOpenURL(externalurl).then(supported => {
-          if (supported) {
-            Linking.openURL(externalurl);
-          } else {
-            console.log("Don't know how to open URI: " + externalurl);
-          }
-      });
-  }
-
   fetchBannerAds = ()=>{
     const apiAd = appVars.apiUrl+"/ads.html?authtoken="+appVars.apiKey+"&pid="+appVars.apiAdArchives;
     return fetch(apiAd);
@@ -161,7 +151,7 @@ class GalleryListScreen extends Component{
     const arrayIndex = (index)%(this.state.bannerAds.length);
         return(
           <View style={appStyles.listAd}>
-            <TouchableOpacity activeOpacity = { .5 } onPress={()=> this.handleExternalUrl(this.state.bannerAdsUrl[arrayIndex])}>
+            <TouchableOpacity activeOpacity = { .5 } onPress={()=> handleExternalUrl(this.state.bannerAdsUrl[arrayIndex])}>
             <Image
               maxWidth={Dimensions.get('window').width} 
               source={{uri: this.state.bannerAds[arrayIndex] }}

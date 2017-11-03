@@ -19,6 +19,7 @@ const ScreenHeight = Dimensions.get('window').height;
       showPageNumberOverlay : true,
       showAnnotationListAction: false,
       enableAnnotationEditing: false,
+      textSelectionEnabled: false,
       showThumbnailBar: 'scrollable',
       HudViewMode: 'automatic',
       pageTransition: 'scrollPerSpread',
@@ -37,7 +38,6 @@ const ScreenHeight = Dimensions.get('window').height;
       startPage: 0,
       backgroundColor: processColor('#FFFFFF'),
       textSelectionEnabled: 'NO',
-      editableAnnotationTypes: 'nil',
       searchMode: 'inline',
       thumbnailBarMode: 'scrollable',
       pageTransition: 'scrollPerSpread',
@@ -47,7 +47,7 @@ const ScreenHeight = Dimensions.get('window').height;
   }
 
   const ObjNewsCategories  = [
-    { archive: 'allem', subMenuLabel: 'Start'},
+    { archive: 'allem', subMenuLabel: 'Lokales'},
     { archive: 'demo', subMenuLabel: 'Demo'},
     { archive: 'einbeck', subMenuLabel: 'Einbeck'},
     { archive: 'dassel', subMenuLabel: 'Dassel'},
@@ -57,7 +57,11 @@ const ScreenHeight = Dimensions.get('window').height;
     { archive: 'polizeiem', subMenuLabel: 'Blaulicht'}
   ];
 
+  const htmlContentUpload = `<h3>1. Teilnahme</h3><p>Der Nutzer des Sofortmelders gewährt der Heinrich Rüttgerodt GmbH & Co. KG, nachfolgend Verlag genannt, mit Übermittlung von Texten und Fotos ein zeitlich und ortsunabhängiges, allerdings nicht exklusives Nutzungsrecht an den Inhalten. Der Verlag und damit sämtliche Tochtergesellschaften i. S. d. §§15 AktG werden zum Zeitpunkt der Übermittlung durch den Nutzer dazu ermächtigt, die übermittelten Inhalte für eigene Zwecke zu nutzen, zu vervielfältigen, zu verbreiten, drahtgebunden oder drahtlos zum Abruf bereitzustellen, zu archivieren und in Datenbanken zu speichern. Weiterhin ist der Verlag berechtigt, die Inhalte zu publizieren und zu bearbeiten, wenn dies zur grafischen Darstellung, aus redaktionellen Gründen und/oder zur Verbindung mit weiteren Werken notwendig ist.</p><p>Für den Nutzer entsteht mit Übermittlung seiner Inhalte kein Recht auf Veröffentlichung. Die Publikation der Inhalte liegt im Ermessen des Verlags und ist abhängig von der Relevanz und Qualität der Beiträge und Fotos. Wir weisen ausdrücklich darauf hin, dass für den Nutzer mit Einräumung der oben genannten Nutzungsrechte kein Anspruch auf die Zahlung eines Honorars besteht. Darüber hinaus werden Copyright-Vermerke nicht gestattet. Der Nutzer besitzt kein Recht auf Schadensersatzansprüche gegenüber dem Verlag.</p><h3>2. Ausgeschlossene Inhalte</h3><p>Ausgeschlossen von der Veröffentlichung sind Inhalte, die gegen deutsches Recht verstoßen und insbesondere:</p><p>a) Inhalte, die in die Rechte Dritter eingreifen, sofern der Nutzer nicht über eine formelle Lizenz oder Erlaubnis des Rechteinhabers verfügt, welche die Publikation ausdrücklich erlauben</p><p>b) Beiträge mit pornografischen, sittenwidrigen oder in sonstiger Weise anstößigen Inhalten</p><p>c) Beiträge, die von verfassungsfeindlichen, extremistischen oder sonstigen verbotenen Gruppierungen stammen</p><p>d) Beiträge, die strafbar, volksverhetzend oder in sonstiger Weise verboten sind</p><p>e) Beiträge, die unsachlich und unwahr sind</p><p>f) Beiträge, die dazu dienen, gewerbliche Produkte und Dienstleistungen zu bewerben.</p><h3>3. Gerichtsstand</h3><p>Der Gerichtsstand ist Einbeck.</p><h3>4. Datenschutz</h3><p>Für die Teilnahme am Sofortmelder ist es erforderlich, eine E-Mail-Adresse und/oder Telefonnummer anzugeben. Die von Ihnen eingegebenen persönlichen Daten werden gemäß unserer Datenschutzerklärung sehr sensibel behandelt. Wir gewährleisten Ihnen den höchstmöglichen Schutz dieser Daten.</p>`;
+
 const APP_CONSTANTS =   {
+
+  folder: "emepaper",
 
   screenX: ScreenWidth,
   screenY: ScreenHeight,  
@@ -69,7 +73,7 @@ const APP_CONSTANTS =   {
   //
   // we can change now the limit of items. like get 4 items on phones and like 8 on tablets...
   // How many epaper-items should be grabbed per call.
-  apiEpaperLimit: "4",
+  apiEpaperLimit: "5",
   // which epaper-archives should be shown
   apiEpaperArchives: "9,10",
 
@@ -85,7 +89,7 @@ const APP_CONSTANTS =   {
   // Ad / Banner
   apiAdArchives: adArchives,
 
-  apiRefreshTime: 5*1000000,
+  apiRefreshTime: 15*60000,
   serverurl: "https://mopo-server.de",
   forgotpasswordurl: "https://www.einbecker-morgenpost.de/login/passwort-vergessen.html",
 
@@ -99,8 +103,8 @@ const APP_CONSTANTS =   {
   shareIcon: shareIcon,
   
   //upload
-  uploadAPISuccess: "thank you for your feedback",
-  uploadAPIFail: "Please try again",
+  uploadAPISuccess: "Vielen Dank für Ihre Nachricht.",
+  uploadAPIFail: "Ooops. Etwas hat nicht geklappt, bitte versuchen Sie es zu einem späteren Zeitpunkt noch einmal.",
   animationType : animationType,
 
   //drawerWidth
@@ -128,37 +132,40 @@ const APP_CONSTANTS =   {
 
   //labels
   labelePaper: "ePaper",
-  labelMyIssues: "My issues",
-  labelNewsList: "Newsfeed",
-  labelGalleryList: "Galleryfeed",
-  labelUpload: "Upload",
-  labelSettings: "Settings",
-  labelAccount: "Account",
+  labelMyIssues: "Meine Ausgaben",
+  labelNewsList: "Nachrichten",
+  labelGalleryList: "Mediathek",
+  labelUpload: "Direktmelder",
+  labelSettings: "Einstellungen",
+  labelAccount: "Benutzerkonto",
+  labelImprint: "Impressum",
+  labelPrivacyPolicy: "Datenschutz",
   labelEmail: "E-Mail",
-  labelPhone: "Phone",
+  labelPhone: "Telefon-Nummer",
   labelPassword: "Passwort",
-  labelTermsofuse: "Accepted Terms of use?",
-  labelSubmit: "Submit",
+  labelTermsofuse: "Nutzungsbedingungen gelesen?",
+  labelSubmit: "Absenden",
 
-  labelDelete: "Delete",
-  labelCancel: "Cancel",
+  labelDelete: "Löschen",
+  labelCancel: "Abbrechen",
   
-  labelPushnotifications: "Activate Push-Notifcations?",
-  labelFontsize: "Your Fontsize",
+  labelPushnotifications: "Push-Nachrichten aktivieren?",
+  labelFontsize: "Schriftgröße",
 
-  labelLoginButton: "login",
-  labelLogoutButton: "logout",
-  labelForgotPassword: "Reset password",
+  labelLoginButton: "Anmelden",
+  labelLogoutButton: "Abmelden",
+  labelForgotPassword: "Passwort vergessen?",
   
-  labelSelectSource: "select source",
-  labelFromCamera: "from camera",
-  labelFromLib: "from photoalbum",
-  labelMsg: "Message",
+  labelSelectPhoto: "Foto auswählen",
+  labelSelectSource: "Bitte wählen Sie eine Fotoquelle",
+  labelFromCamera: "Kamera",
+  labelFromLib: "Album",
+  labelMsg: "Nachricht",
 
   //text
-  textDownloadAllreadRunning: "Download already in progress. Please wait for it to finish.",
-  textNoIssueSelected: "No issue selected",
-  textDeleteIssues: "Delete Issues",
+  textDownloadAllreadRunning: "Bitte warten Sie bis der aktuelle Download abgeschlossen ist..",
+  textNoIssueSelected: "Es wurde keine Ausgabe ausgewählt",
+  textDeleteIssues: "Ausgabe löschen",
   //textComfirmDeleteIssues: "Are you sure you want to delete these"+${this.state.deletedIssues.length}+"issues",
   textPushnotificationsHeadline: "Push-Nachrichten",
   textPushnotifications: "Über unsere Push-Nachrichten werden Sie direkt über neue Ereignisse informiert. Sie können diesen Service jederzeit aktivieren oder deaktiveren.",
@@ -173,7 +180,12 @@ const APP_CONSTANTS =   {
 
   textInstantNewsHeadline: "Direktmelder",
   textInstantNews: "Etwas Spannendes ist passiert und Sie sind mittendrin? Schicken Sie unsere Redaktion direkt einen Hinweis!",
+
+  textDownloadbyManager: "wird heruntergeladen.",
+  textDownloadError: "Es ist ein Fehler aufgetreten./nVersuchen Sie es zu einem späteren Zeitpunkt erneut.",
   
+  htmlUpload: htmlContentUpload,
+
   STORAGE_KEY : 'TOKEN',
 
   PDFVIEWER_KEY : PDFVIEWER_KEY,

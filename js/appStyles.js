@@ -48,13 +48,15 @@ module.exports = StyleSheet.create({
     paddingLeft: 10,
     paddingTop: 15,
   },
+
   myIssueSelect: {
     position: 'absolute',
     right: 0,
     top: 0,
     width: 18,
     height: 18,
-    borderColor:appVars.colorBlack,
+    borderRadius: 9,
+    borderColor:appVars.colorDrawerIsActiveBackgroundColor,
     backgroundColor: appVars.colorWhite,
     borderWidth: 1
   },
@@ -188,6 +190,7 @@ drawerIcon: {
     fontSize: 22,
     width: 25,
     height: 25,
+    marginRight: 10,
     textAlign: 'center',
 },
 
@@ -202,9 +205,11 @@ drawerLabel: {
   headerWrapper: {
     backgroundColor: appVars.colorWhite,
   },
+  
   headerTitle: {
     fontFamily: appVars.fontMain,
   },
+
   iconWrapper: {
     flex:1,
     width: 50,

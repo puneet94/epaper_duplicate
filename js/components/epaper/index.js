@@ -152,39 +152,25 @@ fetchdata = async () => {
       .config({
         //path: RNFetchBlob.fs.dirs.DownloadDir+"/dummy.pdf",
         fileCache: false,
-        path: RNFetchBlob.fs.dirs.DocumentDir+"/epaper/"+item.downloadPath,
+        path: RNFetchBlob.fs.dirs.MainBundleDir+"/"+appVars.folder+"/"+item.downloadPath,
           addAndroidDownloads : {
               useDownloadManager : true, // <-- this is the only thing required
               // Optional, override notification setting (default to true)
               notification : true,
-              // Optional, but recommended since android DownloadManager will fail when
-              // the url does not contains a file extension, by default the mime type will be text/plain
+              title : 'ePaper',
+              description : appVars.textDownloadbyManager,              
               mime : 'application/pdf',   
-              description : 'File downloaded by download manager.',
-              //path: RNFetchBlob.fs.dirs.DownloadDir+"/dummy.pdf",
-              path: RNFetchBlob.fs.dirs.DownloadDir+"/"+item.id,
-              mediaScannable : true,
-          }
+              path: RNFetchBlob.fs.dirs.DCIMDir+"/"+appVars.folder+"/"+item.id,
+              mediaScannable : false,
+              }
       })
       .fetch('GET', pdfSource);
 
       const imageSource = appVars.downloadApiUrl +"/"+item.singleSRC;
       let imageResp = await RNFetchBlob
       .config({
-        path: RNFetchBlob.fs.dirs.DocumentDir+"/epaper/"+item.singleSRC,
+        path: RNFetchBlob.fs.dirs.DocumentDir+"/"+appVars.folder+"/"+item.singleSRC,
         fileCache: false,        
-          addAndroidDownloads : {
-              useDownloadManager : true, // <-- this is the only thing required
-              // Optional, override notification setting (default to true)
-              notification : true,
-              // Optional, but recommended since android DownloadManager will fail when
-              // the url does not contains a file extension, by default the mime type will be text/plain
-              mime : 'image/jpeg',
-              description : 'File downloaded by download manager.',
-              //path: RNFetchBlob.fs.dirs.DownloadDir+"/dummy.pdf",
-              path: RNFetchBlob.fs.dirs.DownloadDir+"/"+item.singleSRC,
-              mediaScannable : true,
-          }
       })
       .fetch('GET', imageSource);
       
@@ -201,10 +187,7 @@ fetchdata = async () => {
       store.push('userIssues',issueObject );
       PSPDFKit.present(resp.path(), appVars.PDFVIEWER_CONFIGURATION);
     } catch (error) {
-      Alert.alert("error in download. PLease try again later.");
-      console.log("error in download");
-      console.log(error);
-      
+      Alert.alert(appVars.textDownloadError);      
     }
       finally{
         this.setState({

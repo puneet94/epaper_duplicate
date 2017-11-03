@@ -13,7 +13,6 @@ import appVars from './appVars';
 import appStyles from './appStyles';
 
 import MenuScreen from './components/menu';
-import PDFViewScreen from './components/pdfview';
 import NewsDetailScreen from "./components/newsdetail";
 import ImageViewerScreen from "./components/imageviewer";
 
@@ -22,8 +21,6 @@ const emdigitalApp = StackNavigator({
     Menu : {
       screen: MenuScreen,
       navigationOptions: ({navigation}) => ({
-        headerStyle: appStyles.headerWrapper,
-        headerTitleStyle: appStyles.headerTitle,
         headerLeft: <TouchableWithoutFeedback  onPress={() => {
           if (navigation.state.index === 0) {
             navigation.navigate('DrawerOpen')
@@ -39,19 +36,16 @@ const emdigitalApp = StackNavigator({
         </TouchableWithoutFeedback>
     }),
   },
-  PDFView: {
-    screen: PDFViewScreen,
-    navigationOptions : ({ navigation }) => ({
-    }),
-  },
   NewsDetail: {
       screen: NewsDetailScreen,
       navigationOptions : ({ navigation }) => ({
+        headerTintColor: appVars.colorMain,  
       }),
   },
   ImageViewer: {
     screen: ImageViewerScreen,
     navigationOptions : ({ navigation }) => ({
+      headerTintColor: appVars.colorMain,   
     }),
 },
 });

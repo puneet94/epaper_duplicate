@@ -44,13 +44,13 @@ class IssuesScreen extends Component {
       headerRight: <View>
       {params.enabledEdit?
       <View style={{flexDirection:"row"}}>
-        {params.deSelectedAll && <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.selectAll();}}><AwseomeIcon size={24} name="check"  color={appVars.colorBlack}/></TouchableOpacity>}
-        {params.selectedAll && <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.deSelectAll();}}><AwseomeIcon size={24} name="check"  color={appVars.colorMain}/></TouchableOpacity>}
-        <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.confirmDelete();}}><AwseomeIcon size={24} name="trash"  color={params.deletedIssues.length?appVars.colorMain:appVars.colorDrawerIsActiveBackgroundColor}/></TouchableOpacity>
-        <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.resetDelete();}}><AwseomeIcon size={24} name="times"  color={appVars.colorMain} /></TouchableOpacity>
+        {params.deSelectedAll && <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.selectAll();}}><AwseomeIcon size={24} name="check-circle-o"  color={appVars.colorBlack}/></TouchableOpacity>}
+        {params.selectedAll && <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.deSelectAll();}}><AwseomeIcon size={24} name="check-circle-o"  color={appVars.colorBlack}/></TouchableOpacity>}
+        <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.confirmDelete();}}><AwseomeIcon size={24} name="trash"  color={params.deletedIssues.length?appVars.colorBlack:appVars.colorDrawerIsActiveBackgroundColor}/></TouchableOpacity>
+        <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.resetDelete();}}><AwseomeIcon size={24} name="times"  color={appVars.colorBlack} /></TouchableOpacity>
       </View>:
       <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.startEdit();}}>
-        <AwseomeIcon size={24} name="edit" style={{alignSelf:"flex-end",paddingRight:15}} color={appVars.colorMain}/>
+        <AwseomeIcon size={24} name="edit" style={{alignSelf:"flex-end",paddingRight:15}} color={appVars.colorBlack}/>
       </TouchableOpacity>}
     </View>
     };
@@ -102,6 +102,7 @@ class IssuesScreen extends Component {
     }
     return -1;
   }
+
   checkSelected = (item)=>{
     if(this.checkIssueInDeleted(item)!=-1){
       return {
@@ -205,13 +206,14 @@ class IssuesScreen extends Component {
     if(this.state.deletedIssues.length===0){
       ToastAndroid.show(appVars.textNoIssueSelected, ToastAndroid.SHORT);
       return;
-    }else{
+    } else {
       Alert.alert(
         appVars.textDeleteIssues,
-        `Are you sure you want to delete these ${this.state.deletedIssues.length} issues`,
+        // Wanna delete them?
+        `Möchten Sie die ${this.state.deletedIssues.length} Ausgaben wirklich löschen?`,
         [
           {text: appVars.labelDelete, onPress: () => this.startDelete() },
-          {text: appVars.labelCancel, onPress: () => console.log('OK Pressed'),style: 'cancel'},
+          {text: appVars.labelCancel, onPress: () => console.log('OK Pressed'), style: 'cancel'},
         ],
         { cancelable: true }
       );

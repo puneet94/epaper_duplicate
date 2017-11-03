@@ -11,6 +11,8 @@ import GalleryListScreen from "../gallerylist";
 import UploadScreen from "../upload";
 import AccountScreen from "../account";
 import SettingsScreen from "../settings";
+import ImprintScreen from "../imprint";
+import PrivacyPolicyScreen from "../privacypolicy";
 import DrawerContainer from "./DrawerContainer";
 
 import appVars from '../../appVars';
@@ -20,6 +22,7 @@ const Menu = DrawerNavigator({
   NewsList: {
     screen: NewsListScreen,
     navigationOptions : ({ navigation, screenProps }) => ({
+      headerTitleStyle: appStyles.headerTitle,    
       headerTitle: appVars.labelNewsList.toUpperCase(),
     }),
   },
@@ -57,6 +60,18 @@ const Menu = DrawerNavigator({
     screen: SettingsScreen,
     navigationOptions : ({ navigation, screenProps }) => ({
       headerTitle: appVars.labelSettings.toUpperCase(),
+    }),
+  },
+  Imprint: {
+    screen: ImprintScreen,
+    navigationOptions : ({ navigation, screenProps }) => ({
+      headerTitle: appVars.labelImprint.toUpperCase(),
+    }),
+  },
+  PrivacyPolicy: {
+    screen: PrivacyPolicyScreen,
+    navigationOptions : ({ navigation, screenProps }) => ({
+      headerTitle: appVars.labelPrivacyPolicy.toUpperCase(),
     }),
   },
 

@@ -8,10 +8,7 @@ import {
 
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
-// import Gallery from 'react-native-image-gallery';
-import Gallery from '../gallery';
-
-
+import Gallery from '../../core/gallery';
 
 class ImageViewerScreen extends Component {
   constructor (props) {
@@ -49,18 +46,6 @@ class ImageViewerScreen extends Component {
   onChangeImage (index) {
     this.setState({ index });
   }
-/*
-  
-
-get galleryCount () {
-  const { index, images } = this.state;
-  return (
-      <View style={{ top: 0, height: 65, backgroundColor: 'rgba(0, 0, 0, 0.7)', width: '100%', position: 'absolute', justifyContent: 'center' }}>
-          <Text style={{ textAlign: 'right', color: 'white', fontSize: 15, fontStyle: 'italic', paddingRight: '10%' }}>{ index + 1 } / { images.length }</Text>
-      </View>
-  );
-}
-*/
       render=()=> {
         
           return (

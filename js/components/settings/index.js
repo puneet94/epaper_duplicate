@@ -41,7 +41,7 @@ class SettingsScreen extends Component {
       changePushNotification = (value)=>{
         this.setState({userPushnotification: value});
         OneSignal.setSubscription(value);
-        ToastAndroid.show(`Push notifications ${value?"enabled":"disabled"}`, ToastAndroid.SHORT);
+        ToastAndroid.show(`Push-Nachrichten ${value?"eingeschaltet":"ausgeschaltet"}`, ToastAndroid.SHORT);
       }
       
       render() {
@@ -68,7 +68,7 @@ class SettingsScreen extends Component {
                 <View style={appStyles.settingsWrapper}>    
                     <Text style={appStyles.settingsColStart}>{appVars.labelFontsize}</Text>
                     <View style={appStyles.settingsColEnd}>
-                        <Slider style={appStyles.settingsSlider} value={this.state.fontSize} step={1} minimumValue={16} maximumValue={28} onValueChange={(itemValue, itemIndex) => {this.setState({userFontSize: itemValue,fontSize:itemValue});store.save('fontSize',itemValue)}}/>
+                        <Slider style={appStyles.settingsSlider} value={this.state.fontSize} minimumValue={16} maximumValue={24} onValueChange={(itemValue, itemIndex) => {this.setState({userFontSize: Math.round(itemValue),fontSize:Math.round(itemValue)});store.save('fontSize',itemValue)}}/>
                     </View>
                 </View>
             </View>

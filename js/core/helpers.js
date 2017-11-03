@@ -16,7 +16,6 @@ const unit = base_unit * ratioX;
 
 // We add an em() shortcut function
 export function em(value) {
-    
   return unit * value;
 }
 

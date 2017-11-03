@@ -48,6 +48,10 @@
         "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/layout/pspdf__note_annotation_editor.xml"
     },
     {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/layout/streaming_notification_player.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/emdigital/react-native-audio-streaming/unspecified/res/layout/streaming_notification_player.xml"
+    },
+    {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
         "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/layout/abc_list_menu_item_icon.xml"
     },

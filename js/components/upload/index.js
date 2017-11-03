@@ -13,12 +13,18 @@ import { StyleSheet,
     PixelRatio,
     ActivityIndicator,
     TouchableOpacity,
+    TouchableWithoutFeedback,
     Image,
+    Modal,
 } from 'react-native'
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
+import HTMLView from 'react-native-htmlview';
+import store from 'react-native-simple-store';
 import RNFetchBlob from 'react-native-fetch-blob';
 import ImagePicker from 'react-native-image-picker';
+import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
+import { em, lineHeight, handleExternalUrl } from '../../core/helpers';
 
 class UploadScreen extends Component {
     
@@ -29,9 +35,21 @@ class UploadScreen extends Component {
             imageSorce: null,        
             imagePath: null,
             file64Data : null,
-            formLoading: false
+            formLoading: false,
+            modalVisible: false,
+            fontSize: appVars.baseUnit            
           };
     }
+
+
+    componentWillMount = async ()=>{
+    store.delete('deepLinkNewsId');
+    }
+
+    setModalVisible(visible) {
+      this.setState({modalVisible: visible});
+    }
+
     onSubmit = async ()=>{
       this.setState({
         formLoading: true
@@ -116,15 +134,63 @@ class UploadScreen extends Component {
         if(this.state.formLoading){
           return(
             <View style={appStyles.ActivityIndicatorFullscreenContainer}>
-              <ActivityIndicator animating={true} size={96}/>
+              <ActivityIndicator animating={true} size={'large'}/>
             </View>
           )
         }
           return (
               <ScrollView style={appStyles.contenContainer}>
 
+              <Modal
+              animationType={appVars.animationType}
+              transparent={false}
+              visible={this.state.modalVisible}
+              onRequestClose={() => {console.log("Modal has been closed.")}}
+              >
+              <ScrollView style={appStyles.contenContainer}>
+              <View style={appStyles.contentElement}>
+
+              <HTMLView addLineBreaks={false} value={appVars.htmlUpload} 
+          
+                stylesheet={StyleSheet.create({
+                  p: {
+                    fontSize: em(0.875),
+                    lineHeight: lineHeight(0.875,150),
+                    fontFamily: appVars.fontText,
+                    color: appVars.colorBlack,
+                    marginBottom: em(0.875),
+                    paddingLeft: 20,
+                    paddingRight: 20,
+                  },
+                  strong: {
+                    fontWeight: '700'
+                  },
+                  a: {
+                    color: appVars.colorMain,
+                    fontWeight: '700',
+                  },
+                  h3: {
+                    fontSize: em(1.250),
+                    lineHeight: lineHeight(1.250,120),
+                    fontFamily: appVars.fontHeadline,
+                    color: appVars.colorBlack,
+                    marginBottom: em(0.500),
+                  }
+                })  
+                }
+                
+                onLinkPress={(url) => handleExternalUrl(url)} />
+                
+            
+              <Button color={appVars.colorMain} style={appStyles.submit} title="Fenster schließen" onPress={() => { this.setModalVisible(!this.state.modalVisible) }} />
+           
+              </View>
+              </ScrollView>
+              
+
+              </Modal>
+
                 <View style={appStyles.contentElement}>
-                <Text style={appStyles.contentHeadline}>{appVars.textInstantNewsHeadline}</Text>
                 <Text style={appStyles.contentText}>{appVars.textInstantNews}</Text>
                 </View>
 
@@ -143,18 +209,28 @@ class UploadScreen extends Component {
                 <TextInput keyboardType={'phone-pad'} autoCapitalize={'none'} autoCorrect={false} onChangeText={(value)=> this.setState({phone: value})}/>
                 </View>
 
+          <View style={[appStyles.contentElement,styles.container]}>
                 <TouchableOpacity onPress={this.selectPhotoTapped.bind(this)}>
-                    <View style={[styles.image, styles.imageContainer, {marginBottom: 20}]}>
-                    { this.state.imageSorce === null ? <Text>Select a Photo</Text> :
+                    <View style={[styles.image, styles.imageContainer]}>
+                    { this.state.imageSorce === null ?
+                        <Text>
+                        {appVars.labelSelectPhoto}
+                        </Text>
+                        :
                         <Image style={styles.image} source={this.state.imageSorce} />
                     }
                     </View>
-          </TouchableOpacity>
-
+                </TouchableOpacity>
+                </View>
 
                 <View style={appStyles.contentElement}>
                         <View style={appStyles.settingsWrapper}>
+
+                        <TouchableOpacity onPress={() => {this.setModalVisible(true)}}>
+                          <View>
                             <Text style={appStyles.settingsColStart}>{appVars.labelTermsofuse}</Text>
+                            </View>
+                        </TouchableOpacity>
                             <View style={appStyles.settingsColEnd}><Switch onValueChange={(value) => this.setState({userTermsOfUse: value})} value={this.state.userTermsOfUse} /></View>
                     </View>
                 </View>
@@ -177,10 +253,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF'
   },
   imageContainer: {
-    borderColor: '#9B9B9B',
+    borderColor: '#000',
     borderWidth: 1 / PixelRatio.get(),
     justifyContent: 'center',
     alignItems: 'center'

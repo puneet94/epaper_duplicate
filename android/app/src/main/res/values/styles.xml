@@ -1,5 +1,4 @@
 <resources>
-  <style name="epaperTheme" parent="epaperTheme.Base"/>
    <style name="epaperTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
     <item name="android:windowBackground">@drawable/launch_screen</item>
     <item name="windowNoTitle">true</item>
@@ -9,14 +8,13 @@
     <item name="colorAccent">@color/colorAccent</item>
   </style>
 
-<style name="epaperTheme.PSPDFKitTheme.Base"/>
-  <style name="epaperTheme.PSPDFKitTheme" parent="Theme.AppCompat.Light.NoActionBar">
+  <style name="epaperTheme.PSPDFKitTheme" parent="Theme.AppCompat.Light.DarkActionBar">
       <item name="android:windowBackground">@drawable/launch_screen</item>
         <item name="colorPrimary">@color/colorWhite</item>
         <item name="colorPrimaryDark">@color/colorPrimary</item>
         <item name="colorAccent">@color/colorPrimary</item>
-        <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
         <item name="windowActionModeOverlay">true</item>
         <item name="alertDialogTheme">@style/pspdf__AlertDialog</item>
         <item name="textColorError">@color/pspdf__color_error</item>
@@ -33,7 +31,6 @@
         <item name="pspdf__textSelectionToolbarIconsStyle">@style/BarIcons</item>
         <item name="pspdf__documentEditingToolbarIconsStyle">@style/BarIcons</item>
         <item name="pspdf__actionMenuStyle">@style/pspdf__ActionMenu</item>
-          
 </style>
 
 
