@@ -164,7 +164,7 @@ const APP_CONSTANTS =   {
   labelMsg: "Nachricht",
 
   //text
-  textDownloadAllreadRunning: "Bitte warten Sie bis der aktuelle Download abgeschlossen ist..",
+  textDownloadAllreadRunning: "Bitte warten Sie bis der aktuelle Download abgeschlossen ist.",
   textNoIssueSelected: "Es wurde keine Ausgabe ausgewählt",
   textDeleteIssues: "Ausgabe löschen",
   //textComfirmDeleteIssues: "Are you sure you want to delete these"+${this.state.deletedIssues.length}+"issues",
@@ -177,13 +177,13 @@ const APP_CONSTANTS =   {
   textLoginFollowup: "Um auf unsere DigitalPlus-Inhalte zugreifen zu können, melden Sie sich bitte mit Ihrem Nutzerkonto an.",
   textLogout: "Sie sind angemeldet!",
   textLogutFollowup: "Sie können auf alle DigitalPlus-Inhalte zugreifen.",
-  textErrorLogin: "Es ist ein Fehler aufgetreten. Überprüfen Sie Ihre Eingabe",
+  textErrorLogin: "Es ist ein Fehler aufgetreten. Überprüfen Sie Ihre Eingabe.",
 
   textInstantNewsHeadline: "Direktmelder",
   textInstantNews: "Etwas Spannendes ist passiert und Sie sind mittendrin? Schicken Sie unsere Redaktion direkt einen Hinweis!",
 
   textDownloadbyManager: "wird heruntergeladen.",
-  textDownloadError: "Es ist ein Fehler aufgetreten./nVersuchen Sie es zu einem späteren Zeitpunkt erneut.",
+  textDownloadError: "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
   
   htmlUpload: htmlContentUpload,
   htmlImpress: htmlContentImpress,

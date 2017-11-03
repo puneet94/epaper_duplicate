@@ -2,9 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.emdigital"
     android:versionCode="1"
-    android:versionName="1.0" > <!-- Approximate location - If you want to use promptLocation for letting OneSignal know the user location. -->
+    android:versionName="1.0" >
+
     <uses-sdk
-        android:minSdkVersion="16"
+        android:minSdkVersion="21"
         android:targetSdkVersion="25" />
 
     <uses-permission android:name="android.permission.INTERNET" />

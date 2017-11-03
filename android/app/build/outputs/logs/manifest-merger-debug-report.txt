@@ -53,7 +53,6 @@ ADDED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml:
 		ADDED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml:12:22-78
 uses-sdk
 ADDED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml:14:5-16:41
-MERGED from [com.android.support:multidex:1.0.1] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/AndroidManifest.xml:18:5-42
 MERGED from [emdigital:react-native-audio-streaming:unspecified] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/emdigital/react-native-audio-streaming/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [emdigital:react-native-youtube:unspecified] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/emdigital/react-native-youtube/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [emdigital:react-native-vector-icons:unspecified] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/emdigital/react-native-vector-icons/unspecified/AndroidManifest.xml:7:5-9:41
