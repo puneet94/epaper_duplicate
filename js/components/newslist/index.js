@@ -112,11 +112,12 @@ class NewsListScreen extends Component{
       bannerAdsHeight: bannerAds.response.map((singlesource)=>{
         return singlesource.height;
       })
-
     });
   }
+
+    
   componentDidMount  = async () => {
-    this.fetchdata();
+    this.fetchdata(); 
   }
 
   fetchdata = async () => {
@@ -139,7 +140,9 @@ class NewsListScreen extends Component{
             refreshing: false,
           },()=>{
             setTimeout(()=>{
-              this.newsList.scrollToOffset({ x:0,y:0,animated: true });
+              if(this.newsList && this.newsList.scrollToOffset){
+                this.newsList.scrollToOffset({ x:0,y:0,animated: true });
+              }
             },10);
           });
         })

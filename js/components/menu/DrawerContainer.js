@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View, ScrollView, Image, TouchableWithoutFeedback} from 'react-native'
+import { StyleSheet, Text, View, ScrollView, Image, TouchableWithoutFeedback,Platform,Linking} from 'react-native'
 
 import appVars from '../../appVars';
 import appStyles from '../../appStyles';
@@ -12,7 +12,19 @@ import OneSignal from 'react-native-onesignal'; // Import package from node modu
 
 import store from 'react-native-simple-store';
 class DrawerContainer extends React.Component {
-
+  handleURL = (url)=>{
+    const route = url.replace(/.*?:\/\//g, '');
+    const id = route.match(/\/([^\/]+)\/?$/)[1];
+    const routeName = route.split('/')[0];
+    const routeName2 = route.split('/')[1];
+    console.log(routeName);
+    console.log(routeName2);
+    console.log(id);
+    if(routeName2=="newsfeed"){
+      this.naviagatePage(id);
+    }
+    
+  }
   componentWillMount = async ()=> {
     OneSignal.addEventListener('received', this.onReceived);
     OneSignal.addEventListener('opened', this.onOpened);
@@ -23,6 +35,24 @@ class DrawerContainer extends React.Component {
     if(newsid){
       this.naviagatePage(newsid);
     }
+    if (Platform.OS === 'android') {
+      Linking.getInitialURL().then(url => {
+        console.log("hit through url2222222222");
+        console.log(url);
+        if(url){
+          this.handleURL(url);
+        }
+        
+      });
+    } else {
+        Linking.addEventListener('url', (event)=>{
+          console.log("hit hit hit22222222222222222");
+          console.log(event.url);
+          if(event.url){
+            this.handleURL(event.url);
+          }
+        });
+      }
 }
 
 componentWillUnmount=()=> {
@@ -30,6 +60,14 @@ componentWillUnmount=()=> {
     OneSignal.removeEventListener('opened', this.onOpened);
     OneSignal.removeEventListener('registered', this.onRegistered);
     OneSignal.removeEventListener('ids', this.onIds);
+
+
+    
+      Linking.removeEventListener('url', (event)=>{
+        console.log("wheevevte");
+        console.log(event);
+      });
+    
 }
 
 onReceived(notification) {
