@@ -76,7 +76,7 @@ const APP_CONSTANTS =   {
   // How many epaper-items should be grabbed per call.
   apiEpaperLimit: "5",
   // which epaper-archives should be shown
-  apiEpaperArchives: "9,10",
+  apiEpaperArchives: "em",
 
   // Settings for the new Newsfeed
   // How many newsitems should be grabbed per call.

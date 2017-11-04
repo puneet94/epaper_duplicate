@@ -76,7 +76,7 @@ fetchdata = async () => {
   //Alert.alert("fetch called");
   const { page } = this.state;
   
-  const api = appVars.apiUrl+"/epaper.html?authtoken="+appVars.apiKey+"&limit="+appVars.apiEpaperLimit+"&pid="+appVars.apiEpaperArchives;
+  const api = appVars.apiUrl+"/epaper.html?authtoken="+appVars.apiKey+"&limit="+appVars.apiEpaperLimit+"&archives="+appVars.apiEpaperArchive;
   let tempapi= api+"&page_n120=" + this.state.page.toString();
   if(this.state.refreshing && !this.fetchingData){
     this.fetchingData = true;
