@@ -197,9 +197,8 @@ class NewsListScreen extends Component{
           <View style={appStyles.listAd}>
             <TouchableOpacity activeOpacity = { .5 } onPress={()=> handleExternalUrl(this.state.bannerAdsUrl[arrayIndex])}>
             <Image
-              maxWidth={Dimensions.get('window').width} 
               source={{uri: this.state.bannerAds[arrayIndex] }}
-              style={{width: ((appVars.screenX)), height: this.ratioImageHeigh(this.state.bannerAdsWidth[arrayIndex],this.state.bannerAdsHeight[arrayIndex],1)}}
+              style={{backgroundColor: appVars.colorSeperatorColor, width: ((appVars.screenX)), height: this.ratioImageHeigh(this.state.bannerAdsWidth[arrayIndex],this.state.bannerAdsHeight[arrayIndex],1)}}
               />
               </TouchableOpacity>
           </View>
@@ -247,7 +246,7 @@ class NewsListScreen extends Component{
           <View style={{flex: 1, flexDirection: 'row'}}>
             <View>
               <View style={appStyles.imageBorder}>
-              <Image style={{width: appVars.screenX*0.25, height: appVars.screenX*0.25}} source={{uri: appVars.apiUrl +"/"+item.picture.img.src} } />
+              <Image style={{backgroundColor: appVars.colorSeperatorColor, width: appVars.screenX*0.25, height: appVars.screenX*0.25}} source={{uri: appVars.apiUrl +"/"+item.picture.img.src} } />
               </View>
             </View>
             <View style={appStyles.newsListInner}>

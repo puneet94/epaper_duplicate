@@ -213,7 +213,7 @@ fetchgallerydata = async () => {
     return(
       <TouchableOpacity style={appStyles.galleryItem} key={index} activeOpacity={0.5} onPress={()=>this.openGalleryViewer(item,index)}>
         <View style={appStyles.imageBorder}>
-          <Image style={{resizeMode: 'contain', width: (appVars.screenX*0.25)-15, height: (appVars.screenX*0.25)-15}} source={{uri: appVars.apiUrl +"/"+item.img.src} } />
+          <Image style={{backgroundColor: appVars.colorSeperatorColor, resizeMode: 'contain', width: (appVars.screenX*0.25)-15, height: (appVars.screenX*0.25)-15}} source={{uri: appVars.apiUrl +"/"+item.img.src} } />
         </View>
       </TouchableOpacity>
     )
@@ -253,7 +253,7 @@ fetchgallerydata = async () => {
         <TouchableOpacity style={appStyles.imageContainer} activeOpacity={0.5} onPress={this.openImageViewer.bind(this,item)}>
                 <View style={appStyles.imageBorder}>
                   <Image 
-                  style={{width: ((appVars.screenX)-28), height: this.ratioImageHeigh(item.width,item.height,1)-28}}
+                  style={{backgroundColor: appVars.colorSeperatorColor, width: ((appVars.screenX)-28), height: this.ratioImageHeigh(item.width,item.height,1)-28}}
                   source={{uri: appVars.apiUrl +"/"+item.singleSRC} }
                   />
                   {(item.imagecopyright)?<Text style={[appStyles.imagecopyright,{fontSize:em_s(0.750,this.state.fontSize)}]}>Foto: {item.imagecopyright}</Text>:<View></View>}
