@@ -6,7 +6,21 @@ import { em,lineHeight } from './core/helpers'
 const x = Dimensions.get('window').width;
 const y = Dimensions.get('window').height;
 
+if(Platform.OS === 'android') {
+  
+  var formImput = {};
+  var ePaperWrapperPlusHeight = 0;
+
+} else {
+  // ios
+  var formImput = { borderBottomColor: appVars.colorMain, borderBottomWidth: 1 } 
+  var ePaperWrapperPlusHeight = 15;
+}
+
+
 module.exports = StyleSheet.create({
+
+  formImput: formImput,
 
   //epaper (home)
   ePaperMainContainer: {
@@ -22,10 +36,10 @@ module.exports = StyleSheet.create({
   },
   ePaperHorizontalContainer: {
     backgroundColor: appVars.colorWhite,
-    height: (y * .25),
+    height: (y * .25)+ePaperWrapperPlusHeight,
   },
   ePaperEditionWrapper: {
-    height: (y * .25),
+    height: (y * .25)+ePaperWrapperPlusHeight,
     width: (x * .25),
     justifyContent: 'center',
     alignItems: 'center',
@@ -204,7 +218,7 @@ drawerLabel: {
 
 //header
   headerWrapper: {
-    backgroundColor: appVars.colorWhite,
+    backgroundColor: appVars.colorMain,
   },
   
   headerTitle: {

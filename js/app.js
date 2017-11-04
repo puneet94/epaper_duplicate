@@ -21,6 +21,9 @@ const emdigitalApp = StackNavigator({
     Menu : {
       screen: MenuScreen,
       navigationOptions: ({navigation}) => ({
+        headerStyle: {
+          backgroundColor: appVars.colorWhite,
+        },
         headerLeft: <TouchableWithoutFeedback  onPress={() => {
           if (navigation.state.index === 0) {
             navigation.navigate('DrawerOpen')
