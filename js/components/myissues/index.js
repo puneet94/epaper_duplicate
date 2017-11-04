@@ -20,7 +20,7 @@ import appStyles from '../../appStyles';
 import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
-
+import RNFetchBlob from 'react-native-fetch-blob';
 var PSPDFKit = NativeModules.PSPDFKit;
 
 if(Platform.OS != 'android') {
@@ -43,7 +43,7 @@ class IssuesScreen extends Component {
     return {
       headerRight: <View>
       {params.enabledEdit?
-      <View style={{flexDirection:"row"}}>
+      <View style={{flexDirection:"row",width:100}}>
         {params.deSelectedAll && <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.selectAll();}}><AwseomeIcon size={24} name="check-circle-o"  color={appVars.colorBlack}/></TouchableOpacity>}
         {params.selectedAll && <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.deSelectAll();}}><AwseomeIcon size={24} name="check-circle-o"  color={appVars.colorBlack}/></TouchableOpacity>}
         <TouchableOpacity style={appStyles.iconWrapper} onPress={()=>{params.confirmDelete();}}><AwseomeIcon size={24} name="trash"  color={params.deletedIssues.length?appVars.colorBlack:appVars.colorDrawerIsActiveBackgroundColor}/></TouchableOpacity>
@@ -55,6 +55,29 @@ class IssuesScreen extends Component {
     </View>
     };
   };
+
+
+
+  componentWillMount = async ()=>{
+
+    /*
+    const dirs = RNFetchBlob.fs.dirs
+    const x = "file://"+"/storage/emulated/0/Download/emepaper/494";
+    try {
+      let exist = await RNFetchBlob.fs.exists(x);
+      console.log("exists");
+      console.log(exist);
+      let deleted = await RNFetchBlob.fs.unlink(x);
+      console.log("deleted");
+      console.log(deleted);
+        
+    } catch (error) {
+      console.log("error or roda");
+      console.log(error);
+    }
+    PSPDFKit.present(x, appVars.PDFVIEWER_CONFIGURATION);      */
+  }
+
 
  
   componentDidMount =  ()=>{
@@ -82,15 +105,29 @@ class IssuesScreen extends Component {
     
     return this.state.enabledEdit;
   }
-    
+  
   getMyIssues = async ()=>{
 
-
+    
+const  compare = (key)=> {
+  
+  return (a,b)=>{
+  	if (a[key] < b[key])
+    return -1;
+  if (a[key] > b[key])
+    return 1;
+  return 0;	
+  }
+}
     let issues = await store.get('userIssues');
-
+   console.log("issues");
+   console.log(issues);
+   if(issues){
     this.setState({
-      myissues: issues
+      myissues: issues.sort(compare("id"))
     });
+   }
+    
   }
   checkIssueInDeleted = (item)=>{
     let deletedIssues = this.state.deletedIssues;
@@ -111,7 +148,7 @@ class IssuesScreen extends Component {
     }
   }
   checkSelectedAll = ()=>{
-    
+    console.log(this.state.deletedIssues);
     if(this.state.myissues.length===this.state.deletedIssues.length){
       this.setState({
         deSelectedAll: false,
@@ -141,13 +178,16 @@ class IssuesScreen extends Component {
           this.checkSelectedAll();
         });
       }
-      
     }else{
-      const { navigation } = this.props;
-      //console.log(item.path);
-      PSPDFKit.present(item.path, appVars.PDFVIEWER_CONFIGURATION);      
-    }
 
+      const { navigation } = this.props;
+
+      console.log("path");
+      console.log(item.path);
+      PSPDFKit.present(item.path, appVars.PDFVIEWER_CONFIGURATION);      
+
+
+    }
   }
 
   ratioImageHeigh = (width,height,multiplicate) =>{
@@ -165,7 +205,7 @@ class IssuesScreen extends Component {
         
         <ImageBackground 
                   style={{width: ((appVars.screenX*.32)-16), height: this.ratioImageHeigh(item.thumbNailWidth,item.thumbNailHeight,.32)-16}}
-                  source={{uri:'file://'+item.thumbNail}}
+                  source={{uri:"file://"+item.thumbNail}}
                   >
           {this.state.enabledEdit && <View style={[appStyles.myIssueSelect,this.checkSelected(item)]}></View>}
         </ImageBackground>
@@ -227,15 +267,31 @@ class IssuesScreen extends Component {
         return false;
       }
     });
-    await store.delete('userIssues');
-    for(let i = 0;i<myissues.length;i++){
-      await store.push('userIssues',myissues[i] );
+    const deleteIssues = this.state.deletedIssues;
+    
+    try {
+      for(let j=0;j<deleteIssues.length;j++){
+        let exist = await RNFetchBlob.fs.exists("file://"+deleteIssues[j].path);
+        if(exist){
+          let deleted = await RNFetchBlob.fs.unlink("file://"+deleteIssues[j].path);
+          console.log("deleted issue");
+          console.log(deleteIssues[j].path);        
+        }
+      }
+      await store.delete('userIssues');
+      for(let i = 0;i<myissues.length;i++){
+        await store.push('userIssues',myissues[i] );
+      }
+      this.setState({
+        myissues,
+        deletedIssues:[],
+        enabledEdit: false
+      })  
+    } catch (error) {
+      console.log("error");
+      console.log(error);
     }
-    this.setState({
-      myissues,
-      deletedIssues:[],
-      enabledEdit: false
-    })
+    
   }
   renderIssues = ()=>{
     return (
