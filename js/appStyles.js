@@ -22,6 +22,7 @@ module.exports = StyleSheet.create({
   },
   ePaperHorizontalContainer: {
     backgroundColor: appVars.colorWhite,
+    height: (y * .25),
   },
   ePaperEditionWrapper: {
     height: (y * .25),
