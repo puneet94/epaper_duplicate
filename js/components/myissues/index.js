@@ -21,6 +21,8 @@ import appVars from '../../appVars';
 import { NavigationActions } from 'react-navigation';
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 import RNFetchBlob from 'react-native-fetch-blob';
+import Toast, {DURATION} from 'react-native-easy-toast'
+
 var PSPDFKit = NativeModules.PSPDFKit;
 
 if(Platform.OS != 'android') {
@@ -244,8 +246,14 @@ const  compare = (key)=> {
 
     
     if(this.state.deletedIssues.length===0){
-      ToastAndroid.show(appVars.textNoIssueSelected, ToastAndroid.SHORT);
-      return;
+      if(Platform.OS === 'android') {        
+        ToastAndroid.show(appVars.textNoIssueSelected, ToastAndroid.SHORT);
+        return;
+        } else {
+        this.refs.toast.show(appVars.textNoIssueSelected, 2000);
+        return;
+      }  
+
     } else {
       Alert.alert(
         appVars.textDeleteIssues,
@@ -331,6 +339,7 @@ componentDidUpdate = (prevProps,prevState)=>{
     
     return (
       <View style={appStyles.container}>
+            <Toast ref="toast" style={appStyles.iOSToast} textStyle={appStyles.iOSToastText}/>
         
           {
             this.state.myissues && this.renderIssues()

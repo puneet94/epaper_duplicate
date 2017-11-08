@@ -10,12 +10,15 @@ import {
     Switch,
     Picker,
     ToastAndroid,
-    Slider
+    Slider,
+    Platform
 } from 'react-native'
 import store from 'react-native-simple-store';
 import appStyles from '../../appStyles';
 import appVars from '../../appVars';
-import OneSignal from 'react-native-onesignal'
+import OneSignal from 'react-native-onesignal';
+import Toast, {DURATION} from 'react-native-easy-toast';
+
 class SettingsScreen extends Component {
     constructor(props){
             super(props);
@@ -41,13 +44,18 @@ class SettingsScreen extends Component {
       changePushNotification = (value)=>{
         this.setState({userPushnotification: value});
         OneSignal.setSubscription(value);
-        ToastAndroid.show(`Push-Nachrichten ${value?"eingeschaltet":"ausgeschaltet"}`, ToastAndroid.SHORT);
+
+        if(Platform.OS === 'android') {        
+            ToastAndroid.show(`Push-Nachrichten ${value?"eingeschaltet":"ausgeschaltet"}`, ToastAndroid.SHORT);
+            } else {
+            this.refs.toast.show(`Push-Nachrichten ${value?"eingeschaltet":"ausgeschaltet"}`, 2000);
+          }
       }
       
       render() {
           return (
         <View style={appStyles.contenContainer}>
-
+            <Toast ref="toast" style={appStyles.iOSToast} textStyle={appStyles.iOSToastText}/>
             <View style={appStyles.contentElement}>
                 <Text style={appStyles.contentHeadline}>{appVars.textPushnotificationsHeadline}</Text>
                 <Text style={appStyles.contentText}>{appVars.textPushnotifications}</Text>

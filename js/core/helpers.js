@@ -26,12 +26,23 @@ export function em_s(value, stored_base_unit) {
 
 // calcuate the lineHeight by the faked em and how many percent - lineHeight(0.825,140)
 export function lineHeight(value,lh) {
+  if(Platform.OS === 'android') {        
   return (unit * value)*(lh/100);
+  } else {
+  var lh = lh-20;
+  return (unit * value)*(lh/100);
+  }
 }
 
 export function lineHeight_s(value,stored_base_unit,lh) {
-  var new_unit = stored_base_unit * ratioX;  
+  var new_unit = stored_base_unit * ratioX;
+  if(Platform.OS === 'android') {    
   return (new_unit * value)*(lh/100);
+  } else {
+  var lh = lh-20;
+  return (new_unit * value)*(lh/100);    
+  }
+
 }
 
 export function handleExternalUrl(externalurl) {

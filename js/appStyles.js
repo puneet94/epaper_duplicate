@@ -396,5 +396,15 @@ drawerLabel: {
   ePaperActivityIndicator: {
     flex: 1,
     backgroundColor:'rgba(255, 255, 255, 0.8)',
-  }
+  },
+
+  iOSToast: {
+    backgroundColor:appVars.colorDrawerSeperatorBackgroundColor,
+    borderRadius: 5,
+    padding: 10,
+  },
+  iOSToastText: {
+    color: appVars.colorBlack,
+  },
+
 });

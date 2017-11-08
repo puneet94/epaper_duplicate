@@ -42,12 +42,18 @@ const emdigitalApp = StackNavigator({
   NewsDetail: {
       screen: NewsDetailScreen,
       navigationOptions : ({ navigation }) => ({
+        headerStyle: {
+          backgroundColor: appVars.colorWhite,
+        },
         headerTintColor: appVars.colorMain,  
       }),
   },
   ImageViewer: {
     screen: ImageViewerScreen,
     navigationOptions : ({ navigation }) => ({
+      headerStyle: {
+        backgroundColor: appVars.colorWhite,
+      },
       headerTintColor: appVars.colorMain,   
     }),
 },

@@ -20,6 +20,7 @@ import {
     NativeModules,
 } from 'react-native';
 import { NavigationActions } from 'react-navigation';
+import Toast, {DURATION} from 'react-native-easy-toast'
 import AwseomeIcon from 'react-native-vector-icons/FontAwesome';
 
 import appStyles from '../../appStyles';
@@ -239,8 +240,13 @@ fetchdata = async () => {
 
   handleClick = async (item)=>{
     if(this.state.downloading){
-      ToastAndroid.show(appVars.textDownloadAllreadRunning, ToastAndroid.SHORT);
-      return;
+        if(Platform.OS === 'android') {        
+        ToastAndroid.show(appVars.textDownloadAllreadRunning, ToastAndroid.SHORT);
+        return;
+        } else {
+        this.refs.toast.show(appVars.textDownloadAllreadRunning, 2000);
+        return;
+      }  
     }
     if(item.paywall){
       const userToken = await store.get(appVars.STORAGE_KEY);
@@ -315,6 +321,7 @@ fetchdata = async () => {
     }
     return (
       <View>
+      <Toast ref="toast" style={appStyles.iOSToast} textStyle={appStyles.iOSToastText}/>
       <View style={appStyles.ePaperMainContainer}>
       <FlatList
         data={mainItem}
@@ -345,7 +352,6 @@ fetchdata = async () => {
         renderItem={({item}) => this.renderItem(item)}
         ListFooterComponent={this.renderFooter}
        />
-
        </View>
       </View>
     );

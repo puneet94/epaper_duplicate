@@ -40,8 +40,11 @@ for(let i =0;i<appVars.objNewsCategories.length;i++){
 const NewsFeedNavigator = TabNavigator(navigatorObject, {
   tabBarPosition: 'top',
   animationEnabled: true,
+  ...TabNavigator.Presets.AndroidTopTabs,
+  lazyLoad: true,
   tabBarOptions: {
     scrollEnabled: true,
+    showIcon: false,
     upperCaseLabel:true,
     pressColor: appVars.colorLightGray,
     tabStyle: {

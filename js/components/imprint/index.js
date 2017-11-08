@@ -33,7 +33,7 @@ class ImprintScreen extends Component {
                           paddingRight: 20,
                         },
                         strong: {
-                          fontWeight: '700'
+                          fontWeight: '700',
                         },
                         a: {
                           color: appVars.colorMain,
