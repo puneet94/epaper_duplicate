@@ -182,7 +182,7 @@ class UploadScreen extends Component {
                 onLinkPress={(url) => handleExternalUrl(url)} />
                 
             
-              <Button color={appVars.colorMain} style={appStyles.submit} title="Fenster schließen" onPress={() => { this.setModalVisible(!this.state.modalVisible) }} />
+              <Button color={appVars.colorMain} style={appStyles.submit} title="OK" onPress={() => { this.setModalVisible(!this.state.modalVisible) }} />
            
               </View>
               </ScrollView>
@@ -196,17 +196,17 @@ class UploadScreen extends Component {
 
                 <View style={appStyles.contentElement}>
                 <Text style={appStyles.settingsColStart}>{appVars.labelMsg.toUpperCase()}</Text>
-                <TextInput style={appStyles.formImput} autoCapitalize={'none'} multiline={true} autoCorrect={true} autoGrow={true} onChangeText={(value)=> this.setState({msg: value})}/>
+                <TextInput style={appStyles.formInput} autoCapitalize={'none'} multiline={true} autoCorrect={true} autoGrow={true} onChangeText={(value)=> this.setState({msg: value})}/>
                 </View>
 
                 <View style={appStyles.contentElement}>
                 <Text style={appStyles.settingsColStart}>{appVars.labelEmail.toUpperCase()}</Text>
-                <TextInput style={appStyles.formImput} keyboardType={'email-address'} autoCapitalize={'none'} autoCorrect={false} onChangeText={(value)=> this.setState({email: value})}/>
+                <TextInput style={appStyles.formInput} keyboardType={'email-address'} autoCapitalize={'none'} autoCorrect={false} onChangeText={(value)=> this.setState({email: value})}/>
                 </View>
 
                 <View style={appStyles.contentElement}>
                 <Text style={appStyles.settingsColStart}>{appVars.labelPhone.toUpperCase()}</Text>
-                <TextInput style={appStyles.formImput} keyboardType={'phone-pad'} autoCapitalize={'none'} autoCorrect={false} onChangeText={(value)=> this.setState({phone: value})}/>
+                <TextInput style={appStyles.formInput} keyboardType={'phone-pad'} autoCapitalize={'none'} autoCorrect={false} onChangeText={(value)=> this.setState({phone: value})}/>
                 </View>
 
           <View style={[appStyles.contentElement,styles.container]}>

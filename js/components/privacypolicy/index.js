@@ -19,7 +19,7 @@ class PrivacyPolicyScreen extends Component {
         return (  
             <ScrollView style={appStyles.container}>
             <View style={appStyles.contentElement}>
-              <HTMLView addLineBreaks={true} value={appVars.htmlPrivacyPolicy} 
+              <HTMLView addLineBreaks={false} value={appVars.htmlPrivacyPolicy} 
               
                     stylesheet={StyleSheet.create({
                       p: {

@@ -8,19 +8,24 @@ const y = Dimensions.get('window').height;
 
 if(Platform.OS === 'android') {
   
-  var formImput = {};
+  var formInput = {};
   var ePaperWrapperPlusHeight = 0;
 
 } else {
   // ios
-  var formImput = { borderBottomColor: appVars.colorMain, borderBottomWidth: 1 } 
+  var formInput = { 
+    borderBottomColor: appVars.colorMain, 
+    borderBottomWidth: 1,
+    padding: 5,
+    fontSize: em(0.875),
+  } 
   var ePaperWrapperPlusHeight = 15;
 }
 
 
 module.exports = StyleSheet.create({
 
-  formImput: formImput,
+  formInput: formInput,
 
   //epaper (home)
   ePaperMainContainer: {
@@ -343,7 +348,7 @@ drawerLabel: {
   submit: {
     fontSize: em(1),
     fontFamily: appVars.fontMain,
-    color: appVars.colorWhite,   
+    color: appVars.colorWhite,
   },
 
   imageBorder: {

@@ -153,17 +153,19 @@ fetchdata = async () => {
       .config({
         //path: RNFetchBlob.fs.dirs.DownloadDir+"/dummy.pdf",
         fileCache: false,
-        path: RNFetchBlob.fs.dirs.MainBundleDir+"/"+appVars.folder+"/"+item.downloadPath,
-          addAndroidDownloads : {
+        path: RNFetchBlob.fs.dirs.DocumentDir+"/"+appVars.folder+"/"+item.id,
+          /* this made more problems, as it solve it... 
+          /*addAndroidDownloads : {
               useDownloadManager : true, // <-- this is the only thing required
               // Optional, override notification setting (default to true)
-              notification : true,
               title : 'ePaper',
               description : appVars.textDownloadbyManager,              
-              mime : 'application/pdf',   
+              mime : 'application/pdf',
               path: RNFetchBlob.fs.dirs.DCIMDir+"/"+appVars.folder+"/"+item.id,
               mediaScannable : false,
+              notification : false,
               }
+              */
       })
       .fetch('GET', pdfSource);
 
@@ -174,7 +176,7 @@ fetchdata = async () => {
         fileCache: false,        
       })
       .fetch('GET', imageSource);
-      
+
       const issueObject = {
         path: resp.path(),
         thumbNail: imageResp.path(),

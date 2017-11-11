@@ -122,11 +122,11 @@ const  compare = (key)=> {
   }
 }
     let issues = await store.get('userIssues');
-   console.log("issues");
-   console.log(issues);
+   //console.log("issues");
+   //console.log(issues);
    if(issues){
     this.setState({
-      myissues: issues.sort(compare("id"))
+      myissues: issues.sort(compare("id")).reverse()
     });
    }
     
@@ -150,7 +150,7 @@ const  compare = (key)=> {
     }
   }
   checkSelectedAll = ()=>{
-    console.log(this.state.deletedIssues);
+    //console.log(this.state.deletedIssues);
     if(this.state.myissues.length===this.state.deletedIssues.length){
       this.setState({
         deSelectedAll: false,
@@ -184,8 +184,8 @@ const  compare = (key)=> {
 
       const { navigation } = this.props;
 
-      console.log("path");
-      console.log(item.path);
+      //console.log("path");
+      //console.log(item.path);
       PSPDFKit.present(item.path, appVars.PDFVIEWER_CONFIGURATION);      
 
 
