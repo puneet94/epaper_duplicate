@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.emdigital"
+    package="com.einbeckermorgenpost.emdigital"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -21,10 +21,10 @@
         android:name="android.support.VERSION"
         android:value="25.3.1" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
     <permission
-        android:name="com.emdigital.permission.C2D_MESSAGE"
+        android:name="com.einbeckermorgenpost.emdigital.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.emdigital.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.einbeckermorgenpost.emdigital.permission.C2D_MESSAGE" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <!--
@@ -58,7 +58,7 @@
     <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
-        android:name="com.emdigital.MainApplication"
+        android:name="com.einbeckermorgenpost.emdigital.MainApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -66,10 +66,10 @@
         android:theme="@style/epaperTheme.Base" >
         <meta-data
             android:name="pspdfkit_license_key"
-            android:value="sqkrOTqSGeFadbyy7qR-iZ44vbkpIH20ci-Cv_yaFu-XIgB8cqCJP26vlVlCv13n3is3vembwQt2NlG1OnLwohs-mDy_Cc_HA-PcdhXo7Pug9gp8Djr4ZANPKo6qVoOwV0d5QaVphIQKCH8tgMH3hWCBdFyFOy7Ml_V1eIpFU91cgNlTeuRcQEQKniZcep1MPQH1CYhQkPf_Vjdju0O548b_ksuEpzz_Mq377Ti1k2E-QzJrqWPnO6VAZE0U9K75uw0TIgypqdh8vWgpLNzZ6--IZ89Hi2ThsSqDz6aqaBhFN502GbtoDNl5QwrnT3EDah9YRrjlZDb3CGwmIxl9A8qPD77I3352bp4leenwP6hSp2ogFiYFwZbS6i15uOw8je_rkykX44l7SeNUDiT9ELabIleGf9pX09LMXJ6iWNAN4yRi8b5doWRLgv-CXQeG" />
+            android:value="wp8DUuC2_TpzkifzLpvlMygkkd5V1mOhBD9TzqDZuHbe_bq8WUClNORqNrVmwN8c6bwy6jvCwbce1o_A2wmztx_S5x7Nlb0w46oGbn_bT9soCFuiCdLFrD5LdvLlbXFtVNJVf_eBTrxequT4MnmjIOkWN_zNvR5JoNRF9SAnp2FScn9mcDpiyFf-txAs5NENt-djq_G6raoCMixDrKNPJMLRFm2kpFWIsyl0iAWpNQmm_ZQ44akisawr8d7i3qRsz8jBg8npG3LiK_TdBxE_bn-dyfl3YS36x0vZ_d1efJVMiUcSrpKKKtVZ9-u6bz7_RRKFQDDR8bxh6RluIFkfT-HR014Jh6rifyIlZfFeYTXBH5sI8iTBfExKNAbjo5PJ3b6IgsfGVqigmM3d39EKi8y63UedWxZBA_Vxp5o37GvLBS70QaSXkZsCSlyLvQZdSyloVz63xeJfBpJinUVprPPAWPiqHKWcx6cuCtHttm9J_QsAhSe1BtxrLjQDQkxl6s0XOyhxyFZw4gRNaNcvEcHo4YiJJ0mebuS1ixB1rPxyebcXq5wGd8kFraFZsaAS" />
 
         <activity
-            android:name="com.emdigital.MainActivity"
+            android:name="com.einbeckermorgenpost.emdigital.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/app_name"
             android:launchMode="singleTop"
@@ -96,7 +96,7 @@
         <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
         <activity
             android:name="com.pspdfkit.ui.PdfActivity"
-            android:parentActivityName="com.emdigital.MainActivity"
+            android:parentActivityName="com.einbeckermorgenpost.emdigital.MainActivity"
             android:theme="@style/epaperTheme.PSPDFKitTheme"
             android:windowSoftInputMode="adjustNothing" >
             <meta-data
@@ -116,15 +116,15 @@
             android:exported="false" /> <!-- Content provider used for initializing the library. -->
         <provider
             android:name="com.pspdfkit.PSPDFKitInitializationProvider"
-            android:authorities="com.emdigital.com.pspdfkit.PSPDFKitInitializationProvider"
+            android:authorities="com.einbeckermorgenpost.emdigital.com.pspdfkit.PSPDFKitInitializationProvider"
             android:exported="false" />
         <provider
             android:name="com.pspdfkit.media.AssetsContentProvider"
-            android:authorities="com.emdigital.pdf.assets"
+            android:authorities="com.einbeckermorgenpost.emdigital.pdf.assets"
             android:exported="false" />
         <provider
             android:name="com.pspdfkit.document.sharing.DocumentSharingProvider"
-            android:authorities="com.emdigital.pdf.share"
+            android:authorities="com.einbeckermorgenpost.emdigital.pdf.share"
             android:exported="true"
             android:grantUriPermissions="true" />
 
@@ -143,7 +143,7 @@
             <intent-filter android:priority="999" >
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
 
-                <category android:name="com.emdigital" />
+                <category android:name="com.einbeckermorgenpost.emdigital" />
             </intent-filter>
         </receiver>
         <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
@@ -193,7 +193,7 @@
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.emdigital.provider"
+            android:authorities="com.einbeckermorgenpost.emdigital.provider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data

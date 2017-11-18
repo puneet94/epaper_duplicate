@@ -20,12 +20,12 @@
         "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color/switch_thumb_material_light.xml"
     },
     {
-        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
-        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/color/common_google_signin_btn_text_light.xml"
-    },
-    {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
         "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.1/res/color/common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
@@ -49,7 +49,7 @@
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/color/pspdf__note_annotation_editor_icon_color.xml",
-        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/color/pspdf__note_annotation_editor_icon_color.xml"
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/res/color/pspdf__note_annotation_editor_icon_color.xml"
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/color/design_error.xml",
@@ -61,7 +61,7 @@
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/color/pspdf__settings_mode_picker_item.xml",
-        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/color/pspdf__settings_mode_picker_item.xml"
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/res/color/pspdf__settings_mode_picker_item.xml"
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/color/abc_btn_colored_text_material.xml",
@@ -97,7 +97,7 @@
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/color/pspdf__dark_settings_mode_picker_item.xml",
-        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/color/pspdf__dark_settings_mode_picker_item.xml"
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/res/color/pspdf__dark_settings_mode_picker_item.xml"
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",

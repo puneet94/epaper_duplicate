@@ -1,4 +1,4 @@
-package com.emdigital;
+package com.einbeckermorgenpost.emdigital;
 
 import com.facebook.react.ReactActivity;
 

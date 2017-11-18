@@ -71,7 +71,7 @@ componentWillMount = async ()=>{
     this.setState({
       audioPaused: false
     });
-    ReactNativeAudioStreaming.play(ReadspeakerUrl, {showIniOSMediaCenter: true, showInAndroidNotifications: true});
+    ReactNativeAudioStreaming.play(ReadspeakerUrl, {showIniOSMediaCenter: true, showInAndroidNotifications: false});
     
   }
 
@@ -83,15 +83,21 @@ componentWillMount = async ()=>{
   }
   
   static navigationOptions = ({ navigation }) => {
-     const { params = {} } = navigation.state;
+     const { params = {} } = navigation.state;  
+    if(params.media) {
      return {
          headerRight: <View style={{flexDirection:"row"}}>
-           
-          {params.audioPaused?<TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerPlay()}><AwseomeIcon size={24} name="assistive-listening-systems" color={appVars.colorBlack}/></TouchableOpacity>:<TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerStop()}><AwseomeIcon size={24} name="stop-circle" color={appVars.colorBlack}/></TouchableOpacity>}
-           
            <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleSocialShare()}><IoniconsIcon size={24} name={appVars.shareIcon} color={appVars.colorBlack}/></TouchableOpacity>
            </View>
-     };
+     }
+    } else {
+      return {
+      headerRight: <View style={{flexDirection:"row"}}>
+            {params.audioPaused?<TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerPlay()}><AwseomeIcon size={24} name="assistive-listening-systems" color={appVars.colorBlack}/></TouchableOpacity>:<TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerStop()}><AwseomeIcon size={24} name="stop-circle" color={appVars.colorBlack}/></TouchableOpacity>}
+            <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleSocialShare()}><IoniconsIcon size={24} name={appVars.shareIcon} color={appVars.colorBlack}/></TouchableOpacity>
+            </View>
+      }
+    }
  };
 
   componentDidMount = async ()=>{

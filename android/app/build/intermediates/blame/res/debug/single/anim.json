@@ -65,7 +65,7 @@
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/anim/pspdf__shake_view.xml",
-        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/res/anim/pspdf__shake_view.xml"
+        "source": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/res/anim/pspdf__shake_view.xml"
     },
     {
         "merged": "/Users/sturm/Desktop/epaper/android/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",

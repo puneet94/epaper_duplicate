@@ -184,7 +184,7 @@ class GalleryListScreen extends Component{
     });
 
     const { navigation } = this.props;
-    navigation.navigate('NewsDetail', {newsid: item.id});
+    navigation.navigate('NewsDetail', {newsid: item.id, media: true});
   }
 
   checkActiveMenu = (menu)=>{

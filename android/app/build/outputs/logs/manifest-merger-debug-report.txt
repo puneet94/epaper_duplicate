@@ -2,7 +2,7 @@
 manifest
 ADDED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml:1:1-59:12
 	package
-		ADDED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml:2:5-28
+		ADDED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml:2:5-48
 		INJECTED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -57,7 +57,7 @@ MERGED from [emdigital:react-native-audio-streaming:unspecified] /Users/sturm/De
 MERGED from [emdigital:react-native-youtube:unspecified] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/emdigital/react-native-youtube/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [emdigital:react-native-vector-icons:unspecified] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/emdigital/react-native-vector-icons/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [emdigital:react-native-pspdfkit:unspecified] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/emdigital/react-native-pspdfkit/unspecified/AndroidManifest.xml:19:5-21:41
-MERGED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:19:5-21:41
 MERGED from [com.android.support:cardview-v7:25.3.1] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.3.1/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:design:25.3.1] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/AndroidManifest.xml:20:5-43
@@ -109,7 +109,7 @@ application
 ADDED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml:18:5-57:19
 MERGED from [emdigital:react-native-audio-streaming:unspecified] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/emdigital/react-native-audio-streaming/unspecified/AndroidManifest.xml:13:5-19:19
 MERGED from [emdigital:react-native-pspdfkit:unspecified] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/emdigital/react-native-pspdfkit/unspecified/AndroidManifest.xml:26:5-30:19
-MERGED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:23:5-47:19
+MERGED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:23:5-47:19
 MERGED from [com.android.support:cardview-v7:25.3.1] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.3.1/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:design:25.3.1] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:transition:25.3.1] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.1/AndroidManifest.xml:26:5-20
@@ -144,18 +144,18 @@ MERGED from [org.webkit:android-jsc:r174650] /Users/sturm/Desktop/epaper/android
 	android:icon
 		ADDED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml:21:7-41
 	android:largeHeap
-		ADDED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:23:18-42
+		ADDED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:23:18-42
 	android:theme
 		ADDED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml:23:7-46
 	android:name
 		ADDED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml:19:7-38
 meta-data#pspdfkit_license_key
-ADDED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml:25:7-27:473
+ADDED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml:25:7-27:601
 	android:value
-		ADDED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml:27:7-471
+		ADDED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml:27:7-599
 	android:name
 		ADDED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml:26:7-42
-activity#com.emdigital.MainActivity
+activity#com.einbeckermorgenpost.emdigital.MainActivity
 ADDED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml:28:7-46:18
 	android:label
 		ADDED from /Users/sturm/Desktop/epaper/android/app/src/main/AndroidManifest.xml:30:9-41
@@ -242,43 +242,43 @@ ADDED from [emdigital:react-native-audio-streaming:unspecified] /Users/sturm/Des
 	android:name
 		ADDED from [emdigital:react-native-audio-streaming:unspecified] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/emdigital/react-native-audio-streaming/unspecified/AndroidManifest.xml:15:13-53
 activity#com.pspdfkit.document.printing.PrintActivity
-ADDED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:26:9-30:40
+ADDED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:26:9-30:40
 	android:excludeFromRecents
-		ADDED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:29:13-46
+		ADDED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:29:13-46
 	android:exported
-		ADDED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:30:13-37
+		ADDED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:30:13-37
 	android:configChanges
-		ADDED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:28:13-59
+		ADDED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:28:13-59
 	android:name
-		ADDED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:27:13-72
+		ADDED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:27:13-72
 provider#com.pspdfkit.PSPDFKitInitializationProvider
-ADDED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:33:9-36:40
+ADDED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:33:9-36:40
 	android:authorities
-		ADDED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:35:13-95
+		ADDED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:35:13-95
 	android:exported
-		ADDED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:36:13-37
+		ADDED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:36:13-37
 	android:name
-		ADDED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:34:13-71
+		ADDED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:34:13-71
 provider#com.pspdfkit.media.AssetsContentProvider
-ADDED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:37:9-40:40
+ADDED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:37:9-40:40
 	android:authorities
-		ADDED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:39:13-62
+		ADDED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:39:13-62
 	android:exported
-		ADDED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:40:13-37
+		ADDED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:40:13-37
 	android:name
-		ADDED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:38:13-68
+		ADDED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:38:13-68
 provider#com.pspdfkit.document.sharing.DocumentSharingProvider
-ADDED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:41:9-46:54
+ADDED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:41:9-46:54
 	android:authorities
-		ADDED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:43:13-61
+		ADDED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:43:13-61
 	android:grantUriPermissions
-		ADDED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:45:13-47
+		ADDED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:45:13-47
 	android:exported
-		ADDED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:44:13-36
+		ADDED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:44:13-36
 	tools:ignore
-		ADDED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:46:13-51
+		ADDED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:46:13-51
 	android:name
-		ADDED from [com.pspdfkit:pspdfkit-demo:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit-demo/3.3.3/AndroidManifest.xml:42:13-81
+		ADDED from [com.pspdfkit:pspdfkit:3.3.3] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.pspdfkit/pspdfkit/3.3.3/AndroidManifest.xml:42:13-81
 meta-data#android.support.VERSION
 ADDED from [com.android.support:cardview-v7:25.3.1] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.3.1/AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:design:25.3.1] /Users/sturm/Desktop/epaper/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/AndroidManifest.xml:25:5-27:34

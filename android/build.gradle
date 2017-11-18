@@ -21,7 +21,7 @@ allprojects {
 
              credentials {
                 username 'pspdfkit'
-                password 'TRIAL-VeeWoBwWCZ9GkSvdNWTus-6ZMig0Fm8LQg1SSXCgsgdlqMt0mmFcAQWJBpqijl4r6a7O0xERMNZDmLNHgEDMLg'
+                password 'Bmijc3CePxtU7r56YWvL4qHYgMujqz'
              }
          }
         maven {
