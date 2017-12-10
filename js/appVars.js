@@ -145,6 +145,7 @@ const ScreenHeight = Dimensions.get('window').height;
   labelAccount: "Benutzerkonto",
   labelImprint: "Impressum",
   labelPrivacyPolicy: "Datenschutz",
+  labelBookmarks: "Lesezeichen",
   labelEmail: "E-Mail",
   labelPhone: "Telefon-Nummer",
   labelPassword: "Passwort",

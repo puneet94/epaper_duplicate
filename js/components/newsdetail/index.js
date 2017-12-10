@@ -41,14 +41,31 @@ class NewsDetailScreen extends Component{
       refreshing: false,
       audioPaused: true,
       YoutubePlayerHeight: ((appVars.screenX/16)*9)-1,
-      fontSize: appVars.baseUnit
+      fontSize: appVars.baseUnit,
+      bookmarked: false,
+      bookmarks: [],
+      newsid: "",
+      bookmarkImage: "",
+      bookmarksHash: {}
   }
 }
 componentWillMount = async ()=>{
   store.delete('deepLinkNewsId');
-  
   let fontSize = Number.parseInt(await store.get('fontSize'),10);
-
+  let bookmarksHash = await store.get('bookmarks')|| {};
+  
+  let bookmarks = Object.keys(bookmarksHash);
+  const {newsid} = this.props.navigation.state.params;
+  if(bookmarks && bookmarks.indexOf(newsid)!=-1){
+    this.setState({
+      bookmarked: true
+    });
+  }
+  this.setState({
+    bookmarks,
+    bookmarksHash,
+    newsid: newsid+""
+  });
   if(fontSize){
     this.setState({
       fontSize
@@ -93,20 +110,60 @@ componentWillMount = async ()=>{
     } else {
       return {
       headerRight: <View style={{flexDirection:"row"}}>
-            {params.audioPaused?<TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerPlay()}><AwseomeIcon size={24} name="assistive-listening-systems" color={appVars.colorBlack}/></TouchableOpacity>:<TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerStop()}><AwseomeIcon size={24} name="stop-circle" color={appVars.colorBlack}/></TouchableOpacity>}
+        <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.toggleBookmark()}>
+          {
+            params.bookmarked?
+            <IoniconsIcon size={24} name={"ios-bookmark"} color={appVars.colorBlack}/>:
+            <IoniconsIcon size={24} name={"ios-bookmark-outline"} color={appVars.colorBlack}/>
+          }
+        </TouchableOpacity>
+            {
+              params.audioPaused?
+              <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerPlay()}><AwseomeIcon size={24} name="assistive-listening-systems" color={appVars.colorBlack}/></TouchableOpacity>:
+              <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleReadspeakerStop()}><AwseomeIcon size={24} name="stop-circle" color={appVars.colorBlack}/></TouchableOpacity>
+              }
             <TouchableOpacity style={appStyles.iconWrapper} onPress={() => params.handleSocialShare()}><IoniconsIcon size={24} name={appVars.shareIcon} color={appVars.colorBlack}/></TouchableOpacity>
             </View>
       }
     }
  };
-
+ toggleBookmark = async ()=>{
+   let updateBookmarks = [];
+   
+   let updateBookmarksHash = this.state.bookmarksHash;
+  
+   if(this.state.bookmarked){
+    updateBookmarks = this.state.bookmarks.filter(item=>item!=this.state.newsid);
+     delete updateBookmarksHash[this.state.newsid];
+  }else{
+    updateBookmarks = [...this.state.bookmarks,this.state.newsid];
+    updateBookmarksHash = {
+      ...this.state.bookmarksHash,
+      [this.state.newsid]:{
+        bookmarkImage:this.state.bookmarkImage,
+        bookmarkHeadline: this.state.shareTitle
+      }
+    }
+  }
+  this.setState({
+    bookmarks: updateBookmarks,
+    bookmarked: !this.state.bookmarked,
+    bookmarksHash: updateBookmarksHash
+  });
+  store.delete('bookmarks');
+  
+  await store.update('bookmarks', updateBookmarksHash);
+  
+ }
   componentDidMount = async ()=>{
    
     this.props.navigation.setParams({ 
       handleSocialShare: this.SocialShare,
       handleReadspeakerPlay: this.playReadspeaker,
       handleReadspeakerStop: this.stopReadspeaker,
-      audioPaused: this.state.audioPaused
+      audioPaused: this.state.audioPaused,
+      bookmarked: this.state.bookmarked,
+      toggleBookmark: this.toggleBookmark
     });    
      this.fetchdata(); 
   }
@@ -119,12 +176,14 @@ componentWillMount = async ()=>{
     }
   }
 componentDidUpdate = (prevProps,prevState)=>{
-  if(prevState.audioPaused!==this.state.audioPaused){
+  if(prevState.audioPaused!==this.state.audioPaused || prevState.bookmarked!=this.state.bookmarked){
     this.props.navigation.setParams({ 
       handleSocialShare: this.SocialShare,
       handleReadspeakerPlay: this.playReadspeaker,
       handleReadspeakerStop: this.stopReadspeaker,
-      audioPaused: this.state.audioPaused
+      audioPaused: this.state.audioPaused,
+      bookmarked: this.state.bookmarked,
+      toggleBookmark: this.toggleBookmark
     });    
     }
 }
@@ -153,6 +212,7 @@ fetchdata = async () => {
           shareUrl: res.response[0].shareurl,
           shareTitle: res.response[0].headline,
           YouTubeId: res.response[0].youtube_id, 
+          bookmarkImage: res.response[0].singleSRC
         },()=>{
         });
       })

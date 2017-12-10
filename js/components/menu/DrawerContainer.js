@@ -174,6 +174,19 @@ onIds(device) {
         </View>
       </TouchableWithoutFeedback>
 
+      
+      
+      <View style={appStyles.drawerSeperator} />
+
+      <TouchableWithoutFeedback onPress={() => navigation.navigate('Bookmarks')} style={this.isActiveClass('imprint')}>
+        <View style={[appStyles.drawerItem,this.isActiveClass('imprint')]}>
+          <AwseomeIcon name="paperclip" style={appStyles.drawerIcon}/>
+          <Text style={appStyles.drawerLabel}>{appVars.labelBookmarks.toUpperCase()}</Text>
+        </View>
+      </TouchableWithoutFeedback>
+
+      <View style={appStyles.drawerSeperator} />
+
       <TouchableWithoutFeedback onPress={() => navigation.navigate('PrivacyPolicy')} style={this.isActiveClass('privacypolicy')}>
         <View style={[appStyles.drawerItem,this.isActiveClass('privacypolicy')]}>
           <AwseomeIcon name="info" style={appStyles.drawerIcon}/>

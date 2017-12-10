@@ -6,6 +6,7 @@ import { DrawerNavigator } from 'react-navigation';
 
 import ePaperScreen from "../epaper";
 import IssuesScreen from "../myissues";
+import BookmarksScreen from "../bookmarks";
 import NewsListScreen from "../newslist";
 import GalleryListScreen from "../gallerylist";
 import UploadScreen from "../upload";
@@ -42,6 +43,12 @@ const Menu = DrawerNavigator({
     screen: IssuesScreen,
     navigationOptions : ({ navigation, screenProps }) => ({
       headerTitle: appVars.labelMyIssues.toUpperCase(),
+    }),
+  },
+  Bookmarks: {
+    screen: BookmarksScreen,
+    navigationOptions : ({ navigation, screenProps }) => ({
+      headerTitle: appVars.labelBookmarks.toUpperCase(),
     }),
   },
   Upload: {
