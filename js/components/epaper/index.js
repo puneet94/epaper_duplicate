@@ -239,7 +239,28 @@ fetchdata = async () => {
       });
     }
   }
+  checkUserKeyActive = async (userToken)=>{
+    var params = {
+      authtoken:appVars.apiKey,
+      userkey: userToken
+    };
+    
+    var esc = encodeURIComponent;
+    var query = Object.keys(params)
+        .map(k => esc(k) + '=' + esc(params[k]))
+        .join('&');
+    const url =  `${appVars.apiUrl}/?${query}`;
+    let response = await fetch(url);
+    response  = await response.json();
+    if(response["@status"]=="ERROR"){
+      ToastAndroid.show(appVars.textUserTokenExpired, ToastAndroid.SHORT);
+      store.delete(appVars.STORAGE_KEY);
+      const { navigation } = this.props;
+      navigation.navigate('Account');
+      throw new Error("session_expired");
+    }
 
+  }
   handleClick = async (item)=>{
     if(this.state.downloading){
         if(Platform.OS === 'android') {        
@@ -257,7 +278,14 @@ fetchdata = async () => {
         navigation.navigate('Account');
         return;
       }
-
+      else{
+        try {
+          await this.checkUserKeyActive(userToken);  
+        } catch (error) {
+          return;
+        }
+        
+      }
     }
     this.setState({
       currentItem: item.id

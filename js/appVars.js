@@ -189,7 +189,7 @@ const ScreenHeight = Dimensions.get('window').height;
 
   textDownloadbyManager: "wird heruntergeladen.",
   textDownloadError: "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
-  
+  textUserTokenExpired: "Ihr Zahlungsabonnement ist abgelaufen",
   htmlUpload: htmlContentUpload,
   htmlImpress: htmlContentImpress,
   htmlPrivacyPolicy: htmlContentPrivacyPolicy,
